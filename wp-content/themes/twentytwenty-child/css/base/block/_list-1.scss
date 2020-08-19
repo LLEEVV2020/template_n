@@ -1,0 +1,29 @@
+.list{
+    font-size: 1.6rem;
+
+    li{
+        &::before{
+            content: "";
+            background-image: url(/wp-content/themes/twentytwenty-child/img/galka.svg);
+            background-size: contain;
+            background-position: center;
+            background-origin: content-box;
+            background-repeat: no-repeat;
+            background-color: #FFDE30;
+            box-sizing: content-box;
+            
+            padding: .28em .2em;
+            padding: calc(.28em * 1.2);
+            width: .7115em;
+            height: .875rem;
+            height: .7115em;
+            display: inline-block;
+            border-radius: 50%;
+            margin-right: .8em;
+            transform: translateY(0.3em);
+        }
+        & + li{
+            margin-top: .9em;
+        }
+    }
+}
