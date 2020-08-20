@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": ";AAAA,+BAA+B;AEI/B,AAAA,IAAI,CAAA;EACA,WAAW,EAAE,+BAA+B;EAC5C,WAAW,EAAE,GAAG;EAChB,UAAU,EAAE,KAAK;EACjB,SAAS,EAAE,OAAO;CAErB;;AACD,AAAA,GAAG,CAAA;EACC,KAAK,EDVD,GAAG;CCWV",
+    "sources": [
+        "other.scss",
+        "base/all/_var.scss",
+        "base/all/_all.scss"
+    ],
+    "names": [],
+    "file": "other.css"
+}
