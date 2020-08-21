@@ -1,0 +1,68 @@
+body {
+    background-color: #379DCB;
+}
+
+.logo-windows {
+    display: block;
+    margin-top: 2em;
+    margin-left: 2em;
+    max-width: 19em;
+    text-decoration: none;
+
+    &__text {
+        display: block;
+        color: #ffffff;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+
+        &--big {
+            margin-bottom: 0.5em;
+            padding: 0.1em 0.8em;
+            font-size: 2em;
+            font-weight: 600;
+            line-height: 1.3em;
+            border: 0.2em solid #FFDE30;
+            border-top-left-radius: 0.85em;
+            border-bottom-right-radius: 0.85em;
+            transform: skew(-5deg);
+          }
+
+          &--small {
+            font-size: 1.1em;
+          }
+    }    
+}
+
+.logo-balconies {
+    display: block;
+    margin-top: 2em;
+    margin-left: 2em;
+    max-width: 19em;
+    text-decoration: none;
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 15em;
+        margin-bottom: 0.4em;
+    }
+
+    &__text {
+        color: #ffffff;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+
+        &--big {
+            max-width: 8em;
+            font-size: 1.5em;
+            font-weight: 600;
+        }
+
+        &--small {
+            font-size: 0.7em;
+            font-weight: 700;
+        }
+    }
+}
