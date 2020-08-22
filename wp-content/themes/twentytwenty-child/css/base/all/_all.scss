@@ -35,5 +35,10 @@ body{
 
 // классы цветов
 .orange {
-    color: #F26422;
+    color: $orange;
+}
+
+// позиционирование
+.text-center {
+    text-align: center;
 }
