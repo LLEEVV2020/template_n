@@ -292,7 +292,6 @@ input[type="tel"]::placeholder { color: #D0D0D0; }
   }
 
   &__link {
-    // min-width: 12.5em;
     margin-bottom: 0.5em;
     padding: 0.5em 1em;
     text-decoration: none;
@@ -333,6 +332,56 @@ input[type="tel"]::placeholder { color: #D0D0D0; }
       border-width: 0.65em;
       margin-left: -0.65em;
     }
+  }
+
+}
+
+// Кнопка "Вам перезвонить" в хедере
+.header-contact {
+  max-width: 16em;
+  
+  &__phone {
+    text-decoration: none;
+    color: $black;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  &__content {
+    cursor: pointer;
+  }
+
+  &__text {
+    font-size: 2.4rem;
+  }
+
+  &__box,
+  &__number {
+    display: inline-block;
+  }
+
+  &__box {
+    position: relative;
+  }
+
+  &__image {
+    width: 1.8em;
+    transform: translateY(0.4em);
+    font-size: 1.95rem;
+  }
+
+  &__number {
+    position: absolute;
+    top: 0.37em;
+    right: -0.6em;
+    width: 1.4rem;
+    height: 1.4rem;
+    line-height: 1.4rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: $white;
+    background-color: $orange;
+    border-radius: 50%;
   }
 
 }

@@ -857,4 +857,52 @@ input[type="tel"]::placeholder {
   border-width: 0.65em;
   margin-left: -0.65em;
 }
+
+.header-contact {
+  max-width: 16em;
+}
+
+.header-contact__phone {
+  text-decoration: none;
+  color: #000000;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.header-contact__content {
+  cursor: pointer;
+}
+
+.header-contact__text {
+  font-size: 2.4rem;
+}
+
+.header-contact__box, .header-contact__number {
+  display: inline-block;
+}
+
+.header-contact__box {
+  position: relative;
+}
+
+.header-contact__image {
+  width: 1.8em;
+  -webkit-transform: translateY(0.4em);
+          transform: translateY(0.4em);
+  font-size: 1.95rem;
+}
+
+.header-contact__number {
+  position: absolute;
+  top: 0.37em;
+  right: -0.6em;
+  width: 1.4rem;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #F26422;
+  border-radius: 50%;
+}
 /*# sourceMappingURL=style.css.map */
