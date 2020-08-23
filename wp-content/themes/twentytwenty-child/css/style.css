@@ -891,7 +891,7 @@ input[type="tel"]::placeholder {
   position: relative;
   width: 2.250em;
   height: 2.250em;
-  background: url("../img/sprite.png") -21.5em -19.438em;
+  background: url("/wp-content/themes/twentytwenty-child/img/sprite.png") -21.5em -19.438em;
 }
 
 .header-contact__number {
