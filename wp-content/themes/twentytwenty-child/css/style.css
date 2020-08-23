@@ -870,6 +870,12 @@ input[type="tel"]::placeholder {
 }
 
 .header-contact__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
 }
 
@@ -883,13 +889,9 @@ input[type="tel"]::placeholder {
 
 .header-contact__box {
   position: relative;
-}
-
-.header-contact__image {
-  width: 1.8em;
-  -webkit-transform: translateY(0.4em);
-          transform: translateY(0.4em);
-  font-size: 1.95rem;
+  width: 2.250em;
+  height: 2.250em;
+  background: url("../img/sprite.png") -21.5em -19.438em;
 }
 
 .header-contact__number {

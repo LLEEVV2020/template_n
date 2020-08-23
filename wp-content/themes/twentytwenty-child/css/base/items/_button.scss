@@ -348,6 +348,8 @@ input[type="tel"]::placeholder { color: #D0D0D0; }
   }
 
   &__content {
+    display: flex;
+    align-items: center;
     cursor: pointer;
   }
 
@@ -362,12 +364,9 @@ input[type="tel"]::placeholder { color: #D0D0D0; }
 
   &__box {
     position: relative;
-  }
-
-  &__image {
-    width: 1.8em;
-    transform: translateY(0.4em);
-    font-size: 1.95rem;
+    width: 2.250em; 
+    height: 2.250em;
+    background: url('../img/sprite.png') -21.500em -19.438em;
   }
 
   &__number {
