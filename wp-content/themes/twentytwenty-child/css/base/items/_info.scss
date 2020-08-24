@@ -1,0 +1,36 @@
+.info-price {
+    max-width: 20em;
+
+    &__image {
+        width: 19.438em;
+        height: 4.188em;
+        background: url('/wp-content/themes/twentytwenty-child/img/sprite.png') -19.250em -7.500em;
+    }
+
+    &__text {
+        margin-top: 0;
+        font-size: 1.500em;
+        font-weight: 700;
+        transform: rotate(-3deg);
+    }
+
+}
+
+@media (min-width: 960px) {
+    .info-price {
+
+        max-width: 26em;
+
+        &__image {
+            width: 25.938em;
+            height: 5.625em;
+            background: url('/wp-content/themes/twentytwenty-child/img/sprite.png') -19.250em -0.625em;  
+        }
+
+        &__text {
+            margin-left: 1em;
+            color: $white;
+        }
+
+    }
+}
