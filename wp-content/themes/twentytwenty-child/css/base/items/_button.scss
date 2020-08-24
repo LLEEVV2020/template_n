@@ -282,21 +282,41 @@ input[type="tel"]::placeholder { color: #D0D0D0; }
   }
 }
 
+.header-content__link,
+.header-content__hint,
+.header-contact__box,
+.header-contact__number {
+  display: inline-block;
+}
+
+.header-content__link,
+.header-contact__phone {
+  text-decoration: none;
+}
+
+.header-content__link,
+.header-contact__number {
+  color: $white;
+  background-color: $orange;
+}
+
+.header-content,
+.header-contact {
+  max-width: 16em;
+}
+
+.header-content__hint:before,
+.header-content__hint:after,
+.header-contact__number {
+  position: absolute;
+}
+
 // Кнопка "Бесплатный замер" в хедере
 .header-content {
-  max-width: 16em;
-
-  &__link,
-  &__hint {
-    display: inline-block;
-  }
 
   &__link {
     margin-bottom: 0.5em;
     padding: 0.5em 1em;
-    text-decoration: none;
-    background-color: $orange;
-    color: $white;
     font-weight: 900;
     letter-spacing: 0.03em;
     border-radius: 0.25em;
@@ -314,7 +334,6 @@ input[type="tel"]::placeholder { color: #D0D0D0; }
     &:before,
     &:after {
       content: '';
-      position: absolute;
       left: 50%;
       border: solid transparent;
     }
@@ -338,10 +357,8 @@ input[type="tel"]::placeholder { color: #D0D0D0; }
 
 // Кнопка "Вам перезвонить" в хедере
 .header-contact {
-  max-width: 16em;
   
   &__phone {
-    text-decoration: none;
     color: $black;
     font-size: 1.875em;
     font-weight: 700;
@@ -357,20 +374,14 @@ input[type="tel"]::placeholder { color: #D0D0D0; }
     font-size: 1.500em;
   }
 
-  &__box,
-  &__number {
-    display: inline-block;
-  }
-
   &__box {
     position: relative;
     width: 2.250em; 
     height: 2.250em;
-    background: url('/wp-content/themes/twentytwenty-child/img/sprite.png') -21.500em -19.438em;
+    background: url('/wp-content/themes/twentytwenty-child/img/sprite.png') -11.625em -32.875em;
   }
 
   &__number {
-    position: absolute;
     top: 0.37em;
     right: -0.6em;
     width: 1.500em;
@@ -378,8 +389,6 @@ input[type="tel"]::placeholder { color: #D0D0D0; }
     line-height: 1.500em;
     font-size: 0.625em;
     font-weight: 600;
-    color: $white;
-    background-color: $orange;
     border-radius: 50%;
   }
 
