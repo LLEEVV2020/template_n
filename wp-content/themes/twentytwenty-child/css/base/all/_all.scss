@@ -20,6 +20,12 @@ body{
     font-size: 1.6rem;
 }
 
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
 // контейнер сайта
 .header-inner, .container {
     max-width: 114rem;

@@ -285,19 +285,28 @@ input[type="tel"]::placeholder { color: #D0D0D0; }
 .header-content__link,
 .header-content__hint,
 .header-contact__box,
-.header-contact__number {
+.header-contact__number,
+.exact-calculation-button,
+.exact-calculation-button__image {
   display: inline-block;
 }
 
 .header-content__link,
-.header-contact__phone {
+.header-contact__phone,
+.exact-calculation-button {
   text-decoration: none;
 }
 
 .header-content__link,
-.header-contact__number {
-  color: $white;
+.header-contact__number,
+.exact-calculation-button {
   background-color: $orange;
+}
+
+.header-content__link,
+.header-contact__number,
+.exact-calculation-button {
+  color: $white;
 }
 
 .header-content,
@@ -311,20 +320,28 @@ input[type="tel"]::placeholder { color: #D0D0D0; }
   position: absolute;
 }
 
+.header-content__hint,
+.exact-calculation-button__text {
+  text-transform: uppercase;
+}
+
+.header-content__link,
+.exact-calculation-button__text {
+  letter-spacing: 0.03em;
+  font-weight: 900;
+}
+
 // Кнопка "Бесплатный замер" в хедере
 .header-content {
 
   &__link {
     margin-bottom: 0.5em;
     padding: 0.5em 1em;
-    font-weight: 900;
-    letter-spacing: 0.03em;
     border-radius: 0.25em;
   }
 
   &__hint {
     position: relative;
-    text-transform: uppercase;
     padding: 0.5em;
     font-size: 0.875em;
     font-weight: 700;
@@ -376,9 +393,9 @@ input[type="tel"]::placeholder { color: #D0D0D0; }
 
   &__box {
     position: relative;
-    width: 2.250em; 
-    height: 2.250em;
-    background: url('/wp-content/themes/twentytwenty-child/img/sprite.png') -11.625em -32.875em;
+    background: url('/wp-content/themes/twentytwenty-child/img/sprite.png') no-repeat -44.000em -11.938em;
+	  width: 2.250em;
+	  height: 2.250em;
   }
 
   &__number {
@@ -390,6 +407,56 @@ input[type="tel"]::placeholder { color: #D0D0D0; }
     font-size: 0.625em;
     font-weight: 600;
     border-radius: 50%;
+  }
+
+}
+
+// Кнопка "Получить точный расчёт и сравнить цены"
+.exact-calculation-button {
+
+  display: none;
+
+  @media (min-width: 768px) {
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 13.563em;
+    min-height: 2.625em;
+    max-width: 13em;
+    padding: 0.3em 0.2em 0.3em 0.6em;
+    border-radius: 0.2em;
+    box-shadow: 0px 0px 0px 4px #ffffff;
+  
+    &__text {
+      max-width: 15em;
+      font-size: 0.750em;
+      line-height: 1.35;
+    }
+  
+    &__image {
+      width: 1.313em;
+      height: 1.563em;
+      background: url('/wp-content/themes/twentytwenty-child/img/sprite.png') no-repeat -47.313em -12.375em;
+    }
+
+  }
+
+  @media (min-width: 960px) {
+    min-width: 23.125em;
+    min-height: 5.000em;
+    padding: 0.3em 0.4em 0.3em 1.3em;
+
+    &__image {
+      width: 2.875em;
+	    height: 3.375em;
+      background: url('/wp-content/themes/twentytwenty-child/img/sprite.png') no-repeat -38.125em -18.313em;
+    }
+
+    &__text {
+      font-size: 1.188em;
+    }
   }
 
 }
