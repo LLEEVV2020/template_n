@@ -3,9 +3,9 @@
     max-width: 20em;
 
     &__image {
-        width: 19.438em;
-        height: 4.188em;
-        background: url('/wp-content/themes/twentytwenty-child/img/sprite.png') -19.250em -7.500em;
+        width: 19.250em;
+	    height: 4.188em;
+        background: url('/wp-content/themes/twentytwenty-child/img/sprite.png') 0 -12.063em;
     }
 
     &__text {
@@ -23,9 +23,9 @@
         max-width: 26em;
 
         &__image {
-            width: 25.938em;
-            height: 5.625em;
-            background: url('/wp-content/themes/twentytwenty-child/img/sprite.png') -19.250em -0.625em;  
+            width: 25.688em;
+	        height: 5.563em;
+            background: url('/wp-content/themes/twentytwenty-child/img/sprite.png') 0 -16.250em;  
         }
 
         &__text {
