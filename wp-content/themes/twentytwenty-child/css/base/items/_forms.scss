@@ -1,3 +1,4 @@
+// Стилизация формы контактов
 .form-contacts {
     max-width: 33.5rem;
     margin-left: auto;
@@ -33,7 +34,7 @@
     &__phone {
         padding: 0.5em 0 0.5em 4em;
         border: 1px solid #D0D0D0;
-        border-radius: 6px;
+        border-radius: 0.375em;
         outline: none;
 
         &:focus {

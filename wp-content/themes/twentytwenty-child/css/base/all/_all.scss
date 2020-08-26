@@ -26,6 +26,10 @@ body{
     box-sizing: border-box;
 }
 
+p {
+    margin: 0;
+}
+
 // контейнер сайта
 .header-inner, .container {
     max-width: 114rem;
@@ -57,7 +61,7 @@ body{
     cursor: pointer;
     background-color: $orange;
     color: $white;
-    border-radius: 6px;
+    border-radius: 0.375em;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     font-weight: 900;

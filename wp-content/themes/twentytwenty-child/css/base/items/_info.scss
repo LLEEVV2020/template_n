@@ -3,35 +3,65 @@
     max-width: 20em;
 
     &__image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 19.250em;
 	    height: 4.188em;
-        background: url('/wp-content/themes/twentytwenty-child/img/sprite.png') 0 -12.063em;
+        background: url('/wp-content/themes/twentytwenty-child/img/sprite.png') 0 -11.463em;
     }
 
+    &__text-price,
     &__text {
-        margin-top: 0;
-        font-size: 1.500em;
-        font-weight: 700;
+        color: #0E7CC1;
+        font-family: Verdana, sans-serif;
         transform: rotate(-3deg);
     }
 
-}
+    &__text-price {
+        font-weight: 700;
+        text-transform: uppercase;
+    } 
 
-@media (min-width: 960px) {
-    .info-price {
+    &__text {
+        transform: rotate(-3deg) translateX(2em); 
+    }
 
-        max-width: 26em;
+    @media (min-width: 768px) {
 
         &__image {
-            width: 25.688em;
-	        height: 5.563em;
-            background: url('/wp-content/themes/twentytwenty-child/img/sprite.png') 0 -16.250em;  
+            width: 13.125em;
+            height: 2.625em;
+            background-position-x: -0.500em;
+            background-position-y: -28.500em;
+        }
+        
+        &__text-price,
+        &__text {
+            color: $white;
+            font-size: 1.2rem;
         }
 
         &__text {
-            margin-left: 1em;
-            color: $white;
+            transform: rotate(-3deg) translateX(1em);
         }
 
     }
+
+    @media (min-width: 960px) {
+
+        &__image {
+            width: 411px;
+            height: 89px;
+            background-position-x: -0;
+            background-position-y: -260px;
+        }
+
+        &__text-price,
+        &__text {
+            font-size: 2.4rem;
+        }
+
+    }
+
 }
