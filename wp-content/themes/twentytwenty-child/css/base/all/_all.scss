@@ -48,3 +48,27 @@ body{
 .center {
     text-align: center;
 }
+
+// кнопка
+.button {
+    padding: 0.5em 0.3em;
+    min-height: 2.250em;
+    border: none;
+    cursor: pointer;
+    background-color: $orange;
+    color: $white;
+    border-radius: 6px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 900;
+
+    @media (min-width: 768px) {
+        min-height: 2.4em;
+        letter-spacing: 0.04em;
+        font-size: 1.7rem;
+    }
+
+    @media (min-width: 960px) {
+        font-size: 1.9rem;
+    }
+}
