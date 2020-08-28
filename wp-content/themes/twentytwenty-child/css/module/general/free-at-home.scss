@@ -1,0 +1,209 @@
+@import '../../base/all/var';
+
+.free-at-home {
+
+    background-color: #FFDE30;
+    background-image: url('/wp-content/themes/twentytwenty-child/img/b_market_filtr_bg.png');
+
+    &__left {
+        display: none;
+    }
+
+    &__title {
+        color: $orange;
+    }
+
+    &__subtitle,
+    &__link {
+        color: $black;
+    }
+
+    &__subtitle {
+        display: block;
+        margin-bottom: 0.313em;
+    }
+
+    &__text,
+    &__info {
+        text-align: center;
+    }
+
+    &__text {
+        margin-bottom: 1.438em;
+        font-size: 1.125em;
+        font-weight: 900;
+    }
+
+    .form-contacts {
+        margin-bottom: 0.813em;
+    }
+
+    &__info {
+        font-size: 0.750em;
+        font-weight: 700;
+    }
+
+    @media (min-width: 768px) {
+
+        &__box,
+        &__text,
+        &__info {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__box {
+            max-width: 73rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__left,
+        &__image-number {
+            display: block;
+        }
+
+        &__left {
+            flex-basis: 30%;
+        }
+
+        &__image-number {
+            width: 11.063em;
+            height: 10.938em;
+            background: url('/wp-content/themes/twentytwenty-child/img/sprite.png') no-repeat -40.188em 0;
+        }
+
+        &__image-worker {
+            display: none;
+        }
+
+        &__right {
+            flex-basis: 80%;
+        }
+
+        &__title {
+            margin-bottom: 0.963em;
+        }
+
+        &__text {
+            max-width: 21em;
+            font-size: 1.250em;
+            font-weight: 400;
+        }
+
+        .form-contacts {
+            max-width: 49rem;
+            margin-bottom: 1.563em;
+
+            &__box,
+            &__button {
+                max-width: 14.388em;
+            }
+
+        }
+
+        &__info {
+            max-width: 31.2em;
+        }
+
+    }
+
+    @media (min-width: 960px) {
+
+        padding-top: 0;
+        padding-bottom: 0;
+
+        .container {
+            width: calc(100% - 8rem);;
+        }
+
+        &__box {
+            max-width: 90rem;
+        }
+
+        &__left {
+            position: relative;
+        }
+
+        &__image-number {
+            position: absolute;
+            top: 4em;
+            right: 0em;
+        }
+
+        &__image-worker,
+        .form-contacts {
+            display: block;
+        }
+
+        &__image-worker {
+            transform: translateY(-2.5em);
+            margin-bottom: -2.5em;
+        }
+
+        .form-contacts {
+
+            &__box {
+                margin-bottom: 0.7em;
+
+                &:after {
+                    transform: translateY(-51%);
+                }
+            }
+
+            &__box,
+            &__button {
+                max-width: none;
+            }
+
+            &__button {
+
+                &:before {
+                    content: 'заказать ';
+                }
+
+            }
+        }
+
+    }
+
+    @media (min-width: 1200px) {
+
+        &__box {
+            max-width: 112rem;
+        }
+
+        &__text {
+            margin-bottom: 0.738em;
+            font-size: 1.500em;
+            font-weight: 700;
+        }
+
+        &__title {
+            margin-bottom: 0;
+        }
+
+        .form-contacts {
+
+            max-width: 44.5rem;
+            margin-bottom: 0.938em;
+
+            &__box {
+
+                &:after {
+                    transform: translateY(-54%);
+                }
+
+            }
+
+        }
+
+        &__info {
+            max-width: 30.2em;
+            font-size: 0.875em;
+        }
+
+    }
+
+}
