@@ -1,0 +1,208 @@
+@import '../../base/all/var';
+
+.window-installation {
+
+    display: none;
+
+    @media (min-width: 1200px) {
+
+        display: block;
+
+        // min-height: 46.7rem;
+        background: repeating-linear-gradient(-35deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 2px, transparent 0, transparent 11px), repeating-linear-gradient(196deg, #0AA0CC, #1188c5 100%);
+        font-family: Verdana, sans-serif;
+        color: $white;
+
+        .container {
+            width: calc(100% - 8rem);
+        }
+
+        &__left {
+            margin-bottom: 3em;
+            padding-top: 3.5em;
+            width: 73%;
+        }
+
+        &__title {
+            max-width: 58rem;
+            margin-bottom: 0.825em;
+            font-size: 3.3rem;
+            line-height: 1.625em;
+        }
+
+        &__list,
+        &__item {
+            display: flex;
+        }
+
+        &__list {
+            justify-content: space-between;
+            flex-wrap: wrap;
+            max-width: 70rem;
+        }
+
+        &__item {
+            align-items: center;
+            margin-bottom: 2em;
+        }
+
+        &__text {
+            max-width: 21rem;
+            line-height: 1.425em;
+            font-weight: 700;
+
+            &--max-width-23 {
+                max-width: 23rem;
+            }
+        }
+
+        &__icon {
+            display: inline-block;
+            margin-right: 1.125em;
+            position: relative;
+            width: 8rem;
+            height: 8rem;
+            background-color: $yellow;
+            border-radius: 50%;
+            
+            &:before {
+                content: '';
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-image: url('/wp-content/themes/twentytwenty-child/img/sprite.png');
+                background-repeat: no-repeat;
+            }
+
+            &--1 {
+                &:before {
+                    width: 5rem;
+                    height: 3.4rem;
+                    background-position: -9.8rem -38.3rem;
+                }
+            }
+
+            &--2 {
+                &:before {
+                    width: 4.6rem;
+                    height: 4.2rem;
+                    background-position: -18.3rem -38.3rem;
+                }
+            }
+
+            &--3 {
+                &:before {
+                    width: 4.5rem;
+                    height: 4.8rem;
+                    background-position: -24.9rem -38.6rem;
+                }
+            }
+
+            &--4 {
+                &:before {
+                    width: 4.8rem;
+                    height: 4.8rem;
+                    background-position: -32.8rem -38.6rem;
+                }
+            }
+            
+        }
+
+        &__text {
+            font-size: 2.3rem;
+        }
+
+        &__right,
+        &__tape-text {
+            position: relative;
+        }
+
+        &__image,
+        &__tape,
+        &__tape:before,
+        &__tape:after {
+            position: absolute;
+        }
+
+        &__image {
+            top: 0;
+            left: 0;
+            z-index: 2;
+            height: 100%;
+        }
+
+        &__tape {
+            top: 3.8em;
+            left: -11em;
+            min-width: 27rem;
+            z-index: 1;
+            
+            &-text,
+            &-day {
+                display: block;
+                transform: skew(-7deg, -2deg);
+            }
+
+            &:before,
+            &:after {
+                content: '';
+            }
+
+            &:before,
+            &-text {
+                background-color: $orange;
+            }
+
+            &:before {
+                top: -0.9em;
+                left: -1.5em;
+                width: 6.3rem;
+                height: 7.5rem;
+                opacity: 0.65;
+                transform: skew(-7deg, -2deg);
+            }
+
+            &:after {
+                top: -0.8em;
+                left: -0.4em;
+                width: 4.2rem;
+                height: 6.7rem;
+                transform: skew(0deg, -23deg) translate(1.1rem, 1.2rem);
+                background-color: #8C0000;
+            }
+            
+            &-text {
+                z-index: 1;
+                padding: 0.3em 0.6em;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 800;
+                font-size: 5rem;
+                text-transform: uppercase;
+            }
+
+        }
+        
+    }
+    
+    @media (min-width: 1800px) {
+        overflow-x: hidden;
+
+        &__image {
+            width: 90rem;
+            max-width: 90rem;
+            object-fit: cover;
+        }
+    }
+
+    @media (min-width: 2300px) {
+        
+        &__image {
+            width: 110rem;
+            max-width: 110rem;
+        }
+
+    }
+
+}
