@@ -113,3 +113,19 @@ h3 {
         font-size: 1.9rem;
     }
 }
+
+::-webkit-input-placeholder {
+    color: #CCCCCC;
+}
+
+::-moz-placeholder {
+    color: #CCCCCC;
+}
+
+:-moz-placeholder {
+    color: #CCCCCC;
+}
+
+:-ms-input-placeholder {
+    color: #CCCCCC;
+}
