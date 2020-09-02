@@ -1,0 +1,654 @@
+@import "../../base/all/var";
+
+.advantages-windows {
+
+    display: none;
+
+    @media (min-width: 768px) {
+        display: block;
+
+        &__content-box {
+            display: none;
+        }
+
+        &__title {
+            margin-bottom: 1.063em;
+            font-size: 3rem;
+        }
+    
+        &__subtitle {
+            margin-bottom: 2.188em;
+            font-size: 2rem;
+            text-align: center;
+        }
+    
+        &__box {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            max-width: 67rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    
+        &__wooden-windows,
+        &__wood-aluminum-windows,
+        &__radio:checked + &__label &__label-toggle,
+        &__content-first,
+        &__content-second {
+            display: none;
+        }
+    
+        &__radio:checked + &__label &__label-text {
+            color: #F26422;
+        }
+    
+        &__wooden-windows:checked ~ &__content-first,
+        &__wood-aluminum-windows:checked ~ &__content-second,
+        &__radio:checked + &__label &__label-text:after {
+            display: block;
+        }
+    
+        &__content-first {
+    
+            .advantages-windows {
+    
+                &__dots {
+                    &--1 {
+                        top: 20%;
+                        left: 29%;
+            
+                        label {
+                            left: -10em;
+                        }
+                    }
+            
+                    &--2 {
+                        top: 24%;
+                        left: 73%;
+            
+                        label {
+                            left: -1em;
+                        }
+                    }
+            
+                    &--3 {
+                        top: 58%;
+                        left: 16%;
+            
+                        label {
+                            top: -2em;
+                            left: -8em;
+                        }
+                    }
+            
+                    &--4 {
+                        top: 43%;
+                        left: 73%;
+            
+                        label {
+                            left: -1em;
+                        }
+                    }
+            
+                    &--5 {
+                        top: 71%;
+                        left: 18%;
+            
+                        label {
+                            left: -8.7em;
+                        }
+                    }
+            
+                    &--6 {
+                        top: 71%;
+                        left: 68%;
+            
+                        label {
+                            left: -1.7em;
+                        }
+                    }
+            
+                    &--7 {
+                        top: 85%;
+                        left: 42%;
+            
+                        label {
+                            left: -10.7em;
+                        }
+                    }
+                }
+    
+            }
+    
+        }
+    
+        &__content-second {
+    
+            .advantages-windows {
+    
+                &__dots {
+                    &--8 {
+                        top: 13%;
+                        left: 37%;
+            
+                        label {
+                            left: -10em;
+                        }
+                    }
+            
+                    &--9 {
+                        top: 24%;
+                        left: 71%;
+            
+                        label {
+                            left: -1em;
+                        }
+                    }
+            
+                    &--10 {
+                        top: 57%;
+                        left: 15%;
+            
+                        label {
+                            top: -2em;
+                            left: -8em;
+                        }
+                    }
+            
+                    &--11 {
+                        top: 43%;
+                        left: 71%;
+            
+                        label {
+                            left: -1em;
+                        }
+                    }
+            
+                    &--12 {
+                        top: 66%;
+                        left: 18%;
+            
+                        label {
+                            left: -8.7em;
+                        }
+                    }
+            
+                    &--13 {
+                        top: 82%;
+                        left: 38%;
+            
+                        label {
+                            left: -1.7em;
+                        }
+                    }
+            
+                }
+    
+            }
+    
+        }
+    
+        &__label {
+    
+            display: inline-flex;
+
+            &-text,
+            &-toggle {
+                cursor: pointer;
+                position: relative;
+            }
+
+            &-text,
+            &-toggle,
+            &-toggle:before {
+                display: block;
+            }
+
+            &-text:after,
+            &-toggle:before {
+                position: absolute;
+            }
+    
+            &-text {
+                margin-bottom: 0.250em;
+                font-size: 2.4rem;
+                font-weight: 900;
+                color: #9A9A9A;
+    
+                &:after {
+                    bottom: -0.3em;
+                    font-size: 1.4rem;
+                    font-weight: 400;
+                    transform: translateY(100%);
+                    color: $black;
+                    display: none;
+                }
+    
+                &--1 {
+    
+                    &:after {
+                        content: 'ЭКОЛОГИЧНОСТЬ И ЭСТЕТИКА';
+                        left: 1em;
+                    }
+    
+                }
+    
+                &--2 {
+    
+                    &:after {
+                        content: "ПРАКТИЧНАЯ КЛАССИКА";
+                        left: 6em;
+                    }
+    
+                }
+            }
+    
+            &-toggle {
+                width: 4em;
+                height: 1.5em;
+                background-color: $yellow;
+                border-radius: 1.250em;
+                box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.15);
+    
+                &:before {
+                    content: '';
+                    top: 0.1em;
+                    width: 1.375em;
+                    height: 1.375em;
+                    background-color: $white;
+                    border-radius: 50%;
+                    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+                }
+    
+                &--left {
+                    margin-left: 0.613em;
+    
+                    &:before {
+                        right: 0;
+                    }
+                }
+    
+                &--right {
+    
+                    &:before {
+                        left: 0;
+                    }
+    
+                    margin-right: 1.313em;
+    
+                }
+            }
+    
+        }
+    
+        &__content-first,
+        &__content-second {
+            margin-top: 2.875em;
+            position: relative;
+        }
+
+        &__dots,
+        &__dots:before,
+        &__dots label,
+        &__dots label:before {
+            position: absolute;
+        }
+
+        &__dots:before,
+        &__dots label:before {
+            content: '';
+        }
+    
+        &__dots {
+            width: 1.438em;
+            height: 1.438em;
+            background: rgba(242, 100, 34, 0.54);
+            border-radius: 50%;
+    
+            &:before {
+                top: 50%;
+                left: 50%;
+                transform: translate(-55%, -55%);
+                width: 0.813em;
+                height: 0.813em;
+                background-color: #F26422;
+                border-radius: 50%;
+            }
+    
+            input {
+                display: none;
+    
+                &:checked {
+                    & + label {
+                        opacity: 1;
+                    }
+                }
+            }
+    
+            label {
+                top: 0;
+                left: 0;
+                min-width: 13.375em;
+                padding: 1.2em 1em;
+                box-shadow: 3px 4px 23px rgba(0, 0, 0, 0.25);
+                background-color: $white;
+                opacity: 0;
+                cursor: pointer;
+    
+                &:before {
+                    display: block;
+                    width: 10px;
+                    height: 11px;
+                    top: 0;
+                    right: 0;
+                    background: url("data:image/svg+xml,%3Csvg width='10' height='11' viewBox='0 0 10 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.67188 5.75L9.40625 8.48438C9.57031 8.64844 9.65234 8.84896 9.65234 9.08594C9.65234 9.32292 9.57031 9.53255 9.40625 9.71484L8.80469 10.3164C8.6224 10.4805 8.41276 10.5625 8.17578 10.5625C7.9388 10.5625 7.73828 10.4805 7.57422 10.3164L4.83984 7.58203L2.10547 10.3164C1.94141 10.4805 1.74089 10.5625 1.50391 10.5625C1.26693 10.5625 1.05729 10.4805 0.875 10.3164L0.273438 9.71484C0.109375 9.53255 0.0273438 9.32292 0.0273438 9.08594C0.0273438 8.84896 0.109375 8.64844 0.273438 8.48438L3.00781 5.75L0.273438 3.01562C0.109375 2.85156 0.0273438 2.65104 0.0273438 2.41406C0.0273438 2.17708 0.109375 1.96745 0.273438 1.78516L0.875 1.18359C1.05729 1.01953 1.26693 0.9375 1.50391 0.9375C1.74089 0.9375 1.94141 1.01953 2.10547 1.18359L4.83984 3.91797L7.57422 1.18359C7.73828 1.01953 7.9388 0.9375 8.17578 0.9375C8.41276 0.9375 8.6224 1.01953 8.80469 1.18359L9.40625 1.78516C9.57031 1.96745 9.65234 2.17708 9.65234 2.41406C9.65234 2.65104 9.57031 2.85156 9.40625 3.01562L6.67188 5.75Z' fill='black'/%3E%3C/svg%3E") no-repeat;
+                    background-size: cover;
+                    transform: translate(-75%, 65%);
+                }
+            }
+    
+            &-color {
+                color: #F26422;
+                font-weight: 700;
+            }
+        }
+    }
+
+    @media (min-width: 960px) {
+        
+        .container {
+            width: calc(100% - 8rem);
+        }
+
+        &__title {
+            font-size: 4rem;
+        }
+
+        &__subtitle {
+            font-size: 2.4rem;
+        }
+
+        &__box {
+            max-width: 78rem;
+        }
+
+        &__label {
+
+            &-text {
+                font-size: 2.8rem;
+
+                &--1 {
+                    &:after {
+                        left: 2.5em;
+                    }
+                }
+
+                &--2 {
+                    &:after {
+                        left: 8em;
+                    }
+                }
+            }
+
+            &-toggle {
+
+                &--left {
+                    margin-left: 1.613em;
+                }
+
+            }
+
+        }
+
+    }
+
+    @media (min-width: 1200px) {
+
+        &__content-box,
+        &__line,
+        &__line:after {
+            display: block;
+        }
+
+        &__box {
+            max-width: none;
+            justify-content: center;
+        }
+
+        &__content-first,
+        &__content-second {
+            min-width: 55%;
+        }
+
+        &__content-second {
+
+            .advantages-windows {
+
+                &__advantages-text {
+
+                    &--2 {
+                        right: -7.7em;
+                    }
+
+                    &--3 {
+                        right: -10.9em;
+                    }
+                    
+                    &--5 {
+                        bottom: 11.5em;
+                        left: -8.6em;
+                        max-width: 26rem;
+                    }
+
+                    &--6 {
+                        bottom: 6.6em;
+                        left: -9.5em;
+                    }
+
+                    &--7 {
+                        bottom: 3.4em;
+                        right: -3.9em;
+                    }
+
+                }
+
+                &__line {
+
+                    &--3 {
+                        top: 2.6em;
+                    }
+
+                    &--5 {
+                        background-image: url("data:image/svg+xml,%0A%3Csvg width='91' height='85' viewBox='0 0 91 85' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M89.1789 58.6464C87.3748 54.5543 46.8277 23.5555 1.00038 27.1417' stroke='%23F26422' stroke-width='2'/%3E%3C/svg%3E%0A");
+                        top: 0em;
+                        right: -4em;
+
+                        &:after {
+                            top: 1.8em;
+                            right: 1.9em;                        
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+
+        &__label {
+
+            &-text {
+                font-size: 3.2rem;
+            }
+
+            &-toggle {
+                width: 5em;
+                height: 1.875em;
+
+                &:before {
+                    top: 0.04em;
+                    width: 1.750em;
+                    height: 1.750em;
+                }
+
+                &--left,
+                &--right {
+                    margin-right: 1.313em;
+                    margin-left: 1.313em;
+                }
+            }
+
+        }
+
+        &__dots-box {
+            display: none;
+        }
+
+        &__advantages-text,
+        &__line,
+        &__line:after {
+            position: absolute;
+        }
+
+        &__advantages-text {
+            display: inline-block;
+            max-width: 34rem;
+            font-size: 2.4rem;
+
+            &--1 {
+                top: 5em;
+                left: -4em;
+            }
+
+            &--2 {
+                top: 0.7em;
+                right: -8.1em;
+                max-width: 26rem;
+            }
+
+            &--3 {
+                top: 7em;
+                right: -11.5em;
+            }
+
+            &--4 {
+                top: 15.9em;
+                right: -9.6em;
+            }
+
+            &--5 {
+                bottom: 12em;
+                left: -11em;
+            }
+
+            &--6 {
+                bottom: 4.8em;
+                left: -10.6em;
+            }
+
+            &--7 {
+                bottom: 2em;
+                right: -5em;
+            }
+        }
+
+        &__color {
+            color: $orange;
+            font-weight: 700;
+        }
+
+        &__line {
+            width: 5.500em;
+            height: 2.063em;
+            background-repeat: no-repeat;
+
+            &:after {
+                content: '';
+                width: 0.5em;
+                height: 0.5em;
+                background-color: $orange;
+                border-radius: 50%;
+            }
+
+            &--1 {
+                background-image: url("data:image/svg+xml,%3Csvg width='90' height='35' viewBox='0 0 90 35' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M89 1.54658C85 -0.453425 34 1.54657 1 33.5466' stroke='%23F26422' stroke-width='2'/%3E%3C/svg%3E");
+                top: -1.7em;
+                right: -5.7em;
+
+                &:after {
+                    top: -0.2em;
+                    right: 1.6em;
+                }
+            }
+
+            &--2,
+            &--3,
+            &--4 {
+
+                &:after {
+                    top: 1.1em;
+                    right: 5.4em;
+                }
+            }
+
+            &--2,
+            &--3,
+            &--4 {
+                background-image: url("data:image/svg+xml,%0A%3Csvg width='90' height='35' viewBox='0 0 90 35' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 32.9998C5 34.9998 56 32.9998 89 0.999813' stroke='%23F26422' stroke-width='2'/%3E%3C/svg%3E%0A");
+            }
+
+            &--2 {
+                top: 2.3em;
+                left: -4em;
+            }
+
+            &--3 {
+                top: 3.6em;
+                left: -4em;
+            }
+
+            &--4 {
+                top: 2.8em;
+                left: -4em;
+            }
+
+            &--5 {
+                background-image: url("data:image/svg+xml,%0A%3Csvg width='63' height='40' viewBox='0 0 63 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M62 39C53.6667 27 29.8 2.6 1 1' stroke='%23F26422' stroke-width='2'/%3E%3C/svg%3E%0A");
+                top: 1.4em;
+                right: -4em;
+
+                &:after {
+                    top: 1.6em;
+                    right: 2.6em;
+                }
+            }
+
+            &--6 {
+                background-image: url("data:image/svg+xml,%3Csvg width='90' height='35' viewBox='0 0 90 35' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M89 1.54658C85 -0.453425 34 1.54657 1 33.5466' stroke='%23F26422' stroke-width='2'/%3E%3C/svg%3E");
+                top: -1.4em;
+                right: -6em;
+
+                &:after {
+                    top: -0.2em;
+                    right: 1.6em;
+                }
+            }
+
+            &--7 {
+                background-image: url("data:image/svg+xml,%0A%3Csvg width='97' height='67' viewBox='0 0 97 67' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.94348 30.8856C4.87386 34.2639 52.7583 51.9296 95.491 34.9911' stroke='%23F26422' stroke-width='2'/%3E%3C/svg%3E%0A");
+                left: -5em;
+                top: -0.2em;
+
+                &:after {
+                    top: 1em;
+                    right: 5.2em;
+                }
+            }
+
+
+        }
+
+    }
+
+}
