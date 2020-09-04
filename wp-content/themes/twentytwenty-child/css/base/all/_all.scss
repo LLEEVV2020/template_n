@@ -114,6 +114,7 @@ h3 {
     }
 }
 
+// Стили для плейсхолдера
 ::-webkit-input-placeholder {
     color: #CCCCCC;
 }
@@ -128,4 +129,9 @@ h3 {
 
 :-ms-input-placeholder {
     color: #CCCCCC;
+}
+
+// Жирность
+.bold {
+    font-weight: 700;
 }

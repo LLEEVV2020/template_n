@@ -1,0 +1,179 @@
+@import '../../base/all/var';
+
+.header-links-navigation {
+
+    position: relative;
+    background-image: url('/wp-content/themes/twentytwenty-child/img/header-navigation-middle-image.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 193.85%);
+    }
+
+    &__box {
+        position: relative;
+    }
+
+    &__title-link,
+    &__link {
+        text-decoration: none;
+        color: #3A3A3A;
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-left: 0.6em;
+        cursor: pointer;
+        border-bottom: 0.1em solid #C9C9C9;
+        font-size: 2rem;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+
+        &:before {
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 1.063em;
+            background-image: url("data:image/svg+xml,%0A%3Csvg width='13' height='12' viewBox='0 0 13 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.5016 4.98964L12.5146 4.98964L12.5146 6.98549L7.69496 6.98549L7.69496 11.9751H5.68976L5.68976 6.98549H0.676759L0.676759 4.98964H5.4964L5.4964 0L7.5016 0L7.5016 4.98964Z' fill='%23F26422'/%3E%3C/svg%3E%0A");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+    }
+
+    &__input,
+    &__content {
+        display: none;
+    }
+
+    &__input:checked + &__title {
+
+        border-bottom: 0.1em solid transparent;
+
+        &:before {
+            background-image: url("data:image/svg+xml,%0A%3Csvg width='11' height='10' viewBox='0 0 11 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.53185 3.64126L9.07658 0.0965331L10.4879 1.50782L7.07986 4.91581L10.6081 8.44402L9.19018 9.86191L5.66197 6.3337L2.11725 9.87843L0.705965 8.46715L4.11396 5.05915L0.585758 1.53094L2.00365 0.113051L5.53185 3.64126Z' fill='%23F26422'/%3E%3C/svg%3E%0A");
+        }
+
+    }
+
+    &__input:checked ~ &__content {
+        display: block
+    }
+
+    &__content {
+        padding-left: 3.3em;
+        
+        &-item {
+            margin-bottom: 0.3em;
+        }
+    }
+
+    .free-check-out {
+        margin-top: 3.125em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media (min-width: 768px) {
+
+        .free-check-out {
+            margin-top: 10.125em;
+            margin-bottom: 7.125em;
+        }
+
+    }
+
+    @media (min-width: 960px) {
+
+        .container {
+            width: calc(100% - 8rem);
+        }
+
+        &__box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 90rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__item {
+            margin-bottom: 2.188em;
+            flex-basis: 30%;
+
+            &:nth-child(7) {
+                order: 1;
+                margin-bottom: 0;
+            }
+            
+        }
+
+        &__input:checked + &__title {
+            border-bottom: none;
+        } 
+
+        &__title {
+            padding-top: 0;
+            padding-bottom: 0;
+            padding-left: 0;
+            border-bottom: none;
+            margin-bottom: 0.8em;
+
+            &:before {
+                display: none;
+            }
+
+            &-link {
+            
+                &.active {
+                    color: $orange;
+                }
+    
+            }
+        }
+
+        &__content {
+            display: block;
+            padding-left: 0;
+        }
+
+        .free-check-out {
+            margin-top: 0;
+            margin-bottom: 0;
+            align-self: center;
+        }
+
+    }
+
+    @media (min-width: 1200px) {
+
+        background-image: url('/wp-content/themes/twentytwenty-child/img/header-navigation-big-image.jpg');
+
+        &__box {
+            max-width: 110rem;
+        }
+
+        &__title {
+            font-size: 2.5rem;
+        }
+
+        &__link {
+            font-size: 1.8rem;
+        }
+
+    }
+
+}

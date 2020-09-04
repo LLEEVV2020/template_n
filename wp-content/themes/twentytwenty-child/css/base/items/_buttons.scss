@@ -366,7 +366,7 @@ input[type="tel"]::placeholder { color: #D0D0D0; }
 .free-check-out__hint {
   padding: 0.5em;
   font-size: 0.875em;
-  border: 1px solid $orange;
+  border: 0.125em solid $orange;
   border-radius: 0.3em;
 }
 
@@ -391,8 +391,8 @@ input[type="tel"]::placeholder { color: #D0D0D0; }
 .free-check-out__hint:after {
   bottom: calc(100% - 1px);
   border-bottom-color: $white;
-  border-width: 0.65em;
-  margin-left: -0.65em;
+  border-width: 0.55em;
+  margin-left: -0.55em;
 }
 
 // Кнопка "Бесплатный замер" в хедере
@@ -445,23 +445,25 @@ input[type="tel"]::placeholder { color: #D0D0D0; }
 // Кнопка "Бесплатный выезд замерщика"
 .free-check-out {
   
-  max-width: 22.363em;
+  max-width: 21.563em;
   
   &__button {
     margin-bottom: 0.3em;
     min-height: 3.750em;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0.4em 1.9em 0.4em 0.4em;
+    align-items: center;
+    padding: 0 1.4em 0 0.5em;
     background: linear-gradient(266.8deg, #FFF854 0.02%, #FFE03E 101.17%);
     border-radius: 0.375em;
     color: $black;
   }
 
   &__image {
-    width: 4.875em;
-    height: 3.813em;
-    background: url('/wp-content/themes/twentytwenty-child/img/sprite.png') no-repeat 0 -23.688em;
+    align-self: flex-end;
+    width: 3.938em;
+    height: 3.063em;
+    background: url('/wp-content/themes/twentytwenty-child/img/sprite.png') no-repeat -42.688em -14.750em;
   }
 
   &__big-text {
@@ -475,8 +477,8 @@ input[type="tel"]::placeholder { color: #D0D0D0; }
     letter-spacing: 0.3em;
   }
 
-  @media (min-width: 768px) {
-    display: none;
+  @media (min-width: 960px) {
+    min-width: 21.563em;
   }
 
 }
