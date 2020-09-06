@@ -366,8 +366,8 @@ input[type="tel"]::placeholder { color: #D0D0D0; }
 .free-check-out__hint {
   padding: 0.5em;
   font-size: 0.875em;
-  border: 0.125em solid $orange;
-  border-radius: 0.3em;
+  border: 0.200em solid $orange;
+  border-radius: 0.4em;
 }
 
 .header-content__hint:before, 
@@ -381,18 +381,18 @@ input[type="tel"]::placeholder { color: #D0D0D0; }
 
 .header-content__hint:before,
 .free-check-out__hint:before {
-  bottom: 100%;
+  bottom: 104%;
   border-bottom-color: $orange;
-  border-width: 0.7em;
-  margin-left: -0.7em;
+  border-width: 0.8em;
+  margin-left: -0.8em;
 }
 
 .header-content__hint:after,
 .free-check-out__hint:after {
   bottom: calc(100% - 1px);
   border-bottom-color: $white;
-  border-width: 0.55em;
-  margin-left: -0.55em;
+  border-width: 0.75em;
+  margin-left: -0.75em;
 }
 
 // Кнопка "Бесплатный замер" в хедере
@@ -448,7 +448,7 @@ input[type="tel"]::placeholder { color: #D0D0D0; }
   max-width: 21.563em;
   
   &__button {
-    margin-bottom: 0.3em;
+    margin-bottom: 0.5em;
     min-height: 3.750em;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -515,7 +515,7 @@ input[type="tel"]::placeholder { color: #D0D0D0; }
 
   }
 
-  @media (min-width: 960px) {
+  @media (min-width: 1200px) {
     min-width: 23.125em;
     min-height: 5.000em;
     padding: 0.3em 0.4em 0.3em 1.3em;

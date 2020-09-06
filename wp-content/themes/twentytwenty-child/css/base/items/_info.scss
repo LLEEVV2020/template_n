@@ -1,19 +1,21 @@
+@import '../../base/all/var';
+
 // Информационный элемент "Цены в 1,5-2 раза ниже"
 .info-price {
-    max-width: 20em;
+    max-width: 18.3em;
 
     &__image {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 19.250em;
-	    height: 4.188em;
-        background: url('/wp-content/themes/twentytwenty-child/img/sprite.png') 0 -11.463em;
+        width: 18.250em;
+	    height: 3.625em;
+        background: url('/wp-content/themes/twentytwenty-child/img/sprite.png') -0.500em -10.525em;
     }
 
     &__text-price,
     &__text {
-        color: #0E7CC1;
+        color: $orange;
         font-family: Verdana, sans-serif;
         transform: rotate(-3deg);
     }
@@ -24,37 +26,35 @@
     } 
 
     &__text {
-        transform: rotate(-3deg) translateX(2em); 
+        transform: rotate(-3deg);
+        text-align: center; 
     }
 
     @media (min-width: 768px) {
 
+        max-width: 10.9em;
+
         &__image {
-            width: 13.125em;
-            height: 2.625em;
-            background-position-x: -0.500em;
-            background-position-y: -28.500em;
+            width: 10.875em;
+            height: 2.325em;
+            background-position-y: -14.375em;
         }
         
         &__text-price,
         &__text {
-            color: $white;
-            font-size: 1.2rem;
-        }
-
-        &__text {
-            transform: rotate(-3deg) translateX(1em);
+            font-size: 0.563em;
         }
 
     }
 
-    @media (min-width: 960px) {
+    @media (min-width: 1200px) {
+
+        max-width: 26.2em;
 
         &__image {
-            width: 411px;
-            height: 89px;
-            background-position-x: -0;
-            background-position-y: -260px;
+            width: 26.125em;
+            height: 5.55em;
+            background-position-y: -16.688em;
         }
 
         &__text-price,
