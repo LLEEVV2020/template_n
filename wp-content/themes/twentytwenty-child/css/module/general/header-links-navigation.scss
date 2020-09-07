@@ -27,6 +27,11 @@
         text-decoration: none;
         color: #3A3A3A;
     }
+    &__title-link{
+        &:hover, &:focus{
+            color: #F26422;
+        }
+    }
 
     &__title {
         display: flex;
