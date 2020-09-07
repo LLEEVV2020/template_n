@@ -3,7 +3,8 @@
 .promo {
 
     &-main,
-    &-plastic-windows {
+    &-plastic-windows,
+    &-ready-windows {
         position: relative;
     }
 
@@ -38,6 +39,51 @@
                 }
             }
 
+        }
+
+    }
+
+    &-ready-windows {
+
+        .promo {
+
+            &-image {
+                min-height: 14em;
+                background: url("/wp-content/themes/twentytwenty-child/img/promo-bg3-small.jpg") no-repeat;
+                background-size: cover;
+
+                &__brands {
+                    right: 0;
+                    top: 40%;
+                }
+            }
+
+            &-content {
+
+                &__title {
+                    max-width: 9em;
+                    text-align: center;
+                }
+
+                &__text {
+                    max-width: 25em;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: 1.125em;
+                    font-size: 0.750em;
+                    line-height: 1.225em;
+
+                    span {
+                        display: block;
+                    }
+                }
+
+            }
+
+        }
+
+        .exact-calculation-button {
+            display: none;
         }
 
     }
@@ -276,19 +322,12 @@
 
     @media (min-width: 768px) {
 
-        &-main,
-        &-plastic-windows {
-            .container {
-                display: flex;
-            }
-        }
-
-        &-main {
-
-            .exact-calculation-button {
-                display: flex;
-            }
-
+        &-main .container,
+        &-plastic-windows .container,
+        &-ready-windows .container,
+        &-main .exact-calculation-button,
+        &-ready-windows .exact-calculation-button {
+            display: flex;
         }
 
         &-image {
@@ -453,12 +492,76 @@
             }
 
         }
+
+        &-ready-windows {
+
+            .promo {
+
+                &-content {
+
+                    &__box {
+                        padding-bottom: 2em;
+                    }
+
+                    &__title {
+                        text-align: left;
+                    }
+
+                    &__text {
+                        max-width: 24em;
+                        margin-bottom: 2.7em;
+                        margin-left: 0;
+                        padding-left: 7.363em;
+                        font-size: 0.500em;
+                        position: relative;
+                        
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 6.063em;
+                            height: 6.063em;
+                            background-color: $yellow;
+                            border-radius: 50%;
+                        }
+
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            top: 1em;
+                            left: 1em;
+                            width: 3.2rem;
+	                        height: 3.2rem;
+                            background: url('/wp-content/themes/twentytwenty-child/img/sprite.png') no-repeat -20.5rem -23rem;
+                        }
+                    }
+
+                }
+
+                &-image {
+
+                    &__brands {
+                        display: none;
+                    }
+
+                }
+
+            }
+
+            .info-price {
+                margin-bottom: 0;
+                margin-left: 0;
+            }
+
+        }
     }
 
     @media (min-width: 960px) {
 
         &-main,
-        &-plastic-windows {
+        &-plastic-windows,
+        &-ready-windows {
 
             .container {
                 width: calc(100% - 8rem);
@@ -502,6 +605,41 @@
                     max-width: 21em;
                 }
 
+            }
+
+        }
+
+        &-ready-windows {
+
+            .promo {
+
+                &-content {
+
+                    &__text {
+                        font-size: 0.7em;
+
+                        &:after {
+                            top: 1.5em;
+                            left: 1.5em;
+                        }
+                    }
+
+                }
+
+                &-image {
+
+                    &__brands {
+                        display: flex;
+                        top: 14%;
+                        left: 10%;
+                    }
+
+                }
+
+            }
+
+            .exact-calculation-button {
+                left: 45%;
             }
 
         }
@@ -580,6 +718,7 @@
 
         &-image {
 
+            background-image: url('/wp-content/themes/twentytwenty-child/img/promo-bg1-big.jpg');
             min-width: calc(55% + ((100vw - 100%) / 2));
     
             &__image {
@@ -655,6 +794,40 @@
 
                 }
 
+            }
+
+        }
+
+        &-ready-windows {
+
+            .promo {
+
+                &-content {
+
+                    &__text {
+
+                        font-size: 1.000em;
+
+                        &:after {
+                            background-position: -18.6rem -9rem;
+                            width: 7.6rem;
+                            height: 7rem;
+                            top: 0.8em;
+                            left: 0.6em;
+                        }
+
+                    }
+
+                }
+
+                &-image {
+                    background-image: url('/wp-content/themes/twentytwenty-child/img/promo-bg3-big.jpg');
+                }
+
+            }
+
+            .exact-calculation-button {
+                left: 59%;
             }
 
         }
