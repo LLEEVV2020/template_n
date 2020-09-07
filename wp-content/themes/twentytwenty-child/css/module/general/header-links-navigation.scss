@@ -29,7 +29,8 @@
     }
     &__title-link{
         &:hover, &:focus{
-            color: #F26422;
+            color: #000;
+            text-decoration: underline;
         }
     }
 
@@ -55,7 +56,13 @@
             background-repeat: no-repeat;
             background-position: center;
         }
-
+        
+        &:hover, &:focus{
+            &{
+                border-bottom-color: #F26422;
+            }
+        }
+        
     }
 
     &__input,
