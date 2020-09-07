@@ -29,8 +29,10 @@
     }
     &__title-link{
         &:hover, &:focus{
-            color: #000;
-            text-decoration: underline;
+            @media (max-width: 959px) {
+                color: #000;
+                text-decoration: underline;
+            }
         }
     }
 
