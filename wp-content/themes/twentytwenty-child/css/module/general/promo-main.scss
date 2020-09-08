@@ -5,7 +5,8 @@
     &-main,
     &-plastic-windows,
     &-ready-windows,
-    &-panoramic-windows {
+    &-panoramic-windows,
+    &-front-doors {
         position: relative;
     }
 
@@ -13,6 +14,41 @@
     &-plastic-windows .free-check-out,
     &-plastic-windows .info-price {
         display: none;
+    }
+
+    &-content__text,
+    &-description {
+        text-align: center;
+    }
+
+    &-content {
+        &__text {
+            margin-bottom: 1.375em;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+            font-weight: 500;
+        }
+    }
+
+    &-description {
+        max-width: 33rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &-image {
+
+        &__quality-icon {
+            position: absolute;
+            bottom: -2em;
+            right: 3em;
+            z-index: 1;
+            width: 5.813em;
+            height: 5.063em;
+            background: url('/wp-content/themes/twentytwenty-child/img/sprite.png') -21.938em -5.313em;
+        }
+
     }
 
     &-plastic-windows {
@@ -265,16 +301,8 @@
 
         padding-bottom: 2em;
 
-        .promo-content__title,
-        .promo-content__text,
-        &__text {
+        .promo-content__title {
             text-align: center;
-        }
-
-        &__text {
-            max-width: 33rem;
-            margin-left: auto;
-            margin-right: auto;
         }
         
         .promo {
@@ -282,36 +310,70 @@
             &-image {
                 min-height: 20.1rem;
                 background-image: url('/wp-content/themes/twentytwenty-child/img/promo-bg5-small.jpg');
-
-                &__quality-icon {
-                    position: absolute;
-                    bottom: -2em;
-                    right: 3em;
-                    z-index: 1;
-                    width: 5.813em;
-	                height: 5.063em;
-                    background: url('/wp-content/themes/twentytwenty-child/img/sprite.png') -21.938em -5.313em;
-                }
             }
 
             &-content {
-
                 max-width: 37rem;
                 margin-left: auto;
                 margin-right: auto;
-
-                &__text {
-                    margin-bottom: 1.375em;
-                    font-family: 'Montserrat', sans-serif;
-                    font-size: 1.2rem;
-                }
-
             }
 
         }
 
         .exact-calculation-button {
             display: none;
+        }
+
+    }
+
+    &-front-doors {
+
+        padding-bottom: 1.500em;
+
+        .container {
+            width: calc(100% - 3rem);
+        }
+        
+        .promo {
+
+            &-image {
+                min-height: 20.3rem;
+                background-image: url('/wp-content/themes/twentytwenty-child/img/promo-bg6-small.jpg');
+            }
+
+            &-content {
+
+                &__title {
+                    max-width: 13em;
+                    text-align: center;
+                    color: #3A3A3A;
+                }
+
+                &__text {
+                    max-width: 28em;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: 1.875em;
+                }
+
+                &__span {
+                    display: block;
+                }
+
+            }
+
+            &-description {
+                max-width: 34rem;
+            }
+
+        }
+
+        .exact-calculation-button {
+            display: none;
+        }
+
+        .info-price {
+            margin-bottom: 2.375em;
         }
 
     }
@@ -555,7 +617,8 @@
         &-ready-windows .container,
         &-main .exact-calculation-button,
         &-ready-windows .exact-calculation-button,
-        &-panoramic-windows__box {
+        &-panoramic-windows__box,
+        &-front-doors__box {
             display: flex;
         }
 
@@ -894,15 +957,8 @@
             .promo {
 
                 &-image {
-
                     min-width: calc(55% + ((100vw - 100%) / 2));
                     min-height: 29rem;
-
-                    &__quality-icon {
-                        bottom: 4em;
-                        left: -5%;
-                    }
-
                 }
 
                 &-content {
@@ -913,8 +969,7 @@
                         max-width: 19em;
                     }
 
-                    &__title,
-                    &__text {
+                    &__title {
                         text-align: left;
                     }
 
@@ -926,46 +981,8 @@
                         }
                     }
 
-                    &__text {
-                        display: flex;
-                        align-items: center;
-                        max-width: 25em;
-                        margin-bottom: 1.938em;
-                        font-size: 1rem;
-                        position: relative;
-
-                        &:before,
-                        &:after {
-                            content: '';
-                        }
-
-                        &:before {
-                            display: inline-block;
-                            width: 4.9rem;
-                            height: 4.9rem;
-                            margin-right: 1.7em;
-                            background-color: $yellow;
-                            border-radius: 50%;
-                            flex-shrink: 0;
-                        }
-
-                        &:after {
-                            position: absolute;
-                            top: 1.2em;
-                            left: 0.9em;
-                            width: 3.2rem;
-                            height: 2.1rem;
-                            background: url('/wp-content/themes/twentytwenty-child/img/sprite.png') no-repeat -31.7em -15.8rem;
-                        }
-                    }
-
                 }
 
-            }
-
-            &__text {
-                max-width: 68.2rem;
-                font-size: 2rem;
             }
 
             .info-price {
@@ -979,6 +996,72 @@
 
         }
 
+        &-front-doors {
+
+            .container {
+                width: calc(100% - 4rem);
+            }
+
+            &__box {
+                margin-bottom: 3.438em;
+            }
+
+            .promo {
+
+                &-content {
+
+                    min-width: 40%;
+
+                    &__box,
+                    &__text {
+                        margin-left: 0;
+                    }
+
+                    &__title {
+                        text-align: left;
+                    }
+
+                    &__text {
+
+                        max-width: 31em;
+                        font-size: 0.8rem;
+                        line-height: 0.9rem;
+
+                        &:after {
+                            width: 2.9rem;
+                            height: 3rem;
+                            background-position: -19.1rem -48.4rem;
+                            top: 1.2em;
+                            left: 1.3em;
+                        }
+                    }
+
+                    &__span {
+                        display: inline;
+                    }
+                }
+
+                &-image {
+                    min-width: calc(60% + ((100vw - 100%) / 2));
+                }
+
+                &-description {
+                    max-width: 71rem;
+                }
+
+            }
+
+            .info-price {
+                margin-left: 0;
+            }
+
+            .exact-calculation-button {
+                display: flex;
+                bottom: 11.9em;
+            }
+
+        }
+
     }
 
     @media (min-width: 960px) {
@@ -987,7 +1070,8 @@
         &-plastic-windows,
         &-ready-windows,
         &-windows-repairs,
-        &-panoramic-windows {
+        &-panoramic-windows,
+        &-front-doors {
 
             .container {
                 width: calc(100% - 8rem);
@@ -1163,6 +1247,25 @@
                 }
 
             }
+
+        }
+
+        &-front-doors {
+
+            .exact-calculation-button {
+                left: 55%;
+            }
+
+            .promo {
+
+                &-image {
+                    &__quality-icon {
+                        left: -3%;
+                    }
+                }
+
+            }
+
 
         }
     }
@@ -1425,45 +1528,85 @@
 
                 &-image {
                     background-image: url('/wp-content/themes/twentytwenty-child/img/promo-bg5-big.jpg');
+                }
+
+                &-content {
+                    &__box {
+                        max-width: 32em;
+                    }
+                }
+
+            }
+
+        }
+
+        &-front-doors {
+
+            .promo {
+
+                &-image {
+                    min-width: calc(55% + ((100vw - 100%) / 2));
+                    background-image: url('/wp-content/themes/twentytwenty-child/img/promo-bg6-big.jpg');
 
                     &__quality-icon {
-                        width: 9.063em;
-                        height: 9.063em;
-                        bottom: 11em;
-                        left: 1%;
-                        background-position: -0.8rem -44rem;
+                        bottom: 7em;
                     }
                 }
 
                 &-content {
-
-                    &__box {
-                        max-width: 32em;
-                    }
+                    min-width: 45%;
 
                     &__text {
-                        max-width: 29em;
-                        font-size: 1.6rem;
 
-                        &:before {
-                            width: 11rem;
-                            height: 11rem;
-                        }
+                        font-size: 1.6rem;
+                        line-height: 1.8rem;
 
                         &:after {
-                            width: 7.6rem;
-                            height: 7rem;
-                            background-position: -27rem -9rem;
+                            top: 1.3em;
+                            left: 1.5em;
+                            width: 6.3rem;
+                            height: 6.6rem;
+                            background-position: -60.1rem -48.3rem;
                         }
+
+                    }
+                }
+
+                &-description {
+                    display: flex;
+                    align-items: center;
+                    max-width: 109rem;
+                    text-align: left;
+                    position: relative;
+
+                    &:before {
+                        content: '';
+                        display: inline-block;
+                        width: 15.8rem;
+                        height: 15.8rem;
+                        margin-right: 1.663em;
+                        background-color: $yellow;
+                        border-radius: 50%;
+                        flex-shrink: 0;
+                    }
+
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        top: 1.5em;
+                        left: 1.5em;
+                        width: 8.7rem;
+                        height: 8.5rem;
+                        background: url('/wp-content/themes/twentytwenty-child/img/sprite.png') -0.8rem -59.9rem;
                     }
 
                 }
 
             }
 
-            &__text {
-                max-width: 109.2rem;
-                font-size: 2.4rem;
+            .exact-calculation-button {
+                left: 60%;
+                bottom: 12.5em;
             }
 
         }
@@ -1496,6 +1639,56 @@
         z-index: 1;
     }
 
+    .promo {
+        &-description {
+            max-width: 68.2rem;
+            font-size: 2rem;
+        }
+
+        &-content {
+            &__text {
+                display: flex;
+                align-items: center;
+                max-width: 25em;
+                margin-bottom: 1.938em;
+                font-size: 1rem;
+                position: relative;
+                text-align: left;
+
+                &:before,
+                &:after {
+                    content: '';
+                }
+
+                &:before {
+                    display: inline-block;
+                    width: 4.9rem;
+                    height: 4.9rem;
+                    margin-right: 1.7em;
+                    background-color: $yellow;
+                    border-radius: 50%;
+                    flex-shrink: 0;
+                }
+
+                &:after {
+                    position: absolute;
+                    top: 1.2em;
+                    left: 0.9em;
+                    width: 3.2rem;
+                    height: 2.1rem;
+                    background: url('/wp-content/themes/twentytwenty-child/img/sprite.png') no-repeat -31.7em -15.8rem;
+                }
+            }
+        }
+
+        &-image {
+            &__quality-icon {
+                bottom: 4em;
+                left: -5%;
+            }
+        }
+    }
+
 }
 
 @media (min-width: 960px) {
@@ -1504,4 +1697,45 @@
         left: 65%;
     }
 
+}
+
+@media (min-width: 1200px) {
+
+    .promo {
+
+        &-content {
+            &__text {
+                max-width: 29em;
+                font-size: 1.6rem;
+
+                &:before {
+                    width: 11rem;
+                    height: 11rem;
+                }
+
+                &:after {
+                    width: 7.6rem;
+                    height: 7rem;
+                    background-position: -27rem -9rem;
+                }
+            }
+        }
+
+        &-image {
+            &__quality-icon {
+                width: 9.063em;
+                height: 9.063em;
+                bottom: 11em;
+                left: 1%;
+                background-position: -0.8rem -44rem;
+            }
+        }
+
+        &-description {
+            max-width: 109.2rem;
+            font-size: 2.4rem;
+        }
+
+    }
+    
 }
