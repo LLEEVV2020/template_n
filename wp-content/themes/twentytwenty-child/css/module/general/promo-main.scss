@@ -8,7 +8,8 @@
     &-panoramic-windows,
     &-front-doors,
     &-warm-aluminum,
-    &-windows-to-house {
+    &-windows-to-house,
+    &-veranda-glazing {
         position: relative;
     }
 
@@ -458,6 +459,56 @@
 
     }
 
+    &-veranda-glazing {
+
+        padding-bottom: 1.563em;
+
+        .promo {
+
+            &-image {
+                min-height: 12.688em;
+                background-image: url('/wp-content/themes/twentytwenty-child/img/promo-bg9-small.jpg');
+            }
+
+            &-content {
+
+                padding-bottom: 1em;
+
+                &__title {
+                    max-width: 12em;
+                    margin-bottom: 1.125em;
+                }
+
+                &__price {
+
+                    &-text {
+                        max-width: 14em;
+                        margin-left: auto;
+                        margin-right: auto;
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 1.175em;
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 1.563em;
+                        font-weight: 700;
+                        color: #333333;
+                    }
+
+                    &-color {
+                        margin-left: 0.2em;
+                        font-size: 3.125em;
+                        font-weight: 800;
+                        color: $orange;
+                    }
+                    
+                }
+
+            }
+
+        }
+
+    }
+
     &-image:after,
     &-content__list-icon:before {
         content: '';
@@ -698,7 +749,8 @@
         &-main .exact-calculation-button,
         &-ready-windows .exact-calculation-button,
         &-panoramic-windows__box,
-        &-front-doors__box {
+        &-front-doors__box,
+        &-veranda-glazing__box {
             display: flex;
         }
 
@@ -1262,6 +1314,88 @@
 
         }
 
+        &-veranda-glazing {
+            
+            .promo {
+
+                &-content {
+
+                    min-width: 45%;
+
+                    &:before {
+                        right: -89%;
+                        width: 90%;
+                        background: linear-gradient(53.16deg, #FFFFFF 22.02%, rgba(255, 255, 255, 0) 57.33%), linear-gradient(70.87deg, #FFFFFF 12.88%, rgba(255, 255, 255, 0) 85.99%);
+                    }
+
+                    &__box {
+                        max-width: 19em;
+                    }
+
+                    &__title,
+                    &__price-color {
+                        color: #3A3A3A;
+                    }
+
+                    &__price {
+
+                        &-text,
+                        &-color {
+                            font-weight: 600;
+                        }
+
+                        &-text {
+                            max-width: 8em;
+                            margin-left: 0;
+                            text-transform: uppercase;
+                            position: relative;
+
+                            &::before {
+                                content: '';
+                                width: 4.9rem;
+                                height: 4.9rem;
+                                margin-right: 0.4em;
+                                background-color: $yellow;
+                                border-radius: 50%;
+                            }
+
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                top: 0.4em;
+                                left: 0.4em;
+                                width: 3.1rem;
+                                height: 3rem;
+                                background-image: url('/wp-content/themes/twentytwenty-child/img/sprite.png');
+                                background-position: -38.5rem -456.9rem;
+                            }
+
+                        }
+
+                        &-color {
+                            font-size: 1.063em;
+                        }
+
+                    }
+
+                }
+
+                &-image {
+                    min-width: calc(55% + ((100vw - 100%) / 2));
+                }
+
+            }
+
+            .info-price {
+                margin-left: 0;
+            }
+
+            .exact-calculation-button {
+                bottom: 0.4em;
+            }
+
+        }
+
     }
 
     @media (min-width: 960px) {
@@ -1273,7 +1407,8 @@
         &-panoramic-windows,
         &-front-doors,
         &-warm-aluminum,
-        &-windows-to-house {
+        &-windows-to-house,
+        &-veranda-glazing {
 
             .container {
                 width: calc(100% - 8rem);
@@ -1503,6 +1638,23 @@
 
                     &__box {
                         max-width: 20em;
+                        margin-left: 0;
+                    }
+
+                }
+
+            }
+
+        }
+
+        &-veranda-glazing {
+
+            .promo {
+
+                &-content {
+
+                    &__box {
+                        max-width: 22em;
                         margin-left: 0;
                     }
 
@@ -1919,6 +2071,51 @@
 
                     background-image: url('/wp-content/themes/twentytwenty-child/img/promo-bg8-big.jpg');
 
+                }
+
+            }
+
+        }
+
+        &-veranda-glazing {
+
+            .promo {
+
+                &-content {
+
+                    min-width: 52%;
+
+                    &__box {
+                        max-width: 36em;
+                    }
+
+                    &__price-text {
+                        max-width: 9em;
+                        font-size: 3.125em;
+
+                        &:before {
+                            width: 11rem;
+                            height: 11rem;
+                        }
+
+                        &:after {
+                            left: 0.6em;
+                            width: 6rem;
+                            height: 6.3rem;
+                            background-position: -37.5rem -460.9rem;
+                        }
+                    }
+
+                }
+
+                &-image {
+                    min-width: calc(48% + ((100vw - 100%) / 2));
+                    background-image: url('/wp-content/themes/twentytwenty-child/img/promo-bg9-big.jpg');
+
+                    &__quality-icon {
+                        bottom: 10em;
+                        left: -2em;
+                    }
                 }
 
             }
