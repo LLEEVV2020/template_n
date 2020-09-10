@@ -12,7 +12,8 @@
     &-windows-to-house,
     &-veranda-glazing,
     &-windows-in-wooden-house,
-    &-wooden-windows .container {
+    &-wooden-windows .container,
+    &-glazing-balconies .container {
         position: relative;
     }
 
@@ -882,6 +883,80 @@
 
     }
 
+    &-glazing-balconies {
+
+        .promo {
+
+            &-image {
+
+                min-height: 12.688em;
+                background-image: url('/wp-content/themes/twentytwenty-child/img/promo-bg13-small.jpg');
+
+            }
+
+            &-content {
+                
+                &__title {
+                    margin-bottom: 1.188em;
+                    max-width: 11em;
+                    color: #3A3A3A;
+                }
+
+                &__warn {
+
+                    margin-bottom: 2.563em;
+                    max-width: 19em;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    &-price {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 0.375em;
+                    }
+
+                    &-word,
+                    &-text {
+                        font-weight: 700;
+                    }
+
+                    &-word,
+                    &-text,
+                    &-big {
+                        font-family: 'Montserrat', sans-serif;
+                    }
+                    
+                    &-word {
+                        margin-right: 0.688em;
+                        font-size: 1.563em;
+                        color: #333333;
+                    }
+
+                    &-big {
+                        font-size: 3.125em;
+                        font-weight: 800;
+                    }
+
+                    &-text {
+                        font-size: 0.625em;
+                    }
+
+                }
+
+            }
+
+        }
+
+        .info-price {
+            margin-bottom: 2.188em;
+        }
+
+        .exact-calculation-button {
+            display: none;
+        }
+
+    }
+
     @media (min-width: 768px) {
 
         &-main .container,
@@ -894,7 +969,8 @@
         &-veranda-glazing__box,
         &-windows-in-wooden-house__box,
         &-wooden-windows__box,
-        &-stocks__box {
+        &-stocks__box,
+        &-glazing-balconies__box {
             display: flex;
         }
 
@@ -1617,6 +1693,77 @@
 
         }
 
+        &-glazing-balconies {
+
+            .promo-content__warn,
+            .info-price {
+                margin-left: 0;
+            }
+
+            .promo {
+
+                &-content {
+
+                    &__title {
+
+                        max-width: 8em;
+
+                        &:after {
+                            content: ' ЗА';
+                        }
+
+                    }
+
+                    &__warn {
+
+                        margin-bottom: 1.563em;
+                        padding-left: 4em;
+                        position: relative;
+
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            left: 0;
+                            width: 3.063em;
+                            height: 3.063em;
+                            background-color: $yellow;
+                            background-image: url('/wp-content/themes/twentytwenty-child/img/sprite.png');
+                            background-repeat: no-repeat;
+                            background-position: -23.425em -28.525em;
+                            border-radius: 50%;
+                        }
+
+                        &-price {
+                            margin-bottom: 0;
+                        }
+
+                        &-word {
+                            display: none;
+                        }
+
+                        &-big {
+                            font-size: 1.875em;
+                            font-weight: 700;
+                        }
+
+                        &-text {
+                            font-size: 0.375em;
+                        }
+
+                    }
+
+                }
+
+            }
+
+            .exact-calculation-button {
+                display: flex;
+            }
+
+        }
+
     }
 
     @media (min-width: 960px) {
@@ -1631,7 +1778,8 @@
         &-windows-to-house,
         &-veranda-glazing,
         &-windows-in-wooden-house,
-        &-stocks {
+        &-stocks,
+        &-glazing-balconies {
 
             .container {
                 width: calc(100% - 8rem);
@@ -2462,6 +2610,32 @@
 
             &__subtitle {
                 font-size: 3.8rem;
+            }
+
+        }
+
+        &-glazing-balconies {
+
+            .promo {
+
+                &-content {
+
+                    &__warn {
+                        font-size: 3.4rem;
+
+                        &:before {
+                            background-position: -34.5rem -49.3rem
+                        }
+                    }
+
+                }
+
+                &-image {
+                    
+                    background-image: url('/wp-content/themes/twentytwenty-child/img/promo-bg13-big.jpg');
+
+                }
+
             }
 
         }
