@@ -11,7 +11,8 @@
     &-warm-aluminum,
     &-windows-to-house,
     &-veranda-glazing,
-    &-windows-in-wooden-house {
+    &-windows-in-wooden-house,
+    &-wooden-windows .container {
         position: relative;
     }
 
@@ -780,8 +781,6 @@
 
     &-wooden-windows {
 
-        padding-bottom: 2em;
-
         .promo {
 
             &-image {
@@ -814,51 +813,39 @@
         }
 
         &__list {
+            max-width: 18em;
             margin-bottom: 2.188em;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         &__item {
-            display: flex;
             margin-bottom: 1.063em;
         }
 
-        &__icon {
-            display: block;
-            position: relative;
-            width: 1.125em;
-            height: 1.125em;
-            margin-right: 0.688em;
-            background-color: $yellow;
-            border-radius: 50%;
-
-            &:before,
-            &:after {
-                content: '';
-                position: absolute;
-                left: 0;
-                transform: translateX(0.625em) rotate(-45deg);
-                transform-origin: left bottom;
-                background-color: $black;
-            }
-
-            &:before {
-                top: 50%;
-                width: 0.188em;
-                height: 50%;
-                transform-origin: left bottom;
-            }
-
-            &:after {
-                bottom: 0;
-                width: 100%;
-                height: 0.188em;
-            }
-        }
-
         &__text {
+            display: flex;
+            align-items: flex-end;
             font-family: 'Montserrat';
             font-weight: 700;
             color: #333333;
+
+            &:before {
+                content: '';
+                display: inline-block;
+                width: 1.125em;
+                height: 1.125em;
+                margin-right: 0.688em;
+                background-color: $yellow;
+                border-radius: 50%;
+                background-image: url("data:image/svg+xml,%0A%3Csvg width='8' height='7' viewBox='0 0 8 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.10865 6.20203L0.732085 3.75051C0.589305 3.60323 0.589305 3.36442 0.732085 3.21713L1.24914 2.68374C1.39192 2.53645 1.62344 2.53645 1.76622 2.68374L3.36719 4.33519L6.79628 0.797962C6.93906 0.650679 7.17058 0.650679 7.31336 0.797962L7.83042 1.33134C7.9732 1.47863 7.9732 1.71743 7.83042 1.86473L3.62572 6.20204C3.48293 6.34932 3.25143 6.34932 3.10865 6.20203V6.20203Z' fill='black'/%3E%3C/svg%3E%0A");
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+
+        .exact-calculation-button {
+            display: none;
         }
 
     }
@@ -873,7 +860,8 @@
         &-panoramic-windows__box,
         &-front-doors__box,
         &-veranda-glazing__box,
-        &-windows-in-wooden-house__box {
+        &-windows-in-wooden-house__box,
+        &-wooden-windows__box {
             display: flex;
         }
 
@@ -1509,6 +1497,65 @@
 
                 }
 
+            }
+
+        }
+
+        &-wooden-windows {
+
+            .promo {
+
+                &-content {
+                    padding-top: 2em;
+
+                    &__title {
+
+                        max-width: 8em;
+
+                        &-box {
+                            display: flex;
+                            align-items: center;
+                        }
+
+                    }
+
+                    &__subtitle {
+                        margin-top: 0;
+                        margin-left: 1em;
+                        font-size: 1.1rem;
+                        line-height: 1.2;
+                    }
+                }
+
+                &-image {
+
+                    &__quality-icon {
+                        display: none;
+                    }
+                }
+
+            }
+
+            &__text {
+
+                &:before {
+                    background-image: url("data:image/svg+xml,%0A%3Csvg width='4' height='4' viewBox='0 0 4 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.60384 3.2009L0.547593 2.11134C0.484136 2.04588 0.484136 1.93974 0.547593 1.87428L0.777398 1.63722C0.840855 1.57175 0.943751 1.57175 1.00721 1.63722L1.71875 2.3712L3.24279 0.799094C3.30625 0.733635 3.40914 0.733635 3.4726 0.799094L3.70241 1.03615C3.76586 1.10161 3.76586 1.20775 3.70241 1.27321L1.83366 3.20091C1.77019 3.26637 1.6673 3.26637 1.60384 3.2009V3.2009Z' fill='black'/%3E%3C/svg%3E%0A");
+                }
+
+            }
+
+            &__list,
+            .info-price {
+                margin-left: 0;
+            }
+
+            &__list {
+                margin-bottom: 0;
+                font-size: 0.8rem;
+            }
+
+            .exact-calculation-button {
+                display: flex;
             }
 
         }
@@ -2270,6 +2317,48 @@
 
                 }
 
+            }
+
+        }
+
+        &-wooden-windows {
+
+            .promo {
+
+                &-image {
+                    background-image: url('/wp-content/themes/twentytwenty-child/img/promo-bg11-big.jpg');
+                }
+
+                &-content {
+
+                    padding-top: 3.5em;
+                    padding-bottom: 3.5em;
+
+                    &__subtitle {
+                        font-size: 1.8rem;
+                    }
+
+                }
+
+            }
+
+            &__list {
+                display: flex;
+                max-width: 37em;
+                margin-bottom: 3.188em;
+                font-size: 1.4rem;
+            }
+            
+
+            &__text {
+                align-items: flex-start;
+
+                &:before {
+                    width: 1.500em;
+                    height: 1.500em;
+                    flex-shrink: 0;
+                    background-image: url("data:image/svg+xml,%0A%3Csvg width='11' height='8' viewBox='0 0 11 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.81153 7.6027L0.64278 4.33401C0.452407 4.13763 0.452407 3.81923 0.64278 3.62283L1.33219 2.91166C1.52257 2.71526 1.83125 2.71526 2.02163 2.91166L4.15625 5.11359L8.72838 0.397283C8.91875 0.200906 9.22743 0.200906 9.41781 0.397283L10.1072 1.10846C10.2976 1.30484 10.2976 1.62324 10.1072 1.81963L4.50097 7.60272C4.31057 7.7991 4.00191 7.7991 3.81153 7.6027V7.6027Z' fill='black'/%3E%3C/svg%3E%0A");
+                }
             }
 
         }
