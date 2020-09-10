@@ -242,6 +242,7 @@
                 color: white;
                 border-top-left-radius: 0.313em;
                 border-top-right-radius: 0.313em;
+                white-space: nowrap;
             }
 
             &-two {
@@ -1942,7 +1943,7 @@
 
                 &-image {
 
-                    background: url("/wp-content/themes/twentytwenty-child/img/promo-bg2-big.jpg") no-repeat;
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/promo-bg2-big.jpg");
 
                     &__brands {
                         left: 8%;
@@ -2299,9 +2300,10 @@
 
     .exact-calculation-button {
         position: absolute;
-        bottom: -7%;
+        bottom: 0;
         left: 60%;
         z-index: 1;
+        transform: translateY(50%);
     }
 
     .promo {
