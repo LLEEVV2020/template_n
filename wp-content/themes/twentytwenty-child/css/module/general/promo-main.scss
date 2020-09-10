@@ -848,6 +848,40 @@
 
     }
 
+    &-stocks {
+
+        .promo {
+
+            &-image {
+
+                min-height: 12.688em;
+                background-image: url('/wp-content/themes/twentytwenty-child/img/promo-bg12-small.jpg');
+                background-position-x: -10em;
+
+            }
+
+            &-content {
+
+                &__title {
+                    max-width: 11em;
+                    margin-bottom: 1.375em;
+                    color: #3A3A3A;
+                }
+
+            }
+
+        }
+
+        &__subtitle {
+            max-width: 14em;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.23rem;
+        }
+
+    }
+
     @media (min-width: 768px) {
 
         &-main .container,
@@ -859,7 +893,8 @@
         &-front-doors__box,
         &-veranda-glazing__box,
         &-windows-in-wooden-house__box,
-        &-wooden-windows__box {
+        &-wooden-windows__box,
+        &-stocks__box {
             display: flex;
         }
 
@@ -1361,7 +1396,6 @@
                     &:before {
                         right: -90%;
                         width: 90%;
-                        //background: linear-gradient(53.16deg, #FFFFFF 22.02%, rgba(255, 255, 255, 0) 57.33%), linear-gradient(70.87deg, #FFFFFF 12.88%, rgba(255, 255, 255, 0) 85.99%);
                         background: linear-gradient(73.16deg, #FFFFFF 22.02%, rgba(255, 255, 255, 0) 57.33%), linear-gradient(82.87deg, #FFFFFF 12.88%, rgba(255, 255, 255, 0) 85.99%);
                     }
 
@@ -1555,6 +1589,34 @@
 
         }
 
+        &-stocks {
+
+            .promo {
+
+                &-content {
+                    min-width: 50%;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    padding-top: 3em;
+                    padding-bottom: 3em;
+                }
+
+                &-image {
+                    min-width: calc(50% + ((100vw - 100%) / 2));
+                    min-height: 18.188em;
+                    background-position-x: -18em;
+                }
+
+            }
+
+            &__subtitle {
+                margin-left: 0;
+                font-size: 1.98rem;
+            }
+
+        }
+
     }
 
     @media (min-width: 960px) {
@@ -1568,7 +1630,8 @@
         &-warm-aluminum,
         &-windows-to-house,
         &-veranda-glazing,
-        &-windows-in-wooden-house {
+        &-windows-in-wooden-house,
+        &-stocks {
 
             .container {
                 width: calc(100% - 8rem);
@@ -1840,6 +1903,18 @@
 
             .info-price {
                 margin-left: 0;
+            }
+
+        }
+
+        &-stocks {
+
+            .promo {
+
+                &-image {
+                    background-position-x: -10em;
+                }
+
             }
 
         }
@@ -2354,6 +2429,39 @@
                     flex-shrink: 0;
                     background-image: url("data:image/svg+xml,%0A%3Csvg width='11' height='8' viewBox='0 0 11 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.81153 7.6027L0.64278 4.33401C0.452407 4.13763 0.452407 3.81923 0.64278 3.62283L1.33219 2.91166C1.52257 2.71526 1.83125 2.71526 2.02163 2.91166L4.15625 5.11359L8.72838 0.397283C8.91875 0.200906 9.22743 0.200906 9.41781 0.397283L10.1072 1.10846C10.2976 1.30484 10.2976 1.62324 10.1072 1.81963L4.50097 7.60272C4.31057 7.7991 4.00191 7.7991 3.81153 7.6027V7.6027Z' fill='black'/%3E%3C/svg%3E%0A");
                 }
+            }
+
+        }
+
+        &-stocks {
+
+            .promo {
+
+                &-image {
+
+                    min-height: 42.588em;
+                    background-image: url('/wp-content/themes/twentytwenty-child/img/promo-bg12-big.jpg');
+                    background-position-x: -32em;
+
+                }
+
+                &-content {
+
+                    padding-top: 7em;
+                    padding-bottom: 7em;
+
+                    &__title {
+                        margin-bottom: 0.775em;
+                        line-height: 1.2;
+                    }
+
+
+                }
+
+            }
+
+            &__subtitle {
+                font-size: 3.8rem;
             }
 
         }
