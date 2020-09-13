@@ -1,0 +1,38 @@
+.factory-windows {
+
+    display: none;
+
+    @media (min-width: 1200px) {
+
+        display: block;
+
+        .container {
+            width: calc(100% - 8rem);
+        }
+
+        .title {
+            margin-bottom: 0.863em;
+            text-transform: uppercase;
+        }
+
+        &__box {
+            max-width: 80em;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__left {
+            max-width: 47em;
+        }
+
+        &__text {
+            font-size: 2rem;
+
+            &:first-child {
+                margin-bottom: 0.938em;
+            }
+        }
+
+    }
+
+}
