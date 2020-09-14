@@ -139,3 +139,15 @@ h3 {
 .nowrap{
     white-space: nowrap;
 }
+
+// Текст
+.text {
+    margin-bottom: 1.563em;
+    text-align: center;
+
+    @media (min-width: 768px) {
+        margin-bottom: 0.813em;
+        font-size: 2rem;
+        text-align: left;
+    }
+}

@@ -6,20 +6,10 @@
         margin-bottom: 1.263em;
     }
 
-    .text,
-    &__title {
-        text-align: center;
-    }
-
-    .text {
-        margin-bottom: 1.563em;
-    }
-
-    
-
     &__title {
         margin-bottom: 0.938em;
         font-weight: 900;
+        text-align: center;
     }
 
     &__image {
@@ -48,52 +38,44 @@
             grid-area: h2_title;
             margin-bottom: 1em;
         }
+
         &__text-1{
             grid-area: text_1;
         }
+
         &__text-2{
             grid-area: text_2;
         }
+
         &__title{
             grid-area: h3_title;
             margin-bottom: .45em;
-        }
-        &__image-box{
-            grid-area: img_1;
-        }
-        &__image-worker{
-            grid-area: img_worker;
-        }
-
-        
-        .text {
-            margin-bottom: 0.813em;
-        }
-        
-
-        .text,
-        &__title {
             font-size: 2rem;
             text-align: left;
         }
 
-        
+        &__image-box{
+            grid-area: img_1;
+        }
+
+        &__image-worker{
+            grid-area: img_worker;
+        }
 
         .nowrap {
             white-space: normal;
         }
         
-
     }
 
     @media (min-width: 960px) {
-
         .container {
             width: calc(100% - 8rem);
         }
     }
 
     @media (min-width: 1050px) {
+
         .container {
             grid-template-areas: 
                 "h2_title img_1 h3_title"
@@ -103,21 +85,24 @@
             grid-template-columns: 5fr 26.4rem 3fr;
             grid-template-rows: auto auto 1fr;
         }
+
         .title,
         &__title {
             font-size: 2.4rem;
         }
+
         &__title{
             margin-bottom: .65em;
         }
         
-
         .title {
             text-align: left;
         }
 
     }
+
     @media (min-width: 1200px) {
+
         .container {
             grid-template-areas: 
                 "img_worker h2_title img_1 h3_title"
@@ -126,15 +111,18 @@
             column-gap: .8em;
             grid-template-columns: 19.1rem 7fr 26.4rem 5fr;
         }
+
         &__image {
             &-worker {
                 display: block;
                 align-self: self-end;
             }
         }
+
         .text{
             margin-bottom: 0;
         }
+
     }
 
 }
