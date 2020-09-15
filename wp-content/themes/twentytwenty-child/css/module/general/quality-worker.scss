@@ -1,0 +1,276 @@
+@import '../../base/all/var';
+
+.quality-worker {
+
+    background: url('/wp-content/themes/twentytwenty-child/img/quality-worker-bg-middle.png') no-repeat;
+    background-size: cover;
+
+    .title {
+        margin-bottom: 1.2em;
+    }
+
+    .text {
+        text-align: left;
+    }
+
+    &__rating,
+    &__content,
+    &__images {
+        display: flex;
+    }
+
+    &__rating,
+    &__content {
+        align-items: center;
+    }
+
+    &__rating,
+    &__images {
+        max-width: 22em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__rating {
+        justify-content: space-between;
+        margin-bottom: 2.188em;
+
+        &-item {
+            display: inline-block;
+        }
+
+        &-icon {
+            display: block;
+            width: 1.750em;
+            height: 1.625em;
+            background-image: url("data:image/svg+xml,%0A%3Csvg width='28' height='26' viewBox='0 0 28 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.0489 0.927047C13.3483 0.00573683 14.6517 0.00573993 14.9511 0.927051L17.3677 8.36475C17.5016 8.77677 17.8855 9.05573 18.3188 9.05573H26.1392C27.1079 9.05573 27.5107 10.2953 26.727 10.8647L20.4001 15.4615C20.0496 15.7161 19.903 16.1675 20.0369 16.5795L22.4535 24.0172C22.7529 24.9385 21.6984 25.7047 20.9147 25.1353L14.5878 20.5385C14.2373 20.2839 13.7627 20.2839 13.4122 20.5385L7.08533 25.1353C6.30162 25.7047 5.24714 24.9385 5.54649 24.0172L7.96315 16.5795C8.09702 16.1675 7.95036 15.7161 7.59987 15.4615L1.27299 10.8647C0.489277 10.2953 0.892056 9.05573 1.86078 9.05573H9.68123C10.1145 9.05573 10.4984 8.77677 10.6323 8.36475L13.0489 0.927047Z' fill='%23FFE600'/%3E%3C/svg%3E%0A");
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__icon {
+        display: inline-block;
+        margin-right: 0.625em;
+        width: 2.625em;
+        height: 1.813em;
+        background: url('/wp-content/themes/twentytwenty-child/img/sprite.png') -57.438em -36.188em no-repeat;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $black;
+        font-size: 1.125em;
+        font-weight: 900;
+        border-bottom: 0.063em solid $black;
+    }
+
+    &__text {
+        margin-bottom: 1.2em;
+        font-size: 1.250em;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    &__item {
+        position: relative;
+
+        &:not(:last-child) {
+            margin-right: 0.5em;
+        }
+
+        &:first-child,
+        &:last-child {
+            .logo-factory-windows {
+                top: 2.5em;
+                right: 1.9em;
+                transform: rotate(12deg);
+            }
+        }
+
+        &:nth-child(2) {
+            .logo-factory-windows {
+                top: 3.2em;
+                right: 2.8em;
+                transform: rotate(-4deg);
+            }
+        }
+
+    }
+
+    .logo-factory-windows {
+        position: absolute;
+        max-width: 2.5em;
+
+        &__box {
+            margin-bottom: 0;
+        }
+
+        &__image {
+            width: 0.5em;
+            height: 0.638em;
+            background-image: url("data:image/svg+xml, %3Csvg width='7' height='9' viewBox='0 0 29 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='16.2188' y1='8.93462' x2='0.995939' y2='8.93462' stroke='%23969593' stroke-width='3.5'/%3E%3Cline x1='2.74609' y1='7.67828' x2='2.74609' y2='25.4489' stroke='%23969593' stroke-width='3.5'/%3E%3Cline x1='20.1484' y1='25.2243' x2='0.997156' y2='25.2243' stroke='%23969593' stroke-width='3.5'/%3E%3Cline x1='18.9492' y1='21.0062' x2='18.9492' y2='26.9298' stroke='%23969593' stroke-width='3.5'/%3E%3Cline x1='10.5391' y1='6.19736' x2='10.5391' y2='0.767436' stroke='%23F26422' stroke-width='3.5'/%3E%3Cline x1='8.85156' y1='2.47289' x2='28.4939' y2='2.47289' stroke='%23F26422' stroke-width='3.5'/%3E%3Cline x1='26.8047' y1='0.767464' x2='26.8047' y2='20.019' stroke='%23F26422' stroke-width='3.5'/%3E%3Cline x1='9.34375' y1='18.269' x2='28.004' y2='18.269' stroke='%23F26422' stroke-width='3.5'/%3E%3Cline x1='10.6016' y1='11.6273' x2='10.6016' y2='20.019' stroke='%23F26422' stroke-width='3.5'/%3E%3Cline x1='18.9492' y1='1.26113' x2='18.9492' y2='20.019' stroke='%23F26422' stroke-width='3.5'/%3E%3C/svg%3E%0A");
+        }
+
+        &__text {
+            &-small {
+                font-size: 2.7px;
+            }
+
+            &-big {
+                font-size: 5.8px;
+            }
+        }
+
+        &__title {
+            font-size: 2.1px;
+        }
+    }
+
+    @media (min-width: 768px) {
+
+        .container {
+            width: calc(100% - 8rem);
+        }
+
+        .title {
+            max-width: 13em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .text {
+            max-width: 33em;
+            margin-bottom: 1.563em;
+        }
+
+        &__rating-list,
+        &__icon {
+            transform: translateY(0.3em);
+        }
+
+        &__rating {
+            margin-left: 0;
+            max-width: 18em;
+            margin-bottom: 1.688em;
+
+            &-icon {
+                width: 1.15em;
+                height: 1.125em;
+                background-image: url("data:image/svg+xml,%0A%3Csvg width='17' height='16' viewBox='0 0 17 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.44895 0.92705C7.7483 0.00573969 9.05171 0.00573993 9.35106 0.927051L10.5104 4.49524C10.6443 4.90727 11.0283 5.18623 11.4615 5.18623L15.2133 5.18623C16.182 5.18623 16.5848 6.42584 15.8011 6.99524L12.7658 9.20051C12.4153 9.45515 12.2687 9.90652 12.4025 10.3185L13.5619 13.8867C13.8613 14.808 12.8068 15.5742 12.0231 15.0048L8.98779 12.7995C8.6373 12.5449 8.16271 12.5449 7.81222 12.7995L4.77693 15.0048C3.99322 15.5742 2.93874 14.808 3.23809 13.8867L4.39747 10.3185C4.53134 9.90652 4.38468 9.45515 4.0342 9.20051L0.99891 6.99524C0.215197 6.42584 0.617972 5.18623 1.5867 5.18623L5.33852 5.18623C5.77174 5.18623 6.1557 4.90727 6.28957 4.49524L7.44895 0.92705Z' fill='%23FFE600'/%3E%3C/svg%3E%0A");
+            }
+        }
+
+        &__icon {
+            width: 1.5em;
+            height: 1.3em;
+            background-position: -61.125em -35.988em;
+        }
+
+        &__link {
+            font-size: 1.250em;
+        }
+
+        &__images {
+            max-width: 46em;
+        }
+
+        &__item {
+            &:not(:last-child) {
+                margin-right: 1.5em;
+            }
+
+            &:first-child,
+            &:nth-child(3) {
+                .logo-factory-windows {
+                    max-width: 13.5em;
+                    top: 4.7em;
+                    right: 3.2em;
+                }
+            }
+
+            &:nth-child(2) {
+                .logo-factory-windows {
+                    top: 5.6em;
+                    right: 5em;
+                }
+            }
+        }
+
+        .logo-factory-windows {
+            max-width: 3.9em;
+
+            &__image {
+                width: 1.1em;
+                height: 1.138em;
+                background-image: url("data:image/svg+xml, %3Csvg width='15' height='20' viewBox='0 0 29 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='16.2188' y1='8.93462' x2='0.995939' y2='8.93462' stroke='%23969593' stroke-width='3.5'/%3E%3Cline x1='2.74609' y1='7.67828' x2='2.74609' y2='25.4489' stroke='%23969593' stroke-width='3.5'/%3E%3Cline x1='20.1484' y1='25.2243' x2='0.997156' y2='25.2243' stroke='%23969593' stroke-width='3.5'/%3E%3Cline x1='18.9492' y1='21.0062' x2='18.9492' y2='26.9298' stroke='%23969593' stroke-width='3.5'/%3E%3Cline x1='10.5391' y1='6.19736' x2='10.5391' y2='0.767436' stroke='%23F26422' stroke-width='3.5'/%3E%3Cline x1='8.85156' y1='2.47289' x2='28.4939' y2='2.47289' stroke='%23F26422' stroke-width='3.5'/%3E%3Cline x1='26.8047' y1='0.767464' x2='26.8047' y2='20.019' stroke='%23F26422' stroke-width='3.5'/%3E%3Cline x1='9.34375' y1='18.269' x2='28.004' y2='18.269' stroke='%23F26422' stroke-width='3.5'/%3E%3Cline x1='10.6016' y1='11.6273' x2='10.6016' y2='20.019' stroke='%23F26422' stroke-width='3.5'/%3E%3Cline x1='18.9492' y1='1.26113' x2='18.9492' y2='20.019' stroke='%23F26422' stroke-width='3.5'/%3E%3C/svg%3E%0A");
+            }
+
+            &__text {
+                &-small {
+                    font-size: 5.8px;
+                }
+
+                &-big {
+                    font-size: 11.4px;
+                }
+            }
+
+            &__title {
+                font-size: 4.5px;
+            }
+
+        }
+
+    }
+
+    @media (min-width: 1200px) {
+
+        background: url("/wp-content/themes/twentytwenty-child/img/quality-worker-bg-big-left.png") no-repeat left center / 40%,
+                    url("/wp-content/themes/twentytwenty-child/img/quality-worker-bg-big-right.png") no-repeat right center / 40%;
+
+        .title {
+            max-width: none;
+        }
+
+        .text {
+            max-width: 20.9em;
+            margin-bottom: 3.563em;
+        }
+
+        &__box {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__rating {
+            max-width: 23em;
+            margin-bottom: 0;
+
+            &-icon {
+                width: 1.55em;
+                height: 1.525em;
+                background-image: url("data:image/svg+xml,%0A%3Csvg width='24' height='23' viewBox='0 0 24 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.0489 1.24883C11.3483 0.327516 12.6517 0.327517 12.9511 1.24883L14.9187 7.30456C15.0526 7.71658 15.4365 7.99554 15.8697 7.99554H22.2371C23.2058 7.99554 23.6086 9.23515 22.8249 9.80456L17.6736 13.5472C17.3231 13.8018 17.1764 14.2532 17.3103 14.6652L19.2779 20.721C19.5773 21.6423 18.5228 22.4084 17.7391 21.839L12.5878 18.0964C12.2373 17.8417 11.7627 17.8417 11.4122 18.0964L6.2609 21.839C5.47719 22.4084 4.42271 21.6423 4.72206 20.721L6.68969 14.6652C6.82356 14.2532 6.6769 13.8018 6.32642 13.5472L1.17511 9.80455C0.391392 9.23515 0.794168 7.99554 1.76289 7.99554H8.13026C8.56349 7.99554 8.94744 7.71658 9.08132 7.30456L11.0489 1.24883Z' fill='%23FFE600'/%3E%3C/svg%3E%0A");
+            }
+        }
+
+        &__icon {
+            width: 2.7em;
+            height: 1.8em;
+            background-position: -57.438em -36.188em;
+        }
+
+        &__link,
+        &__text {
+            font-size: 1.5em;
+        }
+
+    }
+
+    @media (min-width: 1400px) {
+        
+        background: url("/wp-content/themes/twentytwenty-child/img/quality-worker-bg-big-left.png") no-repeat left center / 30%,
+                    url("/wp-content/themes/twentytwenty-child/img/quality-worker-bg-big-right.png") no-repeat right center / 30%;
+
+    }
+
+}
