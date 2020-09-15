@@ -29,6 +29,15 @@
 
     .form-contacts {
         margin-bottom: 1.563em;
+
+        &__input {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            padding-left: 0;
+            padding-right: 0;
+            text-align: center;
+            border-bottom: 0.3em solid #C9C9C9;
+        }
     }
 
     &__link {
@@ -57,31 +66,14 @@
             flex-basis: 40%;
         }
 
-        &__logo {
-            max-width: 8em;
+        .logo-factory-windows {
             position: absolute;
             top: 2.7em;
-            left: 4em;
-            padding: 0.2em 0.5em 0.2em 1.1em;
-            text-decoration: none;
-            border: 0.2em solid $yellow;
-            border-top-left-radius: 1.138em;
-            border-bottom-right-radius: 1.138em;
-            background-color: $white;
-            transform: skewX(-5deg);
-            line-height: 0.8em;
+            left: 5.3em;
         }
 
         &__right {
             flex-basis: 60%;
-        }
-
-        &__text-logo {
-            color: $black;
-            text-transform: uppercase;
-            font-size: 0.750em;
-            letter-spacing: 0.03em;
-            font-weight: 900;
         }
 
         &__title,
@@ -107,6 +99,11 @@
 
         .form-contacts {
             margin-left: 0;
+
+            &__input {
+                padding-left: 1em;
+                padding-right: 1em;
+            }
         }
 
         &__info {
@@ -125,10 +122,27 @@
             max-width: 90rem;
         }
 
-        &__logo {
+        .logo-factory-windows {
             top: 3em;
-            left: 5em;
+            left: 6.3em;
             font-size: 2rem;
+
+            &__image {
+                width: 2em;
+                height: 1.938em;
+                margin-right: 0.3em;
+                background-image: url("data:image/svg+xml,%0A%3Csvg width='40' height='39' viewBox='0 0 40 39' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='21.5898' y1='12.4534' x2='0.000545502' y2='12.4534' stroke='%23969593' stroke-width='5'/%3E%3Cline x1='2.5' y1='10.6545' x2='2.5' y2='35.8964' stroke='%23969593' stroke-width='5'/%3E%3Cline x1='27.1602' y1='35.5918' x2='-0.000574112' y2='35.5918' stroke='%23969593' stroke-width='5'/%3E%3Cline x1='25.4805' y1='29.5859' x2='25.4805' y2='37.9999' stroke='%23969593' stroke-width='5'/%3E%3Cline x1='13.5195' y1='8.55127' x2='13.5195' y2='0.838474' stroke='%23F26422' stroke-width='5'/%3E%3Cline x1='11.1445' y1='3.24658' x2='39.0017' y2='3.24658' stroke='%23F26422' stroke-width='5'/%3E%3Cline x1='36.625' y1='0.838379' x2='36.625' y2='28.1837' stroke='%23F26422' stroke-width='5'/%3E%3Cline x1='11.8398' y1='25.6838' x2='38.3041' y2='25.6838' stroke='%23F26422' stroke-width='5'/%3E%3Cline x1='13.6445' y1='16.2639' x2='13.6445' y2='28.1837' stroke='%23F26422' stroke-width='5'/%3E%3Cline x1='25.4844' y1='1.53955' x2='25.4844' y2='28.1838' stroke='%23F26422' stroke-width='5'/%3E%3C/svg%3E%0A");
+            }
+
+            &__text {
+                &-small {
+                    margin-bottom: 0.4em;
+                }
+            }
+
+            &__title {
+                font-size: 0.457em;
+            }
         }
 
         &__right {
@@ -143,6 +157,10 @@
                 &::after {
                     transform: translateY(-54%);
                 }
+            }
+
+            &__input {
+                border-bottom-width: 0.2em;
             }
 
             &__button {
@@ -181,8 +199,29 @@
             transform: translateY(-1.3em);
         }
 
-        &__logo {
-            top: 2em;
+        .logo-factory-windows {
+            top: 1.8em;
+            left: 5.3em;
+
+            &__text {
+                &-small {
+                    margin-bottom: 0;
+                    font-size: 0.65em;
+                }
+
+                &-big {
+                    font-size: 1.430em;
+                }
+            }
+
+            &__box {
+                margin-bottom: 0;
+            }
+
+            &__title {
+                font-size: 0.530em;
+            }
+
         }
 
         &__right {

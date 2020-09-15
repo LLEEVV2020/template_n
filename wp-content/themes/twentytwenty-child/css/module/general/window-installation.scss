@@ -80,6 +80,13 @@
             z-index: 2;
             height: 100%;
         }
+
+        &-tape {
+            &__text {
+                padding-left: 0.6em;
+                padding-right: 0.7em;
+            }
+        }
         
     }
     
