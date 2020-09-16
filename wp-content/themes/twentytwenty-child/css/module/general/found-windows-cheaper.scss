@@ -1,7 +1,7 @@
 @import '../../base/all/var';
 
 .found-windows-cheaper {
-
+    position: relative;
     background: linear-gradient(90deg, #FFFFFF 55.27%, #F8EA47 91.38%, #F8EA48 105.17%);
 
     &__image {
