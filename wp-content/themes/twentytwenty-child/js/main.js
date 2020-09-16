@@ -10,6 +10,21 @@ $(document).ready(function(){
         dotsClass: ['advantages-windows__nav-dots'],
         dotClass: ['advantages-windows__nav-dot']
     });
+
+    $('.left-balcony-slider').owlCarousel({
+        items: 1,
+        merge: true,
+        margin: 10,
+        video: true,
+        lazyLoad: true,
+        nav: true,
+        dots: true,
+        navContainerClass: ['left-balcony-slider__nav'],
+        navClass: ['left-balcony-slider__left', 'left-balcony-slider__right'],
+        dotsClass: ['left-balcony-slider__dots'],
+        dotClass: ['left-balcony-slider__dot'],
+        navText: ['']
+      });
     
 });
 
