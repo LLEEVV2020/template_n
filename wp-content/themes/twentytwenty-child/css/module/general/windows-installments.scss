@@ -107,6 +107,17 @@
         width: 100%;
     }
 
+    @media (min-width: 450px) {
+
+        
+        &__right {
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
     @media (min-width: 768px) {
 
         padding-bottom: 0;
@@ -153,8 +164,10 @@
 
         &__right {
             min-width: 25.65em;
-            border-top-left-radius: 15px;
             border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+            margin-left: 0;
+            margin-right: 0;
         }
 
         &__title {
