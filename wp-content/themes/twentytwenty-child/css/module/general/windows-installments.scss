@@ -7,7 +7,7 @@
 }
 
 .windows-installments {
-
+    z-index: 1;
     &:before,
     &__list-mark:before,
     &__list-mark:after {
@@ -107,6 +107,17 @@
         width: 100%;
     }
 
+    @media (min-width: 450px) {
+
+        
+        &__right {
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
     @media (min-width: 768px) {
 
         padding-bottom: 0;
@@ -153,8 +164,10 @@
 
         &__right {
             min-width: 25.65em;
-            border-top-left-radius: 15px;
             border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+            margin-left: 0;
+            margin-right: 0;
         }
 
         &__title {
@@ -240,7 +253,7 @@
 
         &__right {
             min-width: 25.938em;
-            padding: 1.588em 2.825em 1.788em 3.625em;
+            padding: 1.588em 2.825em 1.1725em 3.625em;
         }
 
         &__list {
@@ -252,13 +265,20 @@
             &-mark {
                 width: 0.875em;
                 height: 0.875em;
+                font-size: .8em;
+                margin-right: .9em;
+                background-image: url("data:image/svg+xml,%3Csvg width='7' height='6' viewBox='0 0 7 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.30673 5.10157L0.458288 3.19484C0.347237 3.08029 0.347237 2.89455 0.458288 2.77999L0.860446 2.36513C0.971497 2.25057 1.15156 2.25057 1.26261 2.36513L2.50781 3.64959L5.17489 0.898415C5.28594 0.783862 5.466 0.783862 5.57705 0.898415L5.97921 1.31327C6.09026 1.42782 6.09026 1.61356 5.97921 1.72812L2.7089 5.10159C2.59783 5.21614 2.41778 5.21614 2.30673 5.10157Z' fill='white'/%3E%3C/svg%3E");
+                background-repeat: no-repeat;
+                background-position: center;
 
                 &:before {
                     transform: translate(0.35em, -0.03em) rotate(-45deg);
+                    display: none;
                 }
 
                 &:after {
                     transform: translate(0.39em, -0.088em) rotate(-45deg);
+                    display: none;
                 }
             }
 
