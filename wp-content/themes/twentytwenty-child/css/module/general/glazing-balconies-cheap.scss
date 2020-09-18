@@ -30,16 +30,12 @@
             display: none;
         }
 
-        &:first-child {
-            .glazing-balconies-cheap__title {
-                margin-bottom: 1.875em;
-            }
-        }
 
     }
 
     &__title {
         margin-bottom: 0.750em;
+        min-height: 2.167em;
     }
 
     &__image {
