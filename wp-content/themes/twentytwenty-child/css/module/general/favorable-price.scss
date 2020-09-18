@@ -105,6 +105,12 @@
         font-weight: 700;
         position: relative;
         line-height: 0.9;
+        display: block;
+        text-decoration: none;
+        cursor: pointer;
+        &:hover{
+            opacity: .85;
+        }
 
         &:before,
         &:after {
