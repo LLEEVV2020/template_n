@@ -109,7 +109,7 @@
         text-decoration: none;
         cursor: pointer;
         &:hover{
-            opacity: .85;
+            transform: scale(1.01);
         }
 
         &:before,
