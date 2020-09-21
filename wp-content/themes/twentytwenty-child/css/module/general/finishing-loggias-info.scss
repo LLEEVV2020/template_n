@@ -1,0 +1,1494 @@
+@import '../../base/all/var';
+
+.finishing-loggias-info {
+
+    &__radio {
+        display: none;
+
+        &.radio {
+            &-1:checked {
+                ~ .finishing-loggias-info__box {
+                    .finishing-loggias-info__item {
+                        [for="roof-1"] {
+                           .finishing-loggias-info__image {
+                                border: 0.125em solid $orange;
+                           } 
+                        }
+                    }
+                }
+            }
+    
+            &-2:checked {
+                ~ .finishing-loggias-info__box {
+                    .finishing-loggias-info__item {
+                        [for="roof-2"] {
+                           .finishing-loggias-info__image {
+                                border: 0.125em solid $orange;
+                           } 
+                        }
+                    }
+                }
+            }
+    
+            &-3:checked {
+                ~ .finishing-loggias-info__box {
+                    .finishing-loggias-info__item {
+                        [for="roof-3"] {
+                           .finishing-loggias-info__image {
+                                border: 0.125em solid $orange;
+                           } 
+                        }
+                    }
+                }
+            }
+    
+            &-4:checked {
+                ~ .finishing-loggias-info__box {
+                    .finishing-loggias-info__item {
+                        [for="type-1"] {
+                           .finishing-loggias-info__image {
+                                border: 0.125em solid $orange;
+                           } 
+                        }
+                    }
+                }
+            }
+    
+            &-5:checked {
+                ~ .finishing-loggias-info__box {
+                    .finishing-loggias-info__item {
+                        [for="type-2"] {
+                           .finishing-loggias-info__image {
+                                border: 0.125em solid $orange;
+                           } 
+                        }
+                    }
+                }
+            }
+    
+            &-6:checked {
+                ~ .finishing-loggias-info__box {
+                    .finishing-loggias-info__item {
+                        [for="type-3"] {
+                           .finishing-loggias-info__image {
+                                border: 0.125em solid $orange;
+                           } 
+                        }
+                    }
+                }
+            }
+
+            &-7:checked {
+                ~ .finishing-loggias-info__box {
+                    .finishing-loggias-info__item {
+                        [for="finish-1"] {
+                           .finishing-loggias-info__image {
+                                border: 0.125em solid $orange;
+                           } 
+                        }
+                    }
+                }
+            }
+
+            &-8:checked {
+                ~ .finishing-loggias-info__box {
+                    .finishing-loggias-info__item {
+                        [for="finish-2"] {
+                           .finishing-loggias-info__image {
+                                border: 0.125em solid $orange;
+                           } 
+                        }
+                    }
+                }
+            }
+
+            &-9:checked {
+                ~ .finishing-loggias-info__box {
+                    .finishing-loggias-info__item {
+                        [for="finish-3"] {
+                           .finishing-loggias-info__image {
+                                border: 0.125em solid $orange;
+                           } 
+                        }
+                    }
+                }
+            }
+
+            &-10:checked {
+                ~ .finishing-loggias-info__box {
+                    .finishing-loggias-info__item {
+                        .finishing-loggias-info__inner-box-wall {
+                            .finishing-loggias-info__inner {
+                                [for="wall-1"] {
+                                    border: 0.125em solid $orange; 
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+
+            &-11:checked {
+                ~ .finishing-loggias-info__box {
+                    .finishing-loggias-info__item {
+                        .finishing-loggias-info__inner-box-wall {
+                            .finishing-loggias-info__inner {
+                                [for="wall-2"] {
+                                    border: 0.125em solid $orange; 
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+
+            &-12:checked {
+                ~ .finishing-loggias-info__box {
+                    .finishing-loggias-info__item {
+                        .finishing-loggias-info__inner-box-wall {
+                            .finishing-loggias-info__inner {
+                                [for="wall-3"] {
+                                    border: 0.125em solid $orange; 
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+
+            &-13:checked {
+                ~ .finishing-loggias-info__box {
+                    .finishing-loggias-info__item {
+                        .finishing-loggias-info__inner-box-wall {
+                            .finishing-loggias-info__inner {
+                                [for="wall-4"] {
+                                    border: 0.125em solid $orange; 
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+
+            &-14:checked {
+                ~ .finishing-loggias-info__box {
+                    .finishing-loggias-info__item {
+                        .finishing-loggias-info__inner-box-wall {
+                            .finishing-loggias-info__inner {
+                                [for="wall-5"] {
+                                    .finishing-loggias-info__image-stop {
+                                        border: 0.125em solid $orange;  
+                                    }
+                                }                                
+                            }
+                        }
+                    }                    
+                }
+            }
+
+            &-15:checked {
+                ~ .finishing-loggias-info__box {
+                    .finishing-loggias-info__item {
+                        .finishing-loggias-info__inner-box-panel {
+                            .finishing-loggias-info__inner {
+                                [for="panel-1"] {
+                                    border: 0.125em solid $orange; 
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+
+            &-16:checked {
+                ~ .finishing-loggias-info__box {
+                    .finishing-loggias-info__item {
+                        .finishing-loggias-info__inner-box-panel {
+                            .finishing-loggias-info__inner {
+                                [for="panel-2"] {
+                                    border: 0.125em solid $orange; 
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+
+            &-17:checked {
+                ~ .finishing-loggias-info__box {
+                    .finishing-loggias-info__item {
+                        .finishing-loggias-info__inner-box-panel {
+                            .finishing-loggias-info__inner {
+                                [for="panel-3"] {
+                                    border: 0.125em solid $orange; 
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+
+            &-18:checked {
+                ~ .finishing-loggias-info__box {
+                    .finishing-loggias-info__item {
+                        .finishing-loggias-info__inner-box-panel {
+                            .finishing-loggias-info__inner {
+                                [for="panel-4"] {
+                                    border: 0.125em solid $orange; 
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+
+            &-19:checked {
+                ~ .finishing-loggias-info__box {
+                    .finishing-loggias-info__item {
+                        .finishing-loggias-info__inner-box-panel {
+                            .finishing-loggias-info__inner {
+                                [for="panel-5"] {
+                                    .finishing-loggias-info__image-stop {
+                                        border: 0.125em solid $orange;  
+                                    }
+                                }                                
+                            }
+                        }
+                    }                    
+                }
+            }
+
+            &-20:checked {
+                ~ .finishing-loggias-info__box {
+                    .finishing-loggias-info__item {
+                        .finishing-loggias-info__inner-box-wall {
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+            &-21:checked {
+                ~ .finishing-loggias-info__box {
+                    .finishing-loggias-info__item {
+                        .finishing-loggias-info__inner-box-panel {
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+            &-22:checked {
+                ~ .finishing-loggias-info__box {
+                    .finishing-loggias-info__item {
+                        [for="wardrobe-1"] {
+                            border: 0.125em solid $orange;  
+                        }
+                    }
+                }
+            }
+
+            &-23:checked {
+                ~ .finishing-loggias-info__box {
+                    .finishing-loggias-info__item {
+                        [for="wardrobe-2"] {
+                            .finishing-loggias-info__image-wardrobe {
+                                border: 0.125em solid $orange;  
+                            }
+                        }                        
+                    }
+                }
+            }
+
+            &-24:checked {
+                ~ .finishing-loggias-info__box {
+                    .finishing-loggias-info__item {
+                        [for="wardrobe-3"] {
+                            .finishing-loggias-info__image-wardrobe {
+                                border: 0.125em solid $orange;  
+                            }
+                        }                        
+                    }
+                }
+            }
+
+            &-25:checked {
+                ~ .finishing-loggias-info__box {
+                    .finishing-loggias-info__item {
+                        [for="wardrobe-4"] {
+                            .finishing-loggias-info__image-wardrobe {
+                                border: 0.125em solid $orange;  
+                            }
+                        }                        
+                    }
+                }
+            }
+
+            &-26:checked {
+                ~ .finishing-loggias-info__box {
+                    .finishing-loggias-info__item {
+                        .finishing-loggias-info__inner-box-linoleum {
+                            .finishing-loggias-info__inner {
+                                [for="linoleum-1"] {
+                                    border: 0.125em solid $orange;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+            &-27:checked {
+                ~ .finishing-loggias-info__box {
+                    .finishing-loggias-info__item {
+                        .finishing-loggias-info__inner-box-linoleum {
+                            .finishing-loggias-info__inner {
+                                [for="linoleum-2"] {
+                                    border: 0.125em solid $orange;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-28:checked {
+                ~ .finishing-loggias-info__box {
+                    .finishing-loggias-info__item {
+                        .finishing-loggias-info__inner-box-linoleum {
+                            .finishing-loggias-info__inner {
+                                [for="linoleum-3"] {
+                                    border: 0.125em solid $orange;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-29:checked {
+                ~ .finishing-loggias-info__box {
+                    .finishing-loggias-info__item {
+                        .finishing-loggias-info__inner-box-linoleum {
+                            .finishing-loggias-info__inner {
+                                [for="linoleum-4"] {
+                                    border: 0.125em solid $orange;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-30:checked {
+                ~ .finishing-loggias-info__box {
+                    .finishing-loggias-info__item {
+                        .finishing-loggias-info__inner-box-linoleum {
+                            .finishing-loggias-info__inner {
+                                [for="linoleum-5"] {
+                                    .finishing-loggias-info__image-stop {
+                                        border: 0.125em solid $orange;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-31:checked {
+                ~ .finishing-loggias-info__box {
+                    .finishing-loggias-info__item {
+                        .finishing-loggias-info__inner-box-linoleum {
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+            &-32:checked {
+                ~ .finishing-loggias-info__box {
+                    .finishing-loggias-info__item {
+                        .finishing-loggias-info__inner-box-laminate {
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+            &-33:checked {
+                ~ .finishing-loggias-info__box {
+                    .finishing-loggias-info__item {
+                        .finishing-loggias-info__inner-box-floor-board {
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+            &-34:checked {
+                ~ .finishing-loggias-info__box {
+                    .finishing-loggias-info__item {
+                        .finishing-loggias-info__inner-box-laminate {
+                            .finishing-loggias-info__inner {
+                                [for="laminate-1"] {
+                                    border: 0.125em solid $orange;
+                                }                                
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-35:checked {
+                ~ .finishing-loggias-info__box {
+                    .finishing-loggias-info__item {
+                        .finishing-loggias-info__inner-box-laminate {
+                            .finishing-loggias-info__inner {
+                                [for="laminate-2"] {
+                                    border: 0.125em solid $orange;
+                                }                                
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-36:checked {
+                ~ .finishing-loggias-info__box {
+                    .finishing-loggias-info__item {
+                        .finishing-loggias-info__inner-box-laminate {
+                            .finishing-loggias-info__inner {
+                                [for="laminate-3"] {
+                                    border: 0.125em solid $orange;
+                                }                                
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-37:checked {
+                ~ .finishing-loggias-info__box {
+                    .finishing-loggias-info__item {
+                        .finishing-loggias-info__inner-box-laminate {
+                            .finishing-loggias-info__inner {
+                                [for="laminate-4"] {
+                                    border: 0.125em solid $orange;
+                                }                                
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-38:checked {
+                ~ .finishing-loggias-info__box {
+                    .finishing-loggias-info__item {
+                        .finishing-loggias-info__inner-box-laminate {
+                            .finishing-loggias-info__inner {
+                                [for="laminate-5"] {
+                                    .finishing-loggias-info__image-stop {
+                                        border: 0.125em solid $orange;
+                                    }
+                                }                                
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-39:checked {
+                ~ .finishing-loggias-info__box {
+                    .finishing-loggias-info__item {
+                        .finishing-loggias-info__inner-box-floor-board {
+                            .finishing-loggias-info__inner {
+                                [for="floor-board-1"] {
+                                    border: 0.125em solid $orange;
+                                }                                
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-40:checked {
+                ~ .finishing-loggias-info__box {
+                    .finishing-loggias-info__item {
+                        .finishing-loggias-info__inner-box-floor-board {
+                            .finishing-loggias-info__inner {
+                                [for="floor-board-2"] {
+                                    border: 0.125em solid $orange;
+                                }                                
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-41:checked {
+                ~ .finishing-loggias-info__box {
+                    .finishing-loggias-info__item {
+                        .finishing-loggias-info__inner-box-floor-board {
+                            .finishing-loggias-info__inner {
+                                [for="floor-board-3"] {
+                                    border: 0.125em solid $orange;
+                                }                                
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-42:checked {
+                ~ .finishing-loggias-info__box {
+                    .finishing-loggias-info__item {
+                        .finishing-loggias-info__inner-box-floor-board {
+                            .finishing-loggias-info__inner {
+                                [for="floor-board-4"] {
+                                    border: 0.125em solid $orange;
+                                }                                
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-43:checked {
+                ~ .finishing-loggias-info__box {
+                    .finishing-loggias-info__item {
+                        .finishing-loggias-info__inner-box-floor-board {
+                            .finishing-loggias-info__inner {
+                                [for="floor-board-5"] {
+                                    .finishing-loggias-info__image-stop {
+                                        border: 0.125em solid $orange;
+                                    }
+                                }                                
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+
+    &__title {
+        max-width: 12.876em;
+        margin-bottom: 1.238em;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0.459em 0;
+        font-size: 1.5em;
+        font-weight: 700;
+        background-color: $yellow;
+        border-radius: 1.250em;
+    }
+
+    &__title,
+    &__item {
+        text-align: center;
+    }
+    
+    &__item {
+        margin-bottom: 1.875em;
+    }
+
+    &__label {
+        display: inline-block;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        vertical-align: top;
+        cursor: pointer;
+
+        &[for="finish-3"] {
+            max-width: 5em;
+        }
+
+        &-text,
+        &-wardrobe {
+            cursor: pointer;
+        }
+
+        &-text {
+            display: block;
+            margin-bottom: 0.575em;
+            font-size: 1.250em;
+            font-weight: 700;
+            color: #979797;
+            text-align: left;
+            
+            &.black {
+                color: $black;
+            }
+
+            &.margin-bottom {
+                margin-bottom: 0.1em;
+            }
+
+            &.margin-bottom:nth-child(3) {
+                margin-bottom: 0.2em;
+            }
+        }
+
+        &-stop {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+
+        &-wardrobe {
+            display: inline-block;
+            vertical-align: top;
+
+            &:nth-of-type(2),
+            &:nth-of-type(3) {
+                margin-right: 0.6em;
+            }
+        }
+    }
+
+    &__image,
+    &__image--3:before,
+    &__image-stop::before,
+    &__image-wardrobe {
+        background-image: url('/wp-content/themes/twentytwenty-child/img/sprite.png');
+        background-repeat: no-repeat;
+    }
+
+    &__image,
+    &__word {
+        display: block;
+    }
+
+    &__image {
+        width: 4.5em;
+        height: 4.5em;
+        margin-bottom: 0.438em;
+        border: 0.125em solid transparent;
+        border-radius: 1.250em;
+
+        &-wardrobe {
+            display: inline-block;
+            margin-bottom: 0.438em;
+            width: 3.750em;
+            height: 3.750em;
+            border: 0.125em solid transparent;
+            border-radius: 1.250em;
+        }
+
+        &--1 {
+            background-position: 9.37% 94.317%;
+        }
+
+        &--2 {
+            background-position: 1.363% 94.181%;
+        }
+
+        &-stop,
+        &--3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        &-stop:before,
+        &--3:before {
+            content: '';
+            width: 1.15em;
+            height: 1.188em;
+            background-size: 38.938em 25.375em;
+            background-position: 63.719% 71.005%;
+            font-size: 2.6em;
+        }
+
+        &--7,
+        &--8,
+        &--9,
+        &--10,
+        &--11,
+        &--15,
+        &--16,
+        &--17,
+        &--18 {
+            cursor: pointer;
+        }
+
+        &-stop,
+        &--7,
+        &--8,
+        &--9,
+        &--10,
+        &--15,
+        &--16,
+        &--17,
+        &--18 {
+            width: 3.9em;
+            height: 3.9em;
+            border: 0.125em solid transparent;
+            border-radius: 1.250em;
+        }
+
+        &-stop {
+            border: 0.063em solid #C9C9C9;
+            margin-right: 0.3em;
+            border-radius: 1.05em;
+
+            &:before {
+                font-size: 2.1em;
+            }
+        }
+
+        &--3 {
+            margin-left: auto;
+            margin-right: auto;
+            border: 0.063em solid #C9C9C9;
+            background-image: none;
+        }
+
+        &--4 {
+            background-position: 100% 39.919%;
+        }
+
+        &--5 {
+            background-position: 62.606% 90.934%;
+        }
+
+        &--6 {
+            background-position: 99.744% 28.417%;
+        }
+
+        &--7,
+        &--8,
+        &--9,
+        &--10,
+        &--11,
+        &--15,
+        &--16,
+        &--17,
+        &--18 {
+            display: inline-block;
+            background-image: url('/wp-content/themes/twentytwenty-child/img/sprite.png');
+            background-repeat: no-repeat;
+        }
+
+        &--7 {
+            background-position: 22.934% 86.285%;
+        }
+
+        &--8 {
+            background-position: 29.174% 87.084%;
+        }
+
+        &--9 {
+            background-position: 16.526% 85.087%;
+        }
+
+        &--10 {
+            background-position: 33.333% 77.497%;
+        }
+
+        &--11 {
+            width: 3.95em;
+            height: 3.95em;
+            margin-right: 0.6em;
+            background-position: 100% 18.375%;
+            border-radius: 1.250em;
+            border: 0.125em solid transparent;
+        }
+
+        &--12 {
+            background-position: 99.747% 0;
+        }  
+        
+        &--13 {
+            background-position: 100% 9.188%;
+        }
+
+        &--14 {
+            border: 0.063em solid #C9C9C9;
+            border-radius: 1.05em;
+            background-position: 64.019% 71.505%;
+        }
+
+        &--15 {
+            background-position: 39.376% 78.029%;
+        }
+
+        &--15,
+        &--16 {
+            &.margin {
+                margin-bottom: 0.5em;
+            }
+        }
+
+        &--7,
+        &--9,
+        &--15,
+        &--17 {
+            margin-right: 0.5em;
+        }
+
+        &--16 {
+            background-position: 62.901% 80.16%;
+        }
+
+        &--17 {
+            background-position: 45.194% 77.896%;
+        }
+
+        &--18 {
+            background-position: 27.234% 77.497%;
+        }
+    }
+
+    &__word {
+        font-size: 0.875em;
+    }
+
+    &__inner {
+        display: inline-block;
+        vertical-align: top;
+        max-width: 9.3em;
+
+        &-box {
+            &-wall,
+            &-panel,
+            &-linoleum,
+            &-laminate,
+            &-floor-board {
+                display: none;
+            }
+
+            &-wall,
+            &-panel {
+                .finishing-loggias-info__label-text.margin-bottom {
+                    margin-bottom: 0.5em;
+                }
+            }
+        }
+    }
+
+    &__installment-box {
+        display: none;
+    }
+
+    &__price-box,
+    .form-contacts__input,
+    &__agreement {
+        text-align: center;
+    }
+
+    &__price {
+        &-box {
+            max-width: 11.250em;
+            min-height: 5.688em;
+            padding: 0.750em 1.125em;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 2.313em;            ;
+            background-color: $yellow;
+            border-radius: 0.813em;
+            box-shadow: 0.188em 0.250em 1.438em rgba(0, 0, 0, 0.25);
+        }
+
+        &-text {
+            margin-bottom: 0.750em;
+            font-weight: 700;
+        }
+
+        &-value {
+            font-size: 2.188em;
+            font-weight: 900;
+        }
+    }
+
+    .form-contacts {
+        margin-bottom: 1.563em;
+
+        &__box {
+            &:before {
+                display: none;
+            }
+        }
+
+        &__input,
+        &__button {
+            font-size: 1.6rem;
+        }
+
+        &__input {
+            padding: 0.625em 1.250em;
+            font-weight: 700;
+            border-radius: 0;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+            border-bottom: 0.188em solid #C9C9C9;
+        }
+
+        &__button {
+            padding: 0.625em 1.250em;
+        }
+    }
+
+    &__agreement {
+        font-family: Montserrat, sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+
+        &-link {
+            color: $black;
+        }
+    }
+
+    &__details {
+        &-box {
+            position: relative;
+            width: 33.8rem;
+            height: 40.1rem;
+            margin-bottom: 1.563em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &-image {
+            position: absolute;
+            background-repeat: no-repeat;
+
+            &-1 {
+                top: 3.7em;
+                left: -0.6em;
+                width: 11.2rem;
+                height: 22rem;
+                background-image: url('/wp-content/themes/twentytwenty-child/img/finishing-balcony-small1.png');            
+                z-index: 1;    
+            }
+
+            &-2 {
+                top: 0em;
+                left: -2em;
+                width: 27.4rem;
+                height: 9.1rem;
+                background-image: url('/wp-content/themes/twentytwenty-child/img/finishing-balcony-small2.png');                
+            }
+
+            &-3 {
+                top: 14em;
+                left: 5.5em;
+                width: 10.4rem;
+                height: 6.4rem;
+                background-image: url('/wp-content/themes/twentytwenty-child/img/finishing-balcony-small3.png');
+                z-index: 1;                
+            }
+
+            &-4 {
+                top: 3.9em;
+                left: 1.9em;
+                width: 20rem;
+                height: 33.5rem;
+                background-image: url('/wp-content/themes/twentytwenty-child/img/finishing-balcony-small4.png');                
+            }
+
+            &-5 {
+                top: 16.4em;
+                left: 2.4em;
+                width: 20.4rem;
+                height: 11.3rem;
+                background-image: url('/wp-content/themes/twentytwenty-child/img/finishing-balcony-small5.png'); 
+            }
+
+            &-6 {
+                top: 0;
+                left: 0.3em;
+                width: 29rem;
+                height: 40.1rem;
+                background-image: url('/wp-content/themes/twentytwenty-child/img/finishing-balcony-small6.png');                
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        &__box {
+            display: grid;
+            grid-template-areas:
+                "finishing-loggias_item1 finishing-loggias_item2"
+                "finishing-loggias_item3 finishing-loggias_item4"
+                "finishing-loggias_item5 finishing-loggias_item6"
+                "finishing-loggias_details finishing-loggias_details"
+                "finishing-loggias_price finishing-loggias_price"
+                "finishing-loggias_agreement finishing-loggias_agreement";
+            // grid-auto-columns: 1fr;
+            max-width: 50em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__item {
+            &--1 {
+                grid-area: finishing-loggias_item1;
+            }
+
+            &--2 {
+                grid-area: finishing-loggias_item2;
+            }
+
+            &--3 {
+                grid-area: finishing-loggias_item3;
+            }
+
+            &--4 {
+                grid-area: finishing-loggias_item5;
+            }
+
+            &--5 {
+                grid-area: finishing-loggias_item4;
+            }
+
+            &--6 {
+                grid-area: finishing-loggias_item6;
+            }
+        }
+
+        &__details {
+            &-box {
+                width: 48rem;
+                height: 56.8rem;
+                margin-top: 1.438em;
+                margin-bottom: 3.125em;
+                grid-area: finishing-loggias_details;
+                grid-column: span 2;
+            }
+
+            &-image {
+                &-1 {
+                    top: 5.4em;
+                    left: 4em;
+                    width: 15.9rem;
+                    height: 31.2rem;
+                    background-image: url('/wp-content/themes/twentytwenty-child/img/finishing-balcony-middle1.png');            
+                    z-index: 1;    
+                }
+    
+                &-2 {
+                    top: 0;
+                    left: 0.1em;
+                    width: 38.9rem;
+                    height: 13rem;
+                    background-image: url('/wp-content/themes/twentytwenty-child/img/finishing-balcony-middle2.png');                
+                }
+    
+                &-3 {
+                    top: 20.4em;
+                    left: 12.2em;
+                    width: 14.7rem;
+                    height: 8.9rem;
+                    background-image: url('/wp-content/themes/twentytwenty-child/img/finishing-balcony-middle3.png');
+                    z-index: 1;                
+                }
+    
+                &-4 {
+                    top: 5em;
+                    left: 6.9em;
+                    width: 28.3rem;
+                    height: 47.5rem;
+                    background-image: url('/wp-content/themes/twentytwenty-child/img/finishing-balcony-middle4.png');                
+                }
+    
+                &-5 {
+                    top: 23.4em;
+                    left: 7.6em;
+                    width: 28.9rem;
+                    height: 16rem;
+                    background-image: url('/wp-content/themes/twentytwenty-child/img/finishing-balcony-middle5.png'); 
+                }
+    
+                &-6 {
+                    top: 0;
+                    left: 4.4em;
+                    width: 41.2rem;
+                    height: 56.8rem;
+                    background-image: url('/wp-content/themes/twentytwenty-child/img/finishing-balcony-middle6.png');                
+                }
+            }
+        }
+
+        &__price-form-box {
+            grid-area: finishing-loggias_price;
+        }
+
+        &__agreement {
+            grid-area: finishing-loggias_agreement;
+            font-size: 1.2rem;
+        }
+
+        .form-contacts {
+            max-width: 75rem;
+            margin-bottom: 2.250em;
+
+            &__box,
+            &__button {
+                max-width: none;
+            }
+
+            &__box {
+                width: 48%;
+            }
+
+            &__button {
+                width: 48%;
+            }
+        }
+        
+        &__price {
+            &-box {
+                max-width: 19.125em;
+            }
+
+            &-text {
+                margin-bottom: 0.313em;
+                font-size: 1.4em;
+            }
+
+            &-value {
+                font-size: 3.750em;
+            }
+        }
+
+    }
+
+    @media (min-width: 960px) {
+      .container {
+        width: calc(100% - 8rem);
+      }
+    }
+
+    @media (min-width: 1400px) {
+        .container {
+            max-width: 118rem
+        }
+
+        &__box {
+            max-width: none;
+            grid-template-areas:
+                "finishing-loggias_item1 finishing-loggias_details finishing-loggias_item2"
+                "finishing-loggias_item3 finishing-loggias_details finishing-loggias_item4"
+                "finishing-loggias_item5 finishing-loggias_details finishing-loggias_item6"
+                "finishing-loggias_price finishing-loggias_price finishing-loggias_price"
+                "finishing-loggias_agreement finishing-loggias_agreement finishing-loggias_agreement";
+        }
+
+        &__item {
+            &--1 {
+                grid-area: finishing-loggias_item1;
+            }
+
+            &--2 {
+                grid-area: finishing-loggias_item3;
+            }
+
+            &--3 {
+                grid-area: finishing-loggias_item5;
+            }
+
+            &--4 {
+                grid-area: finishing-loggias_item2;
+            }
+
+            &--5 {
+                grid-area: finishing-loggias_item4;
+            }
+
+            &--6 {
+                grid-area: finishing-loggias_item6;
+            }
+        }
+
+        &__title-after:after,
+        &__title-before:before {
+            content: '';
+            display: inline-block;
+            width: 1.9rem;
+            height: 1.9rem;
+            background-color: $white;
+            border-radius: 50%;
+        }
+
+        &__title {
+            position: relative;
+
+            &:before {
+                content: '';
+                position: absolute;
+                background-repeat: no-repeat;
+                z-index: 100;
+            }
+
+            &--1 {
+                &:before {                    
+                    top: 2.4rem;
+                    right: -13rem;
+                    width: 14.9rem;
+                    height: 4.9rem;
+                    background-image: url("data:image/svg+xml,%3Csvg width='149' height='49' viewBox='0 0 149 49' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.5 1.00022C1.5 0.000215612 93 7.50022 148.5 48.5002' stroke='%23F26422'/%3E%3C/svg%3E");
+                }
+            }
+
+            &--2 {
+                &:before {                    
+                    top: 2.2rem;
+                    right: -7.4rem;
+                    width: 9.5rem;
+                    height: 2.1rem;
+                    background-image: url("data:image/svg+xml,%3Csvg width='96' height='23' viewBox='0 0 96 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.5 1.50018C17.3333 0.500177 59.9 3.20018 95.5 22.0002' stroke='%23F26422'/%3E%3C/svg%3E%0A");
+                }
+            }
+
+            &--3 {
+                &:before {                    
+                    top: 2.4rem;
+                    right: -7.9rem;
+                    width: 9.5rem;
+                    height: 4.7rem;
+                    background-image: url("data:image/svg+xml,%3Csvg width='99' height='45' viewBox='0 0 99 45' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.5 1C24.1667 5 76.8 19.3 98 44.5' stroke='%23F26422'/%3E%3C/svg%3E%0A");
+                }
+            }
+
+            &--4 {
+                &:before {                    
+                    top: 2.4rem;
+                    left: -13.8rem;
+                    width: 16.3rem;
+                    height: 12.5rem;
+                    background-image: url("data:image/svg+xml,%3Csvg width='163' height='125' viewBox='0 0 163 125' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.5 124.5C15 98.3333 67.7 37 162.5 1' stroke='%23F26422'/%3E%3C/svg%3E%0A");
+                }
+            }
+
+            &--5 {
+                &:before {                    
+                    top: 2.1rem;
+                    left: -23rem;
+                    width: 25.1rem;
+                    height: 9.5rem;
+                    background-image: url("data:image/svg+xml,%3Csvg width='252' height='96' viewBox='0 0 252 96' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.5 95.5C28.8333 75.1667 118.7 27.7 251.5 0.5' stroke='%23F26422'/%3E%3C/svg%3E%0A");
+                }
+            }
+
+            &--6 {
+                &:before {                    
+                    top: 2.1rem;
+                    left: -17.6rem;
+                    width: 20.3rem;
+                    height: 5.3rem;
+                    background-image: url("data:image/svg+xml,%3Csvg width='205' height='55' viewBox='0 0 205 55' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 54C18 41.3333 82.5 13 204.5 1' stroke='%23F26422'/%3E%3C/svg%3E%0A");
+                }
+            }
+
+            &-after {    
+                &--1 {
+                    &:after {                        
+                        transform: translate(0.7em, 0.06em);
+                    }
+                }
+
+                &--2 {
+                    &:after {
+                        transform: translate(0.9em, 0.06em);
+                    }
+                }
+
+                &--3 {
+                    &:after {
+                        transform: translate(0.7em, 0.06em);
+                    }
+                }
+            }
+
+            &-before {
+                &--1 {
+                    &:before {                        
+                        transform: translate(-1.5em, 0.06em);
+                    }
+                }
+
+                &--2 {
+                    &:before {                        
+                        transform: translate(-0.9em, 0.06em);
+                    }
+                }
+
+                &--3 {
+                    &:before {                        
+                        transform: translate(-1.5em, 0.06em);
+                    }
+                }
+            }
+
+            &-circle {
+                position: absolute;
+                width: 1.1rem;
+                height: 1.1rem;
+                background-color: $orange;
+                border-radius: 50%;
+                z-index: 100;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: -0.7rem;
+                    left: -0.7rem;
+                    right: -0.7rem;
+                    bottom: -0.7rem;
+                    background-color: rgba(242, 100, 34, 0.3);
+                    border-radius: 50%;
+                    z-index: 100;
+                }
+
+                &--1 {
+                    top: 3em;
+                    right: -5.7em;
+                }
+
+                &--2 {
+                    top: 1.6em;
+                    right: -3.4em;
+                }
+
+                &--3 {
+                    top: 2.6em;
+                    right: -3.7em;
+                }
+
+                &--4 {
+                    top: 6.1em;
+                    left: -6.1em;
+                }
+
+                &--5 {
+                    top: 4.6em;
+                    left: -9.9em;
+                }
+
+                &--6 {
+                    top: 2.9em;
+                    left: -7.7em;
+                }
+            }
+        }
+
+        &__details {
+            &-box {
+                grid-area: finishing-loggias_details;
+            }
+
+            &-image {
+                &-1 {
+                    left: 2.5em;
+                }
+
+                &-2 {
+                    left: -0.3em;
+                }
+
+                &-3 {
+                    left: 10.7em;
+                }
+
+                &-4 {
+                    left: 5.4em;
+                }
+
+                &-5 {
+                    left: 6em;
+                }
+
+                &-6 {
+                    left: 2.8em;
+                }
+            }
+        }
+
+        &__price-box,
+        .form-contacts {
+            margin-bottom: 0;
+            margin-left: 0;
+        }
+
+        &__price {
+            &-form-box {
+                grid-area: finishing-loggias_price;
+                display: flex;
+                align-items: flex-end;
+                margin-bottom: 2.188em;
+            }
+
+            &-box {
+                max-width: 19.225em;
+                padding: 0.85em 2.225em;
+            }
+        }
+
+        &__installment {
+            &-box {
+                display: block;
+                max-width: 22.6em;
+                margin-right: 6.375em;
+            }
+
+            &-text,
+            &-description {
+                font-size: 2.4rem;
+            }
+
+            &-text {
+                margin-bottom: 0.563em;
+                text-transform: uppercase;
+                font-weight: 900;
+                letter-spacing: 0.04em;
+            }
+        }
+
+        .form-contacts {
+            max-width: 36.8rem;
+            display: block;
+            margin-right: 0;
+
+            &__box {
+                min-width: 23.025em;
+                margin-bottom: 0.688em;
+            }
+
+            &__input,
+            &__button {
+                font-size: 1.9rem;
+            }
+
+            &__input {
+                padding-top: 0.670em;
+                padding-bottom: 0.670em;
+            }
+
+            &__button {
+                width: 100%;
+                padding-top: 0.766em;
+                padding-bottom: 0.765em;
+            }
+        }
+
+        &__agreement {
+            grid-area: finishing-loggias_agreement;
+            max-width: 77.3em;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 1.4rem;
+        }
+    }
+}
