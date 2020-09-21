@@ -105,6 +105,12 @@
         font-weight: 700;
         position: relative;
         line-height: 0.9;
+        display: block;
+        text-decoration: none;
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.025);
+        }
 
         &:before,
         &:after {
@@ -186,7 +192,7 @@
             padding-left: 1.6em;
 
             &:not(:last-child) {
-                margin-right: 0.8em;
+                margin-right: .475em;
             }
         }
 
@@ -233,8 +239,8 @@
             }
 
             &:after {
-                height: 0.06em;
-                bottom: -0.3em;
+                height: .06em;
+                bottom: -.3em;
             }
         }
 
@@ -246,6 +252,14 @@
             font-size: 1.325em;
         }
 
+    }
+
+    @media (min-width: 1220px) {
+        &__item {
+            &:not(:last-child) {
+                margin-right: .8em;
+            }
+        }
     }
 
 }
