@@ -10,7 +10,7 @@
     }
 
     &__title {
-        margin-bottom: 0.2em;
+        margin-bottom: .2em;
     }
 
     &__text,
@@ -20,11 +20,12 @@
     }
 
     &__text {
-        margin-bottom: 0.625em;
+        margin-bottom: .625em;
     }
 
     &__info {
         font-size: 1.2rem;
+        font-family: 'Montserrat', sans-serif;
     }
 
     .form-contacts {
@@ -36,7 +37,7 @@
             padding-left: 0;
             padding-right: 0;
             text-align: center;
-            border-bottom: 0.3em solid #C9C9C9;
+            border-bottom: .3em solid #C9C9C9;
         }
     }
 
@@ -83,7 +84,7 @@
         }
 
         &__title {
-            margin-bottom: 0.625em;
+            margin-bottom: .625em;
         }
 
         &__text,
@@ -130,13 +131,13 @@
             &__image {
                 width: 2em;
                 height: 1.938em;
-                margin-right: 0.3em;
+                margin-right: .3em;
                 background-image: url("data:image/svg+xml,%0A%3Csvg width='40' height='39' viewBox='0 0 40 39' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='21.5898' y1='12.4534' x2='0.000545502' y2='12.4534' stroke='%23969593' stroke-width='5'/%3E%3Cline x1='2.5' y1='10.6545' x2='2.5' y2='35.8964' stroke='%23969593' stroke-width='5'/%3E%3Cline x1='27.1602' y1='35.5918' x2='-0.000574112' y2='35.5918' stroke='%23969593' stroke-width='5'/%3E%3Cline x1='25.4805' y1='29.5859' x2='25.4805' y2='37.9999' stroke='%23969593' stroke-width='5'/%3E%3Cline x1='13.5195' y1='8.55127' x2='13.5195' y2='0.838474' stroke='%23F26422' stroke-width='5'/%3E%3Cline x1='11.1445' y1='3.24658' x2='39.0017' y2='3.24658' stroke='%23F26422' stroke-width='5'/%3E%3Cline x1='36.625' y1='0.838379' x2='36.625' y2='28.1837' stroke='%23F26422' stroke-width='5'/%3E%3Cline x1='11.8398' y1='25.6838' x2='38.3041' y2='25.6838' stroke='%23F26422' stroke-width='5'/%3E%3Cline x1='13.6445' y1='16.2639' x2='13.6445' y2='28.1837' stroke='%23F26422' stroke-width='5'/%3E%3Cline x1='25.4844' y1='1.53955' x2='25.4844' y2='28.1838' stroke='%23F26422' stroke-width='5'/%3E%3C/svg%3E%0A");
             }
 
             &__text {
                 &-small {
-                    margin-bottom: 0.4em;
+                    margin-bottom: .4em;
                 }
             }
 
@@ -160,7 +161,7 @@
             }
 
             &__input {
-                border-bottom-width: 0.2em;
+                border-bottom-width: .2em;
             }
 
             &__button {
@@ -229,15 +230,15 @@
         }
 
         &__title {
-            margin-bottom: 0.125em;
+            margin-bottom: .125em;
         }
 
         &__text {
-            margin-bottom: 0.938em;
+            margin-bottom: .938em;
         }
 
         .form-contacts {
-            margin-bottom: 0.938em;
+            margin-bottom: .938em;
 
             &__box {
                 min-width: 22.625em;
