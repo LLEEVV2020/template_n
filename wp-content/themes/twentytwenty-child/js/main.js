@@ -25,6 +25,19 @@ $(document).ready(function(){
         dotClass: ['left-balcony-slider__dot'],
         navText: ['']
       });
+
+      $('.quality-worker__slider').owlCarousel({
+        items: 5,
+        margin: 2,
+        dots: true,
+        dotsClass: ['quality-worker__nav-dots'],
+        dotClass: ['quality-worker__nav-dot'],
+        responsive: {
+            1200: {
+                margin: 4
+            }
+        }
+      });
     
 });
 

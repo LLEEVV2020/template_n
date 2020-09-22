@@ -14,8 +14,7 @@
     }
 
     &__rating,
-    &__content,
-    &__images {
+    &__content {
         display: flex;
     }
 
@@ -24,8 +23,7 @@
         align-items: center;
     }
 
-    &__rating,
-    &__images {
+    &__rating {
         max-width: 22em;
         margin-left: auto;
         margin-right: auto;
@@ -71,71 +69,51 @@
         text-align: center;
     }
 
-    &__item {
-        position: relative;
-
-        &:not(:last-child) {
-            margin-right: 0.5em;
-        }
-
-        &:first-child,
-        &:last-child {
-            .logo-factory-windows {
-                top: 2.5em;
-                right: 1.9em;
-                transform: rotate(12deg);
-            }
-        }
-
-        &:nth-child(2) {
-            .logo-factory-windows {
-                top: 3.2em;
-                right: 2.8em;
-                transform: rotate(-4deg);
-            }
-        }
-
+    &__slider {
+        max-width: 50rem;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .logo-factory-windows {
-        position: absolute;
-        max-width: 2.5em;
-
-        &__box {
-            margin-bottom: 0;
+    &__nav {
+        &-dots {
+            margin-top: 1.5rem;
+            text-align: center;
         }
 
-        &__image {
-            width: 0.5em;
-            height: 0.638em;
-            background-image: url("data:image/svg+xml, %3Csvg width='7' height='9' viewBox='0 0 29 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='16.2188' y1='8.93462' x2='0.995939' y2='8.93462' stroke='%23969593' stroke-width='3.5'/%3E%3Cline x1='2.74609' y1='7.67828' x2='2.74609' y2='25.4489' stroke='%23969593' stroke-width='3.5'/%3E%3Cline x1='20.1484' y1='25.2243' x2='0.997156' y2='25.2243' stroke='%23969593' stroke-width='3.5'/%3E%3Cline x1='18.9492' y1='21.0062' x2='18.9492' y2='26.9298' stroke='%23969593' stroke-width='3.5'/%3E%3Cline x1='10.5391' y1='6.19736' x2='10.5391' y2='0.767436' stroke='%23F26422' stroke-width='3.5'/%3E%3Cline x1='8.85156' y1='2.47289' x2='28.4939' y2='2.47289' stroke='%23F26422' stroke-width='3.5'/%3E%3Cline x1='26.8047' y1='0.767464' x2='26.8047' y2='20.019' stroke='%23F26422' stroke-width='3.5'/%3E%3Cline x1='9.34375' y1='18.269' x2='28.004' y2='18.269' stroke='%23F26422' stroke-width='3.5'/%3E%3Cline x1='10.6016' y1='11.6273' x2='10.6016' y2='20.019' stroke='%23F26422' stroke-width='3.5'/%3E%3Cline x1='18.9492' y1='1.26113' x2='18.9492' y2='20.019' stroke='%23F26422' stroke-width='3.5'/%3E%3C/svg%3E%0A");
-        }
-
-        &__text {
-            &-small {
-                font-size: 2.7px;
+        &-dot {
+            border: none;
+            background-color: transparent;
+            padding: 0;
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+            cursor: pointer;
+    
+            span {
+                display: block;
+                width: 1rem;
+                height: 1rem;
+                background-color: #F2F2F2;
+                border-radius: 50%;
             }
-
-            &-big {
-                font-size: 5.8px;
+    
+            &.active {
+                span {
+                    background-color: $orange;
+                }
             }
-        }
-
-        &__title {
-            font-size: 2.1px;
         }
     }
 
     @media (min-width: 768px) {
-
-        .container {
-            width: calc(100% - 8rem);
-        }
-
-        .title {
-            max-width: 13em;
+        &__box {
+            max-width: 65rem;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        &__slider {
+            max-width: 70rem;
         }
 
         .text {
@@ -170,57 +148,21 @@
             font-size: 1.250em;
         }
 
-        &__images {
-            max-width: 46em;
+    }
+
+    @media (min-width: 960px) {
+        .container {
+            width: calc(100% - 8rem);
         }
 
-        &__item {
-            &:not(:last-child) {
-                margin-right: 1.5em;
-            }
-
-            &:first-child,
-            &:nth-child(3) {
-                .logo-factory-windows {
-                    max-width: 13.5em;
-                    top: 4.7em;
-                    right: 3.2em;
-                }
-            }
-
-            &:nth-child(2) {
-                .logo-factory-windows {
-                    top: 5.6em;
-                    right: 5em;
-                }
-            }
+        .title {
+            font-size: 3.5rem;
         }
 
-        .logo-factory-windows {
-            max-width: 3.9em;
-
-            &__image {
-                width: 1.1em;
-                height: 1.138em;
-                background-image: url("data:image/svg+xml, %3Csvg width='15' height='20' viewBox='0 0 29 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='16.2188' y1='8.93462' x2='0.995939' y2='8.93462' stroke='%23969593' stroke-width='3.5'/%3E%3Cline x1='2.74609' y1='7.67828' x2='2.74609' y2='25.4489' stroke='%23969593' stroke-width='3.5'/%3E%3Cline x1='20.1484' y1='25.2243' x2='0.997156' y2='25.2243' stroke='%23969593' stroke-width='3.5'/%3E%3Cline x1='18.9492' y1='21.0062' x2='18.9492' y2='26.9298' stroke='%23969593' stroke-width='3.5'/%3E%3Cline x1='10.5391' y1='6.19736' x2='10.5391' y2='0.767436' stroke='%23F26422' stroke-width='3.5'/%3E%3Cline x1='8.85156' y1='2.47289' x2='28.4939' y2='2.47289' stroke='%23F26422' stroke-width='3.5'/%3E%3Cline x1='26.8047' y1='0.767464' x2='26.8047' y2='20.019' stroke='%23F26422' stroke-width='3.5'/%3E%3Cline x1='9.34375' y1='18.269' x2='28.004' y2='18.269' stroke='%23F26422' stroke-width='3.5'/%3E%3Cline x1='10.6016' y1='11.6273' x2='10.6016' y2='20.019' stroke='%23F26422' stroke-width='3.5'/%3E%3Cline x1='18.9492' y1='1.26113' x2='18.9492' y2='20.019' stroke='%23F26422' stroke-width='3.5'/%3E%3C/svg%3E%0A");
-            }
-
-            &__text {
-                &-small {
-                    font-size: 5.8px;
-                }
-
-                &-big {
-                    font-size: 11.4px;
-                }
-            }
-
-            &__title {
-                font-size: 4.5px;
-            }
-
+        &__box,
+        &__slider {
+            max-width: 77rem;
         }
-
     }
 
     @media (min-width: 1200px) {
@@ -228,13 +170,21 @@
         background: url("/wp-content/themes/twentytwenty-child/img/quality-worker-bg-big-left.png") no-repeat left center / 40%,
                     url("/wp-content/themes/twentytwenty-child/img/quality-worker-bg-big-right.png") no-repeat right center / 40%;
 
-        .title {
-            max-width: none;
-        }
-
         .text {
             max-width: 20.9em;
-            margin-bottom: 3.563em;
+            margin-bottom: 2.563em;
+        }
+
+        &__box {
+            max-width: 106rem;
+        }
+
+        &__text {
+            margin-bottom: 0.7em;
+        }
+
+        &__slider {
+            max-width: 60rem;
         }
 
         &__box {
