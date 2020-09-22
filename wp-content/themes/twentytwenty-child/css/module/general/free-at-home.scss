@@ -36,6 +36,24 @@
 
     .form-contacts {
         margin-bottom: 0.813em;
+
+        &__box {
+            &:before {
+                display: none;
+            }
+        }
+
+        &__input {
+            text-align: center;
+            padding-left: 0;
+            font-weight: 700;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+            border-bottom: 0.188em solid #C9C9C9;
+        }
     }
 
     &__info {
@@ -93,12 +111,16 @@
         }
 
         .form-contacts {
-            max-width: 49rem;
+            max-width: 47rem;
             margin-bottom: 1.563em;
 
-            &__box,
+            &__box {
+                max-width: none;
+                min-width: 14.13em;
+            }
+
             &__button {
-                max-width: 14.388em;
+                max-width: 13.3em;
             }
 
         }
