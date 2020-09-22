@@ -38,6 +38,12 @@ $(document).ready(function(){
             }
         }
       });
+
+      $('.our-professional-employees__slider').owlCarousel({
+        items: 1,
+        dotsClass: ['our-professional-employees__nav-dots'],
+        dotClass: ['our-professional-employees__nav-dot'],
+      });
     
 });
 
