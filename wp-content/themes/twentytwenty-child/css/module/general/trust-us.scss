@@ -1,0 +1,139 @@
+.trust-us {
+
+    min-height: 28rem;
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0) 30%, #FFFFFF 80%), url('/wp-content/themes/twentytwenty-child/img/trust-us-small.jpg') no-repeat top right / cover;
+
+    .title,
+    .text {
+        text-align: left;
+    }
+
+    .text:nth-of-type(2) {
+        margin-bottom: 0;
+    }
+
+    .title {
+        margin-bottom: 1.263em;
+    }
+
+    &__box {
+        max-width: 10em;
+    }
+
+    @media (min-width: 500px) {
+        background: linear-gradient(270deg, rgba(255, 255, 255, 0) 30%, #FFFFFF 80%), url('/wp-content/themes/twentytwenty-child/img/trust-us-small.jpg') no-repeat top right / 95%;
+    }
+
+    @media (min-width: 600px) {
+        background: linear-gradient(270deg, rgba(255, 255, 255, 0) 30%, #FFFFFF 87%), url('/wp-content/themes/twentytwenty-child/img/trust-us-middle.jpg') no-repeat top right / cover;
+
+        &__box {
+            max-width: 14.1em;
+        }
+    }
+
+    @media (min-width: 768px) {
+        &__box {
+            max-width: 18em;
+        }
+    }
+
+    @media (min-width: 900px) {
+        background: linear-gradient(270deg, rgba(255, 255, 255, 0) 30%, #FFFFFF 87%), url("/wp-content/themes/twentytwenty-child/img/trust-us-middle.jpg") no-repeat top right / 90%;
+    }
+
+    @media (min-width: 960px) {
+        .container {
+            width: calc(100% - 8rem);
+        }
+
+        .title {
+            font-size: 3rem;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        position: relative;
+        min-height: 36.5rem;
+        background: linear-gradient(270deg, rgba(255, 255, 255, 0) 66%, #FFFFFF 87%), url("/wp-content/themes/twentytwenty-child/img/trust-us-big.jpg") no-repeat 0 0 / 80%;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 24em;
+            background: linear-gradient(450deg, rgba(255, 255, 255, 0) 4%, #FFFFFF 27%);
+        }
+
+        &__box {
+            max-width: 22em;
+        }
+
+        .title {
+            font-size: 4rem;
+        }
+
+        .text {
+            font-size: 2.4rem;
+
+            &:nth-of-type(1) {
+                margin-bottom: 2.188em;
+            }
+        }
+    }
+
+    @media (min-width: 1400px) {
+        background: linear-gradient(270deg, rgba(255, 255, 255, 0) 66%, #FFFFFF 87%), url("/wp-content/themes/twentytwenty-child/img/trust-us-big.jpg") no-repeat 9em 0/70%;
+
+        &:after {
+            right: 9em;
+        }
+    }
+
+    @media (min-width: 1500px) {
+        background: linear-gradient(270deg, rgba(255, 255, 255, 0) 66%, #FFFFFF 74%), url("/wp-content/themes/twentytwenty-child/img/trust-us-big.jpg") no-repeat 9em 0/70%;
+    }
+
+    @media (min-width: 1800px) {
+        background: linear-gradient(270deg, rgba(255, 255, 255, 0) 58%, #FFFFFF 74%), url("/wp-content/themes/twentytwenty-child/img/trust-us-big.jpg") no-repeat 9em 0/70%;
+
+        &:after {
+            background: linear-gradient(450deg, rgba(255, 255, 255, 0) 5%, #FFFFFF 22%);
+        }
+    }
+
+    @media (min-width: 1900px) {
+        background: linear-gradient(270deg, rgba(255, 255, 255, 0) 58%, #FFFFFF 74%), url("/wp-content/themes/twentytwenty-child/img/trust-us-big.jpg") no-repeat 24em 0/60%;
+    }
+
+    @media (min-width: 2000px) {
+        background: linear-gradient(270deg, rgba(255, 255, 255, 0) 51%, #FFFFFF 65%), url("/wp-content/themes/twentytwenty-child/img/trust-us-big.jpg") no-repeat 24em 0/60%;
+
+        &:after {
+            right: 14em;
+        }
+    }
+
+    @media (min-width: 2200px) {
+        &:after {
+            right: 19em;
+        }
+    }
+
+    @media (min-width: 2400px) {
+        &:after {
+            right: 25em;
+        }
+    }
+
+    @media (min-width: 2500px) {
+        background: linear-gradient(270deg, rgba(255, 255, 255, 0) 51%, #FFFFFF 65%), url("/wp-content/themes/twentytwenty-child/img/trust-us-big.jpg") no-repeat 31em 0/60%;
+
+        &:after {
+            right: 28em;
+        }
+    }
+
+}
