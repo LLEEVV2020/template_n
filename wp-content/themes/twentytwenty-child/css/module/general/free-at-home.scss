@@ -1,7 +1,7 @@
 @import '../../base/all/var';
 
 .free-at-home {
-
+    position: relative;
     background-color: #FFDE30;
     background-image: url('/wp-content/themes/twentytwenty-child/img/b_market_filtr_bg.png');
 
@@ -94,6 +94,7 @@
 
         &__image-worker {
             display: none;
+            max-width: inherit;
         }
 
         &__right {
