@@ -46,6 +46,22 @@
             display: block;
             margin-left: auto;
             max-width: 80%;
+
+            &.image {
+                &-2 {
+                    max-width: 73%;
+                }
+
+                &-3 {
+                    max-width: 76%;
+                    transform: translate(1.2em, 1.3em);
+                }
+
+                &-4 {
+                    max-width: 83%;
+                    transform: translateX(1.5em)
+                }
+            }
         }
 
         &-content {
@@ -63,6 +79,18 @@
                 height: 2.9rem;
                 background: url("data:image/svg+xml,%3Csvg width='41' height='38' viewBox='0 0 41 38' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d)'%3E%3Cpath d='M36 29.3544C33.4865 22.7756 23.7676 7.80876 5 0.572052' stroke='black'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_d' x='0.820312' y='0.10553' width='39.647' height='37.4273' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'/%3E%3CfeOffset dy='4'/%3E%3CfeGaussianBlur stdDeviation='2'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E");
                 background-repeat: no-repeat;
+            }
+
+            &.content {
+                &-3:before {
+                    top: 1.9em;
+                    right: 0.2em;
+                }
+
+                &-4:before {
+                    top: 1.9em;
+                    right: 0.8em;
+                }
             }
         }
     }
@@ -163,6 +191,25 @@
 
             &-image {
                 max-width: 100%;
+
+                &.image {
+                    &-1 {
+                        max-width: 96.8%;
+                    }
+
+                    &-2 {
+                        max-width: 87.3%;
+                    }
+    
+                    &-3 {
+                        max-width: 95%;
+                        transform: translate(0.6em, 1.3em);
+                    }
+    
+                    &-4 {
+                        max-width: 100%;
+                    }
+                }
             }
         }
 
@@ -262,6 +309,43 @@
                     background-image: url("data:image/svg+xml,%3Csvg width='84' height='80' viewBox='0 0 84 80' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d)'%3E%3Cpath d='M79 71C73 55 49.8 18.6 5 1' stroke='black'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_d' x='0.816406' y='0.534668' width='82.651' height='78.6409' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'/%3E%3CfeOffset dy='4'/%3E%3CfeGaussianBlur stdDeviation='2'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A");
                     top: 3.2em;
                     right: -1.6em;
+                }
+
+                &.content {
+                    &-3 {
+                        left: -6.9em;
+                        top: 2.3em;
+
+                        &:before {
+                            top: 3.5em;
+                            right: -0.2em;
+                        }
+                    }
+
+                    &-4 {
+                        &:before {
+                            top: 3.2em;
+                            right: 1.2em;
+                        }
+                    }
+                }
+            }
+
+            &-image {
+                &.image {
+                    &-2 {
+                        max-width: 91.8%;
+                    }
+    
+                    &-3 {
+                        max-width: 97.5%;
+                        transform: translate(1.8em, 1.3em);
+                    }
+    
+                    &-4 {
+                        max-width: 100%;
+                        transform: translate(2.1em, 1em);
+                    }
                 }
             }
         }
