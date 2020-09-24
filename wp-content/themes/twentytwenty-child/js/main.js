@@ -46,7 +46,15 @@ $(document).ready(function(){
         dotClass: ['our-professional-employees__nav-dot']
       });
 
-      $('.photo-gallery__slider-box').owlCarousel({
+      let photoGallerySlider = $('.photo-gallery__slider-box');
+      let photoPreviewSlider = $('.photo-gallery__previews');
+
+      photoPreviewSlider.owlCarousel({
+        items: 4,
+        margin: 2
+      });
+
+      photoGallerySlider.owlCarousel({
         items: 1,
         dotsClass: ['photo-gallery__nav-dots'],
         dotClass: ['photo-gallery__nav-dot'],
@@ -58,12 +66,19 @@ $(document).ready(function(){
           768 : {
             dots: false
           }
-        }
+        },
+        onChanged: photoImageCallback
       });
 
-      $('.photo-gallery__previews').owlCarousel({
-        items: 4,
-        margin: 2
+      function photoImageCallback(e) {
+          let index = e.item.index;
+          $('.owl-item', photoPreviewSlider).removeClass('current').eq(index).addClass('current');
+          photoPreviewSlider.trigger("to.owl.carousel", [index, 300, true]);
+      }
+
+      $('.owl-item', photoPreviewSlider).click(function () {
+          let index = $(this).index();
+          photoGallerySlider.trigger("to.owl.carousel", [index, 300, true]);
       });
     
 });

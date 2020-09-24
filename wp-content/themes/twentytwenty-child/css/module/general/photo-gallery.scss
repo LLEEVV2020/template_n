@@ -11,6 +11,12 @@
         margin-right: auto;
     }
 
+    &__nav-left,
+    &__nav-right,
+    &__preview {
+        cursor: pointer;
+    }
+
     &__nav {
         &-left,
         &-right,
@@ -100,12 +106,26 @@
         &__previews {
             margin-left: auto;
             margin-right: auto;
+
+            .current {
+                img {
+                    opacity: 1;
+                    border: 0.188em solid $orange;
+                }
+            }
         }
 
         &__preview {
             img {
                 opacity: 0.43;
             }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        &__slider-box,
+        &__previews {
+            max-width: 114.4rem;
         }
     }
 }
