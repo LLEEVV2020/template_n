@@ -124,7 +124,9 @@
             margin-right: 0.55rem;
             background-color: #C9C9C9;
             border-radius: 50%;
-
+            &:focus{
+                outline: none; 
+            }
             &.active {
                 background-color: $orange;
             }
