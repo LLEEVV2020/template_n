@@ -30,6 +30,7 @@ $(document).ready(function(){
         items: 5,
         margin: 2,
         dots: true,
+        nav: true,
         dotsClass: ['quality-worker__nav-dots'],
         dotClass: ['quality-worker__nav-dot'],
         responsive: {
@@ -42,7 +43,27 @@ $(document).ready(function(){
       $('.our-professional-employees__slider').owlCarousel({
         items: 1,
         dotsClass: ['our-professional-employees__nav-dots'],
-        dotClass: ['our-professional-employees__nav-dot'],
+        dotClass: ['our-professional-employees__nav-dot']
+      });
+
+      $('.photo-gallery__slider-box').owlCarousel({
+        items: 1,
+        dotsClass: ['photo-gallery__nav-dots'],
+        dotClass: ['photo-gallery__nav-dot'],
+        nav: true,
+        navText: [''],
+        navContainerClass: ['photo-gallery__nav'],
+        navClass: ['photo-gallery__nav-left', 'photo-gallery__nav-right'],
+        responsive: {
+          768 : {
+            dots: false
+          }
+        }
+      });
+
+      $('.photo-gallery__previews').owlCarousel({
+        items: 4,
+        margin: 2
       });
     
 });
