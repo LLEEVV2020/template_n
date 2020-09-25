@@ -56,12 +56,12 @@ $(document).ready(function(){
 
       photoGallerySlider.owlCarousel({
         items: 1,
-        dotsClass: ['photo-gallery__nav-dots'],
-        dotClass: ['photo-gallery__nav-dot'],
+        dotsClass: ['pagination-box'],
+        dotClass: ['pagination'],
         nav: true,
         navText: [''],
-        navContainerClass: ['photo-gallery__nav'],
-        navClass: ['photo-gallery__nav-left', 'photo-gallery__nav-right'],
+        navContainerClass: ['navigation'],
+        navClass: ['navigation-left', 'navigation-right'],
         responsive: {
           768 : {
             dots: false
