@@ -54,13 +54,15 @@
 
         &-dot {
             border: none;
-            width: 0.6rem;
-            height: 0.9rem;
-            margin-left: 0.6rem;
-            margin-right: 0.6rem;
+            width: .5em;
+            height: .5em;
+            margin-left: .375em;
+            margin-right: .375em;
             border-radius: 50%;
             background-color: #979797;
-
+            padding: 0;
+            cursor: pointer;
+            
             &.active {
                 background-color: $orange;
             }
