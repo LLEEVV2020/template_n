@@ -1591,11 +1591,14 @@
                                 content: '';
                                 position: absolute;
                                 top: 0.4em;
-                                left: 0.4em;
-                                width: 3.1rem;
-                                height: 3rem;
+                                left: 0.5em;
+                                width: 1.938em;                               ;
+                                height: 1.875em;
+                                background-size: 38.938em 25.375em;
                                 background-image: url('/wp-content/themes/twentytwenty-child/img/sprite.png');
-                                background-position: -38.5rem -456.9rem;
+                                background-repeat: no-repeat;
+                                background-position: 31.57% 67.46%;
+                                font-size: 0.7em;
                             }
 
                         }
@@ -1770,10 +1773,20 @@
                             width: 3.063em;
                             height: 3.063em;
                             background-color: $yellow;
+                            border-radius: 50%;
+                        }
+
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            top: 0.3em;
+                            left: 0.7em;
+                            width: 1.938em;                               ;
+                            height: 1.875em;
+                            background-size: 38.938em 25.375em;
                             background-image: url('/wp-content/themes/twentytwenty-child/img/sprite.png');
                             background-repeat: no-repeat;
-                            background-position: -23.425em -28.525em;
-                            border-radius: 50%;
+                            background-position: 31.57% 67.46%;
                         }
 
                         &-price {
@@ -2616,10 +2629,8 @@
                         }
 
                         &:after {
-                            left: 0.6em;
-                            width: 6rem;
-                            height: 6.3rem;
-                            background-position: -37.5rem -460.9rem;
+                            top: 0.5em;
+                            left: 0.7em;
                         }
                     }
 
