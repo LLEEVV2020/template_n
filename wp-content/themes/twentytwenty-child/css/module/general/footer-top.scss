@@ -16,13 +16,19 @@
 
     &__item,
     &__icon, 
-    &__icon > a {
+    &__item > a {
         display: flex;
         align-items: center;
     }
 
     &__item {
         margin-bottom: 0.813em;
+        & > a{
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
     }
 
     &__icon {
