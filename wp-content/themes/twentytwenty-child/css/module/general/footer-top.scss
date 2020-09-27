@@ -15,7 +15,8 @@
     }
 
     &__item,
-    &__icon {
+    &__icon, 
+    &__icon > a {
         display: flex;
         align-items: center;
     }
