@@ -1,0 +1,398 @@
+.installment-calculator {
+    .title {
+        margin-bottom: 0.875em;
+    }
+
+    .button {
+        width: 100%;
+        max-width: 33.5rem;
+        padding: .7em .1em .551em;
+        letter-spacing: 0.05em;
+    }
+
+    &-list {
+        max-width: 19.833em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1.111em;
+        display: flex;
+        justify-content: space-between;
+
+        &__circle {
+            width: 3.667em;
+            height: 3.667em;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 0.556em;
+            background-color: #FFE600;
+            border-radius: 50%;
+        }
+
+        &__currency {
+            width: 1.423em;
+        }
+
+        &__time {
+            width: 2.123em;
+        }
+
+        &__document {
+            width: 1.993em;
+        }
+
+        &__item {
+            &:first-child,
+            &:nth-child(2) {
+                .installment-calculator-list__circle {
+                    line-height: 5em;
+                }
+            }
+        }
+
+        &__item {
+            &:nth-child(3) {
+                .installment-calculator-list__circle {
+                    line-height: 5.7em;
+                }
+            }
+        }
+
+        &__small,
+        &__big {
+            letter-spacing: 0.03em;
+        }
+
+        &__small {
+            font-size: 0.556em;
+        }
+
+        &__big {
+            font-size: 0.889em;
+            font-weight: 700;
+        }
+    }
+
+    &-slider {
+
+        &__top {
+            margin-bottom: 0.222em;
+        }
+
+        &__bottom {
+            .installment-calculator-slider__range {
+                justify-content: flex-end;
+            }
+        }
+        
+        &__content,
+        &__range {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__content {
+            margin-bottom: 0.667em;
+            align-items: center;
+        }
+
+        &__text,
+        &__total {
+            letter-spacing: 0.03em;
+        }
+
+        &__text {
+            font-size: 1.6rem;
+            font-weight: 700;
+        }
+
+        &__total {
+            font-size: 2.4rem;
+            font-weight: 900;
+        }
+
+        &__box {
+            margin-bottom: 0.375em;
+        }
+
+        &__line,
+        &__line-inner {
+            height: 0.5rem;
+            border-radius: 3px;
+        }
+
+        &__line {
+            height: 0.5rem;
+            margin-bottom: 0.311em;
+            background-color: #C4C4C4;
+
+            &-inner {
+                max-width: 17%;
+                background-color: #F26422;
+                position: relative;
+
+                span {
+                    display: block;
+                    width: 0.389em;
+                    height: 0.389em;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 0;
+                    border-radius: 50%;
+                    background-color: #F26422;
+                }
+            }
+
+        }
+
+        &__value,
+        &__rubble {
+            color: #C9C9C9;
+        }
+
+        &__value {
+            font-size: 1rem;
+            letter-spacing: 0.03em;
+        }
+
+    }
+
+    .partners-banks {
+        margin-bottom: 2.375em;
+        align-items: center;
+        display: flex;
+
+        span {
+            margin-right: 0.713em;
+            font-size: 1.6rem;
+            font-weight: 700;
+        }
+
+    }
+
+    .summ-box {
+        min-height: 47rem;
+
+        &__rectangle {
+            width: 32.4rem;
+            height: 5.6rem;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 6px;
+            border: 20px solid #f2f2f2;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25), -7px 4px 31px rgba(0, 0, 0, 0.20);
+            position: relative;            
+        }
+
+        &__content {
+            max-width: 26rem;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 2.250em 0.425em;
+            background: #ffffff;
+            text-align: right;
+            box-shadow: -2px 18px 38px rgba(0, 0, 0, 0.25);
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -0.8em;
+                width: 112%;
+                height: 2rem;
+                background-color: #ffffff;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -1em;
+                left: 0;
+                width: 100%;
+                height: 2rem;
+                background: url('/wp-content/themes/twentytwenty-child/img/rectangle-icon.svg') repeat-x;
+            }
+        }
+
+        &__summ {
+            margin-bottom: 2.625em;
+        }
+
+        &__text {
+            margin-bottom: 0.3em;
+            font-size: 1.4rem;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            &--mb {
+                margin-bottom: 2.000em;
+            }
+
+            span {
+                font-size: 2.4rem;
+                margin-left: 0.4em;
+            }
+        }
+
+        &__value {
+            font-size: 4rem;
+        }
+
+        &__installment {
+            margin-bottom: 2.125em;
+        }
+        
+    }
+
+    .btn-base {
+        &--add {
+            max-width: 24rem;
+        }
+    }
+
+    @media (min-width: 670px) {
+        
+        &-list {
+            font-size: 2rem;
+        }
+
+        &-slider {
+            &__text {
+                font-size: 2rem;
+            }
+
+            &__total {
+                font-size: 3rem;
+            }
+
+            &__value {
+                font-size: 1.2rem;
+            }
+
+            &__line {
+                &-inner {
+                    max-width: 33%;
+                }
+            }
+        }
+
+        .partners-banks {
+            &__mr {
+                margin-right: 1.167em;
+            }
+
+            span {
+                margin-right: 1.944em;
+                font-size: 2rem;
+            }
+        }
+
+        .summ-box {
+            &__rectangle {
+                width: 36.8rem;
+                height: 6.4rem;
+            }
+
+            &__content {
+                max-width: 30rem;
+                padding: 2.65em 0.925em;
+
+                &::before {
+                    width: 109%;
+                    top: 0.2em;
+                }
+            }
+        }
+
+    }
+
+    @media (min-width: 768px) {
+
+        &-list {
+            max-width: 25.222em;
+
+            font-size: 2.5rem;
+        }
+
+        &-slider {
+            &__top {
+                margin-bottom: 1.389em;
+            }
+
+            &__bottom {
+                margin-bottom: 0.833em;
+            }
+
+            &__line {
+                &-inner {
+                    span {
+                        width: 0.611em;
+                        height: 0.611em;
+                    }
+                }
+            }
+        }
+
+        .button {
+            max-width: 25.8rem;
+        }
+
+    }
+
+    @media (min-width: 900px) {
+        .container {
+            width: calc(100% - 8rem);
+        }
+    }
+
+    @media (min-width: 1320px) {
+        &__container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .title-section {
+            font-size: 4rem;
+        }
+
+        .left {
+            width: 66%;
+        }
+
+        &-list {
+            max-width: 100%;
+            margin-bottom: 3.111em;
+
+            &__small {
+                font-size: 0.788em;
+            }
+
+            &__big {
+                font-size: 1.089em;
+            }
+        }
+
+        &-slider {
+            &__text {
+                font-size: 2.4rem;
+            }
+
+            &__total {
+                font-size: 4rem;
+            }
+
+            &__value {
+                font-size: 1.4rem;
+            }
+        }
+
+        .partners-banks {
+            span {
+                font-size: 2.4rem;
+            }
+        }
+    }
+
+}
