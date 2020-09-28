@@ -1,0 +1,195 @@
+.urgent-repair {
+    .title {
+        margin-bottom: 0.813em;
+    }
+
+    &__text,
+    &__cheaper {
+        font-size: 1.125em;
+    }
+
+    &__text {
+        margin-bottom: 1.125em;
+        font-weight: 900;
+        line-height: 1.14;
+    }
+
+    &__box {
+        max-width: 21em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        max-width: 21em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__icon {
+        width: 5.287em;
+        height: 5.181em;
+        background-size: 38.938em 29.625em;
+        background-image: url('/wp-content/themes/twentytwenty-child/img/sprite.png');
+        background-repeat: no-repeat;
+        background-position: 1.11% 100%;
+        font-size: 0.9em;
+    }
+
+    &__content {
+        max-width: 15.4em;
+    }
+
+    &__title,
+    &__cheaper {
+        font-weight: 900;
+    }
+
+    &__title {
+        margin-bottom: 0.281em;
+        font-size: 1.5em;
+        line-height: 1.2;
+        color: #DF0054;
+    }
+
+    &__info {
+        margin-bottom: 0.844em;
+        line-height: 1.375;
+        font-weight: 700;
+    }
+
+    &__cheaper {
+        max-width: 13.7em;
+        margin-left: auto;
+        line-height: 1.1;
+    }
+
+    @media (min-width: 600px) {
+        &__text {
+            text-align: center;
+            font-weight: 700;
+        }
+
+        &__box {
+            max-width: 27em;
+        }
+
+        &__inner {
+            max-width: 28em;
+        }
+
+        &__icon {
+            font-size: 1.5em;
+        }
+
+        &__content {
+            max-width: 17.5em;
+        }
+
+        &__cheaper {
+            max-width: none;
+            text-align: right;
+        }
+    }
+
+    @media (min-width: 768px) {
+        &__text,
+        &__info,
+        &__cheaper {
+            font-size: 1.250em;
+        }   
+
+        &__text {
+            margin-bottom: 1.375em;
+        }
+
+        &__box {
+            max-width: 40em;
+        }
+
+        &__inner {
+            max-width: 38em;
+            align-items: flex-end;
+        }
+
+        &__icon {
+            font-size: 2.1em;
+        }
+
+        &__content {
+            max-width: 21.8em;
+        }
+
+        &__title {
+            font-size: 1.875em;
+        }
+
+        &__info {
+            margin-bottom: 2.188em;
+            font-weight: 400;
+            line-height: 1.1;
+        }
+
+        &__cheaper {
+            font-weight: 700;
+        }
+    }
+
+    @media (min-width: 960px) {
+        .container {
+            width: calc(100% - 8rem);
+        }
+
+        &__box {
+            max-width: 55em;
+        }
+
+        &__inner {
+            align-items: flex-start;
+            max-width: 48em;
+        }
+
+        &__content {
+            max-width: 35.5em;
+        }
+
+        &__title {
+            font-size: 2.500em;
+        }
+
+        &__info {
+            max-width: 18em;
+        }
+
+        &__cheaper {
+            text-align: left;
+            max-width: 33.3em;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        &__text {
+            max-width: 28.1em;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 1.5em;
+        }
+
+        &__title {
+            line-height: 1.25;
+        }
+
+        &__info {
+            margin-bottom: 3em;
+        }
+
+
+        &__cheaper {
+            max-width: none;
+            text-align: center;
+            font-size: 1.5em;
+        }
+    }
+}

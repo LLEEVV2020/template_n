@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+  // Стили для слайдера блока advantages-windows
     $(".advantages-windows__slider").owlCarousel({
         items: 1,
         nav: true,
@@ -11,6 +12,7 @@ $(document).ready(function(){
         dotClass: ['advantages-windows__nav-dot']
     });
 
+    // Стили для слайдера блока right-balcony
     $('.left-balcony-slider').owlCarousel({
         items: 1,
         merge: true,
@@ -26,6 +28,7 @@ $(document).ready(function(){
         navText: ['']
       });
 
+      // Стили для слайдера блока quality-worker
       $('.quality-worker__slider').owlCarousel({
         items: 5,
         margin: 2,
@@ -40,6 +43,7 @@ $(document).ready(function(){
         }
       });
 
+      // Стили для слайдера блока our-professional-employees
       $('.our-professional-employees__slider').owlCarousel({
         items: 1,
         dotsClass: ['our-professional-employees__nav-dots'],
