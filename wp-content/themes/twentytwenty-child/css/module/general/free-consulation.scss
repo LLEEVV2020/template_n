@@ -1,12 +1,13 @@
 @import '../../base/all/var';
 
 .free-consultation {
-
     min-height: 32em;
     padding-top: 19em;
     padding-bottom: 3em;
-    background: url("/wp-content/themes/twentytwenty-child/img/free-consultation-bg.jpg") 91% 0 no-repeat;
-    background-size: 80em;
+    // background: url("/wp-content/themes/twentytwenty-child/img/free-consultation-big.jpg") 91% 0 no-repeat;
+    // background-size: 80em;
+    background: url("/wp-content/themes/twentytwenty-child/img/free-consultation-big.jpg") 26% 0 no-repeat;
+    background-size: 37em;
 
     &__title,
     &__phone {
@@ -93,12 +94,43 @@
         color: $black;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 590px) {
+        background-position-x: right;
+        background-size: 37em;
+        position: relative;
 
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -24.3em;
+            width: 20.4em;
+            height: 100%;
+            box-shadow: 12em -1em 1.1em rgba(255, 255, 255, 1);
+        }
+
+        &__content {
+            z-index: 1;
+            position: relative;
+        }
+    }
+
+    @media (min-width: 700px) {
+        &:before {
+            width: 25.4em;
+        }
+    }
+
+    @media (min-width: 768px) {
         min-height: auto;
         padding-top: 3.438em;
         padding-bottom: 3.438em;
-        background-size: cover;
+        // background-size: cover;
+        background-position-x: 17em;
+
+        &:before {
+            width: 34.4em;
+        }
 
         &__title {
             max-width: none;
@@ -167,7 +199,20 @@
 
     }
 
+    @media (min-width: 860px) {
+        background-position-x: 25em;
+
+        &:before {
+            left: -17.3em;
+        }
+    }
+
     @media (min-width: 960px) {
+        background-position-x: 29em;
+
+        &:before {
+            left: -15.3em;
+        }
 
         .container {
             width: calc(100% - 8rem);
@@ -179,7 +224,24 @@
 
     }
 
+    @media (min-width: 1030px) {
+        background-position-x: 33em;
+
+        &:before {
+            left: -11.3em;
+        }
+    }
+
+    @media (min-width: 1100px) {
+        background-position-x: 38em;
+
+        &:before {
+            left: -6.3em;
+        }
+    }
+
     @media (min-width: 1200px) {
+        background-size: 53em;
 
         &__title { 
             font-size: 4rem;
@@ -205,7 +267,7 @@
                 left: 0;
                 width: 56px;
 	            height: 43px;
-                background: url('/wp-content/themes/twentytwenty-child/img/sprite.png') no-repeat -307px -455px;;
+                background: url('/wp-content/themes/twentytwenty-child/img/sprite.png') no-repeat -307px -455px;
             }
         }
 
@@ -247,6 +309,97 @@
             font-weight: 500;
         }
 
+    }
+
+    @media (min-width: 1400px) {
+        background-position-x: 42em;
+
+        &:before {
+            left: 1.7em;
+        }
+    }
+
+    @media (min-width: 1460px) {
+        background-position-x: 47em;
+
+        &:before {
+            left: 7.7em;
+        }
+    }
+
+    @media (min-width: 1600px) {
+        background-position-x: 56em;
+
+        &:before {
+            left: 15.7em;
+        }
+    }
+
+    @media (min-width: 1700px) {
+        background-position-x: 62em;
+
+        &:before {
+            left: 21.7em;
+        }
+    }
+
+    @media (min-width: 1840px) {
+        background-position-x: 70em;
+
+        &:before {
+            left: 27.7em;
+            height: 106%;
+        }
+    }
+
+    @media (min-width: 1968px) {
+        background-position-x: right;
+
+        &:before {
+            left: 29.7em;
+        }
+    }
+
+    @media (min-width: 2050px) {
+        &:before {
+            left: 34.7em;
+        }
+    }
+
+    @media (min-width: 2100px) {
+        &:before {
+            left: 38.7em;
+        }
+    }
+
+    @media (min-width: 2200px) {
+        &:before {
+            left: 44.7em;
+        }
+    }
+
+    @media (min-width: 2300px) {
+        &:before {
+            left: 50.7em;
+        }
+    }
+
+    @media (min-width: 2400px) {
+        &:before {
+            left: 55.7em;
+        }
+    }
+
+    @media (min-width: 2450px) {
+        &:before {
+            left: 59.7em;
+        }
+    }
+
+    @media (min-width: 2540px) {
+        &:before {
+            left: 65.7em;
+        }
     }
 
 }
