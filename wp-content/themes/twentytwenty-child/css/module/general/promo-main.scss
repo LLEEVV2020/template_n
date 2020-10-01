@@ -165,6 +165,9 @@
             max-width: 21em;
             margin-bottom: 2em;
             justify-content: space-between;
+            @media (max-width: 500px) {
+                max-width: 18em;
+            }
 
             &-icon {
                 width: 4.375em;
