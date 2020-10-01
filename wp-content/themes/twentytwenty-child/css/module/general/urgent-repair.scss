@@ -28,14 +28,9 @@
         margin-right: auto;
     }
 
-    &__icon {
-        width: 5.287em;
-        height: 5.181em;
-        background-size: 38.938em 29.625em;
-        background-image: url('/wp-content/themes/twentytwenty-child/img/sprite.png');
-        background-repeat: no-repeat;
-        background-position: 1.11% 100%;
-        font-size: 0.9em;
+    &__image {
+        width: 4.887em;
+        height: 4.781em;
     }
 
     &__content {
@@ -77,7 +72,8 @@
         }
 
         &__inner {
-            max-width: 28em;
+            // max-width: 28em;
+            max-width: 24em;
         }
 
         &__icon {
@@ -110,12 +106,12 @@
         }
 
         &__inner {
-            max-width: 38em;
-            align-items: flex-end;
+            max-width: 36em;
         }
 
-        &__icon {
-            font-size: 2.1em;
+        &__image {
+            width: 10.906em;
+            height: 10.906em;
         }
 
         &__content {
@@ -184,7 +180,6 @@
         &__info {
             margin-bottom: 3em;
         }
-
 
         &__cheaper {
             max-width: none;
