@@ -295,6 +295,10 @@
         }
 
         &__us {
+            &-text,
+            &-price {
+                color: #3A3A3A;
+            }
 
             &-text {
                 margin-right: 0.413em;
@@ -2325,6 +2329,7 @@
                     &__price {
     
                         &-box {
+                            margin-bottom: 3.188em;
                             font-size: 2.1rem;
                         }
     
@@ -2357,6 +2362,10 @@
 
                 }
 
+            }
+
+            .info-price {
+                margin-bottom: 0;
             }
 
         }
