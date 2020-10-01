@@ -47,13 +47,13 @@
                     line-height: 5em;
                 }
             }
-        }
-
-        &__item {
             &:nth-child(3) {
                 .installment-calculator-list__circle {
                     line-height: 5.7em;
                 }
+            }
+            img{
+                display: inline-block;
             }
         }
 
