@@ -4,6 +4,7 @@
 
     background: url('/wp-content/themes/twentytwenty-child/img/quality-worker-bg-middle.png') no-repeat;
     background-size: cover;
+    background-position-y: 7em;
 
     .title {
         margin-bottom: 1.2em;
@@ -106,6 +107,8 @@
     }
 
     @media (min-width: 768px) {
+        background-position-y: 0;
+
         &__box {
             max-width: 65rem;
             margin-left: auto;

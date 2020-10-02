@@ -33,7 +33,6 @@ $(document).ready(function(){
         items: 5,
         margin: 2,
         dots: true,
-        nav: true,
         dotsClass: ['quality-worker__nav-dots'],
         dotClass: ['quality-worker__nav-dot'],
         responsive: {
