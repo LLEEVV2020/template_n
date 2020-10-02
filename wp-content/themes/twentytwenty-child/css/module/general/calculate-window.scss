@@ -240,7 +240,7 @@
             }
 
             &__button {
-                padding: 0.618em 0.3em;
+                padding: 0.818em 0.3em;
                 max-width: 11.177em;
                 align-self: flex-start;
             }
@@ -263,6 +263,8 @@
 
             &__button {
                 min-width: 12.188em;
+                padding-top: 0.660em;
+                padding-bottom: 0.660em;
             }
 
         }
