@@ -103,7 +103,6 @@
     }
 
     @media (min-width: 768px) {
-
         .container {
             position: relative;
             z-index: 1;
@@ -111,6 +110,7 @@
 
         .title {
             font-weight: 800;
+            margin-bottom: 0;
         }
 
         &__box {
@@ -132,6 +132,7 @@
 
         &__percent {
             font-size: 10.625em;
+            line-height: 0.9;
         }
 
         &__symbol {
@@ -176,7 +177,7 @@
 
             &-bg {
                 &:after {
-                    border-width: 0 2rem 6.9rem 1.4rem;
+                    border-width: 0 2rem 7rem 1.4rem;
                 }
             }
         }
@@ -223,6 +224,10 @@
                 padding-right: 9.5rem;
             }
 
+        }
+
+        &__percent {
+            line-height: 1.1;
         }
 
         &__image {
