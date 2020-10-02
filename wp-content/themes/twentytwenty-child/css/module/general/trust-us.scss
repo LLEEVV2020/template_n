@@ -100,7 +100,13 @@
         background: linear-gradient(270deg, rgba(255, 255, 255, 0) 58%, #FFFFFF 74%), url("/wp-content/themes/twentytwenty-child/img/trust-us-big.jpg") no-repeat 9em 0/70%;
 
         &:after {
-            background: linear-gradient(450deg, rgba(255, 255, 255, 0) 5%, #FFFFFF 22%);
+            background: linear-gradient(450deg, rgba(255, 255, 255, 0) 2%, #FFFFFF 33%);
+        }
+    }
+
+    @media (min-width: 1830px) {
+        &:after {
+            right: 10.7em;
         }
     }
 
