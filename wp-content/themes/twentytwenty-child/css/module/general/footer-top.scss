@@ -2,7 +2,7 @@
 
 .footer-top {
     background-image: url('/wp-content/themes/twentytwenty-child/img/footer-top-bg-middle.jpg');
-    background-size: cover;
+    background-size: auto;
     position: relative;
 
     .logo-factory-windows {
@@ -84,6 +84,8 @@
     }
 
     @media (min-width: 768px) {
+        background-size: cover;
+
         .logo-factory-windows {
             display: block;
             max-width: 9.8em;
