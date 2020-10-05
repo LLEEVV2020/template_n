@@ -68,6 +68,24 @@
 
 
     
+    <script>
+        
+        let elements = document.querySelectorAll('input[name="window"]');
+        for (let elem of elements) {
+            console.log(elem); // "тест", "пройден"
+            elem.addEventListener("click",             
+            function() { 
+                alert('Станет'); 
+            });
+
+            if (chbox.checked) {
+		alert('Выбран');
+	}
+	else {
+		alert ('Не выбран');
+	}
+        }
+    </script>
 
 
 
@@ -135,10 +153,6 @@
         </div>
     </div>
 
-    <script>
-        
-
-    </script>
 
 
     <script src="/wp-content/themes/twentytwenty-child/libs/jquery/jquery-3.3.1.min.js"></script>
