@@ -30,7 +30,7 @@
                 <form class="calc-window__list flex-row" action="#">
                     <div class="calc-window__list-item">
                         <input type="radio" id="window" name="window">
-                        <label for="window" class="calc-window__list-text calc-window__list-label">
+                        <label for="window" class="calc-window__list-text calc-window__list-label calc-window_icon--1">
                             <span class="calc-window__list-circl">
                                 <span class="calc-window__list-icon calc-window__list-icon--1"></span>
                             </span>
@@ -38,8 +38,8 @@
                         </label>
                     </div>
                     <div class="calc-window__list-item">
-                        <input type="radio" id="window1" name="window">
-                        <label for="window1" class="calc-window__list-text calc-window__list-label">
+                        <input type="radio" id="window1" name="window" checked>
+                        <label for="window1" class="calc-window__list-text calc-window__list-label ">
                             <span class="calc-window__list-circl">
                                 <span class="calc-window__list-icon calc-window__list-icon--2"></span>
                             </span>
@@ -47,7 +47,7 @@
                     </div>
                     <div class="calc-window__list-item">
                         <input type="radio" id="window2" name="window">
-                        <label for="window2" class="calc-window__list-text calc-window__list-label">
+                        <label for="window2" class="calc-window__list-text calc-window__list-label ">
                             <span class="calc-window__list-circl">
                                 <span class="calc-window__list-icon calc-window__list-icon--3"></span>
                             </span>
@@ -69,21 +69,34 @@
 
     
     <script>
+        // шаги калькулятора
+        let current_Slide = 0;
         
         let elements = document.querySelectorAll('input[name="window"]');
         for (let elem of elements) {
-            console.log(elem); // "тест", "пройден"
+            if(elem.getAttribute("checked") == true){
+
+            }
+            console.log(elem.getAttribute("checked"));
             elem.addEventListener("click",             
             function() { 
-                alert('Станет'); 
+                if (elem.checked) {
+                    console.log(elem.getAttribute("id"));
+                    
+                }
+                
             });
 
-            if (chbox.checked) {
-		alert('Выбран');
-	}
-	else {
-		alert ('Не выбран');
-	}
+      
+        }
+
+        
+        function showNext_Slide() {
+            showSlide(current_Slide + 1);
+        }
+
+        function showPrevious_Slide() {
+            showSlide(current_Slide - 1);
         }
     </script>
 
