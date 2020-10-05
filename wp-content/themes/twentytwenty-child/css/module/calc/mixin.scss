@@ -1,0 +1,19 @@
+// Using
+//.div {
+//   @include _1170 {
+//       @content;
+//   }
+//}
+
+@mixin _1200 {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+
+@mixin _768 {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
