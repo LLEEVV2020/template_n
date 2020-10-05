@@ -5,6 +5,11 @@ input {
     cursor: pointer;
 }
 
+input[type="checkbox"],
+input[type="radio"] {
+    display: none;
+}
+
 .text {
     margin-bottom: 0;
 }
@@ -357,7 +362,6 @@ input {
 
     &__list-label {
         cursor: pointer;
-        display: block;
     }
 
     /* .calc-window__buttons */
@@ -956,7 +960,6 @@ input {
         }
     }
 
-
     /* .calc-window__block-form */
 
     &__block-form {
@@ -979,6 +982,7 @@ input {
 
     &__block-add {
         pointer-events: none;
+        margin-top: .2em;
         opacity: 0.3;
     }
 
@@ -1031,26 +1035,15 @@ input {
     /* .calc-window__block-check */
 
     &__block-check {
-        -webkit-appearance: none;
-        width: 0.875em;
-        height: 0.875em;
-        background: #ffffff;
-        border: 2px solid #e8e8e8;
-        border-radius: 3px;
-        outline: transparent;
-
-        @media (min-width: 1200px) {
-            width: 1.188em;
-            height: 1.188em;
-        }
-
-        &:checked {
-
-
+        &:checked + .calc-window__block-check-lable::before {
             background: url("/wp-content/themes/twentytwenty-child/img/check.svg");
             background-repeat: no-repeat;
             background-size: 6px 6px;
             background-position: center;
+
+            @media (min-width: 768px) {
+                background-size: 8px 8px;
+            }
 
             @media (min-width: 1200px) {
                 background-size: 10px 10px;
@@ -1066,7 +1059,21 @@ input {
     /* .calc-window__block-check-lable */
 
     &__block-check-lable {
+        cursor: pointer;
+        display: block;
+        text-align: left;
+        padding-left: 2.8rem;
+        position: relative;
 
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 0.875em;
+            height: 0.875em;
+            border: 2px solid #e8e8e8;
+            border-radius: 3px;
+        }
 
         @media (min-width: 1200px) {
             font-size: 1.5em;
@@ -1075,30 +1082,34 @@ input {
         }
     }
 
-    &__block-check-lable,
+        /* .calc-window__block-radio-lable */
+
     &__block-radio-lable {
-        padding-left: 1.4rem;
+        display: block;
+        text-align: left;
+        padding-left: 2.8rem;
+        position: relative;
+        line-height: 1.3em;
         cursor: pointer;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0.1em;
+            top: 0.2em;
+            width: 0.715em;
+            height: 0.715em;
+            margin: 0 0.2em;
+            border: 1px solid #e8e8e8;
+            border-radius: 50%;
+        }
     }
 
     /* .calc-window__block-radio */
 
     &__block-radio {
-        -webkit-appearance: none;
-        width: 0.5em;
-        height: 0.5em;
-        margin: 0 0.2em;
-        border: 1px solid #e8e8e8;
-        border-radius: 50%;
-        outline: transparent;
-        cursor: pointer;
 
-        @media (min-width: 1200px) {
-            width: 0.75em;
-            height: 0.75em;
-        }
-
-        &:checked {
+        &:checked + .calc-window__block-radio-lable::before {
             background-color: $orange;
         }
     }
@@ -1460,10 +1471,6 @@ input {
         }
     }
 
-    & .calc-window__block-form {
-        padding: 2.5rem 1.7rem 2.5rem 3.4rem;
-    }
-
     /* .calc-window-four__img--1 */
 
     &__img--1 {
@@ -1555,7 +1562,6 @@ input {
             display: flex;
             flex-direction: row-reverse;
             margin: 4.5em 0;
-
         }
     }
 
@@ -2010,7 +2016,7 @@ input {
     /* .calc-window-seven__payment */
 
     &__payment {
-        color: #D0D0D0;
+        color: #d0d0d0;
         font-size: 1.5em;
         line-height: 1.5em;
         font-weight: 900;
@@ -2290,7 +2296,7 @@ $range-label-width: 41px !default;
 
 // Firefox Overrides
 ::-moz-range-track {
-    background-image: linear-gradient(90deg, rgba(208,208,208,1) 0%, rgba(208,208,208,1) 0%);
+    background-image: linear-gradient(90deg, rgba(208, 208, 208, 1) 0%, rgba(208, 208, 208, 1) 0%);
     border: 0;
 }
 
