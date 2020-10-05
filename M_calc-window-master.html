@@ -30,7 +30,7 @@
                 <form class="calc-window__list flex-row" action="#">
                     <div class="calc-window__list-item">
                         <input type="radio" id="window" name="window">
-                        <label for="window" class="calc-window__list-text calc-window__list-label calc-window_icon--1">
+                        <label for="window" class="calc-window__list-text calc-window__list-label "> 
                             <span class="calc-window__list-circl">
                                 <span class="calc-window__list-icon calc-window__list-icon--1"></span>
                             </span>
@@ -69,19 +69,24 @@
 
     
     <script>
+//(function() {}());
+
         // шаги калькулятора
         let current_Slide = 0;
+        // что выбрали: Квартира, Частный дом, Офис
+        let c__local_text ;
         
-        let elements = document.querySelectorAll('input[name="window"]');
-        for (let elem of elements) {
-            if(elem.getAttribute("checked") == true){
-
-            }
-            console.log(elem.getAttribute("checked"));
-            elem.addEventListener("click",             
+        
+        let i_name_window = document.querySelectorAll('input[name="window"]');
+        for (let i_item of i_name_window) {
+            
+            console.log(i_item.getAttribute("checked"));
+            i_item.addEventListener("click",             
             function() { 
-                if (elem.checked) {
-                    console.log(elem.getAttribute("id"));
+                if (i_item.checked) {
+                    console.log(i_item.i_item[1].getAttribute("class"));
+                    
+                    // c__local_text = 
                     
                 }
                 
