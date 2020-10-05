@@ -18,8 +18,9 @@
 
         <link rel="stylesheet" href="wp-content/themes/twentytwenty-child/css/module/calc/calc-window.css">
 
-        <div class="container">
+        <form class="container" action="#">
 
+            <!--первый шаг-->
             <div class="calc-window__wrapper flex-row">
 
                 <h2 class="calc-window__title title">РАССЧИТАЙТЕ ТОЧНУЮ СТОИМОСТЬ ОКОН <span
@@ -27,7 +28,7 @@
 
                 <p class="calc-window__text">Выберите - куда вам нужны окна</p>
 
-                <form class="calc-window__list flex-row" action="#">
+                <div class="calc-window__list flex-row" action="#">
                     <div class="calc-window__list-item">
                         <input type="radio" id="window" name="window">
                         <label for="window" class="calc-window__list-text calc-window__list-label "> 
@@ -53,7 +54,7 @@
                             </span>
                             <span class="calc-window__local-text">Офис</span></label>
                     </div>
-                </form>
+                </div>
 
                 <div class="calc-window__buttons flex-row ">
                     <div class="calc-window__btn calc-window__btn--prew none">Назад</div>
@@ -62,11 +63,77 @@
 
             </div>
 
+
         </div>
 
     </section> 
 
 
+    <section class="calc-window calc-window-two padding pos-fix">
+
+        <div class="container">
+
+            <div class="calc-window__wrapper">
+
+                <h2 class="calc-window__title calc-window-two__title title">РАССЧИТАЙТЕ ТОЧНУЮ СТОИМОСТЬ ОКОН <span
+                        class="calc-window__title-block">ЗА 3 МИНУТЫ</span></h2>
+
+                <h3 class="calc-window-two__subtitle">Выберите количество створок</h3>
+
+                <p class="calc-window-two__text">На следующем шаге — вы сможете настроить каждую створку.</p>
+
+
+                <div class="calc-window-two__list flex-row" action="#">
+                    <div class="calc-window-two__list-item">
+                        <input type="radio" id="window-two" name="window-two">
+                        <div class="calc-window-two__box calc-window-two__box--1">
+                            <div
+                                class="calc-window-two__box-img calc-window-two__box-img-size--s calc-window-two__box-img--1">
+                            </div>
+                        </div>
+                        <label class="calc-window-two__label" for="window-two"></label>
+                    </div>
+                    <div class="calc-window-two__list-item">
+                        <input type="radio" id="window-two2" name="window-two">
+                        <div class="calc-window-two__box calc-window-two__box--2">
+                            <div
+                                class="calc-window-two__box-img calc-window-two__box-img-size--m calc-window-two__box-img--1">
+                            </div>
+                            <div
+                                class="calc-window-two__box-img calc-window-two__box-img-size--m calc-window-two__box-img--2">
+                            </div>
+                        </div>
+                        <label class="calc-window-two__label" for="window-two2"></label>
+                    </div>
+                    <div class="calc-window-two__list-item">
+                        <input type="radio" id="window-two3" name="window-two">
+                        <div class="calc-window-two__box calc-window-two__box--3">
+                            <div
+                                class="calc-window-two__box-img calc-window-two__box-img-size--l calc-window-two__box-img--1">
+                            </div>
+                            <div
+                                class="calc-window-two__box-img calc-window-two__box-img-size--l calc-window-two__box-img--3">
+                            </div>
+                            <div
+                                class="calc-window-two__box-img calc-window-two__box-img-size--l calc-window-two__box-img--4">
+                            </div>
+                        </div>
+                        <label class="calc-window-two__label" for="window-two3"></label>
+                    </div>
+                </div>
+
+
+                <div class="calc-window__buttons flex-row ">
+                    <div class="calc-window__btn calc-window__btn--prew">Назад</div>
+                    <div class="calc-window__btn calc-window__btn--next">Далее</div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section> 
+    
     
     <script>
 //(function() {}());
@@ -74,17 +141,17 @@
         // шаги калькулятора
         let current_Slide = 0;
         // что выбрали: Квартира, Частный дом, Офис
-        let c__local_text ;
+        let c__local_text = "";
         
         
-        let i_name_window = document.querySelectorAll('.calc-window__list-item');
+        let i_name_window = document.querySelectorAll('input[name="window"]');
         for (let i_item of i_name_window) {
             
-            //console.log(i_item.getAttribute("checked"));
+            //console.log(i_item.children[0].getAttribute("checked"));
             i_item.addEventListener("click",             
             function() { 
                 if (i_item.checked) {
-                    console.log(i_item.children[1].getAttribute("class"));
+                    console.log(i_item.parentNode.children[1].children[1].getAttribute("class"));
                     
                     // c__local_text = 
                     

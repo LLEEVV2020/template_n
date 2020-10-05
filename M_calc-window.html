@@ -12,8 +12,10 @@
 </head>
 
 <body>
+<form action="#">
+    
 
-     <section class="calc-window calc-window-one padding pos-fix">
+    <section class="calc-window calc-window-one padding pos-fix">
 
         <link rel="stylesheet" href="wp-content/themes/twentytwenty-child/css/module/calc/calc-window.css">
 
@@ -26,7 +28,7 @@
 
                 <p class="calc-window__text">Выберите - куда вам нужны окна</p>
 
-                <form class="calc-window__list flex-row" action="#">
+                <div class="calc-window__list flex-row" action="#">
                     <div class="calc-window__list-item">
                         <input type="radio" id="window" name="window">
                         <label for="window" class="calc-window__list-text calc-window__list-label"><!-- calc-window_icon--1 -->
@@ -52,7 +54,7 @@
                             </span>
                             Офис</label>
                     </div>
-                </form>
+                </div>
 
                 <div class="calc-window__buttons flex-row ">
                     <div class="calc-window__btn calc-window__btn--prew none">Назад</div>
@@ -79,7 +81,7 @@
                 <p class="calc-window-two__text">На следующем шаге — вы сможете настроить каждую створку.</p>
 
 
-                <form class="calc-window-two__list flex-row" action="#">
+                <div class="calc-window-two__list flex-row" action="#">
                     <div class="calc-window-two__list-item">
                         <input type="radio" id="window-two" name="window-two">
                         <div class="calc-window-two__box calc-window-two__box--1">
@@ -116,7 +118,7 @@
                         </div>
                         <label class="calc-window-two__label" for="window-two3"></label>
                     </div>
-                </form>
+                </div>
 
 
                 <div class="calc-window__buttons flex-row ">
@@ -146,65 +148,65 @@
                             <div class="calc-window-three__list-item flex-row none">
                                 <div class="calc-window-three__box calc-window-three__box--1"></div>
 
-                                <form class="calc-window__form calc-window__form--1" action="#">
+                                <div class="calc-window__form calc-window__form--1" action="#">
                                     <div class="range-slider">
                                         <label class="calc-window-three__lable" for="height">Высота:</label>
                                         <input class="range-slider__range" type="range" id="height" value="1500" min="0"
                                             max="2500">
                                         <span class="range-slider__value">1500</span>
                                     </div>
-                                </form>
+                                </div>
 
-                                <form class="calc-window__form calc-window__form--2" action="#">
+                                <div class="calc-window__form calc-window__form--2" action="#">
                                     <div class="range-slider">
                                         <label class="calc-window-three__lable" for="width">Ширина:</label>
                                         <input class="range-slider__range" type="range" id="width" value="1000" min="0"
                                             max="2500">
                                         <span class="range-slider__value">1000</span>
                                     </div>
-                                </form>
+                                </div>
                             </div>
                             <div class="calc-window-three__list-item flex-row none">
                                 <div class="calc-window-three__box calc-window-three__box--2"></div>
 
-                                <form class="calc-window__form calc-window__form--1" action="#">
+                                <div class="calc-window__form calc-window__form--1" action="#">
                                     <div class="range-slider">
                                         <label class="calc-window-three__lable" for="height-1">Высота:</label>
                                         <input class="range-slider__range" type="range" id="height-1" value="1500"
                                             min="0" max="2500">
                                         <span class="range-slider__value">1500</span>
                                     </div>
-                                </form>
+                                </div>
 
-                                <form class="calc-window__form calc-window__form--2" action="#">
+                                <div class="calc-window__form calc-window__form--2" action="#">
                                     <div class="range-slider">
                                         <label class="calc-window-three__lable" for="width-1">Ширина:</label>
                                         <input class="range-slider__range" type="range" id="width-1" value="1000"
                                             min="0" max="2500">
                                         <span class="range-slider__value">1000</span>
                                     </div>
-                                </form>
+                                </div>
                             </div>
                             <div class="calc-window-three__list-item flex-row">
                                 <div class="calc-window-three__box calc-window-three__box--3"></div>
 
-                                <form class="calc-window__form calc-window__form--1" action="#">
+                                <div class="calc-window__form calc-window__form--1" action="#">
                                     <div class="range-slider">
                                         <label class="calc-window-three__lable" for="height-2">Высота:</label>
                                         <input class="range-slider__range" type="range" id="height-2" value="1500"
                                             min="0" max="2500">
                                         <span class="range-slider__value">1500</span>
                                     </div>
-                                </form>
+                                </div>
 
-                                <form class="calc-window__form calc-window__form--2" action="#">
+                                <div class="calc-window__form calc-window__form--2" action="#">
                                     <div class="range-slider">
                                         <label class="calc-window-three__lable" for="width-2">Ширина:</label>
                                         <input class="range-slider__range" type="range" id="width-2" value="1000"
                                             min="0" max="2500">
                                         <span class="range-slider__value">1000</span>
                                     </div>
-                                </form>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -598,12 +600,12 @@
                         <p class="calc-window-seven__payment-text text">По вашему запросу возможны несколько вариантов.
                             Консультант перезвонит для конкретизации расчета.</p>
 
-                        <form class="form-contacts calc-window-seven__payment-form" action="#">
+                        <div class="form-contacts calc-window-seven__payment-form" action="#">
                             <div class="form-contacts__box form-contacts__box--phone">
                                 <input class="form-contacts__input" type="tel" placeholder="000 000-00-00">
                             </div>
                             <button class="form-contacts__button button" type="submit">Отправить</button>
-                        </form>
+                        </div>
 
                         <p class="calc-window-seven__payment-info text-m">Оставляя свои контактные данные, вы
                             подтверждаете свое совершеннолетие,
@@ -744,6 +746,7 @@
         </div>
 
     </section>
+</form>
 
 
 
