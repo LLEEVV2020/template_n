@@ -77,14 +77,14 @@
         let c__local_text ;
         
         
-        let i_name_window = document.querySelectorAll('input[name="window"]');
+        let i_name_window = document.querySelectorAll('.calc-window__list-item');
         for (let i_item of i_name_window) {
             
-            console.log(i_item.getAttribute("checked"));
+            //console.log(i_item.getAttribute("checked"));
             i_item.addEventListener("click",             
             function() { 
                 if (i_item.checked) {
-                    console.log(i_item.i_item[1].getAttribute("class"));
+                    console.log(i_item.children[1].getAttribute("class"));
                     
                     // c__local_text = 
                     

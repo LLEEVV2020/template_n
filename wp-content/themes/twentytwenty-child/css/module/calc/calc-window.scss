@@ -398,6 +398,9 @@ input[type="radio"] {
         cursor: pointer;
         display: block;
         position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
         &.calc-window_icon--1{
             &::after{
                 background-position-x: 15.918%;
