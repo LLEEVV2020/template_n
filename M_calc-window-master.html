@@ -15,7 +15,7 @@
 
 
     <form class="container" action="#">
-        <section class="calc-window calc-window-one padding pos-fix">
+        <section class="calc-window calc-window-one calc-window-1 padding pos-fix">
 
             <link rel="stylesheet" href="wp-content/themes/twentytwenty-child/css/module/calc/calc-window.css">
 
@@ -69,7 +69,7 @@
         </section> 
 
 
-        <section class="calc-window calc-window-two padding pos-fix">
+        <section class="calc-window calc-window-two calc-window-2 padding pos-fix">
 
             <div class="container">
 
@@ -139,29 +139,76 @@
 //(function() {}());
 
         // шаги калькулятора
-        let current_Slide = 0;
+        let current_Slide = 1;
         // что выбрали: Квартира, Частный дом, Офис
         let c__local_text = "";
         
-        
+        // начальный экран
         let i_name_window = document.querySelectorAll('input[name="window"]');
         for (let i_item of i_name_window) {
             
-            //console.log(i_item.children[0].getAttribute("checked"));
-            i_item.addEventListener("click",             
-                function() { 
+            i_item.addEventListener("click",  function() { 
                 if (i_item.checked) {
                     let local_item = i_item.parentNode.children[1].children[1].innerText;
-                    console.log(i_item.parentNode.children[1].children[1].getAttribute("class"));
-                    // c__local_text = 
-                    
                 }
-                
             });
-
-      
         }
 
+        // второй экран
+        let i_name_window_two = document.querySelectorAll('input[name="window"]');
+        for (let i_item of i_name_window_two) {
+            //window-two
+        }
+
+
+
+
+        let btn__prew = document.querySelectorAll('.calc-window__btn--prew');
+        for (let i_item of btn__prew) {
+            i_item.addEventListener("click",  function() { 
+                showPrevious_Slide();
+            });
+        }
+
+        let btn_next = document.querySelectorAll('.calc-window__btn--next');
+        for (let i_item of btn_next) {
+            i_item.addEventListener("click",  function() { 
+                showNext_Slide();
+            });
+        }
+
+        function showSlide(n) {
+
+            let btn_next = document.querySelectorAll('.calc-window');
+            for (let i_item of btn_next) {
+                i_item.style.display = "none";
+            }
+
+            switch (n) {
+
+                case 1:
+                    document.querySelector('.calc-window-one');
+                    console.log( 'Маловато' );
+                    break;
+                case 2:
+                    document.querySelector('.calc-window-two').style.display = "block" ;
+                   // let calc_window_two= document.querySelector('.calc-window-two');
+                   // calc_window_twostyle.style.display = "block";
+                    break;
+                case 3:
+                    console.log( 'Маловато' );
+                    break;
+                case 4:
+                    console.log( 'В точку!' );
+                    break;
+                case 5:
+                    console.log( 'Перебор' );
+                    break;
+            }
+            if(n == 0){
+
+            }
+        }
         
         function showNext_Slide() {
             showSlide(current_Slide + 1);
