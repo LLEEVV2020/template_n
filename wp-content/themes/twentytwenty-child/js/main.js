@@ -83,6 +83,13 @@ $(document).ready(function(){
           let index = $(this).index();
           photoGallerySlider.trigger("to.owl.carousel", [index, 300, true]);
       });
+
+      // Стили для слайдера блока reviews
+      $('.reviews__slider').owlCarousel({
+        items: 1,
+        nav: true,
+        dots: false
+      });
     
 });
 
