@@ -43,6 +43,11 @@ input[type="radio"] {
     background-color: #e8e8e8;
 }
 
+.blocking{
+    pointer-events: none;
+    opacity: .52;
+}
+
 .icon {
     fill: #fff;
 

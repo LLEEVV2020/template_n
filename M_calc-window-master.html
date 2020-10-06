@@ -85,7 +85,7 @@
 
                     <div class="calc-window-two__list flex-row" action="#">
                         <div class="calc-window-two__list-item">
-                            <input type="radio" id="window-two" name="window-two">
+                            <input type="radio" id="window-two" name="window-two" data-columns="">
                             <div class="calc-window-two__box calc-window-two__box--1">
                                 <div
                                     class="calc-window-two__box-img calc-window-two__box-img-size--s calc-window-two__box-img--1">
@@ -124,8 +124,8 @@
 
 
                     <div class="calc-window__buttons flex-row ">
-                        <div class="calc-window__btn calc-window__btn--prew">Назад</div>
-                        <div class="calc-window__btn calc-window__btn--next">Далее</div>
+                        <div class="calc-window__btn calc-window__btn--prew ">Назад</div>
+                        <div class="calc-window__btn calc-window__btn--next  blocking   ">Далее</div>
                     </div>
 
                 </div>
@@ -141,7 +141,7 @@
         // шаги калькулятора
         let current_Slide = 1;
         // что выбрали: Квартира, Частный дом, Офис
-        let c__local_text = "";
+        let c__window = "Частный дом";
         
         // начальный экран
         let i_name_window = document.querySelectorAll('input[name="window"]');
@@ -149,15 +149,19 @@
             
             i_item.addEventListener("click",  function() { 
                 if (i_item.checked) {
-                    let local_item = i_item.parentNode.children[1].children[1].innerText;
+                    c__window = i_item.parentNode.children[1].children[1].innerText;
                 }
             });
         }
 
         // второй экран
-        let i_name_window_two = document.querySelectorAll('input[name="window"]');
+        let i_name_window_two = document.querySelectorAll('input[name="window-two"]');
         for (let i_item of i_name_window_two) {
-            //window-two
+            i_item.addEventListener("click",  function() {
+                if (i_item.checked) {
+                    let local_item = i_item.parentNode.children[1].children[1].innerText;
+                }
+            });
         }
 
 
