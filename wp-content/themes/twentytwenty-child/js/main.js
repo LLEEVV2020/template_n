@@ -86,9 +86,7 @@ $(document).ready(function(){
 
       // Стили для слайдера блока reviews
       $('.reviews__slider').owlCarousel({
-        items: 1,
-        nav: true,
-        dots: false
+        items: 1
       });
     
 });
