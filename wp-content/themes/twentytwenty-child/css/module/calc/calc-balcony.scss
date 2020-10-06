@@ -3,7 +3,10 @@
 
 // ===================  the main  ===================
 
-input[type="radio"] {
+$grey: #e8e8e8;
+
+input[type="radio"],
+input[type="checkbox"] {
     display: none;
 }
 
@@ -21,14 +24,84 @@ input[type="radio"] {
     justify-content: space-around;
 }
 
-.calc-balkony {
+.calc-balcony {
     position: relative;
-    height: 100vh;
-    min-height: 60em;
-    min-height: 43.75em;
+    min-height: 100vh;
+
+    &__buttons {
+        box-shadow: 3px 4px 23px rgba(0, 0, 0, 0.25);
+        width: 100%;
+        height: 2.5em;
+        background-color: #fff;
+        position: absolute;
+        margin-top: auto;
+        // position: fixed;
+        bottom: 0;
+        left: 0;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1.563em;
+
+        @include _768 {
+            margin-top: 2em;
+            position: static;
+            box-shadow: none;
+            background-color: transparent;
+        }
+    }
+
+    &__btn {
+        position: relative;
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        color: #17a1e3;
+        font-weight: 700;
+        padding: 0;
+        outline: transparent;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 0.4em;
+            height: 0.4em;
+            border-right: 0.15em solid #17a1e3;
+            border-top: 0.15em solid #17a1e3;
+        }
+
+        @include _768 {
+            font-size: 1.8rem;
+        }
+
+        @include _1200 {
+            font-size: 2.4rem;
+        }
+    }
+    &__btn--prew {
+        &::before {
+            left: -1rem;
+            transform: rotate(-134deg);
+            bottom: 0.39em;
+
+            @include _768 {
+                left: -2rem;
+            }
+        }
+    }
+    &__btn--next {
+        &::before {
+            bottom: 0.29em;
+            transform: rotate(45deg);
+            right: -1rem;
+
+            @include _768 {
+                right: -2rem;
+            }
+        }
+    }
 }
 
-.balkony__wrapper {
+.balcony__inner {
     padding: 2.5rem 0 4rem;
     text-align: center;
 
@@ -41,7 +114,7 @@ input[type="radio"] {
     }
 }
 
-.balkony__title {
+.balcony__title {
     display: none;
     text-align: center;
     font-weight: 900;
@@ -68,7 +141,7 @@ input[type="radio"] {
     }
 }
 
-.balkony__text {
+.balcony-text {
     font-size: 1em;
 
     @include _768 {
@@ -78,16 +151,138 @@ input[type="radio"] {
     @include _1200 {
         font-size: 1.5em;
     }
+
+    &__m {
+        font-size: 0.7em;
+
+        @media (min-width: 768px) {
+            font-size: 0.9em;
+        }
+    }
 }
 
 .orange {
     color: $orange;
 }
 
+.line {
+    display: block;
+    height: 0.2rem;
+    width: 100%;
+    margin: 0.6em 0;
+    background-color: $grey;
+}
+
+.balcony-img {
+    width: 18.125em;
+    height: 8.188em;
+    margin: 0 auto 1.563em;
+    background-image: url(/wp-content/themes/twentytwenty-child/img/balkony-m.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include _1200 {
+        width: 38.188em;
+        height: 17.313em;
+        background-image: url(/wp-content/themes/twentytwenty-child/img/balkony-s.webp);
+    }
+}
+
+// ===================  balcony-form  ===================
+
+.balcony-form {
+    width: 14em;
+    margin: 0 auto;
+    border: 0.1em solid $grey;
+    border-radius: 0.5em;
+    padding: 1.25em 1.688em;
+    text-align: left;
+
+    @include _768 {
+        width: 15em;
+    }
+    @include _1200 {
+        width: 20.75em;
+        padding: 2.25em 3.25em;
+    }
+
+    &__title {
+        margin-bottom: 1.25em;
+        text-align: center;
+    }
+
+    &__add {
+        margin-top: 0.3em;
+        pointer-events: none;
+        opacity: 0.3;
+    }
+
+    &__input-check:checked {
+        + .balcony-form__check::before {
+            background: url("/wp-content/themes/twentytwenty-child/img/check.svg");
+            background-repeat: no-repeat;
+            background-size: .4em .4em;
+            background-position: center;
+            @include _1200 {
+                background-size: .5em .5em;
+            }
+        }
+    }
+
+    &__input-radio:checked {
+        + .balcony-form__radio::before {
+            background-color: $orange;
+        }
+    }
+
+    &__input-check-add:checked {
+        ~ .balcony-form__add {
+            pointer-events: auto;
+            opacity: 1;
+        }
+    }
+
+    &__radio {
+        display: block;
+        position: relative;
+        padding-left: 2.55em;
+        line-height: 1.3em;
+        cursor: pointer;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 0.715em;
+            height: 0.715em;
+            border: 0.15em solid $grey;
+            border-radius: 50%;
+            margin-left: 0.3em;
+            left: 0;
+            top: 0.18em;
+        }
+    }
+
+    &__check {
+        padding-left: 1.75em;
+        position: relative;
+        cursor: pointer;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 0.875em;
+            height: 0.875em;
+            border: 0.15em solid $grey;
+            border-radius: 0.2em;
+            left: 0;
+        }
+    }
+}
+
 // ===================  balcony-home  ===================
 
 .balcony-home {
-    & .balkony__title {
+    & .balcony__title {
         display: block;
     }
 
@@ -194,7 +389,7 @@ input[type="radio"] {
 
             &::before {
                 border: 0.1em solid $orange;
-                
+
                 @include _768 {
                     border-width: 0.2em;
                 }
@@ -227,14 +422,399 @@ input[type="radio"] {
             }
         }
     }
+    .calc-balcony__btn--next {
+        margin-left: auto;
+    }
 }
 
 // ===================  balcony-leaflets  ===================
 .balcony-leaflets {
+    &__list {
+        margin-top: 8.813em;
+        justify-content: space-around;
+        @include _1200 {
+            justify-content: space-between;
+            margin-top: 4.63em;
+        }
+    }
+
+    &__radio {
+        &:checked {
+            + .balcony-leaflets__label {
+                border: 0.1em solid $orange;
+
+                @include _768 {
+                    border-width: 0.15em;
+                }
+                .balcony-leaflets__bg {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+
+    &__label {
+        border: 0.1em solid #fff;
+
+        &:hover {
+            border: 0.1em solid $orange;
+
+            @include _768 {
+                border-width: 0.15em;
+            }
+
+            .balcony-leaflets__bg {
+                opacity: 0.5;
+            }
+        }
+
+        @include _768 {
+            border-width: 0.15em;
+        }
+    }
+
+    &__img {
+        height: 6.063em;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @include _768 {
+            height: 13.5em;
+        }
+
+        @include _1200 {
+            height: 21.438em;
+        }
+    }
+
+    &__img--1 {
+        width: 3.563em;
+        background-image: url(/wp-content/themes/twentytwenty-child/img/calc-window-1-s.webp);
+        padding: 0.5em 0.6em 0.5em 0.5em;
+
+        @include _768 {
+            width: 8.063em;
+            background-image: url(/wp-content/themes/twentytwenty-child/img/calc-window-1-m.webp);
+            padding: 1.1em 1.4em 1.05em 1.1em;
+        }
+
+        @include _1200 {
+            width: 12.663em;
+            background-image: url(/wp-content/themes/twentytwenty-child/img/calc-window-1-xl.webp);
+            padding: 1.7em 2em 1.65em 1.7em;
+        }
+    }
+
+    &__img--2 {
+        width: 6.063em;
+        background-image: url(/wp-content/themes/twentytwenty-child/img/calc-window-2-s.webp);
+        padding: 0.5em 0.55em 0.47em 0.5em;
+
+        .balcony-leaflets__bg--1,
+        .balcony-leaflets__bg--2 {
+            width: 2.16em;
+        }
+
+        @include _768 {
+            width: 13.5em;
+            background-image: url(/wp-content/themes/twentytwenty-child/img/calc-window-2-m.webp);
+            padding: 1.2em 1.1em 1.05em 1.2em;
+
+            .balcony-leaflets__bg--1,
+            .balcony-leaflets__bg--2 {
+                width: 4.7em;
+            }
+        }
+
+        @include _1200 {
+            width: 21.438em;
+            background-image: url(/wp-content/themes/twentytwenty-child/img/calc-window-2-xl.webp);
+            padding: 1.8em 1.74em 1.65em 1.8em;
+
+            .balcony-leaflets__bg--1,
+            .balcony-leaflets__bg--2 {
+                width: 7.7em;
+            }
+        }
+    }
+
+    &__img--3 {
+        width: 7.688em;
+        background-image: url(/wp-content/themes/twentytwenty-child/img/calc-window-3-s.webp);
+        padding: 0.45em 0.5em;
+
+        .balcony-leaflets__bg--1,
+        .balcony-leaflets__bg--3,
+        .balcony-leaflets__bg--4 {
+            width: 1.86em;
+        }
+
+        @include _768 {
+            width: 16.938em;
+            background-image: url(/wp-content/themes/twentytwenty-child/img/calc-window-3-m.webp);
+            padding: 1em 1.22em 0.95em 1.18em;
+
+            .balcony-leaflets__bg--1,
+            .balcony-leaflets__bg--4 {
+                width: 3.86em;
+            }
+            .balcony-leaflets__bg--3 {
+                width: 4.16em;
+            }
+        }
+
+        @include _1200 {
+            width: 26.625em;
+            background-image: url(/wp-content/themes/twentytwenty-child/img/calc-window-3-xl.webp);
+            padding: 1.7em 1.9em 1.6em 1.8em;
+
+            .balcony-leaflets__bg--1,
+            .balcony-leaflets__bg--4 {
+                width: 6.16em;
+            }
+            .balcony-leaflets__bg--3 {
+                width: 6.66em;
+            }
+        }
+    }
+
+    &__bg {
+        display: block;
+        opacity: 0;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: 0em;
+        background-image: url("/wp-content/themes/twentytwenty-child/img/calc-window-bg-s.webp");
+        transition: opacity 0.3s;
+
+        @include _768 {
+            background-image: url("/wp-content/themes/twentytwenty-child/img/calc-window-bg-m.webp");
+        }
+
+        @include _1200 {
+            background-image: url("/wp-content/themes/twentytwenty-child/img/calc-window-bg-l.webp");
+        }
+    }
+
+    &__bg--1 {
+        width: 100%;
+    }
+
+    &__bg--2 {
+        background-position-x: -1.8em;
+        @include _768 {
+            background-position-x: -4.7em;
+        }
+
+        @include _1200 {
+            background-position-x: -9.8em;
+        }
+    }
+
+    &__bg--3 {
+        background-position-x: -2.6em;
+        @include _768 {
+            background-position-x: -5.2em;
+        }
+
+        @include _1200 {
+            background-position-x: -6.2em;
+        }
+    }
+
+    &__bg--4 {
+        background-position-x: -4.8em;
+        @include _768 {
+            background-position-x: -9.5em;
+        }
+
+        @include _1200 {
+            background-position-x: -13.6em;
+        }
+    }
 }
 
 // ===================  balcony-size  ===================
 .balcony-size {
+    &__wrapper {
+        margin-top: 1.563em;
+
+        @include _768 {
+            display: flex;
+            justify-content: space-around;
+        }
+        @include _1200 {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__box-img {
+        @include _1200 {
+            position: relative;
+            padding-left: 7.125em;
+        }
+    }
+
+    &__box-form {
+        margin-top: 1.25em;
+
+        @include _768 {
+            margin-top: 0;
+        }
+    }
+
+    &__lable {
+        width: 4.2em;
+        display: block;
+        line-height: 2em;
+        text-align: left;
+
+        @include _1200 {
+            display: none;
+        }
+    }
+}
+
+// Range Slider Start
+
+// Base Colors
+$shade-10: $orange !default;
+$shade-1: #d0d0d0 !default;
+$shade-0: #fff !default;
+$teal: $orange !default;
+
+// Range Slider
+$range-width: 5em !default;
+
+$range-handle-color: $shade-10 !default;
+$range-handle-color-hover: $teal !default;
+$range-handle-size: 7px !default;
+
+$range-track-color: $shade-1 !default;
+$range-track-height: 3px !default;
+
+$range-label-color: $shade-10 !default;
+$range-label-width: 41px !default;
+
+.range-slider {
+    width: 20em;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include _1200 {
+        flex-direction: column;
+    }
+
+    &--vertical {
+        @include _1200 {
+            position: absolute;
+            transform: rotate(90deg);
+            left: -5.6em;
+            top: 7.2em;
+        }
+
+        & .range-slider__range {
+            @include _1200 {
+                width: 17.313em;
+            }
+        }
+
+        & .range-slider__value {
+            @include _1200 {
+                transform: rotate(-90deg) translatex(-2em);
+            }
+        }
+    }
+}
+
+.range-slider__range {
+    -webkit-appearance: none;
+    width: 11.625em;
+    height: $range-track-height;
+    border-radius: 0.5em;
+    background: $range-track-color;
+    outline: none;
+    padding: 0;
+    margin: 0;
+
+    @media (min-width: 768px) {
+        margin-right: 1em;
+    }
+
+    @media (min-width: 1200px) {
+        margin-right: 0;
+        margin-bottom: 1em;
+        width: 38.188em;
+    }
+
+    // Range Handle
+    &::-webkit-slider-thumb {
+        appearance: none;
+        width: $range-handle-size;
+        height: $range-handle-size;
+        border-radius: 50%;
+        background: $range-handle-color;
+        cursor: pointer;
+        transition: background 0.15s ease-in-out;
+    }
+
+    &:active::-webkit-slider-thumb {
+        background: $range-handle-color-hover;
+    }
+
+    &::-moz-range-thumb {
+        width: $range-handle-size;
+        height: $range-handle-size;
+        border: 0;
+        border-radius: 50%;
+        background: $range-handle-color;
+        cursor: pointer;
+        transition: background 0.15s ease-in-out;
+
+        &:hover {
+            background: $range-handle-color-hover;
+        }
+    }
+
+    &:active::-moz-range-thumb {
+        background: $range-handle-color-hover;
+    }
+}
+
+// Range Label
+.range-slider__value {
+    display: inline-block;
+    position: relative;
+    width: $range-label-width;
+    line-height: 14px;
+    text-align: center;
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-left: 12px;
+    border: 1px solid #d0d0d0;
+    font-size: 0.6em;
+
+    @media (min-width: 768px) {
+        margin: 0;
+        width: 77px;
+        line-height: 24px;
+        font-size: 1em;
+    }
+}
+
+// Firefox Overrides
+::-moz-range-track {
+    background-image: $range-track-color;
+    border: 0;
+}
+
+input::-moz-focus-inner,
+input::-moz-focus-outer {
+    border: 0;
 }
 
 // ===================  balcony-add  ===================
