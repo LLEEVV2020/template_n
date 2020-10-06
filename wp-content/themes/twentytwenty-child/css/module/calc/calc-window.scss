@@ -43,6 +43,11 @@ input[type="radio"] {
     background-color: #e8e8e8;
 }
 
+.blocking{
+    pointer-events: none;
+    opacity: .52;
+}
+
 .icon {
     fill: #fff;
 
@@ -359,10 +364,58 @@ input[type="radio"] {
     }
 
     /* calc-window__list-label */
-
+    label[class*="calc-window_icon"]{
+        &::before, &::after{
+            content: "";
+            display: block;
+        }
+        &::before{
+            
+            height: 8.6rem;
+            width: 8.6rem;
+            background-color: $yellow;
+            border-radius: 50%;
+            margin-bottom: 0.563em;
+            
+            @media (min-width: 768px) {
+                height: 15rem;
+                width: 15rem;
+            }
+    
+            @media (min-width: 1200px) {
+                height: 23.6rem;
+                width: 23.6rem;
+            } 
+        }
+        &::after{
+            background-repeat: no-repeat;
+            background-image: url(/wp-content/themes/twentytwenty-child/img/calc_sprites.webp);
+            background-size: 24.500em 20.750em;
+            position: absolute;
+            top: 2.8em;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: .37em;
+        }
+        
+    }
     &__list-label {
         cursor: pointer;
         display: block;
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        &.calc-window_icon--1{
+            &::after{
+                background-position-x: 15.918%;
+                background-position-y: 18.09%;
+                width: 9.188em;
+                height: 8.313em;
+
+            }
+        }
+        
     }
 
     /* .calc-window__buttons */
@@ -2297,7 +2350,7 @@ $range-label-width: 41px !default;
 
 // Firefox Overrides
 ::-moz-range-track {
-    background-image: linear-gradient(90deg, rgba(208, 208, 208, 1) 0%, rgba(208, 208, 208, 1) 0%);
+    background-image: $range-track-color;
     border: 0;
 }
 

@@ -1,0 +1,830 @@
+@import "../../base/all/var";
+@import "mixin";
+
+// ===================  the main  ===================
+
+$grey: #e8e8e8;
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: none;
+}
+
+.df {
+    display: flex;
+}
+
+.dfsb {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dfsa {
+    display: flex;
+    justify-content: space-around;
+}
+
+.calc-balcony {
+    position: relative;
+    min-height: 100vh;
+
+    &__buttons {
+        box-shadow: 3px 4px 23px rgba(0, 0, 0, 0.25);
+        width: 100%;
+        height: 2.5em;
+        background-color: #fff;
+        position: absolute;
+        margin-top: auto;
+        // position: fixed;
+        bottom: 0;
+        left: 0;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1.563em;
+
+        @include _768 {
+            margin-top: 2em;
+            position: static;
+            box-shadow: none;
+            background-color: transparent;
+        }
+    }
+
+    &__btn {
+        position: relative;
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        color: #17a1e3;
+        font-weight: 700;
+        padding: 0;
+        outline: transparent;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 0.4em;
+            height: 0.4em;
+            border-right: 0.15em solid #17a1e3;
+            border-top: 0.15em solid #17a1e3;
+        }
+
+        @include _768 {
+            font-size: 1.8rem;
+        }
+
+        @include _1200 {
+            font-size: 2.4rem;
+        }
+    }
+    &__btn--prew {
+        &::before {
+            left: -1rem;
+            transform: rotate(-134deg);
+            bottom: 0.39em;
+
+            @include _768 {
+                left: -2rem;
+            }
+        }
+    }
+    &__btn--next {
+        &::before {
+            bottom: 0.29em;
+            transform: rotate(45deg);
+            right: -1rem;
+
+            @include _768 {
+                right: -2rem;
+            }
+        }
+    }
+}
+
+.balcony__inner {
+    padding: 2.5rem 0 4rem;
+    text-align: center;
+
+    @include _768 {
+        padding: 5.5rem 0 0;
+    }
+
+    @include _1200 {
+        padding: 7rem 0 0;
+    }
+}
+
+.balcony__title {
+    display: none;
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 1.042em;
+
+    & span {
+        display: block;
+
+        @include _768 {
+            display: inline-block;
+        }
+    }
+
+    @include _768 {
+        display: block;
+        font-size: 1.875em;
+        margin-bottom: 1.333em;
+    }
+
+    @include _1200 {
+        font-size: 2.5em;
+        margin-bottom: 1em;
+    }
+}
+
+.balcony-text {
+    font-size: 1em;
+
+    @include _768 {
+        font-size: 1.25em;
+    }
+
+    @include _1200 {
+        font-size: 1.5em;
+    }
+
+    &__m {
+        font-size: 0.7em;
+
+        @media (min-width: 768px) {
+            font-size: 0.9em;
+        }
+    }
+}
+
+.orange {
+    color: $orange;
+}
+
+.line {
+    display: block;
+    height: 0.2rem;
+    width: 100%;
+    margin: 0.6em 0;
+    background-color: $grey;
+}
+
+.balcony-img {
+    width: 18.125em;
+    height: 8.188em;
+    margin: 0 auto 1.563em;
+    background-image: url(/wp-content/themes/twentytwenty-child/img/balkony-m.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include _1200 {
+        width: 38.188em;
+        height: 17.313em;
+        background-image: url(/wp-content/themes/twentytwenty-child/img/balkony-s.webp);
+    }
+}
+
+// ===================  balcony-form  ===================
+
+.balcony-form {
+    width: 14em;
+    margin: 0 auto;
+    border: 0.1em solid $grey;
+    border-radius: 0.5em;
+    padding: 1.25em 1.688em;
+    text-align: left;
+
+    @include _768 {
+        width: 15em;
+    }
+    @include _1200 {
+        width: 20.75em;
+        padding: 2.25em 3.25em;
+    }
+
+    &__title {
+        margin-bottom: 1.25em;
+        text-align: center;
+    }
+
+    &__add {
+        margin-top: 0.3em;
+        pointer-events: none;
+        opacity: 0.3;
+    }
+
+    &__input-check:checked {
+        + .balcony-form__check::before {
+            background: url("/wp-content/themes/twentytwenty-child/img/check.svg");
+            background-repeat: no-repeat;
+            background-size: .4em .4em;
+            background-position: center;
+            @include _1200 {
+                background-size: .5em .5em;
+            }
+        }
+    }
+
+    &__input-radio:checked {
+        + .balcony-form__radio::before {
+            background-color: $orange;
+        }
+    }
+
+    &__input-check-add:checked {
+        ~ .balcony-form__add {
+            pointer-events: auto;
+            opacity: 1;
+        }
+    }
+
+    &__radio {
+        display: block;
+        position: relative;
+        padding-left: 2.55em;
+        line-height: 1.3em;
+        cursor: pointer;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 0.715em;
+            height: 0.715em;
+            border: 0.15em solid $grey;
+            border-radius: 50%;
+            margin-left: 0.3em;
+            left: 0;
+            top: 0.18em;
+        }
+    }
+
+    &__check {
+        padding-left: 1.75em;
+        position: relative;
+        cursor: pointer;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 0.875em;
+            height: 0.875em;
+            border: 0.15em solid $grey;
+            border-radius: 0.2em;
+            left: 0;
+        }
+    }
+}
+
+// ===================  balcony-home  ===================
+
+.balcony-home {
+    & .balcony__title {
+        display: block;
+    }
+
+    &__text {
+        margin-bottom: 1.042em;
+    }
+
+    &__list {
+        margin-top: 1.5625em;
+        justify-content: center;
+
+        @include _768 {
+            margin-top: 2.5em;
+        }
+
+        @include _1200 {
+            margin-top: 3.8125em;
+        }
+    }
+
+    &__label {
+        align-items: flex-end;
+        justify-content: center;
+        width: 8.5rem;
+        height: 11.8rem;
+        position: relative;
+        cursor: pointer;
+        margin: 0 1.813em;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            margin: 0 auto;
+        }
+
+        &::before {
+            background-color: $yellow;
+            top: 0;
+            width: 8.5rem;
+            height: 8.5rem;
+            border-radius: 50%;
+
+            @include _768 {
+                width: 10.2rem;
+                height: 10.2rem;
+            }
+
+            @include _1200 {
+                width: 18.7rem;
+                height: 18.7rem;
+            }
+        }
+
+        &::after {
+            background-repeat: no-repeat;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+
+        &--hot {
+            &::after {
+                top: 0.85em;
+                width: 5.4rem;
+                height: 5.8rem;
+                background-image: url("data:image/svg+xml,%3Csvg version='1.0' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 119.000000 130.000000' preserveAspectRatio='xMidYMid meet'%3E%3Cg transform='translate(0.000000,130.000000) scale(0.100000,-0.100000)'%0Afill='%23000000' stroke='none'%3E%3Cpath d='M577 1294 c-4 -4 -7 -31 -7 -61 0 -29 -4 -53 -8 -53 -4 0 -26 18 -47%0A40 -42 43 -56 48 -75 25 -10 -12 -1 -27 59 -88 58 -60 71 -79 71 -105 0 -18%0A-4 -32 -8 -32 -4 0 -26 18 -47 40 -41 42 -69 51 -79 25 -3 -10 19 -41 64 -89%0A60 -63 70 -79 70 -109 0 -31 -4 -36 -29 -42 -17 -3 -47 -20 -67 -36 -20 -16%0A-39 -29 -41 -29 -7 0 -58 34 -64 43 -4 5 -16 47 -29 92 -20 80 -38 104 -62 89%0A-10 -6 -7 -42 8 -113 l7 -35 -31 23 c-21 15 -35 36 -42 64 -27 104 -42 137%0A-60 137 -34 0 -34 -18 -4 -123 5 -16 -1 -15 -46 8 -47 24 -54 25 -68 11 -19%0A-19 -8 -34 43 -62 19 -10 35 -21 35 -25 0 -3 -27 -13 -60 -22 -47 -13 -60 -21%0A-60 -36 0 -33 17 -34 109 -10 77 20 92 21 119 10 40 -17 34 -26 -27 -41 -60%0A-14 -81 -34 -60 -55 12 -12 24 -12 89 5 88 23 116 24 149 6 21 -12 23 -19 23%0A-91 0 -76 -1 -78 -32 -98 l-31 -20 -78 22 c-91 24 -117 26 -124 8 -9 -23 6%0A-34 66 -52 31 -9 57 -18 57 -20 0 -3 -13 -11 -28 -19 -26 -13 -37 -13 -107 5%0A-91 24 -120 22 -120 -6 0 -15 13 -23 63 -38 l64 -19 -51 -29 c-81 -47 -59 -91%0A25 -50 25 11 46 21 48 21 2 0 -3 -27 -12 -61 -11 -46 -12 -63 -3 -72 22 -22%0A45 9 71 97 18 61 32 91 48 102 32 22 36 13 22 -46 -13 -55 -9 -80 14 -80 20 0%0A30 20 52 109 16 63 24 77 53 97 l34 23 36 -29 c20 -15 50 -32 66 -37 26 -8 30%0A-15 33 -49 3 -36 -2 -43 -67 -108 -58 -58 -68 -72 -60 -88 14 -27 25 -23 79%0A28 l50 47 0 -34 c-1 -28 -13 -47 -70 -108 -57 -61 -67 -77 -59 -92 5 -11 12%0A-19 16 -19 3 0 30 20 59 45 l53 46 3 -58 c3 -50 6 -58 23 -58 17 0 20 8 23 58%0A2 31 5 57 8 57 3 0 26 -20 52 -45 26 -25 50 -45 54 -45 4 0 12 8 17 19 8 15%0A-2 31 -59 92 -57 61 -69 80 -70 108 l0 34 50 -47 c54 -50 61 -53 80 -31 10 12%0A0 27 -60 89 -66 68 -71 77 -68 112 3 32 8 39 33 47 17 5 46 22 66 37 l36 29%0A34 -23 c30 -20 37 -34 54 -100 21 -88 35 -112 59 -103 19 7 20 35 4 88 -14 47%0A-7 56 24 35 16 -11 30 -41 48 -102 26 -88 49 -119 71 -97 9 9 8 26 -3 72 -9%0A34 -14 61 -12 61 2 0 23 -10 48 -21 80 -40 107 2 30 47 -25 15 -42 30 -37 34%0A4 4 30 13 56 20 51 14 67 31 48 54 -10 12 -26 10 -103 -10 -83 -21 -94 -21%0A-120 -8 -15 8 -28 16 -28 19 0 2 26 11 58 20 59 18 74 29 65 52 -7 18 -33 16%0A-124 -8 l-78 -22 -31 20 c-31 20 -32 22 -32 98 0 72 2 79 24 91 32 18 60 17%0A148 -6 65 -17 77 -17 89 -5 21 21 0 41 -60 55 -61 15 -67 24 -27 41 27 11 42%0A10 119 -10 91 -24 109 -23 109 9 0 18 -27 30 -124 54 -4 1 15 16 43 33 54 34%0A60 43 37 62 -11 10 -25 7 -67 -14 -44 -23 -51 -24 -45 -9 14 35 26 106 21 115%0A-4 5 -15 9 -25 9 -18 0 -33 -33 -60 -137 -7 -28 -21 -49 -42 -64 l-31 -23 7%0A35 c15 71 18 107 8 113 -24 15 -42 -9 -62 -89 -13 -45 -25 -87 -29 -92 -6 -9%0A-57 -43 -64 -43 -2 0 -21 13 -41 29 -20 16 -50 33 -67 36 -25 6 -29 11 -29 42%0A0 30 10 46 70 109 45 48 67 79 64 89 -10 26 -38 17 -79 -25 -21 -22 -43 -40%0A-47 -40 -4 0 -8 14 -8 32 0 26 13 45 71 105 60 61 69 76 59 88 -19 23 -33 18%0A-75 -25 -21 -22 -42 -40 -47 -40 -4 0 -8 26 -10 57 -2 43 -7 59 -18 61 -9 1%0A-19 0 -23 -4z m55 -504 c20 -6 50 -26 67 -45 82 -94 21 -230 -104 -230 -62 0%0A-104 27 -129 84 -39 85 21 183 124 200 3 1 22 -4 42 -9z'/%3E%3C/g%3E%3C/svg%3E");
+
+                @include _768 {
+                    width: 6.48rem;
+                    height: 7.045rem;
+                }
+
+                @include _1200 {
+                    top: 1.25em;
+                    width: 11.88rem;
+                    height: 12.9rem;
+                }
+            }
+        }
+
+        &--cold {
+            &::after {
+                top: 0.45em;
+                width: 7.16rem;
+                height: 7.16rem;
+                background-image: url("data:image/svg+xml,%3Csvg version='1.0' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 159.000000 158.000000' preserveAspectRatio='xMidYMid meet'%3E%3Cg transform='translate(0.000000,158.000000) scale(0.100000,-0.100000)' fill='%23000000' stroke='none'%3E%3Cpath d='M765 1438 c-3 -8 -4 -63 -3 -124 3 -109 3 -109 28 -109 l25 0 0 120%0Ac0 117 -1 120 -23 123 -12 2 -24 -3 -27 -10z' /%3E%3Cpath d='M320 1249 c-10 -18 -2 -29 67 -100 54 -56 83 -79 98 -77 44 6 28 42%0A-53 121 -44 42 -85 77 -90 77 -6 0 -16 -9 -22 -21z' /%3E%3Cpath d='M1149 1194 c-56 -55 -79 -84 -77 -99 6 -43 41 -28 123 55 66 66 78%0A83 69 97 -6 9 -16 19 -22 21 -7 2 -49 -31 -93 -74z' /%3E%3Cpath d='M701 1089 c-76 -23 -155 -90 -192 -166 -20 -40 -24 -64 -24 -138 0%0A-81 3 -95 29 -143 106 -191 360 -224 506 -66 62 67 84 124 84 214 -1 94 -25%0A152 -91 218 -80 80 -204 112 -312 81z m194 -73 c55 -25 110 -81 131 -132 20%0A-48 17 -151 -5 -199 -23 -50 -84 -109 -133 -130 -97 -40 -231 -2 -295 83 -156%0A207 68 487 302 378z' /%3E%3Cpath d='M134 805 c-3 -8 -3 -22 0 -30 5 -13 25 -15 123 -13 l118 3 0 25 0 25%0A-118 3 c-98 2 -118 0 -123 -13z' /%3E%3Cpath d='M1204 805 c-3 -8 -3 -22 0 -30 5 -13 25 -15 123 -13 l118 3 0 25 0%0A25 -118 3 c-98 2 -118 0 -123 -13z' /%3E%3Cpath d='M386 430 c-43 -44 -76 -85 -74 -92 2 -6 12 -16 21 -22 14 -9 31 3 97%0A69 79 79 95 107 64 119 -26 10 -28 9 -108 -74z' /%3E%3Cpath d='M1081 496 c-17 -20 -5 -38 77 -119 71 -70 103 -82 110 -43 3 13 -21%0A44 -74 97 -43 44 -84 79 -90 79 -6 0 -17 -6 -23 -14z' /%3E%3Cpath d='M771 366 c-8 -9 -11 -49 -9 -122 3 -109 3 -109 28 -109 l25 0 0 120%0Ac0 102 -2 120 -16 123 -9 1 -21 -4 -28 -12z' /%3E%3C/g%3E%3C/svg%3E");
+
+                @include _768 {
+                    width: 8.6rem;
+                    height: 8.6rem;
+                }
+
+                @include _1200 {
+                    top: 0.65em;
+                    width: 15.7rem;
+                    height: 15.7rem;
+                }
+            }
+        }
+
+        &:hover {
+            color: $orange;
+
+            &::before {
+                border: 0.1em solid $orange;
+
+                @include _768 {
+                    border-width: 0.2em;
+                }
+            }
+        }
+
+        @include _768 {
+            width: 10.2rem;
+            height: 13.77rem;
+            margin: 0 2.81em;
+        }
+
+        @include _1200 {
+            width: 18.7rem;
+            height: 24.9rem;
+            margin: 0 3.5em;
+        }
+    }
+
+    &__radio:checked {
+        + .balcony-home__label {
+            color: $orange;
+
+            &::before {
+                border: 0.1em solid $orange;
+
+                @include _768 {
+                    border-width: 0.2em;
+                }
+            }
+        }
+    }
+    .calc-balcony__btn--next {
+        margin-left: auto;
+    }
+}
+
+// ===================  balcony-leaflets  ===================
+.balcony-leaflets {
+    &__list {
+        margin-top: 8.813em;
+        justify-content: space-around;
+        @include _1200 {
+            justify-content: space-between;
+            margin-top: 4.63em;
+        }
+    }
+
+    &__radio {
+        &:checked {
+            + .balcony-leaflets__label {
+                border: 0.1em solid $orange;
+
+                @include _768 {
+                    border-width: 0.15em;
+                }
+                .balcony-leaflets__bg {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+
+    &__label {
+        border: 0.1em solid #fff;
+
+        &:hover {
+            border: 0.1em solid $orange;
+
+            @include _768 {
+                border-width: 0.15em;
+            }
+
+            .balcony-leaflets__bg {
+                opacity: 0.5;
+            }
+        }
+
+        @include _768 {
+            border-width: 0.15em;
+        }
+    }
+
+    &__img {
+        height: 6.063em;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @include _768 {
+            height: 13.5em;
+        }
+
+        @include _1200 {
+            height: 21.438em;
+        }
+    }
+
+    &__img--1 {
+        width: 3.563em;
+        background-image: url(/wp-content/themes/twentytwenty-child/img/calc-window-1-s.webp);
+        padding: 0.5em 0.6em 0.5em 0.5em;
+
+        @include _768 {
+            width: 8.063em;
+            background-image: url(/wp-content/themes/twentytwenty-child/img/calc-window-1-m.webp);
+            padding: 1.1em 1.4em 1.05em 1.1em;
+        }
+
+        @include _1200 {
+            width: 12.663em;
+            background-image: url(/wp-content/themes/twentytwenty-child/img/calc-window-1-xl.webp);
+            padding: 1.7em 2em 1.65em 1.7em;
+        }
+    }
+
+    &__img--2 {
+        width: 6.063em;
+        background-image: url(/wp-content/themes/twentytwenty-child/img/calc-window-2-s.webp);
+        padding: 0.5em 0.55em 0.47em 0.5em;
+
+        .balcony-leaflets__bg--1,
+        .balcony-leaflets__bg--2 {
+            width: 2.16em;
+        }
+
+        @include _768 {
+            width: 13.5em;
+            background-image: url(/wp-content/themes/twentytwenty-child/img/calc-window-2-m.webp);
+            padding: 1.2em 1.1em 1.05em 1.2em;
+
+            .balcony-leaflets__bg--1,
+            .balcony-leaflets__bg--2 {
+                width: 4.7em;
+            }
+        }
+
+        @include _1200 {
+            width: 21.438em;
+            background-image: url(/wp-content/themes/twentytwenty-child/img/calc-window-2-xl.webp);
+            padding: 1.8em 1.74em 1.65em 1.8em;
+
+            .balcony-leaflets__bg--1,
+            .balcony-leaflets__bg--2 {
+                width: 7.7em;
+            }
+        }
+    }
+
+    &__img--3 {
+        width: 7.688em;
+        background-image: url(/wp-content/themes/twentytwenty-child/img/calc-window-3-s.webp);
+        padding: 0.45em 0.5em;
+
+        .balcony-leaflets__bg--1,
+        .balcony-leaflets__bg--3,
+        .balcony-leaflets__bg--4 {
+            width: 1.86em;
+        }
+
+        @include _768 {
+            width: 16.938em;
+            background-image: url(/wp-content/themes/twentytwenty-child/img/calc-window-3-m.webp);
+            padding: 1em 1.22em 0.95em 1.18em;
+
+            .balcony-leaflets__bg--1,
+            .balcony-leaflets__bg--4 {
+                width: 3.86em;
+            }
+            .balcony-leaflets__bg--3 {
+                width: 4.16em;
+            }
+        }
+
+        @include _1200 {
+            width: 26.625em;
+            background-image: url(/wp-content/themes/twentytwenty-child/img/calc-window-3-xl.webp);
+            padding: 1.7em 1.9em 1.6em 1.8em;
+
+            .balcony-leaflets__bg--1,
+            .balcony-leaflets__bg--4 {
+                width: 6.16em;
+            }
+            .balcony-leaflets__bg--3 {
+                width: 6.66em;
+            }
+        }
+    }
+
+    &__bg {
+        display: block;
+        opacity: 0;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: 0em;
+        background-image: url("/wp-content/themes/twentytwenty-child/img/calc-window-bg-s.webp");
+        transition: opacity 0.3s;
+
+        @include _768 {
+            background-image: url("/wp-content/themes/twentytwenty-child/img/calc-window-bg-m.webp");
+        }
+
+        @include _1200 {
+            background-image: url("/wp-content/themes/twentytwenty-child/img/calc-window-bg-l.webp");
+        }
+    }
+
+    &__bg--1 {
+        width: 100%;
+    }
+
+    &__bg--2 {
+        background-position-x: -1.8em;
+        @include _768 {
+            background-position-x: -4.7em;
+        }
+
+        @include _1200 {
+            background-position-x: -9.8em;
+        }
+    }
+
+    &__bg--3 {
+        background-position-x: -2.6em;
+        @include _768 {
+            background-position-x: -5.2em;
+        }
+
+        @include _1200 {
+            background-position-x: -6.2em;
+        }
+    }
+
+    &__bg--4 {
+        background-position-x: -4.8em;
+        @include _768 {
+            background-position-x: -9.5em;
+        }
+
+        @include _1200 {
+            background-position-x: -13.6em;
+        }
+    }
+}
+
+// ===================  balcony-size  ===================
+.balcony-size {
+    &__wrapper {
+        margin-top: 1.563em;
+
+        @include _768 {
+            display: flex;
+            justify-content: space-around;
+        }
+        @include _1200 {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__box-img {
+        @include _1200 {
+            position: relative;
+            padding-left: 7.125em;
+        }
+    }
+
+    &__box-form {
+        margin-top: 1.25em;
+
+        @include _768 {
+            margin-top: 0;
+        }
+    }
+
+    &__lable {
+        width: 4.2em;
+        display: block;
+        line-height: 2em;
+        text-align: left;
+
+        @include _1200 {
+            display: none;
+        }
+    }
+}
+
+// Range Slider Start
+
+// Base Colors
+$shade-10: $orange !default;
+$shade-1: #d0d0d0 !default;
+$shade-0: #fff !default;
+$teal: $orange !default;
+
+// Range Slider
+$range-width: 5em !default;
+
+$range-handle-color: $shade-10 !default;
+$range-handle-color-hover: $teal !default;
+$range-handle-size: 7px !default;
+
+$range-track-color: $shade-1 !default;
+$range-track-height: 3px !default;
+
+$range-label-color: $shade-10 !default;
+$range-label-width: 41px !default;
+
+.range-slider {
+    width: 20em;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include _1200 {
+        flex-direction: column;
+    }
+
+    &--vertical {
+        @include _1200 {
+            position: absolute;
+            transform: rotate(90deg);
+            left: -5.6em;
+            top: 7.2em;
+        }
+
+        & .range-slider__range {
+            @include _1200 {
+                width: 17.313em;
+            }
+        }
+
+        & .range-slider__value {
+            @include _1200 {
+                transform: rotate(-90deg) translatex(-2em);
+            }
+        }
+    }
+}
+
+.range-slider__range {
+    -webkit-appearance: none;
+    width: 11.625em;
+    height: $range-track-height;
+    border-radius: 0.5em;
+    background: $range-track-color;
+    outline: none;
+    padding: 0;
+    margin: 0;
+
+    @media (min-width: 768px) {
+        margin-right: 1em;
+    }
+
+    @media (min-width: 1200px) {
+        margin-right: 0;
+        margin-bottom: 1em;
+        width: 38.188em;
+    }
+
+    // Range Handle
+    &::-webkit-slider-thumb {
+        appearance: none;
+        width: $range-handle-size;
+        height: $range-handle-size;
+        border-radius: 50%;
+        background: $range-handle-color;
+        cursor: pointer;
+        transition: background 0.15s ease-in-out;
+    }
+
+    &:active::-webkit-slider-thumb {
+        background: $range-handle-color-hover;
+    }
+
+    &::-moz-range-thumb {
+        width: $range-handle-size;
+        height: $range-handle-size;
+        border: 0;
+        border-radius: 50%;
+        background: $range-handle-color;
+        cursor: pointer;
+        transition: background 0.15s ease-in-out;
+
+        &:hover {
+            background: $range-handle-color-hover;
+        }
+    }
+
+    &:active::-moz-range-thumb {
+        background: $range-handle-color-hover;
+    }
+}
+
+// Range Label
+.range-slider__value {
+    display: inline-block;
+    position: relative;
+    width: $range-label-width;
+    line-height: 14px;
+    text-align: center;
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-left: 12px;
+    border: 1px solid #d0d0d0;
+    font-size: 0.6em;
+
+    @media (min-width: 768px) {
+        margin: 0;
+        width: 77px;
+        line-height: 24px;
+        font-size: 1em;
+    }
+}
+
+// Firefox Overrides
+::-moz-range-track {
+    background-image: $range-track-color;
+    border: 0;
+}
+
+input::-moz-focus-inner,
+input::-moz-focus-outer {
+    border: 0;
+}
+
+// ===================  balcony-add  ===================
+.balcony-add {
+}
+
+// ===================  balcony-services  ===================
+.balcony-services {
+}
+
+// ===================  balcony-payment  ===================
+.balcony-payment {
+}
