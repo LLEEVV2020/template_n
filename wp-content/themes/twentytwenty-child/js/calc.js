@@ -215,6 +215,8 @@ function showSlide(n) {
 			break;
 		case 4:
 			document.querySelector('.calc-window-4').style.display = "block" ;
+			let shablon_type = `    `;
+
 			break;
 		case 5:
 			console.log( 'Перебор' );
