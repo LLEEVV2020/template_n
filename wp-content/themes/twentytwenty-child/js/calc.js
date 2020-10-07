@@ -161,6 +161,7 @@ for (let i_item of i_name_window_two) {
 }
 
 // третий экран
+
 document.querySelector(".range-slider__height").addEventListener("change", function() {
 	console.log(this.value);
 });
@@ -200,6 +201,8 @@ function showSlide(n) {
 			break;
 		case 3:
 			document.querySelector('.calc-window-3').style.display = "block" ;
+			document.querySelector('.calc-window-three__box_click').className = "calc-window-three__box calc-window-three__box_click calc-window-three__box--" + data__all.stvorki.length;
+			console.log("hhh");
 			break;
 		case 4:
 			console.log( 'В точку!' );
