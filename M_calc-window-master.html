@@ -147,55 +147,15 @@
                     <div class="calc-window-three__inner calc-window__inner">
                         <div class="calc-window__size">
                             <div class="calc-window__size-img">
-                                <div class="calc-window-three__list-item flex-row none">
-                                    <div class="calc-window-three__box calc-window-three__box--1"></div>
-
-                                    <div class="calc-window__form calc-window__form--1" action="#">
-                                        <div class="range-slider">
-                                            <label class="calc-window-three__lable" for="height">Высота:</label>
-                                            <input class="range-slider__range" type="range" id="height" value="1500" min="0"
-                                                max="2500">
-                                            <span class="range-slider__value">1500</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="calc-window__form calc-window__form--2" action="#">
-                                        <div class="range-slider">
-                                            <label class="calc-window-three__lable" for="width">Ширина:</label>
-                                            <input class="range-slider__range" type="range" id="width" value="1000" min="0"
-                                                max="2500">
-                                            <span class="range-slider__value">1000</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="calc-window-three__list-item flex-row none">
-                                    <div class="calc-window-three__box calc-window-three__box--2"></div>
-
-                                    <div class="calc-window__form calc-window__form--1" action="#">
-                                        <div class="range-slider">
-                                            <label class="calc-window-three__lable" for="height-1">Высота:</label>
-                                            <input class="range-slider__range" type="range" id="height-1" value="1500"
-                                                min="0" max="2500">
-                                            <span class="range-slider__value">1500</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="calc-window__form calc-window__form--2" action="#">
-                                        <div class="range-slider">
-                                            <label class="calc-window-three__lable" for="width-1">Ширина:</label>
-                                            <input class="range-slider__range" type="range" id="width-1" value="1000"
-                                                min="0" max="2500">
-                                            <span class="range-slider__value">1000</span>
-                                        </div>
-                                    </div>
-                                </div>
+                                
+                                <!--3 окно-->
                                 <div class="calc-window-three__list-item flex-row">
                                     <div class="calc-window-three__box calc-window-three__box--3"></div>
 
                                     <div class="calc-window__form calc-window__form--1" action="#">
                                         <div class="range-slider">
                                             <label class="calc-window-three__lable" for="height-2">Высота:</label>
-                                            <input class="range-slider__range" type="range" id="height-2" value="1500"
+                                            <input class="range-slider__range range-slider__height" type="range" id="height-2" value="1500"
                                                 min="0" max="2500">
                                             <span class="range-slider__value">1500</span>
                                         </div>
@@ -204,7 +164,7 @@
                                     <div class="calc-window__form calc-window__form--2" action="#">
                                         <div class="range-slider">
                                             <label class="calc-window-three__lable" for="width-2">Ширина:</label>
-                                            <input class="range-slider__range" type="range" id="width-2" value="1000"
+                                            <input class="range-slider__range range-slider__width" type="range" id="width-2" value="1000"
                                                 min="0" max="2500">
                                             <span class="range-slider__value">1000</span>
                                         </div>
@@ -259,10 +219,7 @@
     <script>
 //(function() {}());
 
-        // шаги калькулятора
-        let current_Slide = 1;
-        // что выбрали: Квартира, Частный дом, Офис
-        let c__window = "Частный дом";
+        
 
 
         /*let arr__window = [
@@ -290,132 +247,7 @@
 
         ];*/
 
-        let arr_index = 0;
-        let arr__window = [];
-        let data__all = {
-            stvorki: '', 
-            width: 0,
-            height: 0,
-            podokonnik: false,
-            otkosi: false,
-            pvh: false,
-            shtykatyrnie: false,
-            termootkosi: false,
-            otlivi: false,
-            stvorki: []
-        }
-        let arr_raspolozenie = ["Левая створка", "Центральная створка", "Правая створка"];
-        let arr_stvorki = [
-            {
-                raspolozenie: '',
-                glyhaia: false,
-                povorotnaia: false,
-                povorotno_otkidnaia: false,
-                moskitnaia_setka: false,
-                detskii_zamok: false
-            }
-        ];
         
-        // начальный экран
-        let i_name_window = document.querySelectorAll('input[name="window"]');
-        for (let i_item of i_name_window) {
-            
-            i_item.addEventListener("click",  function() { 
-                if (i_item.checked) {
-                    c__window = i_item.parentNode.children[1].children[1].innerText;
-                }
-            });
-        }
-
-        // второй экран
-        let i_name_window_two = document.querySelectorAll('input[name="window-two"]');
-        for (let i_item of i_name_window_two) {
-            i_item.addEventListener("click",  function() {
-                document.querySelector('.calc-window-two .calc-window__btn--next').classList.remove('blocking');
-                if (i_item.checked) {
-                    //let local_data__all = data__all;
-                    data__all.stvorki = [];
-                    let item_local = document.querySelectorAll('.calc-window-two__list-item');
-                    for (let i of item_local) {
-                        i.setAttribute('style', "pointer-events: auto;") ;
-                    }
-
-                    if(this.dataset.win_st == 1){
-                        //console.log( 'Маловато' );
-                        data__all.stvorki.push(arr_stvorki);
-                        
-                    } else{
-                        for (let i = 0; i < Number(this.dataset.win_st); i++) {
-                            data__all.stvorki.push(arr_stvorki);
-                        }
-                       
-                    }
-                    this.parentNode.setAttribute('style', "pointer-events: none;") ;
-                    //arr__window.push(data__all);
-
-                    
-                }
-            });
-        }
-
-
-
-
-        let btn__prew = document.querySelectorAll('.calc-window__btn--prew');
-        for (let i_item of btn__prew) {
-            i_item.addEventListener("click",  function() { 
-                showPrevious_Slide();
-            });
-        }
-
-        let btn_next = document.querySelectorAll('.calc-window__btn--next');
-        for (let i_item of btn_next) {
-            i_item.addEventListener("click",  function() { 
-                showNext_Slide();
-            });
-        }
-
-        function showSlide(n) {
-
-            let btn_next = document.querySelectorAll('.calc-window');
-            for (let i_item of btn_next) {
-                i_item.style.display = "none";
-            }
-
-            switch (n) {
-
-                case 1:
-                    document.querySelector('.calc-window-1').style.display = "block" ;
-                    break;
-                case 2:
-                    document.querySelector('.calc-window-2').style.display = "block" ;
-                   // let calc_window_two= document.querySelector('.calc-window-two');
-                   // calc_window_twostyle.style.display = "block";
-                    break;
-                case 3:
-                    document.querySelector('.calc-window-3').style.display = "block" ;
-                    break;
-                case 4:
-                    console.log( 'В точку!' );
-                    break;
-                case 5:
-                    console.log( 'Перебор' );
-                    break;
-            }
-            if(n == 0){
-
-            }
-        }
-        
-        function showNext_Slide() {
-            current_Slide++;
-            showSlide(current_Slide);
-        }
-
-        function showPrevious_Slide() {
-            current_Slide--;
-            showSlide(current_Slide);
-        }
     </script>
 
 

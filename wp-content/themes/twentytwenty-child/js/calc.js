@@ -83,3 +83,142 @@ $(".close-modal").on('click', function(e){
 	}, 350);
 	
 });
+
+/**
+ * Вычисление значений
+ */
+// шаги калькулятора
+let current_Slide = 1;
+// что выбрали: Квартира, Частный дом, Офис
+let c__window = "Частный дом";
+
+let arr_index = 0;
+let arr__window = [];
+let data__all = {
+	stvorki: '', 
+	width: 0,
+	height: 0,
+	podokonnik: false,
+	otkosi: false,
+	pvh: false,
+	shtykatyrnie: false,
+	termootkosi: false,
+	otlivi: false,
+	stvorki: []
+}
+let arr_raspolozenie = ["Левая створка", "Центральная створка", "Правая створка"];
+let arr_stvorki = [
+	{
+		raspolozenie: '',
+		glyhaia: false,
+		povorotnaia: false,
+		povorotno_otkidnaia: false,
+		moskitnaia_setka: false,
+		detskii_zamok: false
+	}
+];
+
+// начальный экран
+let i_name_window = document.querySelectorAll('input[name="window"]');
+for (let i_item of i_name_window) {
+	
+	i_item.addEventListener("click",  function() { 
+		if (i_item.checked) {
+			c__window = i_item.parentNode.children[1].children[1].innerText;
+		}
+	});
+}
+
+// второй экран
+let i_name_window_two = document.querySelectorAll('input[name="window-two"]');
+for (let i_item of i_name_window_two) {
+	i_item.addEventListener("click",  function() {
+		document.querySelector('.calc-window-two .calc-window__btn--next').classList.remove('blocking');
+		if (i_item.checked) {
+			//let local_data__all = data__all;
+			data__all.stvorki = [];
+			let item_local = document.querySelectorAll('.calc-window-two__list-item');
+			for (let i of item_local) {
+				i.setAttribute('style', "pointer-events: auto;") ;
+			}
+
+			if(this.dataset.win_st == 1){
+				//console.log( 'Маловато' );
+				data__all.stvorki.push(arr_stvorki);
+				
+			} else{
+				for (let i = 0; i < Number(this.dataset.win_st); i++) {
+					data__all.stvorki.push(arr_stvorki);
+				}
+			   
+			}
+			this.parentNode.setAttribute('style', "pointer-events: none;") ;
+			//arr__window.push(data__all);
+
+			
+		}
+	});
+}
+
+// третий экран
+document.querySelector(".range-slider__height").addEventListener("change", function() {
+	console.log(this.value);
+});
+
+
+
+let btn__prew = document.querySelectorAll('.calc-window__btn--prew');
+for (let i_item of btn__prew) {
+	i_item.addEventListener("click",  function() { 
+		showPrevious_Slide();
+	});
+}
+
+let btn_next = document.querySelectorAll('.calc-window__btn--next');
+for (let i_item of btn_next) {
+	i_item.addEventListener("click",  function() { 
+		showNext_Slide();
+	});
+}
+
+function showSlide(n) {
+
+	let btn_next = document.querySelectorAll('.calc-window');
+	for (let i_item of btn_next) {
+		i_item.style.display = "none";
+	}
+
+	switch (n) {
+
+		case 1:
+			document.querySelector('.calc-window-1').style.display = "block" ;
+			break;
+		case 2:
+			document.querySelector('.calc-window-2').style.display = "block" ;
+		   // let calc_window_two= document.querySelector('.calc-window-two');
+		   // calc_window_twostyle.style.display = "block";
+			break;
+		case 3:
+			document.querySelector('.calc-window-3').style.display = "block" ;
+			break;
+		case 4:
+			console.log( 'В точку!' );
+			break;
+		case 5:
+			console.log( 'Перебор' );
+			break;
+	}
+	if(n == 0){
+
+	}
+}
+
+function showNext_Slide() {
+	current_Slide++;
+	showSlide(current_Slide);
+}
+
+function showPrevious_Slide() {
+	current_Slide--;
+	showSlide(current_Slide);
+}
