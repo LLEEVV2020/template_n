@@ -98,11 +98,9 @@ let data__all = {
 	stvorki: '', 
 	width: 0,
 	height: 0,
-	podokonnik: false,
-	otkosi: false,
-	pvh: false,
-	shtykatyrnie: false,
-	termootkosi: false,
+	windowsill: false,
+	slopes: false,
+	slopes_block_add: "",
 	otlivi: false,
 	stvorki: []
 }
@@ -196,16 +194,27 @@ function showSlide(n) {
 			break;
 		case 2:
 			document.querySelector('.calc-window-2').style.display = "block" ;
-		   // let calc_window_two= document.querySelector('.calc-window-two');
-		   // calc_window_twostyle.style.display = "block";
 			break;
 		case 3:
 			document.querySelector('.calc-window-3').style.display = "block" ;
+			// загружаем картинку окон с выбранным кол-вом створок
 			document.querySelector('.calc-window-three__box_click').className = "calc-window-three__box calc-window-three__box_click calc-window-three__box--" + data__all.stvorki.length;
+			data__all.height = Number(document.querySelector('.range-slider__height').value);
+			data__all.width = Number(document.querySelector('.range-slider__width').value);
+			data__all.windowsill = document.querySelector('[id="check-windowsill-1"]').checked;
+			data__all.slopes = document.querySelector('[id="slopes-2"]').checked;
+			let slopes_block_add  = document.querySelectorAll('[name="slopes-block-add"]');
 			console.log("hhh");
+			for (let i of slopes_block_add) {
+				if(i.checked){
+					data__all.slopes_block_add = i.value;
+				}
+			}
+			data__all.otlivi = document.querySelector('[id="otlivi-3"]').checked;
+
 			break;
 		case 4:
-			console.log( 'В точку!' );
+			document.querySelector('.calc-window-4').style.display = "block" ;
 			break;
 		case 5:
 			console.log( 'Перебор' );
