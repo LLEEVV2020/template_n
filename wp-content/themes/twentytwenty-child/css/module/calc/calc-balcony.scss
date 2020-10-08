@@ -1120,8 +1120,8 @@ input::-moz-focus-outer {
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            margin:0 1em 1.56em;
-            
+            margin: 0 1em 1.56em;
+
             @include _768 {
                 padding: 2em;
                 width: 18.75em;
@@ -1138,6 +1138,222 @@ input::-moz-focus-outer {
 
 // ===================  balcony-payment  ===================
 .balcony-payment {
+    &__inner {
+        margin-top: 1.56em;
+
+        @include _768 {
+            margin-top: 2.38em;
+        }
+
+        @include _1200 {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+        }
+    }
+
+    &__info {
+        margin-bottom: 1.56em;
+
+        @include _768 {
+            margin-bottom: 4em;
+        }
+        @include _1200 {
+            max-width: 43.2em;
+            margin-bottom: 0;
+        }
+    }
+
+    &__title {
+        font-weight: 900;
+        color: #d0d0d0;
+        font-size: 1.5em;
+        line-height: 1.3em;
+        margin-bottom: 1.042em;
+        span {
+            display: block;
+        }
+
+        @include _1200 {
+            font-size: 2.5em;
+
+            margin-bottom: 0.8em;
+        }
+    }
+
+    &__subtitle {
+        margin-bottom: 1.56em;
+    }
+
+    &__form {
+        margin-bottom: 0.94em;
+
+        @include _768 {
+            max-width: 100%;
+            justify-content: center;
+        }
+    }
+
+    &__link {
+        display: block;
+        color: inherit;
+    }
+
+    &__box {
+        max-width: 100%;
+
+        &::after {
+            left: 6em;
+        }
+        &::before {
+            left: 4em;
+        }
+
+        @include _768 {
+            max-width: 100%;
+            width: 16.88em;
+
+            &::after {
+                left: 2.7em;
+            }
+            &::before {
+                left: 1em;
+            }
+        }
+        @include _960 {
+            max-width: 100%;
+            width: 16.88em;
+            min-width: 16.88em;
+
+            &::after {
+                left: 2.7em;
+                font-size: 1.7rem;
+                top: 1.3em;
+            }
+            &::before {
+                left: 1em;
+            }
+        }
+    }
+
+    &__input {
+        padding: 0.625em 0 0.625em 4em;
+        max-width: 14.31em;
+
+        @include _768 {
+            max-width: 100%;
+        }
+        @include _960 {
+            max-width: 100%;
+            font-size: 1.7rem;
+        }
+    }
+    &__button {
+        font-size: 0.875em;
+        min-height: 2.858em;
+        max-width: 16.358em;
+
+        @include _768 {
+            max-width: 19.286em;
+            margin-left: 1em;
+        }
+        @include _960 {
+            max-width: 19.286em;
+            margin-left: 1em;
+        }
+    }
+
+    &__check {
+        position: relative;
+        max-width: 14.125em;
+        width: 100%;
+        padding: 2.13em 0.35em 1em 0.38em;
+        margin: 0 auto;
+        text-align: left;
+        box-shadow: 0px 20px 16px 2px rgba(0, 0, 0, 0.25);
+        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 18.188em;
+            height: 1.563em;
+            background-color: #fff;
+            border: 10px solid #f2f2f2;
+            box-sizing: border-box;
+            box-shadow: 0px 4px 9px 2px rgba(0, 0, 0, 0.25);
+            border-radius: 6px;
+            z-index: -1;
+            top: -0.7em;
+            left: -2.1em;
+
+            @include _768 {
+                width: 26.75em;
+                height: 4em;
+                top: -2em;
+                left: -3.2em;
+                border-width: 20px;
+            }
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -20px;
+            height: 20px;
+            width: 226px;
+            background-image: linear-gradient(135deg, #fff 25px, transparent 25px, transparent 75px, #fff 75px),
+                linear-gradient(45deg, #fff 0, transparent 0, transparent 25px, #fff 25px);
+            background-size: 19px 52px;
+            background-position: -10px -17px;
+
+            @include _768 {
+                width: 20.57em;
+                background-size: 30px 40px;
+                background-position: -14px -17px;
+                background-image: linear-gradient(135deg, #fff 25px, transparent 25px, transparent 75px, #fff 75px),
+                    linear-gradient(45deg, #fff 0, transparent 0, transparent 24px, #fff 24px);
+            }
+        }
+
+        @include _768 {
+            max-width: 20.563em;
+            padding: 1.8em 1.6em 1em;
+        }
+
+        @include _1200 {
+            margin-top: 3em;
+            max-height: 41em;
+        }
+    }
+
+    &__check-item {
+        margin-bottom: 0.94em;
+        border-bottom: 0.1em dashed #d0d0d0;
+        padding-bottom: 0.81em;
+    }
+
+    &__check-window {
+        margin-bottom: 1.63em;
+    }
+
+    &__check-img {
+        width: 7.72em;
+        height: 3.5em;
+        background-image: url(/wp-content/themes/twentytwenty-child/img/balkony-m.webp);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    &__check-img-info {
+        span {
+            color: $orange;
+        }
+    }
 }
 
 // Modal start
