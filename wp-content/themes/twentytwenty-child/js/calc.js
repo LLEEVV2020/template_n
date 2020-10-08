@@ -108,9 +108,7 @@ let arr_raspolozenie = ["Левая створка", "Центральная с�
 let arr_stvorki = [
 	{
 		raspolozenie: '',
-		glyhaia: false,
-		povorotnaia: false,
-		povorotno_otkidnaia: false,
+		glyhaia_pov: 'Глухая',
 		moskitnaia_setka: false,
 		detskii_zamok: false
 	}
@@ -213,6 +211,10 @@ function showSlide(n) {
 
 			break;
 		case 4:
+			
+			//let hhhhhh = data__all.stvorki.;
+
+
 			if(data__all.stvorki.length == 1){
 				document.querySelector('.calc-window-4').style.display = "block" ;
 				
@@ -296,6 +298,20 @@ function showSlide(n) {
 				document.querySelector('.cw__bt_value').innerHTML = arr_raspolozenie[0];
 
 				// глухая
+				
+				//
+				let sash_radio = document.querySelectorAll('[name="sash-radio"]');
+				for (let i_item of sash_radio) {
+					
+						if (i_item.checked) {
+							data__all.slopes_block_add = i_item.value;
+							data__all.stvorki;
+							console.log(data__all.stvorki);
+							//data__all.stvorki
+
+						}
+
+				};
 
 				// поворотная
 
