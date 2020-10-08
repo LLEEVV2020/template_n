@@ -604,7 +604,7 @@ input[type="radio"] {
     /* .calc-window-two__list */
 
     &__list {
-        margin: 12.9em 0 3.8em;
+        margin: 3.69em 0 3.8em;
         justify-content: space-around;
     }
 
@@ -2028,11 +2028,6 @@ input[type="radio"] {
         }
     }
 
-    /* .calc-window-seven__box-img-text */
-
-    &__box-img-text {
-    }
-
     /* .calc-window-seven__box-img-name */
 
     &__box-img-name {
@@ -2046,16 +2041,6 @@ input[type="radio"] {
             color: $orange;
             font-weight: 700;
         }
-    }
-
-    /* .calc-window-seven__box-text */
-
-    &__box-text {
-    }
-
-    /* .calc-window-seven__box-services */
-
-    &__box-services {
     }
 
     /* .calc-window-seven__block-payment */
@@ -2103,6 +2088,79 @@ input[type="radio"] {
 
     &__payment-form {
         margin-bottom: 1em;
+        margin-bottom: 0.94em;
+
+        @media (min-width: 768px) {
+            max-width: 100%;
+            justify-content: center;
+        }
+
+        & .form-contacts {
+            &__box {
+                max-width: 100%;
+        
+                &::after {
+                    left: 6em;
+                }
+                &::before {
+                    left: 4em;
+                }
+        
+                @media (min-width: 768px) {
+                    max-width: 100%;
+                    width: 16.88em;
+        
+                    &::after {
+                        left: 2.7em;
+                    }
+                    &::before {
+                        left: 1em;
+                    }
+                }
+                @media (min-width: 960px) {
+                    max-width: 100%;
+                    width: 16.88em;
+                    min-width: 16.88em;
+        
+                    &::after {
+                        left: 2.7em;
+                        font-size: 1.7rem;
+                        top: 1.3em;
+                    }
+                    &::before {
+                        left: 1em;
+                    }
+                }
+            }
+        
+            &__input {
+                padding: 0.625em 0 0.625em 4em;
+                max-width: 14.31em;
+        
+                @media (min-width: 768px) {
+                    max-width: 100%;
+                }
+                @media (min-width: 960px) {
+                    max-width: 100%;
+                    font-size: 1.7rem;
+                }
+            }
+            &__button {
+                font-size: 0.875em;
+                min-height: 2.858em;
+                max-width: 16.358em;
+        
+                @media (min-width: 768px) {
+                    max-width: 19.286em;
+                    margin-left: 1em;
+                }
+                @media (min-width: 960px) {
+                    max-width: 19.286em;
+                    margin-left: 1em;
+                }
+            }
+        
+        }
     }
 
     /* .calc-window-seven__payment-info */
