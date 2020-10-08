@@ -1,6 +1,6 @@
 @import "../../base/all/var";
 
-.reviews {
+.reviews-about {
     * {
         scrollbar-width: thin;
         scrollbar-color: $yellow;
@@ -111,7 +111,7 @@
                 background-position: 32.491% 48.615%
             }
 
-            .reviews__word {
+            .reviews-about__word {
                 max-width: 3.6em;
             }
         }
@@ -124,7 +124,7 @@
         }
 
         &:nth-child(2) {
-            .reviews__word {
+            .reviews-about__word {
                 max-width: 5.7em;
             }
         }
@@ -134,12 +134,12 @@
                 background-color: #C4C4C4;
             }
 
-            .reviews__word,
-            .reviews__price {
+            .reviews-about__word,
+            .reviews-about__price {
                 color: #C4C4C4;
             }
 
-            .reviews {
+            .reviews-about {
                 &__word {
                     max-width: 5.5em;
                 }
@@ -167,7 +167,7 @@
         max-width: 18.313em;
     }
 
-    &__watch-item.active .reviews__youtube-icon,
+    &__watch-item.active .reviews-about__youtube-icon,
     &__watch-image,
     &__youtube-icon {
         display: block;
@@ -182,20 +182,20 @@
 
         &-item {
             &.active {
-                .reviews {
+                .reviews-about {
                     &__watch-image {
                         opacity: 1;
                     }
                 }
             }
 
-            img.reviews__watch-image {
+            img.reviews-about__watch-image {
                 width: 7.157em;
                 height: 4.228em;
                 opacity: 0.52;
             }
 
-            .reviews__youtube-icon {
+            .reviews-about__youtube-icon {
                 display: none;
             }
         }
@@ -206,7 +206,7 @@
             overflow-x: auto;
             white-space: nowrap;
 
-            .reviews__youtube-icon {
+            .reviews-about__youtube-icon {
                 width: 0.654em;
                 height: 0.626em;
                 background-image: url("data:image/svg+xml,%3Csvg width='5' height='5' viewBox='0 0 5 5' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.21094 2.83491L0.818704 4.71031L0.818704 0.959499L4.21094 2.83491Z' fill='white'/%3E%3C/svg%3E%0A");
@@ -248,7 +248,7 @@
                     transform: translateY(-0.6em);
                 }
 
-                .reviews__advantages-text {
+                .reviews-about__advantages-text {
                     max-width: 10.3em;
                 }
             }
@@ -294,7 +294,7 @@
                 }
             }
 
-            .reviews__youtube-icon {
+            .reviews-about__youtube-icon {
                 width: 0.438em;
                 height: 0.438em;
                 background-image: url("data:image/svg+xml,%0A%3Csvg width='3' height='3' viewBox='0 0 3 3' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.55469 1.50409L0.376141 2.81449L0.376141 0.193687L2.55469 1.50409Z' fill='white'/%3E%3C/svg%3E%0A");
@@ -731,7 +731,7 @@
             &-previews {
                 padding-bottom: 0.875em;
 
-                .reviews__youtube-icon {
+                .reviews-about__youtube-icon {
                     width: 1.188em;
                     height: 1.188em;
                     background-image: url("data:image/svg+xml,%0A%3Csvg width='8' height='7' viewBox='0 0 8 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.08984 3.49961L0.836764 6.96041L0.836765 0.0388059L7.08984 3.49961Z' fill='white'/%3E%3C/svg%3E%0A");
@@ -740,7 +740,7 @@
             }
 
             &-item {
-                img.reviews__watch-image {
+                img.reviews-about__watch-image {
                     width: 13.193em;
                     height: 7.803em;
                 }
@@ -827,13 +827,13 @@
                     display: inline-block;
                 }
 
-                .reviews__youtube-icon {
+                .reviews-about__youtube-icon {
                     width: 0.813em;
                     height: 0.813em;
                     background-size: 0.4em;
                 }
 
-                img.reviews__previews-image {
+                img.reviews-about__previews-image {
                     width: 151.54px;
                     height: 91.03px;
                 }
@@ -900,7 +900,7 @@
                         transform: translateY(-0.8em);
                     }
 
-                    .reviews__advantages-text {
+                    .reviews-about__advantages-text {
                         max-width: 10.3em;
                     }
                 }

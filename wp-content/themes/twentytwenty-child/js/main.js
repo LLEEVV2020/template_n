@@ -85,7 +85,7 @@ $(document).ready(function(){
       });
 
       // Скрипт для слайдера блока reviews
-      $('.reviews__slider').owlCarousel({
+      $('.reviews-about__slider').owlCarousel({
         items: 1,
         mouseDrag: false,
         touchDrag: false,
@@ -96,9 +96,9 @@ $(document).ready(function(){
         navClass: ['navigation-left', 'navigation-right']
       });
 
-      const reviewsItems = document.querySelectorAll('.reviews__watch-item'),
-        reviewsItems2 = document.querySelectorAll('.reviews__previews-item'),
-        reviewsWatchImage = document.querySelector('.reviews__watch-big-image');
+      const reviewsItems = document.querySelectorAll('.reviews-about__watch-item'),
+        reviewsItems2 = document.querySelectorAll('.reviews-about__previews-item'),
+        reviewsWatchImage = document.querySelector('.reviews-about__watch-big-image');
 
       const toggleActivePreview = (previews, string) => {
         previews.forEach((item) => {
@@ -112,6 +112,20 @@ $(document).ready(function(){
                 reviewsWatchImage.setAttribute('src', '/wp-content/themes/twentytwenty-child/img/reviews-image-big3.jpg');
               } else if (item.getAttribute('data-image') === 'preview4') {
                 reviewsWatchImage.setAttribute('src', '/wp-content/themes/twentytwenty-child/img/reviews-image-big4.jpg');
+              } else if (item.getAttribute('data-image') === 'preview5') {
+                reviewsWatchImage.setAttribute('src', '/wp-content/themes/twentytwenty-child/img/reviews-image-big7.jpg');
+              } else if (item.getAttribute('data-image') === 'preview6') {
+                reviewsWatchImage.setAttribute('src', '/wp-content/themes/twentytwenty-child/img/reviews-image-big10.jpg');
+              } else if (item.getAttribute('data-image') === 'preview7') {
+                reviewsWatchImage.setAttribute('src', '/wp-content/themes/twentytwenty-child/img/reviews-image-big.jpg');
+              } else if (item.getAttribute('data-image') === 'preview11') {
+                reviewsWatchImage.setAttribute('src', '/wp-content/themes/twentytwenty-child/img/reviews-image-big12.jpg');
+              } else if (item.getAttribute('data-image') === 'preview12') {
+                reviewsWatchImage.setAttribute('src', '/wp-content/themes/twentytwenty-child/img/reviews-image-big16.jpg');
+              } else if (item.getAttribute('data-image') === 'preview13') {
+                reviewsWatchImage.setAttribute('src', '/wp-content/themes/twentytwenty-child/img/reviews-image-big20.jpg');
+              } else if (item.getAttribute('data-image') === 'preview14') {
+                reviewsWatchImage.setAttribute('src', '/wp-content/themes/twentytwenty-child/img/reviews-image-big24.jpg');
               }
               previews.forEach((item) => {
                   item.classList.remove('active');
@@ -122,8 +136,8 @@ $(document).ready(function(){
         });
       };
 
-      toggleActivePreview(reviewsItems, 'reviews__watch-item');
-      toggleActivePreview(reviewsItems2, 'reviews__previews-item');
+      toggleActivePreview(reviewsItems, 'reviews-about__watch-item');
+      toggleActivePreview(reviewsItems2, 'reviews-about__previews-item');
     
 });
 
