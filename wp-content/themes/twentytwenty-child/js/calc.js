@@ -95,7 +95,7 @@ let c__window = "Частный дом";
 let arr_index = 0;
 let arr__window = [];
 let data__all = {
-	stvorki: '', 
+	//stv_text: '', 
 	width: 0,
 	height: 0,
 	windowsill: false,
@@ -215,6 +215,8 @@ function showSlide(n) {
 		case 4:
 			if(data__all.stvorki.length == 1){
 				document.querySelector('.calc-window-4').style.display = "block" ;
+				
+				// добавляем картинки окон
 				let shablon_type = ` 
 					<div class="calc-window-three__list-item flex-row ">
 						<div class="calc-window-three__box calc-window-three__box--1">
@@ -229,8 +231,11 @@ function showSlide(n) {
 					</div>
 				`;
 				let cw_shablon_type = document.querySelector('.cw_shablon_type');
-
 				cw_shablon_type.innerHTML = shablon_type;
+
+				// меняем надпись на какая створка (напр. Правая створка )
+				document.querySelector('.cw__bt_value').innerHTML = "Створка";
+				
 				
 			}
 			if(data__all.stvorki.length == 2){
@@ -254,6 +259,10 @@ function showSlide(n) {
 				let cw_shablon_type = document.querySelector('.cw_shablon_type');
 
 				cw_shablon_type.innerHTML = shablon_type;
+
+				// меняем надпись на какая створка (напр. Правая створка )
+				document.querySelector('.cw__bt_value').innerHTML = arr_raspolozenie[0];
+
 			}
 			if(data__all.stvorki.length == 3){
 				document.querySelector('.calc-window-4').style.display = "block" ;
@@ -282,6 +291,17 @@ function showSlide(n) {
 				let cw_shablon_type = document.querySelector('.cw_shablon_type');
 
 				cw_shablon_type.innerHTML = shablon_type;
+
+				// меняем надпись на какая створка (напр. Правая створка )
+				document.querySelector('.cw__bt_value').innerHTML = arr_raspolozenie[0];
+
+				// глухая
+
+				// поворотная
+
+				// поворотно откидная
+
+
 			}
 			
 
@@ -305,6 +325,13 @@ function showSlide(n) {
 						</div>
 					</div>
 				`;
+				let cw_shablon_type = document.querySelector('.cw_shablon_type');
+
+				cw_shablon_type.innerHTML = shablon_type;
+
+				// меняем надпись на какая створка (напр. Правая створка )
+				document.querySelector('.cw__bt_value').innerHTML = arr_raspolozenie[2];
+
 			}
 			if(data__all.stvorki.length == 3){
 				document.querySelector('.calc-window-4').style.display = "block";
@@ -329,6 +356,14 @@ function showSlide(n) {
 						</div>
 					</div>
 				`;
+
+				let cw_shablon_type = document.querySelector('.cw_shablon_type');
+
+				cw_shablon_type.innerHTML = shablon_type;
+
+				// меняем надпись на какая створка (напр. Правая створка )
+				document.querySelector('.cw__bt_value').innerHTML = arr_raspolozenie[1];
+
 			}
 			
 
@@ -358,6 +393,12 @@ function showSlide(n) {
 						</div>
 					</div>
 				`;
+				let cw_shablon_type = document.querySelector('.cw_shablon_type');
+
+				cw_shablon_type.innerHTML = shablon_type;
+
+				// меняем надпись на какая створка (напр. Правая створка )
+				document.querySelector('.cw__bt_value').innerHTML = arr_raspolozenie[2];
 			}
 			break;
 	}
