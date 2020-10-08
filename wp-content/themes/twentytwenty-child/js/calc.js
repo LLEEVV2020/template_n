@@ -159,7 +159,6 @@ for (let i_item of i_name_window_two) {
 }
 
 // третий экран
-
 document.querySelector(".range-slider__height").addEventListener("change", function() {
 	console.log(this.value);
 });
@@ -214,12 +213,152 @@ function showSlide(n) {
 
 			break;
 		case 4:
-			document.querySelector('.calc-window-4').style.display = "block" ;
-			let shablon_type = `    `;
+			if(data__all.stvorki.length == 1){
+				document.querySelector('.calc-window-4').style.display = "block" ;
+				let shablon_type = ` 
+					<div class="calc-window-three__list-item flex-row ">
+						<div class="calc-window-three__box calc-window-three__box--1">
+							<div
+								class="calc-window-two__box-img calc-window-two__box-img-size--s calc-window-two__box-img--1">
+								<span class="deaf"></span>
+								<span class="type-open-left"></span>
+								<span class="type-open-right"></span>
+								<span class="type-open-up"></span>
+							</div>
+						</div>
+					</div>
+				`;
+				let cw_shablon_type = document.querySelector('.cw_shablon_type');
+
+				cw_shablon_type.innerHTML = shablon_type;
+				
+			}
+			if(data__all.stvorki.length == 2){
+				document.querySelector('.calc-window-4').style.display = "block" ;
+				let shablon_type = ` 
+					<div class="calc-window-three__list-item flex-row ">
+						<div class="calc-window-three__box calc-window-three__box--2">
+							<div
+								class="calc-window-two__box-img calc-window-two__box-img-size--m calc-window-two__box-img--1">
+								<span class="deaf"></span>
+								<span class="type-open-left"></span>
+								<span class="type-open-right"></span>
+								<span class="type-open-up"></span>
+							</div>
+							<div
+								class="calc-window-two__box-img calc-window-two__box-img-size--m calc-window-two__box-img--2">
+							</div>
+						</div>
+					</div>
+				`;
+				let cw_shablon_type = document.querySelector('.cw_shablon_type');
+
+				cw_shablon_type.innerHTML = shablon_type;
+			}
+			if(data__all.stvorki.length == 3){
+				document.querySelector('.calc-window-4').style.display = "block" ;
+				let shablon_type = ` 
+					
+					<div class="calc-window-three__list-item flex-row">
+						<div class="calc-window-three__box calc-window-three__box--3">
+							<div
+								class="calc-window-two__box-img calc-window-two__box-img-size--l calc-window-two__box-img--1">
+								<span class="type-open-left"></span>
+							</div>
+							<div
+								class="calc-window-two__box-img calc-window-two__box-img-size--l calc-window-two__box-img--2">
+								<span class="type-open-right"></span>
+								<span class="type-open-up"></span>
+							</div>
+							<div
+								class="calc-window-two__box-img calc-window-two__box-img-size--l calc-window-two__box-img--3">
+								<span class="deaf"></span>
+								<span class="type-open-right"></span>
+								<span class="type-open-up"></span>
+							</div>
+						</div>
+					</div>
+				`;
+				let cw_shablon_type = document.querySelector('.cw_shablon_type');
+
+				cw_shablon_type.innerHTML = shablon_type;
+			}
+			
 
 			break;
 		case 5:
-			console.log( 'Перебор' );
+			if(data__all.stvorki.length == 2){
+				document.querySelector('.calc-window-4').style.display = "block" ;
+				let shablon_type = ` 
+					<div class="calc-window-three__list-item flex-row ">
+						<div class="calc-window-three__box calc-window-three__box--2">
+							<div
+								class="calc-window-two__box-img calc-window-two__box-img-size--m calc-window-two__box-img--1">
+								<span class="deaf"></span>
+								<span class="type-open-left"></span>
+								<span class="type-open-right"></span>
+								<span class="type-open-up"></span>
+							</div>
+							<div
+								class="calc-window-two__box-img calc-window-two__box-img-size--m calc-window-two__box-img--2">
+							</div>
+						</div>
+					</div>
+				`;
+			}
+			if(data__all.stvorki.length == 3){
+				document.querySelector('.calc-window-4').style.display = "block";
+				let shablon_type = `
+					<div class="calc-window-three__list-item flex-row">
+						<div class="calc-window-three__box calc-window-three__box--3">
+							<div
+								class="calc-window-two__box-img calc-window-two__box-img-size--l calc-window-two__box-img--1">
+								<span class="type-open-left"></span>
+							</div>
+							<div
+								class="calc-window-two__box-img calc-window-two__box-img-size--l calc-window-two__box-img--2">
+								<span class="type-open-right"></span>
+								<span class="type-open-up"></span>
+							</div>
+							<div
+								class="calc-window-two__box-img calc-window-two__box-img-size--l calc-window-two__box-img--3">
+								<span class="deaf"></span>
+								<span class="type-open-right"></span>
+								<span class="type-open-up"></span>
+							</div>
+						</div>
+					</div>
+				`;
+			}
+			
+
+			break;
+
+		case 6:
+			if(data__all.stvorki.length == 3){
+				document.querySelector('.calc-window-4').style.display = "block";
+				let shablon_type = `
+					<div class="calc-window-three__list-item flex-row">
+						<div class="calc-window-three__box calc-window-three__box--3">
+							<div
+								class="calc-window-two__box-img calc-window-two__box-img-size--l calc-window-two__box-img--1">
+								<span class="type-open-left"></span>
+							</div>
+							<div
+								class="calc-window-two__box-img calc-window-two__box-img-size--l calc-window-two__box-img--2">
+								<span class="type-open-right"></span>
+								<span class="type-open-up"></span>
+							</div>
+							<div
+								class="calc-window-two__box-img calc-window-two__box-img-size--l calc-window-two__box-img--3">
+								<span class="deaf"></span>
+								<span class="type-open-right"></span>
+								<span class="type-open-up"></span>
+							</div>
+						</div>
+					</div>
+				`;
+			}
 			break;
 	}
 	if(n == 0){
