@@ -105,14 +105,13 @@ let data__all = {
 	stvorki: []
 }
 let arr_raspolozenie = ["Левая створка", "Центральная створка", "Правая створка"];
-let arr_stvorki = [
+let arr_stvorki = 
 	{
 		raspolozenie: '',
-		glyhaia_pov: 'Глухая',
+		glyhaia_pov: 'glyhaia_1',
 		moskitnaia_setka: false,
 		detskii_zamok: false
-	}
-];
+	};
 
 // начальный экран
 let i_name_window = document.querySelectorAll('input[name="window"]');
@@ -210,11 +209,11 @@ function showSlide(n) {
 			data__all.otlivi = document.querySelector('[id="otlivi-3"]').checked;
 
 			break;
+
+			
+		/*
 		case 4:
 			
-			//let hhhhhh = data__all.stvorki.;
-
-
 			if(data__all.stvorki.length == 1){
 				document.querySelector('.calc-window-4').style.display = "block" ;
 				
@@ -268,28 +267,32 @@ function showSlide(n) {
 			}
 			if(data__all.stvorki.length == 3){
 				document.querySelector('.calc-window-4').style.display = "block" ;
+
+				let sash_radio = document.querySelectorAll('[name="sash-radio"]');
+
+				for (let i of data__all.stvorki) {	
+				}
+
 				let shablon_type = ` 
 					
 					<div class="calc-window-three__list-item flex-row">
 						<div class="calc-window-three__box calc-window-three__box--3">
 							<div
 								class="calc-window-two__box-img calc-window-two__box-img-size--l calc-window-two__box-img--1">
-								<span class="type-open-left"></span>
+								
 							</div>
 							<div
 								class="calc-window-two__box-img calc-window-two__box-img-size--l calc-window-two__box-img--2">
-								<span class="type-open-right"></span>
-								<span class="type-open-up"></span>
+								
 							</div>
 							<div
 								class="calc-window-two__box-img calc-window-two__box-img-size--l calc-window-two__box-img--3">
-								<span class="deaf"></span>
-								<span class="type-open-right"></span>
-								<span class="type-open-up"></span>
+								
 							</div>
 						</div>
 					</div>
 				`;
+
 				let cw_shablon_type = document.querySelector('.cw_shablon_type');
 
 				cw_shablon_type.innerHTML = shablon_type;
@@ -297,27 +300,19 @@ function showSlide(n) {
 				// меняем надпись на какая створка (напр. Правая створка )
 				document.querySelector('.cw__bt_value').innerHTML = arr_raspolozenie[0];
 
-				// глухая
 				
-				//
-				let sash_radio = document.querySelectorAll('[name="sash-radio"]');
-				for (let i_item of sash_radio) {
-					
-						if (i_item.checked) {
-							data__all.slopes_block_add = i_item.value;
-							data__all.stvorki;
-							console.log(data__all.stvorki);
-							//data__all.stvorki
 
-						}
+				for(let i = 0; sash_radio.length > i; i++){
 
-				};
+					//if() sash_radio[i].value;
+					let item_radio = sash_radio[i];
+					let item_glyhaia_pov =  data__all.stvorki[i];
 
-				// поворотная
+					if(item_radio.value	==  item_glyhaia_pov.glyhaia_pov){
+						item_radio.checked = true;
+					}
 
-				// поворотно откидная
-
-
+				}
 			}
 			
 
@@ -417,10 +412,10 @@ function showSlide(n) {
 				document.querySelector('.cw__bt_value').innerHTML = arr_raspolozenie[2];
 			}
 			break;
-	}
-	if(n == 0){
+*/
 
 	}
+	
 }
 
 function showNext_Slide() {
