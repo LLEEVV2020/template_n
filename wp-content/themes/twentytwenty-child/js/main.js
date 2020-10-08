@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  // Стили для слайдера блока advantages-windows
+  // Скрипт для слайдера блока advantages-windows
     $(".advantages-windows__slider").owlCarousel({
         items: 1,
         nav: true,
@@ -12,7 +12,7 @@ $(document).ready(function(){
         dotClass: ['advantages-windows__nav-dot']
     });
 
-    // Стили для слайдера блока right-balcony
+    // Скрипт для слайдера блока right-balcony
     $('.left-balcony-slider').owlCarousel({
         items: 1,
         merge: true,
@@ -28,7 +28,7 @@ $(document).ready(function(){
         navText: ['']
       });
 
-      // Стили для слайдера блока quality-worker
+      // Скрипт для слайдера блока quality-worker
       $('.quality-worker__slider').owlCarousel({
         items: 5,
         margin: 2,
@@ -42,7 +42,7 @@ $(document).ready(function(){
         }
       });
 
-      // Стили для слайдера блока our-professional-employees
+      // Скрипт для слайдера блока our-professional-employees
       $('.our-professional-employees__slider').owlCarousel({
         items: 1,
         dotsClass: ['our-professional-employees__nav-dots'],
@@ -84,10 +84,46 @@ $(document).ready(function(){
           photoGallerySlider.trigger("to.owl.carousel", [index, 300, true]);
       });
 
-      // Стили для слайдера блока reviews
-      $('.slider').owlCarousel({
-        items: 1
+      // Скрипт для слайдера блока reviews
+      $('.reviews__slider').owlCarousel({
+        items: 1,
+        mouseDrag: false,
+        touchDrag: false,
+        nav: true,
+        dots: false,
+        navText: [''],
+        navContainerClass: ['navigation'],
+        navClass: ['navigation-left', 'navigation-right']
       });
+
+      const reviewsItems = document.querySelectorAll('.reviews__watch-item'),
+        reviewsItems2 = document.querySelectorAll('.reviews__previews-item'),
+        reviewsWatchImage = document.querySelector('.reviews__watch-big-image');
+
+      const toggleActivePreview = (previews, string) => {
+        previews.forEach((item) => {
+          item.addEventListener('click', function() {
+            if (item.classList.contains(`${string}`)) {
+              if (item.getAttribute('data-image') === 'preview1') {
+                reviewsWatchImage.setAttribute('src', '/wp-content/themes/twentytwenty-child/img/reviews-image-big1.jpg');
+              } else if (item.getAttribute('data-image') === 'preview2') {
+                reviewsWatchImage.setAttribute('src', '/wp-content/themes/twentytwenty-child/img/reviews-image-big2.jpg');
+              } else if (item.getAttribute('data-image') === 'preview3') {
+                reviewsWatchImage.setAttribute('src', '/wp-content/themes/twentytwenty-child/img/reviews-image-big3.jpg');
+              } else if (item.getAttribute('data-image') === 'preview4') {
+                reviewsWatchImage.setAttribute('src', '/wp-content/themes/twentytwenty-child/img/reviews-image-big4.jpg');
+              }
+              previews.forEach((item) => {
+                  item.classList.remove('active');
+              });
+              this.classList.add('active');
+            }          
+          });
+        });
+      };
+
+      toggleActivePreview(reviewsItems, 'reviews__watch-item');
+      toggleActivePreview(reviewsItems2, 'reviews__previews-item');
     
 });
 
