@@ -138,6 +138,25 @@ $(document).ready(function(){
 
       toggleActivePreview(reviewsItems, 'reviews-about__watch-item');
       toggleActivePreview(reviewsItems2, 'reviews-about__previews-item');
+
+      // Скрипт для слайдера блока windows-country-house
+      const windowsCountryHouseSlider = '.windows-country-house__slider';
+
+      $('.windows-country-house__slider').owlCarousel({
+        items: 1,
+        nav: false,
+        dots: true,
+        dotsClass: ['pagination-box'],
+        dotClass: ['pagination'],
+        responsive: {
+          768: {
+            items: 3,
+            dots: false,
+            mouseDrag: false,
+            touchDrag: false,
+          }
+        }
+      });
     
 });
 
