@@ -1,0 +1,61 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+.container {
+    max-width: 33.5rem;
+
+    @include _768 {
+        max-width: 72.8rem;
+    }
+
+    @include _1200 {
+        max-width: 114rem;
+    }
+}
+
+
+
+.quick-calculation {
+
+    background-image: url(/wp-content/themes/twentytwenty-child/img/yellow-fone.webp);
+
+    /* .quick-calculation__wrapper */
+
+    &__wrapper {
+    }
+
+    /* .quick-calculation__title */
+
+    &__title {
+    }
+
+    /* .quick-calculation__form */
+
+    &__form {
+    }
+
+    /* .quick-calculation__text */
+
+    &__text {
+    }
+
+    /* .quick-calculation__price */
+
+    &__price {
+    }
+
+    /* .quick-calculation__new-price */
+
+    &__new-price {
+    }
+
+    /* .quick-calculation__btn */
+
+    &__btn {
+    }
+
+    /* .quick-calculation__footer-text */
+
+    &__footer-text {
+    }
+}

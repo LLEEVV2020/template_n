@@ -13,6 +13,7 @@
     }
 }
 
+
 .calc-form {
     background: linear-gradient(180deg, rgba(233, 233, 233, 0) 0%, #e9e9e9 81.25%) 0 0 / auto 16.3em,
         url(/wp-content/themes/twentytwenty-child/img/calc-form-bg-s.webp) top right/auto 25.7rem;
@@ -36,7 +37,7 @@
         text-align: center;
 
         @include _768 {
-            padding: 3.5em 0;
+            padding: 3.3em 0;
             text-align: left;
             max-width: 40rem;
         }
@@ -199,16 +200,12 @@
     &__btn {
         border-radius: 0.38em;
         display: block;
-        width: 20.94em;
+        width: 100%;
         margin: 1.25em auto 0;
-        min-height: 4rem;
-
-        @include _768 {
-            width: 100%;
-        }
+        height: 4rem;
 
         @include _1200 {
-            min-height: 5rem;
+            height: 5rem;
         }
     }
 
