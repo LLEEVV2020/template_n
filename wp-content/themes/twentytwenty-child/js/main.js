@@ -140,8 +140,6 @@ $(document).ready(function(){
       toggleActivePreview(reviewsItems2, 'reviews-about__previews-item');
 
       // Скрипт для слайдера блока windows-country-house
-      const windowsCountryHouseSlider = '.windows-country-house__slider';
-
       $('.windows-country-house__slider').owlCarousel({
         items: 1,
         nav: false,
