@@ -13,20 +13,37 @@
     }
 }
 
-
-
 .quick-calculation {
-
     background-image: url(/wp-content/themes/twentytwenty-child/img/yellow-fone.webp);
 
     /* .quick-calculation__wrapper */
 
     &__wrapper {
+        padding: 5rem 0;
+        text-align: center;
+
+        @include _768 {
+            padding: 4rem 0;
+        }
+        @include _1200 {
+            padding: 5rem 0;
+        }
     }
 
     /* .quick-calculation__title */
 
     &__title {
+        font-size: 1.5em;
+        font-weight: 900;
+        margin-bottom: 0.8em;
+
+        @include _768 {
+            font-size: 1.875em;
+        }
+
+        @include _1200 {
+            font-size: 2.5em;
+        }
     }
 
     /* .quick-calculation__form */
@@ -34,28 +51,174 @@
     &__form {
     }
 
+    /* .quick-calculation__form-box */
+
+    &__form-box {
+        @include _768 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.563em;
+        }
+
+        @include _1200 {
+            display: inline-flex;
+            margin-bottom: 0;
+        }
+    }
+
     /* .quick-calculation__text */
 
     &__text {
+        font-size: 1.13em;
+        font-weight: 900;
+        margin-bottom: 0.4em;
+
+        @include _768 {
+            font-weight: 700;
+            font-size: 1.25em;
+            margin-right: 1em;
+            margin-bottom: 0;
+        }
+
+        @include _1200 {
+            font-size: 1.5em;
+        }
+    }
+
+    /* .quick-calculation__input */
+
+    &__input {
+        display: block;
+        margin: 0 auto 0.7em;
+        border: none;
+        border-radius: 0.2em;
+        max-width: 14.4rem;
+        height: 5rem;
+        padding: 1em;
+        text-align: center;
+
+        &::placeholder {
+            text-align: center;
+            font-weight: 700;
+
+            @include _1200 {
+                font-size: 1em;
+            }
+        }
+
+        @include _768 {
+            margin: 0 1.15em 0 0;
+            max-width: 7.6rem;
+            height: 4.1rem;
+        }
+
+        @include _1200 {
+            max-width: 9.2rem;
+            height: 5rem;
+            padding: 0.8em 0.3em;
+            font-size: 1.5em;
+            margin-right: 0.42em;
+        }
     }
 
     /* .quick-calculation__price */
 
     &__price {
+        font-weight: 700;
+        display: inline-block;
+        font-size: 2em;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            height: 0.1em;
+            width: 90%;
+            background-color: $orange;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            top: 50%;
+            transform: rotate(10deg);
+        }
+
+        @include _768 {
+            font-size: 1.75em;
+            margin-right: 1.25em;
+        }
+
+        @include _1200 {
+            font-size: 2em;
+            margin-right: 0.41em;
+        }
     }
 
     /* .quick-calculation__new-price */
 
     &__new-price {
+        color: $orange;
+        font-size: 3em;
+        font-weight: 900;
+        display: block;
+
+        @include _768 {
+            font-size: 2.5em;
+        }
+
+        @include _1200 {
+            font-size: 3em;
+            margin-right: 0.2em;
+        }
     }
 
     /* .quick-calculation__btn */
 
     &__btn {
+        border: none;
+        background-color: $orange;
+        color: #fff;
+        font-weight: 900;
+        border-radius: 0.2em;
+        max-width: 30rem;
+        width: 100%;
+        height: 4rem;
+        text-transform: uppercase;
+        margin-bottom: 1.25em;
+        letter-spacing: 0.05em;
+        cursor: pointer;
+
+        @include _768 {
+            margin: 0 auto 2.5em;
+            max-width: 40rem;
+        }
+
+        @include _1200 {
+            margin: 0;
+            max-width: 35rem;
+            transform: translateY(-0.2em);
+            font-size: 1.188em;
+        }
     }
 
     /* .quick-calculation__footer-text */
 
     &__footer-text {
+        font-weight: 900;
+        font-size: 1.125em;
+
+        span {
+            display: block;
+            text-transform: uppercase;
+        }
+
+        @include _768 {
+            font-weight: 700;
+            font-size: 1.25em;
+        }
+        @include _1200 {
+            margin-top: 1.35em;
+            font-size: 1.5em;
+        }
     }
 }
