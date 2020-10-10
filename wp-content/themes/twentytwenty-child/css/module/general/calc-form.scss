@@ -1,17 +1,7 @@
 @import "../../base/all/var";
 @import "../../base/all/mixin";
 
-.container {
-    max-width: 33.5rem;
 
-    @include _768 {
-        max-width: 72.8rem;
-    }
-
-    @include _1200 {
-        max-width: 114rem;
-    }
-}
 
 
 .calc-form {
@@ -28,6 +18,18 @@
     @include _1200 {
         background: url(/wp-content/themes/twentytwenty-child/img/calc-form-bg-l.webp) top right no-repeat;
         background-color: #e9e9e9;
+    }
+
+    .container {
+        max-width: 33.5rem;
+
+        @include _768 {
+            max-width: 72.8rem;
+        }
+
+        @include _1200 {
+            max-width: 114rem;
+        }
     }
 
     /* .calc-form__wrapper */
