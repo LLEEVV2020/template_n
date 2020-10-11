@@ -1,22 +1,24 @@
 @import "../../base/all/var";
 @import "../../base/all/mixin";
 
-.container {
-    max-width: 33.5rem;
-
-    @include _768 {
-        max-width: 72.8rem;
-    }
-
-    @include _1200 {
-        max-width: 114rem;
-    }
-}
 
 .quick-calculation {
     background-image: url(/wp-content/themes/twentytwenty-child/img/yellow-fone.webp);
 
     /* .quick-calculation__wrapper */
+
+    
+    .container {
+        max-width: 33.5rem;
+
+        @include _768 {
+            max-width: 72.8rem;
+        }
+
+        @include _1200 {
+            max-width: 114rem;
+        }
+    }
 
     &__wrapper {
         padding: 5rem 0;
