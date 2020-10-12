@@ -18,6 +18,12 @@
     }
 }
 
+@mixin _994 {
+    @media (min-width: 994px) {
+        @content;
+    }
+}
+
 @mixin _768 {
     @media (min-width: 768px) {
         @content;
