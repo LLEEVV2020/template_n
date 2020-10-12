@@ -1,0 +1,83 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+.product-windows {
+    .container {
+        max-width: 33.5rem;
+
+        @include _768 {
+            max-width: 72.8rem;
+        }
+
+        @include _1200 {
+            max-width: 114rem;
+        }
+    }
+    /* .product-windows__wrapper */
+
+    &__wrapper {
+        padding: 2.563em 0 20.63em;
+        text-align: center;
+
+        @include _768 {
+            padding: 3.438em 0;
+        }
+        @include _1200 {
+            padding: 3.25em 0 3.938em;
+        }
+    }
+
+    /* .product-windows__title */
+
+    &__title {
+        margin-bottom: 0.4em;
+        line-height: 1.2em;
+
+        span {
+            display: block;
+        }
+
+        @include _768 {
+            margin-bottom: 0.834em;
+        }
+
+        @include _960 {
+            font-size: 3rem;
+        }
+        @include _1200 {
+            font-size: 4rem;
+            line-height: 1.3em;
+            margin-bottom: 0.2em;
+        }
+    }
+
+    /* .product-windows__text */
+
+    &__text {
+        font-weight: 700;
+        line-height: 1.2em;
+
+        span {
+            display: block;
+            font-weight: 900;
+            font-size: 1.125em;
+
+            @include _768 {
+                font-weight: 700;
+                display: inline-block;
+            }
+            @include _1200 {
+                display: block;
+                font-size: 1.5em;
+                margin-top: 0.3em;
+            }
+        }
+
+        @include _768 {
+            font-weight: 400;
+            font-size: 1.25em;
+        }
+        @include _1200 {
+        }
+    }
+}
