@@ -38,6 +38,9 @@
             padding-right: 0;
             text-align: center;
             border-bottom: .3em solid #C9C9C9;
+            &:focus{
+                border-bottom-color: currentColor;
+            }
         }
     }
 
