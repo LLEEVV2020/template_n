@@ -170,5 +170,27 @@ $(document).ready(function () {
     }
   });
 
+
+  // Скрипт для слайдера блока window-repair
+  $('.window-repair__slider').owlCarousel({
+    items: 1,
+    dots: true,
+    dotsClass: ['pagination-box'],
+    dotClass: ['pagination'],
+    margin: 55,
+    responsive: {
+      768: {
+        items: 2,
+      },
+      1200: {
+        items: 3,
+        margin: 15,
+        dots: false,
+        mouseDrag: false,
+        touchDrag: false,
+      }
+    }
+  });
+  
 });
 

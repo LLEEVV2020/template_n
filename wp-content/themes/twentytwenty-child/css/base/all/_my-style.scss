@@ -1,0 +1,44 @@
+@import "../../base/all/mixin";
+
+// ========================= ФЛЕКСЫ =========================
+
+.df {
+    display: flex;
+}
+
+.dfsb {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dfsa {
+    display: flex;
+    justify-content: space-around;
+}
+
+// ========================= Контейнер =========================
+
+.container-wrapper {
+    max-width: 33.5rem;
+    margin: 0 auto;
+
+    @include _768 {
+        max-width: 72.8rem;
+    }
+
+    @include _1200 {
+        max-width: 114rem;
+    }
+}
+
+// ========================= ШРИФТЫ =========================
+
+.t-24-30-40{
+    font-size: 2.4rem;
+    @include _768 {
+        font-size: 3rem;
+    }
+    @include _1200 {
+        font-size: 4rem;
+    }
+}
