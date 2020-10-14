@@ -7,60 +7,58 @@
 // @include _1200 {
 // }
 
-.mosquito-net {
-    background-color: #e9e9e9;
+.renovation-windows {
+    background-image: url(/wp-content/themes/twentytwenty-child/img/yellow-fone.webp);
 
-    /* .mosquito-net__wrapper */
+    /* .renovation-windows__wrapper */
 
     &__wrapper {
-        padding: 4.6rem 0 7.6rem;
+        padding: 4.6rem 0 4rem;
 
         @include _768 {
-            padding: 5.5rem 0 10.5rem;
+            padding: 5.5rem 0 5.5rem;
         }
 
         @include _1200 {
-            padding: 7.4rem 0 8.4rem;
+            padding: 6.5rem 0 8.4rem;
         }
     }
 
-    /* .mosquito-net__title */
+    /* .renovation-windows__title */
 
     &__title {
         text-align: center;
-        max-width: 10.6em;
-        margin: 0 auto;
         line-height: 1.2em;
-        margin-bottom: 0.5em;
 
         @include _768 {
-            max-width: 100%;
-            margin-bottom: 0.2em;
+            margin-bottom: -0.1em;
         }
 
         @include _1200 {
-            margin-bottom: 0.6em;
+            margin-bottom: 0.1em;
         }
     }
 
-    /* .mosquito-net__suptitle */
+    /* .renovation-windows__suptitle */
 
     &__suptitle {
         text-align: center;
-        margin-bottom: 0.5em;
+        margin-bottom: 0.7em;
 
         @include _768 {
-            margin-bottom: 2em;
+            margin-bottom: 1.3em;
         }
 
         @include _1200 {
-            margin-bottom: 1.3em;
+            margin-bottom: 0.5em;
         }
     }
 
-    /* .mosquito-net__slider */
+    /* .renovation-windows__slider */
 
     &__slider {
+        margin-bottom: 1.6em;
+
         .pagination-box {
             position: absolute;
             width: 100%;
@@ -80,12 +78,16 @@
             }
         }
 
-        @include _768 {}
+        @include _768 {
+            margin-bottom: 4.5em;
+        }
 
-        @include _1200 {}
+        @include _1200 {
+            margin-bottom: 1.5em;
+        }
     }
 
-    /* .mosquito-net__item */
+    /* .renovation-windows__item */
 
     &__item {
         max-width: 30rem;
@@ -101,21 +103,24 @@
         &::before {
             content: "";
             position: absolute;
-            width: 22rem;
-            height: 10rem;
-            bottom: -1.9em;
-            left: 8.4em;
-            background: linear-gradient(267.73deg, #00d0fe 10.58%, #4f9bf5 82.47%);
+            width: 20rem;
+            height: 9.3rem;
+            bottom: -2.1em;
+            left: 9.7em;
+            background: linear-gradient(267.73deg, #fe5769 10.58%, #ca3d90 82.47%);
             border-radius: 15em/7em;
 
             @include _768 {
-                transform: rotate(-2deg);
+                transform: rotate(-4.3deg);
+                bottom: -1.5em;
             }
 
             @include _1200 {
+                bottom: -2.1em;
+                left: 9.6em;
                 width: 25rem;
                 height: 11rem;
-                transform: rotate(-4deg);
+                transform: rotate(-3deg);
             }
         }
 
@@ -130,7 +135,7 @@
         }
     }
 
-    /* .mosquito-net__img */
+    /* .renovation-windows__img */
 
     &__img {
         display: block;
@@ -152,16 +157,16 @@
         }
     }
 
-    /* .mosquito-net__item-text */
+    /* .renovation-windows__item-text */
 
     &__item-text {
         font-weight: 900;
         font-size: 1.8rem;
-        max-width: 11em;
         line-height: 1.4em;
         margin-left: 0.2em;
 
         @include _768 {
+            max-width: 13em;
             font-weight: 700;
             font-size: 2rem;
             line-height: 1.1em;
@@ -173,7 +178,7 @@
         }
     }
 
-    /* .mosquito-net__item-price */
+    /* .renovation-windows__item-price */
 
     &__item-price {
         font-size: 4rem;
@@ -191,6 +196,40 @@
 
         @include _1200 {
             font-size: 4.8rem;
+        }
+    }
+
+    /* .renovation-windows__footer */
+
+    &__footer {
+        text-align: center;
+        font-size: 1.6rem;
+        line-height: 1.4em;
+
+        @include _768 {
+            font-size: 2.2rem;
+            text-align: center;
+            line-height: 1.1em;
+        }
+
+        @include _1200 {
+            font-size: 2.4rem;
+        }
+    }
+
+    /* .renovation-windows__footer-text */
+
+    &__footer-text {
+        font-size: 1.8rem;
+        display: block;
+
+        @include _768 {
+            display: inline-block;
+            font-size: 2.5rem;
+        }
+
+        @include _1200 {
+            font-size: 3.2rem;
         }
     }
 }
