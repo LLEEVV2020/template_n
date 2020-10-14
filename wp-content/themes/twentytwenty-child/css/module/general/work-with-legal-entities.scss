@@ -2,10 +2,10 @@
 @import "../../base/all/mixin";
 @import "../../base/all/my-style";
 
-@include _768 {
-}
-@include _1200 {
-}
+// @include _768 {
+// }
+// @include _1200 {
+// }
 
 .legal-entities {
     background-image: url(/wp-content/themes/twentytwenty-child/img/legal-entities-s.webp);
