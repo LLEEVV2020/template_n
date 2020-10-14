@@ -43,6 +43,16 @@
     }
 }
 
+.t-16-20-24{
+    font-size: 1.6rem;
+    @include _768 {
+        font-size: 2rem;
+    }
+    @include _1200 {
+        font-size: 2.4rem;
+    }
+}
+
 .fw7 {
     font-weight: 700;
 }
