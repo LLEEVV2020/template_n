@@ -610,6 +610,12 @@ h2 {
             order: 1;
             width: 27.87rem;
         }
+
+        &__text {
+            &--hide {
+                display: none;
+            }
+        }
         
         .right {
             width: 39.88rem;
@@ -778,6 +784,12 @@ h2 {
 
         .left {
             width: 40.87rem;
+        }
+
+        &__text {
+            &--hide {
+                display: block;
+            }
         }
 
         &__info {
