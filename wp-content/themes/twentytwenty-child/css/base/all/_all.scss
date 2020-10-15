@@ -161,6 +161,7 @@ h6 {
 .rubl {
     &:after {
         content: '\20BD';
+        display: inline-block;
         color: inherit;
     }
 }
