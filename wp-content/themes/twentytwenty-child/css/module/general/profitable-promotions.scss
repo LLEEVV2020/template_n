@@ -43,6 +43,9 @@
     &__item {
         flex-direction: column;
         margin-bottom: 3.5em;
+        img{
+            max-width: inherit;
+        }
 
         picture {
             margin-bottom: 1em;
