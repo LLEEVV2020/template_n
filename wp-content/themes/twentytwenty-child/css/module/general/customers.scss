@@ -1,0 +1,88 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.customers {
+    background-color: #E5E5E5;
+    /* .customers__wrapper */
+
+    &__wrapper {
+        padding: 4.6rem 0 3.6rem;
+        text-align: center;
+
+        @include _768 {
+            padding: 5.5rem 0;
+        }
+
+        @include _1200 {
+            padding: 6.3rem 0 6.9rem;
+        }
+    }
+
+    /* .customers__title */
+
+    &__title {
+        margin-bottom: 1.2em;
+
+        span {
+            display: block;
+
+            @include _1200 {
+                display: inline-block;
+            }
+        }
+
+        @include _768 {
+            margin-bottom: 0.7em;
+        }
+
+        @include _1200 {
+            margin-bottom: 0.5em;
+        }
+    }
+
+    /* .customers__text */
+
+    &__text {
+        font-weight: 700;
+        line-height: 1.3em;
+
+        @include _768 {
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 1.15em;
+        }
+
+        @include _1200 {
+            line-height: 1.25em;
+
+        }
+    }
+
+    /* .customers__text-bold */
+
+    &__text-bold {
+        font-weight: 900;
+
+        @include _768 {
+            font-weight: 700;
+        }
+
+    }
+
+    /* .customers__subtext */
+
+    &__subtext {
+        font-weight: 900;
+        display: block;
+
+        @include _1200 {
+            font-weight: 700;
+            font-size: 2.4rem;
+        }
+    }
+}
