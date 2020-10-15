@@ -49,7 +49,17 @@
         font-size: 2rem;
     }
     @include _1200 {
-        font-size: 2.4rem;
+        font-size: 2.4rem; 
+    }
+}
+
+.t-18-20-24{
+    font-size: 1.8rem;
+    @include _768 {
+        font-size: 2rem;
+    }
+    @include _1200 {
+        font-size: 2.4rem; 
     }
 }
 
