@@ -155,3 +155,12 @@ h6 {
         text-align: left;
     }
 }
+
+// Спец. символы
+// Символ рубля
+.rubl {
+    &:after {
+        content: '\20BD';
+        color: inherit;
+    }
+}

@@ -1,0 +1,76 @@
+.repair-balconies-loggias {
+    background-image: url('/wp-content/themes/twentytwenty-child/img/repair-balconies-loggias-small.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__box {
+        padding: 1.813em 1.023em 1.563em 0.899em;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .title {
+        margin-bottom: 1.313em;
+    }
+
+    &__list {
+        margin-bottom: 1.290em;
+    }
+
+    &__item,
+    &__content {
+        display: flex;
+    }
+
+    &__item {
+        justify-content: space-between;
+        margin-bottom: 0.594em;
+
+        &:before {
+            content: '';
+            display: inline-block;
+            width: 1.250em;
+            height: 1.250em;
+            margin-right: 0.5em;
+            background-image: url('/wp-content/themes/twentytwenty-child/img/sprite2.png');
+            background-repeat: no-repeat;
+            background-position: 100% 0;
+            background-size: 8em;
+        }
+    }
+
+    &__text {
+        flex-grow: 1;
+
+        &--before {
+            &:before {
+                content: 'Ваша выгода:';
+                margin-right: 2.592em;
+            }
+        }
+    }
+
+    &__price {
+        font-weight: 900;
+        font-size: 1.125em;
+        &--big {
+            font-size: 1.5em;
+        }
+
+        & + .repair-balconies-loggias__price {
+            flex-basis: 4.938em;
+            text-align: right;
+        }
+    }
+
+    .rubl {
+        &:after {
+            margin-left: 0.1em;
+        }
+    }
+
+    &__content {
+        align-items: center;
+        max-width: 14em;
+        margin-left: 1em;
+    }
+}
