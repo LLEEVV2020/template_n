@@ -236,5 +236,33 @@ $(document).ready(function () {
     }
   });
   
+  // Скрипт для слайдера блока installment-plan
+  $('.installment-plan__slider').owlCarousel({
+    items: 1,
+    dots: true,
+    dotsClass: ['pagination-box'],
+    dotClass: ['pagination'],
+    margin: 55,
+    responsive: {
+      768: {
+        items: 3,
+        margin: 0,
+        dots: false,
+        mouseDrag: false,
+        touchDrag: false,
+      }
+    }
+  });
+
+  // Скрипт для табов блока installment-plan
+  $('.installment-plan__wrapper .tab').on('click', function (event) {
+    var id = $(this).attr('data-id');
+    $('.installment-plan__wrapper').find('.tab-item').removeClass('active-tab').hide();
+    $('.installment-plan__wrapper .tabs').find('.tab').removeClass('active');
+    $(this).addClass('active');
+    $('#' + id).addClass('active-tab').fadeIn();
+    return false;
+  });
+  
 });
 
