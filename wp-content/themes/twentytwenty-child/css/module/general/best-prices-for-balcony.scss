@@ -1,0 +1,58 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.best-prices {
+    background: #f9f9f9;
+    /* .best-prices__wrapper */
+
+    &__wrapper {
+        text-align: center;
+        padding: 4.5rem 0;
+
+        @include _768 {
+            padding: 5.5rem 0;
+        }
+
+        @include _1200 {
+            padding: 7.7rem 0;
+        }
+    }
+
+    /* .best-prices__title */
+
+    &__title {
+        margin-bottom: 0.4em;
+        line-height: 1.2em;
+
+        span {
+            display: block;
+        }
+
+        @include _768 {
+            margin-bottom: 0.8em;
+            line-height: 1.1em;
+        }
+
+        @include _1200 {
+            margin-bottom: 0.4em;
+            line-height: 1.2em;
+        }
+    }
+
+    /* .best-prices__text */
+
+    &__text {
+        line-height: 1.13em;
+
+        @include _1200 {
+            line-height: 1.05em;
+            max-width: 38em;
+            margin: 0 auto;
+        }
+    }
+}
