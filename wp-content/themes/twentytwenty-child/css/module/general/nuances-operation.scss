@@ -127,8 +127,8 @@
         }
 
         .title {
-            margin-top: 0.6em;
-            // margin-top: 1.288em;
+            //margin-top: 0.6em;
+            margin-top: 1.288em;
             margin-bottom: 0.9em;
             font-size: 2.8rem;
             text-align: center;
@@ -137,6 +137,9 @@
         .text {
             margin-bottom: 1.763em;
             text-align: left;
+            &:first-child{
+                margin-bottom: .25em;
+            }
         }
 
         &__image {
