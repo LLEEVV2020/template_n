@@ -501,11 +501,10 @@
             }
 
             &-image {
-
                 background: url("/wp-content/themes/twentytwenty-child/img/promo-bg4-small.jpg") no-repeat;
                 background-size: cover;
                 min-height: 23rem;
-
+                transform: scaleX(-1);
             }
 
         }
@@ -2983,6 +2982,14 @@
         &-description {
             max-width: 109.2rem;
             font-size: 2.4rem;
+        }
+
+        &-windows-repairs {
+            .promo {
+                &-image {
+                    transform: scaleX(1);
+                }
+            }
         }
 
     }
