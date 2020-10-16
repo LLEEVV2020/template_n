@@ -137,6 +137,9 @@
         .text {
             margin-bottom: 1.763em;
             text-align: left;
+            &:first-child{
+                margin-bottom: .25em;
+            }
         }
 
         &__image {
