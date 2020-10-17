@@ -263,6 +263,25 @@ $(document).ready(function () {
     $('#' + id).addClass('active-tab').fadeIn();
     return false;
   });
+
+  // Скрипт для сладйера блока any-window-repair
+  $('.any-window-repair__slider').owlCarousel({
+    items: 1,
+    dots: true,
+    dotsClass: ['pagination-box'],
+    dotClass: ['pagination'],
+    responsive: {
+      768: {
+        items: 2
+      },
+      1200: {
+        items: 3,
+        dots: false,
+        mouseDrag: false,
+        touchDrag: false,
+      }
+    }
+  });
   
 });
 
