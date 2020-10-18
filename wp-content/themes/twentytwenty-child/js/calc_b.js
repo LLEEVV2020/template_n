@@ -23,6 +23,7 @@ function showPreviousSlide() {
 // ф-ция в которой происходит перелистывание шагов
 function showSlide(n) {
 
+    currentSlide = n;
     stepWrapper.classList.remove("balcony-home", 
     "balcony-leaflets", "balcony-size", "balcony-add",
     "balcony-services", "balcony-payment");
@@ -34,6 +35,21 @@ function showSlide(n) {
     if(currentSlide === 1){
         stepWrapper.classList.add("balcony-leaflets");
         previousButton.classList.remove("none");
+    }
+    if(currentSlide === 2){
+        stepWrapper.classList.add("balcony-size");
+    }
+    if(currentSlide === 3){
+        stepWrapper.classList.add("balcony-add");
+    }
+    if(currentSlide === 4){
+        stepWrapper.classList.add("balcony-services");
+        nextButton.classList.remove("none");
+    }
+    if(currentSlide === 5){
+        stepWrapper.classList.add("balcony-payment");
+        nextButton.classList.add("none");
+
     }
 
 }
