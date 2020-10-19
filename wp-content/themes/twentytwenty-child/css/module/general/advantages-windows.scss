@@ -1,17 +1,20 @@
 @import "../../base/all/var";
 
 .advantages-windows {
+    .container {
+        width: calc(100% - 3rem);
+    }
 
     &__content-box {
         display: none;
     }
 
     &__title {
-        margin-bottom: 0.938em;
+        margin-bottom: 0.738em;
     }
 
     &__subtitle {
-        margin-bottom: 2.063em;
+        margin-bottom: 1.863em;
         text-align: center;
     }
 
@@ -19,6 +22,10 @@
         margin-bottom: 1.250em;
         margin-left: auto;
         margin-right: auto;
+
+        &-image {
+            margin-bottom: 2.9em;
+        }
     }
 
     &__wooden-windows,
@@ -229,6 +236,7 @@
         &-toggle {
             width: 1.563em;
             height: 1.563em;
+            margin-left: 1em;
             margin-right: 0.688em;
             border: 1px solid #333333;
             border-radius: 50%;
@@ -452,7 +460,7 @@
 
     &__button {
         width: 100%;
-        max-width: 30rem;
+        max-width: 35rem;
         min-height: 4rem;
         margin-bottom: 1.875em;
 
@@ -512,8 +520,9 @@
 
         &-dot {
             display: inline-block;
-            width: 0.313em;
-            height: 0.613em;
+            padding: 0;
+            width: 0.513em;
+            height: 0.513em;
             margin-right: 0.375em;
             border: none;
             border-radius: 50%;
@@ -822,7 +831,7 @@
 
         &__slider-box {
             max-width: 70rem;
-            grid-row: 1 / 2;
+            grid-row: 3 / 3;
         }
 
         &__content {
@@ -921,6 +930,10 @@
         &__box {
             max-width: none;
             justify-content: center;
+            
+            &-image {
+                margin-bottom: 3.6em;
+            }
         }
 
         &__content-first,
@@ -984,6 +997,10 @@
         }
 
         &__label {
+
+            &:first-of-type {
+                margin-left: 5.1em;
+            }
 
             &-text {
                 font-size: 3.2rem;
@@ -1156,8 +1173,8 @@
         }
 
         &__wrapper {
-            grid-template-columns: 43% 54%;
-            grid-column-gap: 2em;
+            grid-template-columns: 39.6% 54%;
+            grid-column-gap: 3.1em;
         }
     
         &__description {
@@ -1183,7 +1200,7 @@
             max-width: 21em;
             margin-left: 0;
             margin-right: 0;
-            margin-bottom: 1.063em;
+            margin-bottom: 1.863em;
             grid-column-gap: 2em;
         }
     
@@ -1194,7 +1211,16 @@
                 grid-row: auto;
                 grid-row: 1 / 6;
             }
+
+            img.advantages-windows__slider-img {
+                width: 39.8em;
+            }
     
+        }
+
+        &__nav-dots {
+            bottom: 1.188em;
+            left: 1.7em;
         }
     
         &__button-box {
