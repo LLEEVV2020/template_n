@@ -53,6 +53,7 @@ $(document).ready(function () {
     dotClass: ['our-professional-employees__nav-dot']
   });
 
+  // какой то блок (нужно указать)
   let photoGallerySlider = $('.photo-gallery__slider-box');
   let photoPreviewSlider = $('.photo-gallery__previews');
 
