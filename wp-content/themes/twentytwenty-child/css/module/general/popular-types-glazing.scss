@@ -220,8 +220,20 @@
     }
 
     .warm {
-        .popular-types-glazing__info {
-            max-width: 13.8em;
+        .popular-types-glazing {
+            &__sliding-sashes {
+                &:before {
+                    left: -18.3%;
+                    width: 2.63em;
+                    background-image: url('/wp-content/themes/twentytwenty-child/img/popular-types- glazing-icon4.png');
+                    background-size: 2.3em;
+                    background-position: 0;
+                }
+            }
+
+           &__image {
+               background-image: url("/wp-content/themes/twentytwenty-child/img/popular-types-glazing-big2.webp");
+           }
         }
     }
 
@@ -269,7 +281,7 @@
     }
 
     &__info {
-        max-width: 9.1em;
+        max-width: 13.6em;
         margin-left: 3em;
         margin-bottom: 1.888em;
         line-height: 1.2;
@@ -454,6 +466,7 @@
 
         &__info {
             font-weight: 700;
+            max-width: 13.6em;
         }
 
         &__choose-color {
