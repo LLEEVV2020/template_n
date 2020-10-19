@@ -1,14 +1,14 @@
 @import "../../base/all/var";
 
 .our-professional-employees {
-    background-image: url('/wp-content/themes/twentytwenty-child/img/our-professional employees-middle.jpg');
+    background-image: url("/wp-content/themes/twentytwenty-child/img/our-professional employees-middle.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     overflow: hidden;
 
     &:before {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         width: 100%;
@@ -60,7 +60,7 @@
 
                 &-4 {
                     max-width: 83%;
-                    transform: translateX(1.5em)
+                    transform: translateX(1.5em);
                 }
             }
         }
@@ -70,9 +70,9 @@
             position: absolute;
             top: 0;
             left: 0;
-    
+
             &:before {
-                content: '';
+                content: "";
                 position: absolute;
                 top: 2.2em;
                 right: -0.8em;
@@ -94,6 +94,49 @@
                 }
             }
         }
+    }
+
+    &__slider-navigation {
+        position: absolute;
+        bottom: 2em;
+        max-width: 12.3em;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        z-index: 1;
+
+        @media (min-width: 768px) {
+            margin-left: 6.4em;
+        }
+        @media (min-width: 1200px) {
+            margin-left: 12.6em;
+        }
+        @media (min-width: 1400px) {
+            margin-left: 15.2em;
+        }
+    }
+    &__slider-navigation-left {
+        background-image: url("data:image/svg+xml,%3Csvg width='39' height='16' viewBox='0 0 39 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.292892 8.70711C-0.0976295 8.31658 -0.0976295 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41422 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM39 9H1V7H39V9Z' fill='%23F26422'/%3E%3C/svg%3E%0A");
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        width: 2.5em;
+        height: 1em;
+        top: 0;
+    }
+    &__slider-navigation-right {
+        cursor: pointer;
+        background-image: url("data:image/svg+xml,%3Csvg width='39' height='16' viewBox='0 0 39 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M38.7071 8.70711C39.0976 8.31658 39.0976 7.68342 38.7071 7.29289L32.3431 0.928932C31.9526 0.538408 31.3195 0.538408 30.9289 0.928932C30.5384 1.31946 30.5384 1.95262 30.9289 2.34315L36.5858 8L30.9289 13.6569C30.5384 14.0474 30.5384 14.6805 30.9289 15.0711C31.3195 15.4616 31.9526 15.4616 32.3431 15.0711L38.7071 8.70711ZM0 9H38V7H0V9Z' fill='%23F26422'/%3E%3C/svg%3E%0A");
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        width: 2.5em;
+        height: 1em;
+        right: 0;
+        top: 0;
     }
 
     &__nav {
@@ -123,10 +166,10 @@
             height: 1rem;
             margin-left: 0.55rem;
             margin-right: 0.55rem;
-            background-color: #C9C9C9;
+            background-color: #c9c9c9;
             border-radius: 50%;
-            &:focus{
-                outline: none; 
+            &:focus {
+                outline: none;
             }
             &.active {
                 background-color: $orange;
@@ -134,7 +177,7 @@
         }
     }
 
-    @media(min-width: 768px) {
+    @media (min-width: 768px) {
         .container {
             width: calc(100% - 4rem);
         }
@@ -173,8 +216,8 @@
 
         &__slider {
             &-box {
-               margin-left: 2.4em;
-               margin-right: 0;
+                margin-left: 2.4em;
+                margin-right: 0;
             }
 
             &-item {
@@ -203,12 +246,12 @@
                     &-2 {
                         max-width: 87.3%;
                     }
-    
+
                     &-3 {
                         max-width: 95%;
                         transform: translate(0.6em, 1.3em);
                     }
-    
+
                     &-4 {
                         max-width: 100%;
                     }
@@ -277,7 +320,7 @@
             position: relative;
 
             &:after {
-                content: '';
+                content: "";
                 position: absolute;
                 top: 0;
                 right: -0.4em;
@@ -288,7 +331,7 @@
 
         &__right {
             min-width: calc(43% + ((100vw - 100%) / 2));
-            background-image: url('/wp-content/themes/twentytwenty-child/img/our-professional employees-big.jpg');
+            background-image: url("/wp-content/themes/twentytwenty-child/img/our-professional employees-big.jpg");
             background-repeat: no-repeat;
             background-size: cover;
         }
@@ -339,12 +382,12 @@
                     &-2 {
                         max-width: 91.8%;
                     }
-    
+
                     &-3 {
                         max-width: 97.5%;
                         transform: translate(1.8em, 1.3em);
                     }
-    
+
                     &-4 {
                         max-width: 100%;
                         transform: translate(2.1em, 1em);
@@ -373,5 +416,4 @@
             }
         }
     }
-
 }

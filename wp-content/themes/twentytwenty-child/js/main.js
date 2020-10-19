@@ -45,6 +45,10 @@ $(document).ready(function () {
   // Скрипт для слайдера блока our-professional-employees
   $('.our-professional-employees__slider').owlCarousel({
     items: 1,
+    nav: true,
+    navText: [''],
+    navContainerClass: ['our-professional-employees__slider-navigation'],
+    navClass: ['our-professional-employees__slider-navigation-left', 'our-professional-employees__slider-navigation-right'],
     dotsClass: ['our-professional-employees__nav-dots'],
     dotClass: ['our-professional-employees__nav-dot']
   });
