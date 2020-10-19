@@ -47,7 +47,7 @@ function showSlide(n) {
         nextButton.classList.remove("none");
     }
     if(currentSlide === 5){
-        stepWrapper.classList.add("balcony-payment");
+        stepWrapper.classList.add("balcony-services");
         nextButton.classList.add("none");
 
     }
@@ -55,7 +55,25 @@ function showSlide(n) {
 }
 
 const myQuestions = [
-    
+    {
+        class: "balcony-home",
+    },
+    {
+        class: "balcony-leaflets",
+    },
+    {
+        class: "balcony-size",
+    },
+    {
+        class: "balcony-add",
+    },
+    {
+        class: "balcony-services",
+    },
+    {
+        class: "balcony-home",
+    },
+
 ];
 
 // Вызываем первый экран
