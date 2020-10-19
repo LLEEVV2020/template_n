@@ -54,5 +54,9 @@ function showSlide(n) {
 
 }
 
+const myQuestions = [
+    
+];
+
 // Вызываем первый экран
 showSlide(currentSlide);
