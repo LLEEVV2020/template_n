@@ -240,7 +240,7 @@ $(document).ready(function () {
       }
     }
   });
-  
+
   // Скрипт для слайдера блока installment-plan
   $('.installment-plan__slider').owlCarousel({
     items: 1,
@@ -287,6 +287,24 @@ $(document).ready(function () {
       }
     }
   });
-  
+
+  // Скрипт для табов
+
+  // tabs__wrapper - обертка блока
+  // data-id="...."  - id для кнопки
+  // tabs - кнопка
+  // active - активная кнопка
+  // tab - блок с контентом ( блоку присваеваем id от кнопки)
+  // active-tab - активный блок 
+
+  $('.tabs__wrapper .tab').on('click', function (event) {
+    var id = $(this).attr('data-id');
+    $('.tabs__wrapper').find('.tab-item').removeClass('active-tab').hide();
+    $('.tabs__wrapper .tabs').find('.tab').removeClass('active');
+    $(this).addClass('active');
+    $('#' + id).addClass('active-tab').fadeIn();
+    return false;
+  });
+
 });
 
