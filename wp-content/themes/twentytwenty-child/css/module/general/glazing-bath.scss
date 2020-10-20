@@ -96,11 +96,6 @@
             }
         }
 
-        &::after {
-            content: "";
-            position: absolute;
-        }
-
         @include _768 {
             z-index: 0;
         }

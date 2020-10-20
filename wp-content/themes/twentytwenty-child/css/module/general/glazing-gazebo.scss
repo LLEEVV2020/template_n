@@ -6,7 +6,7 @@
 // @include _1200 {
 // }
 
-.glazing-pool {
+.glazing-gazebo {
     @include _768 {
         background-color: #f6f6f6;
     }
@@ -43,11 +43,13 @@
         background-color: transparent;
         position: relative;
         z-index: 3;
+        max-width: 11em;
 
         @include _768 {
             text-align: center;
             margin-bottom: 0.8em;
             margin-left: 0;
+            max-width: 100%;
         }
     }
 
@@ -97,8 +99,8 @@
             }
 
             @include _1200 {
-                bottom: 0.6em;
-                width: 98.5%;
+                bottom: 0.5em;
+                width: 98.4%;
                 left: 0.35em;
             }
         }
@@ -181,11 +183,11 @@
             background-color: transparent;
             padding: 0;
             max-width: 29.6rem;
+            display: flex;
+            flex-direction: column;
         }
 
         @include _1200 {
-            display: flex;
-            flex-direction: column;
             max-width: 37.3rem;
             width: 100%;
         }
@@ -279,13 +281,13 @@
             padding: 0.8em;
             margin-top: 1.5em;
             filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.25));
+            margin-top: auto;
+            margin-bottom: 0.3em;
         }
 
         @include _1200 {
-            margin-top: auto;
             max-width: 37.3rem;
             padding: 1.5em 0.8em 1.3em 1.5em;
-            margin-bottom: 0.3em;
         }
     }
 
