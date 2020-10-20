@@ -2479,14 +2479,41 @@
 
                 &-image {
                     background-image: url('/wp-content/themes/twentytwenty-child/img/promo-bg5-big.jpg');
+                    background-position-x: -5em;
+
+                    &__quality-icon {
+                        bottom: 8.3em;
+                        left: 7%;
+                    }
                 }
 
                 &-content {
                     &__box {
                         max-width: 32em;
                     }
+
+                    &__title {
+                        margin-bottom: 1.05em;
+                    }
+
+                    &__text {
+                        max-width: 30em;
+                        margin-bottom: 4.438em;
+                        &:before {
+                            margin-right: 2.2em;
+                        }
+                    }
                 }
 
+            }
+
+            .info-price {
+                margin-left: 1.8em;
+            }
+
+            .exact-calculation-button {
+                left: 69.4%;
+                bottom: -3%;
             }
 
         }
@@ -2814,6 +2841,14 @@
 
         }
         
+    }
+
+    @media (min-width: 1930px) {
+        &-panoramic-windows {
+            .promo-image {
+                background-position-x: 0;
+            }   
+        }
     }
 
 }
