@@ -86,6 +86,7 @@
 
     &__name {
         margin-bottom: 0.5em;
+        font-size: 1.6rem;
 
         @include _768 {
             font-size: 2rem;
