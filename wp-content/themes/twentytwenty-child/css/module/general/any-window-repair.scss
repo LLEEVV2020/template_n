@@ -69,6 +69,7 @@
     &__box,
     &__old {
         display: flex;
+        white-space: nowrap;
     }
 
     &__box {
