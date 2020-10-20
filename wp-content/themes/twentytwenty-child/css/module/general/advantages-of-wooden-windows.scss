@@ -1,0 +1,106 @@
+@import '../../base/all/var';
+
+.advantages-of-wooden-windows {
+    background-color: #F2F2F2;
+
+    .container {
+        width: calc(100% - 3rem);
+    }
+
+    .title {
+        margin-bottom: 0.876em;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 22em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__item {
+        flex-basis: 10.498em;
+        margin-bottom: 0.836em;
+        text-align: center;
+    }
+
+    &__img {
+        display: inline-block;
+        margin-bottom: 0.3em;
+        width: 8.750em;
+        height: 8.750em;
+    }
+    
+    &__text {
+        position: relative;
+        max-width: 10em;
+        padding: 0.5em 1em;
+        font-size: 1.125em;
+        font-weight: 900;
+        background-color: $yellow;
+        border-radius: 1.55em;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: -35%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: solid transparent;
+            border-bottom-color: $yellow;
+            border-top-color: transparent;
+            border-width: 0.55em;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .title {
+            margin-bottom: 1.176em;
+        }
+
+        &__list {
+            max-width: 34.9em;
+        }
+
+        &__item {
+            flex-basis: 17.098em;
+            margin-bottom: 2.336em;
+        }
+
+        &__img {
+            margin-bottom: 1.5em;
+            width: 15.188em;
+            height: 15.188em;
+        }
+
+        &__text {
+            padding-top: 0.3em;
+            padding-bottom: 0.3em;
+            max-width: 13.3em;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 1.188em;
+            line-height: 1.4;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+
+            &:before {
+                top: -24%;
+                border-style: solid;
+                border-width:0 10px 15px 10px;
+            }
+        }
+    }
+    
+    @media (min-width: 1200px) {
+        .title {
+            margin-bottom: 1.076em;
+        }
+
+        &__list {
+            max-width: 70.6em;
+        }
+    }
+}
