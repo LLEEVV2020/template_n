@@ -142,13 +142,15 @@
         background-image: url(/wp-content/themes/twentytwenty-child/img/glazing-at-low-prices-img-s.webp);
         background-repeat: no-repeat;
         background-position: right 0.4em;
-
+        
         @include _768 {
+            background-image: url(/wp-content/themes/twentytwenty-child/img/glazing-at-low-prices-img-m.webp);
             flex-direction: row-reverse;
             padding: 0 0.6em;
         }
-
+        
         @include _1200 {
+            background-image: url(/wp-content/themes/twentytwenty-child/img/glazing-at-low-prices-img-l.webp);
             padding: 0 1em;
         }
     }
