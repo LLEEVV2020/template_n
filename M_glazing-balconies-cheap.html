@@ -115,10 +115,18 @@
             </ul>
 
             <div class="glazing-balconies-cheap__button-box">
-                <button class="glazing-balconies-cheap__button button" type="button">загрузить еще</button>
+                <button class="glazing-balconies-cheap__button button" type="button" onclick="clickAdd(this);">загрузить еще</button>
             </div>
         </div>
-
+        <script>
+            function clickAdd(el) {
+                let glazing_balconies_cheap = document.getElementsByClassName("glazing-balconies-cheap__item");
+                el.style.display = "none";
+                for (let i=0; i < glazing_balconies_cheap.length; i++) {
+                    glazing_balconies_cheap[i].style.display = "block";
+                }
+            }
+        </script>
     </section>
 
 </body>
