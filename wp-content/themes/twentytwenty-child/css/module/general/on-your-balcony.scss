@@ -5,3 +5,137 @@
 // }
 // @include _1200 {
 // }
+
+.on-your-balcony {
+    background-image: url(/wp-content/themes/twentytwenty-child/img/on-your-balcony-bg-s.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @include _768 {
+        background-image: url(/wp-content/themes/twentytwenty-child/img/on-your-balcony-bg-m.webp);
+    }
+    @include _1200 {
+        background-image: url(/wp-content/themes/twentytwenty-child/img/on-your-balcony-bg-l.webp);
+    }
+
+    /* .on-your-balcony__wrapper */
+
+    &__wrapper {
+        padding: 2.5rem 0 4.5rem;
+        @include _768 {
+            padding: 5.5rem 0;
+        }
+        @include _1200 {
+            padding: 6.8rem 0 9.2rem;
+        }
+    }
+
+    /* .on-your-balcony__title */
+
+    &__title {
+        text-align: center;
+        line-height: 1.2em;
+        margin-bottom: 1em;
+
+        @include _768 {
+        }
+        @include _1200 {
+        }
+    }
+
+    /* .on-your-balcony__inner */
+
+    &__inner {
+        @include _768 {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+        @include _1200 {
+        }
+    }
+
+    /* .on-your-balcony__slider */
+
+    &__slider {
+        margin-bottom: 2.8em;
+
+        & .owl-next,
+        & .owl-prev {
+            position: absolute;
+            top: 40%;
+
+            span {
+                font-size: 2.5em;
+                font-weight: 700;
+            }
+        }
+
+        & .disabled {
+            opacity: 0.25;
+        }
+
+        & .owl-next {
+            right: 0;
+        }
+
+        & .pagination-box {
+            bottom: -1.5em;
+        }
+
+        & .pagination {
+            width: 0.363em;
+            height: 0.363em;
+        }
+        & .pagination.active {
+            background-color: #17a1e3;
+        }
+
+        @include _768 {
+            width: 50%;
+        }
+        @include _1200 {
+        }
+    }
+
+    /* .on-your-balcony__img */
+
+    &__img {
+        max-width: 30.1rem;
+        height: 20rem;
+        margin: 0 auto;
+
+        @include _768 {
+            max-width: 30.2rem;
+            height: 20.1rem;
+        }
+        @include _1200 {
+            max-width: 51.2rem;
+            height: 34.1rem;
+        }
+    }
+
+    /* .on-your-balcony__box-text */
+
+    &__box-text {
+        @include _768 {
+        }
+        @include _1200 {
+        }
+    }
+
+    /* .on-your-balcony__text */
+
+    &__text {
+        text-align: center;
+        line-height: 1.1em;
+        margin-bottom: 1.4em;
+
+        @include _768 {
+            text-align: left;
+        }
+        @include _1200 {
+        }
+    }
+}

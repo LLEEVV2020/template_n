@@ -335,8 +335,7 @@ $(document).ready(function () {
     margin: 55,
     dotsClass: ['pagination-box'],
     dotClass: ['pagination'],
-    responsive: {
-    }
+    nav: true,
   });
 
 });
