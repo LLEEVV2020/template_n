@@ -306,5 +306,27 @@ $(document).ready(function () {
     return false;
   });
 
+  // Скрипт для сладйера блока wood-species
+  $('.wood-species__slider').owlCarousel({
+    items: 1,
+    dots: true,
+    margin: 55,
+    dotsClass: ['pagination-box'],
+    dotClass: ['pagination'],
+    responsive: {
+      768: {
+        margin: 0,
+        items: 2
+      },
+      1200: {
+        margin: 25,
+        items: 3,
+        dots: false,
+        mouseDrag: false,
+        touchDrag: false,
+      }
+    }
+  });
+
 });
 
