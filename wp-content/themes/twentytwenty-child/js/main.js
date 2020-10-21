@@ -332,7 +332,7 @@ $(document).ready(function () {
   $('.on-your-balcony__slider').owlCarousel({
     items: 1,
     dots: true,
-    margin: 55,
+    loop: true,
     dotsClass: ['pagination-box'],
     dotClass: ['pagination'],
     nav: true,
