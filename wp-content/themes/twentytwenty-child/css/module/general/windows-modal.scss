@@ -106,17 +106,8 @@ button {
             font-size: 1.6rem;
             outline: none;
 
-            &--name {
-
-                &:focus {
-                    box-shadow: 0em -0.1em 0.5em 0.3rem #D0D0D0, 0em 0.2em 0.2em 0rem #000000;                
-                }
-
-            }
-
-            &--phone {
-                padding-left: 5em;
-
+            &--name:focus,
+            &--phone:focus {
                 &:focus {
                     border: 1px solid #333333;                
                 }
@@ -124,6 +115,10 @@ button {
                 &:focus + .form-contacts__icon {
                     fill: #000000;
                 }
+            }
+
+            &--phone {
+                padding-left: 5em;
             }
 
             &::-webkit-input-placeholder {color:#CCCCCC;}
