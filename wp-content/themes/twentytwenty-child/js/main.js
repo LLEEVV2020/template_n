@@ -338,7 +338,7 @@ $(document).ready(function () {
     nav: true,
   });
 
-  // Скрипт для слайдера блока on-your-balcony
+  // Скрипт для слайдера блока windows-at-low-prices
   $('.windows-at-low-prices__box').owlCarousel({
     items: 1,
     dots: true,
