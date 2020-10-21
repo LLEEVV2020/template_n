@@ -328,5 +328,16 @@ $(document).ready(function () {
     }
   });
 
+  // Скрипт для сладйера блока on-your-balcony
+  $('.on-your-balcony__slider').owlCarousel({
+    items: 1,
+    dots: true,
+    margin: 55,
+    dotsClass: ['pagination-box'],
+    dotClass: ['pagination'],
+    responsive: {
+    }
+  });
+
 });
 
