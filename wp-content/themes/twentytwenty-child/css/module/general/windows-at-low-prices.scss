@@ -1,3 +1,335 @@
+@import "../../base/all/var";
+
 .windows-at-low-prices {
-    
+    .title,
+    &__img,
+    &__price-box,
+    &__order-box {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .title {
+        max-width: 12em;
+        margin-bottom: 1.363em;
+        font-size: 1.5em;
+    }
+
+    &__title .orange,
+    &__img,
+    &__saving-price {
+        display: block;
+    }
+
+    &__title {
+        margin-bottom: 0.738em;
+        text-align: center;
+        line-height: 1.4;
+        font-size: 1.125em;
+    }
+
+    &__img {
+        max-width: 12.875em;
+        margin-bottom: 1.563em;
+
+        &--big {
+            max-width: 18.475em;
+        }
+    }
+
+    &__price,
+    &__saving,
+    &__order-text {
+        font-weight: 900;
+    }
+
+    &__price-box,
+    &__order-box {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__price {
+        margin-left: 0.3em;
+        font-size: 2.250em;
+
+        &:after {
+            font-weight: 700;
+            margin-left: 0.1em;
+        }
+
+        &-box {
+            align-items: center;
+            max-width: 20em;
+            margin-bottom: 1.313em;
+        }
+    }
+
+    &__saving {
+        position: relative;
+        max-width: 11.250em;
+        padding-top: 0.6em;
+        padding-bottom: 0.3em;
+        padding-right: 0.5em;
+        padding-left: 0.4em;
+        background-color: $blue;
+        color: $white;
+        text-align: center;
+        border-radius: 0.375em;
+        box-shadow: 0.125em 0.125em 0.188em rgba(0, 0, 0, 0.25);
+
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+        }
+
+        &:before {
+            top: 0.60em;
+            left: -1.14em;
+            width: 2.79em;
+            height: 2.97em;
+            background-color: $blue;
+            border-radius: 0.375em;
+            transform-origin: center;
+            transform: rotate(-45deg);
+            z-index: -1;
+        }
+
+        &:after {
+            top: 1.7em;
+            left: -0.8em;
+            width: 0.572em;
+            height: 0.572em;
+            background-color: $white;
+            border-radius: 50%;
+            box-shadow: inset 0.125em 0.125em 0.188em rgba(0, 0, 0, 0.25);
+        }
+
+        &-price {
+            font-size: 1.875em;
+
+            &:after {
+                font-weight: 700;
+                margin-left: 0.3em;
+            }
+        }
+    }
+
+    &__order {
+        &-box {
+            align-items: flex-end;
+            max-width: 19.8em;
+        }
+
+        &-text {
+            margin-bottom: 0.2em;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+    }
+
+    .button {
+        padding: 0.8em 2.1em;
+    }
+
+    .pagination {
+        background-color: $gray;
+
+        &.active {
+            background-color: $blue;
+        }
+
+        &-box {
+            bottom: -2.6em;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .container {
+                width: calc(100% - 6.6rem);
+        }
+
+        .title {
+            max-width: none;
+            margin-bottom: 0.963em;
+            font-size: 1.875em;
+            line-height: 1.8;
+        }
+
+        .owl-stage-outer {
+            overflow: visible;
+        }
+
+        .owl-stage {
+            max-width: 44.5em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .owl-item {
+            width: 21.538em!important;
+
+            &:nth-child(odd) {
+                margin-right: 1.2em;
+            }
+        }
+
+        &__item {
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+            margin-bottom: 2.188em;
+            padding: 1.4em 1em 1em 1em;
+            min-height: 29.2em;
+        }
+
+        &__title {
+            margin-bottom: 1.138em;
+            line-height: 1.7;
+            letter-spacing: 0.06em;
+        }
+
+        &__price {
+            margin-left: 0.9em;
+            font-size: 1.875em;
+
+            &-box {
+                margin-bottom: 0.913em;
+            }
+        }
+
+        &__img {
+            margin-bottom: 1.763em;
+
+            &--big {
+                max-width: 17.775em;
+            }
+        }
+
+        &__saving {
+            margin-right: 2em;
+            padding-top: 0.2em;
+
+            &:before {
+                left: -0.94em;
+                top: 0.4em;
+                width: 2.29em;
+                height: 2.17em;
+            }
+
+            &:after {
+                top: 1.2em;
+            }
+
+            &-text {
+                font-size: 0.625em;
+            }
+
+            &-price {
+                font-size: 1.250em;
+            }
+        }
+
+        &__order {
+            &-text {
+                font-size: 0.875em;
+            }
+        }
+
+        .button {
+            padding: 0.7em 2.3em;
+            font-size: 1.063em;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .title {
+            margin-bottom: 1.363em;
+            font-size: 2.500em;
+        }
+
+        &__title {
+            font-size: 1.5em;
+            line-height: 1.4;
+            letter-spacing: 0.01em;
+        }
+
+        .owl-stage {
+            max-width: 72.5em;
+        }
+
+        .owl-item {
+            width: 35.188em!important;
+        }
+
+        &__item {
+            margin-bottom: 1.088em;
+            padding: 2.7em 1em 1em 1em;
+            min-height: 46.2em;
+        }
+
+        &__img {
+            max-width: 20.975em;
+            margin-bottom: 4.063em;
+
+            &--big {
+                max-width: 29.775em;
+            }
+        }
+
+        &__price {
+            font-size: 4em;
+
+            &:after {
+                margin-left: 0.2em;
+            }
+
+            &-box {
+                max-width: 34em;
+            }
+        }
+
+        &__saving {
+            padding-top: 0.9em;
+            padding-bottom: 0.2em;
+            padding-right: 0.7em;
+            padding-left: 1.3em;
+            margin-right: 2.7em;
+
+            &:before {
+                left: -1.34em;
+                top: 0.6em;
+                width: 3.29em;
+                height: 3.47em;
+            }
+
+            &:after {
+                top: 1.9em;
+            }
+
+            &-text {
+                font-size: 1em;
+                letter-spacing: 0.03em;
+            }
+
+            &-price {
+                font-size: 2.250em;
+            }
+        }
+
+        &__order {
+            &-box {
+                max-width: 30.5em;
+                margin-bottom: 1.113em;
+            }
+
+            &-text {
+                font-size: 1.188em;
+            }
+        }
+
+        .button {
+            padding: 0.8em 4.6em;
+            font-size: 1.188em;
+        }
+    }
 }

@@ -306,7 +306,7 @@ $(document).ready(function () {
     return false;
   });
 
-  // Скрипт для сладйера блока wood-species
+  // Скрипт для слайдера блока wood-species
   $('.wood-species__slider').owlCarousel({
     items: 1,
     dots: true,
@@ -328,7 +328,7 @@ $(document).ready(function () {
     }
   });
 
-  // Скрипт для сладйера блока on-your-balcony
+  // Скрипт для слайдера блока on-your-balcony
   $('.on-your-balcony__slider').owlCarousel({
     items: 1,
     dots: true,
@@ -336,6 +336,22 @@ $(document).ready(function () {
     dotsClass: ['pagination-box'],
     dotClass: ['pagination'],
     nav: true,
+  });
+
+  // Скрипт для слайдера блока on-your-balcony
+  $('.windows-at-low-prices__box').owlCarousel({
+    items: 1,
+    dots: true,
+    dotsClass: ['pagination-box'],
+    dotClass: ['pagination'],
+    responsive: {
+      768: {
+        items: 4,
+        dots: false,
+        mouseDrag: false,
+        touchDrag: false
+      }
+    }
   });
 
 });
