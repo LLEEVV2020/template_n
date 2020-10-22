@@ -32,9 +32,17 @@ $(document).ready(function () {
   $('.quality-worker__slider').owlCarousel({
     items: 5,
     margin: 2,
+    loop: true,
     dots: true,
+    autoplay: true,
+    smartSpeed: 500,
+    autoplayTimeout: 3000,
     dotsClass: ['quality-worker__nav-dots'],
     dotClass: ['quality-worker__nav-dot'],
+    nav: true,
+    navText: [''],
+    navContainerClass: ['navigation'],
+    navClass: ['navigation-left', 'navigation-right'],
     responsive: {
       1200: {
         margin: 4
@@ -53,7 +61,7 @@ $(document).ready(function () {
     dotClass: ['our-professional-employees__nav-dot']
   });
 
-  // какой то блок (нужно указать)
+  // Скрипт для слайдера блока photo-gallery
   let photoGallerySlider = $('.photo-gallery__slider-box');
   let photoPreviewSlider = $('.photo-gallery__previews');
 
