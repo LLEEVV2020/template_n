@@ -1,0 +1,87 @@
+.versions-entrance-doors {
+    .title {
+        margin-bottom: 1em;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 21em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__item {
+        &:nth-child(2) {
+            margin-left: 2em;
+            margin-right: 2em;
+            margin-bottom: 1.7em;
+        }
+
+        &:nth-child(5) {
+            margin-left: 0.4em;
+            margin-right: 0.4em;
+        }
+    }
+
+    &__image {
+        box-shadow: 0 10px 9.2px -8.7px rgba(10, 93, 161, 0.6);
+        display: block;
+
+        &--thin {
+            max-width: 4.6em;
+        }
+
+        &--width {
+            max-width: 6.7em;
+        }
+    }
+
+    @media (min-width: 768px) {
+        &__list {
+            max-width: 42em;
+        }
+
+        &__item {
+            &:nth-child(2) {
+                margin-bottom: 3.7em;
+            }
+
+            &:nth-child(3) {
+                margin-right: 1em;
+            }
+
+            &:nth-child(5) {
+                margin-left: 0.8em;
+                margin-right: 0.8em;
+            }
+        }
+
+        &__image {
+            &--thin {
+                max-width: 8.6em;
+            }
+
+            &--width {
+                max-width: 34.7em;
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .title {
+            margin-bottom: 0.8em;
+        }
+
+        &__list {
+            max-width: none;
+        }
+
+        &__item {
+            &:nth-child(3) {
+                margin-right: 1.5em;
+            }
+        }
+    }
+}
