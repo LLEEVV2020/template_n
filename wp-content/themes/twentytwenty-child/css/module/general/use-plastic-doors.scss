@@ -1,0 +1,105 @@
+@import '../../base/all/var';
+
+.use-plastic-doors {
+    .container {
+        width: calc(100% - 3rem);
+    }
+
+    .title {
+        margin-bottom: 0.7em;
+    }
+
+    &__box,
+    &__text,
+    &__img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__box {
+        max-width: 21.4em;
+    }
+
+    &__item {
+        display: inline-block;
+        margin-bottom: 1.038em;
+
+        &:nth-child(odd) {
+            margin-right: 1.1em;
+        }
+    }
+
+    &__text {
+        position: relative;
+        margin-bottom: 0.375em;
+        padding: 1em;
+        font-size: 0.625em;
+        font-weight: 900;
+        background-color: $yellow;
+        max-width: 16.25em;
+        border-radius: 1.875em;
+        text-align: center;
+
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: -0.5em;
+            left: 50%;
+            transform: translateX(-50%) rotate(-45deg);
+            width: 0.813em;
+            height: 0.813em;
+            background-color: $yellow;
+            z-index: 1;
+        }
+    }
+
+    &__img {
+        display: block;
+        max-width: 10.013em;
+        border: 0.438em solid $white;
+        filter: drop-shadow(0 0.250em 0.250em rgba(0, 0, 0, 0.25));
+    }
+
+    @media (min-width: 600px) {
+        .title {
+            margin-bottom: 1.1em;
+            font-size: 3rem;
+        }
+
+        &__box {
+            max-width: 34.4em;
+        }
+
+        &__item {
+            margin-bottom: 1.838em;
+
+            &:nth-child(odd) {
+                margin-right: 1.7em;
+            }
+        }
+
+        &__text {
+            font-size: 1em;
+        }
+
+        &__img {
+            max-width: 16.188em;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .title {
+            margin-bottom: 0.8em;
+            font-size: 4rem;
+        }
+
+        &__box {
+            max-width: 70em;
+        }
+
+        &__item:not(:last-child),
+        &__item:nth-child(odd) {
+            margin-right: 1.3em;
+        }
+    }
+}
