@@ -1,47 +1,3 @@
-body {
-    font-size: 1.8rem;
-}
-
-
-a {
-    text-decoration: none;
-}
-
-button {
-    display: inline-block;
-    cursor: pointer;
-    border: none;
-    background: none;
-    box-shadow: none;
-    padding: 0;
-    font-size: 1.6rem;
-    line-height: 1.25;
-    color: #ffffff;
-}
-
-.btn {
-    &-base {
-        font-family: 'ALS Schlange sans', 'Montserrat', sans-serif;
-        border-radius: 6px;
-        text-align: center;
-        text-transform: uppercase;
-        font-style: normal;
-        font-weight: 900;
-
-        &--add {
-            width: 100%;
-            max-width: 33.5rem;
-            padding: .7em .1em .551em;
-            letter-spacing: 0.05em;
-        }
-
-        &--bg {
-            background: #F26422;
-        }
-    }
-
-}
-
 .windows-modal {
 
     &__modal,
@@ -52,6 +8,41 @@ button {
     &__close-btn {
         position: relative;
         z-index: 10;
+    }
+
+    button {
+        display: inline-block;
+        cursor: pointer;
+        border: none;
+        background: none;
+        box-shadow: none;
+        padding: 0;
+        font-size: 1.6rem;
+        line-height: 1.25;
+        color: #ffffff;
+    }
+    
+    .btn {
+        &-base {
+            font-family: 'ALS Schlange sans', 'Montserrat', sans-serif;
+            border-radius: 6px;
+            text-align: center;
+            text-transform: uppercase;
+            font-style: normal;
+            font-weight: 900;
+    
+            &--add {
+                width: 100%;
+                max-width: 33.5rem;
+                padding: .7em .1em .551em;
+                letter-spacing: 0.05em;
+            }
+    
+            &--bg {
+                background: #F26422;
+            }
+        }
+    
     }
 
     &__title {
@@ -162,6 +153,7 @@ button {
         a {
             color: #000000;
             border-bottom: 1px solid #000000;
+            text-decoration: none;
         }
     }
 
@@ -273,7 +265,7 @@ button {
                 bottom: 0;
                 right: 2em;
                 z-index: 2;
-                background-size: 19em;
+                background-size: 21em;
             }
         }
 
@@ -324,7 +316,7 @@ button {
                 height: 48.7rem;
                 right: 2em;
                 bottom: -1em;
-                background-size: 21em;
+                background-size: 23em;
             }
         }
 
