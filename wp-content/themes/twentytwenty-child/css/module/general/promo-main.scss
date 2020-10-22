@@ -2843,6 +2843,41 @@
         
     }
 
+    @media (min-width: 1200px) {
+        &-plastic-windows {
+            .promo-image {
+                &__brands {
+                    top: 9%;
+                    left: 7%;
+                }
+
+                &__image {
+                    left: 8%;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1400px) {
+        &-plastic-windows {
+            .promo-image {
+                &__image {
+                    left: 14%;
+               }
+            }
+        }
+    }
+
+    @media (min-width: 1600px) {
+        &-plastic-windows {
+            .promo-image {
+                &__image {
+                    left: 24%;
+                }
+            }
+        }
+    }
+
     @media (min-width: 1930px) {
         &-panoramic-windows {
             .promo-image {
