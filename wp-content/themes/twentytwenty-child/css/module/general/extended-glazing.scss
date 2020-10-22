@@ -1,0 +1,116 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.extended-glazing {
+    background-color: $bgGray;
+    /* .extended-glazing__wrapper */
+
+    &__wrapper {
+        padding: 4.5rem 0;
+        text-align: center;
+
+        @include _768 {
+            padding: 5.5rem 0;
+        }
+
+        @include _1200 {
+            padding: 7.5rem 0;
+        }
+    }
+
+    /* .extended-glazing__title */
+
+    &__title {
+        line-height: 1.2em;
+        max-width: 98%;
+        margin: 0 auto;
+        margin-bottom: 1em;
+
+        @include _768 {
+            margin-bottom: 1.2em;
+        }
+
+        @include _1200 {
+            margin-bottom: 1.4em;
+        }
+    }
+
+    /* .extended-glazing__inner */
+
+    &__inner {
+
+        @include _1200 {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    /* .extended-glazing__item */
+
+    &__item {
+        background-color: #fff;
+        max-width: 32.8rem;
+        margin: 0 auto;
+        padding: 0.8em 1em 1.15em;
+        margin-bottom: 1.1em;
+        border-radius: 0.9em;
+        position: relative;
+
+        &::before {
+            content: "!";
+            position: absolute;
+            height: 2.6rem;
+            width: 2.6rem;
+            background-color: $yellow;
+            border-radius: 50%;
+            top: -0.8em;
+            left: -0.6em;
+            font-weight: 900;
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+
+            @include _1200 {
+                height: 3.7rem;
+                width: 3.7rem;
+                line-height: 3.7rem;
+                font-size: 2.4rem;
+                top: -0.4em;
+                left: -0.8em;
+            }
+        }
+
+        @include _768 {
+            max-width: 58.8rem;
+            padding: 1.1em 1.5em 1.2em;
+            margin-bottom: 1.6em;
+        }
+
+        @include _1200 {
+            max-width: 32.8rem;
+            padding: 1.4em 1.1em 1.7em;
+            margin: 0 1.1em;
+        }
+    }
+
+    /* .extended-glazing__item-title */
+
+    &__item-title {
+        max-width: 27.6rem;
+        margin: 0 auto 0.7em;
+
+        @include _768 {
+            max-width: 100%;
+        }
+
+        @include _1200 {
+            min-height: 4.3em;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
