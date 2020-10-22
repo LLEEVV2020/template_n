@@ -1,0 +1,108 @@
+@import "../../base/all/var";
+
+.original-design {
+    background-color: $lightGray;
+
+    .container {
+        width: calc(100% - 1rem);
+    }
+
+    .title {
+        margin-bottom: 1.063em;
+    }
+
+    &__image,
+    .button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__image {
+        max-width: 20.313em;
+        margin-bottom: 1.488em;
+        border: 0.313em solid $white;
+        filter: drop-shadow(0 0.250em 0.250em rgba(0, 0, 0, 0.25));
+        border-radius: 0.625em;
+    }
+
+    .text {
+        margin-bottom: 1.663em;
+    }
+
+    .button {
+        width: 100%;
+        max-width: 19.500em;
+        padding-top: 0.62em;
+        padding-bottom: 0.62em;
+        letter-spacing: 0.05em;
+    }
+
+    @media (min-width: 768px) {
+        .title {
+            margin-bottom: 1.063em;
+        }
+
+        &__image {
+            max-width: 31.913em;
+            margin-bottom: 2.188em;
+            border-width: 0.625em;
+        }
+
+        .text {
+            text-align: center;
+            max-width: 29.5em;
+            margin-bottom: 1.463em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .button {
+            max-width: 21.6em;
+            font-size: 1em;
+            letter-spacing: 0.04em;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        padding-top: 3.2em;
+        padding-bottom: 3.9em;
+
+        .container {
+            width: calc(100% - 8rem);
+            max-width: 112rem;
+        }
+
+        &__box {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .title {
+            margin-bottom: 0.763em;
+        }
+
+        &__image {
+            max-width: 33.313em;
+            margin-right: 0;
+            margin-bottom: 0;
+            margin-left: 0;
+        }
+
+        .text {
+            max-width: 22.4em;
+            margin-bottom: 1.763em;
+            text-align: left;
+            font-size: 1.5em;
+            line-height: 1.21;
+        }
+
+        .button {
+            max-width: 16.5em;
+            font-size: 1.188em;
+            margin-right: 6.7em;
+            padding-top: 0.72em;
+            padding-bottom: 0.72em;
+        }
+    }
+}
