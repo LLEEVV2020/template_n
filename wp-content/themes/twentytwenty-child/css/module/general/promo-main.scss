@@ -568,9 +568,6 @@
     }
 
     &-panoramic-windows {
-
-        //padding-bottom: 2em;
-
         .promo-content__title {
             text-align: center;
         }
@@ -1191,6 +1188,10 @@
             .promo {
 
                 &-content {
+
+                    &:before {
+                        background: linear-gradient(86.87deg, #FFFFFF 21.88%, rgba(255, 255, 255, 0) 101.99%);
+                    }
 
                     &__box {
                         padding-bottom: 2em;
@@ -2380,6 +2381,9 @@
             .promo {
 
                 &-content {
+                    &:before {
+                        right: -39%;
+                    }
 
                     &__text {
 
