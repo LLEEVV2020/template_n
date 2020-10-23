@@ -177,3 +177,47 @@ h6 {
     background-repeat: no-repeat;
     background-size: 118.125em 436.813em;
 }
+
+// от "ЦЕНА" ₽/м2
+
+.square-meter {
+    position: relative;
+
+    &::before,
+    &::after {
+        line-height: initial;
+        color: #000;
+        font-weight: 900;
+    }
+
+    &::before {
+        content: "от";
+        font-size: 2.4rem;
+        margin-right: 0.5em;
+
+        @media (min-width: 768px) {
+            font-size: 3rem;
+            margin-right: 0.3em;
+        }
+
+        @media (min-width: 1200px) {
+            font-size: 4rem;
+            font-size: 3.4rem;
+        }
+    }
+
+    &::after {
+        content: "₽/м2";
+        font-size: 1.6rem;
+        margin-left: 0.5em;
+
+        @media (min-width: 768px) {
+            font-size: 2rem;
+        }
+
+        @media (min-width: 1200px) {
+            font-size: 3.2rem;
+            margin-left: 0.35em;
+        }
+    }
+}
