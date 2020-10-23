@@ -33,7 +33,7 @@
         color: $white;
     }
 
-    .overlay,
+    &__overlay,
     &__manufacture-box,
     &__item-box,
     &__our-office,
@@ -42,7 +42,7 @@
         position: relative;
     }
 
-    .overlay:before,
+    &__overlay:before,
     &__inner:first-child:before {
         content: '';
         position: absolute;
@@ -52,7 +52,7 @@
         height: 100%;
     }
 
-    .overlay:before {
+    &__overlay:before {
         background-color: rgba(0, 0, 0, 0.56);
     }
 
