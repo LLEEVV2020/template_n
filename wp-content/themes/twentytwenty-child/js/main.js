@@ -335,7 +335,7 @@ $(document).ready(function () {
       }
     }
   });
-
+  
   // Скрипт для слайдера блока on-your-balcony
   $('.on-your-balcony__slider').owlCarousel({
     items: 1,
@@ -345,7 +345,7 @@ $(document).ready(function () {
     dotClass: ['pagination'],
     nav: true,
   });
-
+  
   // Скрипт для слайдера блока windows-at-low-prices
   $('.windows-at-low-prices__box').owlCarousel({
     items: 1,
@@ -362,5 +362,26 @@ $(document).ready(function () {
     }
   });
 
+  // Скрипт для слайдера блока materials-for-creating-a-parapet
+  $('.materials-for-creating-a-parapet__slider').owlCarousel({
+    items: 1,
+    dots: true,
+    margin: 55,
+    dotsClass: ['pagination-box'],
+    dotClass: ['pagination'],
+    responsive: {
+      768: {
+        margin: 25,
+        items: 2
+      },
+      1200: {
+        margin: 30,
+        items: 3,
+        dots: false,
+        mouseDrag: false,
+        touchDrag: false,
+      }
+    }
+  });
 });
 
