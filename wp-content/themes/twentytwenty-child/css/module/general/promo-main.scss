@@ -1454,7 +1454,8 @@
 
             .exact-calculation-button {
                 display: flex;
-                bottom: 11.9em;
+                bottom: 0;
+                transform: translateY(0);
             }
 
         }
@@ -2583,7 +2584,6 @@
 
             .exact-calculation-button {
                 left: 60%;
-                bottom: 12.5em;
             }
 
         }
