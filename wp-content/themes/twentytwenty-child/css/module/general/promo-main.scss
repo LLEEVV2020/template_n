@@ -1650,8 +1650,18 @@
                     }
 
                     &__icon {
-                        background-image: url('/wp-content/themes/twentytwenty-child/img/sprite.png');
-                        background-position: -15.5rem -51.3rem
+                        position: relative;
+                        background-image: none;
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            top: 0.6em;
+                            left: 0.8em;
+                            width: 1.5em;
+	                        height: 1.813em;
+                            background-image: url('/wp-content/themes/twentytwenty-child/img/sprite.png');
+                            background-position: -10.438em -32.688em;
+                        }
                     }
 
                 }
@@ -2642,9 +2652,7 @@
                 }
 
                 &-image {
-
                     background-image: url('/wp-content/themes/twentytwenty-child/img/promo-bg8-big.jpg');
-
                 }
 
             }
@@ -2692,6 +2700,22 @@
 
             }
 
+        }
+
+        &-windows-in-wooden-house {
+            .promo {
+                &-content {
+                    &__icon {
+                        &:before {
+                            top: 1.3em;
+                            left: 1.6em;
+                            width: 3.125em;
+                            height: 3.750em;
+                            background-position: -47.875em -29.563em;
+                        }
+                    }
+                }
+            }
         }
 
         &-windows-in-wooden-house__box {
