@@ -47,7 +47,7 @@ function showSlide(n) {
         nextButton.classList.remove("none");
     }
     if(currentSlide === 5){
-        stepWrapper.classList.add("balcony-services");
+        stepWrapper.classList.add("balcony-payment");
         nextButton.classList.add("none");
 
     }

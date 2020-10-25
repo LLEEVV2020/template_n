@@ -1397,6 +1397,29 @@ input::-moz-focus-outer {
     }
 }
 
+// ===================  custom style ===================
+
+.balcony-home .step-item-1{
+    display: block;
+}
+.balcony-leaflets .step-item-2{
+    display: block;
+}
+.balcony-size .step-item-3{
+    display: block;
+}
+.balcony-add .step-item-4{
+    display: block;
+}
+.balcony-services .step-item-5{
+    display: block;
+}
+.balcony-payment .step-item-6{
+    display: block;
+}
+
+// =================== old custom style ===================
+
 // Modal start
 
 $red: #ef233c;
