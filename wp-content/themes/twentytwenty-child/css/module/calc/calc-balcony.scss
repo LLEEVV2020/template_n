@@ -1418,6 +1418,11 @@ input::-moz-focus-outer {
     display: block;
 }
 
+.blocking{
+    pointer-events: none;
+    opacity: .52;
+}
+
 // =================== old custom style ===================
 
 // Modal start

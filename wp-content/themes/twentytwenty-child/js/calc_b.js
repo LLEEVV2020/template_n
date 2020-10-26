@@ -13,7 +13,12 @@ nextButton.addEventListener("click", showNextSlide);
 
 // перелистыватель вперёд ( кнопка "вперёд")
 function showNextSlide() {
+
+    
+    
+
     showSlide(currentSlide + 1);
+
 }
 // перелистыватель назад ( кнопка "назад")
 function showPreviousSlide() {
@@ -35,6 +40,9 @@ function showSlide(n) {
     if(currentSlide === 1){
         stepWrapper.classList.add("balcony-leaflets");
         previousButton.classList.remove("none");
+
+        let i_name_sash = document.querySelectorAll('input[name="sash"]');
+        console.log(i_name_sash);
     }
     if(currentSlide === 2){
         stepWrapper.classList.add("balcony-size");
