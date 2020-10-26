@@ -1,0 +1,234 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.advantages-of-aluminum-profile-products {
+    background-color: $lightGray;
+
+    /* .advantages-of-aluminum-profile-products__title */
+
+    &__title {
+        text-align: center;
+        line-height: 1.2em;
+        margin-bottom: 1.3em;
+
+        @include _768 {
+            line-height: 1.1em;
+            max-width: 14.4em;
+            margin: 0 auto 1.3em;
+        }
+
+        @include _1200 {
+            max-width: 100%;
+            margin-bottom: 1.6em;
+        }
+    }
+
+    /* .advantages-of-aluminum-profile-products__list */
+
+    &__list {
+        flex-wrap: wrap;
+        margin-left: 0.9em;
+
+        @include _1200 {
+            margin-left: 0;
+            padding: 0 3.2em;
+        }
+    }
+
+    /* .advantages-of-aluminum-profile-products__item */
+
+    &__item {
+        background-color: #fff;
+        display: block;
+        position: relative;
+        height: 4.2rem;
+        max-width: 32rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0.5em 0.5em 0.5em 3em;
+        border-radius: 0.5em;
+
+        & + & {
+            margin-top: 1.25em;
+
+            @include _768 {
+                margin-top: 0;
+            }
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            height: 5rem;
+            width: 5rem;
+            background-color: $yellow;
+            border-radius: 50%;
+            background-repeat: no-repeat;
+            background-size: 2em;
+            left: -1.3em;
+            background-image: url(/wp-content/themes/twentytwenty-child/img/advantages-of-aluminum-profile-products-sprites.webp);
+            background-size: 20em;
+            background-position: 0.2em 0.5em;
+
+            @include _768 {
+                width: 6.5rem;
+                height: 6.5rem;
+                background-size: 23em;
+            }
+
+            @include _1200 {
+                height: 11.6rem;
+                width: 11.6rem;
+                left: -2.5em;
+                background-size: 32em;
+            }
+        }
+
+        &:nth-child(1) {
+            &::before {
+                background-position: -2.95em 0.6em;
+
+                @include _768 {
+                    background-position: -3.35em 0.7em;
+                }
+
+                @include _1200 {
+                    background-position: -4.85em 0.9em;
+                }
+            }
+        }
+
+        &:nth-child(2) {
+            &::before {
+                background-position: 0.2em 0.5em;
+
+                @include _768 {
+                    background-position: 0.3em 0.7em;
+                }
+            }
+        }
+
+        &:nth-child(3) {
+            &::before {
+                background-position: -9.1em 0.5em;
+
+                @include _768 {
+                    background-position: -10.5em 0.6em;
+                }
+
+                @include _1200 {
+                    background-position: -14.7em 0.6em;
+                }
+            }
+        }
+
+        &:nth-child(4) {
+            &::before {
+                background-position: -9.2em -3em;
+
+                @include _768 {
+                    background-position: -10.5em -3.5em;
+                }
+
+                @include _1200 {
+                    background-position: -14.8em -5em;
+                }
+            }
+        }
+
+        &:nth-child(5) {
+            &::before {
+                background-position: -2.9em -3em;
+
+                @include _768 {
+                    background-position: -3.4em -3.4em;
+                }
+
+                @include _1200 {
+                    background-position: -4.8em -4.9em;
+                }
+            }
+        }
+
+        &:nth-child(6) {
+            &::before {
+                background-position: -6.4em -3.2em;
+
+                @include _768 {
+                    background-position: -7.3em -3.6em;
+                }
+
+                @include _1200 {
+                    background-position: -10.4em -5.1em;
+                }
+            }
+        }
+
+        &:nth-child(7) {
+            &::before {
+                background-position: -6.5em 0.5em;
+
+                @include _768 {
+                    background-position: -7.5em 0.6em;
+                }
+
+                @include _1200 {
+                    background-position: -10.5em 0.8em;
+                }
+            }
+        }
+
+        &:nth-child(8) {
+            &::before {
+                background-position: 0.4em -2.9em;
+
+                @include _768 {
+                    background-position: 0.4em -3.3em;
+                }
+
+                @include _1200 {
+                    background-position: 0.4em -4.7em;
+                }
+            }
+        }
+
+        @include _768 {
+            min-height: 5rem;
+            max-width: 34.2rem;
+            margin-bottom: 1.9em;
+
+            &:nth-child(even) {
+                text-align: right;
+                padding: 0.5em 3.5em 0.5em 0.5em;
+
+                &::before {
+                    left: auto;
+                    right: -1.3rem;
+                }
+
+                @include _1200 {
+                    text-align: center;
+
+                    &::before {
+                        right: -2.5em;
+                    }
+                }
+            }
+        }
+
+        @include _1200 {
+            max-width: 46.8rem;
+            min-height: 7.9rem;
+            margin-bottom: 2.4em;
+            justify-content: center;
+            text-align: center;
+            border-radius: 1em;
+        }
+    }
+}
