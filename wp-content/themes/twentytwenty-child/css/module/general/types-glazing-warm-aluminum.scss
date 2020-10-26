@@ -1,0 +1,150 @@
+@import '../../base/all/var';
+
+.types-glazing-warm-aluminum {
+    .title {
+        margin-bottom: 1.713em;
+
+        span {
+            display: block;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 21em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__item {
+        margin-bottom: 0.588em;
+    }
+
+    &__text {
+        padding-top: 1.088em;
+        padding-bottom: 1.088em;
+        font-size: 0.750em;
+        font-weight: 900;
+        text-align: center;
+        background-color: #E9E9E9;
+        border-top-left-radius: 0.625em;
+        border-top-right-radius: 0.625em;
+
+        &.active {
+            color: $white;
+            background-color: $orange;
+        }
+    }
+
+    &__image {
+        display: block;
+        width: 10.137em;
+        height: 7.5em;
+        border-bottom-left-radius: 0.625em;
+        border-bottom-right-radius: 0.625em;
+    }
+
+    @media (min-width: 600px) {
+        &__list {
+            max-width: 33em;
+        }
+
+        &__item {
+            margin-bottom: 1.188em;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .title {
+            margin-bottom: 1.113em;
+        }
+
+        &__list {
+            max-width: 44.1em;
+        }
+
+        &__item {
+            margin-bottom: 2.288em;
+
+            &:nth-child(5) {
+                .types-glazing-warm-aluminum__text {
+                    padding-top: 0.388em;
+                    padding-bottom: 0.388em;
+                }
+            }
+        }
+
+        &__text {
+            padding-top: 0.888em;
+            padding-bottom: 0.888em;
+            font-size: 1.125em;
+            border-top-left-radius: 1.250em;
+            border-top-right-radius: 1.250em;
+
+            .block {
+                display: block;
+            }
+        }
+
+        &__image {
+            width: 13.654em;
+            height: 10em;
+            border-bottom-left-radius: 1.250em;
+            border-bottom-right-radius: 1.250em;
+        }
+    }
+
+    @media (min-width: 960px) {
+        .container {
+            width: calc(100% - 8rem);
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .title {
+            span {
+                display: inline;
+            }
+        }
+
+        &__list {
+            max-width: none;
+        }
+
+        &__item {
+            &:nth-child(5) {
+                .types-glazing-warm-aluminum__text {
+                    padding-top: 1.188em;
+                    padding-bottom: 1.088em;
+    
+                    .block {
+                        display: inline;
+                    }
+                }
+            }
+        }
+
+        &__text {
+            padding-top: 1.188em;
+            padding-bottom: 1.088em;
+            font-size: 1.5em;
+            border-top-left-radius: 1.9em;
+            border-top-right-radius: 1.9em;
+        }
+
+        &__image {
+            width: 22.075em;
+            height: 16.138em;
+            border-bottom-left-radius: 1.9em;
+            border-bottom-right-radius: 1.9em;
+        }
+    }
+
+    @media (min-width: 1400px) {
+        .container {
+            max-width: 117rem;
+        }
+    }
+}
