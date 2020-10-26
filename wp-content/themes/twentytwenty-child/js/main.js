@@ -383,5 +383,23 @@ $(document).ready(function () {
       }
     }
   });
+
+  // Скрипт для слайдера блока other-types-of-wooden-windows
+  $('.other-types-of-wooden-windows__slider').owlCarousel({
+    items: 1,
+    dots: true,
+    margin: 55,
+    dotsClass: ['pagination-box'],
+    dotClass: ['pagination'],
+    responsive: {
+      768: {
+        margin: 0,
+        items: 2,
+        dots: false,
+        mouseDrag: false,
+        touchDrag: false,
+      }
+    }
+  });
 });
 
