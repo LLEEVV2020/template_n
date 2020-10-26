@@ -12,9 +12,6 @@
     &__wrapper {
         text-align: center;
 
-        @include _768 {
-        }
-
         @include _1200 {
             display: flex;
         }
@@ -26,9 +23,8 @@
         margin-bottom: 2.2em;
 
         @include _768 {
-        }
-
-        @include _1200 {
+            width: 53.4rem;
+            margin: 0 auto 3.5em;
         }
     }
 
@@ -41,9 +37,11 @@
 
         @include _768 {
             width: 53.4rem;
+            margin-bottom: 2em;
         }
 
         @include _1200 {
+            margin-bottom: 1.6em;
         }
     }
 
@@ -58,9 +56,7 @@
 
         @include _768 {
             font-size: 2.4rem;
-        }
-
-        @include _1200 {
+            line-height: 2.3em;
         }
     }
 
@@ -73,9 +69,7 @@
 
         @include _768 {
             width: 53.4rem;
-        }
-
-        @include _1200 {
+            height: 38.5rem;
         }
     }
 
@@ -98,14 +92,20 @@
             position: absolute;
             border: 1.15em solid transparent;
             border-right: 2em solid $orange;
-            left: -3.2em;
+            left: -3.1em;
+
+            @include _768 {
+                border: 0.95em solid transparent;
+                border-right: 2em solid $orange;
+                left: -2.9em;
+            }
         }
 
         @include _768 {
             font-size: 1.9rem;
-        }
-
-        @include _1200 {
+            bottom: 2.5em;
+            line-height: 1.9em;
+            padding: 0 0.6em;
         }
     }
 
@@ -115,9 +115,14 @@
         margin-bottom: 1.7em;
 
         @include _768 {
+            font-size: 2rem;
         }
 
         @include _1200 {
+            text-align: left;
+            font-size: 2.4rem;
+            line-height: 1.2em;
+            margin-bottom: 1.1em;
         }
     }
 
@@ -127,12 +132,6 @@
         background-color: $lightGray;
         padding: 1.35em 1.4em 0.8em;
         border-radius: 0.8em;
-
-        @include _768 {
-        }
-
-        @include _1200 {
-        }
     }
 
     /* .warm-aluminum-alutech__application-title */
@@ -144,9 +143,6 @@
         @include _768 {
             font-size: 2.4rem;
         }
-
-        @include _1200 {
-        }
     }
 
     /* .warm-aluminum-alutech__application-list */
@@ -157,9 +153,8 @@
         white-space: nowrap;
 
         @include _768 {
-        }
-
-        @include _1200 {
+            column-gap: 2.6em;
+            padding-left: 2.4em;
         }
     }
 
@@ -188,6 +183,7 @@
 
             @include _768 {
                 left: 0.5em;
+                font-size: 0.7em;
             }
 
             @include _1200 {
@@ -197,9 +193,6 @@
 
         @include _768 {
             font-size: 1.4rem;
-        }
-
-        @include _1200 {
         }
     }
 }
