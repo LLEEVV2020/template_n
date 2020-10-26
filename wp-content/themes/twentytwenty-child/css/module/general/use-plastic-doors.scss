@@ -5,15 +5,17 @@
         width: calc(100% - 3rem);
     }
 
-    .title {
-        margin-bottom: 0.7em;
-    }
-
+    .title,
     &__box,
     &__text,
     &__img {
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .title {
+        margin-bottom: 0.7em;
+        max-width: 15em;
     }
 
     &__box {
@@ -89,6 +91,7 @@
 
     @media (min-width: 1200px) {
         .title {
+            max-width: none;
             margin-bottom: 0.8em;
             font-size: 4rem;
         }
