@@ -194,7 +194,6 @@
     &__modal {
         padding: 2em 1.2em 2em;
         overflow: hidden;
-        border-radius: 10px;
         background-color: #ffffff;
 
         &::before,
@@ -225,6 +224,10 @@
     }
 
     @media (min-width: 768px) {
+        &__modal {
+            border-radius: 0.625em;
+        }
+
         .form-contacts {
             display: block;
 
