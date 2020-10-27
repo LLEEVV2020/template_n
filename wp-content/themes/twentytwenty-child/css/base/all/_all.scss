@@ -1,17 +1,18 @@
 //@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&display=swap&subset=cyrillic');
 
 html {
-	font-size: 62.5%; /* 1rem = 10px */
-	scroll-behavior: smooth;
+    font-size: 62.5%;
+    /* 1rem = 10px */
+    scroll-behavior: smooth;
 }
 
 @media (prefers-reduced-motion: reduce) {
-	html {
-		scroll-behavior: auto;
-	}
+    html {
+        scroll-behavior: auto;
+    }
 }
 
-body{
+body {
     font-family: 'ALS Schlange sans', sans-serif;
     line-height: 1.1;
     min-height: 100vh;
@@ -36,7 +37,8 @@ h6 {
 }
 
 // контейнер сайта
-.header-inner, .container {
+.header-inner,
+.container {
     max-width: 114rem;
     width: calc(100% - 4rem);
     margin-left: auto;
@@ -139,8 +141,9 @@ h6 {
 .bold {
     font-weight: 700;
 }
+
 // Запрет перенос символов на новую строку
-.nowrap{
+.nowrap {
     white-space: nowrap;
 }
 
@@ -167,7 +170,7 @@ h6 {
 }
 
 // скрытие элемента
-.none{
+.none {
     display: none;
 }
 
@@ -192,17 +195,17 @@ h6 {
 
     &::before {
         content: "от";
-        font-size: 2.4rem;
+        font-size: 1.6rem;
+        text-transform: uppercase;
         margin-right: 0.5em;
 
         @media (min-width: 768px) {
-            font-size: 3rem;
+            font-size: 2rem;
             margin-right: 0.3em;
         }
 
         @media (min-width: 1200px) {
-            font-size: 4rem;
-            font-size: 3.4rem;
+            font-size: 2.4rem;
         }
     }
 

@@ -1,0 +1,134 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.information-text-material-block {
+    background-color: $lightGray;
+
+    /* .information-text-material-block__wrapper */
+
+    &__wrapper {
+        @include _768 {
+            padding-left: 0.5em;
+            padding-right: 0.5em;
+        }
+    }
+
+    /* .information-text-material-block__text */
+
+    &__text {
+        text-align: center;
+        margin-bottom: 1.7em;
+
+        @include _768 {
+            letter-spacing: 0.03em;
+        }
+
+        @include _1200 {
+            line-height: 1.2em;
+            margin-bottom: 1.25em;
+        }
+
+        span {
+            @include _768 {
+                display: block;
+            }
+        }
+    }
+
+    /* .information-text-material-block__list */
+
+    &__list {
+        padding-left: 0.3em;
+        margin-bottom: 1.5em;
+
+        @include _768 {
+            padding-left: 0.1em;
+        }
+
+        @include _1200 {
+            padding-left: 0.3em;
+            margin-bottom: 1.1em;
+        }
+    }
+
+    /* .information-text-material-block__item */
+
+    &__item {
+        margin-right: 1.2em;
+    }
+
+    /* .information-text-material-block__box-price */
+
+    &__box-price {
+        text-align: center;
+
+        @include _768 {
+            text-align: left;
+            display: flex;
+            align-items: flex-end;
+        }
+    }
+
+    /* .information-text-material-block__price-text */
+
+    &__price-text {
+        display: none;
+
+        @include _768 {
+            display: inline-block;
+            font-size: 2rem;
+            margin-right: 0.7em;
+            line-height: 1.6em;
+        }
+
+        @include _1200 {
+            font-size: 3.2rem;
+        }
+    }
+
+    /* .information-text-material-block__price */
+
+    &__price {
+        font-size: 3rem;
+        display: block;
+        margin-bottom: 1.1em;
+
+        @include _768 {
+            font-size: 4rem;
+            display: inline-block;
+            margin-bottom: 0;
+        }
+
+        @include _1200 {
+            font-size: 5rem;
+        }
+    }
+
+    /* .information-text-material-block__link */
+
+    &__link {
+        font-size: 1.4rem;
+        text-decoration: none;
+        padding: 0.5em 1.7em;
+
+        @include _768 {
+            font-size: 1.6rem;
+            min-width: 33.4rem;
+            display: inline-block;
+            text-align: center;
+            line-height: 1.5em;
+            margin-left: auto;
+            margin-bottom: 0.3em;
+        }
+
+        @include _1200 {
+            font-size: 1.9rem;
+            min-width: 44.5rem;
+        }
+    }
+}
