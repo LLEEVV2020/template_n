@@ -401,5 +401,23 @@ $(document).ready(function () {
       }
     }
   });
+
+  // Скрипт для слайдера блока types-of-openings-for-warm-glazing
+  $('.types-of-openings-for-warm-glazing__slider').owlCarousel({
+    items: 1,
+    dots: true,
+    margin: 55,
+    dotsClass: ['pagination-box'],
+    dotClass: ['pagination'],
+    responsive: {
+      768: {
+        margin: 0,
+        items: 3,
+        dots: false,
+        mouseDrag: false,
+        touchDrag: false,
+      }
+    }
+  });
 });
 
