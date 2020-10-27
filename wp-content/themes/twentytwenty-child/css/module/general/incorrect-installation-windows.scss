@@ -159,6 +159,13 @@
 
         &__item {
             flex-basis: 21.871em;
+
+            &:nth-child(3) {
+                .incorrect-installation-windows__year {
+                    max-width: 14.071em;
+                    margin-left: 1.3em;
+                }
+            }
         }
 
         &__year {
@@ -171,7 +178,7 @@
             max-width: 19.125em;
 
             &--width {
-                max-width: 22.125em;
+                max-width: 23.125em;
             }
         }
     }
