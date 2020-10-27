@@ -6,7 +6,8 @@
 // @include _1200 {
 // }
 
-.glazing-balcony-with-warm-aluminum {
+.warm-aluminum-windows {
+    background-color: $lightGray;
 
     & .container {
         @media (max-width: 767px) {
@@ -26,6 +27,7 @@
 
         @include _768 {
             padding: 5.5rem 0;
+            overflow: visible;
         }
 
         @include _1200 {
@@ -57,7 +59,7 @@
         padding-top: 7.6em;
 
         @include _768 {
-            flex-direction: row-reverse;
+            flex-direction: row;
             padding: 2em 0.6em 0;
         }
 
@@ -78,10 +80,10 @@
             height: 100%;
             bottom: 0;
             background: linear-gradient(0deg,
-                    rgba(255, 255, 255, 1) 10%,
+                    rgba(246, 246, 246, 1) 10%,
                     rgba(255, 255, 255, 0) 50%,
                     rgba(255, 255, 255, 0) 60%,
-                    rgba(255, 255, 255, 1) 100%);
+                    rgba(246, 246, 246, 1) 100%);
 
             @include _768 {
                 height: 100%;
@@ -150,13 +152,12 @@
         @include _768 {
             color: rgba(255, 255, 255, 0.7);
             font-size: 1rem;
-            left: auto;
-            right: 7.1em;
+            left: 3.1em;
         }
 
         @include _1200 {
             font-size: 1.6rem;
-            right: 10.4em;
+            left: 2.4em;
         }
     }
 
@@ -175,8 +176,9 @@
         }
 
         @include _1200 {
-            max-width: 37.3rem;
+            max-width: 39rem;
             width: 100%;
+            padding-top: 2.7em;
         }
     }
 
@@ -187,10 +189,11 @@
         text-align: center;
         width: 100%;
         top: 0;
+        left: 0;
 
         @include _1200 {
             position: inherit;
-            text-align: left;
+            text-align: right;
         }
     }
 
@@ -206,7 +209,7 @@
         @include _768 {
             display: block;
             position: inherit;
-            text-align: left;
+            text-align: right;
             padding: 0;
             margin-top: 1.3em;
         }
@@ -247,8 +250,7 @@
 
             @include _768 {
                 top: 50%;
-                left: initial;
-                right: 0%;
+                left: -20em;
                 transform: translate(50%, -50%) scaleY(1.7) rotate(45deg);
                 font-size: 1rem;
                 z-index: 1;
@@ -260,6 +262,7 @@
             @include _1200 {
                 width: 7.4em;
                 height: 7.4em;
+                left: -27em;
             }
         }
 
@@ -290,7 +293,7 @@
         }
 
         @include _1200 {
-            max-width: 37.3rem;
+            max-width: 39rem;
             padding: 1.5em 0.8em 1.3em 1.5em;
         }
     }
