@@ -1202,7 +1202,7 @@
                     }
 
                     &__text {
-                        max-width: 24em;
+                        max-width: 28em;
                         margin-bottom: 2.7em;
                         margin-left: 0;
                         padding-left: 7.363em;
@@ -1965,6 +1965,7 @@
                 &-content {
 
                     &__text {
+                        max-width: 27.2em;
                         font-size: 0.7em;
 
                         &:after {
@@ -2396,15 +2397,21 @@
                     }
 
                     &__text {
+                        max-width: 28.2em;
+                        padding-left: 8.363em;
+                        font-size: 1em;
 
-                        font-size: 1.000em;
+                        &:before {
+                            width: 6.875em;
+                            height: 6.875em;
+                        }
 
                         &:after {
                             background-position: -18.6rem -9rem;
                             width: 7.6rem;
                             height: 7rem;
-                            top: 0.8em;
-                            left: 0.6em;
+                            top: 1.2em;
+                            left: 0.9em;
                         }
 
                     }
