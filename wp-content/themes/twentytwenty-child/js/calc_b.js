@@ -13,6 +13,7 @@ nextButton.addEventListener("click", showNextSlide);
 
 let balcony_add_img = document.querySelector('.balcony-add__img');
 let shablon_type = ``;
+//let arr_sh_type = [];
 let okno_namber = 1;
 
 // перелистыватель вперёд ( кнопка "вперёд")
@@ -106,7 +107,9 @@ function showSlide(n) {
     if(currentSlide === 3){
         stepWrapper.classList.add("balcony-add");
         balcony_add_img.innerHTML = shablon_type;
+
         console.log(balcony_add_img);
+
     }
     if(currentSlide === 4){
         stepWrapper.classList.add("balcony-services");
