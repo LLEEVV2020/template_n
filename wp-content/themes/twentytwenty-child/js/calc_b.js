@@ -43,6 +43,7 @@ function showSlide(n) {
 
         let i_name_sash = document.querySelectorAll('input[name="sash"]');
         console.log(i_name_sash);
+        
     }
     if(currentSlide === 2){
         stepWrapper.classList.add("balcony-size");
