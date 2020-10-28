@@ -2086,22 +2086,9 @@
         }
 
         &-front-doors {
-
             .exact-calculation-button {
                 left: 55%;
             }
-
-            .promo {
-
-                &-image {
-                    &__quality-icon {
-                        left: -3%;
-                    }
-                }
-
-            }
-
-
         }
 
         &-warm-aluminum {
@@ -2542,10 +2529,6 @@
                 &-image {
                     min-width: calc(55% + ((100vw - 100%) / 2));
                     background-image: url('/wp-content/themes/twentytwenty-child/img/promo-bg6-big.jpg');
-
-                    &__quality-icon {
-                        bottom: 7em;
-                    }
                 }
 
                 &-content {
