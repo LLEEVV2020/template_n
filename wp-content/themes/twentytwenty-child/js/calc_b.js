@@ -33,18 +33,37 @@ function showSlide(n) {
     "balcony-leaflets", "balcony-size", "balcony-add",
     "balcony-services", "balcony-payment");
 
+    let btn__next = document.querySelector('.calc-balcony__btn--next');
+
     if(currentSlide === 0){
         stepWrapper.classList.add("balcony-home");
         previousButton.classList.add("none");
+
+        btn__next.classList.remove('blocking');
     }
     if(currentSlide === 1){
         stepWrapper.classList.add("balcony-leaflets");
         previousButton.classList.remove("none");
+        
+        let flag_sash = false;
+        
 
         let i_name_sash = document.querySelectorAll('input[name="sash"]');
+        for (let i_item of i_name_sash) {
+            if(i_item.checked){
+                flag_sash = true;
+            }
+            
+        }
+
+        if(!flag_sash){
+            //currentSlide--;
+            btn__next.classList.add('blocking');
+        } 
+
         console.log(i_name_sash);
 
-        
+
     }
     if(currentSlide === 2){
         stepWrapper.classList.add("balcony-size");
