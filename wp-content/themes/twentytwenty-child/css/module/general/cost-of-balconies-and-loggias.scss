@@ -18,9 +18,9 @@
     &__title {
         line-height: 1.2em;
         margin-bottom: 1.1em;
-        @include _768 {
-        }
+
         @include _1200 {
+            margin-bottom: 1.45em;
         }
     }
 
@@ -30,11 +30,6 @@
         .pagination.active {
             background-color: $blue;
         }
-
-        @include _768 {
-        }
-        @include _1200 {
-        }
     }
 
     /* .cost-of-balconies-and-loggias__item */
@@ -43,7 +38,10 @@
         @include _768 {
             margin-bottom: 2.5em;
         }
+
         @include _1200 {
+            display: flex;
+            align-items: flex-end;
         }
     }
 
@@ -57,7 +55,9 @@
             max-width: 39.8rem;
             margin: 0 auto 1.9em;
         }
+
         @include _1200 {
+            margin: 0 1em;
         }
     }
 
@@ -77,8 +77,6 @@
         @include _768 {
             font-size: 2.4rem;
         }
-        @include _1200 {
-        }
     }
 
     /* .cost-of-balconies-and-loggias__img */
@@ -91,8 +89,6 @@
             height: 17.5rem;
             max-width: 39.8rem;
         }
-        @include _1200 {
-        }
     }
 
     /* .cost-of-balconies-and-loggias__info-box */
@@ -100,9 +96,6 @@
     &__info-box {
         @include _768 {
             padding: 0 0.6em;
-
-        }
-        @include _1200 {
         }
     }
 
@@ -114,7 +107,9 @@
         @include _768 {
             margin-bottom: 1.1em;
         }
+
         @include _1200 {
+            text-align: left;
         }
     }
 
@@ -122,20 +117,15 @@
 
     &__price-box {
         align-items: center;
-        @include _768 {
-        }
-        @include _1200 {
-        }
     }
 
     /* .cost-of-balconies-and-loggias__price */
 
     &__price {
         font-size: 3rem;
+
         @include _768 {
             font-size: 5rem;
-        }
-        @include _1200 {
         }
     }
 
@@ -146,12 +136,13 @@
         font-size: 1.4rem;
         line-height: 1.4em;
         min-width: 16.5rem;
-        
+
         @include _768 {
             font-size: 1.6rem;
             min-width: 39.8rem;
             height: fit-content;
         }
+
         @include _1200 {
             font-size: 1.9rem;
         }
