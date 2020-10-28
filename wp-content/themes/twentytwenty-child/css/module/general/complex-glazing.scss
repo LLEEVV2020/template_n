@@ -1,0 +1,166 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.complex-glazing {
+
+    /* .complex-glazing__wrapper */
+
+    &__wrapper {
+        text-align: center;
+    }
+
+    /* .complex-glazing__title */
+
+    &__title {
+        line-height: 1.2em;
+        margin-bottom: 1.2em;
+
+        @include _768 {
+            margin-bottom: 1em;
+        }
+
+        @include _1200 {
+            margin-bottom: 1.25em;
+        }
+
+        span {
+            display: block;
+        }
+    }
+
+    /* .complex-glazing__inner */
+
+    &__inner {
+        flex-wrap: wrap;
+
+        @include _768 {
+            max-width: 33.8em;
+            margin: 0 auto;
+        }
+
+        @include _1200 {
+            max-width: 69em;
+        }
+    }
+
+    /* .complex-glazing__item */
+
+    &__item {
+        width: 16.2rem;
+        height: 16.2rem;
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: contain;
+        color: #fff;
+        border-radius: 0.9em;
+        margin-bottom: 0.95em;
+        padding: 0.5em;
+
+        &--0 {
+            background-color: $orange;
+            justify-content: center;
+            flex-direction: column;
+
+            @include _768 {
+                padding: 1.7em;
+            }
+        }
+
+        &--1 {
+            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, #000000 100%),
+                url(/wp-content/themes/twentytwenty-child/img/complex-glazing-item-1.webp);
+        }
+
+        &--2 {
+            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, #000000 100%),
+                url(/wp-content/themes/twentytwenty-child/img/complex-glazing-item-2.webp);
+        }
+
+        &--3 {
+            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, #000000 100%),
+                url(/wp-content/themes/twentytwenty-child/img/complex-glazing-item-3.webp);
+        }
+
+        &--4 {
+            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, #000000 100%),
+                url(/wp-content/themes/twentytwenty-child/img/complex-glazing-item-4.webp);
+        }
+
+        &--5 {
+            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, #000000 100%),
+                url(/wp-content/themes/twentytwenty-child/img/complex-glazing-item-5.webp);
+        }
+
+        &--6 {
+            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, #000000 100%),
+                url(/wp-content/themes/twentytwenty-child/img/complex-glazing-item-6.webp);
+        }
+
+        &--7 {
+            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, #000000 100%),
+                url(/wp-content/themes/twentytwenty-child/img/complex-glazing-item-7.webp);
+        }
+
+        @include _768 {
+            width: 25.6rem;
+            height: 25.6rem;
+            margin-bottom: 2.15em;
+            padding-bottom: 1em;
+        }
+
+        @include _1200 {
+            margin-bottom: 3.15em;
+        }
+    }
+
+    /* .complex-glazing__first-text */
+
+    &__first-text {
+        text-align: left;
+        font-weight: 700;
+
+        @include _768 {
+            font-size: 2.4rem;
+        }
+    }
+
+    /* .complex-glazing__number */
+
+    &__number {
+        position: absolute;
+        top: 0.5em;
+        left: 0.5em;
+        font-weight: 900;
+        background-color: $yellow;
+        color: #000;
+        width: 1.8rem;
+        height: 1.8rem;
+        line-height: 1.8rem;
+        border-radius: 50%;
+
+        @include _768 {
+            font-size: 2.4rem;
+            width: 2.9rem;
+            height: 2.9rem;
+            line-height: 2.9rem;
+        }
+    }
+
+    /* .complex-glazing__text */
+
+    &__text {
+        font-size: 1rem;
+        font-weight: 700;
+
+        @include _768 {
+            font-size: 1.4rem;
+        }
+    }
+}
