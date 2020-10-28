@@ -1,7 +1,6 @@
 @import '../../base/all/var';
 
 .promo {
-
     &-main,
     &-plastic-windows,
     &-ready-windows,
@@ -785,16 +784,17 @@
     }
 
     &-wooden-windows {
-
         .promo {
-
             &-image {
                 min-height: 12.688em;
                 background-image: url('/wp-content/themes/twentytwenty-child/img/promo-bg11-small.jpg');
+
+                &:after {
+                    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 90%)
+                }
             }
 
             &-content {
-
                 &__title {
                     color: #3A3A3A;
                 }
@@ -1671,8 +1671,11 @@
         }
 
         &-wooden-windows {
-
             .promo {
+                &-image {
+                    background-image: url('/wp-content/themes/twentytwenty-child/img/test.png'), url('/wp-content/themes/twentytwenty-child/img/promo-bg11-small.jpg');
+                    background-size: 16em, cover;
+                }
 
                 &-content {
                     padding-top: 2em;
@@ -1695,14 +1698,6 @@
                         line-height: 1.2;
                     }
                 }
-
-                &-image {
-
-                    &__quality-icon {
-                        display: none;
-                    }
-                }
-
             }
 
             &__text {
@@ -2752,11 +2747,11 @@
         }
 
         &-wooden-windows {
-
             .promo {
-
                 &-image {
-                    background-image: url('/wp-content/themes/twentytwenty-child/img/promo-bg11-big.jpg');
+                    // background-image: url('/wp-content/themes/twentytwenty-child/img/promo-bg11-big.jpg');
+                    background-image: url('/wp-content/themes/twentytwenty-child/img/test.png'), url('/wp-content/themes/twentytwenty-child/img/promo-bg11-small.jpg');
+                    background-size: 31em, cover;
                 }
 
                 &-content {
