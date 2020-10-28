@@ -11,6 +11,9 @@ const stepWrapper = document.getElementById("step-wrapper");
 previousButton.addEventListener("click", showPreviousSlide);
 nextButton.addEventListener("click", showNextSlide);
 
+let shablon_type = ``;
+let okno_namber = 1;
+
 // перелистыватель вперёд ( кнопка "вперёд")
 function showNextSlide() {
     showSlide(currentSlide + 1);
@@ -36,7 +39,35 @@ function showSlide(n) {
     "balcony-leaflets", "balcony-size", "balcony-add",
     "balcony-services", "balcony-payment");
 
-    
+    shablon_type = `
+        <div class="balcony-img__box">
+            <div class="balcony-img">
+                <span data-tooltip="удалить окно"
+                    class="balcony-icon balcony-icon__del open-modal-1" data-modal="#modal-2">
+                    <svg class="icon icon__del">
+                        <use
+                            xlink:href="wp-content/themes/twentytwenty-child/img/sprite.svg#del">
+                        </use>
+                    </svg>
+                </span>
+                <span data-tooltip="скопировать окно" class="balcony-icon balcony-icon__copy">
+                    <svg class="icon icon__copy">
+                        <use
+                            xlink:href="wp-content/themes/twentytwenty-child/img/sprite.svg#copy">
+                        </use>
+                    </svg>
+                </span>
+                <span data-tooltip="изменить окно" class="balcony-icon balcony-icon__setting">
+                    <svg class="icon icon__setting">
+                        <use
+                            xlink:href="wp-content/themes/twentytwenty-child/img/sprite.svg#setting">
+                        </use>
+                    </svg>
+                </span>
+            </div>
+            <div class="balcony-text">Остекление 1 1000*1500</div>
+        </div>
+    `;
 
     if(currentSlide === 0){
         stepWrapper.classList.add("balcony-home");
