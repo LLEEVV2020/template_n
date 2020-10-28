@@ -1470,6 +1470,8 @@
                 &-content {
 
                     &:before {
+                        right: -40%;
+                        width: 40%;
                         background: linear-gradient(89.87deg, #FFFFFF 52.88%, rgba(255, 255, 255, 0) 100.99%);
                     }
 
@@ -1499,15 +1501,6 @@
                     }
 
                 }
-
-                &-image {
-
-                    &__quality-icon {
-                        left: 0;
-                    }
-
-                }
-
             }
 
             .exact-calculation-button {
@@ -2100,15 +2093,6 @@
         &-warm-aluminum {
 
             .promo {
-
-                &-image {
-
-                    &__quality-icon {
-                        left: 1em;
-                    }
-
-                }
-
                 &-content {
 
                     &__box {
