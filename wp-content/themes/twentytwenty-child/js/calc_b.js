@@ -13,16 +13,19 @@ nextButton.addEventListener("click", showNextSlide);
 
 // перелистыватель вперёд ( кнопка "вперёд")
 function showNextSlide() {
-
-    
-    
-
     showSlide(currentSlide + 1);
-
 }
 // перелистыватель назад ( кнопка "назад")
 function showPreviousSlide() {
     showSlide(currentSlide - 1);
+}
+
+let btn__next = document.querySelector('.calc-balcony__btn--next');
+let i_name_sash = document.querySelectorAll('input[name="sash"]');
+for (var i = 0; i < i_name_sash.length; i++) {
+    i_name_sash[i].addEventListener('click', function(event) {
+        btn__next.classList.remove('blocking');
+    });
 }
 
 // ф-ция в которой происходит перелистывание шагов
@@ -33,7 +36,7 @@ function showSlide(n) {
     "balcony-leaflets", "balcony-size", "balcony-add",
     "balcony-services", "balcony-payment");
 
-    let btn__next = document.querySelector('.calc-balcony__btn--next');
+    
 
     if(currentSlide === 0){
         stepWrapper.classList.add("balcony-home");
@@ -48,7 +51,7 @@ function showSlide(n) {
         let flag_sash = false;
         
 
-        let i_name_sash = document.querySelectorAll('input[name="sash"]');
+        
         for (let i_item of i_name_sash) {
             if(i_item.checked){
                 flag_sash = true;
