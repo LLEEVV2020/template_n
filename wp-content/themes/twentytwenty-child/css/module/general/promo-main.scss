@@ -1187,6 +1187,17 @@
 
             .promo {
 
+                &-image {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/test.png"), url("/wp-content/themes/twentytwenty-child/img/promo-bg3-small.jpg");
+                    background-size: 17em, cover;
+
+
+                    &__brands {
+                        right: 61%;
+                        top: 21%;
+                    }
+                }
+
                 &-content {
 
                     &:before {
@@ -1232,15 +1243,6 @@
                     }
 
                 }
-
-                &-image {
-
-                    &__brands {
-                        display: none;
-                    }
-
-                }
-
             }
 
             .info-price {
@@ -1956,6 +1958,9 @@
         &-ready-windows {
 
             .promo {
+                &-image {
+                    background-size: 19em, cover;
+                }
 
                 &-content {
 
@@ -1977,6 +1982,7 @@
                         display: flex;
                         top: 14%;
                         left: 10%;
+                        width: 18em;
                     }
 
                 }
@@ -2401,7 +2407,9 @@
                 }
 
                 &-image {
-                    background-image: url('/wp-content/themes/twentytwenty-child/img/promo-bg3-big.jpg');
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/test.png"), url('/wp-content/themes/twentytwenty-child/img/promo-bg3-big.jpg');
+                    background-size: 32.1em, cover;
+                    background-position: -11em 0, 0 0;
                 }
 
             }
