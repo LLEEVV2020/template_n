@@ -104,6 +104,7 @@ function showSlide(n) {
     }
     if(currentSlide === 3){
         stepWrapper.classList.add("balcony-add");
+        
     }
     if(currentSlide === 4){
         stepWrapper.classList.add("balcony-services");
