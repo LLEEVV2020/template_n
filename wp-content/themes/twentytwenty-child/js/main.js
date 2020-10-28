@@ -420,6 +420,7 @@ $(document).ready(function () {
     }
   });
 
+  // Скрипт для слайдера блока cost-of-balconies-and-loggias
   function checkWidth() {
     var windowWidth = $('body').innerWidth(),
       elem = $(".cost-of-balconies-and-loggias__slider");
@@ -446,5 +447,8 @@ $(document).ready(function () {
   $(window).resize(function () {
     checkWidth(); // проверит при изменении размера окна клиента
   });
+
+
+  
 });
 
