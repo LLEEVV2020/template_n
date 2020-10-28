@@ -106,7 +106,9 @@ function showSlide(n) {
     }
     if(currentSlide === 3){
         stepWrapper.classList.add("balcony-add");
-        balcony_add_img.innerHTML = shablon_type;
+        //balcony_add_img.append(shablon_type);
+        balcony_add_img.insertAdjacentHTML('beforeEnd', shablon_type);
+        //balcony_add_img.insertAdjacentText(beforeEnd, shablon_type)
 
         console.log(balcony_add_img);
 
