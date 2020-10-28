@@ -335,7 +335,7 @@ $(document).ready(function () {
       }
     }
   });
-  
+
   // Скрипт для слайдера блока on-your-balcony
   $('.on-your-balcony__slider').owlCarousel({
     items: 1,
@@ -345,7 +345,7 @@ $(document).ready(function () {
     dotClass: ['pagination'],
     nav: true,
   });
-  
+
   // Скрипт для слайдера блока windows-at-low-prices
   $('.windows-at-low-prices__box').owlCarousel({
     items: 1,
@@ -418,6 +418,33 @@ $(document).ready(function () {
         touchDrag: false,
       }
     }
+  });
+
+  function checkWidth() {
+    var windowWidth = $('body').innerWidth(),
+      elem = $(".cost-of-balconies-and-loggias__slider");
+    if (windowWidth < 768) {
+
+      elem.addClass('owl-carousel');
+
+      // Скрипт для слайдера блока cost-of-balconies-and-loggias
+      $('.cost-of-balconies-and-loggias__slider').owlCarousel({
+        items: 1,
+        dots: true,
+        margin: 55,
+        dotsClass: ['pagination-box'],
+        dotClass: ['pagination'],
+      });
+    }
+    else {
+      elem.trigger('destroy.owl.carousel').removeClass('owl-carousel owl-loaded');
+    }
+  }
+
+  checkWidth(); // проверит при загрузке страницы
+
+  $(window).resize(function () {
+    checkWidth(); // проверит при изменении размера окна клиента
   });
 });
 
