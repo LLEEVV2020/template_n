@@ -13,7 +13,7 @@ nextButton.addEventListener("click", showNextSlide);
 
 let balcony_add_img = document.querySelector('.balcony-add__img');
 let shablon_type = ``;
-//let arr_sh_type = [];
+let flag_namber = true;
 let okno_namber = 1;
 
 // перелистыватель вперёд ( кнопка "вперёд")
@@ -25,6 +25,12 @@ function showPreviousSlide() {
     showSlide(currentSlide - 1);
 }
 
+function delite_bg(){
+    stepWrapper.classList.remove("balcony-home", 
+    "balcony-leaflets", "balcony-size", "balcony-add",
+    "balcony-services", "balcony-payment");
+}
+
 let btn__next = document.querySelector('.calc-balcony__btn--next');
 let i_name_sash = document.querySelectorAll('input[name="sash"]');
 for (var i = 0; i < i_name_sash.length; i++) {
@@ -33,16 +39,25 @@ for (var i = 0; i < i_name_sash.length; i++) {
     });
 }
 
+// кнопка "добавить новое окно"
+let calc_balcony__add = document.querySelector('.calc-balcony__add');
+calc_balcony__add.addEventListener('click', function(event) {
+    delite_bg();
+    flag_namber = true;
+    currentSlide = 1;
+    okno_namber++;
+    stepWrapper.classList.add("balcony-leaflets");
+
+});
+
 // ф-ция в которой происходит перелистывание шагов
 function showSlide(n) {
 
     currentSlide = n;
-    stepWrapper.classList.remove("balcony-home", 
-    "balcony-leaflets", "balcony-size", "balcony-add",
-    "balcony-services", "balcony-payment");
+    delite_bg();
 
     shablon_type = `
-        <div class="balcony-img__box">
+        <div class="balcony-img__box" data-number_okno="${okno_namber}">
             <div class="balcony-img">
                 <span data-tooltip="удалить окно"
                     class="balcony-icon balcony-icon__del open-modal-1" data-modal="#modal-2">
@@ -97,9 +112,6 @@ function showSlide(n) {
             btn__next.classList.add('blocking');
         } 
 
-        
-
-
     }
     if(currentSlide === 2){
         stepWrapper.classList.add("balcony-size");
@@ -107,10 +119,14 @@ function showSlide(n) {
     if(currentSlide === 3){
         stepWrapper.classList.add("balcony-add");
         //balcony_add_img.append(shablon_type);
-        balcony_add_img.insertAdjacentHTML('beforeEnd', shablon_type);
-        //balcony_add_img.insertAdjacentText(beforeEnd, shablon_type)
 
-        console.log(balcony_add_img);
+        if(flag_namber){
+            balcony_add_img.insertAdjacentHTML('beforeEnd', shablon_type);
+        }
+        flag_namber = false;
+        
+
+        //console.log(balcony_add_img);
 
     }
     if(currentSlide === 4){
