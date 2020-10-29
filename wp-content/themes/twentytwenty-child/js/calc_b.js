@@ -137,11 +137,16 @@ function showSlide(n) {
 
         if(flag_namber){
             balcony_add_img.insertAdjacentHTML('beforeEnd', shablon_type);
+        } else{
+            let data_n_okno = document.querySelector(`[data-number_okno="${okno_namber}"]`);
+            data_n_okno.insertAdjacentHTML('afterEnd', shablon_type);
+            data_n_okno.remove();
+            console.log(data_n_okno);
         }
         flag_namber = false;
         
 
-        //console.log(balcony_add_img);
+        //
 
     }
     if(currentSlide === 4){
