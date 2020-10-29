@@ -1,0 +1,122 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.aluminum-entrance-doors {
+    background-color: $lightGray;
+    /* .aluminum-entrance-doors__wrapper */
+
+    &__wrapper {
+        text-align: center;
+    }
+
+    /* .aluminum-entrance-doors__title */
+
+    &__title {
+        padding: 0 1em;
+        margin-bottom: 1.1em;
+        
+        @include _1200 {
+            margin-bottom: 0.7em;
+        }
+    }
+
+    /* .aluminum-entrance-doors__inner */
+
+    &__inner {
+
+        @include _1200 {
+            display: flex;
+        }
+    }
+
+    /* .aluminum-entrance-doors__img */
+
+    &__img {
+        height: 22.9rem;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border: 0.3em solid #ffffff;
+        border-radius: 0.3em;
+        margin-bottom: 1.3em;
+
+        @include _768 {
+            height: 35rem;
+            margin: 0 auto 2em;
+            border-width: 0.5em;
+            border-radius: 0.5em;
+        }
+
+        @include _1200 {
+            margin: 0 1em 0 0;
+        }
+    }
+
+    /* .aluminum-entrance-doors__text */
+
+    &__text {
+        margin-bottom: 1.7em;
+
+        @include _768 {
+            padding: 0 1em;
+        }
+
+        @include _1200 {
+            text-align: left;
+            margin-bottom: 1.4em;
+        }
+    }
+
+    /* .aluminum-entrance-doors__box-price */
+
+    &__box-price {
+        align-items: center;
+
+        @include _768 {
+            padding: 0 4.4em;
+        }
+
+        @include _1200 {
+            padding: 0 1.4em;
+        }
+
+    }
+
+    /* .aluminum-entrance-doors__price */
+
+    &__price {
+        font-size: 3rem;
+
+        @include _768 {
+            font-size: 4rem;
+        }
+
+        @include _768 {
+            font-size: 5rem;
+        }
+
+    }
+
+    /* .aluminum-entrance-doors__link */
+
+    &__link {
+        text-decoration: none;
+        font-size: 1.4rem;
+        line-height: 1.4em;
+        min-width: 16.5rem;
+
+        @include _768 {
+            font-size: 1.6rem;
+            min-width: 34.7rem;
+            height: fit-content;
+        }
+
+        @include _1200 {
+            font-size: 1.9rem;
+            min-width: 27.5rem;
+        }
+    }
+}
