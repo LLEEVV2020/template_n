@@ -123,7 +123,6 @@ function showSlide(n) {
         }
 
         if(!flag_sash){
-            //currentSlide--;
             btn__next.classList.add('blocking');
         } 
 
