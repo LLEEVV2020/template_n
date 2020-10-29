@@ -13,7 +13,8 @@
     &-windows-in-wooden-house,
     &-wooden-windows .container,
     &-glazing-balconies .container,
-    &-finishing-balconies .container {
+    &-finishing-balconies .container,
+    &-pine-wood-windows .container {
         position: relative;
     }
 
@@ -60,7 +61,6 @@
     }
 
     &-image {
-
         &__quality-icon {
             position: absolute;
             bottom: -2em;
@@ -70,7 +70,6 @@
             height: 5.063em;
             background: url('/wp-content/themes/twentytwenty-child/img/sprite.png') -21.938em -5.313em;
         }
-
     }
 
     &-image:after,
@@ -1000,6 +999,99 @@
 
     }
 
+    &-pine-wood-windows {
+        .promo {
+            &-image {
+                min-height: 12.688em;
+                background-image: url("/wp-content/themes/twentytwenty-child/img/promo-pine-wood-windows-small.jpg");
+            }
+
+            &-content {
+                padding-top: 1.5em;
+
+                &__title {
+                    margin-bottom: 1.163em;
+                    max-width: 12em;
+                }
+            }
+
+            &-advantages {
+                max-width: 21em;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 2.4em;
+
+                &__item {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 0.563em;
+        
+                    &:before {
+                        content: '';
+                        width: 2.188em;
+                        height: 2.188em;
+                        margin-right: 1.063em;
+                        border-radius: 50%;
+                        background-color: $yellow;
+                    }
+        
+                    &:after {
+                        content: '';
+                        position: absolute;                
+                    }
+        
+                    &:first-child {
+                        &:after {
+                            top: 0.8em;
+                            left: 1.2em;
+                            width: 1.313em;
+                            height: 1.813em;
+                            background-position: 51.257% 0.014%;
+                            font-size: 1rem;
+                        }
+                    }
+        
+                    &:nth-child(2) {
+                        &:after {
+                            top: 1em;
+                            left: 0.8em;
+                            width: 2.313em;
+                            height: 1.863em;
+                            background-position: 53.767% 0.014%;
+                            font-size: 0.9rem;
+                        }
+                    }
+        
+                    &:nth-child(3) {
+                        &:after {
+                            top: 1em;
+                            left: 1em;
+                            width: 1.625em;
+                            height: 1.5em;
+                            background-position: 56.384% 0.014%;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+        
+                &__text {
+                    .orange {
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+
+        .info-price {
+            margin-bottom: 2.913em;
+        }
+
+        .exact-calculation-button {
+            display: none;
+        }
+    }
+
     @media (min-width: 768px) {
 
         &-main .container,
@@ -1014,7 +1106,8 @@
         &-wooden-windows__box,
         &-stocks__box,
         &-glazing-balconies__box,
-        &-finishing-balconies .container {
+        &-finishing-balconies .container,
+        &-pine-wood-windows__box {
             display: flex;
         }
 
@@ -1882,6 +1975,70 @@
                 margin-left: 0;
             }
 
+        }
+
+        &-pine-wood-windows {
+            .promo-advantages,
+            .info-price {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .promo {
+                &-image {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/test2.png"), url("/wp-content/themes/twentytwenty-child/img/promo-pine-wood-windows-middle.jpg");
+                    background-size: 22em, cover;
+                    background-position: -5em 0, 0 0;
+                }
+
+                &-content {
+                    &__title {
+                        margin-bottom: 0.363em;
+                    }
+                }
+
+                &-advantages {
+                    margin-bottom: 0.7em;
+
+                    &__item {
+                        margin-bottom: 0.463em;
+
+                        &:before {
+                            width: 1.250em;
+                            height: 1.250em;
+                            margin-right: 0.763em;
+                        }
+
+                        &:first-child {
+                            &:after {
+                                font-size: 0.6rem;
+                                top: 0.9em;
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            &:after {
+                                font-size: 0.5rem;
+                            }   
+                        }
+
+                        &:nth-child(3) {
+                            &:after {
+                                font-size: 0.6rem;
+                                left: 0.9em;
+                            }   
+                        }
+                    }
+
+                    &__text {
+                        font-size: 0.750em;
+                    }
+                }
+            }
+
+            .exact-calculation-button {
+                display: flex;
+            }
         }
 
     }
@@ -2834,6 +2991,66 @@
 
             }
 
+        }
+
+        &-pine-wood-windows {
+            .promo {
+                &-image {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/test2.png"), url("/wp-content/themes/twentytwenty-child/img/promo-pine-wood-windows-big.jpg");
+                    background-size: 34.3em, cover;
+                    min-width: calc(52% + ((100vw - 100%) / 2));
+                    background-position: -5em 0, 100% 0;
+                }
+
+                &-content {
+                    min-width: 48%;
+
+                    &__title {
+                        margin-bottom: 0.963em;
+                        letter-spacing: -0.05em;
+                    }
+                }
+
+                &-advantages {
+                    max-width: 23em;
+                    margin-bottom: 2.6em;
+
+                    &__item {
+                        margin-bottom: 0.763em;
+
+                        &:before {
+                            width: 2.938em;
+                            height: 2.938em;
+                            margin-right: 0.863em;
+                        }
+
+                        &:first-child {
+                            &:after {
+                                font-size: 1.3rem;
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            &:after {
+                                font-size: 1.3rem;
+                            }
+                        }
+
+                        &:nth-child(3) {
+                            &:after {
+                                top: 1.2em;
+                                left: 1em;
+                                font-size: 1.3rem;
+                            }
+                        }
+                    }
+
+                    &__text {
+                        font-size: 1.5em;
+                        letter-spacing: 0.03em;
+                    }
+                }
+            }
         }
         
     }
