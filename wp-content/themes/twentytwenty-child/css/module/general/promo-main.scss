@@ -14,7 +14,8 @@
     &-wooden-windows .container,
     &-glazing-balconies .container,
     &-finishing-balconies .container,
-    &-pine-wood-windows .container {
+    &-pine-wood-windows .container,
+    &-larch-windows .container {
         position: relative;
     }
 
@@ -1147,8 +1148,84 @@
         }
     }
 
-    @media (min-width: 768px) {
+    &-larch-windows {
+        .promo {
+            &-image {
+                min-height: 12.688em;
+                background-image: url("/wp-content/themes/twentytwenty-child/img/larch-windows-small.jpg");
 
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 15%;
+                    height: 100%;
+                    background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+                }
+            }
+
+            &-content {
+                padding-top: 1.8em;
+
+                &__title {
+                    max-width: 12em;
+                    margin-bottom: 1.063em;
+                }
+            }
+
+            &-advantages {
+                &__item {
+                    &:first-child {
+                        &:after {
+                            top: 0.8em;
+                            left: 1.1em;
+                            width: 1.538em;
+                            height: 1.913em;
+                            background-position: 58.757% 0;
+                            font-size: 1rem;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        &:after {
+                            top: 0.8em;
+                            left: 0.8em;
+                            width: 2.038em;
+                            height: 2.113em;
+                            background-position: 61.29% 0.014%;
+                            font-size: 1rem;
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        &:after {
+                            top: 0.8em;
+                            left: 0.8em;
+                            width: 2.038em;
+                            height: 1.813em;
+                            background-position: 63.91% 0;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+
+                &__text {
+                    letter-spacing: 0.03em;
+                }
+            }
+        }
+
+        .info-price {
+            margin-bottom: 3.013em;
+        }
+
+        .exact-calculation-button {
+            display: none;
+        }
+    }
+
+    @media (min-width: 768px) {
         &-main .container,
         &-plastic-windows .container,
         &-ready-windows .container,
@@ -1162,7 +1239,8 @@
         &-stocks__box,
         &-glazing-balconies__box,
         &-finishing-balconies .container,
-        &-pine-wood-windows__box {
+        &-pine-wood-windows__box,
+        &-larch-windows__box {
             display: flex;
         }
 
@@ -2092,10 +2170,72 @@
             }
         }
 
+        &-larch-windows {
+            .promo-advantages,
+            .info-price {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .promo {
+                &-image {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/test2.png"), url("/wp-content/themes/twentytwenty-child/img/larch-windows-middle.jpg");
+                    background-size: 22em, cover;
+                    background-position: -5em 0, 0 0;
+                }
+
+                &-content {
+                    &:before {
+                        display: none;
+                    }
+
+                    &__title {
+                        margin-bottom: 0.463em;
+                    }
+                }
+
+                &-advantages {
+                    &__item {
+                        margin-bottom: 0.363em;
+
+                        &:first-child {
+                            &:after {
+                                top: 0.6em;
+                                left: 0.9em;
+                                font-size: 0.6rem;
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            &:after {                                
+                                top: 1em;
+                                left: 1em;
+                                font-size: 0.5rem;
+                            }   
+                        }
+
+                        &:nth-child(3) {
+                            &:after {
+                                font-size: 0.6rem;
+                                left: 0.8em;
+                            }   
+                        }
+                    }
+
+                    &__text {
+                        font-size: 0.750em;
+                    }
+                }
+            }
+
+            .exact-calculation-button {
+                display: flex;
+            }
+        }
+
     }
 
     @media (min-width: 960px) {
-
         &-main,
         &-plastic-windows,
         &-ready-windows,
@@ -2108,8 +2248,8 @@
         &-windows-in-wooden-house,
         &-stocks,
         &-glazing-balconies,
-        &-finishing-balconies {
-
+        &-finishing-balconies,
+        &-larch-windows {
             .container {
                 width: calc(100% - 8rem);
             }
@@ -2117,7 +2257,6 @@
         }
 
         &-content {
-
             &__box {
                 max-width: 20em;
             }
@@ -2414,7 +2553,6 @@
     }
 
     @media (min-width: 1200px) {
-
         &-content {
             &:before {
                 background: linear-gradient(83.87deg, #FFFFFF 35.88%, rgba(255, 255, 255, 0) 80.99%);
@@ -3099,6 +3237,60 @@
                     &__text {
                         font-size: 1.5em;
                         letter-spacing: 0.03em;
+                    }
+                }
+            }
+        }
+
+        &-larch-windows {
+            .promo {
+                &-image {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/test2.png"), url("/wp-content/themes/twentytwenty-child/img/larch-windows-big.jpg");
+                    background-size: 34.8em, cover;
+                    min-width: calc(51% + ((100vw - 100%) / 2));
+                    background-position: -7em 0, 100% 0;
+                }
+
+                &-content {
+                    min-width: 49%;
+
+                    &__title {
+                        margin-bottom: 0.963em;
+                        letter-spacing: -0.04em;
+                    }
+                }
+
+                &-advantages {
+                    &__item {
+                        margin-bottom: 0.863em;
+
+                        &:first-child {
+                            &:after {
+                                top: 0.9em;
+                                left: 1.1em;
+                                font-size: 1.3rem;
+                            }
+                        }
+    
+                        &:nth-child(2) {
+                            &:after {
+                                top: 0.8em;
+                                left: 0.8em;
+                                font-size: 1.3rem;
+                            }
+                        }
+    
+                        &:nth-child(3) {
+                            &:after {
+                                top: 1em;
+                                left: 0.7em;
+                                font-size: 1.3rem;
+                            }
+                        }
+                    }
+
+                    &__text {
+                        font-size: 1.5em;
                     }
                 }
             }
