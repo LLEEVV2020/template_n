@@ -428,7 +428,6 @@ $(document).ready(function () {
 
       elem.addClass('owl-carousel');
 
-      // Скрипт для слайдера блока cost-of-balconies-and-loggias
       $('.cost-of-balconies-and-loggias__slider').owlCarousel({
         items: 1,
         dots: true,
@@ -437,7 +436,7 @@ $(document).ready(function () {
         dotClass: ['pagination'],
       });
     }
-    else { 
+    else {
       elem.trigger('destroy.owl.carousel').removeClass('owl-carousel owl-loaded');
     }
   }
@@ -447,51 +446,78 @@ $(document).ready(function () {
   $(window).resize(function () {
     checkWidth(); // проверит при изменении размера окна клиента
   });
-    
 
-    // Скрипт для слайдера блока prices-for-warm-glazing
-    $('.prices-for-warm-glazing__slider').owlCarousel({
-      items: 1,
-      dots: true,
-      margin: 55,
-      dotsClass: ['pagination-box'],
-      dotClass: ['pagination'],
-      responsive: {
-        768: {
-          margin: 0,
-          items: 2
-        },
-        1200: {
-          margin: 30,
-          items: 3,
-          dots: false,
-          mouseDrag: false,
-          touchDrag: false,
-        }
-      }
-    });
 
-    // Скрипт для слайдера блока high-quality-glued-casing
-    $('.high-quality-glued-casing__slider').owlCarousel({
-      items: 1, 
-      dots: true,
-      margin: 55,
-      dotsClass: ['pagination-box'],
-      dotClass: ['pagination'],
-      responsive: {
-        768: {
-          margin: 0,
-          items: 2
-        },
-        1200: {
-          margin: 30,
-          items: 3,
-          dots: false,
-          mouseDrag: false,
-          touchDrag: false,
-        }
+  // Скрипт для слайдера блока prices-for-warm-glazing
+  $('.prices-for-warm-glazing__slider').owlCarousel({
+    items: 1,
+    dots: true,
+    margin: 55,
+    dotsClass: ['pagination-box'],
+    dotClass: ['pagination'],
+    responsive: {
+      768: {
+        margin: 0,
+        items: 2
+      },
+      1200: {
+        margin: 30,
+        items: 3,
+        dots: false,
+        mouseDrag: false,
+        touchDrag: false,
       }
-    });
+    }
+  });
+
+  // Скрипт для слайдера блока high-quality-glued-casing
+  $('.high-quality-glued-casing__slider').owlCarousel({
+    items: 1,
+    dots: true,
+    margin: 55,
+    dotsClass: ['pagination-box'],
+    dotClass: ['pagination'],
+    responsive: {
+      768: {
+        margin: 0,
+        items: 2
+      },
+      1200: {
+        margin: 30,
+        items: 3,
+        dots: false,
+        mouseDrag: false,
+        touchDrag: false,
+      }
+    }
+  });
+
+  // Скрипт для слайдера блока cost-of-balconies-and-loggias
+  function checkWidth() {
+    var windowWidth = $('body').innerWidth(),
+      elem = $(".types-of-installation-in-a-wooden-house__slider");
+    if (windowWidth < 768) {
+
+      elem.addClass('owl-carousel');
+
+      $('.types-of-installation-in-a-wooden-house__slider').owlCarousel({
+        items: 1,
+        dots: true,
+        margin: 55,
+        dotsClass: ['pagination-box'],
+        dotClass: ['pagination'],
+      });
+    }
+    else {
+      elem.trigger('destroy.owl.carousel').removeClass('owl-carousel owl-loaded');
+    }
+  }
+
+  checkWidth(); // проверит при загрузке страницы
+
+  $(window).resize(function () {
+    checkWidth(); // проверит при изменении размера окна клиента
+  });
 
 });
 
