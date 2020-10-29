@@ -519,5 +519,27 @@ $(document).ready(function () {
     checkWidth2(); // проверит при изменении размера окна клиента
   });
 
+    // Скрипт для слайдера блока prices-for-wooden-pine-windows
+    $('.prices-for-wooden-pine-windows__slider').owlCarousel({
+      items: 1,
+      dots: true,
+      margin: 55,
+      dotsClass: ['pagination-box'],
+      dotClass: ['pagination'],
+      responsive: {
+        768: {
+          margin: 0,
+          items: 2
+        },
+        1200: {
+          margin: 30,
+          items: 3,
+          dots: false,
+          mouseDrag: false,
+          touchDrag: false,
+        }
+      }
+    });
+
 });
 
