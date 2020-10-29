@@ -493,7 +493,7 @@ $(document).ready(function () {
   });
 
   // Скрипт для слайдера блока cost-of-balconies-and-loggias
-  function checkWidth() {
+  function checkWidth2() {
     var windowWidth = $('body').innerWidth(),
       elem = $(".types-of-installation-in-a-wooden-house__slider");
     if (windowWidth < 768) {
@@ -513,10 +513,10 @@ $(document).ready(function () {
     }
   }
 
-  checkWidth(); // проверит при загрузке страницы
+  checkWidth2(); // проверит при загрузке страницы
 
   $(window).resize(function () {
-    checkWidth(); // проверит при изменении размера окна клиента
+    checkWidth2(); // проверит при изменении размера окна клиента
   });
 
 });
