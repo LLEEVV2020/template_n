@@ -313,6 +313,85 @@
 
     }
 
+    &-advantages {
+        max-width: 21em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2.4em;
+
+        &__item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.563em;
+
+            &:before,
+            &:after {
+                content: '';
+            }
+
+            &:before {
+                width: 2.188em;
+                height: 2.188em;
+                margin-right: 1.063em;
+                border-radius: 50%;
+                background-color: $yellow;
+            }
+
+            &:after {
+                position: absolute;                
+            }
+        }
+
+        &__text {
+            .orange {
+                font-weight: 700;
+            }
+        }
+    }
+
+    @media(min-width: 768px) {
+        &-advantages {
+            margin-bottom: 0.7em;
+    
+            &__item {
+                margin-bottom: 0.463em;
+    
+                &:before {
+                    width: 1.250em;
+                    height: 1.250em;
+                    margin-right: 0.763em;
+                }
+            }
+    
+            &__text {
+                font-size: 0.750em;
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        &-advantages {
+            max-width: 23em;
+            margin-bottom: 2.6em;
+
+            &__item {
+                margin-bottom: 0.763em;
+
+                &:before {
+                    width: 2.938em;
+                    height: 2.938em;
+                    margin-right: 0.863em;
+                }
+            }
+
+            &__text {
+                font-size: 1.5em;
+                letter-spacing: 0.03em;
+            }
+        }
+    }
+
     &-plastic-windows {
 
         padding-bottom: 1.688em;
@@ -1016,31 +1095,7 @@
             }
 
             &-advantages {
-                max-width: 21em;
-                margin-left: auto;
-                margin-right: auto;
-                margin-bottom: 2.4em;
-
-                &__item {
-                    position: relative;
-                    display: flex;
-                    align-items: center;
-                    margin-bottom: 0.563em;
-        
-                    &:before {
-                        content: '';
-                        width: 2.188em;
-                        height: 2.188em;
-                        margin-right: 1.063em;
-                        border-radius: 50%;
-                        background-color: $yellow;
-                    }
-        
-                    &:after {
-                        content: '';
-                        position: absolute;                
-                    }
-        
+                &__item {        
                     &:first-child {
                         &:after {
                             top: 0.8em;
@@ -2004,17 +2059,7 @@
                 }
 
                 &-advantages {
-                    margin-bottom: 0.7em;
-
                     &__item {
-                        margin-bottom: 0.463em;
-
-                        &:before {
-                            width: 1.250em;
-                            height: 1.250em;
-                            margin-right: 0.763em;
-                        }
-
                         &:first-child {
                             &:after {
                                 font-size: 0.6rem;
@@ -2371,7 +2416,6 @@
     @media (min-width: 1200px) {
 
         &-content {
-
             &:before {
                 background: linear-gradient(83.87deg, #FFFFFF 35.88%, rgba(255, 255, 255, 0) 80.99%);
             }
@@ -3029,17 +3073,7 @@
                 }
 
                 &-advantages {
-                    max-width: 23em;
-                    margin-bottom: 2.6em;
-
                     &__item {
-                        margin-bottom: 0.763em;
-
-                        &:before {
-                            width: 2.938em;
-                            height: 2.938em;
-                            margin-right: 0.863em;
-                        }
 
                         &:first-child {
                             &:after {

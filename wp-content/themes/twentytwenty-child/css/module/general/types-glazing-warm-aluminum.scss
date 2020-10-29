@@ -20,6 +20,13 @@
 
     &__item {
         margin-bottom: 0.588em;
+
+        &.active {
+            .types-glazing-warm-aluminum__text {
+                background-color: $orange;
+                color: $white;
+            }
+        }
     }
 
     &__link {
