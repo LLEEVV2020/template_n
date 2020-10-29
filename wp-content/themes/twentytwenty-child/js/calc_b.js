@@ -56,12 +56,15 @@ function showSlide(n) {
     currentSlide = n;
     delite_bg();
 
+    // узнаём какое кол-во створок
     let data_kolvo_stvorok = 0;
     for (let i_item of i_name_sash) {
         if(i_item.checked){
             data_kolvo_stvorok = i_item.value;
         }
     }
+
+    
 
     shablon_type = `
         <div class="balcony-img__box" 
