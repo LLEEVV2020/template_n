@@ -11,7 +11,9 @@ const stepWrapper = document.getElementById("step-wrapper");
 previousButton.addEventListener("click", showPreviousSlide);
 nextButton.addEventListener("click", showNextSlide);
 
+let balcony_add_img = document.querySelector('.balcony-add__img');
 let shablon_type = ``;
+//let arr_sh_type = [];
 let okno_namber = 1;
 
 // перелистыватель вперёд ( кнопка "вперёд")
@@ -95,7 +97,7 @@ function showSlide(n) {
             btn__next.classList.add('blocking');
         } 
 
-        console.log(i_name_sash);
+        
 
 
     }
@@ -104,6 +106,12 @@ function showSlide(n) {
     }
     if(currentSlide === 3){
         stepWrapper.classList.add("balcony-add");
+        //balcony_add_img.append(shablon_type);
+        balcony_add_img.insertAdjacentHTML('beforeEnd', shablon_type);
+        //balcony_add_img.insertAdjacentText(beforeEnd, shablon_type)
+
+        console.log(balcony_add_img);
+
     }
     if(currentSlide === 4){
         stepWrapper.classList.add("balcony-services");

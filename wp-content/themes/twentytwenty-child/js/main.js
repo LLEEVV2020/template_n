@@ -447,6 +447,7 @@ $(document).ready(function () {
   $(window).resize(function () {
     checkWidth(); // проверит при изменении размера окна клиента
   });
+    
 
     // Скрипт для слайдера блока prices-for-warm-glazing
     $('.prices-for-warm-glazing__slider').owlCarousel({
