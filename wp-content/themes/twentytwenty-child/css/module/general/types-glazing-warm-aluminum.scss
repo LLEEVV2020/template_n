@@ -22,6 +22,21 @@
         margin-bottom: 0.588em;
     }
 
+    &__link {
+        display: block;
+        text-decoration: none;
+        color: $black;
+
+        &:hover {
+            .types-glazing-warm-aluminum {
+                &__text {
+                    color: $white;
+                    background-color: $orange;
+                }
+            }
+        }
+    }    
+
     &__text {
         padding-top: 1.088em;
         padding-bottom: 1.088em;
@@ -31,11 +46,7 @@
         background-color: #E9E9E9;
         border-top-left-radius: 0.625em;
         border-top-right-radius: 0.625em;
-
-        &.active {
-            color: $white;
-            background-color: $orange;
-        }
+        transition: background-color 0.5s ease, color 0.5s ease;
     }
 
     &__image {
