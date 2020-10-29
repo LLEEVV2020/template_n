@@ -15,6 +15,7 @@ let balcony_add_img = document.querySelector('.balcony-add__img');
 let shablon_type = ``;
 let flag_namber = true;
 let okno_namber = 1;
+let balcony_icon_del;
 
 // перелистыватель вперёд ( кнопка "вперёд")
 function showNextSlide() {
@@ -68,7 +69,7 @@ function showSlide(n) {
     let range_width = document.querySelector('.range_width');
     // узнать высоту
     let range_height = document.querySelector('.range_height');
-    
+
 
     shablon_type = `
         <div class="balcony-img__box" 
@@ -136,6 +137,15 @@ function showSlide(n) {
 
         if(flag_namber){
             balcony_add_img.insertAdjacentHTML('beforeEnd', shablon_type);
+
+            balcony_icon_del = document.querySelector(`[data-number_okno="${okno_namber}"] .balcony-icon__del`);
+            balcony_icon_del.addEventListener('click', function(event) {
+                let delite = this.parentElement.parentElement;
+                //delite.remove();
+                //console.log(jhjh);
+            });
+            
+
         } else{
             let data_n_okno = document.querySelector(`[data-number_okno="${okno_namber}"]`);
             data_n_okno.insertAdjacentHTML('afterEnd', shablon_type);
@@ -145,7 +155,7 @@ function showSlide(n) {
         flag_namber = false;
         
 
-        //
+       
 
     }
     if(currentSlide === 4){
