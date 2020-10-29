@@ -64,6 +64,10 @@ function showSlide(n) {
         }
     }
 
+    // узнать ширину
+    let range_width = document.querySelector('.range_width');
+    // узнать высоту
+    let range_height = document.querySelector('.range_height');
     
 
     shablon_type = `
@@ -94,7 +98,7 @@ function showSlide(n) {
                     </svg>
                 </span>
             </div>
-            <div class="balcony-text">Остекление 1 1000*1500</div>
+            <div class="balcony-text">Остекление 1 ${range_height.value}*${range_width.value}</div>
         </div>
     `;
 
