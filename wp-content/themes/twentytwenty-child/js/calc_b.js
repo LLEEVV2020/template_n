@@ -56,8 +56,17 @@ function showSlide(n) {
     currentSlide = n;
     delite_bg();
 
+    let data_kolvo_stvorok = 0;
+    for (let i_item of i_name_sash) {
+        if(i_item.checked){
+            data_kolvo_stvorok = i_item.value;
+        }
+    }
+
     shablon_type = `
-        <div class="balcony-img__box" data-number_okno="${okno_namber}">
+        <div class="balcony-img__box" 
+            data-number_okno="${okno_namber}"
+            data-kolvo_stvorok="${data_kolvo_stvorok}">
             <div class="balcony-img">
                 <span data-tooltip="удалить окно"
                     class="balcony-icon balcony-icon__del open-modal-1" data-modal="#modal-2">
@@ -104,7 +113,6 @@ function showSlide(n) {
             if(i_item.checked){
                 flag_sash = true;
             }
-            
         }
 
         if(!flag_sash){
