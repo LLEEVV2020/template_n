@@ -1560,6 +1560,12 @@
 
             .promo {
 
+                &-image {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/test2.png"), url("/wp-content/themes/twentytwenty-child/img/promo-bg7-small.jpg");
+                    background-size: 22em, cover;
+                    background-position: -1em 0, 0 0;
+                }
+
                 &-content {
 
                     &:before {
@@ -2250,6 +2256,10 @@
         &-warm-aluminum {
 
             .promo {
+                &-image {
+                    background-size: 23em, cover;
+                }
+
                 &-content {
 
                     &__box {
@@ -2736,7 +2746,9 @@
             .promo {
 
                 &-image {
-                    background-image: url('/wp-content/themes/twentytwenty-child/img/promo-bg7-big.jpg');
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/test2.png"), url('/wp-content/themes/twentytwenty-child/img/promo-bg7-big.jpg');
+                    background-size: 45.6em, cover;
+                    background-position: -7em 0, 0 0;
                 }
 
                 &-content {
@@ -2746,6 +2758,8 @@
                     }
 
                     &__text {
+                        max-width: 12.3em;
+                        margin-bottom: 0.938em;
                         font-size: 2.188em;
 
                         &:after {
@@ -2755,7 +2769,10 @@
                     }
 
                 }
+            }
 
+            .info-price {
+                max-width: 28.1em;
             }
 
         }
