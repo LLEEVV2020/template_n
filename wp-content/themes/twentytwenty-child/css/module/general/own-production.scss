@@ -184,6 +184,8 @@
     }
 
     @media (min-width: 900px) {
+        padding-bottom: 0;
+
         .container {
             display: flex;
             width: 100%;
@@ -206,7 +208,7 @@
                     top: 0;
                     right: 0;
                     width: 3em;
-                    height: 92.7%;
+                    height: 100%;
                     background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
                 }
             }
@@ -249,11 +251,12 @@
         }
 
         &__content {
-            padding: 1.5em;
+            padding: 1.5em 1.5em 0;
         }
 
         &__text {
             font-size: 1.15em;
+            margin-bottom: 1em;
         }
     }
 
@@ -266,10 +269,6 @@
         &__image {
             &-box {
                 max-width: 36em;
-
-                &:after {
-                    height: 94.7%;
-                }
             }
         }
 
@@ -320,10 +319,6 @@
         &__image {
             &-box {
                 max-width: 44em;
-
-                &:after {
-                    height: 99.4%;
-                }
             }
         }
 
