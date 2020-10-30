@@ -1,0 +1,115 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.combining-options {
+    background-color: $lightGray;
+    /* .combining-options__wrapper */
+
+    &__wrapper {
+        text-align: center;
+    }
+
+    /* .combining-options__title */
+
+    &__title {
+        margin-bottom: 1.1em;
+
+        @include _768 {
+        }
+
+        @include _1200 {
+            margin-bottom: 1.4em;
+            line-height: 0.6em;
+        }
+    }
+
+    /* .combining-options__inner */
+
+    &__inner {
+        @include _768 {
+        }
+
+        @include _1200 {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+
+    /* .combining-options__item */
+
+    &__item {
+        margin-bottom: 1.55em;
+        @include _768 {
+            margin-bottom: 2.25em;
+        }
+
+        @include _1200 {
+            max-width: 53.4rem;
+            width: 100%;
+            margin-bottom: 0;
+        }
+    }
+
+    /* .combining-options__item-title */
+
+    &__item-title {
+        background-color: $yellow;
+        padding: 0.45em 1em;
+        font-size: 1.5rem;
+        line-height: 1.3em;
+        border-radius: 2.8em 2.8em 0 0;
+
+        @include _768 {
+            padding: 0.5em;
+            font-size: 1.8rem;
+            line-height: 1.2em;
+            width: 40rem;
+            margin: 0 auto;
+        }
+
+        @include _1200 {
+            font-size: 2.4rem;
+            width: 100%;
+            border-radius: 1.6em 1.6em 0 0;
+        }
+    }
+
+    /* .combining-options__img */
+
+    &__img {
+        width: 33.5rem;
+        height: 24.4rem;
+        border-radius: 0 0 2.8em 2.8em;
+        margin-bottom: 1.3em;
+
+        @include _768 {
+            width: 40rem;
+            height: 28.5rem;
+            margin-bottom: 1.9em;
+        }
+
+        @include _1200 {
+            width: 100%;
+            height: 38.1rem;
+            margin-bottom: 2.4em;
+            border-radius: 0 0 2.5em 2.5em;
+        }
+    }
+
+    /* .combining-options__text */
+
+    &__text {
+        @include _768 {
+        }
+
+        @include _1200 {
+            text-align: left;
+            line-height: 1.2em;
+        }
+    }
+}
