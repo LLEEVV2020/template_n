@@ -60,8 +60,6 @@ close_window.addEventListener('click', function(event) {
     //console.log(balcony_icon_del);
     balcony_icon_del.remove();
 
-    
-
 });
 
 // ф-ция в которой происходит перелистывание шагов
@@ -163,12 +161,20 @@ function showSlide(n) {
         }
         flag_namber = false;
         
-        //
         balcony_icon_del = document.querySelector(`[data-number_okno="${okno_namber}"] .balcony-icon__del`);
         balcony_icon_del.addEventListener('click', function(event) {
             let delite = this.parentElement.parentElement;
-            
             close_window.dataset.number_okno = `[data-number_okno="${delite.dataset.number_okno}"]`;
+        });
+
+        balcony_icon_copy = document.querySelector(`[data-number_okno="${okno_namber}"] .balcony-icon__copy`);
+        balcony_icon_copy.addEventListener('click', function(event) {
+            let copy = this.parentElement.parentElement;
+            
+            //close_window.dataset.number_okno = `[data-number_okno="${delite.dataset.number_okno}"]`;
+
+            copy.insertAdjacentHTML('afterEnd', copy);
+            console.log(copy);
             //delite.remove();
             //console.log(jhjh);
         });
