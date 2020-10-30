@@ -17,6 +17,7 @@ let flag_namber = true;
 let okno_namber = 1;
 let balcony_icon_del;
 let balcony_icon_copy;
+let balcony_icon_setting;
 
 // перелистыватель вперёд ( кнопка "вперёд")
 function showNextSlide() {
@@ -149,24 +150,14 @@ function showSlide(n) {
 
         if(flag_namber){
             balcony_add_img.insertAdjacentHTML('beforeEnd', shablon_type);
-            
-            
         } else{
             let data_n_okno = document.querySelector(`[data-number_okno="${okno_namber}"]`);
             data_n_okno.insertAdjacentHTML('afterEnd', shablon_type);
             data_n_okno.remove();
-            
         }
         flag_namber = false;
 
-        open_modal_1(`[data-number_okno="${okno_namber}"] .open-modal-1`);
         
-        balcony_icon_del = document.querySelector(`[data-number_okno="${okno_namber}"] .balcony-icon__del`);
-        balcony_icon_del.addEventListener('click', function(event) {
-            let delite = this.parentElement.parentElement;
-            close_window.dataset.number_okno = `[data-number_okno="${delite.dataset.number_okno}"]`;
-        });
-
         function block_even() {
             open_modal_1(`[data-number_okno="${okno_namber}"] .open-modal-1`);
         
@@ -175,8 +166,18 @@ function showSlide(n) {
                 let delite = this.parentElement.parentElement;
                 close_window.dataset.number_okno = `[data-number_okno="${delite.dataset.number_okno}"]`;
             });
-        
 
+            balcony_icon_setting = document.querySelector(`[data-number_okno="${okno_namber}"] .balcony-icon__setting`);
+            balcony_icon_setting.addEventListener('click', function(event) {
+                delite_bg();
+
+                currentSlide = 1;
+                stepWrapper.classList.add("balcony-leaflets");
+
+                //let delite = this.parentElement.parentElement;
+                //close_window.dataset.number_okno = `[data-number_okno="${delite.dataset.number_okno}"]`;
+            });
+        
             balcony_icon_copy = document.querySelector(`[data-number_okno="${okno_namber}"] .balcony-icon__copy`);
             balcony_icon_copy.addEventListener('click', function(event) {
                 let copy = this.parentElement.parentElement;
