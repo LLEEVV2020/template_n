@@ -77,7 +77,7 @@ function showSlide(n) {
             data-kolvo_stvorok="${data_kolvo_stvorok}">
             <div class="balcony-img">
                 <span data-tooltip="удалить окно"
-                    class="balcony-icon balcony-icon__del open-modal-1" data-modal="#modal-2">
+                    class="balcony-icon balcony-icon__del open-modal-1" data-modal="#modal-close">
                     <svg class="icon icon__del">
                         <use
                             xlink:href="wp-content/themes/twentytwenty-child/img/sprite.svg#del">
