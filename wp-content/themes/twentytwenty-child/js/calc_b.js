@@ -149,18 +149,17 @@ function showSlide(n) {
 
         if(flag_namber){
             balcony_add_img.insertAdjacentHTML('beforeEnd', shablon_type);
-            open_modal_1(`[data-number_okno="${okno_namber}"] .open-modal-1`);
-
+            
             
         } else{
             let data_n_okno = document.querySelector(`[data-number_okno="${okno_namber}"]`);
             data_n_okno.insertAdjacentHTML('afterEnd', shablon_type);
             data_n_okno.remove();
             
-            open_modal_1(`[data-number_okno="${okno_namber}"] .open-modal-1`);
-
         }
         flag_namber = false;
+
+        open_modal_1(`[data-number_okno="${okno_namber}"] .open-modal-1`);
         
         balcony_icon_del = document.querySelector(`[data-number_okno="${okno_namber}"] .balcony-icon__del`);
         balcony_icon_del.addEventListener('click', function(event) {
@@ -168,15 +167,33 @@ function showSlide(n) {
             close_window.dataset.number_okno = `[data-number_okno="${delite.dataset.number_okno}"]`;
         });
 
-        balcony_icon_copy = document.querySelector(`[data-number_okno="${okno_namber}"] .balcony-icon__copy`);
-        balcony_icon_copy.addEventListener('click', function(event) {
-            let copy = this.parentElement.parentElement;
-            
-            //close_window.dataset.number_okno = `[data-number_okno="${delite.dataset.number_okno}"]`;
-            let copy_clone = copy.cloneNode(true);
-            copy.insertAdjacentElement('afterEnd', copy_clone);
-            console.log(copy);
-        });
+        function block_even() {
+            open_modal_1(`[data-number_okno="${okno_namber}"] .open-modal-1`);
+        
+            balcony_icon_del = document.querySelector(`[data-number_okno="${okno_namber}"] .balcony-icon__del`);
+            balcony_icon_del.addEventListener('click', function(event) {
+                let delite = this.parentElement.parentElement;
+                close_window.dataset.number_okno = `[data-number_okno="${delite.dataset.number_okno}"]`;
+            });
+        
+
+            balcony_icon_copy = document.querySelector(`[data-number_okno="${okno_namber}"] .balcony-icon__copy`);
+            balcony_icon_copy.addEventListener('click', function(event) {
+                let copy = this.parentElement.parentElement;
+                
+                //close_window.dataset.number_okno = `[data-number_okno="${delite.dataset.number_okno}"]`;
+                okno_namber++;
+                let copy_clone = copy.cloneNode(true);
+                copy_clone.dataset.number_okno = okno_namber;
+                
+                copy.insertAdjacentElement('afterEnd', copy_clone);
+                console.log(copy);
+                block_even();
+            });
+        }
+        block_even();
+
+        
        
 
     }
