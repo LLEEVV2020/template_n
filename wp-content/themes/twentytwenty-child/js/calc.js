@@ -73,18 +73,20 @@ function open_modal_1(open_modal_1){
 	});
 }
 
+close_modal(".close-modal");
+function close_modal(close_modal){
+	$(close_modal).on('click', function(e){
+		e.preventDefault();
+		e.stopImmediatePropagation;
+		
+		var $this = $(this),
+				modal = $($this).data("modal");
+		
+		$(modal).removeClass("open");
+		setTimeout( function(){	
+			$(modal).parents(".overlay").removeClass("open");
+		}, 350);
+		
+	});
+}
 
-
-$(".close-modal").on('click', function(e){
-	e.preventDefault();
-	e.stopImmediatePropagation;
-	
-	var $this = $(this),
-			modal = $($this).data("modal");
-	
-	$(modal).removeClass("open");
-	setTimeout( function(){	
-		$(modal).parents(".overlay").removeClass("open");
-	}, 350);
-	
-});

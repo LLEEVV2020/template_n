@@ -55,6 +55,12 @@ calc_balcony__add.addEventListener('click', function(event) {
 let close_window = document.querySelector('.close-window');
 close_window.addEventListener('click', function(event) {
     
+    // this.dataset.number_okno;
+    balcony_icon_del = document.querySelector(this.dataset.number_okno);
+    //console.log(balcony_icon_del);
+    balcony_icon_del.remove();
+
+    
 
 });
 
@@ -161,7 +167,8 @@ function showSlide(n) {
         balcony_icon_del = document.querySelector(`[data-number_okno="${okno_namber}"] .balcony-icon__del`);
         balcony_icon_del.addEventListener('click', function(event) {
             let delite = this.parentElement.parentElement;
-            close_window.dataset.number_okno = `[data-number_okno="${okno_namber}"]`;
+            
+            close_window.dataset.number_okno = `[data-number_okno="${delite.dataset.number_okno}"]`;
             //delite.remove();
             //console.log(jhjh);
         });
