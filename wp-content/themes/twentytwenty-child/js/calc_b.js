@@ -16,6 +16,7 @@ let shablon_type = ``;
 let flag_namber = true;
 let okno_namber = 1;
 let balcony_icon_del;
+let balcony_icon_copy;
 
 // перелистыватель вперёд ( кнопка "вперёд")
 function showNextSlide() {
@@ -172,11 +173,9 @@ function showSlide(n) {
             let copy = this.parentElement.parentElement;
             
             //close_window.dataset.number_okno = `[data-number_okno="${delite.dataset.number_okno}"]`;
-
-            copy.insertAdjacentHTML('afterEnd', copy);
+            let copy_clone = copy.cloneNode(true);
+            copy.insertAdjacentElement('afterEnd', copy_clone);
             console.log(copy);
-            //delite.remove();
-            //console.log(jhjh);
         });
        
 
