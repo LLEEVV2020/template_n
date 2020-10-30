@@ -17,7 +17,8 @@
     &-pine-wood-windows .container,
     &-larch-windows .container,
     &-oak-wood-windows .container,
-    &-warm-glazing .container {
+    &-warm-glazing .container,
+    &-cold-glazing .container {
         position: relative;
     }
 
@@ -33,7 +34,6 @@
     }
 
     &-content {
-
         &__text {
             margin-bottom: 1.375em;
             font-family: 'Montserrat', sans-serif;
@@ -1372,6 +1372,86 @@
         }
     }
 
+    &-cold-glazing {
+        .promo {
+            &-image {
+                min-height: 12.688em;
+                background-image: url("/wp-content/themes/twentytwenty-child/img/promo-cold-glazing-small.jpg");
+            }
+
+            &-content {
+                padding-top: 2em;
+
+                &__title {
+                    max-width: 14em;
+                    margin-bottom: 1.263em;
+                    font-size: 2.4rem;
+                    line-height: 1.3;
+                    text-align: center;
+
+                    .no-wrap {
+                        white-space: nowrap;
+                    }
+
+                    .margin {
+                        margin-left: -0.2em;
+                    }
+                }
+            }
+
+            &-advantages {
+                margin-bottom: 2.9em;
+
+                &__item {
+                    &:first-child {
+                        &:after {
+                            top: 0.6em;
+                            left: 0.87em;
+                            width: 1.538em;
+                            height: 2.213em;
+                            background-position: 58.757% 0;
+                            font-size: 1.1rem;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        &:after {
+                            top: 0.8em;
+                            left: 0.7em;
+                            width: 2.338em;
+                            height: 2.113em;
+                            background-position: 51.257% 0.014%;
+                            font-size: 1rem;
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        &:after {
+                            top: 0.7em;
+                            left: 0.8em;
+                            width: 2.038em;
+                            height: 2.113em;
+                            background-position: 75.31% 0.029%;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+
+                &__text {
+                    letter-spacing: 0.03em;
+                }
+            } 
+        }
+
+        .info-price {
+            margin-bottom: 2.813em;
+        }
+
+        .exact-calculation-button {
+            display: none;
+        }
+    }
+
     @media (min-width: 768px) {
         &-main .container,
         &-plastic-windows .container,
@@ -1389,7 +1469,8 @@
         &-pine-wood-windows__box,
         &-larch-windows__box,
         &-oak-wood-windows__box,
-        &-warm-glazing__box {
+        &-warm-glazing__box,
+        &-cold-glazing__box {
             display: flex;
         }
 
@@ -2512,6 +2593,80 @@
                 display: flex;
             }
         }
+
+        &-cold-glazing {
+            .promo-advantages,
+            .info-price {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .promo {
+                &-image {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/test2.png"), url("/wp-content/themes/twentytwenty-child/img/promo-cold-glazing-middle.jpg");
+                    background-size: 22em, cover;
+                    background-position: -5em 0, 0 0;
+                    min-width: calc(57% + ((100vw - 100%) / 2));
+                }
+
+                &-content {
+                    padding-top: 1.5em;
+                    min-width: 43%;
+                    &:before {
+                        display: none;
+                    }
+
+                    &__title {
+                        margin-bottom: 0.463em;
+                        letter-spacing: 0.03em;
+                        text-align: left;
+
+                        .margin {
+                            margin-left: 0;
+                        }
+                    }
+                }
+
+                &-advantages {
+                    margin-bottom: 0.8em;
+
+                    &__item {
+                        margin-bottom: 0.363em;
+
+                        &:first-child {
+                            &:after {
+                                left: 1.26em;
+                                top: 0.75em;
+                                font-size: 0.56rem;
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            &:after {
+                                top: 1.3em;
+                                left: 0.9em;
+                                font-size: 0.49rem;
+                            }   
+                        }
+
+                        &:nth-child(3) {
+                            &:after {
+                                font-size: 0.56rem;
+                                left: 0.9em;
+                            }   
+                        }
+                    }
+
+                    &__text {
+                        font-size: 0.750em;
+                    }
+                }
+            }
+
+            .exact-calculation-button {
+                display: flex;
+            }
+        }
     }
 
     @media (min-width: 960px) {
@@ -2530,7 +2685,8 @@
         &-finishing-balconies,
         &-larch-windows,
         &-oak-wood-windows,
-        &-warm-glazing {
+        &-warm-glazing,
+        &-cold-glazing {
             .container {
                 width: calc(100% - 8rem);
             }
@@ -3689,7 +3845,73 @@
                     }
                 }
             }
-        }        
+        }
+        
+        &-cold-glazing {
+            .promo {
+                &-image {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/test2.png"), url("/wp-content/themes/twentytwenty-child/img/promo-cold-glazing-big.jpg");
+                    background-size: 100%, cover;
+                    background-position: -5em 0, 100% 100%;
+                    min-width: calc(48% + ((100vw - 100%) / 2));
+                }
+
+                &-content {
+                    min-width: 52%;
+
+                    &:before {
+                        display: block;
+                    }
+
+                    &__title {
+                        position: relative;
+                        max-width: 14em;
+                        margin-bottom: 1.163em;
+                        font-size: 2.688em;
+                        letter-spacing: 0;
+                        line-height: 1.33;
+                    }
+                }
+
+                &-advantages {
+                    max-width: 28em;
+                    margin-bottom: 2.5em;
+
+                    &__item {
+                        margin-bottom: 0.863em;
+
+                        &:first-child {
+                            &:after {
+                                left: 1.06em;
+                                top: 0.65em;
+                                font-size: 1.4rem;
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            &:after {
+                                font-size: 1.3rem;
+                                top: 0.8em;
+                                left: 0.7em;
+                            }
+                        }
+
+                        &:nth-child(3) {
+                            &:after {
+                                top: 0.9em;
+                                left: 0.9em;
+                                font-size: 1.3rem;
+                            }
+                        }
+                    }
+
+                    &__text {
+                        font-size: 1.5em;
+                        letter-spacing: 0.03em;
+                    }
+                }
+            }
+        }
     }
 
     @media (min-width: 1200px) {
