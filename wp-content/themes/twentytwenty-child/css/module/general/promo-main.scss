@@ -3890,12 +3890,13 @@
             .promo {
                 &-image {
                     background-image: url("/wp-content/themes/twentytwenty-child/img/test2.png"), url("/wp-content/themes/twentytwenty-child/img/promo-pine-wood-windows-big.jpg");
-                    background-size: 34.3em, cover;
+                    background-size: 36.7em, cover;
                     min-width: calc(52% + ((100vw - 100%) / 2));
                     background-position: -5em 0, 100% 0;
                 }
 
                 &-content {
+                    padding-top: 4em;
                     min-width: 48%;
 
                     &__title {
