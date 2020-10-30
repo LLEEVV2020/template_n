@@ -1,0 +1,151 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.space-light-interior {
+    /* .space-light-interior__wrapper */
+
+    &__wrapper {
+        padding: 5.5rem 0;
+        line-height: 1.2em;
+
+        @include _768 {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+    }
+
+    /* .space-light-interior__item */
+
+    &__item {
+        padding-left: 4.9em;
+        position: relative;
+
+        &+& {
+            margin-top: 1.15em;
+
+            @include _768 {
+                margin-top: 0;
+            }
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 7rem;
+            height: 7rem;
+            background-color: $yellow;
+            border-radius: 50%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 3em;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+
+            @include _768 {
+                right: 0;
+                left: 0;
+                margin: 0 auto;
+                top: 0;
+                width: 10.6rem;
+                height: 10.6rem;
+                transform: none;
+            }
+
+            @include _1200 {
+                width: 16.5rem;
+                height: 16.5rem;
+                top: 0.8em;
+            }
+        }
+
+        @include _768 {
+            padding-left: 0;
+            padding-top: 6.15em;
+            max-width: 23rem;
+        }
+
+        @include _1200 {
+            padding-top: 8.45em;
+            max-width: 35rem;
+        }
+
+        &--1 {
+            &::before {
+                background-image: url(/wp-content/themes/twentytwenty-child/img/space-light-interior-icon-1.webp);
+                background-size: 2.5em;
+
+                @include _768 {
+                    background-size: 3.5em;
+                }
+
+                @include _1200 {
+                    background-size: 4.5em;
+                }
+            }
+
+        }
+
+        &--2 {
+            &::before {
+                background-image: url(/wp-content/themes/twentytwenty-child/img/space-light-interior-icon-2.webp);
+                background-size: 3.5em;
+
+                @include _768 {
+                    background-size: 4em;
+                }
+
+                @include _1200 {
+                    background-size: 6em;
+                }
+            }
+        }
+
+        &--3 {
+            &::before {
+                background-image: url(/wp-content/themes/twentytwenty-child/img/space-light-interior-icon-3.webp);
+                background-size: 2.5em;
+
+                @include _768 {
+                    background-size: 3em;
+                }
+
+                @include _1200 {
+                    background-size: 4em;
+                }
+            }
+        }
+    }
+
+    /* .space-light-interior__item-title */
+
+    &__item-title {
+        @include _768 {
+            display: block;
+            margin-bottom: 0.6em;
+        }
+
+        @include _1200 {
+            margin-bottom: 1.1em;
+        }
+    }
+
+    /* .space-light-interior__item-text */
+
+    &__item-text {
+        @include _768 {
+            font-size: 1.8rem;
+        }
+
+        @include _1200 {
+            font-size: 2.2rem;
+            line-height: 1.3em;
+        }
+    }
+}
