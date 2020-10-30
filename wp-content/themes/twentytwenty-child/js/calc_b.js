@@ -51,6 +51,13 @@ calc_balcony__add.addEventListener('click', function(event) {
 
 });
 
+// кнопка "ДА" в модальном окне "удалить окно?" 
+let close_window = document.querySelector('.close-window');
+close_window.addEventListener('click', function(event) {
+    
+
+});
+
 // ф-ция в которой происходит перелистывание шагов
 function showSlide(n) {
 
@@ -137,24 +144,27 @@ function showSlide(n) {
 
         if(flag_namber){
             balcony_add_img.insertAdjacentHTML('beforeEnd', shablon_type);
+            open_modal_1(`[data-number_okno="${okno_namber}"] .open-modal-1`);
 
-            balcony_icon_del = document.querySelector(`[data-number_okno="${okno_namber}"] .balcony-icon__del`);
-            balcony_icon_del.addEventListener('click', function(event) {
-                let delite = this.parentElement.parentElement;
-                //delite.remove();
-                //console.log(jhjh);
-            });
             
-
         } else{
             let data_n_okno = document.querySelector(`[data-number_okno="${okno_namber}"]`);
             data_n_okno.insertAdjacentHTML('afterEnd', shablon_type);
             data_n_okno.remove();
-            console.log(data_n_okno);
+            
+            open_modal_1(`[data-number_okno="${okno_namber}"] .open-modal-1`);
+
         }
         flag_namber = false;
         
-
+        //
+        balcony_icon_del = document.querySelector(`[data-number_okno="${okno_namber}"] .balcony-icon__del`);
+        balcony_icon_del.addEventListener('click', function(event) {
+            let delite = this.parentElement.parentElement;
+            close_window.dataset.number_okno = `[data-number_okno="${okno_namber}"]`;
+            //delite.remove();
+            //console.log(jhjh);
+        });
        
 
     }
