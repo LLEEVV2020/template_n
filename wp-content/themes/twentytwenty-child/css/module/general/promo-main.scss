@@ -21,7 +21,8 @@
     &-cold-glazing .container,
     &-frameless-glazing .container,
     &-glazing-balconies-with-removal .container,
-    &-combining-balcony .container {
+    &-combining-balcony .container,
+    &-insulation-balconies-loggias .container {
         position: relative;
     }
 
@@ -146,7 +147,6 @@
     }
 
     &-content {
-
         padding-top: 3em;
         padding-bottom: 3em;
 
@@ -1625,6 +1625,49 @@
         }
     }
 
+    &-insulation-balconies-loggias {
+        .container {
+            width: calc(100% - 2rem);
+        }
+
+        .promo {
+            &-image {
+                min-height: 12.688em;
+                background-image: url("/wp-content/themes/twentytwenty-child/img/promo-insulation-balconies-loggias.small.jpg");
+            }
+
+            &-content {
+                padding-top: 2.9em;
+                padding-bottom: 2.2em;
+
+                &__title {
+                    max-width: 14em;
+                    margin-bottom: 1.063em;
+                    font-size: 2.4rem;
+                    line-height: 1.3;
+                    text-align: center;
+                    letter-spacing: 0.05em;
+
+                    .margin {
+                        margin-left: -0.2em;
+                    }
+                }
+
+                &__subtitle {
+                    letter-spacing: 0.07em;
+                }
+
+                &__info-box {
+                    margin-bottom: 2.05em;
+                }
+            }
+        }
+
+        .info-price {
+            margin-bottom: 0;
+        }
+    }
+
     @media (min-width: 768px) {
         &-main .container,
         &-plastic-windows .container,
@@ -1646,7 +1689,8 @@
         &-cold-glazing__box,
         &-frameless-glazing__box,
         &-glazing-balconies-with-removal__box,
-        &-combining-balcony__box {
+        &-combining-balcony__box,
+        &-insulation-balconies-loggias__box {
             display: flex;
         }
 
@@ -3032,6 +3076,74 @@
                 }
             }
         }
+
+        &-insulation-balconies-loggias {
+            .container {
+                width: calc(100% - 4rem);
+            }
+
+            .info-price {
+                margin-right: 0;
+                margin-left: 2em;
+            }
+
+            .promo {
+                &-image {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/test2.png"), url("/wp-content/themes/twentytwenty-child/img/promo-insulation-balconies-loggias.middle.jpg");
+                    background-size: 22em, cover;
+                    background-position: -5em 0, 0 0;
+                }
+
+                &-content {
+                    &:before {
+                        background: linear-gradient(83.87deg, #FFFFFF 18.88%, rgba(255, 255, 255, 0) 80.99%);
+                    }
+
+                    &__title {
+                        position: relative;
+                        margin-bottom: 0.963em;
+                        text-align: left;
+                        letter-spacing: 0.03em;
+                        line-height: 1.22;
+
+                        .no-wrap {
+                            white-space: normal;
+                        }
+                    }
+
+                    &__subtitle {
+                        max-width: 12em;
+                        letter-spacing: 0.05em;
+                        font-size: 1.163em;
+
+                        &-text {
+                            margin-left: 4.5em;
+                        }
+                    }
+
+                    &__info-box {
+                        margin-bottom: 1.013em;
+                    }
+
+                    &__icon {
+                        position: relative;
+                        background-image: none;
+                        margin-right: 0.8em;
+
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            top: 1.7em;
+                            left: 2.6em;
+                            width: 3.338em;
+                            height: 4.925em;
+                            background-position: 92.463% 0;
+                            font-size: 0.6rem;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     @media (min-width: 960px) {
@@ -3054,7 +3166,8 @@
         &-cold-glazing,
         &-frameless-glazing,
         &-glazing-balconies-with-removal,
-        &-combining-balcony {
+        &-combining-balcony,
+        &-insulation-balconies-loggias {
             .container {
                 width: calc(100% - 8rem);
             }
@@ -4413,6 +4526,48 @@
                             top: 2.1em;
                             left: 2.2em;
                             font-size: 1.1rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-insulation-balconies-loggias {
+            .promo {
+                &-image {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/test2.png"), url("/wp-content/themes/twentytwenty-child/img/promo-insulation-balconies-loggias.big.jpg");
+                    background-size: 35.8em, cover;
+                    background-position: -7em 0, 0 0;
+                    min-width: calc(52% + ((100vw - 100%) / 2));
+                }
+
+                &-content {
+                    min-width: 48%;
+                    padding-top: 4em;
+
+                    &__title {
+                        font-size: 3em;
+                        letter-spacing: 0;
+                        .no-wrap {
+                            white-space: nowrap;
+                        }
+                    }
+
+                    &__subtitle {
+                        font-size: 2.188em;
+                    }
+
+                    &__info-box {
+                        margin-bottom: 3.013em;
+                    }
+
+                    &__icon {
+                        margin-right: 1.375em;
+
+                        &:after {
+                            top: 1.5em;
+                            left: 2.6em;
+                            font-size: 1.3rem;
                         }
                     }
                 }
