@@ -1,0 +1,179 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.plan-for-combining-balcony-and-loggia {
+    /* .plan-for-combining-balcony-and-loggia__wrapper */
+
+    &__wrapper {
+        text-align: center;
+    }
+
+    /* .plan-for-combining-balcony-and-loggia__title */
+
+    &__title {
+        line-height: 1.2em;
+        margin-bottom: 1em;
+
+        @include _1200 {
+            margin-bottom: 1.2em;
+        }
+    }
+
+    /* .plan-for-combining-balcony-and-loggia__slider */
+
+    &__slider {
+        margin-bottom: 3.3em;
+
+        & .pagination.active {
+            background-color: #17a1e3;
+        }
+
+        @include _768 {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 0 5.2em;
+            margin-bottom: 0;
+        }
+
+        @include _1200 {
+            padding: 0;
+            margin-bottom: 0.7em;
+        }
+    }
+
+    /* .plan-for-combining-balcony-and-loggia__item */
+
+    &__item {
+        position: relative;
+
+        @include _768 {
+            margin-bottom: 2.4em;
+        }
+    }
+
+    /* .plan-for-combining-balcony-and-loggia__img */
+
+    &__img {
+        max-width: 26.1rem;
+        height: 20.3rem;
+        margin: 0 auto 1em;
+
+        @include _768 {
+            max-width: 26rem;
+            height: 21rem;
+        }
+    }
+
+    /* .plan-for-combining-balcony-and-loggia__number */
+
+    &__number {
+        position: absolute;
+        top: 0.7em;
+        left: 3em;
+        height: 3.1rem;
+        width: 3.1rem;
+        background-color: $yellow;
+        border-radius: 50%;
+        line-height: 3.1rem;
+
+        @include _768 {
+            left: 0.5em;
+        }
+    }
+
+    /* .plan-for-combining-balcony-and-loggia__item-text */
+
+    &__item-text {
+        font-size: 1.4rem;
+        background-color: $yellow;
+        max-width: 30.6rem;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 4.8rem;
+        padding: 0.5em;
+        position: relative;
+        border-radius: 1.7em;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 0.7em solid transparent;
+            border-right: 0.7em solid transparent;
+            border-bottom: 0.75em solid #ffe600;
+            top: -0.7em;
+        }
+
+        @include _768 {
+            max-width: 25.5rem;
+        }
+    }
+
+    /* .plan-for-combining-balcony-and-loggia__box-text */
+
+    &__box-text {
+        background-color: $lightGray;
+        padding: 1.1em 0.5em;
+        border-radius: 0.7em;
+        margin-bottom: 1.4em;
+
+        @include _768 {
+            padding: 1.5em 0.5em;
+            margin-bottom: 2.3em;
+        }
+
+        @include _1200 {
+            margin: 0 1em 3em;
+            padding: 1.65em 1.6em 2.6em;
+        }
+    }
+
+    /* .plan-for-combining-balcony-and-loggia__warning */
+
+    &__warning {
+        margin-bottom: 0.4em;
+        display: block;
+
+        @include _1200 {
+            margin-bottom: 0.45em;
+        }
+    }
+
+    /* .plan-for-combining-balcony-and-loggia__text */
+
+    &__text {
+
+        @include _1200 {
+            line-height: 1.2em;
+        }
+    }
+
+    /* .plan-for-combining-balcony-and-loggia__btn */
+
+    &__btn {
+        font-size: 1.4rem;
+        max-width: 33.5rem;
+        margin: 0 auto;
+        display: block;
+        text-decoration: none;
+
+        @include _768 {
+            max-width: 34.6rem;
+        }
+
+        @include _1200 {
+            max-width: 51.8rem;
+            font-size: 1.9rem;
+            line-height: 1.4em;
+        }
+    }
+}
