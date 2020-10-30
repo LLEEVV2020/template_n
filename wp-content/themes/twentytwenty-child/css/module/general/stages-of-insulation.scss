@@ -1,0 +1,137 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.stages-of-insulation {
+    /* .stages-of-insulation__title */
+
+    &__title {
+        text-align: center;
+        margin-bottom: 1.2em;
+
+        @include _1200 {
+            margin-bottom: 1.45em;
+        }
+    }
+
+    /* .stages-of-insulation__slider */
+
+    &__slider {
+        .pagination.active {
+            background-color: $blue;
+        }
+
+        @include _768 {
+            padding: 0 0.7em;
+        }
+
+        @include _1200 {
+            padding: 0 1.1em;
+        }
+    }
+
+    /* .stages-of-insulation__item */
+
+    &__item {
+        text-align: center;
+        background-color: $lightGray;
+        padding: 0.9em 0.7em;
+        border-radius: 0.8em;
+
+        @include _768 {
+            text-align: left;
+            padding: 1.45em 1em 1.9em 1.5em;
+            margin-bottom: 2.15em;
+        }
+
+        @include _1200 {
+            display: flex;
+            padding: 2.35em 1em 1.95em 2.6em;
+            margin-bottom: 1.65em;
+        }
+    }
+
+    /* .stages-of-insulation__box-img */
+
+    &__box-img {
+        position: relative;
+        width: fit-content;
+        margin: 0 auto;
+        margin-bottom: 1em;
+
+        @include _768 {
+            margin-bottom: 1.2em;
+        }
+
+        @include _1200 {
+            margin-bottom: 0;
+        }
+    }
+
+    /* .stages-of-insulation__img */
+
+    &__img {
+        width: 31.2rem;
+        height: 25.1rem;
+        margin: 0 auto;
+        border: 0.6em solid #fff;
+        border-radius: 0.8em;
+        object-fit: cover;
+
+        @include _768 {
+            width: 28.2rem;
+            height: 22.7rem;
+        }
+    }
+
+    /* .stages-of-insulation__number */
+
+    &__number {
+        position: absolute;
+        display: block;
+        top: 1.2em;
+        left: 1.2em;
+        line-height: 2.2em;
+        font-weight: 900;
+        font-size: 1.6rem;
+        width: 3.2rem;
+        height: 3.2rem;
+        background-color: $yellow;
+        border-radius: 50%;
+        text-align: center;
+    }
+
+    /* .stages-of-insulation__box-info */
+
+    &__box-info {
+        @include _1200 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 1.6em;
+        }
+    }
+
+    /* .stages-of-insulation__item-title */
+
+    &__item-title {
+        margin-bottom: 0.6em;
+        display: block;
+    }
+
+    /* .stages-of-insulation__item-text */
+
+    &__item-text {
+        @include _768 {
+            font-size: 1.6rem;
+        }
+
+        @include _1200 {
+            font-size: 2rem;
+        }
+    }
+}
