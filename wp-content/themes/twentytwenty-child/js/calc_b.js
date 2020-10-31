@@ -118,13 +118,13 @@ function showSlide(n) {
 
     if(currentSlide === 0){
         stepWrapper.classList.add("balcony-home");
-        previousButton.classList.add("none");
+        previousButton.classList.add("none-visible");
 
         btn__next.classList.remove('blocking');
     }
     if(currentSlide === 1){
         stepWrapper.classList.add("balcony-leaflets");
-        previousButton.classList.remove("none");
+        previousButton.classList.remove("none-visible");
         
         let flag_sash = false;
         
@@ -174,6 +174,9 @@ function showSlide(n) {
                 currentSlide = 1;
                 stepWrapper.classList.add("balcony-leaflets");
 
+                let calc_bal_btn_box = document.querySelector(`.calc-balcony__btn-box`);
+                calc_bal_btn_box.style.display = "flex";
+
                 //let delite = this.parentElement.parentElement;
                 //close_window.dataset.number_okno = `[data-number_okno="${delite.dataset.number_okno}"]`;
             });
@@ -200,11 +203,11 @@ function showSlide(n) {
     }
     if(currentSlide === 4){
         stepWrapper.classList.add("balcony-services");
-        nextButton.classList.remove("none");
+        nextButton.classList.remove("none-visible");
     }
     if(currentSlide === 5){
         stepWrapper.classList.add("balcony-payment");
-        nextButton.classList.add("none");
+        nextButton.classList.add("none-visible");
 
     }
 
