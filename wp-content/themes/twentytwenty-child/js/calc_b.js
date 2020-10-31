@@ -18,6 +18,7 @@ let okno_namber = 1;
 let balcony_icon_del;
 let balcony_icon_copy;
 let balcony_icon_setting;
+let calc_bal_btn_box = document.querySelector(`.calc-balcony__btn-box`);
 
 // перелистыватель вперёд ( кнопка "вперёд")
 function showNextSlide() {
@@ -128,7 +129,9 @@ function showSlide(n) {
         
         let flag_sash = false;
         
-
+        if(calc_bal_btn_box.style.display !== "none"){
+            previousButton.classList.add("none-visible");
+        }
         
         for (let i_item of i_name_sash) {
             if(i_item.checked){
@@ -143,6 +146,10 @@ function showSlide(n) {
     }
     if(currentSlide === 2){
         stepWrapper.classList.add("balcony-size");
+
+        if(calc_bal_btn_box.style.display !== "none"){
+            previousButton.classList.remove("none-visible");
+        }
     }
     if(currentSlide === 3){
         stepWrapper.classList.add("balcony-add");
@@ -174,8 +181,15 @@ function showSlide(n) {
                 currentSlide = 1;
                 stepWrapper.classList.add("balcony-leaflets");
 
-                let calc_bal_btn_box = document.querySelector(`.calc-balcony__btn-box`);
+                
                 calc_bal_btn_box.style.display = "flex";
+
+                // скрываем кнопку далее, на втором экране.        
+                if(calc_bal_btn_box.style.display !== "none"){
+                    previousButton.classList.add("none-visible");
+                }
+
+                okno_namber = tris.data-number_okno;
 
                 //let delite = this.parentElement.parentElement;
                 //close_window.dataset.number_okno = `[data-number_okno="${delite.dataset.number_okno}"]`;
@@ -191,7 +205,7 @@ function showSlide(n) {
                 copy_clone.dataset.number_okno = okno_namber;
                 
                 copy.insertAdjacentElement('afterEnd', copy_clone);
-                console.log(copy);
+                //console.log(copy);
                 block_even();
             });
         }
