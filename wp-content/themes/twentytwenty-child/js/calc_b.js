@@ -20,6 +20,14 @@ let balcony_icon_copy;
 let balcony_icon_setting;
 let calc_bal_btn_box = document.querySelector(`.calc-balcony__btn-box`);
 
+
+// узнать ширину
+let range_width = document.querySelector('.range_width');
+let range_width_v = document.querySelector('.range_width_value');
+// узнать высоту
+let range_height = document.querySelector('.range_height');
+let range_height_v = document.querySelector('.range_height_value');
+
 // перелистыватель вперёд ( кнопка "вперёд")
 function showNextSlide() {
     showSlide(currentSlide + 1);
@@ -57,13 +65,36 @@ calc_balcony__add.addEventListener('click', function(event) {
 // кнопка "ДА" в модальном окне "удалить окно?" 
 let close_window = document.querySelector('.close-window');
 close_window.addEventListener('click', function(event) {
-    
-    // this.dataset.number_okno;
     balcony_icon_del = document.querySelector(this.dataset.number_okno);
-    //console.log(balcony_icon_del);
     balcony_icon_del.remove();
-
 });
+
+// соранить изменения либо отмена
+let b_box_icon = document.querySelectorAll('.calc-balcony__box-icon');
+for (var i = 0; i < b_box_icon.length; i++) {
+    b_box_icon[i].addEventListener('click', function(event) {
+        Var_Max();
+    });
+}
+
+function Wrap_Var_Max(){
+    showSlide(3);
+    Var_Max();
+}
+function Var_Max(){
+    // включаем дополнительныве две кнопки
+    calc_bal_btn_box.style.display = "none";
+
+    let b_img_box = document.querySelectorAll(".balcony-img__box");
+    let var_max = 0;
+    for (var j = 0; j < b_img_box.length; j++) {
+    
+        if(Number(b_img_box[j].dataset.number_okno) >= var_max) {
+            var_max = Number(b_img_box[j].dataset.number_okno);
+        }
+    }
+    okno_namber = var_max;
+}
 
 // ф-ция в которой происходит перелистывание шагов
 function showSlide(n) {
@@ -79,16 +110,13 @@ function showSlide(n) {
         }
     }
 
-    // узнать ширину
-    let range_width = document.querySelector('.range_width');
-    // узнать высоту
-    let range_height = document.querySelector('.range_height');
-
 
     shablon_type = `
         <div class="balcony-img__box" 
             data-number_okno="${okno_namber}"
-            data-kolvo_stvorok="${data_kolvo_stvorok}">
+            data-kolvo_stvorok="${data_kolvo_stvorok}"
+            data-width="${range_width.value}"
+            data-height="${range_height.value}">
             <div class="balcony-img">
                 <span data-tooltip="удалить окно"
                     class="balcony-icon balcony-icon__del open-modal-1" data-modal="#modal-close">
@@ -154,6 +182,7 @@ function showSlide(n) {
     if(currentSlide === 3){
         stepWrapper.classList.add("balcony-add");
         //balcony_add_img.append(shablon_type);
+        //
 
         if(flag_namber){
             balcony_add_img.insertAdjacentHTML('beforeEnd', shablon_type);
@@ -164,6 +193,7 @@ function showSlide(n) {
         }
         flag_namber = false;
 
+        
         
         function block_even() {
             open_modal_1(`[data-number_okno="${okno_namber}"] .open-modal-1`);
@@ -181,7 +211,7 @@ function showSlide(n) {
                 currentSlide = 1;
                 stepWrapper.classList.add("balcony-leaflets");
 
-                
+                // включаем дополнительныве две кнопки
                 calc_bal_btn_box.style.display = "flex";
 
                 // скрываем кнопку далее, на втором экране.        
@@ -189,8 +219,21 @@ function showSlide(n) {
                     previousButton.classList.add("none-visible");
                 }
 
+                // определяем какое выбрано окно 
                 let setting = this.parentElement.parentElement;
                 okno_namber = Number(setting.dataset.number_okno);
+
+                // ставим ширину 
+                range_width.value = setting.dataset.width;
+                range_width_v.innerHTML = setting.dataset.width;
+                applyFill(range_width);
+                
+                // ставим высоту
+                range_height.value = setting.dataset.height;
+                range_height_v.innerHTML = setting.dataset.height;
+                applyFill(range_height);
+                 
+                
 
                 //let delite = this.parentElement.parentElement;
                 //close_window.dataset.number_okno = `[data-number_okno="${delite.dataset.number_okno}"]`;
@@ -211,7 +254,7 @@ function showSlide(n) {
             });
         }
         block_even();
-
+        Var_Max();
         
        
 

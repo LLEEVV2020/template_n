@@ -1009,6 +1009,7 @@ $range-label-width: 41px !default;
         & .range-slider__range {
             @include _1200 {
                 width: 17.313em;
+                transform: rotate(180deg);
             }
         }
 
