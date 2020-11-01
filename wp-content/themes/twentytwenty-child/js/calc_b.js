@@ -189,7 +189,8 @@ function showSlide(n) {
                     previousButton.classList.add("none-visible");
                 }
 
-                okno_namber = tris.data-number_okno;
+                let setting = this.parentElement.parentElement;
+                okno_namber = Number(setting.dataset.number_okno);
 
                 //let delite = this.parentElement.parentElement;
                 //close_window.dataset.number_okno = `[data-number_okno="${delite.dataset.number_okno}"]`;
