@@ -13,6 +13,18 @@ nextButton.addEventListener("click", showNextSlide);
 
 let balcony_add_img = document.querySelector('.balcony-add__img');
 let shablon_type = ``;
+let windows_type = `
+    <div class="balcony-payment__check-window dfsb">
+        <div class="balcony-payment__check-img"></div>
+        <div class="balcony-payment__check-info">
+            <div class="balcony-payment__check-img-name balcony-text__m">Остекление
+                <span class="counter-increment">1</span></div>
+            <div class="balcony-payment__check-img-info balcony-text__m">
+                <span>1000*</span><span>1500</span>
+                мм.<br><span>1</span> створка</div>
+        </div>
+    </div>
+`;
 let flag_namber = true;
 let okno_namber = 1;
 let balcony_icon_del;
@@ -181,9 +193,7 @@ function showSlide(n) {
     }
     if(currentSlide === 3){
         stepWrapper.classList.add("balcony-add");
-        //balcony_add_img.append(shablon_type);
-        //
-
+        
         if(flag_namber){
             balcony_add_img.insertAdjacentHTML('beforeEnd', shablon_type);
         } else{
@@ -233,23 +243,17 @@ function showSlide(n) {
                 range_height_v.innerHTML = setting.dataset.height;
                 applyFill(range_height);
                  
-                
-
-                //let delite = this.parentElement.parentElement;
-                //close_window.dataset.number_okno = `[data-number_okno="${delite.dataset.number_okno}"]`;
             });
         
             balcony_icon_copy = document.querySelector(`[data-number_okno="${okno_namber}"] .balcony-icon__copy`);
             balcony_icon_copy.addEventListener('click', function(event) {
                 let copy = this.parentElement.parentElement;
                 
-                //close_window.dataset.number_okno = `[data-number_okno="${delite.dataset.number_okno}"]`;
                 okno_namber++;
                 let copy_clone = copy.cloneNode(true);
                 copy_clone.dataset.number_okno = okno_namber;
                 
                 copy.insertAdjacentElement('afterEnd', copy_clone);
-                //console.log(copy);
                 block_even();
             });
         }
@@ -267,6 +271,12 @@ function showSlide(n) {
         stepWrapper.classList.add("balcony-payment");
         nextButton.classList.add("none-visible");
 
+        let b_check_wrapper = document.querySelector(`.balcony-payment__check-wrapper`);
+        let b_img_box = document.querySelectorAll(".balcony-img__box");
+        
+        for (var i = 0; i < b_img_box.length; i++) {
+            
+        }
     }
 
 }

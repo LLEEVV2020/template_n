@@ -1382,6 +1382,15 @@ input::-moz-focus-outer {
 
     &__check-window {
         margin-bottom: 1.63em;
+        
+    }
+    
+    &__check-wrapper{
+        counter-reset: items;
+        .counter-increment::before{
+            content: counter(items);
+            counter-increment: items;
+        }
     }
 
     &__check-img {
