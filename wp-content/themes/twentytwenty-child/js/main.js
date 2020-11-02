@@ -595,5 +595,38 @@ $(document).ready(function () {
     checkWidth2(); // проверит при изменении размера окна клиента
   });
 
+    // Скрипт для слайдера блока cold-frameless-glazing
+    $('.cold-frameless-glazing__slider').owlCarousel({
+      items: 1,
+      dots: true,
+      margin: 55,
+      dotsClass: ['pagination-box'],
+      dotClass: ['pagination'],
+      autoHeight:true,
+      responsive: {
+        1200: {
+          margin: 30,
+          items: 2,
+          dots: false,
+          mouseDrag: false,
+          touchDrag: false,
+        }
+      }
+    });
+    
+    // Скрипт для слайдера блока cold-frameless-glazing__img-slider
+    $('.cold-frameless-glazing__img-slider').owlCarousel({
+      items: 1,
+      mouseDrag: false,
+      touchDrag: false,
+      dots: true,
+      margin: 55,
+      loop: true,
+      dotsClass: ['pagination-box'],
+      dotClass: ['pagination'],
+      navContainerClass: ['navigation'],
+      navClass: ['navigation-left', 'navigation-right']
+    });
+
 });
 
