@@ -13,18 +13,7 @@ nextButton.addEventListener("click", showNextSlide);
 
 let balcony_add_img = document.querySelector('.balcony-add__img');
 let shablon_type = ``;
-let windows_type = `
-    <div class="balcony-payment__check-window dfsb">
-        <div class="balcony-payment__check-img"></div>
-        <div class="balcony-payment__check-info">
-            <div class="balcony-payment__check-img-name balcony-text__m">Остекление
-                <span class="counter-increment">1</span></div>
-            <div class="balcony-payment__check-img-info balcony-text__m">
-                <span>1000*</span><span>1500</span>
-                мм.<br><span>1</span> створка</div>
-        </div>
-    </div>
-`;
+
 let flag_namber = true;
 let okno_namber = 1;
 let balcony_icon_del;
@@ -39,6 +28,11 @@ let range_width_v = document.querySelector('.range_width_value');
 // узнать высоту
 let range_height = document.querySelector('.range_height');
 let range_height_v = document.querySelector('.range_height_value');
+
+let complex_form = document.querySelector('[name="complex-form"]');
+let material_name = document.querySelectorAll('[name="material-name"]');
+let material_name_value = "";
+let finishing = document.querySelector('[name="finishing"]');
 
 // перелистыватель вперёд ( кнопка "вперёд")
 function showNextSlide() {
@@ -121,6 +115,12 @@ function showSlide(n) {
             data_kolvo_stvorok = i_item.value;
         }
     }
+    // узнаём какой материал выбран
+    for (let i_item of material_name) {
+        if(i_item.checked){
+            material_name_value = i_item.value;
+        }
+    }
 
 
     shablon_type = `
@@ -128,7 +128,10 @@ function showSlide(n) {
             data-number_okno="${okno_namber}"
             data-kolvo_stvorok="${data_kolvo_stvorok}"
             data-width="${range_width.value}"
-            data-height="${range_height.value}">
+            data-height="${range_height.value}"
+            data-complex_form="${complex_form.checked}"
+            data-finishing="${finishing.checked}"
+            data-material="${material_name_value}">
             <div class="balcony-img">
                 <span data-tooltip="удалить окно"
                     class="balcony-icon balcony-icon__del open-modal-1" data-modal="#modal-close">
@@ -242,6 +245,19 @@ function showSlide(n) {
                 range_height.value = setting.dataset.height;
                 range_height_v.innerHTML = setting.dataset.height;
                 applyFill(range_height);
+
+                complex_form.checked = JSON.parse(setting.dataset.complex_form);
+                finishing.checked = JSON.parse(setting.dataset.finishing);
+                material_name_value = setting.dataset.material;
+
+                for (let i_item of material_name) {
+                    if(i_item.value == setting.dataset.material ){
+                        material_name.checked = true;
+                    }
+                }
+
+                material_name_value = setting.dataset.material;
+                
                  
             });
         
@@ -272,10 +288,46 @@ function showSlide(n) {
         nextButton.classList.add("none-visible");
 
         let b_check_wrapper = document.querySelector(`.balcony-payment__check-wrapper`);
+        b_check_wrapper.innerHTML = "";
         let b_img_box = document.querySelectorAll(".balcony-img__box");
+
         
         for (var i = 0; i < b_img_box.length; i++) {
+            let local_finishing;
+            if(b_img_box[i].dataset.finishing !== "false"){
+                local_finishing = b_img_box[i].dataset.finishing;
+            } else{
+                local_finishing = "";
+            }
+            let local_complex_form;
+            if(b_img_box[i].dataset.complex_form !== "false"){
+                local_complex_form = b_img_box[i].dataset.complex_form;
+            } else {
+                local_complex_form = "";
+            }
             
+
+            let windows_type = `
+                <div class="balcony-payment__check-window dfsb">
+                    <div class="balcony-payment__check-img"></div>
+                    <div class="balcony-payment__check-info">
+                        <div class="balcony-payment__check-img-name balcony-text__m">Остекление
+                            <span class="counter-increment"></span></div>
+                        <div class="balcony-payment__check-img-info balcony-text__m">
+                            <span>${b_img_box[i].dataset.width}*</span><span>${b_img_box[i].dataset.height}</span>
+                            мм.<br><span>${b_img_box[i].dataset.kolvo_stvorok}</span> створка</div>
+                    </div>
+                </div>
+                <div class="balcony-payment__box-text">
+                    <p class="balcony-text__m">Доп. опции:
+                        <span>${b_img_box[i].dataset.material}</span>
+                        <span>${local_finishing}</span>
+                        <span>${local_complex_form}</span>
+                    </p>
+                </div>
+            `;
+
+            b_check_wrapper.insertAdjacentHTML('beforeEnd', windows_type);
         }
     }
 

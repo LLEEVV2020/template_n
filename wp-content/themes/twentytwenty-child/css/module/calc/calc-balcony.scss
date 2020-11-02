@@ -1270,6 +1270,10 @@ input::-moz-focus-outer {
         }
     }
 
+    &__box-text{
+        transform: translateY(-1em);
+    }
+
     &__input {
         padding: 0.625em 0 0.625em 4em;
         max-width: 14.31em;
