@@ -628,5 +628,32 @@ $(document).ready(function () {
       navClass: ['navigation-left', 'navigation-right']
     });
 
+      // Скрипт для слайдера блока balcony-alignment
+  function checkWidth2() {
+    var windowWidth = $('body').innerWidth(),
+      elem = $(".balcony-alignment__slider");
+    if (windowWidth < 768) {
+
+      elem.addClass('owl-carousel');
+
+      $('.balcony-alignment__slider').owlCarousel({
+        items: 1,
+        dots: true,
+        margin: 55,
+        dotsClass: ['pagination-box'],
+        dotClass: ['pagination'],
+      });
+    }
+    else {
+      elem.trigger('destroy.owl.carousel').removeClass('owl-carousel owl-loaded');
+    }
+  }
+
+  checkWidth2(); // проверит при загрузке страницы
+
+  $(window).resize(function () {
+    checkWidth2(); // проверит при изменении размера окна клиента
+  });
+
 });
 

@@ -1,0 +1,98 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.balcony-alignment {
+    /* .balcony-alignment__wrapper */
+
+    &__wrapper {
+        text-align: center;
+    }
+
+    /* .balcony-alignment__slider */
+
+    &__slider {
+        margin-bottom: 2.1em;
+
+        .pagination.active {
+            background-color: $blue;
+        }
+
+        @include _768 {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 0;
+        }
+    }
+
+    /* .balcony-alignment__item */
+
+    &__item {
+        @include _768 {
+            margin-bottom: 2.2em;
+        }
+
+        @include _1200 {
+            max-width: 53.4rem;
+            margin-bottom: 3.8em;
+        }
+    }
+
+    /* .balcony-alignment__item-title */
+
+    &__item-title {
+        padding: 0.5em 4.5em 0.3em;
+        line-height: 1.2em;
+        background-color: $yellow;
+        border-radius: 2.3em 2.3em 0 0;
+
+        @include _768 {
+            max-width: 53.4rem;
+            margin: 0 auto;
+            padding: 0.9em 7.5em 0.7em;
+        }
+
+        @include _1200 {
+            padding: 0.6em 5.1em 0.4em;
+
+        }
+    }
+
+    /* .balcony-alignment__img */
+
+    &__img {
+        width: 33.3rem;
+        height: 24.2rem;
+        margin: 0 auto;
+        border-radius: 0 0 2.3em 2.3em;
+        margin-bottom: 1.7em;
+
+        @include _768 {
+            width: 53.4rem;
+            height: 28.7rem;
+            margin-bottom: 1.3em;
+        }
+
+        @include _1200 {
+            margin-bottom: 1.9em;
+        }
+    }
+
+    /* .balcony-alignment__text */
+
+    &__text {
+        @include _768 {
+            padding: 0 3.5em;
+        }
+
+        @include _1200 {
+            text-align: left;
+            padding: 0;
+        }
+    }
+}
