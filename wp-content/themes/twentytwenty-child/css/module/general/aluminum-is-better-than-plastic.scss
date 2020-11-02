@@ -1,0 +1,147 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.aluminum-is-better-than-plastic {
+    /* .aluminum-is-better-than-plastic__title */
+
+    &__title {
+        text-align: center;
+        margin-bottom: 1.4em;
+
+        @include _768 {
+            margin-bottom: 1.2em;
+        }
+
+        @include _1200 {
+            margin-bottom: 1em;
+        }
+    }
+
+    /* .aluminum-is-better-than-plastic__inner */
+
+    &__inner {
+        @include _1200 {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    /* .aluminum-is-better-than-plastic__item */
+
+    &__item {
+        position: relative;
+        padding-left: 5.4em;
+        margin-bottom: 1.35em;
+
+        @include _768 {
+            padding-left: 8.3em;
+            margin-bottom: 2.55em;
+        }
+
+        @include _1200 {
+            padding-left: 0;
+            text-align: center;
+            max-width: 21em;
+            margin-bottom: 0;
+            padding-top: 11.45em;
+            line-height: 1.4em;
+        }
+    }
+
+    /* .aluminum-is-better-than-plastic__item-title */
+
+    &__item-title {
+        margin-bottom: 0.6em;
+    }
+
+    /* .aluminum-is-better-than-plastic__icon */
+
+    &__icon {
+        position: absolute;
+        height: 7rem;
+        width: 7rem;
+        background-color: $yellow;
+        border-radius: 50%;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @include _768 {
+            height: 8rem;
+            width: 8rem;
+            left: 0.6em;
+        }
+
+        @include _1200 {
+            width: 16.5rem;
+            height: 16.5rem;
+            top: 0;
+            transform: none;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+        }
+
+        &--1 {
+            background-image: url(/wp-content/themes/twentytwenty-child/img/aluminum-is-better-than-plastic-1.webp);
+            background-size: 2.5em;
+
+            @include _768 {
+                background-size: 3.1em;
+            }
+
+            @include _1200 {
+                background-size: 6.8em;
+            }
+        }
+
+        &--2 {
+            background-image: url(/wp-content/themes/twentytwenty-child/img/aluminum-is-better-than-plastic-2.webp);
+            background-size: 2.5em;
+
+            @include _768 {
+                background-size: 3.1em;
+            }
+
+            @include _1200 {
+                background-size: 6.8em;
+            }
+        }
+
+        &--3 {
+            background-image: url(/wp-content/themes/twentytwenty-child/img/aluminum-is-better-than-plastic-3.webp);
+            background-size: 1.7em;
+
+            @include _768 {
+                background-size: 2.5em;
+            }
+
+            @include _1200 {
+                background-size: 5em;
+            }
+        }
+    }
+
+    /* .aluminum-is-better-than-plastic__text */
+
+    &__text {
+        font-size: 1rem;
+        margin-right: -1em;
+
+        @include _768 {
+            font-size: 1.4rem;
+            margin-right: 0;
+        }
+
+        @include _1200 {
+            line-height: 1.1em;
+        }
+    }
+}
