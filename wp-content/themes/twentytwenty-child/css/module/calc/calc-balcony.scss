@@ -27,8 +27,10 @@ input[type="checkbox"] {
 
 .calc-balcony {
     position: relative;
-    min-height: 100vh;
-
+    @media ( max-width: 1199px ) {
+        min-height: 100vh;
+    }
+    
     &__buttons {
         box-shadow: 3px 4px 23px rgba(0, 0, 0, 0.25);
         width: 100%;

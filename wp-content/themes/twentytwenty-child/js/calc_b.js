@@ -333,7 +333,10 @@ function showSlide(n) {
 
 }
 
-const myQuestions = [
+// Вызываем первый экран
+showSlide(currentSlide);
+
+/*const myQuestions = [
     {
         class: "balcony-home",
     },
@@ -354,6 +357,4 @@ const myQuestions = [
     },
 
 ];
-
-// Вызываем первый экран
-showSlide(currentSlide);
+*/
