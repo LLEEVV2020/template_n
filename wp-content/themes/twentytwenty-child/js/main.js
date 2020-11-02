@@ -629,7 +629,7 @@ $(document).ready(function () {
     });
 
       // Скрипт для слайдера блока balcony-alignment
-  function checkWidth2() {
+  function checkWidth3() {
     var windowWidth = $('body').innerWidth(),
       elem = $(".balcony-alignment__slider");
     if (windowWidth < 768) {
@@ -649,10 +649,10 @@ $(document).ready(function () {
     }
   }
 
-  checkWidth2(); // проверит при загрузке страницы
+  checkWidth3(); // проверит при загрузке страницы
 
   $(window).resize(function () {
-    checkWidth2(); // проверит при изменении размера окна клиента
+    checkWidth3(); // проверит при изменении размера окна клиента
   });
 
 });
