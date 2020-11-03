@@ -29,6 +29,10 @@
             display: flex;
             justify-content: space-between;
         }
+
+        &--center {
+            justify-content: center;
+        }
     }
 
     /* .pine-window-models__item */
