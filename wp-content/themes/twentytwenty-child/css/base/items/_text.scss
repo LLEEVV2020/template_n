@@ -1,3 +1,5 @@
+@import '../../base/all/var';
+
 .text-along {
     font-size: 1.125em;
     font-weight: 900;
@@ -25,7 +27,14 @@
 
 .video-reviews-company-text,
 .video-reviews-company-work-text,
-.windows-pine-text {
+.windows-pine-text,
+.windows-pine-text-2 {
+    .text {
+        .orange {
+            font-weight: 700;
+        }
+    }
+
     @media (min-width: 768px) {
         .text {
             text-align: center;
@@ -143,7 +152,7 @@
 
     @media (min-width: 960px) {
         .container {
-            width: calc(100% - 7rem);
+            width: calc(100% - 2.8rem);
         }
     }
 
@@ -155,3 +164,64 @@
         }
     }
 } 
+
+.windows-pine-text-2 {
+    .container {
+        width: calc(100% - 2.8rem);
+    }
+
+    .text {
+        margin-bottom: 1.163em;
+
+        &-link {
+            color: inherit;
+
+            &--color {
+                color: $orange;
+                font-weight: 700;
+            }
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        .container {
+            width: calc(100% - 6.3rem);
+        }
+
+        .text {
+            margin-bottom: 0.463em;
+
+            &-block {
+                display: block;
+                margin-top: 1.7em;
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .container {
+            width: calc(100% - 6rem);
+        }
+
+        .text {
+            text-align: left;
+            font-size: 1.5em;
+            margin-bottom: 0.763em;
+
+            &-block {
+                display: inline;
+            }
+
+            &-width {
+                max-width: 40em;
+                margin-left: 0;
+                margin-right: 0;
+                margin-top: 1.4em;
+            }
+        }
+    }
+}
