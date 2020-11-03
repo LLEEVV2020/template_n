@@ -22,3 +22,59 @@
         font-size: 1.5em;
     }
 }
+
+.video-reviews-company-text {
+    .container {
+        width: calc(100% - 3.5rem);
+    }
+
+    .title {
+        max-width: 11em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0.7em;
+    }
+
+    .text {
+        line-height: 1.2;
+        margin-bottom: 0;
+    }
+
+    @media (min-width: 768px) {
+        .container {
+            width: calc(100% - 4.8rem);
+        }
+
+        .title {
+            max-width: 16em;
+            margin-bottom: 1em;
+        }
+
+        .text {
+            text-align: center;
+            font-size: 1.6rem;
+        }
+    }
+
+    @media (min-width: 960px) {
+        .container {
+            width: calc(100% - 8rem);
+        }
+
+        .title {
+            font-size: 3rem;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .title {
+            max-width: none;
+            margin-bottom: 0.6em;
+            font-size: 4rem;
+        }
+
+        .text {
+            font-size: 1.5em;
+        }
+    }
+}
