@@ -168,6 +168,10 @@
     &__material {
         text-align: left;
         margin-bottom: 0.3em;
+
+        span {
+            word-spacing: 0.7em;
+        }
     }
 
     /* .cold-frameless-glazing__price */
