@@ -24,6 +24,24 @@
 }
 
 .video-reviews-company-text,
+.video-reviews-company-work-text,
+.windows-pine-text {
+    @media (min-width: 768px) {
+        .text {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    @media (min-width: 960px) {
+        .container {
+            width: calc(100% - 8rem);
+        }
+    }
+}
+
+.video-reviews-company-text,
 .video-reviews-company-work-text {
     .title {
         margin-left: auto;
@@ -42,16 +60,11 @@
         }
 
         .text {
-            text-align: center;
             line-height: 1.1;
         }
     }
 
     @media (min-width: 960px) {
-        .container {
-            width: calc(100% - 8rem);
-        }
-
         .title {
             font-size: 3rem;
         }
@@ -116,3 +129,29 @@
         }
     }
 }
+
+.windows-pine-text {
+    @media (min-width: 768px) {
+        .container {
+            width: calc(100% - 4.9rem);
+        }
+
+        .text {
+            font-size: 1.6rem;
+        }
+    }
+
+    @media (min-width: 960px) {
+        .container {
+            width: calc(100% - 7rem);
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .text {
+            font-size: 2.4rem;
+            line-height: 1.2;
+            max-width: 47.2em;
+        }
+    }
+} 
