@@ -396,7 +396,6 @@
         min-width: 33.4rem;
         display: block;
         margin: 0 auto;
-        color: #000;
         text-decoration: none;
         background-color: #fff;
         border-radius: 0.3em;
@@ -412,7 +411,6 @@
         @include _1200 {
             font-size: 1.9rem;
             width: 100%;
-            color: #000;
             margin-top: 0.4em;
             letter-spacing: 0.025em;
         }
