@@ -221,3 +221,13 @@
         }
     }
 }
+
+.wide-range-of-colors {
+    &--text {
+        margin-bottom: 1em;
+        text-align: center;
+        @media (min-width: 768px) {
+            text-align: left;
+        }
+    }
+}
