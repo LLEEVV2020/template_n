@@ -180,6 +180,13 @@
             width: 100%;
             padding-top: 2.7em;
         }
+
+        &--top {
+            @include _768 {
+                padding-top: 0;
+
+            }
+        }
     }
 
     /* .glazing-bath__subtitle */
@@ -217,6 +224,13 @@
         @include _1200 {
             font-size: 2.4rem;
             margin-bottom: 1.5em;
+        }
+
+        &--top {
+            @include _768 {
+                margin-top: 0;
+
+            }
         }
     }
 
@@ -399,7 +413,6 @@
         min-width: 33.4rem;
         display: block;
         margin: 0 auto;
-        color: #000;
         text-decoration: none;
         background-color: #fff;
         border-radius: 0.3em;
@@ -415,7 +428,6 @@
         @include _1200 {
             font-size: 1.9rem;
             width: 100%;
-            color: #000;
             margin-top: 0.4em;
             letter-spacing: 0.025em;
         }
