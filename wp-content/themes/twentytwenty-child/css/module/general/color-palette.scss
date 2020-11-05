@@ -73,7 +73,7 @@
         line-height: 1.25;
     }
 
-    &-pine-windows {
+    &-windows {
         .container {
             width: 100%;
             max-width: none;
@@ -250,7 +250,6 @@
 
         &__image {
             grid-area: img;
-            // max-width: 31.5em;
             max-width: none;
             height: 100%;
             object-fit: cover;
@@ -306,5 +305,16 @@
     @media (min-width: 1600px) {
         max-width: 88em;
         grid-template-columns: 38em 1fr;
+    }
+
+    &-oak-windows {
+        @media (min-width: 1200px) {
+            .color-palette {
+
+                &__content {
+                    max-width: 37em;
+                }
+            }
+        }
     }
 }
