@@ -231,3 +231,14 @@
         }
     }
 }
+
+.windows-larch-text {
+    & .text-link {
+        color: inherit;
+        
+        &:hover {
+            font-weight: 700;
+            color: $orange;
+        }
+    }
+}
