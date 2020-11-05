@@ -18,7 +18,6 @@
 
     &__inner {
         display: table-cell;
-        vertical-align: bottom;
     }
 
     &__content {
@@ -137,6 +136,10 @@
 
 .holz-gut-modal {
     .popup {
+        &__inner {
+            vertical-align: bottom;
+        }
+
         &__content {
             padding: 3.75em 1.250em 3.438em;
         }
@@ -376,6 +379,150 @@
         &__text {
             font-size: 1.5em;
             letter-spacing: 0.03em;
+        }
+    }
+}
+
+.reviews-popup {
+    .popup {
+        background-color: $white;
+
+        &__inner {
+            vertical-align: middle;
+        }
+
+        &__content {
+            position: static;
+        }
+    }
+
+    .reviews-windows {
+        position: relative;
+        max-width: 20em;
+        margin-left: auto;
+        margin-right: auto;
+
+        &__slider {
+            width: 100%;
+        }
+
+        .owl-carousel img {
+            height: 13em;
+            object-fit: cover;
+        }
+        
+        &__button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            width: 1.875em;
+            height: 1.875em;
+            border: none;
+            border-radius: 50%;
+            background-color: rgba(255, 230, 0, 0.5);
+            cursor: pointer;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border-style: solid;
+                border-width: 7.5px 0 7.5px 10px;
+                border-color: transparent transparent transparent $white;
+            }
+        }
+
+        @media (min-width: 500px) {
+            max-width: 26em;
+
+            .owl-carousel img {
+                height: 16em;
+            }
+        }
+
+        @media (min-width: 600px) {
+            max-width: 30em;
+
+            .owl-carousel img {
+                height: 20em;
+            }
+
+            .navigation {
+                &-left,
+                &-right {
+                    width: 2.4rem;
+                    height: 2.4rem;
+                    background-color: $yellow;
+                }
+
+                &-left {
+                    left: -3.375em;
+                    background-image: url("data:image/svg+xml,%0A%3Csvg width='14' height='12' viewBox='0 0 20 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.97266 9.31689C9.5332 8.87744 9.5332 8.14502 9.97266 7.65674L16.6133 1.01611C17.1016 0.57666 17.834 0.57666 18.2734 1.01611L19.3965 2.13916C19.8359 2.62744 19.8359 3.35986 19.3965 3.79932L14.6602 8.53564L19.3965 13.2231C19.8359 13.6626 19.8359 14.395 19.3965 14.8833L18.2734 15.9575C17.834 16.4458 17.1016 16.4458 16.6133 15.9575L9.97266 9.31689ZM0.597656 7.65674L7.23828 1.01611C7.72656 0.57666 8.45898 0.57666 8.89844 1.01611L10.0215 2.13916C10.4609 2.57861 10.4609 3.35986 10.0215 3.79932L5.28516 8.48682L10.0215 13.2231C10.4609 13.6626 10.4609 14.395 10.0215 14.8833L8.89844 15.9575C8.45898 16.4458 7.67773 16.4458 7.23828 15.9575L0.597656 9.31689C0.158203 8.87744 0.158203 8.14502 0.597656 7.65674Z' fill='white'/%3E%3C/svg%3E%0A");
+                }
+
+                &-right {
+                    right: -3.375em;
+                    background-image: url("data:image/svg+xml,%0A%3Csvg width='14' height='12' viewBox='0 0 20 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.0273 9.31689C10.4668 8.87744 10.4668 8.14502 10.0273 7.65674L3.38672 1.01611C2.89844 0.57666 2.16602 0.57666 1.72656 1.01611L0.603516 2.13916C0.164062 2.62744 0.164062 3.35986 0.603516 3.79932L5.33984 8.53564L0.603516 13.2231C0.164062 13.6626 0.164062 14.395 0.603516 14.8833L1.72656 15.9575C2.16602 16.4458 2.89844 16.4458 3.38672 15.9575L10.0273 9.31689ZM19.4023 7.65674L12.7617 1.01611C12.2734 0.57666 11.541 0.57666 11.1016 1.01611L9.97852 2.13916C9.53906 2.57861 9.53906 3.35986 9.97852 3.79932L14.7148 8.48682L9.97852 13.2231C9.53906 13.6626 9.53906 14.395 9.97852 14.8833L11.1016 15.9575C11.541 16.4458 12.3223 16.4458 12.7617 15.9575L19.4023 9.31689C19.8418 8.87744 19.8418 8.14502 19.4023 7.65674Z' fill='white'/%3E%3C/svg%3E%0A");
+                }
+            }
+
+            &__button {
+                width: 2.875em;
+                height: 2.875em;
+            }
+        }
+
+        @media (min-width: 960px) {
+            max-width: 40em;
+
+            .owl-carousel img {
+                height: 25em;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            max-width: 62.39em;
+
+            .owl-carousel img {
+                height: 38.20em;
+            }
+
+            .navigation {
+                &-left,
+                &-right {
+                    width: 2.5em;
+                    height: 2.5em;
+                }
+
+                &-left {
+                    background-image: url("data:image/svg+xml,%0A%3Csvg width='20' height='17' viewBox='0 0 20 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.97266 9.31689C9.5332 8.87744 9.5332 8.14502 9.97266 7.65674L16.6133 1.01611C17.1016 0.57666 17.834 0.57666 18.2734 1.01611L19.3965 2.13916C19.8359 2.62744 19.8359 3.35986 19.3965 3.79932L14.6602 8.53564L19.3965 13.2231C19.8359 13.6626 19.8359 14.395 19.3965 14.8833L18.2734 15.9575C17.834 16.4458 17.1016 16.4458 16.6133 15.9575L9.97266 9.31689ZM0.597656 7.65674L7.23828 1.01611C7.72656 0.57666 8.45898 0.57666 8.89844 1.01611L10.0215 2.13916C10.4609 2.57861 10.4609 3.35986 10.0215 3.79932L5.28516 8.48682L10.0215 13.2231C10.4609 13.6626 10.4609 14.395 10.0215 14.8833L8.89844 15.9575C8.45898 16.4458 7.67773 16.4458 7.23828 15.9575L0.597656 9.31689C0.158203 8.87744 0.158203 8.14502 0.597656 7.65674Z' fill='white'/%3E%3C/svg%3E%0A");
+                }
+
+                &-right {
+                    background-image: url("data:image/svg+xml,%0A%3Csvg width='20' height='17' viewBox='0 0 20 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.0273 9.31689C10.4668 8.87744 10.4668 8.14502 10.0273 7.65674L3.38672 1.01611C2.89844 0.57666 2.16602 0.57666 1.72656 1.01611L0.603516 2.13916C0.164062 2.62744 0.164062 3.35986 0.603516 3.79932L5.33984 8.53564L0.603516 13.2231C0.164062 13.6626 0.164062 14.395 0.603516 14.8833L1.72656 15.9575C2.16602 16.4458 2.89844 16.4458 3.38672 15.9575L10.0273 9.31689ZM19.4023 7.65674L12.7617 1.01611C12.2734 0.57666 11.541 0.57666 11.1016 1.01611L9.97852 2.13916C9.53906 2.57861 9.53906 3.35986 9.97852 3.79932L14.7148 8.48682L9.97852 13.2231C9.53906 13.6626 9.53906 14.395 9.97852 14.8833L11.1016 15.9575C11.541 16.4458 12.3223 16.4458 12.7617 15.9575L19.4023 9.31689C19.8418 8.87744 19.8418 8.14502 19.4023 7.65674Z' fill='white'/%3E%3C/svg%3E%0A");
+                }
+            }
+
+            &__button {
+                width: 4.313em;
+                height: 4.313em;
+
+                &:before {
+                    border-width: 13.5px 0 13.5px 25px;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 960px) {
+        .btn-close {
+            top: 2.25em;
+            right: 2.25em;
+            font-size: 1.1rem;
         }
     }
 }

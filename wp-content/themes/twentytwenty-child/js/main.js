@@ -666,5 +666,22 @@ $(document).ready(function () {
     // autoHeight: true,
   });
 
+  $('.reviews-windows__slider').owlCarousel({
+    items: 1,
+    dots: true,
+    dotsClass: ['pagination-box'],
+    dotClass: ['pagination'],
+    nav: false,
+    responsive: {
+      768: {
+        dots: false,
+        nav: true,
+        navText: [''],
+        navContainerClass: ['navigation'],
+        navClass: ['navigation-left', 'navigation-right']
+      }
+    }
+  });
+
 });
 
