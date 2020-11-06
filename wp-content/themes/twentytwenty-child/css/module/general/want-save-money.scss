@@ -398,4 +398,45 @@
             font-size: 1.188em;
         }
     }
+
+    &--ceilings {
+        .want-save-money {
+            &__manufacture {
+                &-title {
+                    margin-bottom: 0.875em;
+                }
+
+                &-we-ourselves {
+                    max-width: 13em;
+                    margin-bottom: 0.975em;
+                } 
+            }
+
+            &__free {
+                margin-bottom: 3em;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .want-save-money {
+                &__manufacture {
+                    &-we-ourselves {
+                        margin-bottom: 1.575em;
+                    }
+                }
+
+                &__free {
+                    margin-bottom: 6.2em;
+                }
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .want-save-money {
+                &__free {
+                    margin-bottom: 6em;
+                }
+            }
+        }
+    }
 }
