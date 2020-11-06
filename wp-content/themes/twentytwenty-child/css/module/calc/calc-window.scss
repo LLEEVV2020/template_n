@@ -1,4 +1,5 @@
 @import "../../base/all/var";
+@import "../../base/all/mixin";
 
 input {
     -webkit-appearance: none;
@@ -26,6 +27,12 @@ input[type="radio"] {
     max-width: 41px;
 }
 
+.title-none {
+    @include _max768 {
+        display: none;
+    }
+}
+
 .none {
     display: none !important;
 }
@@ -43,9 +50,9 @@ input[type="radio"] {
     background-color: #e8e8e8;
 }
 
-.blocking{
+.blocking {
     pointer-events: none;
-    opacity: .52;
+    opacity: 0.52;
 }
 
 .icon {
@@ -364,40 +371,39 @@ input[type="radio"] {
     }
 
     /* calc-window__list-label */
-    label[class*="calc-window_icon"]{
-        &::before, &::after{
+    label[class*="calc-window_icon"] {
+        &::before,
+        &::after {
             content: "";
             display: block;
         }
-        &::before{
-            
+        &::before {
             height: 8.6rem;
             width: 8.6rem;
             background-color: $yellow;
             border-radius: 50%;
             margin-bottom: 0.563em;
-            
+
             @media (min-width: 768px) {
                 height: 15rem;
                 width: 15rem;
             }
-    
+
             @media (min-width: 1200px) {
                 height: 23.6rem;
                 width: 23.6rem;
-            } 
+            }
         }
-        &::after{
+        &::after {
             background-repeat: no-repeat;
             background-image: url(/wp-content/themes/twentytwenty-child/img/calc_sprites.webp);
-            background-size: 24.500em 20.750em;
+            background-size: 24.5em 20.75em;
             position: absolute;
             top: 2.8em;
             left: 50%;
             transform: translateX(-50%);
-            font-size: .37em;
+            font-size: 0.37em;
         }
-        
     }
     &__list-label {
         cursor: pointer;
@@ -406,16 +412,14 @@ input[type="radio"] {
         display: flex;
         align-items: center;
         flex-direction: column;
-        &.calc-window_icon--1{
-            &::after{
+        &.calc-window_icon--1 {
+            &::after {
                 background-position-x: 15.918%;
                 background-position-y: 18.09%;
                 width: 9.188em;
                 height: 8.313em;
-
             }
         }
-        
     }
 
     /* .calc-window__buttons */
@@ -1036,7 +1040,7 @@ input[type="radio"] {
 
     &__block-add {
         pointer-events: none;
-        margin-top: .2em;
+        margin-top: 0.2em;
         opacity: 0.3;
     }
 
@@ -1136,7 +1140,7 @@ input[type="radio"] {
         }
     }
 
-        /* .calc-window__block-radio-lable */
+    /* .calc-window__block-radio-lable */
 
     &__block-radio-lable {
         display: block;
@@ -1162,7 +1166,6 @@ input[type="radio"] {
     /* .calc-window__block-radio */
 
     &__block-radio {
-
         &:checked + .calc-window__block-radio-lable::before {
             background-color: $orange;
         }
@@ -1686,11 +1689,6 @@ input[type="radio"] {
         }
     }
 
-    /* .calc-window-seven__box */
-
-    &__box {
-    }
-
     /* .calc-window-seven__box-info */
 
     &__box-info {
@@ -2098,18 +2096,18 @@ input[type="radio"] {
         & .form-contacts {
             &__box {
                 max-width: 100%;
-        
+
                 &::after {
                     left: 6em;
                 }
                 &::before {
                     left: 4em;
                 }
-        
+
                 @media (min-width: 768px) {
                     max-width: 100%;
                     width: 16.88em;
-        
+
                     &::after {
                         left: 2.7em;
                     }
@@ -2121,7 +2119,7 @@ input[type="radio"] {
                     max-width: 100%;
                     width: 16.88em;
                     min-width: 16.88em;
-        
+
                     &::after {
                         left: 2.7em;
                         font-size: 1.7rem;
@@ -2132,11 +2130,11 @@ input[type="radio"] {
                     }
                 }
             }
-        
+
             &__input {
                 padding: 0.625em 0 0.625em 4em;
                 max-width: 14.31em;
-        
+
                 @media (min-width: 768px) {
                     max-width: 100%;
                 }
@@ -2149,7 +2147,7 @@ input[type="radio"] {
                 font-size: 0.875em;
                 min-height: 2.858em;
                 max-width: 16.358em;
-        
+
                 @media (min-width: 768px) {
                     max-width: 19.286em;
                     margin-left: 1em;
@@ -2159,7 +2157,6 @@ input[type="radio"] {
                     margin-left: 1em;
                 }
             }
-        
         }
     }
 
