@@ -231,6 +231,14 @@
 
     // popup
     .popup {
-        display: none;
+        background-color: $white;
+
+        &__inner {
+            vertical-align: middle;
+        }
+
+        &__content {
+            position: static;
+        }
     }
 }

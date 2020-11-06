@@ -1,7 +1,6 @@
 @import '../../base/all/var';
 
-.sale-without-intermediaries {
-
+.payment-after-installation {
     .container {
         width: calc(100% - 3rem);
     }
@@ -246,6 +245,74 @@
             min-height: 3.125em;
         }
 
+    }
+
+    &--ceiling {
+        background-color: #F9F9F9;
+
+        .payment-after-installation {
+            &__info {
+                margin-bottom: 1.713em;
+            }
+
+            &__list {
+                max-width: 20em;
+                margin-bottom: 0.488em;
+            }
+
+            &__icon {
+                width: 5.438em;
+
+                &--2 {
+                    width: 4.638em;
+                    margin-right: 0.6em;
+                }
+            }
+        }
+
+        @media (min-width: 768px) {
+            .payment-after-installation {
+                &__list {
+                    max-width: 44em;
+                }
+
+                &__icon {
+                    width: 8.338em;
+
+                    &--2 {
+                        width: 6.938em;
+                        margin-right: auto;
+                    }
+                }
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .payment-after-installation {
+                &__info {
+                    margin-bottom: 2.013em;
+                }
+
+                &__list {
+                    max-width: 68em;
+                    margin-bottom: 2.088em;
+                }
+
+                &__icon {
+                    width: 13.338em;
+                    margin-bottom: 1.413em;
+                }
+                
+                &__text {
+                    max-width: 12em;
+                }
+            }
+
+            .button {
+                min-width: 19.5em;
+                min-height: 2.725em;
+            }
+        }
     }
 
 }

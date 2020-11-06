@@ -681,7 +681,7 @@ $(document).ready(function () {
         navClass: ['navigation-left', 'navigation-right']
       }
     }
-  });
+  });  
 
 });
 

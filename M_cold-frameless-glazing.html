@@ -17,6 +17,10 @@
         <link rel="stylesheet"
             href="/wp-content/themes/twentytwenty-child/css/module/general/cold-frameless-glazing.css">
 
+        <!-- frontend Дима  -->                            
+        <link rel="stylesheet" href="/wp-content/themes/twentytwenty-child/css/module/general/photo-gallery.css">
+        <link rel="stylesheet" href="/wp-content/themes/twentytwenty-child/css/module/general/popups.css">
+
         <div class="container">
 
             <div class="cold-frameless-glazing__wrapper indent container-wrapper">
@@ -47,7 +51,7 @@
                                     src="/wp-content/themes/twentytwenty-child/img/cold-frameless-glazing-slid-1-4.webp"
                                     alt="slid-1-4">
                             </div>
-                            <a class="cold-frameless-glazing__modal" href="#"></a>
+                            <a id="coldGlazingModal" class="cold-frameless-glazing__modal" href="#"></a>
                         </div>
 
                         <div class="cold-frameless-glazing__material t-16-20-24 fw7">
@@ -83,7 +87,7 @@
                                     src="/wp-content/themes/twentytwenty-child/img/cold-frameless-glazing-slid-2-4.webp"
                                     alt="slid-2-4">
                             </div>
-                            <a class="cold-frameless-glazing__modal" href="#"></a>
+                            <a id="framelessGlazingModal" class="cold-frameless-glazing__modal" href="#"></a>
                         </div>
                         <div class="cold-frameless-glazing__material t-16-20-24 fw7">
                             Материал: <span class="fw4">Алюминий</span>
@@ -100,15 +104,14 @@
 
         </div>
 
-        <div class="popup">
+
+        <!-- Модальное окно для холодного остекления -->
+        <div class="popup popup--cold-glazing">
             <div class="popup__wrapper">
                 <div class="popup__inner">
                     <div class="popup__content" id="modal5">
                         <button class="popup__btn-close btn-close" data-modal="#modal5"></button>        
                         <section class="photo-gallery padding">
-                            <!-- frontend Дима  -->
-                            <link rel="stylesheet" href="/wp-content/themes/twentytwenty-child/css/module/general/photo-gallery.css">
-                            <link rel="stylesheet" href="/wp-content/themes/twentytwenty-child/css/module/general/popups.css">
                             
                             <div class="container">
                                 <h2 class="title">ФОТОГАЛЕРЕЯ</h2>
@@ -140,6 +143,53 @@
                                     </li>
                                     <li class="photo-gallery__preview">
                                         <img src="/wp-content/themes/twentytwenty-child/img/photo-gallery-preview20.jpg" alt="preview image">
+                                    </li>
+                                </ul>
+                            </div>                    
+                        </section>    
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Модальное окно для безрамного остекления -->
+        <div class="popup popup--frameless-glazing">
+            <div class="popup__wrapper">
+                <div class="popup__inner">
+                    <div class="popup__content" id="modal5">
+                        <button class="popup__btn-close btn-close" data-modal="#modal5"></button>        
+                        <section class="photo-gallery padding">
+                            
+                            <div class="container">
+                                <h2 class="title">ФОТОГАЛЕРЕЯ</h2>
+                    
+                                <ul class="photo-gallery__slider-box reset owl-carousel">
+                                    <li class="photo-gallery__slides">
+                                        <img src="/wp-content/themes/twentytwenty-child/img/photo-gallery-image21.jpg" alt="photo gallery image">
+                                    </li>
+                                    <li class="photo-gallery__slides">
+                                        <img src="/wp-content/themes/twentytwenty-child/img/photo-gallery-image22.jpg" alt="photo gallery image">
+                                    </li>
+                                    <li class="photo-gallery__slides">
+                                        <img src="/wp-content/themes/twentytwenty-child/img/photo-gallery-image23.jpg" alt="photo gallery image">
+                                    </li>
+                                    <li class="photo-gallery__slides">
+                                        <img src="/wp-content/themes/twentytwenty-child/img/photo-gallery-image24.jpg" alt="photo gallery image">
+                                    </li>
+                                </ul>
+                    
+                                <ul class="photo-gallery__previews reset owl-carousel">
+                                    <li class="photo-gallery__preview">
+                                        <img src="/wp-content/themes/twentytwenty-child/img/photo-gallery-preview21.jpg" alt="preview image">
+                                    </li>
+                                    <li class="photo-gallery__preview">
+                                        <img src="/wp-content/themes/twentytwenty-child/img/photo-gallery-preview22.jpg" alt="preview image">
+                                    </li>
+                                    <li class="photo-gallery__preview">
+                                        <img src="/wp-content/themes/twentytwenty-child/img/photo-gallery-preview23.jpg" alt="preview image">
+                                    </li>
+                                    <li class="photo-gallery__preview">
+                                        <img src="/wp-content/themes/twentytwenty-child/img/photo-gallery-preview24.jpg" alt="preview image">
                                     </li>
                                 </ul>
                             </div>                    
