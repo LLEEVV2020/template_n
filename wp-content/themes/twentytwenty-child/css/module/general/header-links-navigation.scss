@@ -222,6 +222,11 @@
     
             }
         }
+        &__link{
+            &.active {
+                color: $orange;
+            }
+        }
 
         &__content {
             display: block;
