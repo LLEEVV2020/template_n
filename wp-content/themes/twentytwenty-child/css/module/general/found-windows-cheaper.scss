@@ -247,4 +247,30 @@
 
     }
 
+    &--ceilings {
+        .title {
+            white-space: normal;
+            line-height: 1.4;
+        }
+
+        .found-windows-cheaper {
+            &__box {
+                margin-bottom: 0.3em;
+            }
+
+            &__info {
+                margin-bottom: 2.125em;
+            }
+        }
+
+        @media (min-width: 1400px) {
+            .found-windows-cheaper {
+                &__info {
+                    text-align: left;
+                    max-width: 45em;
+                }
+            }
+        }
+    }
+
 }
