@@ -137,21 +137,21 @@ function showSlide(n) {
                     class="balcony-icon balcony-icon__del open-modal-1" data-modal="#modal-close">
                     <svg class="icon icon__del">
                         <use
-                            xlink:href="wp-content/themes/twentytwenty-child/img/sprite.svg#del">
+                            xlink:href="/wp-content/themes/twentytwenty-child/img/sprite.svg#del">
                         </use>
                     </svg>
                 </span>
                 <span data-tooltip="скопировать окно" class="balcony-icon balcony-icon__copy">
                     <svg class="icon icon__copy">
                         <use
-                            xlink:href="wp-content/themes/twentytwenty-child/img/sprite.svg#copy">
+                            xlink:href="/wp-content/themes/twentytwenty-child/img/sprite.svg#copy">
                         </use>
                     </svg>
                 </span>
                 <span data-tooltip="изменить окно" class="balcony-icon balcony-icon__setting">
                     <svg class="icon icon__setting">
                         <use
-                            xlink:href="wp-content/themes/twentytwenty-child/img/sprite.svg#setting">
+                            xlink:href="/wp-content/themes/twentytwenty-child/img/sprite.svg#setting">
                         </use>
                     </svg>
                 </span>
