@@ -242,3 +242,14 @@
         }
     }
 }
+
+.ceilings-text {
+    .ceilings-text__text {
+        @media (max-width: 767px) { 
+            font-weight: 700;
+        }
+    }
+    .ceilings-text__title {
+        margin-bottom: 0.6em;
+    }
+}
