@@ -121,6 +121,38 @@
                 }
             }
         }
+
+        &.tab-item {
+            @include _max768 {
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr;
+                gap: 0px 0px;
+                grid-template-areas:
+                    "text"
+                    "img"
+                    "price";
+
+                .glazing-balcony-with-warm-aluminum__info-text {
+                    text-align: center;
+                    max-width: 30rem;
+                    margin: 0 auto 1em;
+                }
+
+                .glazing-balcony-with-warm-aluminum__img {
+                    width: 100%;
+                    height: 24rem;
+                }
+                .glazing-balcony-with-warm-aluminum__box-img {
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        background: linear-gradient(0deg, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 1) 100%);
+                    }
+                }
+            }
+        }
     }
 
     /* .glazing-bath__box-img */
@@ -398,24 +430,9 @@
         margin-bottom: 1.8em;
         position: relative;
 
-        &::before {
-            content: "";
-            position: absolute;
-            height: 0.05em;
-            width: 200vw;
-            left: -100%;
-            z-index: -1;
-            bottom: 0.05em;
-            margin: 0 auto;
-            background-color: #000;
-        }
 
         @include _768 {
             margin-bottom: 1.6em;
-
-            &::before {
-                content: none;
-            }
         }
 
         @include _1200 {
@@ -426,40 +443,62 @@
     /* .glazing-at-low-pricesow-prices__lable */
 
     &__tab {
-        font-weight: 900;
+        font-weight: 700;
         text-align: center;
         cursor: pointer;
-        font-size: 1.6rem;
+        font-size: 1rem;
         opacity: 0.5;
         line-height: 1.8em;
         position: relative;
         width: 25%;
+        background: #EFEFEF;
+        border: 0.25em solid #EFEFEF;
 
         &.active {
             opacity: 1;
-            border-bottom: 0.25em solid #ffe600;
+            border: 0.25em solid $orange;
+            background-color: #fff;
             pointer-events: none;
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 1.3rem;
+                height: 1.3rem;
+                background-color: #fff;
+                border-left: 0.25em solid $orange;
+                border-bottom: 0.25em solid $orange;
+                bottom: -0.77em;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                transform: rotate(-45deg);
+
+            }
 
             @include _768 {
                 background-color: $orange;
                 color: #fff;
                 border-bottom: none;
+
+                &::before {
+                    content: none;
+                }
             }
 
             @include _1200 {
-                &::before {
-                    bottom: -0.68em;
-                }
             }
         }
 
         @include _768 {
             opacity: 1;
-            font-size: 1.6rem;
+            font-size: 1.7rem;
             line-height: 2.5em;
-            background-color: #efefef;
+            border: 0.15em solid $orange;
             border-radius: 0.5em;
             max-width: 14.5rem;
+            background-color: #fff;
         }
 
         @include _1200 {
@@ -475,7 +514,7 @@
 }
 
 .active-tab {
-    display: flex !important;
+    display: grid !important;
 }
 
 .tab-item {
