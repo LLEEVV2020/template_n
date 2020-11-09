@@ -1,7 +1,24 @@
 .sale-only-7-days {
+    background-image: url('/wp-content/themes/twentytwenty-child/img/yellow-fone.webp');
+
+    .padding {
+        padding-top: 2.813em;
+        padding-bottom: 2.813em;
+    }
+
     .title {
+        margin-bottom: 1.563em;
+
         .orange {
             display: block;
         }
+    }
+
+    .text {
+        line-height: 1.125;
+    }
+
+    &__image {
+        max-width: 17.5em;
     }
 }
