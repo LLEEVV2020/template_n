@@ -1,13 +1,16 @@
+@import '../../base/all/var';
+
 .sale-only-7-days {
     background-image: url('/wp-content/themes/twentytwenty-child/img/yellow-fone.webp');
 
-    .padding {
-        padding-top: 2.813em;
-        padding-bottom: 2.813em;
+    &.padding {
+        padding-top: 2.4em;
+        padding-bottom: 4.6em;
     }
 
     .title {
-        margin-bottom: 1.563em;
+        margin-bottom: 0.963em;
+        line-height: 1.2;
 
         .orange {
             display: block;
@@ -18,7 +21,199 @@
         line-height: 1.125;
     }
 
+    &__slide,
+    &__sizes {
+        background-color: $white;
+    }
+
+    &__slide {
+        max-width: 18.750em;
+        padding: 0.625em;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 0.375em;
+        box-shadow: 0.125em 0.125em 0.188em rgba(0, 0, 0, 0.25);
+    }
+
+    &__image,
+    &__sizes {
+        border-radius: 0.313em;
+    }
+
     &__image {
         max-width: 17.5em;
+
+        &-box {
+            position: relative;
+            margin-bottom: 0.484em;
+        }
+    }
+
+    &__sizes {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 0.65em 1.45em;
+        font-size: 0.875em;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+    }
+
+    &__title,
+    &__price {
+        font-weight: 900;
+    }   
+
+    &__title {
+        margin-bottom: 0.2em;
+        font-size: 1.125em;
+        line-height: 1.33;
+        color: $brown;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    &__price {
+        font-size: 2.5em;
+    }
+
+    .button {
+        padding: 0.500em 3.47em;
+        min-height: 1.875em;
+        font-size: 0.875em;
+    }
+
+    .pagination {
+        background-color: $white;
+
+        &.active {
+            background-color: $blue;
+        }
+    }
+
+    .owl-stage-outer {
+        filter: drop-shadow(0.225em 0.225em 0.188em rgba(0, 0, 0, 0.25));
+    }
+
+    @media (min-width: 768px) {
+        &.padding {
+            padding-bottom: 5.6em;
+        }
+
+        .title {
+            margin-bottom: 0.763em;
+
+            .orange {
+                display: inline;
+            }
+        }
+
+        .text {
+            max-width: 35.5em;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 1.688em;
+            text-align: center;
+        }
+
+        &__title {
+            font-size: 1.250em;
+            font-weight: 700;
+        }
+
+        &__slider {
+            max-width: 45.5em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__slide {
+            max-width: 20.35em;
+        }
+
+        &__image {
+            max-width: 19.1em;
+        }
+
+        .pagination {
+            background-color: $gray;
+
+            &-box {
+                bottom: -3em;
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        &.padding {
+            padding-bottom: 3.6em;
+        }
+
+        .container {
+            max-width: 116rem;
+        }
+
+        .text,
+        &__title {
+            font-size: 1.5em;
+        }
+
+        .text,
+        &__slider {
+            max-width: none;
+        }
+
+        .text {
+            margin-bottom: 2.388em;
+        }
+
+        &__slider {
+            display: flex;
+        }
+
+        &__slide {
+            max-width: 21.95em;
+            padding-bottom: 1.4em;
+        }
+
+        &__image {
+            max-width: 21.1em;
+        }
+
+        &__title {
+            margin-left: 0.7em;
+            margin-bottom: 0.4em;
+        }
+
+        &__content {
+            max-width: 18.9em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__sizes {
+            bottom: 0.2em;
+            font-size: 1em;
+        }
+
+        &__price {
+            font-size: 3em;
+        }
+
+        .button {
+            min-height: 1.857em;
+            padding: 0.3em 2.243em;
+            font-size: 1.188em;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .container {
+            max-width: 122rem;
+        }
     }
 }
