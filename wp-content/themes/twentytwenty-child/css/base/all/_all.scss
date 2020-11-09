@@ -43,6 +43,9 @@ h6 {
     width: calc(100% - 4rem);
     margin-left: auto;
     margin-right: auto;
+    @media (max-width: 385px){ 
+        width: calc(100% - 3rem); 
+    }
 }
 
 // заголовки
