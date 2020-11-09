@@ -233,4 +233,84 @@
         }
 
     }
+
+    &--ceilings {
+        .without-overpayment {
+            &__box {
+                margin-bottom: 1em;
+            }
+
+            &__image {
+                background-image: url('/wp-content/themes/twentytwenty-child/img/sprite3.png');
+                background-repeat: no-repeat;
+                background-size: 118.125em 436.813em;
+                font-size: 0.9rem;
+
+                &--1 {
+                    width: 5.938em;
+	                height: 8.250em;
+                    background-position: 3.955% 1.05%;
+                }
+
+                &--2 {
+                    width: 7.688em;
+	                height: 8em;
+                    background-position: 10.526% 1.108%;
+                }
+
+                &--3 {
+                    width: 5.813em;
+	                height: 6.625em;
+                    background-position: 18.308% 1.162%;
+                }
+
+                &--4 {
+                    width: 7.938em;
+	                height: 6.625em;
+                    background-position: 25.071% 1.104%;
+                }
+            }
+        }
+
+        @media (min-width: 768px) {
+            .without-overpayment {
+                &__saving {
+                    font-size: 0.775em;
+                }
+
+                &__price {
+                    font-size: 1.250em;
+
+                    &-box {
+                        padding: 0.5em 0.9em 0.2em;
+                        text-align: center;
+                    }
+                }
+            }            
+        }
+
+        @media (min-width: 960px) {
+            .without-overpayment {
+                &__list {
+                    max-width: 29em;
+                }
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .without-overpayment {
+                &__list {
+                    max-width: 70em;
+                }
+
+                &__image {              
+                    font-size: 1.3rem;
+                }
+
+                &__price {
+                    font-size: 1.35em;
+                }
+            }
+        }
+    }
 }
