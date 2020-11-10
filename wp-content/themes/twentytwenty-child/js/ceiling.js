@@ -7,8 +7,10 @@ function checkWindowWidth(sliderClass, windowWidth, runSliderFunction) {
     // если ширина окна меньше или равна переменной windowWidth
     if (innerWindowWidth < windowWidth) {
         // добавляет класс owl-carousel и запускает ф-ию runSlider с переданным парметром, которая инициализирует слайдер
-        item.classList.add('owl-carousel');
-        runSliderFunction(itemName);
+        if (item && itemName) {
+            item.classList.add('owl-carousel');
+            runSliderFunction(itemName);
+        }        
     } else {
         // реинициализирует слайдер по тригеру и удалет класс owl-loaded
         $(item).trigger('destroy.owl.carousel').removeClass('owl-carousel owl-loaded');
@@ -56,10 +58,10 @@ function hotPromotionsSlider(itemName) {
 checkWindowWidth('sale-only-7-days__slider', 1200, saleOnly7DaysSlider);
 checkWindowWidth('hot-promotions__slider', 1200, hotPromotionsSlider);
 
-
 // При изменении окна будет выполняться событие resize, которое будет запускать нужную ф-ию
 window.addEventListener('resize', function() {
     checkWindowWidth('sale-only-7-days__slider', 1200, saleOnly7DaysSlider);
+    checkWindowWidth('hot-promotions__slider', 1200, hotPromotionsSlider);
 });
 
 $('.select').on('click', '.select__head', function () {
