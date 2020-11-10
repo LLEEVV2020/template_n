@@ -1,0 +1,207 @@
+.installment {
+    .title {
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+        text-align: center;
+        font-size: 3.2rem;
+        margin-bottom: 1em;
+    }
+
+    &-numbers {
+        max-width: 29.6rem;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+
+        span {
+            font-size: 9rem;
+            font-weight: 700;
+        }
+
+        &__item {
+            position: relative;
+        }
+
+        &__item:first-child,
+        &__item:nth-child(2) {
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 0;
+                width: 4.5rem;
+                height: 0.3rem;
+                background-color: #000000;
+                border-radius: 5px;
+            }
+        }
+
+        &__item:first-child {
+            width: 15rem;
+            &::before {
+                left: 66%;
+            }
+        }
+
+        &__item:nth-child(2) {
+            width: 10rem;
+            &::before {
+                left: 52%;
+            }
+        }
+
+    }
+
+    &-list {
+        &__item {
+            margin-bottom: 1.167em;
+        }
+
+        h4,
+        p {
+            font-size: 1.6rem;
+        }
+
+        h4 {
+            margin-bottom: 0.278em;
+        }
+    }
+
+    @media (min-width: 670px) {
+        .container {
+            width: calc(100% - 8rem);
+        }
+
+        &__title {
+            font-size: 3rem;
+        }
+
+        &-numbers {
+            max-width: 38.6rem;
+
+            span {
+                font-size: 12rem;
+            }
+
+            &__item:first-child {
+                width: 17rem;
+
+                &::before {
+                    left: 73%;
+                }
+            }
+
+            &__item:nth-child(2) {
+                width: 11rem;
+
+                &::before {
+                    left: 60%;
+                }
+            }
+        }
+
+        &-list {
+            h4,
+            p {
+                font-size: 2rem;
+            }
+
+            h4 {
+                margin-bottom: 0.833em;
+            }
+        }
+
+    }
+
+    @media (min-width: 768px) {
+        &-numbers {
+            max-width: 63.6rem;
+
+            span {
+                font-size: 18rem;
+            }
+
+            &__item {
+                &:first-child {
+                    width: 28rem;
+
+                    &::before {
+                        left: 69%;
+                        width: 8.1rem;
+                        height: 0.4rem;
+                    }
+                }
+
+                &:nth-child(2) {
+                    width: 19rem;
+
+                    &::before {
+                        left: 55%;
+                        width: 8.1rem;
+                        height: 0.4rem;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .title {
+            font-size: 4rem;
+        }
+
+        &-numbers {
+            max-width: 101.6rem;
+
+            span {
+                font-size: 25.8rem;
+            }
+
+            &__item {
+                &:first-child {
+                    width: 49rem;
+
+                    &::before {
+                        left: 61%;
+                        width: 17rem;
+                        height: 0.6rem;
+                    }
+                }
+
+                &:nth-child(2) {
+                    width: 35rem;
+
+                    &::before {
+                        left: 46%;
+                        width: 17rem;
+                        height: 0.6rem;
+                    }
+                }
+            }
+        }
+
+        &-list {
+            display: flex;
+
+            span {
+                display: none;
+            }
+
+            &__item {
+                max-width: 36.5rem;
+
+                h4,
+                p {
+                    font-size: 2.4rem;
+                }
+
+                &:nth-child(1),
+                &:nth-child(2) {
+                    margin-right: 1.278em;
+                }
+            }
+        }
+        
+    }
+
+}
