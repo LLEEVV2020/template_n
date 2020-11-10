@@ -2,7 +2,7 @@
 function checkWindowWidth(sliderClass, windowWidth, runSliderFunction) {
     let innerWindowWidth = window.innerWidth,
         item = document.querySelector(`.${sliderClass}`),
-        itemName = '.' + sliderClass; 
+        itemName = '.' + sliderClass;
 
     // если ширина окна меньше или равна переменной windowWidth
     if (innerWindowWidth < windowWidth) {
@@ -10,12 +10,12 @@ function checkWindowWidth(sliderClass, windowWidth, runSliderFunction) {
         if (item && itemName) {
             item.classList.add('owl-carousel');
             runSliderFunction(itemName);
-        }        
+        }
     } else {
         // реинициализирует слайдер по тригеру и удалет класс owl-loaded
         $(item).trigger('destroy.owl.carousel').removeClass('owl-carousel owl-loaded');
     }
- }
+}
 
 // Скрипт для слайдера блока sale-only-7-days
 function saleOnly7DaysSlider(itemName) {
@@ -34,34 +34,12 @@ function saleOnly7DaysSlider(itemName) {
     });
 }
 
-function hotPromotionsSlider(itemName) {
-    $(itemName).owlCarousel({
-        items: 1,
-        dots: true,
-        margin: 55,
-        dotsClass: ['pagination-box'],
-        dotClass: ['pagination'],
-        responsive: {
-            768: {
-                items: 2,
-                margin: 58
-            },
-            1200: {
-                items: 3,
-                margin: 58
-            }
-        }
-    });
-}
-
 // В качестве параметра ф-ии checkWindowWidth передаем название класса слайдера, размер окна(до какой ширины окна будет происходить инициализация слайдера) и ф-ию в которой будет инициализироваться слайдер
 checkWindowWidth('sale-only-7-days__slider', 1200, saleOnly7DaysSlider);
-checkWindowWidth('hot-promotions__slider', 1200, hotPromotionsSlider);
 
 // При изменении окна будет выполняться событие resize, которое будет запускать нужную ф-ию
-window.addEventListener('resize', function() {
+window.addEventListener('resize', function () {
     checkWindowWidth('sale-only-7-days__slider', 1200, saleOnly7DaysSlider);
-    checkWindowWidth('hot-promotions__slider', 1200, hotPromotionsSlider);
 });
 
 $('.select').on('click', '.select__head', function () {
@@ -89,3 +67,27 @@ $(document).click(function (e) {
         $('.select__list').fadeOut();
     }
 });
+
+
+// Скрипт для слайдера блока hot-promotions__slider
+$('.hot-promotions__slider').owlCarousel({
+    items: 1,
+    dots: true,
+    loop: true,
+    margin: 55,
+    dotsClass: ['pagination-box'],
+    dotClass: ['pagination'],
+    nav: true,
+    responsive: {
+        768: {
+            margin: 38,
+            autoWidth:true,
+            items: 2,
+        },
+        1200: {
+            autoWidth:true,
+            margin: 33,
+            items: 3,
+        }
+    }
+});  
