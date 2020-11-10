@@ -1,3 +1,5 @@
+/* Frontend Дима */
+
 // Универсальная ф-ия проверяет ширину окна и в зависимости от этой ширины включает или отключает слайдер owl-carousel 
 function checkWindowWidth(sliderClass, windowWidth, runSliderFunction) {
     let innerWindowWidth = window.innerWidth,
@@ -34,6 +36,35 @@ function saleOnly7DaysSlider(itemName) {
     });
 }
 
+// Универсальный скрипт для модальных окон 
+let btns = document.querySelectorAll('*[data-modal-btn]'),
+    popups = document.querySelectorAll('.popup'),
+    reviewsWindows = document.querySelectorAll('.reviews-windows');
+
+for(let i = 0; i < btns.length; i++) {
+    btns[i].addEventListener('click', function() {
+        let name = btns[i].getAttribute('data-modal-btn');
+        let modal = document.querySelector("[data-modal-window='"+name+"']");            
+        modal.style.display = 'block';
+        let close = modal.querySelector('.popup__btn-close');
+        close.addEventListener('click', function() {
+            modal.style.display = 'none';
+        });
+    });
+}
+
+for(let i = 0; i < popups.length; i++) {
+    popups[i].addEventListener('click', function(event) {
+        this.style.display = 'none';
+    });
+}
+
+for(let i = 0; i < reviewsWindows.length; i++) {
+    reviewsWindows[i].addEventListener('click', function(event) {
+        event.stopPropagation();
+    });
+}
+
 // В качестве параметра ф-ии checkWindowWidth передаем название класса слайдера, размер окна(до какой ширины окна будет происходить инициализация слайдера) и ф-ию в которой будет инициализироваться слайдер
 checkWindowWidth('sale-only-7-days__slider', 1200, saleOnly7DaysSlider);
 
@@ -41,6 +72,8 @@ checkWindowWidth('sale-only-7-days__slider', 1200, saleOnly7DaysSlider);
 window.addEventListener('resize', function () {
     checkWindowWidth('sale-only-7-days__slider', 1200, saleOnly7DaysSlider);
 });
+
+/* Frontend Паша */
 
 $('.select').on('click', '.select__head', function () {
     if ($(this).hasClass('open')) {
