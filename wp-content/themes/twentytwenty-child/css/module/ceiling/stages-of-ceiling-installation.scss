@@ -1,0 +1,102 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.stages-of-ceiling-installation {
+    /* .stages-of-ceiling-installation__title */
+
+    &__title {
+        margin-bottom: 0.9em;
+
+        @include _768 {
+            margin-bottom: 0.8em;
+        }
+
+        @include _1200 {
+            margin-bottom: 1.1em;
+        }
+    }
+
+    /* .stages-of-ceiling-installation__inner */
+
+    &__inner {
+        flex-wrap: wrap;
+        margin-bottom: 1.2em;
+
+        @include _768 {
+            margin-bottom: 1.6em;
+        }
+
+        @include _1200 {
+            margin-bottom: 2.6em;
+        }
+    }
+
+    /* .stages-of-ceiling-installation__box-img */
+
+    &__box-img {
+        position: relative;
+        width: 34.5rem;
+        height: 19.6rem;
+        margin-bottom: 0.65em;
+
+        @include _768 {
+            width: 56.4rem;
+            height: 32.3rem;
+            margin: 0 auto 0.8em;
+        }
+
+        @include _1200 {
+            width: 55.7rem;
+        }
+    }
+
+    /* .stages-of-ceiling-installation__img */
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* .stages-of-ceiling-installation__img-icon*/
+
+    &__img-icon {
+        position: absolute;
+        right: 6.3em;
+        bottom: 2.5em;
+        transform: rotate(15deg);
+        width: 5rem;
+        height: 1.68rem;
+        z-index: 1;
+
+        @include _768 {
+            width: 8.3rem;
+            height: 2.76rem;
+            right: 10.3em;
+            bottom: 4.2em;
+        }
+    }
+
+    /* .stages-of-ceiling-installation__link */
+
+    &__link {
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        line-height: 1.45em;
+
+        @include _768 {
+            max-width: 22.6rem;
+            margin: 0 auto;
+        }
+
+        @include _1200 {
+            max-width: 37rem;
+        }
+    }
+}
