@@ -1,4 +1,4 @@
-@import '../../base/all/var';
+@import "../../base/all/var";
 
 .text-along {
     font-size: 1.125em;
@@ -9,7 +9,7 @@
     }
 
     @media (min-width: 768px) {
-        font-size: 1.250em;
+        font-size: 1.25em;
         font-weight: 700;
         text-align: center;
 
@@ -163,7 +163,7 @@
             max-width: 47.2em;
         }
     }
-} 
+}
 
 .windows-pine-text-2 {
     .container {
@@ -175,7 +175,7 @@
 
         &-link {
             color: inherit;
-            
+
             &:hover {
                 font-weight: 700;
                 color: $orange;
@@ -235,7 +235,7 @@
 .windows-larch-text {
     & .text-link {
         color: inherit;
-        
+
         &:hover {
             font-weight: 700;
             color: $orange;
@@ -245,11 +245,38 @@
 
 .ceilings-text {
     .ceilings-text__text {
-        @media (max-width: 767px) { 
+        @media (max-width: 767px) {
             font-weight: 700;
         }
     }
     .ceilings-text__title {
         margin-bottom: 0.6em;
+    }
+}
+
+.ceilings-text-reviews {
+    &__title {
+        margin-bottom: 0.7em;
+        @media (min-width: 768px) {
+            margin-bottom: 1.1em;
+        }
+        @media (min-width: 1200px) {
+            margin-bottom: 0.7em;
+        }
+        span {
+            display: block;
+            @media (min-width: 1200px) {
+                display: inline-block;
+            }
+        }
+    }
+    &__text {
+        line-height: 1.2em;
+        @media (min-width: 768px) {
+            line-height: 1.1em;
+        }
+        @media (min-width: 1200px) {
+            line-height: 1.2em;
+        }
     }
 }
