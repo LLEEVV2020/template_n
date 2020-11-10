@@ -8,7 +8,7 @@ function checkWindowWidth(sliderClass, windowWidth, runSliderFunction) {
     if (innerWindowWidth < windowWidth) {
         // добавляет класс owl-carousel и запускает ф-ию runSlider с переданным парметром, которая инициализирует слайдер
         item.classList.add('owl-carousel');
-        runSliderFunction('.sale-only-7-days__slider');
+        runSliderFunction(itemName);
     } else {
         // реинициализирует слайдер по тригеру и удалет класс owl-loaded
         $(item).trigger('destroy.owl.carousel').removeClass('owl-carousel owl-loaded');
