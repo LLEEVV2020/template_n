@@ -43,20 +43,18 @@ let btns = document.querySelectorAll('*[data-modal-btn]'),
     holzGutModalContent = document.querySelectorAll('.holz-modal .popup__content');
 
 
-for (let i = 0; i < btns.length; i++) {
-    btns[i].addEventListener('click', function () {
 // Останавливает всплытие на элементе
 function stopPropogation(items) {
-    for(let i = 0; i < items.length; i++) {
-        items[i].addEventListener('click', function(event) {
+    for (let i = 0; i < items.length; i++) {
+        items[i].addEventListener('click', function (event) {
             event.stopPropagation();
         });
     }
 }
 
 // Этот код показывает попап при клике на кнопку или скрывает его при клике на крестик внтри попапа
-for(let i = 0; i < btns.length; i++) {
-    btns[i].addEventListener('click', function() {
+for (let i = 0; i < btns.length; i++) {
+    btns[i].addEventListener('click', function () {
         let name = btns[i].getAttribute('data-modal-btn');
         let modal = document.querySelector("[data-modal-window='" + name + "']");
         modal.style.display = 'block';
@@ -67,11 +65,9 @@ for(let i = 0; i < btns.length; i++) {
     });
 }
 
+// Цикл перебирает все попапы и вешает обработчик события клик на каждый попап и закрывает попап при клике на него
 for (let i = 0; i < popups.length; i++) {
     popups[i].addEventListener('click', function (event) {
-// Цикл перебирает все попапы и вешает обработчик события клик на каждый попап и закрывает попап при клике на него
-for(let i = 0; i < popups.length; i++) {
-    popups[i].addEventListener('click', function(event) {
         this.style.display = 'none';
     });
 }
