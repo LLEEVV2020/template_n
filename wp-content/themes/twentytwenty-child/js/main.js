@@ -62,40 +62,72 @@ $(document).ready(function () {
   });
 
   // Скрипт для слайдера блока photo-gallery
-  let photoGallerySlider = $('.photo-gallery__slider-box');
-  let photoPreviewSlider = $('.photo-gallery__previews');
+  const photoGallerySlider1 = $('.photo-gallery__slider-box--1'),
+        photoPreviewSlider1 = $('.photo-gallery__previews--1'),
+        photoGallerySlider2 = $('.photo-gallery__slider-box--2'),
+        photoPreviewSlider2 = $('.photo-gallery__previews--2'),
+        photoGallerySlider3 = $('.photo-gallery__slider-box--3'),
+        photoPreviewSlider3 = $('.photo-gallery__previews--3'),
+        photoGallerySlider4 = $('.photo-gallery__slider-box--4'),
+        photoPreviewSlider4 = $('.photo-gallery__previews--4'),
+        photoGallerySlider5 = $('.photo-gallery__slider-box--5'),
+        photoPreviewSlider5 = $('.photo-gallery__previews--5'),
+        photoGallerySlider6 = $('.photo-gallery__slider-box--6'),
+        photoPreviewSlider6 = $('.photo-gallery__previews--6'),
+        photoGallerySlider7 = $('.photo-gallery__slider-box--7'),
+        photoPreviewSlider7 = $('.photo-gallery__previews--7'),
+        photoGallerySlider8 = $('.photo-gallery__slider-box--8'),
+        photoPreviewSlider8 = $('.photo-gallery__previews--8'),
+        photoGallerySlider9 = $('.photo-gallery__slider-box--9'),
+        photoPreviewSlider9 = $('.photo-gallery__previews--9'),
+        photoGallerySlider10 = $('.photo-gallery__slider-box--10'),
+        photoPreviewSlider10 = $('.photo-gallery__previews--10');
 
-  photoPreviewSlider.owlCarousel({
-    items: 4,
-    margin: 2
-  });
-
-  photoGallerySlider.owlCarousel({
-    items: 1,
-    dotsClass: ['pagination-box'],
-    dotClass: ['pagination'],
-    nav: true,
-    navText: [''],
-    navContainerClass: ['navigation'],
-    navClass: ['navigation-left', 'navigation-right'],
-    responsive: {
-      768: {
-        dots: false
-      }
-    },
-    onChanged: photoImageCallback
-  });
-
-  function photoImageCallback(e) {
-    let index = e.item.index;
-    $('.owl-item', photoPreviewSlider).removeClass('current').eq(index).addClass('current');
-    photoPreviewSlider.trigger("to.owl.carousel", [index, 300, true]);
+  function inititalizePhotoGallerySlider(slider, previews) {
+    previews.owlCarousel({
+      items: 4,
+      margin: 2
+    });
+  
+    slider.owlCarousel({
+      items: 1,
+      dotsClass: ['pagination-box'],
+      dotClass: ['pagination'],
+      nav: true,
+      navText: [''],
+      navContainerClass: ['navigation'],
+      navClass: ['navigation-left', 'navigation-right'],
+      responsive: {
+        768: {
+          dots: false
+        }
+      },
+      onChanged: photoImageCallback
+    });
+  
+    function photoImageCallback(e) {
+      let index = e.item.index;
+      $('.owl-item', previews).removeClass('current').eq(index).addClass('current');
+      previews.trigger("to.owl.carousel", [index, 300, true]);
+    }
+  
+    $('.owl-item', previews).click(function () {
+      let index = $(this).index();
+      slider.trigger("to.owl.carousel", [index, 300, true]);
+    });
   }
 
-  $('.owl-item', photoPreviewSlider).click(function () {
-    let index = $(this).index();
-    photoGallerySlider.trigger("to.owl.carousel", [index, 300, true]);
-  });
+  inititalizePhotoGallerySlider(photoGallerySlider1, photoPreviewSlider1);
+  inititalizePhotoGallerySlider(photoGallerySlider2, photoPreviewSlider2);
+  inititalizePhotoGallerySlider(photoGallerySlider3, photoPreviewSlider3);
+  inititalizePhotoGallerySlider(photoGallerySlider4, photoPreviewSlider4);
+  inititalizePhotoGallerySlider(photoGallerySlider5, photoPreviewSlider5);
+  inititalizePhotoGallerySlider(photoGallerySlider6, photoPreviewSlider6);
+  inititalizePhotoGallerySlider(photoGallerySlider7, photoPreviewSlider7);
+  inititalizePhotoGallerySlider(photoGallerySlider8, photoPreviewSlider8);
+  inititalizePhotoGallerySlider(photoGallerySlider9, photoPreviewSlider9);
+  inititalizePhotoGallerySlider(photoGallerySlider10, photoPreviewSlider10);
+
 
   // Скрипт для слайдера блока reviews
   $('.reviews-about__slider').owlCarousel({
@@ -684,4 +716,19 @@ $(document).ready(function () {
   });  
 
 });
+
+const coldFramelessGlazingBtns = document.querySelectorAll('*[data-modal-btn]'),
+  coldFramelessGlazingPopus = document.querySelectorAll('.popup');
+
+for (let i = 0; i < coldFramelessGlazingBtns.length; i++) {
+  coldFramelessGlazingBtns[i].addEventListener('click', function (){
+    let name = coldFramelessGlazingBtns[i].getAttribute('data-modal-btn'),
+      modal = document.querySelector("[data-modal-window='" + name + "']"),
+      close = modal.querySelector('.popup__btn-close');
+      modal.style.display = 'block';
+      close.addEventListener('click', function () {
+        modal.style.display = 'none';
+    });
+  });
+}
 

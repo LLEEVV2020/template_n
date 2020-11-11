@@ -42,7 +42,6 @@ let btns = document.querySelectorAll('*[data-modal-btn]'),
     reviewsWindows = document.querySelectorAll('.reviews-windows'),
     holzGutModalContent = document.querySelectorAll('.holz-modal .popup__content');
 
-
 // Останавливает всплытие на элементе
 function stopPropogation(items) {
     for (let i = 0; i < items.length; i++) {
@@ -142,3 +141,5 @@ $('.hot-promotions__slider').owlCarousel({
         }
     }
 });
+
+/* Frontend Дима */
