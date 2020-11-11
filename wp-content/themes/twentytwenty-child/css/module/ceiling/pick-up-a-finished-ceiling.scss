@@ -1,0 +1,198 @@
+@import "../../base/all/var";
+@import "../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.pick-up-a-finished-ceiling {
+    /* .pick-up-a-finished-ceiling__container */
+
+    &__container {
+        @include _max768 {
+            width: 100%;
+        }
+        @include _1200 {
+        }
+    }
+
+    /* .pick-up-a-finished-ceiling__wrapper */
+
+    &__wrapper {
+        @include _max768 {
+            max-width: 37.5rem;
+        }
+        @include _1200 {
+        }
+    }
+
+    /* .pick-up-a-finished-ceiling__title */
+
+    &__title {
+        margin-bottom: 1.3em;
+        @include _768 {
+        }
+        @include _1200 {
+        }
+    }
+
+    /* .pick-up-a-finished-ceiling__box-tabs */
+
+    &__box-tabs {
+        display: flex;
+        margin-bottom: 0.744em;
+        padding-left: 0.6em;
+        padding-right: 0.6em;
+        margin-bottom: 1.8em;
+        margin-left: -1em;
+        overflow-x: auto;
+        white-space: nowrap;
+        position: relative;
+
+        @include _768 {
+        }
+        @include _1200 {
+        }
+    }
+
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: #ffe600 #ccc;
+    }
+
+    *::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+    }
+
+    *::-webkit-scrollbar-track {
+        background: #979797;
+        border: 2px solid #fff;
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background-color: #ffe600;
+        border-radius: 2em;
+        border: 0 solid #979797;
+    }
+
+    /* .pick-up-a-finished-ceiling__tabs */
+
+    &__tabs {
+        margin: 0 1em;
+
+        &.active {
+            font-weight: 900;
+        }
+
+        @include _768 {
+        }
+        @include _1200 {
+        }
+    }
+
+    /* .pick-up-a-finished-ceiling__tab */
+
+    &__tab {
+        @include _768 {
+        }
+        @include _1200 {
+        }
+    }
+
+    /* .pick-up-a-finished-ceiling__item */
+
+    &__item {
+        padding: 2em 1.3em;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+        border-radius: 0.3em;
+        @include _768 {
+        }
+        @include _1200 {
+        }
+    }
+
+    /* .pick-up-a-finished-ceiling__item-title */
+
+    &__item-title {
+        text-align: center;
+        @include _768 {
+        }
+        @include _1200 {
+        }
+    }
+
+    /* .pick-up-a-finished-ceiling__item-img */
+
+    &__item-img {
+        width: 33.4rem;
+        height: 20rem;
+        @include _768 {
+        }
+        @include _1200 {
+        }
+    }
+
+    /* .pick-up-a-finished-ceiling__item-box-price */
+
+    &__item-box-price {
+        @include _768 {
+        }
+        @include _1200 {
+        }
+    }
+
+    /* .pick-up-a-finished-ceiling__item-price */
+
+    &__item-price {
+        @include _768 {
+        }
+        @include _1200 {
+        }
+    }
+
+    /* .pick-up-a-finished-ceiling__item-tag */
+
+    &__item-tag {
+        @include _768 {
+        }
+        @include _1200 {
+        }
+    }
+
+    /* .pick-up-a-finished-ceiling__item-box-article */
+
+    &__item-box-article {
+        @include _768 {
+        }
+        @include _1200 {
+        }
+    }
+
+    /* .pick-up-a-finished-ceiling__item-info */
+
+    &__item-info {
+        @include _768 {
+        }
+        @include _1200 {
+        }
+    }
+
+    /* .pick-up-a-finished-ceiling__item-btn */
+
+    &__item-btn {
+        @include _768 {
+        }
+        @include _1200 {
+        }
+    }
+}
+
+.active-tab {
+    display: block !important;
+}
+
+.tab-item {
+    display: none;
+}
