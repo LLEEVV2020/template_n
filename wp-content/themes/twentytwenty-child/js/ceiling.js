@@ -86,6 +86,7 @@ window.addEventListener('resize', function () {
 
 /* Frontend Паша */
 
+// скрипт select
 $('.select').on('click', '.select__head', function () {
     if ($(this).hasClass('open')) {
         $(this).removeClass('open');
