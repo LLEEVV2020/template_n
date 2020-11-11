@@ -175,9 +175,9 @@
 
         &-link {
             color: inherit;
+            transition: color 0.2s ease;
 
             &:hover {
-                font-weight: 700;
                 color: $orange;
             }
         }
