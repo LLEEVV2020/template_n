@@ -41,26 +41,26 @@ let btns = document.querySelectorAll('*[data-modal-btn]'),
     popups = document.querySelectorAll('.popup'),
     reviewsWindows = document.querySelectorAll('.reviews-windows');
 
-for(let i = 0; i < btns.length; i++) {
-    btns[i].addEventListener('click', function() {
+for (let i = 0; i < btns.length; i++) {
+    btns[i].addEventListener('click', function () {
         let name = btns[i].getAttribute('data-modal-btn');
-        let modal = document.querySelector("[data-modal-window='"+name+"']");            
+        let modal = document.querySelector("[data-modal-window='" + name + "']");
         modal.style.display = 'block';
         let close = modal.querySelector('.popup__btn-close');
-        close.addEventListener('click', function() {
+        close.addEventListener('click', function () {
             modal.style.display = 'none';
         });
     });
 }
 
-for(let i = 0; i < popups.length; i++) {
-    popups[i].addEventListener('click', function(event) {
+for (let i = 0; i < popups.length; i++) {
+    popups[i].addEventListener('click', function (event) {
         this.style.display = 'none';
     });
 }
 
-for(let i = 0; i < reviewsWindows.length; i++) {
-    reviewsWindows[i].addEventListener('click', function(event) {
+for (let i = 0; i < reviewsWindows.length; i++) {
+    reviewsWindows[i].addEventListener('click', function (event) {
         event.stopPropagation();
     });
 }
@@ -115,13 +115,13 @@ $('.hot-promotions__slider').owlCarousel({
     responsive: {
         768: {
             margin: 38,
-            autoWidth:true,
+            autoWidth: true,
             items: 2,
         },
         1200: {
-            autoWidth:true,
+            autoWidth: true,
             margin: 33,
             items: 3,
         }
     }
-});  
+});

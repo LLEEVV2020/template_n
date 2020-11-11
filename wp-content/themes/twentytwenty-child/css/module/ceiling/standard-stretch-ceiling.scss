@@ -13,6 +13,14 @@
         }
     }
 
+    .active-tab {
+        display: grid !important;
+    }
+    
+    .tab-item {
+        display: none;
+    }
+
     /* .glazing-bath__wrapper */
 
     &__wrapper {
@@ -513,10 +521,3 @@
     }
 }
 
-.active-tab {
-    display: grid !important;
-}
-
-.tab-item {
-    display: none;
-}
