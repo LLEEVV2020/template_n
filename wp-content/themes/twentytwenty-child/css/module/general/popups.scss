@@ -135,7 +135,7 @@
     }
 }
 
-.holz-gut-modal {
+.holz-modal {
     .popup {
         &__inner {
             vertical-align: bottom;
@@ -380,6 +380,306 @@
         &__text {
             font-size: 1.5em;
             letter-spacing: 0.03em;
+        }
+    }
+
+    &--holz-plus,
+    &--holz-trend,
+    &--holz-trend-plus,
+    &--holz-eko-new,
+    &--holz-eko-thermo,
+    &--holz-optimal,
+    &--holz-nova {
+        .holz-modal {
+            @media (min-width: 768px) {
+                &__image {
+                    &-box {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    &--holz-plus,
+    &--holz-trend,
+    &--holz-trend-plus,
+    &--holz-eko-new,
+    &--holz-eko-thermo,
+    &--holz-optimal {
+        .holz-modal {
+            @media (min-width: 768px) {
+                &__title-small {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    &--holz-plus,
+    &--holz-trend,
+    &--holz-trend-plus,
+    &--holz-eko-new,
+    &--holz-eko-thermo,
+    &--holz-optimal {
+        .holz-modal {
+            &__title-small {
+                margin-bottom: 1em;
+            }
+        }
+    }
+
+    &--holz-plus,
+    &--holz-trend,
+    &--holz-trend-plus,
+    &--holz-eko-new,
+    &--holz-eko-thermo,
+    &--holz-optimal,
+    &--holz-nova {
+        .holz-modal {
+            @media (min-width: 768px) {
+                &__titles-box {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+
+    &--holz-plus,
+    &--holz-trend,
+    &--holz-trend-plus {
+        .holz-modal {
+            @media (min-width: 768px) {
+                &__title-small {
+                    margin-bottom: 2em;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+
+            @media (min-width: 1200px) {
+                &__titles-box {
+                    max-width: 23.5em;
+                }
+            }
+        }
+    }
+
+    &--holz-plus {
+        .holz-modal {
+            @media (min-width: 768px) {
+                &__title-small {
+                    max-width: 29em;
+                }
+
+                &__inner {
+                    max-width: 27em;
+                }
+
+                &__list {
+                    &--width {
+                        max-width: 35em;
+                    }
+                }
+            }
+
+            @media (min-width: 1200px) {
+                &__titles-box {
+                    max-width: 23.5em;
+                }
+
+                &__inner {
+                    max-width: 34em;
+                }
+
+                &__image {
+                    &-box {
+                        margin-right: 2.725em;
+                    }
+                }
+
+                &__list {
+                    &--width {
+                        max-width: 43em;
+                    }
+                }
+            }
+        }
+    }
+
+    &--holz-trend,
+    &--holz-trend-plus,
+    &--holz-eko-new {
+        .holz-modal {
+            &__image {
+                &-box {
+                    margin-bottom: 1em;
+                }
+            }
+        }
+    }
+
+    &--holz-trend,
+    &--holz-trend-plus {
+        .holz-modal {
+            @media (min-width: 768px) {
+                &__image {
+                    &-box {
+                        margin-left: 3em;
+                        margin-right: 4em;
+                    }
+                }
+
+                &__inner {
+                    max-width: 26.2em;
+                }
+
+                &__list {
+                    &--width {
+                        margin-left: 2em;
+                        margin-right: 0;
+                        max-width: 35em;
+
+                        .holz-modal {
+                            &__item--hide-icon {
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media (min-width: 1200px) {
+                &__list--width {
+                    margin-left: 0.9em;    
+                    max-width: 45em;
+                }
+            }
+        }
+    }
+
+    &--holz-eko-new,
+    &--holz-eko-thermo,
+    &--holz-optimal {
+        .holz-modal {
+            @media (min-width: 768px) {
+                &__inner {
+                    max-width: 26.5em;
+                }
+
+                &__list {
+                    &--width {
+                        max-width: 35em;
+                    }
+                }
+            }
+
+            @media (min-width: 1200px) {
+                &__titles {
+                    &-box {
+                        max-width: 24em;
+                    }
+                }
+
+                &__image {
+                    &-box {
+                        margin-right: 2.625em;
+                    }
+                }
+
+                &__inner {
+                    max-width: 34em;
+                }
+
+                &__list {
+                    &--width {
+                        max-width: 44em;
+                    }
+                }
+            }
+        }
+    }
+
+    &--holz-eko-new {
+        .holz-modal {
+            &__leader-sales {
+                margin-bottom: 1em;
+                text-align: center;
+                font-weight: 700;
+            }
+
+            @media (min-width: 768px) {
+                &__leader-sales {
+                    font-size: 1.250em;
+                }
+            }
+        }
+    }
+
+    &--holz-eko-thermo {
+        @media (min-width: 768px) {
+            .holz-modal {
+                &__title-small {
+                    margin-bottom: 2em;
+                }
+            }
+        }
+    }
+
+    &--holz-optimal {
+        .holz-modal {
+            &__title-small {
+                margin-bottom: 2em;
+            }
+        }
+    }
+
+    &--holz-nova {
+        .holz-modal {
+            &__titles {
+                &-box {
+                    margin-bottom: 3.313em;
+                }
+            }
+
+            &__image {
+                &-box {
+                    margin-bottom: 1em;
+                }
+            }
+
+            &__inner {
+                max-width: 27em;
+            }
+
+            &__list {
+                &--width {
+                    max-width: 35em;
+                }
+            }
+
+            @media (min-width: 1200px) {
+                &__titles-box {
+                    max-width: 24em;
+                }
+
+                &__image {
+                    &-box {
+                        margin-right: 2.625em;
+                    }
+                }
+
+                &__inner {
+                    max-width: 34em;
+                }
+
+                &__list {
+                    &--width {
+                        max-width: 43em;
+                    }
+                }
+            }
         }
     }
 }

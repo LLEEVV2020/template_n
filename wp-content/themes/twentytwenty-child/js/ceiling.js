@@ -39,8 +39,19 @@ function saleOnly7DaysSlider(itemName) {
 // Универсальный скрипт для модальных окон 
 let btns = document.querySelectorAll('*[data-modal-btn]'),
     popups = document.querySelectorAll('.popup'),
-    reviewsWindows = document.querySelectorAll('.reviews-windows');
+    reviewsWindows = document.querySelectorAll('.reviews-windows'),
+    holzGutModalContent = document.querySelectorAll('.holz-modal .popup__content');
 
+// Останавливает всплытие на элементе
+function stopPropogation(items) {
+    for(let i = 0; i < items.length; i++) {
+        items[i].addEventListener('click', function(event) {
+            event.stopPropagation();
+        });
+    }
+}
+
+// Этот код показывает попап при клике на кнопку или скрывает его при клике на крестик внтри попапа
 for(let i = 0; i < btns.length; i++) {
     btns[i].addEventListener('click', function() {
         let name = btns[i].getAttribute('data-modal-btn');
@@ -53,17 +64,17 @@ for(let i = 0; i < btns.length; i++) {
     });
 }
 
+// Цикл перебирает все попапы и вешает обработчик события клик на каждый попап и закрывает попап при клике на него
 for(let i = 0; i < popups.length; i++) {
     popups[i].addEventListener('click', function(event) {
         this.style.display = 'none';
     });
 }
 
-for(let i = 0; i < reviewsWindows.length; i++) {
-    reviewsWindows[i].addEventListener('click', function(event) {
-        event.stopPropagation();
-    });
-}
+// Эта ф-ия останавливает вспллытие на элементе
+stopPropogation(reviewsWindows);
+stopPropogation(holzGutModalContent);
+
 
 // В качестве параметра ф-ии checkWindowWidth передаем название класса слайдера, размер окна(до какой ширины окна будет происходить инициализация слайдера) и ф-ию в которой будет инициализироваться слайдер
 checkWindowWidth('sale-only-7-days__slider', 1200, saleOnly7DaysSlider);
