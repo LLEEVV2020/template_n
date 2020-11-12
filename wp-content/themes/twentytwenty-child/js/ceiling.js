@@ -38,7 +38,7 @@ function saleOnly7DaysSlider(itemName) {
 
 // Универсальный скрипт для модальных окон 
 let btns = document.querySelectorAll('*[data-modal-btn]'),
-    popups = document.querySelectorAll('.popup'),
+    popups = document.querySelectorAll('.holz-modal .popup'),
     reviewsWindows = document.querySelectorAll('.reviews-windows'),
     holzGutModalContent = document.querySelectorAll('.holz-modal .popup__content');
 
@@ -147,11 +147,12 @@ $('.hot-promotions__slider').owlCarousel({
 const discountsCeilingsBtn = document.getElementById('discountsPromotionsCeilingsBtn'),
     discountsCeilingsItemsHide = document.querySelectorAll('.discounts-promotions-ceilings__item.hide');
 
-console.log(discountsCeilingsBtn);
 
-discountsCeilingsBtn.addEventListener('click', function() {
-    this.style.display = 'none';
-    discountsCeilingsItemsHide.forEach((item) => {
-        item.classList.remove('hide');
+if (discountsCeilingsBtn) {
+    discountsCeilingsBtn.addEventListener('click', function() {
+        this.style.display = 'none';
+        discountsCeilingsItemsHide.forEach((item) => {
+            item.classList.remove('hide');
+        });
     });
-});
+}

@@ -717,18 +717,3 @@ $(document).ready(function () {
 
 });
 
-const coldFramelessGlazingBtns = document.querySelectorAll('*[data-modal-btn]'),
-  coldFramelessGlazingPopus = document.querySelectorAll('.popup');
-
-for (let i = 0; i < coldFramelessGlazingBtns.length; i++) {
-  coldFramelessGlazingBtns[i].addEventListener('click', function (){
-    let name = coldFramelessGlazingBtns[i].getAttribute('data-modal-btn'),
-      modal = document.querySelector("[data-modal-window='" + name + "']"),
-      close = modal.querySelector('.popup__btn-close');
-      modal.style.display = 'block';
-      close.addEventListener('click', function () {
-        modal.style.display = 'none';
-    });
-  });
-}
-
