@@ -143,3 +143,15 @@ $('.hot-promotions__slider').owlCarousel({
 });
 
 /* Frontend Дима */
+// Скрипт для блока discounts-promotions-ceilings
+const discountsCeilingsBtn = document.getElementById('discountsPromotionsCeilingsBtn'),
+    discountsCeilingsItemsHide = document.querySelectorAll('.discounts-promotions-ceilings__item.hide');
+
+console.log(discountsCeilingsBtn);
+
+discountsCeilingsBtn.addEventListener('click', function() {
+    this.style.display = 'none';
+    discountsCeilingsItemsHide.forEach((item) => {
+        item.classList.remove('hide');
+    });
+});

@@ -1,0 +1,199 @@
+.discounts-promotions-ceilings {
+    .title {
+        margin-bottom: 1.163em;
+        letter-spacing: 0.03em;
+    }
+
+    .bold {
+        text-transform: uppercase;
+    }
+
+    &__list {
+        margin-bottom: 1.563em;
+    }
+
+    &__item,
+    &__img,
+    .button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__item {
+        margin-bottom: 0.938em;
+        max-width: 21.563em;
+        min-height: 30.625em;
+        padding: 1.313em 1.4em;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+        border-radius: 0.375em;
+
+        &.hide {
+            display: none;
+        }
+    }
+
+    &__img,
+    .button,
+    .block {
+        display: block;
+    }
+
+    &__img {
+        max-width: 18.938em;
+        margin-bottom: 1.563em;
+    }
+
+    &__text {
+        font-size: 1.250em;
+        letter-spacing: 0.03em;
+        line-height: 1.25;
+
+        &--small {
+            letter-spacing: 0.03em;
+            max-width: 18em;
+            line-height: 1.06;
+        }
+
+        &.letter-spacing {
+            letter-spacing: 0;
+            line-height: 1.1;
+
+            &-09 {
+                letter-spacing: 0.09em;
+            }
+        }
+    }
+
+    &__montage {
+        max-width: 11em;
+        margin-bottom: 0.625em;
+        font-size: 1.250em;
+    }
+
+    .button {
+        width: 100%;
+        max-width: 20.938em;
+    }
+    
+    @media (min-width: 768px) {
+        .title {
+            .block {
+                display: inline;
+            }
+        }
+
+        #discountsPromotionsCeilingsBtn {
+            display: none;
+        }
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 44.250em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__item {
+            margin-left: 0;
+            margin-right: 0;
+            max-width: 21.688em;
+
+            &:nth-child(odd) {
+                margin-right: 0.838em;
+            }
+
+            &.hide {
+                display: block;
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .title {
+            margin-bottom: 1.463em;
+        }
+
+        &__list {
+            max-width: 69.45em;
+        }
+
+        &__item {
+            margin-bottom: 1.250em;
+
+            &:nth-child(odd),
+            &:nth-child(2),
+            &:nth-child(4),
+            &:nth-child(8) {
+                margin-right: 1.438em;
+            }
+        }
+    }
+
+    @media (min-width: 1400px) {
+        .container {
+            max-width: 121rem;
+        }
+
+        &__list {
+            max-width: 75.45em;
+        }
+
+        &__item {
+            min-width: 22.988em;
+            min-height: 34.375em;
+
+            &:first-child {
+                .discounts-promotions-ceilings {
+                    &__text {
+                        .bold {
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(2),
+            &:nth-child(4),
+            &:nth-child(8) {
+                margin-right: 1.438em;
+            }
+
+            &:nth-child(3),
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &:nth-child(7) {
+                .discounts-promotions-ceilings {
+                    &__text {
+                        letter-spacing: 0;
+                    }
+                }
+            }
+        }
+
+        &__img {
+            max-width: 20.188em;
+            margin-bottom: 2.938em;
+        }
+
+        &__text,
+        &__montage {
+            font-size: 1.5em;
+        }
+
+        &__text {
+            &--small,
+            &.letter-spacing-09 {
+                letter-spacing: 0;
+            }
+        }
+
+        &__text {
+            &--small {
+                font-size: 1.250em;
+            }
+        }
+    }
+}
