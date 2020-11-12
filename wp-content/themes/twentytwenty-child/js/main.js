@@ -698,6 +698,7 @@ $(document).ready(function () {
     // autoHeight: true,
   });
 
+  // Скрипт для отзывов
   $('.reviews-windows__slider').owlCarousel({
     items: 1,
     dots: true,
