@@ -1,0 +1,122 @@
+@import '../../base/all/var';
+
+.with-ceilings-you-get {
+    background-color: #F9F9F9;
+
+    .title {
+        max-width: 8em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1.063em;
+    }
+
+    &__slider {
+        max-width: 21.6em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__slide {
+        border-radius: 0.625em;
+        border: 0.063em solid #E6E6E6;
+        margin-bottom: 1em;
+    }
+
+    &__image {
+        display: block;
+        max-width: 21.563em;
+        border-top-left-radius: 0.625em;
+        border-top-right-radius: 0.625em;
+
+        &-box {
+            position: relative;
+        }
+    }
+
+    &__price {
+        position: absolute;
+        top: 1.638em;
+        left: 0;
+        padding: 0.313em 1.275em;
+        max-width: 761.375em;
+        font-size: 1.563em;
+        letter-spacing: 0.05em;
+        background-color: $orange;
+        color: $white;
+        border-radius: 0.275em;
+        font-weight: 900;
+
+        &--padding {
+            padding-left: 0.675em;
+            padding-right:  0.675em;
+
+            &-2 {
+                padding-left: 1.075em;
+                padding-right: 1.075em;
+            }
+        }
+    }
+
+    &__title {
+        text-align: center;
+        padding: 1.188em 1.250em;
+        font-size: 1.250em;
+    }
+
+    .pagination {
+        &-box {
+            bottom: -1.3em;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .title {
+            max-width: none;
+        }
+
+        &__slider {
+            max-width: 44.6em;
+        }
+
+        &__image {
+            max-width: none;
+        }
+
+        &__title {
+            padding-top: 1.088em;
+            padding-bottom: 1.088em;
+        }
+
+        .pagination {
+            &-box {
+                bottom: -1.9em;
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        &.padding {
+            padding-top: 3.5em;
+            padding-bottom: 3.5em;
+        }
+
+        .title {
+            margin-bottom: 1.363em;
+        }
+
+        &__slider {
+            max-width: none;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__slide {
+            max-width: 23em;
+        }
+
+        &__title {
+            padding-top: 1.188em;
+            font-size: 1.5em;
+        }
+    }
+}

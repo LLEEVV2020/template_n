@@ -156,3 +156,25 @@ if (discountsCeilingsBtn) {
         });
     });
 }
+
+// Скрипт для слайдера блока with-ceilings-you-get
+function withCeilingsYouGetSlider(itemName) {
+    $(itemName).owlCarousel({
+        items: 1,
+        dots: true,
+        dotsClass: ['pagination-box'],
+        dotClass: ['pagination'],
+        responsive: {
+            768: {
+                items: 2,
+                margin: 10
+            }
+        }
+    });
+}
+
+checkWindowWidth('with-ceilings-you-get__slider', 1200, withCeilingsYouGetSlider);
+
+window.addEventListener('resize', function () {
+    checkWindowWidth('with-ceilings-you-get__slider', 1200, withCeilingsYouGetSlider);
+});
