@@ -280,3 +280,43 @@
         }
     }
 }
+
+.ceilings-text-customers {
+    &__title {
+        line-height: 1.2em;
+        margin-bottom: 1em;
+        span {
+            display: block;
+            white-space: nowrap;
+            @media (min-width: 1200px) {
+                display: inline;
+            }
+        }
+        @media (min-width: 768px) {
+            line-height: 1.1em;
+            margin-bottom: 0.8em;
+        }
+        @media (min-width: 1200px) {
+            margin-bottom: 0.6em;
+        }
+    }
+    &__text {
+        & > span {
+            display: block;
+
+            @media (min-width: 768px) {
+                display: inline;
+
+                & > span {
+                    display: block;
+                    @media (min-width: 1200px) {
+                        display: inline;
+                    }
+                }
+                @media (min-width: 1200px) {
+                    display: block;
+                }
+            }
+        }
+    }
+}
