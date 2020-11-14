@@ -178,3 +178,19 @@ checkWindowWidth('with-ceilings-you-get__slider', 1200, withCeilingsYouGetSlider
 window.addEventListener('resize', function () {
     checkWindowWidth('with-ceilings-you-get__slider', 1200, withCeilingsYouGetSlider);
 });
+
+// Скрипт для слайдера блока photos-ceilings
+const more = document.querySelectorAll('.more');
+
+if(more) {
+    for (let i = 0; i < more.length; i++) {
+        more[i].addEventListener('click', function(event) {
+            event.preventDefault();        
+            const hidden = this.parentNode.querySelectorAll('.hidden');
+            for (let i = 0; i < 4; i++) {
+                if (!hidden[i]) return this.outerHTML = '';
+                hidden[i].classList.remove('hidden');
+            }
+        });
+    }
+}
