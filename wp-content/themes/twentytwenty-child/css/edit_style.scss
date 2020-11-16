@@ -50,12 +50,23 @@
     }
 }
 
+.t-16-18-16 {
+    font-size: 1.6rem;
+    @include _768 {
+        font-size: 1.8rem;
+    }
+    @include _1200 {
+        font-size: 1.6rem;
+    }
+}
+
 // Кнопка
 
 .button {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
     width: 100%;
     margin: 0 auto;
     padding: 0.3em;
