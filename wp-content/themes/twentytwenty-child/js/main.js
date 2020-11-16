@@ -45,7 +45,8 @@ $(document).ready(function () {
     navClass: ['navigation-left', 'navigation-right'],
     responsive: {
       1200: {
-        margin: 4
+        margin: 4,
+        items: 4
       }
     }
   });
