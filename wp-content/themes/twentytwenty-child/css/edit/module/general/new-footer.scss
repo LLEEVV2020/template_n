@@ -1,0 +1,405 @@
+@import "../../../base/all/var";
+@import "../../../base/all/mixin";
+
+// @include _768 {
+// }
+// @include _1200 {
+// }
+
+.footer {
+    background-color: $lightGray;
+
+    /* .footer__top */
+
+    &__top {
+        border-bottom: 0.1rem solid #969693;
+        min-height: 8.7rem;
+        padding-top: 3rem;
+
+        @include _768 {
+            min-height: 9.4rem;
+            padding-top: 3.5rem;
+        }
+
+        @include _1200 {
+            min-height: 11rem;
+            padding-top: 4rem;
+        }
+    }
+
+    /* .footer__top-btn */
+
+    &__top-btn {
+        max-width: 27.2rem;
+        text-decoration: none;
+
+        @include _768 {
+            max-width: 22.6rem;
+            margin-left: 0.6em;
+        }
+
+        @include _1200 {
+            max-width: 27.2rem;
+            margin-left: 0;
+        }
+    }
+
+    /* .footer__main */
+
+    &__main {
+        & .grid-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 0.5fr;
+            gap: 0px 0px;
+            grid-template-areas:
+                "map"
+                "four";
+            margin-top: 1.5em;
+
+            @include _768 {
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1.13fr 0.1fr;
+                gap: 0px 0px;
+                grid-template-areas:
+                    "one two three"
+                    "map map four";
+                margin-top: 1.3em;
+                padding-bottom: 1.1em;
+            }
+
+            @include _1200 {
+                grid-template-columns: 1.29fr 1fr 1fr 1fr;
+                grid-template-rows: 1.08fr 1fr;
+                gap: 0px 0px;
+                grid-template-areas:
+                    "one three map map"
+                    "two four map map";
+                margin-top: 2em;
+                padding-bottom: 0.6em;
+            }
+        }
+    }
+
+    /* .footer__main-box */
+
+    &__main-box {
+        @include _768 {
+            padding-left: 0.6em;
+        }
+
+        @include _1200 {
+            padding-left: 0;
+        }
+
+        /* .footer__main-box--one */
+
+        &--one {
+            display: none;
+
+            @include _768 {
+                display: block;
+                grid-area: one;
+            }
+        }
+
+        /* .footer__main-box--two */
+
+        &--two {
+            display: none;
+
+            @include _768 {
+                display: block;
+                grid-area: two;
+            }
+        }
+
+        /* .footer__main-box--three */
+
+        &--three {
+            display: none;
+
+            @include _768 {
+                display: block;
+                grid-area: three;
+            }
+        }
+
+        /* .footer__main-box--four */
+
+        &--four {
+            grid-area: four;
+            margin-bottom: 0.7em;
+
+            @include _768 {
+                margin-bottom: 0;
+
+                & .footer__main-list {
+                    text-align: right;
+                    color: $orange;
+                    margin-top: 5em;
+                    padding-right: 0.7em;
+                }
+
+                & .footer__main-item {
+                    margin-bottom: 0.7em;
+                }
+
+                & .footer__main-link {
+                    font-size: 2.2rem;
+                }
+            }
+
+            @include _1200 {
+                & .footer__main-list {
+                    text-align: left;
+                    margin-top: 2.7em;
+                    padding-right: 0.7em;
+                }
+
+                & .footer__main-item {
+                    margin-bottom: 1.2em;
+                }
+
+                & .footer__main-link {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+
+        /* .footer__main-box--map */
+
+        &--map {
+            grid-area: map;
+
+            @include _768 {
+                & .footer__main-title {
+                    font-size: 2rem;
+                    margin-bottom: 0.9em;
+                }
+            }
+
+            @include _1200 {
+                & .footer__main-title {
+                    text-align: right;
+                    margin-right: .1em;
+                    font-size: 1.8rem;
+                    margin-bottom: 2em;
+                }
+            }
+        }
+    }
+
+    /* .footer__main-title */
+
+    &__main-title {
+        text-align: center;
+        margin-bottom: 1.4em;
+        color: #969693;
+
+        @include _768 {
+            text-align: left;
+            font-size: 1.8rem;
+            margin-bottom: 1.55em;
+        }
+    }
+
+    /* .footer__main-list */
+
+    &__main-list {
+        text-align: center;
+        margin-top: 1.4em;
+        letter-spacing: 0.03em;
+
+        @include _768 {
+            text-align: left;
+            margin-top: 0;
+        }
+    }
+
+    /* .footer__main-item */
+
+    &__main-item {
+        margin-bottom: 0.7em;
+
+        @include _768 {
+            margin-bottom: 1.1em;
+        }
+    }
+
+    /* .footer__main-link */
+
+    &__main-link {
+        @include _768 {
+            font-size: 1.8rem;
+            color: inherit;
+        }
+    }
+
+    /* .footer__main-map */
+
+    &__main-map {
+        height: 17.3rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        @include _768 {
+            width: 28.6rem;
+            height: 14.2rem;
+        }
+
+        @include _1200 {
+            width: 36.9rem;
+            height: 32.4rem;
+            margin-left: auto;
+        }
+    }
+
+    /* .footer__bottom */
+
+    &__bottom {
+        border-top: 0.1rem solid #969693;
+        padding: 1.2em 0 0;
+
+        .container {
+            flex-wrap: wrap;
+
+            @include _768 {
+                padding: 0 0.7em;
+            }
+
+            @include _1200 {
+                padding: 0;
+            }
+        }
+
+        @include _768 {
+            padding-top: 1.45em;
+        }
+
+        @include _1200 {
+            padding-bottom: 0.75em;
+        }
+    }
+
+    /* .footer__bottom-item */
+
+    &__bottom-item {
+        width: 100%;
+        margin-bottom: 1.6em;
+
+        @include _max768 {
+            text-align: center;
+        }
+
+        @include _768 {
+            width: 33.33%;
+        }
+    }
+
+    /* .footer__bottom-tel */
+
+    &__bottom-tel {
+        text-decoration: none;
+        font-size: 2.8rem;
+        color: #3a3a3a;
+        line-height: 1.4em;
+
+        @include _768 {
+            font-size: 2.2rem;
+        }
+
+        @include _1200 {
+            font-size: 2.4rem;
+        }
+    }
+
+    /* .footer__bottom-mail */
+
+    &__bottom-mail {
+        font-size: 1.8rem;
+
+        @include _768 {
+            font-size: 1.5rem;
+        }
+
+        @include _1200 {
+            font-size: 1.8rem;
+        }
+    }
+
+    /* .footer__bottom-schedule */
+
+    &__bottom-schedule {
+        color: #3a3a3a;
+        font-size: 1.4rem;
+        line-height: 1.4em;
+
+        span {
+            font-size: 2rem;
+            line-height: 1.7em;
+
+            @include _768 {
+                line-height: 1.4em;
+            }
+
+            @include _1200 {
+                font-size: 2.4rem;
+            }
+        }
+
+        @include _768 {
+            font-size: 1.5rem;
+            line-height: 1.7;
+            padding-left: 3.4em;
+        }
+
+        @include _1200 {
+            font-size: 2rem;
+            font-size: 1.4rem;
+            line-height: 1.4;
+            padding-left: 3.7em;
+            margin-top: 0.9em;
+        }
+    }
+
+    /* .footer__bottom-link */
+
+    &__bottom-link {
+        color: #3a3a3a;
+        text-decoration: none;
+        font-size: 1.4rem;
+
+        &+span {
+            font-size: 1.4rem;
+            font-weight: 700;
+            line-height: 2em;
+
+            @include _768 {
+                font-size: 1.2rem;
+            }
+
+            @include _1200 {
+                font-size: 1.4rem;
+            }
+        }
+
+        @include _768 {
+            font-size: 1.5rem;
+            line-height: 1.9em;
+        }
+
+        @include _1200 {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+.text-right {
+    @include _768 {
+        text-align: right;
+    }
+}
