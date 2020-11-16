@@ -45,7 +45,7 @@ http://prntscr.com/nuko0j
 	- css
 	- city_include
 8. Устанавливаем шаблоны странниц
-Заходим в папку "wp-content/themes/twentynineteen"
+Заходим в папку "/wp-content/themes/twentynineteen"
 И загружаем туда файлы шаблонов
 
 9. 
