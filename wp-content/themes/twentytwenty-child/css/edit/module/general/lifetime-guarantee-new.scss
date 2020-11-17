@@ -115,6 +115,7 @@
                 "img_worker text_1   img_1 text_2" ;
             column-gap: .8em;
             grid-template-columns: 16.1rem 5.4fr 26.4rem 5fr;
+            max-width: 114rem;
         }
 
         &__image {
