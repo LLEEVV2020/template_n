@@ -1,0 +1,205 @@
+@import '../../../base/all/var';
+
+.buy-right {
+    display: none;
+
+    @media (min-width: 1200px) {
+        display: block;
+
+        .title {
+            margin-bottom: 0.875em;
+        }
+
+        .text,
+        &__bold,
+        &__icon:before,
+        &__delivery,
+        &__at-our-expense {
+            font-weight: 700;
+        }
+
+        .text {
+            margin-bottom: 2.875em;
+            text-align: center;
+            font-size: 1.125em;
+        }
+
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 3.438em;
+        }
+
+        &__item {
+            max-width: 19.125em;
+            position: relative;
+        }
+
+        &__image {
+            margin-bottom: 0.813em;
+            max-width: 19.188em;
+        }
+
+        &__title {
+            margin-bottom: 0.375em;
+        }
+
+        &__title,
+        &__text,
+        .buy-right__video-text,
+        &__icon:before {
+            font-size: 1.8rem;
+        }
+
+        &__text {
+            line-height: 1.2;
+        }
+
+        &__icon,
+        &__delivery,
+        &__at-our-expense,
+        .logo-factory-windows {
+            position: absolute;
+        }
+
+        &__icon,
+        &__delivery,
+        &__at-our-expense {
+            text-align: center;
+        }
+
+        &__icon {
+            width: 4rem;
+            height: 4rem;
+            line-height: 4rem;
+            background-color: $yellow;
+            border-radius: 50%;
+            top: -1.1em;
+            left: 1em;
+
+            &--1 {
+                &:before {
+                    content: '1';
+                }
+            }
+
+            &--2 {
+                &:before {
+                    content: '2';
+                }
+            }
+
+            &--3 {
+                &:before {
+                    content: '3';
+                }
+            }
+        }
+
+        &__delivery,
+        &__at-our-expense {
+            font-size: 0.9rem;
+            background-color: $yellow;
+            width: 8rem;
+            height: 1.6rem;
+            line-height: 1.6rem;
+        }
+
+        &__delivery {
+            top: 4em;
+            left: 2em;
+        }
+
+        &__at-our-expense {
+            top: 7em;
+            left: 3em;
+        }
+
+        .logo-factory-windows {
+            &:nth-of-type(1) {
+                top: 7.3em;
+                left: 10.9em;
+                transform: skewY(-7deg);
+            }
+
+            &:nth-of-type(2) {
+                top: 4em;
+                right: 3.6em;
+                
+                .logo-factory-windows {
+                    &__box {
+                        margin-bottom: 0;
+                    }
+
+                    &__image {
+                        width: 7px;
+                        height: 9px;
+                        background-image: url("data:image/svg+xml,%0A%3Csvg width='7' height='9' viewBox='0 0 29 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='16.2188' y1='8.93462' x2='0.995939' y2='8.93462' stroke='%23969593' stroke-width='3.5'/%3E%3Cline x1='2.74609' y1='7.67828' x2='2.74609' y2='25.4489' stroke='%23969593' stroke-width='3.5'/%3E%3Cline x1='20.1484' y1='25.2243' x2='0.997156' y2='25.2243' stroke='%23969593' stroke-width='3.5'/%3E%3Cline x1='18.9492' y1='21.0062' x2='18.9492' y2='26.9298' stroke='%23969593' stroke-width='3.5'/%3E%3Cline x1='10.5391' y1='6.19736' x2='10.5391' y2='0.767436' stroke='%23F26422' stroke-width='3.5'/%3E%3Cline x1='8.85156' y1='2.47289' x2='28.4939' y2='2.47289' stroke='%23F26422' stroke-width='3.5'/%3E%3Cline x1='26.8047' y1='0.767464' x2='26.8047' y2='20.019' stroke='%23F26422' stroke-width='3.5'/%3E%3Cline x1='9.34375' y1='18.269' x2='28.004' y2='18.269' stroke='%23F26422' stroke-width='3.5'/%3E%3Cline x1='10.6016' y1='11.6273' x2='10.6016' y2='20.019' stroke='%23F26422' stroke-width='3.5'/%3E%3Cline x1='18.9492' y1='1.26113' x2='18.9492' y2='20.019' stroke='%23F26422' stroke-width='3.5'/%3E%3C/svg%3E%0A");
+                    }
+
+                    &__text {
+                        &-small {
+                            font-size: 1.9px;
+                            margin-bottom: 0.3px;
+                        }
+
+                        &-big {
+                            font-size: 4px;
+                        }
+                    }
+
+                    &__title {
+                        font-size: 1.5px;
+                    }
+                }
+            }
+
+            &__image {
+                width: 11px;
+                height: 11px;
+                background-image: url("data:image/svg+xml,%0A%3Csvg width='10' height='12' viewBox='0 0 29 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='16.2188' y1='8.93462' x2='0.995939' y2='8.93462' stroke='%23969593' stroke-width='3.5'/%3E%3Cline x1='2.74609' y1='7.67828' x2='2.74609' y2='25.4489' stroke='%23969593' stroke-width='3.5'/%3E%3Cline x1='20.1484' y1='25.2243' x2='0.997156' y2='25.2243' stroke='%23969593' stroke-width='3.5'/%3E%3Cline x1='18.9492' y1='21.0062' x2='18.9492' y2='26.9298' stroke='%23969593' stroke-width='3.5'/%3E%3Cline x1='10.5391' y1='6.19736' x2='10.5391' y2='0.767436' stroke='%23F26422' stroke-width='3.5'/%3E%3Cline x1='8.85156' y1='2.47289' x2='28.4939' y2='2.47289' stroke='%23F26422' stroke-width='3.5'/%3E%3Cline x1='26.8047' y1='0.767464' x2='26.8047' y2='20.019' stroke='%23F26422' stroke-width='3.5'/%3E%3Cline x1='9.34375' y1='18.269' x2='28.004' y2='18.269' stroke='%23F26422' stroke-width='3.5'/%3E%3Cline x1='10.6016' y1='11.6273' x2='10.6016' y2='20.019' stroke='%23F26422' stroke-width='3.5'/%3E%3Cline x1='18.9492' y1='1.26113' x2='18.9492' y2='20.019' stroke='%23F26422' stroke-width='3.5'/%3E%3C/svg%3E%0A");
+            }
+
+            &__text {
+                &-small {
+                    font-size: 3.1px;
+                }
+
+                &-big {
+                    font-size: 7px;
+                }
+            }
+
+            &__title {
+                font-size: 2.7px;
+            }
+        }
+
+        &__video {
+            max-width: 47.188em;
+
+            &-box {
+                display: flex;
+                align-items: center;
+            }
+
+            &-content {
+                max-width: 22.813em;
+            }
+
+            &-title {
+                margin-bottom: 1.813em;
+                font-size: 2.4rem;
+                line-height: 1.5;
+                font-weight: 900;
+            }
+
+            &-text {
+                max-width: 15em;
+                line-height: 1.4;
+            }
+
+        }
+
+    }
+}
