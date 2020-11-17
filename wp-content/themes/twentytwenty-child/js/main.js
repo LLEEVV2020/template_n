@@ -717,5 +717,33 @@ $(document).ready(function () {
     }
   });  
 
+    // Скрипт для слайдера блока low-prices-for-glazing
+    function checkWidth() {
+      var windowWidth = $('body').innerWidth(),
+        elem = $(".low-prices-for-glazing__slider");
+      if (windowWidth < 768) {
+  
+        elem.addClass('owl-carousel');
+  
+        $('.low-prices-for-glazing__slider').owlCarousel({
+          items: 1,
+          dots: true,
+          margin: 55,
+          dotsClass: ['pagination-box'],
+          dotClass: ['pagination'],
+          nav: true,
+        });
+      }
+      else {
+        elem.trigger('destroy.owl.carousel').removeClass('owl-carousel owl-loaded');
+      }
+    }
+  
+    checkWidth(); // проверит при загрузке страницы
+  
+    $(window).resize(function () {
+      checkWidth(); // проверит при изменении размера окна клиента
+    });
+
 });
 
