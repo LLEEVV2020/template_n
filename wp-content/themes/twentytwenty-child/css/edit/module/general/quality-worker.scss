@@ -226,6 +226,10 @@
         background: url("/wp-content/themes/twentytwenty-child/img/quality-worker-bg-big-left.png") no-repeat left center / 40%,
                     url("/wp-content/themes/twentytwenty-child/img/quality-worker-bg-big-right.png") no-repeat right center / 40%;
 
+        .title {
+            font-size: 4rem;
+        }
+
         .navigation {
             &-left {
                 background-image: url("data:image/svg+xml,%0A%3Csvg width='13' height='20' viewBox='0 0 13 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.331192 10.7772L9.47178 19.678C9.91262 20.1073 10.6273 20.1073 11.0681 19.678L12.1342 18.6399C12.5743 18.2114 12.5752 17.5168 12.1361 17.0873L4.89203 9.99998L12.1361 2.91274C12.5752 2.48319 12.5743 1.78864 12.1342 1.36009L11.0681 0.321959C10.6273 -0.10732 9.91257 -0.10732 9.47178 0.321959L0.33124 9.22276C-0.109601 9.65199 -0.109601 10.348 0.331192 10.7772Z' fill='%23D0D0D0'/%3E%3C/svg%3E%0A");
@@ -242,11 +246,12 @@
 
         .text {
             max-width: 21em;
-            margin-bottom: 1.363em;
+            margin-bottom: 2.263em;
+            line-height: 1.2;
         }
 
         &__box {
-            max-width: 83rem;
+            max-width: 96rem;
         }
 
         &__left {
@@ -259,7 +264,8 @@
         }
 
         &__slider {
-            max-width: 40rem;
+            max-width: 50rem;
+            margin-right: 1.7em;
         }
 
         &__box {
