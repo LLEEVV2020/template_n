@@ -320,3 +320,50 @@
         }
     }
 }
+
+.ceilings-text-exclusive {
+    &__title {
+        line-height: 1.2;
+        margin-bottom: 0.8em;
+        @include _768 {
+            line-height: 1.1;
+            margin-bottom: 0.9em;
+        }
+        @include _1200 {
+            line-height: 1.2;
+            margin-bottom: 0.8em;
+        }
+    }
+    &__text {
+        @include _1200 {
+            line-height: 1.2;
+        }
+    }
+}
+.ceilings-text-sky {
+    &__title {
+        line-height: 1.2;
+        margin-bottom: 0.8em;
+        @include _768 {
+            line-height: 1.1;
+            margin-bottom: 1.1em;
+        }
+        @include _1200 {
+            line-height: 1.2;
+            margin-bottom: 0.8em;
+        }
+    }
+    &__text {
+        line-height: 1.13;
+        @include _768 {
+            padding: 0 0.7em;
+        }
+        @include _1200 {
+            line-height: 1.21;
+            span {
+                display: block;
+            }
+        }
+    }
+}
+
