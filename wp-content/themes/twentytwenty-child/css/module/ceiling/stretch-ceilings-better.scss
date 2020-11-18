@@ -1,0 +1,225 @@
+@import '../../base/all/var';
+
+.stretch-ceilings-better {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+
+    .title,
+    &__subtitle,
+    &__item {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .title {
+        max-width: 14em;
+        margin-bottom: 0.463em;
+        line-height: 1.33;
+    }
+
+    &__subtitle,
+    &__item {
+        text-align: center;
+    }
+
+    &__subtitle {
+        max-width: 17em;
+        margin-bottom: 1.463em;
+        line-height: 1.2;
+    }
+
+    &__item {
+        max-width: 17em;
+        margin-bottom: 1em;
+    }
+
+    &__title {
+        min-height: 2.6em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 0.975em;
+        padding-bottom: 0.438em;
+        border-bottom: 0.063em solid $orange;
+
+        .block {
+            display: block;
+        }
+    }
+
+    &__image {
+        margin-bottom: 1.013em;
+        &-box {
+            position: relative;
+        }
+    }
+
+    &__circle {
+        position: absolute;
+        bottom: 0.9em;
+        left: 1em;
+        width: 2.5em;
+        height: 2.5em;
+        background-color: $orange;
+        border-radius: 50%;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url('/wp-content/themes/twentytwenty-child/img/ceiling/sprite-ceilings.png');
+            background-repeat: no-repeat;
+            background-size: 118.750em 437.500em;
+        }
+
+        &.icon {
+            &-1:before {
+                width: 1.875em;
+                height: 2.063em;
+                background-position: 0 0;
+                font-size: 1.3rem;                
+            }
+
+            &-2:before {
+                width: 2.5em;
+                height: 2.063em;
+                background-position: 2.688% 0;
+                font-size: 1.1rem;
+            }
+
+            &-3:before {
+                width: 1.813em;
+                height: 2.250em;
+                background-position: 5.879% 0;
+                font-size: 1.1rem;
+            }
+
+            &-4:before {
+                width: 2.188em;
+                height: 2.188em;
+                background-position: 8.525% 0;
+                font-size: 1.2rem;
+            }
+
+            &-5:before {
+                width: 2.063em;
+                height: 2em;
+                background-position: 11.462% 0;
+                font-size: 1.2rem;
+            }
+
+            &-6:before {
+                width: 1.813em;
+                height: 2.063em;
+                background-position: 14.27% 0;
+                font-size: 1.2rem;
+            }
+
+            &-7:before {
+                content: 'Более 10 лет';
+                width: 3em;
+                background-image: none;
+                font-size: 1rem;
+                font-weight: 700;
+                color: $white;
+            }
+
+            &-8:before {
+                width: 2.063em;
+                height: 2.063em;
+                background-position: 16.926% 0;
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    &__text {
+        font-size: 1.125em;
+        line-height: 1.17;
+
+        sup {
+            font-size: 0.6em;
+        }
+    }
+
+    .pagination {
+        width: 0.500em;
+        height: 0.500em;
+        margin-left: 0.275em;
+        margin-right: 0.275em;
+        background-color: $gray;
+
+        &.active {
+            background-color: $blue;
+        }
+
+        &-box {
+            bottom: -1.3em;
+        }
+    }
+
+    @media (min-width: 768px) {
+        padding-top: 5.5rem;
+        padding-bottom: 5.5rem;
+
+        .title {
+            max-width: none;
+        }
+
+        &__subtitle {
+            max-width: none;
+            margin-bottom: 2.425em;
+            font-size: 1.250em;
+        }
+
+        &__slider {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 37em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__item {
+            margin-bottom: 3.125em;
+        }
+
+        &__image {
+            margin-bottom: 0.813em;
+        }
+
+        &__circle {
+            bottom: 2em;
+        }
+
+        &__title {
+            margin-bottom: 0.875em;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        padding-top: 7.5rem;
+        padding-bottom: 7.5rem;
+
+        .title {
+            margin-bottom: 0.363em;
+        }
+
+        &__slider {
+            max-width: 72em;
+        }
+
+        &__subtitle {
+            margin-bottom: 2.625em;
+            font-size: 1.5em;
+        }
+    }
+
+    @media (min-width: 1400px) {
+        .container {
+            max-width: 120rem;
+        }
+    }
+}

@@ -194,3 +194,25 @@ if(more) {
         });
     }
 }
+
+// Скрипт для слайдера блока stretch-ceilings-better
+function stretchCeilingsBetter(itemName) {
+    $(itemName).owlCarousel({
+        items: 1,
+        dots: true,
+        dotsClass: ['pagination-box'],
+        dotClass: ['pagination'],
+        responsive: {
+            768: {
+                items: 2,
+                margin: 10
+            }
+        }
+    });
+}
+
+checkWindowWidth('stretch-ceilings-better__slider', 768, stretchCeilingsBetter);
+
+window.addEventListener('resize', function () {
+    checkWindowWidth('stretch-ceilings-better__slider', 768, stretchCeilingsBetter);
+});
