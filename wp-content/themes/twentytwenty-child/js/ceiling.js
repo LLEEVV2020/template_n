@@ -229,8 +229,8 @@ const slider = document.getElementById('calculatingCostRange'),
 output.textContent = slider.value;
 
 function getSliderValue() {
-  let x = slider.value,
-        color = 'linear-gradient(90deg, rgb(242, 100, 34)' + x + '%, rgb(214, 214, 214)' + x + '%)';
+  let x = slider.value * 2.2,
+        color = 'linear-gradient(90deg, rgb(242, 100, 34)' + (x - 10) + '%, rgb(214, 214, 214)' + (x - 10) + '%)';
   slider.style.background = color;
 }
 
