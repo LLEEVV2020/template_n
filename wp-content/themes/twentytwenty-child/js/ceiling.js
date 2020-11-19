@@ -91,6 +91,11 @@ window.addEventListener('resize', function () {
 
 /* Frontend Паша */
 
+$('.cost-calculation__box-list').on('click', '.cost-calculation__link', function () {
+    $('.cost-calculation__list').toggleClass('list-open');
+    $('.cost-calculation__link').toggleClass('btn-open');
+});
+
 // скрипт select
 $('.select').on('click', '.select__head', function () {
     if ($(this).hasClass('open')) {
@@ -149,7 +154,7 @@ const discountsCeilingsBtn = document.getElementById('discountsPromotionsCeiling
 
 
 if (discountsCeilingsBtn) {
-    discountsCeilingsBtn.addEventListener('click', function() {
+    discountsCeilingsBtn.addEventListener('click', function () {
         this.style.display = 'none';
         discountsCeilingsItemsHide.forEach((item) => {
             item.classList.remove('hide');
@@ -182,10 +187,10 @@ window.addEventListener('resize', function () {
 // Скрипт для слайдера блока photos-ceilings
 const more = document.querySelectorAll('.more');
 
-if(more) {
+if (more) {
     for (let i = 0; i < more.length; i++) {
-        more[i].addEventListener('click', function(event) {
-            event.preventDefault();        
+        more[i].addEventListener('click', function (event) {
+            event.preventDefault();
             const hidden = this.parentNode.querySelectorAll('.hidden');
             for (let i = 0; i < 4; i++) {
                 if (!hidden[i]) return this.outerHTML = '';
@@ -216,3 +221,4 @@ checkWindowWidth('stretch-ceilings-better__slider', 768, stretchCeilingsBetter);
 window.addEventListener('resize', function () {
     checkWindowWidth('stretch-ceilings-better__slider', 768, stretchCeilingsBetter);
 });
+

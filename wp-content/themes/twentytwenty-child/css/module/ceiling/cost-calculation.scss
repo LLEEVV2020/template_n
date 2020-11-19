@@ -26,7 +26,7 @@
         margin: 0 -1em;
         padding: 1.6em 1em 1.4em;
 
-        &+& {
+        & + & {
             margin-top: 1.6em;
 
             @include _768 {
@@ -176,7 +176,6 @@
     /* .cost-calculation__box-list */
 
     &__box-list {
-
         @include _1200 {
             grid-area: list;
             padding-right: 1.9em;
@@ -187,6 +186,11 @@
     /* .cost-calculation__list */
 
     &__list {
+        &.list-open {
+            .item-none {
+                display: none;
+            }
+        }
         margin-bottom: 1.8em;
 
         @include _768 {
@@ -200,10 +204,6 @@
         display: flex;
         justify-content: space-between;
         line-height: 1.5;
-
-        &.item-none {
-            display: none;
-        }
     }
 
     /* .cost-calculation__link */
@@ -211,5 +211,16 @@
     &__link {
         text-decoration: none;
         cursor: pointer;
+        position: relative;
+
+        &::before {
+            content: "Скрыть";
+        }
+
+        &.btn-open {
+            &::before {
+                content: "Показать полный список";
+            }
+        }
     }
 }
