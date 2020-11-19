@@ -121,11 +121,9 @@
     }
 
     @media (min-width: 1900px) {
-        max-width: 114em;
-       // margin-left: auto;
         &:after {
-            right: 0;
-            width: 32%;
+            right: 5%;
+            width: 35%;
         }
     }
 
