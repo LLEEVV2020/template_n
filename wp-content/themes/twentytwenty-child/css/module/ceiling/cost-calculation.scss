@@ -13,6 +13,12 @@
 
     &__title {
         margin-bottom: 1.15em;
+        text-transform: uppercase;
+
+        span {
+            text-transform: initial;
+            margin-top: 1em;
+        }
 
         @include _1200 {
             margin-bottom: 1.55em;
