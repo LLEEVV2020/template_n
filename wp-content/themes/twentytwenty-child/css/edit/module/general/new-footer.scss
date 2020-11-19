@@ -17,13 +17,13 @@
         padding-top: 3rem;
 
         @include _768 {
-            min-height: 9.4rem;
-            padding-top: 3.5rem;
+            min-height: 9rem;
+            padding-top: 3rem;
         }
 
         @include _1200 {
-            min-height: 11rem;
-            padding-top: 4rem;
+            min-height: 9rem;
+            padding-top: 3rem;
         }
     }
 
@@ -59,13 +59,13 @@
 
             @include _768 {
                 grid-template-columns: 1fr 1fr 1fr;
-                grid-template-rows: 1.13fr 0.1fr;
+                grid-template-rows: 0.83fr 0.1fr;
                 gap: 0px 0px;
                 grid-template-areas:
                     "one two three"
                     "map map four";
                 margin-top: 1.3em;
-                padding-bottom: 1.1em;
+                padding-bottom: 0.6em;
             }
 
             @include _1200 {
@@ -75,8 +75,8 @@
                 grid-template-areas:
                     "one three map map"
                     "two four map map";
-                margin-top: 2em;
-                padding-bottom: 0.6em;
+                margin-top: 1.4em;
+                padding-bottom: 0.3em;
             }
         }
     }
@@ -137,28 +137,24 @@
                 & .footer__main-list {
                     text-align: right;
                     color: $orange;
-                    margin-top: 5em;
+                    margin-top: 6.5em;
                     padding-right: 0.7em;
                 }
 
                 & .footer__main-item {
                     margin-bottom: 0.7em;
                 }
-
-                & .footer__main-link {
-                    font-size: 2.2rem;
-                }
             }
 
             @include _1200 {
                 & .footer__main-list {
                     text-align: left;
-                    margin-top: 2.7em;
+                    margin-top: 1.5em;
                     padding-right: 0.7em;
                 }
 
                 & .footer__main-item {
-                    margin-bottom: 1.2em;
+                    margin-bottom: 0.7em;
                 }
 
                 & .footer__main-link {
@@ -174,17 +170,15 @@
 
             @include _768 {
                 & .footer__main-title {
-                    font-size: 2rem;
-                    margin-bottom: 0.9em;
+                    margin-bottom: 1.2em;
                 }
             }
 
             @include _1200 {
                 & .footer__main-title {
                     text-align: right;
-                    margin-right: .1em;
-                    font-size: 1.8rem;
-                    margin-bottom: 2em;
+                    margin-right: 0.1em;
+                    margin-bottom: 0.6em;
                 }
             }
         }
@@ -199,8 +193,12 @@
 
         @include _768 {
             text-align: left;
-            font-size: 1.8rem;
-            margin-bottom: 1.55em;
+            font-size: 1.6rem;
+            margin-bottom: 0.85em;
+        }
+
+        @include _1200 {
+            margin-bottom: 0.75em;
         }
     }
 
@@ -223,7 +221,7 @@
         margin-bottom: 0.7em;
 
         @include _768 {
-            margin-bottom: 1.1em;
+            margin-bottom: 0.75em;
         }
     }
 
@@ -231,7 +229,6 @@
 
     &__main-link {
         @include _768 {
-            font-size: 1.8rem;
             color: inherit;
         }
     }
@@ -252,8 +249,8 @@
         }
 
         @include _1200 {
-            width: 36.9rem;
-            height: 32.4rem;
+            width: 29.4rem;
+            height: 25.9rem;
             margin-left: auto;
         }
     }
@@ -277,11 +274,10 @@
         }
 
         @include _768 {
-            padding-top: 1.45em;
+            padding-top: 1.05em;
         }
 
         @include _1200 {
-            padding-bottom: 0.75em;
         }
     }
 
@@ -327,7 +323,7 @@
         }
 
         @include _1200 {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
         }
     }
 
@@ -373,7 +369,7 @@
         text-decoration: none;
         font-size: 1.4rem;
 
-        &+span {
+        & + span {
             font-size: 1.4rem;
             font-weight: 700;
             line-height: 2em;
@@ -384,6 +380,8 @@
 
             @include _1200 {
                 font-size: 1.4rem;
+                line-height: 1em;
+
             }
         }
 
@@ -393,17 +391,18 @@
         }
 
         @include _1200 {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
+            line-height: 2.6em;
+
         }
     }
-}
-
-.text-right {
-    @include _768 {
-        text-align: right;
+    .text-right {
+        @include _768 {
+            text-align: right;
+        }
     }
-}
 
-footer.header-footer-group{
-    display: none;
+    footer.header-footer-group {
+        display: none;
+    }
 }
