@@ -222,3 +222,25 @@ window.addEventListener('resize', function () {
     checkWindowWidth('stretch-ceilings-better__slider', 768, stretchCeilingsBetter);
 });
 
+// Скрипт для слайдера с ползунком блока calculating-cost-stretch-ceiling
+const slider = document.getElementById('calculatingCostRange'),
+       output = document.getElementById('calculatingCostValue');
+
+output.textContent = slider.value;
+
+function getSliderValue() {
+  let x = slider.value,
+        color = 'linear-gradient(90deg, rgb(242, 100, 34)' + x + '%, rgb(214, 214, 214)' + x + '%)';
+  slider.style.background = color;
+}
+
+getSliderValue();
+
+slider.addEventListener('input', function() {
+  output.textContent = this.value;
+});
+
+slider.addEventListener('mousemove', function() {
+    getSliderValue();
+});
+
