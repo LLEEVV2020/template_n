@@ -22,7 +22,7 @@
 
     @include _1200 {
         background-image: url(/wp-content/themes/twentytwenty-child/img/day-to-install-bg-l.webp);
-        background-size: 64.2% 100%;
+        background-size: contain;
     }
 
     /* .a-day-to-install-windows__wrapper */
