@@ -223,30 +223,52 @@ window.addEventListener('resize', function () {
 });
 
 // Скрипт для слайдера с ползунком блока calculating-cost-stretch-ceiling
-const slider = document.getElementById('calculatingCostRange'),
-    output = document.getElementById('calculatingCostValue');
-
-output.textContent = slider.value;
-
-function getSliderValue() {
-    let x = slider.value * 2.2,
-        color = 'linear-gradient(90deg, rgb(242, 100, 34)' + (x - 10) + '%, rgb(214, 214, 214)' + (x - 10) + '%)';
-    slider.style.background = color;
+const calculatingCostSettings={
+    fill: '#F26422',
+    background: '#C4C4C4'
 }
 
-getSliderValue();
+const calculatingCostRangeSlider = document.querySelector('.calculating-cost-stretch-ceiling__slider');
 
-slider.addEventListener('input', function () {
-    output.textContent = this.value;
-});
+function applyFill(calculatingCostRangeSlider) {
+    const percentage = 100*(calculatingCostRangeSlider.value-calculatingCostRangeSlider.min)/(calculatingCostRangeSlider.max-calculatingCostRangeSlider.min),
+        bg = `linear-gradient(90deg, ${calculatingCostSettings.fill} ${percentage}%, ${calculatingCostSettings.background} ${percentage+0.1}%)`;
+    calculatingCostRangeSlider.style.background = bg;
+}
 
-slider.addEventListener('mousemove', function () {
-    getSliderValue();
-});
-slider.addEventListener('touchmove', function () {
-    getSliderValue();
-});
-slider.addEventListener('touchend', function () {
-    getSliderValue();
-});
+if (calculatingCostRangeSlider) {
+    calculatingCostRangeSlider.addEventListener('input', (event) => {
+        calculatingCostValue.textContent = event.target.value;
+        applyFill(event.target);
+    });
+    
+    applyFill(calculatingCostRangeSlider);
+}
+
+// const slider = document.getElementById('calculatingCostRange'),
+//     output = document.getElementById('calculatingCostValue');
+
+// output.textContent = slider.value;
+
+// function getSliderValue() {
+//     let x = slider.value * 2.2,
+//         color = 'linear-gradient(90deg, rgb(242, 100, 34)' + (x - 10) + '%, rgb(214, 214, 214)' + (x - 10) + '%)';
+//     slider.style.background = color;
+// }
+
+// getSliderValue();
+
+// slider.addEventListener('input', function () {
+//     output.textContent = this.value;
+// });
+
+// slider.addEventListener('mousemove', function () {
+//     getSliderValue();
+// });
+// slider.addEventListener('touchmove', function () {
+//     getSliderValue();
+// });
+// slider.addEventListener('touchend', function () {
+//     getSliderValue();
+// });
 
