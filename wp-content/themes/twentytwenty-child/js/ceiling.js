@@ -245,30 +245,3 @@ if (calculatingCostRangeSlider) {
     applyFill(calculatingCostRangeSlider);
 }
 
-// const slider = document.getElementById('calculatingCostRange'),
-//     output = document.getElementById('calculatingCostValue');
-
-// output.textContent = slider.value;
-
-// function getSliderValue() {
-//     let x = slider.value * 2.2,
-//         color = 'linear-gradient(90deg, rgb(242, 100, 34)' + (x - 10) + '%, rgb(214, 214, 214)' + (x - 10) + '%)';
-//     slider.style.background = color;
-// }
-
-// getSliderValue();
-
-// slider.addEventListener('input', function () {
-//     output.textContent = this.value;
-// });
-
-// slider.addEventListener('mousemove', function () {
-//     getSliderValue();
-// });
-// slider.addEventListener('touchmove', function () {
-//     getSliderValue();
-// });
-// slider.addEventListener('touchend', function () {
-//     getSliderValue();
-// });
-
