@@ -13,15 +13,6 @@
 
     &__wrapper {
         text-align: center;
-        padding: 4.5rem 0;
-
-        @include _768 {
-            padding: 5.5rem 0;
-        }
-
-        @include _1200 {
-            padding: 7.5rem 0;
-        }
     }
 
     /* .want-to-save-text__title */
@@ -31,30 +22,28 @@
         margin-bottom: 0.3em;
 
         @include _768 {
-            margin-bottom: 0.4em;
+            line-height: 1.2;
+            margin-bottom: 0.75em;
         }
 
         @include _1200 {
-            margin-bottom: 0.5em;
+            margin-bottom: 0.9em;
         }
     }
 
     /* .want-to-save-text__text */
 
     &__text {
-        font-size: 1.6rem;
-        font-weight: 700;
-        line-height: 1.4em;
+        line-height: 1.4;
 
         @include _768 {
-            font-size: 2rem;
-            font-weight: 400;
-            line-height: 1.1em;
+            line-height: 1.25;
+            max-width: 39em;
+            margin: 0 auto;
         }
 
         @include _1200 {
             max-width: 51em;
-            margin: 0 auto;
         }
     }
 }
