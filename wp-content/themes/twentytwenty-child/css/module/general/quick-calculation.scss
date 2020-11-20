@@ -1,56 +1,31 @@
 @import "../../base/all/var";
 @import "../../base/all/mixin";
 
-
 .quick-calculation {
     background-image: url(/wp-content/themes/twentytwenty-child/img/yellow-fone.webp);
-
-    /* .quick-calculation__wrapper */
-
-    
-    .container {
-        max-width: 33.5rem;
-
-        @include _768 {
-            max-width: 72.8rem;
-        }
-
-        @include _1200 {
-            max-width: 114rem;
-        }
-    }
-
-    &__wrapper {
-        padding: 5rem 0;
-        text-align: center;
-
-        @include _768 {
-            padding: 4rem 0;
-        }
-        @include _1200 {
-            padding: 5rem 0;
-        }
-    }
 
     /* .quick-calculation__title */
 
     &__title {
-        font-size: 1.5em;
         font-weight: 900;
-        margin-bottom: 0.8em;
+        margin-bottom: 1.1em;
+        line-height: 1.2;
 
         @include _768 {
-            font-size: 1.875em;
+            margin-bottom: 1em;
         }
 
         @include _1200 {
-            font-size: 2.5em;
+            margin-bottom: 0.85em;
         }
     }
-
+    
     /* .quick-calculation__form */
-
+    
     &__form {
+        @include _1200 {
+            margin-bottom: 2.2em;
+        }
     }
 
     /* .quick-calculation__form-box */
@@ -60,11 +35,12 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 1.563em;
+            margin-bottom: 2em;
         }
 
         @include _1200 {
             display: inline-flex;
+            justify-content: left;
             margin-bottom: 0;
         }
     }
@@ -72,19 +48,11 @@
     /* .quick-calculation__text */
 
     &__text {
-        font-size: 1.13em;
-        font-weight: 900;
-        margin-bottom: 0.4em;
+        margin-bottom: 1em;
 
         @include _768 {
-            font-weight: 700;
-            font-size: 1.25em;
-            margin-right: 1em;
+            margin-right: 1.3em;
             margin-bottom: 0;
-        }
-
-        @include _1200 {
-            font-size: 1.5em;
         }
     }
 
@@ -92,16 +60,17 @@
 
     &__input {
         display: block;
-        margin: 0 auto 0.7em;
+        margin: 0 auto 1.05em;
         border: none;
-        border-radius: 0.2em;
-        max-width: 14.4rem;
-        height: 5rem;
-        padding: 1em;
+        border-radius: 0.4em;
+        max-width: 8rem;
+        height: 3.8rem;
+        padding: 0.1em 0.5em 0;
         text-align: center;
 
         &::placeholder {
             text-align: center;
+            font-size: 1.8rem;
             font-weight: 700;
 
             @include _1200 {
@@ -110,17 +79,7 @@
         }
 
         @include _768 {
-            margin: 0 1.15em 0 0;
-            max-width: 7.6rem;
-            height: 4.1rem;
-        }
-
-        @include _1200 {
-            max-width: 9.2rem;
-            height: 5rem;
-            padding: 0.8em 0.3em;
-            font-size: 1.5em;
-            margin-right: 0.42em;
+            margin: 0 1.35em 0 0;
         }
     }
 
@@ -129,8 +88,9 @@
     &__price {
         font-weight: 700;
         display: inline-block;
-        font-size: 2em;
+        font-size: 2.4rem;
         position: relative;
+        margin-bottom: 0.8em;
 
         &::after {
             content: "";
@@ -146,13 +106,8 @@
         }
 
         @include _768 {
-            font-size: 1.75em;
-            margin-right: 1.25em;
-        }
-
-        @include _1200 {
-            font-size: 2em;
-            margin-right: 0.41em;
+            margin-right: 1.15em;
+            margin-bottom: 0;
         }
     }
 
@@ -160,16 +115,16 @@
 
     &__new-price {
         color: $orange;
-        font-size: 3em;
+        font-size: 4rem;
         font-weight: 900;
         display: block;
+        margin-bottom: 0.45em;
 
         @include _768 {
-            font-size: 2.5em;
+            margin-bottom: 0;
         }
 
         @include _1200 {
-            font-size: 3em;
             margin-right: 0.2em;
         }
     }
@@ -177,50 +132,28 @@
     /* .quick-calculation__btn */
 
     &__btn {
-        border: none;
-        background-color: $orange;
-        color: #fff;
-        font-weight: 900;
-        border-radius: 0.2em;
         max-width: 30rem;
-        width: 100%;
-        height: 4rem;
-        text-transform: uppercase;
-        margin-bottom: 1.25em;
-        letter-spacing: 0.05em;
-        cursor: pointer;
-
+        margin-bottom: 2em;
         @include _768 {
-            margin: 0 auto 2.5em;
-            max-width: 40rem;
+            max-width: 33.5rem;
         }
 
         @include _1200 {
             margin: 0;
-            max-width: 35rem;
-            transform: translateY(-0.2em);
-            font-size: 1.188em;
+            margin-left: 3.4em;
+            display: inline-block;
         }
     }
 
     /* .quick-calculation__footer-text */
 
     &__footer-text {
-        font-weight: 900;
-        font-size: 1.125em;
-
         span {
-            display: block;
+            margin-top: 0.5em;
             text-transform: uppercase;
-        }
-
-        @include _768 {
-            font-weight: 700;
-            font-size: 1.25em;
-        }
-        @include _1200 {
-            margin-top: 1.35em;
-            font-size: 1.5em;
+            @include _768 {
+                margin-top: 0.2em;
+            }
         }
     }
 }
