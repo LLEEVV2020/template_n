@@ -151,7 +151,7 @@
         }
 
         &__text {
-            font-size: 1.250em;
+            font-size: 1.125em;
         }
     }
 
@@ -180,7 +180,7 @@
         background-image: url("data:image/svg+xml,%0A%3Csvg width='1920' height='396' viewBox='0 0 1920 396' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1920 94.9582L1920 0H0V396L80.6912 396C234.954 315.869 536.41 200.351 820 151.547C1173.32 90.7432 1693.01 83.5115 1920 94.9582Z' fill='%23FFDB00'/%3E%3C/svg%3E%0A");
 
         &__list {
-            max-width: 70em;
+            max-width: 60em;
         }
 
         &__item {
@@ -191,46 +191,12 @@
             min-height: 6em;
         }
 
-        &__image {
-
-            &--1 {
-                width: 4.438em;
-                height: 6.188em;
-                background-position: -32.438em -18.313em;
-            }
-
-            &--2 {
-                width: 4.438em;
-                height: 4.688em;
-                background-position: -46.000em -20.000em;
-            }
-
-            &--3 {
-                width: 3.250em;
-                height: 4.813em;
-                background-position: -39.000em -11.563em;
-            }
-
-            &--4 {
-                width: 4.875em;
-                height: 4.875em;
-                background-position: -26.813em -12.063em;
-            }
-
-        }
-
         &__price-box {
             padding: 0.3em 0.7em 0.2em;
             font-size: 2rem;
         }
 
-        &__price {
-            font-size: 1.188em;
-        }
 
-        &__text {
-            font-size: 1.625em;
-        }
 
     }
 
@@ -293,22 +259,6 @@
             .without-overpayment {
                 &__list {
                     max-width: 29em;
-                }
-            }
-        }
-
-        @media (min-width: 1200px) {
-            .without-overpayment {
-                &__list {
-                    max-width: 70em;
-                }
-
-                &__image {              
-                    font-size: 1.3rem;
-                }
-
-                &__price {
-                    font-size: 1.35em;
                 }
             }
         }

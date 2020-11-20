@@ -18,10 +18,9 @@
 }
 
 .windows-installments {
-
     overflow: hidden;
-    padding-top: 2.813em;
-    padding-bottom: 2.813em;
+    padding-top: 2.875em;
+    padding-bottom: 2.875em;
     background: $yellow;
 
     &:before {
@@ -42,7 +41,7 @@
     }
 
     &__right {
-        padding: 2.188em 1.625em 2.188em 1.525em;
+        padding: 1.688em 1.625em 1.588em 1.725em;
         max-width: 35.5rem;
         background-color: $white;
         border-top-right-radius: 15px;
@@ -51,45 +50,48 @@
     }
 
     &__title {
-        margin-bottom: 0.75em;
-        font-size: 2.000em;
+        max-width: 8em;
+        margin-bottom: 1.163em;
+        font-size: 1.5em;
+        line-height: 1.2;
         text-align: left;
     }
 
     &__list {
+        margin-bottom: 1.7em;
 
         &-item {
             display: flex;
             align-items: center;
-            margin-bottom: 1.125em;
-            font-size: 1.125em;
+            margin-bottom: 0.625em;
+            font-size: 1em;
             font-weight: 700;
         }
 
         &-mark {
             display: inline-block;
-            margin-right: 0.625em;
-            width: 1.250em;
-            height: 1.250em;
+            margin-right: 1.025em;
+            width: 0.875em;
+            height: 0.875em;
             background-color: $orange;
             border-radius: 50%;
 
             &:before,
             &:after {
-                left: 0;
+                left: -0.13em;
                 background-color: $white;
                 transform-origin: left bottom;
             }
             
             &:before {
-                top: 50%;                
+                top: 54%;                
                 width: 0.1em;
                 height: 20%;                
                 transform: translate(0.500em, -0.063em) rotate(-45deg);
             }
 
             &:after {
-                bottom: 17%;
+                bottom: 13%;
                 width: 40%;
                 height: 0.1em;
                 transform: translate(0.550em, -0.188em) rotate(-45deg);
@@ -97,7 +99,6 @@
         }
 
         &-span {
-            font-size: 1.375em;
             margin-left: 0.3em;
         }
 
@@ -105,11 +106,13 @@
 
     &__button {
         width: 100%;
+        max-width: 20.2em;
+        padding-top: 0.681em;
+        padding-bottom: 0.681em;
+        font-size: 0.875em;
     }
 
-    @media (min-width: 450px) {
-
-        
+    @media (min-width: 450px) {        
         &__right {
             border-top-left-radius: 15px;
             border-bottom-left-radius: 15px;
@@ -119,7 +122,7 @@
     }
 
     @media (min-width: 768px) {
-
+        padding-top: 3.575em;
         padding-bottom: 0;
         background: linear-gradient(266.8deg, #FFF854 0.02%, #FFE03E 101.17%);
         
@@ -154,8 +157,8 @@
             &:before {
                 content: '';
                 position: absolute;
-                top: 2em;
-                right: -1em;
+                top: 1.5em;
+                right: -1.2em;
                 width: 12.375em;
 	            height: 8.500em;
                 background: url('/wp-content/themes/twentytwenty-child/img/sprite.png') -52.125em -1.063em;
@@ -163,7 +166,7 @@
         }
 
         &__right {
-            min-width: 25.65em;
+            min-width: 23.65em;
             border-bottom-right-radius: 0;
             border-bottom-left-radius: 0;
             margin-left: 0;
@@ -174,48 +177,73 @@
             max-width: 11em;
             margin-left: auto;
             margin-right: auto;
+            margin-bottom: 0.763em;
             text-align: center;
             font-size: 1.875em;
         }
 
         &__list {
+            &-mark {
+                width: 1.250em;
+                height: 1.250em;
+                margin-right: 0.725em;
 
-            &-item {
-                font-size: 1.250em;
+                &:before,
+                &:after {
+                    left: 0;
+                }
+
+                &:before {
+                    top: 49%;
+                }
+
+                &:after {
+                    bottom: 15%;
+                }
             }
 
-            &-mark {
-                margin-right: 0.425em;
+            &-item {
+                margin-bottom: 1.125em;
             }
 
             &-span {
-                font-size: 1.563em;
+                margin-left: 0.6em;
+                font-size: 1.1em;
             }
 
         }
 
         &__button {
-            font-size: 1.9rem;
+            max-width: 18.9em;
+            font-size: 1.6rem;
         }
 
     }
 
     @media (min-width: 960px) {
+        overflow: visible;
 
         &__left,
         &__image {
             position: relative;
         }
 
+        &__left {
+            min-width: 28em;
+        }
+
         &__image {
             display: block;
             z-index: 1;
+            position: absolute;
+            bottom: -0.1em;
+            left: 0;
         }
 
         &__circle {
             position: absolute;
             top: -1em;
-            right: -3em;
+            right: -2em;
             width: 12.688em;
             height: 12.688em;
 
@@ -230,61 +258,51 @@
     }
 
     @media (min-width: 1200px) {
-        overflow: visible;
-
-        &__left {
-            min-width: 28em;
-        }
-
-        &__image {
-            position: absolute;
-            bottom: -0.1em;
-            left: 0;
-        }
-
-        &__circle {
-            right: -2em;
-        }
+        padding-top: 2.475em;
 
         &__title {
-            font-size: 2.188em;
+            margin-bottom: 0.563em;
+            font-size: 2.5em;
+            text-align: left;
         }
 
         &__right {
-            min-width: 25.938em;
-            padding: 1.588em 2.725em 1.1725em 3.525em;
+            min-width: 24.738em;
+            padding: 2.188em 2.725em 1.9725em 2.725em;
+        }
+
+        &__image {
+            left: -2em;
+        }
+
+        &__circle {
+            top: -2.2em;
+            right: 0.4em;
+            width: 14.688em;
+            height: 14.688em;
+
+            &:before {
+                top: 1.2em;
+            }
         }
 
         &__list {
+            margin-left: 0.5em;
 
             &-item {
                 margin-bottom: 0.825em;
             }
 
             &-mark {
-                width: 0.875em;
-                height: 0.875em;
-                font-size: .8em;
-                margin-right: .9em;
-                background-image: url("data:image/svg+xml,%3Csvg width='7' height='6' viewBox='0 0 7 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.30673 5.10157L0.458288 3.19484C0.347237 3.08029 0.347237 2.89455 0.458288 2.77999L0.860446 2.36513C0.971497 2.25057 1.15156 2.25057 1.26261 2.36513L2.50781 3.64959L5.17489 0.898415C5.28594 0.783862 5.466 0.783862 5.57705 0.898415L5.97921 1.31327C6.09026 1.42782 6.09026 1.61356 5.97921 1.72812L2.7089 5.10159C2.59783 5.21614 2.41778 5.21614 2.30673 5.10157Z' fill='white'/%3E%3C/svg%3E");
-                background-repeat: no-repeat;
-                background-position: center;
-
-                &:before {
-                    transform: translate(0.35em, -0.03em) rotate(-45deg);
-                    display: none;
-                }
-
                 &:after {
-                    transform: translate(0.39em, -0.088em) rotate(-45deg);
-                    display: none;
+                    bottom: 18%;
                 }
             }
 
-            &-span {
-                font-size: 1.250em;
-            }
+        }
 
+        .button {
+            max-width: 17.8em;
         }
 
     }

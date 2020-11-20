@@ -9,12 +9,6 @@
     }
 
     .title,
-    &__text,
-    &__info {
-        font-family: 'Montserrat', sans-serif;
-    }
-
-    .title,
     &__text {
         color: #3A3A3A;
     }
@@ -25,9 +19,10 @@
     }
 
     &__box {
-        max-width: 21em;
+        max-width: 19em;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 0.3em;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -39,12 +34,12 @@
         font-weight: 800;
 
         &:nth-child(2) {
-            text-align: right;
+            margin-left: 0.8em;
         }
 
         &-bg {
             margin-bottom: 0.438em;
-            padding: 0.313em 2.075em 0.313em 1.425em;
+            padding: 0.213em 2.875em 0.113em 1.525em;
             background-color: #3A3A3A;
             color: $white;
             position: relative;
@@ -70,11 +65,11 @@
     }   
 
     &__percent {
-        font-size: 5.938em;
+        font-size: 4.788em;
         font-weight: 900;
         letter-spacing: -0.03em;
         text-shadow: 0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.25);
-        -webkit-text-stroke: 0.3rem $white;
+        -webkit-text-stroke: 0.2rem $white;
         position: relative;
     }
 
@@ -98,8 +93,8 @@
     }
 
     .button {
-        min-width: 20.938em;
-        min-height: 2.438em;
+        max-width: 23.936em;
+        min-height: 2.536em;
     }
 
     @media (min-width: 768px) {
@@ -110,19 +105,24 @@
 
         .title {
             font-weight: 800;
-            margin-bottom: 0;
+            margin-bottom: 0.6em;
         }
 
         &__box {
-            max-width: 32em;
+            max-width: 26.2em;
+            margin-bottom: 1.2em;
         }
 
         &__text {
             font-size: 1.875em;
 
+            &:nth-child(2) {
+                margin-left: 1em;
+            }
+
             &-bg {
-                padding-left: 6rem;
-                padding-right: 9rem;
+                padding-left: 4rem;
+                padding-right: 4.4rem;
 
                 &:after {
                     border-width: 0 1.5rem 5.2rem 1.4rem;
@@ -131,7 +131,7 @@
         }
 
         &__percent {
-            font-size: 10.625em;
+            font-size: 7.225em;
             line-height: 0.9;
         }
 
@@ -140,11 +140,15 @@
         }
 
         &__info {
-            font-size: 1.6rem;
+            max-width: 26em;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 1.225em;
+            font-size: 1.8rem;
         }
 
         .button {
-            min-width: 23.000em;
+            max-width: 21.936em;
         }
 
         &__gradient {
@@ -165,9 +169,6 @@
     }
 
     @media (min-width: 1200px) {
-
-        padding-top: 4.313em;
-
         &__box {
             max-width: 45em;
         }
@@ -196,52 +197,74 @@
         }
 
         &__gradient {
-            width: 30.9rem;
-            height: 46.7rem;
-            background-image: url("data:image/svg+xml,%0A%3Csvg width='413' height='470' viewBox='0 0 413 470' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M-1 372.377V203.674L138.763 -1H253.963L-1 372.377ZM11.7249 -1C15.775 14.5015 17.8 31.5014 17.8 50C17.8 82.9071 11.5333 111.052 -1 134.433L-1 -1L11.7249 -1ZM165 427.6C191.667 455.333 226.333 469.2 269 469.2C311.667 469.2 346.333 455.333 373 427.6C399.667 399.867 413 362 413 314C413 266.533 399.667 228.933 373 201.2C346.333 172.933 311.667 158.8 269 158.8C226.867 158.8 192.467 172.933 165.8 201.2C139.133 228.933 125.8 266.533 125.8 314C125.8 362 138.867 399.867 165 427.6ZM303.4 374C294.867 386.8 283.4 393.2 269 393.2C254.6 393.2 243.133 386.8 234.6 374C226.067 361.2 221.8 341.2 221.8 314C221.8 286.8 226.067 266.8 234.6 254C243.133 241.2 254.6 234.8 269 234.8C283.4 234.8 294.867 241.2 303.4 254C311.933 266.8 316.2 286.8 316.2 314C316.2 341.2 311.933 361.2 303.4 374Z' fill='url(%23paint0_linear)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='8.39581' y1='490' x2='480.067' y2='490' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FFE600'/%3E%3Cstop offset='0.692708' stop-color='%23FFE600' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+            width: 28.9rem;
+            height: 42.7rem;
+            background-image: url("data:image/svg+xml,%0A%3Csvg width='374' height='427' viewBox='0 0 374 427' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M-2 339.072V185.869L124.934 0H229.56L-2 339.072ZM9.55688 1.00596e-07C13.2352 14.0772 15.0744 29.5153 15.0744 46.3143C15.0744 76.1981 9.38294 101.757 -2 122.99L-2 0L9.55688 1.00596e-07ZM148.763 389.222C172.982 414.407 204.467 427 243.217 427C281.968 427 313.452 414.407 337.671 389.222C361.891 364.037 374 329.649 374 286.059C374 242.953 361.891 208.808 337.671 183.623C313.452 157.953 281.968 145.118 243.217 145.118C204.951 145.118 173.709 157.953 149.49 183.623C125.271 208.808 113.161 242.953 113.161 286.059C113.161 329.649 125.029 364.037 148.763 389.222ZM274.46 340.547C266.71 352.171 256.296 357.983 243.217 357.983C230.139 357.983 219.725 352.171 211.975 340.547C204.225 328.923 200.35 310.76 200.35 286.059C200.35 261.358 204.225 243.196 211.975 231.572C219.725 219.948 230.139 214.136 243.217 214.136C256.296 214.136 266.71 219.948 274.46 231.572C282.21 243.196 286.085 261.358 286.085 286.059C286.085 310.76 282.21 328.923 274.46 340.547Z' fill='url(%23paint0_linear)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='6.53339' y1='445.889' x2='434.911' y2='445.889' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FFE600'/%3E%3Cstop offset='0.692708' stop-color='%23FFE600' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+            background-repeat: no-repeat;
         }
 
     }
 
     @media (min-width: 1400px) {
-
+        padding-top: 6rem;
         padding-bottom: 0;
 
         .container {
-            max-width: 133rem;
             display: flex;
             justify-content: space-between;
         }
 
+        .title {
+            text-align: left;
+        }
+
+        &__box {
+            max-width: 38em;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
         &__text {
+            font-size: 1.875em;
 
             &:nth-child(2) {
+                margin-left: 1.8em;
                 transform: translateX(0.5em);
             }
 
             &-bg {
-                padding-left: 6.7rem;
-                padding-right: 9.5rem;
+                margin-bottom: 0.338em;
+                padding: 0.313em 12.7rem 0.213em 1.7rem;
+
+                &:after {
+                    border-width: 0 2.1rem 4.9rem 2.2rem;
+                    right: -0.7em;
+                }
             }
 
         }
 
         &__percent {
-            line-height: 1.1;
+            line-height: 0.7;
+            font-size: 7.95em;
+        }
+
+        &__symbol {
+            font-size: 5rem;
+            top: 0.4em;
         }
 
         &__image {
             display: block;
-            margin-top: 4em;
+            max-width: 25em;
         }
 
         &__info {
-            margin-bottom: 2.188em;
-            max-width: 42em;
+            margin-bottom: 0.988em;
         }
 
         .button {
-            min-width: 19.37em;
+            max-width: 19.936em;
             min-height: 2.638em;
         }
 
