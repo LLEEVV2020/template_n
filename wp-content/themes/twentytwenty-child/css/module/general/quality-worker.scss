@@ -28,6 +28,7 @@
 
     .text {
         text-align: left;
+        font-size: 1.8rem;
     }
 
     &__rating,
@@ -155,7 +156,7 @@
         }
 
         &__box {
-            max-width: 65rem;
+            max-width: 70rem;
             margin-left: auto;
             margin-right: auto;
         }
@@ -165,7 +166,6 @@
         }
 
         .text {
-            max-width: 33em;
             margin-bottom: 1.563em;
         }
 
@@ -221,8 +221,14 @@
     }
 
     @media (min-width: 1200px) {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
         background: url("/wp-content/themes/twentytwenty-child/img/quality-worker-bg-big-left.png") no-repeat left center / 40%,
                     url("/wp-content/themes/twentytwenty-child/img/quality-worker-bg-big-right.png") no-repeat right center / 40%;
+
+        .title {
+            font-size: 4rem;
+        }
 
         .navigation {
             &-left {
@@ -234,21 +240,32 @@
             }
         }
 
+        .title {
+            margin-bottom: 1em;
+        }
+
         .text {
-            max-width: 20.9em;
-            margin-bottom: 2.563em;
+            max-width: 21em;
+            margin-bottom: 2.263em;
+            line-height: 1.2;
         }
 
         &__box {
-            max-width: 106rem;
+            max-width: 96rem;
+        }
+
+        &__left {
+            margin-top: 2.5em;
         }
 
         &__text {
-            margin-bottom: 0.7em;
+            margin-bottom: 1.2em;
+            font-size: 1.125em;
         }
 
         &__slider {
-            max-width: 60rem;
+            max-width: 50rem;
+            margin-right: 1.7em;
         }
 
         &__box {
@@ -273,9 +290,14 @@
             background-position: -57.438em -36.188em;
         }
 
-        &__link,
-        &__text {
+        &__link {
             font-size: 1.5em;
+        }
+
+        &__nav {
+            &-dots {
+                margin-top: 2.5rem;
+            }
         }
 
     }

@@ -227,8 +227,13 @@
             margin-bottom: 0.213em;
         }
 
+        &__text,
+        &__glad-see {
+            font-size: 1.125em;
+        }
+
         &__text {
-            font-size: 1.250em;
+            line-height: 1.22;
         }
 
         &__list {
@@ -273,7 +278,6 @@
 
         &__glad-see {
             margin-bottom: 2.988em;
-            font-size: 1.250em;
         }
 
         &__our-office {
@@ -303,8 +307,11 @@
     }
 
     @media (min-width: 1200px) {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+
         &__box {
-            max-width: 57.7em;
+            max-width: 47.7em;
         }
 
         &__manufacture-title,
@@ -312,19 +319,19 @@
         &__come,
         &__our-office,
         &__free {
-            font-size: 2.188em;
+            font-size: 1.875em;
         }
 
         &__manufacture {
             &-windows {
-                width: 28.063em;
-                height: 28.063em;
-                margin-right: 1.7em;
-                padding: 3.263em 1.363em;
+                width: 23.063em;
+                height: 23.063em;
+                margin-right: 1.3em;
+                padding: 2.763em 0.963em;
             }
 
             &-title {
-                margin-bottom: 1.575em;
+                margin-bottom: 1.275em;
             }
 
             &-we-ourselves {
@@ -332,31 +339,27 @@
             }
         }
 
-        &__text {
-            font-size: 1.5em;
-        }
-
         &__list {
-            max-width: 27.9em;
+            max-width: 22.9em;
         }
 
         &__item {
-            width: 13.125em;
-            height: 13.125em;
-            margin-bottom: 1.775em;
-            padding: 3.1em 0.4em 5em 0.9em;
+            width: 10.938em;
+            height: 10.938em;
+            margin-bottom: 1.275em;
+            padding: 2.3em 0.4em 5em 0.9em;
         }
 
         &__number {
-            font-size: 2.5em;
+            margin-bottom: 0.513em;
         }
 
         &__inner {
-            width: 28.063em;
-            height: 28.063em;
+            width: 23.063em;
+            height: 23.063em;
 
             &:first-child {
-                margin-right: 1.6em;
+                margin-right: 1.3em;
                 padding: 3.2em 1.3em;
             }
 
@@ -367,35 +370,34 @@
         }
 
         &__come {
-            margin-bottom: 1.813em;
+            margin-bottom: 1.413em;
         }
 
         &__glad-see {
-            margin-bottom: 2.788em;
-            font-size: 1.5em;
+            max-width: 18em;
+            margin-bottom: 3.088em;
+            line-height: 1.22;
         }
 
         &__our-office {
             &:after {
-                width: 3.088em;
-                height: 0.6em;
+                width: 3.588em;
+                height: 0.8em;
                 top: 100%;
-                right: -3.3em;
+                right: -4.5em;
                 transform: translateY(-100%);
-                background-image: url("data:image/svg+xml,%0A%3Csvg width='107' height='24' viewBox='0 0 107 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M106.061 13.0607C106.646 12.4749 106.646 11.5251 106.061 10.9393L96.5147 1.3934C95.9289 0.807611 94.9792 0.807611 94.3934 1.3934C93.8076 1.97919 93.8076 2.92893 94.3934 3.51472L102.879 12L94.3934 20.4853C93.8076 21.0711 93.8076 22.0208 94.3934 22.6066C94.9792 23.1924 95.9289 23.1924 96.5147 22.6066L106.061 13.0607ZM0 13.5H105V10.5H0V13.5Z' fill='%23F26422'/%3E%3C/svg%3E%0A");
             }
         }
 
         &__free {
-            margin-bottom: 4.5em;
+            margin-bottom: 3.8em;
         }
 
         &__button {
-            padding-left: 1.975em;
-            padding-right: 1.775em;
-            padding-top: 0.625em;
-            padding-bottom: 0.525em;
-            font-size: 1.188em;
+            padding-left: 2.575em;
+            padding-right: 2.375em;  
+            padding-top: 0.739em;
+            padding-bottom: 0.638em;
         }
     }
 
