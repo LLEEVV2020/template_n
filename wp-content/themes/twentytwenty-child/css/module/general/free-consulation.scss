@@ -1,23 +1,18 @@
 @import '../../base/all/var';
 
 .free-consultation {
-    min-height: 32em;
-    padding-top: 19em;
+    padding-top: 20.1em;
     padding-bottom: 3em;
-    // background: url("/wp-content/themes/twentytwenty-child/img/free-consultation-big.jpg") 91% 0 no-repeat;
-    // background-size: 80em;
     background: url("/wp-content/themes/twentytwenty-child/img/free-consultation-big.jpg") 26% 0 no-repeat;
     background-size: 37em;
+
+    .container {
+        width: 100%;
+    }
 
     &__title,
     &__phone {
         font-size: 3.2rem;
-    }
-
-    &__phone,
-    &__daily,
-    &__text {
-        font-weight: 900;
     }
 
     &__phone,
@@ -27,16 +22,28 @@
         text-align: center;
     }
 
-
     &__title {
-        max-width: 40rem;
-        margin-left: -2rem;
-        margin-right: -2rem;
-        margin-bottom: 0.813em;
-        padding: 0.4em 0.9em;
+        position: relative;
+        margin-top: -0.7em;
+        padding: 0.4em 0.9em 1.1em;
+        font-size: 1.5em;
         text-align: left;
         line-height: 1.238em;
-        background: linear-gradient(to right, rgba(255,255,255,1) 20%,rgba(255,255,255,0) 100%);
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 6.438em;
+            background: linear-gradient(0, #FFFFFF 1.51%, rgba(255, 255, 255, 0.01) 97.93%);
+        }
+
+        span {
+            position: relative;
+            display: block;
+            max-width: 8em;
+        }
     }
 
     &__correct-count {
@@ -44,31 +51,48 @@
     }
 
     &__daily {
-        margin-bottom: 0.4em;
-        font-size: 2.4rem;
+        margin-bottom: 0.9em;
+        text-transform: uppercase;
+        font-weight: 700;
     }
 
     &__phone {
-        margin-bottom: 0.3em;
+        margin-bottom: 0.6em;
+        font-size: 1.5em;
+        font-weight: 900;
+    }
+
+    &__text,
+    &__info {
+        margin-left: auto;
+        margin-right: auto;
     }
 
     &__text {
-        margin-bottom: 0.750em;
-        font-size: 1.8rem;
+        max-width: 16em;
+        margin-bottom: 1.25em;
         line-height: 1.250em;
     }    
 
     .form-contacts {
         max-width: 30rem;
-        margin-bottom: 1.063em;
+        margin-bottom: 1.163em;
 
         &__box {
-            margin-bottom: 0.875em;
+            margin-bottom: 1.175em;
+        }
+
+        &__input,
+        &__button {
+            min-height: 2.50em;
         }
 
         &__input {
             padding-left: 0;
             padding-right: 0;
+            font-size: 0.875em;
+            font-weight: 700;
+            letter-spacing: 0.04em;
             text-align: center;
             border-top: 0;
             border-left: 0;
@@ -78,15 +102,14 @@
             border-bottom: 0.188em solid #C9C9C9;
         }
 
-        &__phone,
         &__button {
-            min-height: 4rem;
+            font-size: 0.875em;
         }
     }
 
     &__info {
-        font-size: 1.2rem;
-        font-weight: 700;
+        max-width: 30em;
+        font-size: 0.750em;
         line-height: 1.175em;
     }
 
@@ -95,54 +118,37 @@
     }
 
     @media (min-width: 590px) {
+        background-image: url('/wp-content/themes/twentytwenty-child/img/free-consultation-middle.jpg');
         background-position-x: right;
-        background-size: 37em;
-        position: relative;
 
-        &:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -24.3em;
-            width: 20.4em;
-            height: 100%;
-            box-shadow: 12em -1em 1.1em rgba(255, 255, 255, 1);
-        }
 
-        &__content {
-            z-index: 1;
-            position: relative;
-        }
-    }
-
-    @media (min-width: 700px) {
-        &:before {
-            width: 25.4em;
+        &__title {
+            margin-top: -0.2em;
         }
     }
 
     @media (min-width: 768px) {
-        min-height: auto;
         padding-top: 3.438em;
         padding-bottom: 3.438em;
         background-image: url('/wp-content/themes/twentytwenty-child/img/free-consultation-middle.jpg');
-        // background-size: cover;
-        // background-position-x: 17em;
-        background-position-x: 100%;
+        background-size: 41em;
 
-        &:before {
-            left: -27.3em;
-            box-shadow: 7em -1em 1.1em #ffffff;
-            // width: 34.4em;
+        .container {
+            width: calc(100% - 4rem);
         }
 
         &__title {
-            max-width: none;
-            margin-left: 0;
-            margin-right: 0;
+            margin-bottom: 0.913em;
             padding: 0;
-            background: none;
             font-size: 3rem;
+
+            &:before {
+                display: none;
+            }
+
+            span {
+                max-width: none;
+            }
         }
 
         &__daily,
@@ -152,34 +158,26 @@
             text-align: left;
         }
 
-        &__daily,
-        &__text {
-            font-size: 2rem;
-        }
-
-        &__daily,
-        &__text,
-        &__info {
-            font-weight: 400;
-        }
-
         &__daily {
-            margin-bottom: 1em;
-            text-transform: uppercase;
+            margin-bottom: 1.463em;
+            font-size: 1.125em;
         }
         
         &__phone {
-            margin-bottom: 0.463em;
-            font-size: 4rem;
+            margin-bottom: 0.8em;
+            font-size: 3rem;
         }
         
         &__text {
-            max-width: 30rem;
+            max-width: 15em;
+            margin-right: 0;
+            margin-left: 0;
+            font-size: 1.125em;
         }
 
         .form-contacts {
             max-width: 47rem;
-            margin-bottom: 1.063em;
+            margin-bottom: 1.763em;
             margin-left: 0;
 
             &__box {
@@ -188,17 +186,22 @@
             }
 
             &__input {
-                padding-left: 2em;
-                padding-right: 2em;
+                padding-left: 2.3em;
+                padding-right: 2.3em;
+                font-size: 1em;
             }
 
             &__button {
-                max-width: 13.295em
+                max-width: 13.295em;
+                min-height: 2.3em;
+                font-size: 1.063em;
             }
         }
 
         &__info {
-            max-width: 32rem;
+            margin-left: 0;
+            margin-right: 0;
+            font-size: 0.875em;
         }
 
     }
@@ -209,30 +212,38 @@
         }
 
         .form-contacts {
-            max-width: 65rem;
+            max-width: 57rem;
+
+            &__box {
+                min-width: 17em;
+            }
+
+            &__input {
+                max-width: 17em;
+            }
+
+            &__button {
+                max-width: 15.995em;
+            }
         }
 
     }
 
     @media (min-width: 1200px) {
-        background-size: 53em;
+        background-size: 50em;
 
         &__title { 
             font-size: 4rem;
         }
 
-        &__correct-count,
-        &__daily,
-        &__text {
-            font-size: 2.4rem;
-        }
-
         &__correct-count {
-            display: block;
             position: relative;
+            display: block;
             max-width: 55rem;
-            margin-bottom: 1em;
+            margin-bottom: 1.563em;
             padding-left: 7rem;
+            font-weight: 700;
+            line-height: 1.4;
 
             &:before {
                 content: '';
@@ -246,43 +257,99 @@
         }
 
         &__daily {
-            margin-bottom: 0.5em;
+            margin-bottom: 1.125em;
             font-weight: 700;
         }
 
         &__phone {
-            margin-bottom: 0.263em;
+            margin-bottom: 0.575em;
+            font-size: 4rem;
         }
 
         &__text {
             margin-bottom: 0.825em;
-            max-width: 52rem;
+            max-width: 39rem;
         }
 
         .form-contacts {
-            max-width: 68rem;
             margin-bottom: 2.063em;
-
-            &__box {
-                min-width: 25.025em;
-            }
 
             &__input {
                 background-color: transparent;
             }
 
             &__button {
-                min-width: 13.738em
+                max-width: 17em;
+                font-size: 1em;
             }
         }
 
         &__info {
-            max-width: 69rem;
+            max-width: 70rem;
             font-family: 'Montserrat', sans-serif;
-            font-size: 1.4rem;
             font-weight: 500;
+            line-height: 1.5;
         }
 
     }
 
+    @media (min-width: 1600px) {
+        background-image: url("/wp-content/themes/twentytwenty-child/img/free-consultation-big.jpg");
+        background-size: 60em;
+        padding: 0;
+
+        .container {
+            width: 100%;
+            margin-left: auto;
+            margin-right: 21em;
+        }
+
+        &__content {
+            max-width: 44em;
+            position: relative;
+            padding-top: 3em;
+            padding-bottom: 5em;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: -11%;
+                width: 28em;
+                height: 100%;
+                background: linear-gradient(90.13deg, #FFFFFF 1.51%, rgba(255, 255, 255, 0.01) 97.93%);;
+            }
+        }
+
+        &__title {
+            margin-bottom: 0.413em;
+        }
+        
+        &__correct-count {
+            max-width: 56rem;
+            letter-spacing: 0.02em;
+        }
+
+        &__phone {
+            margin-bottom: 0.475em;
+            position: relative;
+        }
+
+        &__text {
+            margin-bottom: 1.725em;
+            position: relative;
+        }
+
+        .form-contacts,
+        &__info {
+            position: relative;
+        }
+
+        &__info {
+            max-width: 57rem;
+            font-size: 0.7em;
+            line-height: 1.6;
+            letter-spacing: 0.01em;
+        }
+    }
 }

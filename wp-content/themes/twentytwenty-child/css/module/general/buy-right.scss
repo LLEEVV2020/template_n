@@ -2,12 +2,14 @@
 
 .buy-right {
     display: none;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
 
     @media (min-width: 1200px) {
         display: block;
 
         .title {
-            margin-bottom: 0.3em;
+            margin-bottom: 0.775em;
         }
 
         .text,
@@ -19,8 +21,9 @@
         }
 
         .text {
-            margin-bottom: 1.813em;
+            margin-bottom: 2.675em;
             text-align: center;
+            font-size: 1.125em;
         }
 
         &__list {
@@ -30,22 +33,21 @@
         }
 
         &__item {
-            max-width: 23.125em;
+            max-width: 19.125em;
             position: relative;
         }
 
         &__image {
             margin-bottom: 0.813em;
+            max-width: 19.188em;
         }
 
         &__title {
-            max-width: 8em;
-            margin-bottom: 0.813em;
-            font-size: 2.4rem;
+            margin-bottom: 0.375em;
         }
 
-        &__text,
-        .buy-right__video-text {
+        &__title,
+        &__icon:before {
             font-size: 1.8rem;
         }
 
@@ -67,17 +69,13 @@
         }
 
         &__icon {
-            width: 4rem;
-            height: 4rem;
-            line-height: 4rem;
+            width: 3.3rem;
+            height: 3.3rem;
+            line-height: 3.3rem;
             background-color: $yellow;
             border-radius: 50%;
             top: -1.1em;
             left: 1em;
-
-            &:before {
-                font-size: 2.4rem;
-            }
 
             &--1 {
                 &:before {
@@ -190,9 +188,15 @@
             }
 
             &-title {
-                margin-bottom: 0.5em;
-                font-size: 4rem;
-                font-weight: 900;
+                margin-bottom: 1.513em;
+                font-size: 2.4rem;
+                line-height: 1.3;
+                font-weight: 700;
+            }
+
+            &-text {
+                max-width: 15em;
+                line-height: 1.4;
             }
 
         }

@@ -1,9 +1,9 @@
-@import '../../base/all/var';
+@import "../../../base/all/var";
 
 .free-at-home {
     position: relative;
-    background-color: #FFDE30;
-    background-image: url('/wp-content/themes/twentytwenty-child/img/b_market_filtr_bg.png');
+    background-color: #ffde30;
+    background-image: url("/wp-content/themes/twentytwenty-child/img/b_market_filtr_bg.png");
 
     &__left {
         display: none;
@@ -11,6 +11,7 @@
 
     &__title {
         color: $orange;
+        line-height: 1.2;
     }
 
     &__subtitle,
@@ -30,13 +31,13 @@
     }
 
     &__text {
-        margin-bottom: 1.438em;
+        margin-bottom: 1.138em;
         font-size: 1.125em;
-        font-weight: 900;
     }
 
     .form-contacts {
-        margin-bottom: 0.813em;
+        margin-bottom: 1.513em;
+        max-width: 28.5rem;
 
         &__box {
             &:before {
@@ -53,17 +54,17 @@
             border-top: 0;
             border-left: 0;
             border-right: 0;
-            border-bottom: 0.188em solid #C9C9C9;
+            border-bottom: 0.188em solid #c9c9c9;
         }
     }
 
     &__info {
-        font-size: 0.750em;
+        font-size: 0.75em;
         font-weight: 700;
+        line-height: 1.2;
     }
 
     @media (min-width: 768px) {
-
         &__box,
         &__text,
         &__info {
@@ -90,7 +91,9 @@
         &__image-number {
             width: 11.063em;
             height: 10.938em;
-            background: url('/wp-content/themes/twentytwenty-child/img/sprite.png') no-repeat -40.188em 0;
+            margin-left: 2.3em;
+            margin-right: 0.9em;
+            background: url("/wp-content/themes/twentytwenty-child/img/sprite.png") no-repeat -40.188em 0;
         }
 
         &__image-worker {
@@ -104,17 +107,20 @@
 
         &__title {
             margin-bottom: 0.963em;
+            line-height: 1;
         }
 
         &__text {
             max-width: 21em;
-            font-size: 1.250em;
+            font-size: 1.8rem;
             font-weight: 400;
+            margin-bottom: 1.538em;
         }
 
         .form-contacts {
-            max-width: 47rem;
+            max-width: 47.7rem;
             margin-bottom: 1.563em;
+            margin-right: 0;
 
             &__box {
                 max-width: none;
@@ -124,22 +130,20 @@
             &__button {
                 max-width: 13.3em;
             }
-
         }
 
         &__info {
             max-width: 31.2em;
+            font-weight: 400;
         }
-
     }
 
     @media (min-width: 960px) {
-
         padding-top: 0;
         padding-bottom: 0;
 
         .container {
-            width: calc(100% - 8rem);;
+            width: calc(100% - 8rem);
         }
 
         &__box {
@@ -154,6 +158,7 @@
             position: absolute;
             top: 4em;
             right: 0em;
+            margin: 0;
         }
 
         &__image-worker,
@@ -164,10 +169,11 @@
         &__image-worker {
             transform: translateY(-2.5em);
             margin-bottom: -2.5em;
+            margin-left: -0.8em;
+            margin-right: 0.4em;
         }
 
         .form-contacts {
-
             &__box {
                 margin-bottom: 0.7em;
 
@@ -182,52 +188,51 @@
             }
 
             &__button {
-
                 &:before {
-                    content: 'заказать ';
+                    content: "заказать ";
+                    padding-right: 0.3em;
                 }
-
             }
         }
-
     }
 
     @media (min-width: 1200px) {
-
+        &__right {
+            padding-left: 1.3em;
+        }
         &__box {
             max-width: 112rem;
         }
 
         &__text {
-            margin-bottom: 0.738em;
-            font-size: 1.500em;
+            margin-bottom: 1.1em;
+            font-size: 1.8rem;
             font-weight: 700;
         }
 
         &__title {
-            margin-bottom: 0;
+            margin-bottom: 0.5em;
         }
 
         .form-contacts {
-
-            max-width: 44.5rem;
+            max-width: 30.5rem;
+            margin: 0 auto;
             margin-bottom: 0.938em;
 
             &__box {
-
                 &:after {
                     transform: translateY(-54%);
                 }
-
             }
 
+            &__input {
+                font-size: 1.7rem;
+            }
         }
 
         &__info {
             max-width: 30.2em;
             font-size: 0.875em;
         }
-
     }
-
 }
