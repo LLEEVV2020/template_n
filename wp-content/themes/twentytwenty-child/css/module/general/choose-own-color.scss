@@ -2,7 +2,13 @@
 
 .choose-own-color {
     position: relative;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
     overflow: hidden;
+
+    .container {
+        max-width: 114rem;
+    }
 
     &.active {
         background: url('/wp-content/themes/twentytwenty-child/img/choose-own-small-bg1.jpg') no-repeat top 4.6em right -1em/23em;
@@ -61,7 +67,6 @@
     &__text {
         margin-right: 0.313em;
         color: $orange;
-        font-size: 1.125em;
         font-weight: 900;
     }
 
@@ -187,6 +192,8 @@
     }
 
     @media (min-width: 768px) {
+        padding-top: 4.5rem;
+
         &__accessory-box {
             width: 6.6em;
             height: 12.2em;
@@ -223,7 +230,7 @@
 
         &__text {
             margin-right: 0.625em;
-            font-size: 1.250em;
+            font-size: 1.125em;
             font-weight: 700;
         }
 
@@ -249,7 +256,23 @@
     }
 
     @media (min-width: 1200px) {
-        padding-bottom: 0;
+        padding-top: 6.5rem;
+
+        .container {
+            position: relative;
+            max-width: 96rem;
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 3em;
+                height: 100%;
+                background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1.739933) 52%);
+            }
+        }
+
         &.active {
             background-image: none;
         }
@@ -258,7 +281,7 @@
             width: 8.6em;
             height: 16.2em;
             top: 12.3em;
-            right: 24.9em;
+            right: 14.9em;
             background-size: 8.2em;
         }
 
@@ -287,16 +310,15 @@
 
         &__text {
             margin-right: 0.925em;
-            font-size: 1.5em;
         }
 
         &__line {
             &--frame {
-                margin-right: 28em;
+                margin-right: 18em;
             }
 
             &--accessory {
-                margin-right: 32em;
+                margin-right: 22em;
             }
         }
 
