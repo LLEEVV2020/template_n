@@ -64,32 +64,32 @@ $(document).ready(function () {
 
   // Скрипт для слайдера блока photo-gallery
   const photoGallerySlider1 = $('.photo-gallery__slider-box--1'),
-        photoPreviewSlider1 = $('.photo-gallery__previews--1'),
-        photoGallerySlider2 = $('.photo-gallery__slider-box--2'),
-        photoPreviewSlider2 = $('.photo-gallery__previews--2'),
-        photoGallerySlider3 = $('.photo-gallery__slider-box--3'),
-        photoPreviewSlider3 = $('.photo-gallery__previews--3'),
-        photoGallerySlider4 = $('.photo-gallery__slider-box--4'),
-        photoPreviewSlider4 = $('.photo-gallery__previews--4'),
-        photoGallerySlider5 = $('.photo-gallery__slider-box--5'),
-        photoPreviewSlider5 = $('.photo-gallery__previews--5'),
-        photoGallerySlider6 = $('.photo-gallery__slider-box--6'),
-        photoPreviewSlider6 = $('.photo-gallery__previews--6'),
-        photoGallerySlider7 = $('.photo-gallery__slider-box--7'),
-        photoPreviewSlider7 = $('.photo-gallery__previews--7'),
-        photoGallerySlider8 = $('.photo-gallery__slider-box--8'),
-        photoPreviewSlider8 = $('.photo-gallery__previews--8'),
-        photoGallerySlider9 = $('.photo-gallery__slider-box--9'),
-        photoPreviewSlider9 = $('.photo-gallery__previews--9'),
-        photoGallerySlider10 = $('.photo-gallery__slider-box--10'),
-        photoPreviewSlider10 = $('.photo-gallery__previews--10');
+    photoPreviewSlider1 = $('.photo-gallery__previews--1'),
+    photoGallerySlider2 = $('.photo-gallery__slider-box--2'),
+    photoPreviewSlider2 = $('.photo-gallery__previews--2'),
+    photoGallerySlider3 = $('.photo-gallery__slider-box--3'),
+    photoPreviewSlider3 = $('.photo-gallery__previews--3'),
+    photoGallerySlider4 = $('.photo-gallery__slider-box--4'),
+    photoPreviewSlider4 = $('.photo-gallery__previews--4'),
+    photoGallerySlider5 = $('.photo-gallery__slider-box--5'),
+    photoPreviewSlider5 = $('.photo-gallery__previews--5'),
+    photoGallerySlider6 = $('.photo-gallery__slider-box--6'),
+    photoPreviewSlider6 = $('.photo-gallery__previews--6'),
+    photoGallerySlider7 = $('.photo-gallery__slider-box--7'),
+    photoPreviewSlider7 = $('.photo-gallery__previews--7'),
+    photoGallerySlider8 = $('.photo-gallery__slider-box--8'),
+    photoPreviewSlider8 = $('.photo-gallery__previews--8'),
+    photoGallerySlider9 = $('.photo-gallery__slider-box--9'),
+    photoPreviewSlider9 = $('.photo-gallery__previews--9'),
+    photoGallerySlider10 = $('.photo-gallery__slider-box--10'),
+    photoPreviewSlider10 = $('.photo-gallery__previews--10');
 
   function inititalizePhotoGallerySlider(slider, previews) {
     previews.owlCarousel({
       items: 4,
       margin: 2
     });
-  
+
     slider.owlCarousel({
       items: 1,
       dotsClass: ['pagination-box'],
@@ -105,13 +105,13 @@ $(document).ready(function () {
       },
       onChanged: photoImageCallback
     });
-  
+
     function photoImageCallback(e) {
       let index = e.item.index;
       $('.owl-item', previews).removeClass('current').eq(index).addClass('current');
       previews.trigger("to.owl.carousel", [index, 300, true]);
     }
-  
+
     $('.owl-item', previews).click(function () {
       let index = $(this).index();
       slider.trigger("to.owl.carousel", [index, 300, true]);
@@ -201,21 +201,6 @@ $(document).ready(function () {
       }
     }
   });
-
-  // Скрипт для слайдера блока window-shapes
-  $('.window-shapes__slider').owlCarousel({
-    items: 1,
-    nav: true,
-    dots: false,
-    responsive: {
-      768: {
-        items: 4,
-        mouseDrag: false,
-        touchDrag: false,
-      }
-    }
-  });
-
 
   // Скрипт для слайдера блока window-repair
   $('.window-repair__slider').owlCarousel({
@@ -340,8 +325,8 @@ $(document).ready(function () {
 
   $('.tabs__wrapper .tab').on('click', function (event) {
     var id = $(this).attr('data-id');
-    $(this ).parent().parent().find('.tab-item').removeClass('active-tab').hide();
-    $(this ).parent().find('.tab').removeClass('active');
+    $(this).parent().parent().find('.tab-item').removeClass('active-tab').hide();
+    $(this).parent().find('.tab').removeClass('active');
     $(this).addClass('active');
     $('#' + id).addClass('active-tab').fadeIn();
     return false;
@@ -695,7 +680,7 @@ $(document).ready(function () {
     margin: 55,
     dotsClass: ['pagination-box'],
     dotClass: ['pagination'],
-    nav:true,
+    nav: true,
     // autoHeight: true,
   });
 
@@ -715,35 +700,61 @@ $(document).ready(function () {
         navClass: ['navigation-left', 'navigation-right']
       }
     }
-  });  
+  });
 
-    // Скрипт для слайдера блока low-prices-for-glazing
-    function checkWidth() {
-      var windowWidth = $('body').innerWidth(),
-        elem = $(".low-prices-for-glazing__slider");
-      if (windowWidth < 768) {
-  
-        elem.addClass('owl-carousel');
-  
-        $('.low-prices-for-glazing__slider').owlCarousel({
-          items: 1,
-          dots: true,
-          margin: 55,
-          dotsClass: ['pagination-box'],
-          dotClass: ['pagination'],
-          nav: true,
-        });
-      }
-      else {
-        elem.trigger('destroy.owl.carousel').removeClass('owl-carousel owl-loaded');
-      }
+  // Скрипт для слайдера блока low-prices-for-glazing
+  function checkWidth() {
+    var windowWidth = $('body').innerWidth(),
+      elem = $(".low-prices-for-glazing__slider");
+    if (windowWidth < 768) {
+
+      elem.addClass('owl-carousel');
+
+      $('.low-prices-for-glazing__slider').owlCarousel({
+        items: 1,
+        dots: true,
+        margin: 55,
+        dotsClass: ['pagination-box'],
+        dotClass: ['pagination'],
+        nav: true,
+      });
     }
-  
-    checkWidth(); // проверит при загрузке страницы
-  
-    $(window).resize(function () {
-      checkWidth(); // проверит при изменении размера окна клиента
-    });
+    else {
+      elem.trigger('destroy.owl.carousel').removeClass('owl-carousel owl-loaded');
+    }
+  }
+
+  checkWidth(); // проверит при загрузке страницы
+
+  $(window).resize(function () {
+    checkWidth(); // проверит при изменении размера окна клиента
+  });
+
+
+  // Скрипт для слайдера блока window-shapes
+  function checkWidth() {
+    var windowWidth = $('body').innerWidth(),
+      elem = $(".window-shapes__slider");
+    if (windowWidth < 768) {
+
+      elem.addClass('owl-carousel');
+
+      $('.window-shapes__slider').owlCarousel({
+        items: 1,
+        nav: true,
+        dots: false,
+      });
+    }
+    else {
+      elem.trigger('destroy.owl.carousel').removeClass('owl-carousel owl-loaded');
+    }
+  }
+
+  checkWidth(); // проверит при загрузке страницы
+
+  $(window).resize(function () {
+    checkWidth(); // проверит при изменении размера окна клиента
+  });
 
 });
 
