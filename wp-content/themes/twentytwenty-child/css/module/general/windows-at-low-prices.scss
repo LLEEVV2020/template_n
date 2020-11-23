@@ -1,6 +1,9 @@
 @import "../../base/all/var";
 
 .windows-at-low-prices {
+    padding-top: 4.5rem;
+    padding-bottom: 8.5rem;
+
     .title,
     &__img,
     &__price-box,
@@ -25,7 +28,6 @@
         margin-bottom: 0.738em;
         text-align: center;
         line-height: 1.4;
-        font-size: 1.125em;
     }
 
     &__img {
@@ -38,8 +40,7 @@
     }
 
     &__price,
-    &__saving,
-    &__order-text {
+    &__saving {
         font-weight: 900;
     }
 
@@ -126,11 +127,14 @@
             margin-bottom: 0.2em;
             letter-spacing: 0.05em;
             text-transform: uppercase;
+            font-weight: 700;
         }
     }
 
     .button {
-        padding: 0.8em 2.1em;
+        margin: 0;
+        padding: 0.6em 2.1em;
+        max-width: 11.022em;
     }
 
     .pagination {
@@ -184,7 +188,8 @@
 
         &__title {
             margin-bottom: 1.138em;
-            line-height: 1.7;
+            font-size: 1.125em;
+            line-height: 1.3;
             letter-spacing: 0.06em;
         }
 
@@ -236,48 +241,51 @@
         }
 
         .button {
-            padding: 0.7em 2.3em;
-            font-size: 1.063em;
+            max-width: 10.563em;
         }
     }
 
     @media (min-width: 1200px) {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+
         .title {
-            margin-bottom: 1.363em;
+            margin-bottom: 0.463em;
             font-size: 2.500em;
         }
 
         &__title {
-            font-size: 1.5em;
             line-height: 1.4;
             letter-spacing: 0.01em;
         }
 
         .owl-stage {
-            max-width: 72.5em;
+            max-width: 60.5em;
         }
 
         .owl-item {
-            width: 35.188em!important;
+            width: 29.188em!important;
         }
 
         &__item {
             margin-bottom: 1.088em;
-            padding: 2.7em 1em 1em 1em;
-            min-height: 46.2em;
+            padding: 1.875em 1em 1em 1em;
+            max-width: 29.1875em;
+            min-height: 38.2em;
         }
 
         &__img {
-            max-width: 20.975em;
-            margin-bottom: 4.063em;
+            max-width: 17.975em;
+            margin-bottom: 1.875em;
 
             &--big {
-                max-width: 29.775em;
+                max-width: 25.475em;
             }
         }
 
         &__price {
-            font-size: 4em;
+            font-size: 2.5em;
+            margin-left: 0.5em;
 
             &:after {
                 margin-left: 0.2em;
@@ -285,6 +293,7 @@
 
             &-box {
                 max-width: 34em;
+                margin-bottom: 1.575em;
             }
         }
 
@@ -293,13 +302,13 @@
             padding-bottom: 0.2em;
             padding-right: 0.7em;
             padding-left: 1.3em;
-            margin-right: 2.7em;
+            margin-right: 1.8em;
 
             &:before {
-                left: -1.34em;
+                left: -1.44em;
                 top: 0.6em;
                 width: 3.29em;
-                height: 3.47em;
+                height: 3.07em;
             }
 
             &:after {
@@ -312,14 +321,15 @@
             }
 
             &-price {
-                font-size: 2.250em;
+                font-size: 1.875em;
             }
         }
 
         &__order {
             &-box {
-                max-width: 30.5em;
+                max-width: 24.2em;
                 margin-bottom: 1.113em;
+                align-items: center;
             }
 
             &-text {
@@ -328,8 +338,7 @@
         }
 
         .button {
-            padding: 0.8em 4.6em;
-            font-size: 1.188em;
+            max-width: 12.130em;
         }
     }
 }
