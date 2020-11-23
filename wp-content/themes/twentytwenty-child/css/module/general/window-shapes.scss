@@ -32,13 +32,11 @@
     /* .window-shapes__slider */
 
     &__slider {
-        // width: 50%;
         .owl-stage {
             @include _768 {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-around;
-                // max-width: 50%;
                 margin: 0 auto;
             }
         }
