@@ -10,7 +10,7 @@
 
     .advantages {
         &-list {
-            max-width: 18em;
+            max-width: 20em;
             margin-left: auto;
             margin-right: auto;
             margin-bottom: 2.500em;
@@ -85,14 +85,19 @@
             }
     
             p {
-                max-width: 11.667em;
-                font-size: 0.889em;
+                max-width: 13.267em;
             }
         }
     }
 
+    .block {
+        display: block;
+    }
+
     &__text {
-        font-size: 2rem;
+        max-width: 20em;
+        margin-left: auto;
+        margin-right: auto;
         text-align: center;
 
         &--mb-27 {
@@ -108,20 +113,31 @@
         &__input {
             padding-left: 0;
             padding-right: 0;
+            min-height: 2.50em;
             text-align: center;
             border-radius: 0;
             border-top: none;
             border-left: none;
             border-right: none;
             border-bottom: 0.188em solid #C9C9C9;
+            font-size: 0.875em;
+            font-weight: 700;
         }
 
     }
 
     @media (min-width: 768px) {
+        padding-top: 5.5rem;
+        padding-bottom: 5.5rem;
 
         .container {
             width: calc(100% - 8rem);
+        }
+
+        .title {
+            max-width: 16.9em;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .advantages {
@@ -130,7 +146,7 @@
     
                 &__item {
                     align-items: center;
-                    margin-bottom: 2em;
+                    margin-bottom: 1.875em;
                 }
     
                 &__circle {
@@ -142,36 +158,68 @@
                 }
     
                 p {
-                    max-width: 24.367em;
-                    font-size: 1.250em;
+                    max-width: 27.367em;
+                    font-size: 1.125em;
+                    line-height: 1.22;
+                }
+
+                .block {
+                    display: inline;
                 }
     
             }
-        }        
+        }
+        
+        &__text {
+            max-width: 32em;
+            font-size: 1.125em;
+            line-height: 1.2;
+        }
         
         .form-contacts {
-            max-width: 65rem;
+            max-width: 59rem;
+
+            &__box,
+            &__button {
+                max-width: none;
+                width: 18em;
+            }
 
             &__box {
-                max-width: none;
                 margin-bottom: 0;
-                width: 47%;
+            }
+
+            &__input {
+                min-height: 2.50em;
+                font-size: 1em;
             }
 
             &__button {
-                max-width: none;
-                width: 47%;
+                margin: 0;
             }
         }
     }
 
     @media (min-width: 960px) {
         .form-contacts {
-            max-width: 84rem;
+            &__box {
+                min-width: 0;
+            }
         }
     }
 
     @media (min-width: 1200px) {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+
+        .title {
+            max-width: none;
+        }
+
+        .advantages-list,
+        &__text {
+            margin-bottom: 1.875em;
+        }
 
         .advantages {
             &-list {
@@ -179,53 +227,70 @@
                 flex-wrap: wrap;
                 justify-content: center;
                 max-width: 70em;
-                margin-bottom: 0;
 
                 &__item {
                     display: block;
                     flex-basis: 33%;
-                    margin-bottom: 4em;
+                    margin-bottom: 2.3125em;
                     text-align: center;
+
+                    &:nth-child(4) p .block,
+                    &:last-child .block,
+                    &:last-child .block-helper  {
+                        display: block;
+                    }
+
+                    &:nth-child(4),
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
                 }
 
                 &__circle {
-                    width: 11.5em;
-                    height: 11.5em;
+                    width: 9.1875em;
+                    height: 9.1875em;
                     margin-left: auto;
                     margin-right: auto;
-                    margin-bottom: 2.375em;
+                    margin-bottom: 1.25em;
 
                     &:before {
                         top: 0.2em;
                         left: -0.2em;
-                        width: 1.438em;
-                        height: 1.438em;
-                        line-height: 1.438em;
-                        font-size: 2.500em;
+                        width: 1.77em;
+                        height: 1.77em;
+                        line-height: 1.77em;
+                        font-size: 1.875em;
                     }
                 }
 
                 p {
-                    max-width: none;
-                    font-size: 1.500em;
+                    max-width: 17em;
                 }
 
                 img {
                     width: 8.1em;
                     right: -0.6em;
                     top: 2em;
+                    font-size: 1.3rem;
                 }
             }
 
         }
 
         &__text {
-            font-size: 1.500em;
-
             &--mb-27 {
                 max-width: 35em;
                 margin-left: auto;
                 margin-right: auto;
+            }
+        }
+
+        .form-contacts {
+            max-width: 64rem;
+
+            &__input,
+            .button {
+                width: 19.0625em;
             }
         }
 
