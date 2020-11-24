@@ -17,18 +17,6 @@
         &-box {
             position: relative;
             margin-bottom: 0.7em;
-            margin-left: -4.3%;
-            margin-right: -4.3%;
-
-            &:before {
-                content: '';
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                width: 100%;
-                height: 40%;
-                background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 90.1%);
-            }
         }
     }
 
@@ -41,13 +29,14 @@
     }
 
     .form-contacts {
-        max-width: 30rem;
+        max-width: 34.5rem;
 
         &__input {
-            padding: 10px 20px;
+            padding: 0.575em 1.25em;
             text-align: center;
             border: none;
             border-radius: 0;
+            font-size: 0.875em;
             font-weight: 700;
             border-bottom: 3px solid #C9C9C9;
         }
@@ -63,164 +52,111 @@
         }
 
         .text {
-            text-align: center;
+            font-size: 1.8rem;
+            line-height: 1.3;
+        }
+
+        &__box {
+            display: grid;
+            grid-template-columns: 25.4375em 17.875em;
+            grid-column-gap: 0.9375em;
+            max-width: 45em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .title {
+            grid-row: 1 / 2;
+            grid-column: span 2;
         }
 
         &__image {
+            object-fit: cover;
+            height: 90%;
+
             &-box {
-                max-width: 50em;
-                margin-left: auto;
-                margin-right: auto;
-                margin-bottom: 1.7em;
+                grid-row: 2 / 3;
+                grid-column: 2 / 3;
+                max-width: 17.875em;
+                margin-bottom: 0;
                 text-align: center;
-
-                &:before {
-                    height: 100%;
-                    width: 100%;
-                    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 15%, rgba(255,255,255,0) 85%, rgba(255,255,255,1) 100%);
-                }
             }
         }
 
-        .form-contacts {
-            margin-top: 2.5em;
-            max-width: 72rem;
-
-            &__box {
-                max-width: 25.375em;
-                width: 100%;
-            }
-
-            &__button {
-                max-width: 16.824em;
-            }
+        &__content {
+            grid-row: 2 / 3;
+            grid-column: 1 / 2;
         }
-    }
 
-    @media (min-width: 960px) {
         .form-contacts {
-            max-width: 43em;
+            grid-column: span 2;
+            margin-top: 0.4625em;
+            max-width: 37em;
+            width: 100%;
 
             &__box {
-                max-width: 25em;
+                min-width: 17.940em;
+                max-width: none;
+            }
+
+            &__input {
+                font-size: 1em;
             }
 
             &__button {
-                max-width: 13.313em;
+                margin: 0;
+                min-width: 17.940em;
             }
         }
     }
 
     @media (min-width: 1200px) {
-        padding-top: 0;
-        padding-bottom: 0;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
 
         .container {
             width: calc(100% - 8rem);
-            margin-left: 0;
         }
 
         &__box {
-            display: grid;
-            grid-template-columns: 50% 50%;
-            column-gap: 1em;
-        }
-
-        .title {
-            //margin-top: 0.6em;
-            margin-top: 1.288em;
-            margin-bottom: 0.9em;
-            font-size: 2.8rem;
-            text-align: center;
-        }
-
-        .text {
-            margin-bottom: 1.763em;
-            text-align: left;
-            &:first-child{
-                margin-bottom: .25em;
-            }
+            grid-template-columns: 24.0375em 36.075em;
+            grid-column-gap: 1.0125em;
+            grid-template-rows: 5em 13.6em 3em;
+            max-width: 60em;
         }
 
         &__image {
+            height: 100%;
+
             &-box {
-                margin-bottom: 0;
-                margin-left: 0;
-                margin-right: 0;
-                max-width: none;
-                grid-row: 1 / 4;
+                max-width: 23.775em;
+                grid-row: 2 / 4;
                 grid-column: 1 / 2;
-
-                &:before {
-                    // background: linear-gradient(90deg, white 0%, rgba(255, 255, 255, 0) 15%);
-                    background: linear-gradient(90deg, white 0, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0) 76%, white 92%);
-                }
             }
         }
 
+        &__content {
+            grid-column: 2 / 3;
+            max-width: 35em;
+        }
+
         .form-contacts {
+            grid-row: 3 / 3;
+            grid-column: 2 / 3;
+            max-width: 35em;
             margin-left: 0;
-
-            &__box,
-            &__input {
-                width: auto;
-            }
+            margin-right: 0;
+            margin-top: 0.9em;
+            align-items: flex-end;
 
             &__box {
-                min-width: auto;
+                min-width: 16.563em;
             }
-        }
-    }
 
-    @media (min-width: 1400px) {
-        .container {
-            max-width: 133rem;
-        }
-
-        .title {
-            margin-bottom: 0.6em;
-            font-size: 4rem;
-        }
-
-        .text {
-            font-size: 2.4rem;
-            line-height: 1.21;
-        }
-
-        &__image {
-            &-box {
-                &:before {
-                    // background: linear-gradient(90deg, white 6%, rgba(255, 255, 255, 0) 27%);
-                }
+            &__button {
+                min-width: 16.563em;
             }
         }
 
-        .form-contacts {
-            &__box {
-                min-width: 23em;
-            }
-
-            &__input {
-                width: 100%;
-            }
-        }
-    }
-
-    @media (min-width: 1600px) {
-        .container {
-            max-width: 157rem;
-        }
-
-        .title {
-            margin-top: 1.5em;
-        }
-
-        .form-contacts {
-            margin-top: 5.5em;
-
-            &__box {
-                min-width: 25em;
-            }
-        }
     }
  }
