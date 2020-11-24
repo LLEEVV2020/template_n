@@ -126,6 +126,31 @@
     }
 }
 
+// TEXT
+.t-14-16-16 {
+    font-size: 1.4rem;
+    @include _768 {
+        font-size: 1.6rem;
+    }
+}
+
+.t-16-18-18 {
+    font-size: 1.6rem;
+    @include _768 {
+        font-size: 1.8rem;
+    }
+}
+
+.t-16-18-16 {
+    font-size: 1.6rem;
+    @include _768 {
+        font-size: 1.8rem;
+    }
+    @include _1200 {
+        font-size: 1.6rem;
+    }
+}
+
 .fw3 {
     font-weight: 300;
 }
