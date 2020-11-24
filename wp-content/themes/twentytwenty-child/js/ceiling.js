@@ -245,3 +245,25 @@ if (calculatingCostRangeSlider) {
     applyFill(calculatingCostRangeSlider);
 }
 
+// Скрипт для слайдера блока use-plastic-doors
+function usePlasticDoors(itemName) {
+    $(itemName).owlCarousel({
+        items: 1,
+        dots: true,
+        dotsClass: ['pagination-box'],
+        dotClass: ['pagination'],
+        responsive: {
+            768: {
+                items: 3,
+                margin: 16
+            }
+        }
+    });
+}
+
+checkWindowWidth('use-plastic-doors__box', 1200, usePlasticDoors);
+
+window.addEventListener('resize', function () {
+    checkWindowWidth('use-plastic-doors__box', 1200, usePlasticDoors);
+});
+
