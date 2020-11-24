@@ -7,8 +7,6 @@
 // }
 
 .portal-doors {
-    background-color: $lightGray;
-
     /* .portal-doors__wrapper */
 
     &__wrapper {
@@ -21,7 +19,8 @@
         margin-bottom: 1em;
 
         @include _1200 {
-            margin-bottom: 0.7em;
+            margin-bottom: 0.8em;
+            line-height: 1.2;
         }
     }
 
@@ -37,24 +36,23 @@
         margin-bottom: 1.4em;
 
         @include _768 {
-            width: 44.7rem;
-            height: 30.3rem;
-            margin-bottom: 2.2em;
+            width: 34.6rem;
+            height: 23.7rem;
+            margin-bottom: 1.6em;
         }
 
         @include _1200 {
+            width: 38.8rem;
+            height: 26.6rem;
             margin-bottom: 0;
-            margin-right: -1em;
-            margin-left: 0.8em;
+            margin-left: 1em;
         }
     }
 
     /* .portal-doosr__inner */
 
     &__inner {
-
         @include _1200 {
-            padding-left: 1.6em;
             display: flex;
             flex-direction: row-reverse;
         }
@@ -65,19 +63,25 @@
     &__box-info {
         text-align: center;
 
+        @include _768 {
+            text-align: left;
+        }
+        
         @include _1200 {
             padding-top: 0.4em;
+            display: flex;
+            flex-direction: column;
         }
     }
-
+    
     /* .portal-doosr__text */
-
+    
     &__text {
-        margin-bottom: 2.2em;
-        text-align: left;
-
+        margin-bottom: 2em;
+        
         @include _768 {
-            margin-bottom: 1.8em;
+            margin-bottom: 1.7em;
+            line-height: 1.25;
         }
 
         @include _1200 {
@@ -90,12 +94,13 @@
 
     &__box-price {
         @include _768 {
-            justify-content: center;
             align-items: flex-end;
+            padding: 0 3.7em 0 7.8em;
         }
 
         @include _1200 {
-            justify-content: space-between;
+            padding: 0;
+            margin-top: auto;
         }
     }
 
@@ -107,33 +112,25 @@
         @include _768 {
             font-size: 4rem;
             line-height: 0.7em;
-            margin-bottom: -0.2em;
             margin-right: 0.6em;
         }
 
         @include _1200 {
-            font-size: 5rem;
         }
     }
 
     /* .portal-doosr__link */
 
     &__link {
-        display: inline-block;
-        text-decoration: none;
-        font-size: 1.4rem;
-        min-width: 16.5rem;
+        max-width: 16.5rem;
+        margin-right: 0;
 
         @include _768 {
-            font-size: 1.6rem;
-            min-width: 34.7rem;
-            line-height: 1.4em;
+            max-width: 28.6rem;
         }
 
         @include _1200 {
-            font-size: 1.9rem;
-            min-width: 32rem;
-            margin-right: 1.3em;
+            max-width: 30.6rem;
         }
     }
 }
