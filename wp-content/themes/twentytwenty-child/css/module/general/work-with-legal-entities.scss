@@ -1,6 +1,5 @@
 @import "../../base/all/var";
 @import "../../base/all/mixin";
-@import "../../base/all/my-style";
 
 // @include _768 {
 // }
@@ -11,20 +10,20 @@
     background-image: url(/wp-content/themes/twentytwenty-child/img/legal-entities-s.webp);
     background-repeat: no-repeat;
     background-size: contain;
+
     @include _768 {
         background-image: url(/wp-content/themes/twentytwenty-child/img/legal-entities-m.webp);
         background-size: cover;
         background-position: center;
     }
+
     @include _1200 {
         background-size: contain;
         background-position: left;
         background: linear-gradient(-45deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%) 0 0/ 100% 100%,
             url(/wp-content/themes/twentytwenty-child/img/legal-entities-l.webp) left/contain no-repeat;
     }
-    h3{
-        font-size: 1.17em;
-    }
+
     /* .legal-entities__wrapper */
 
     &__wrapper {
@@ -33,8 +32,9 @@
         @include _768 {
             padding: 5.5rem 0;
         }
+
         @include _1200 {
-            padding: 6.3rem 0 7.7rem;
+            padding: 6rem 0;
         }
     }
 
@@ -47,10 +47,11 @@
             margin: 0 auto;
             padding: 1.8em 1em 2em 4em;
         }
+
         @include _1200 {
             background-color: transparent;
             padding: 0;
-            margin-left: 30.7em;
+            margin-left: 20.5em;
             max-width: 100%;
         }
     }
@@ -67,26 +68,29 @@
             max-width: 100%;
             text-align: left;
             line-height: 1.1em;
-            margin-bottom: 0.8em;
+            margin-bottom: 0.95em;
         }
+
         @include _1200 {
             line-height: 1.2em;
-            margin-bottom: 0.7em;
+            margin-bottom: 0.95em;
         }
     }
 
     /* .legal-entities__list */
 
     &__list {
-        margin-left: 0.9em;
-        margin-bottom: 2.1em;
+        margin-left: 1.2em;
+        margin-bottom: 2.2em;
 
         @include _768 {
             margin-left: 0;
-            margin-bottom: 1.3em;
+            margin-bottom: 1.7em;
         }
+
         @include _1200 {
-            margin-bottom: 1.2em;
+            margin-bottom: 1.8em;
+            margin-left: 0.6em;
         }
     }
 
@@ -111,65 +115,58 @@
             border-radius: 50%;
 
             @include _768 {
-                bottom: -0.15em;
-            }
-            @include _1200 {
-                width: 4.8rem;
-                bottom: -0.05em;
+                left: -0.65em;
+                bottom: -0.55em;
+                width: 3.8rem;
+                height: 4rem;
             }
         }
 
         @include _768 {
-            margin-bottom: 0.7em;
-            padding-left: 2.3em;
+            margin-bottom: 1.25em;
+            padding-left: 1.7em;
         }
+
         @include _1200 {
-            margin-bottom: 1em;
-            padding-left: 1.9em;
+            margin-bottom: 1.2em;
+            padding-left: 1.8em;
         }
     }
 
     /* .legal-entities__text */
 
     &__text {
-        font-weight: 900;
         text-align: center;
         letter-spacing: -0.02em;
         margin-bottom: 1.5em;
+        line-height: 1.2;
 
         @include _768 {
-            font-weight: 700;
             text-align: left;
-            max-width: 21em;
-            letter-spacing: 0.041em;
+            letter-spacing: 0;
             line-height: 1.2em;
-            margin-bottom: 1.6em;
+            margin-bottom: 1.7em;
+            margin-left: -0.6em;
         }
+
         @include _1200 {
-            font-size: 2.4rem;
-            letter-spacing: normal;
-            max-width: 18em;
-            margin-bottom: 1.4em;
+            margin-bottom: 1.7em;
+            margin-left: 0;
         }
     }
 
     /* .legal-entities__btn */
 
     &__btn {
-        display: block;
-        text-decoration: none;
-        text-align: center;
         max-width: 30rem;
-        margin: 0 auto;
-        line-height: 1.5em;
 
         @include _768 {
-            max-width: 34.6rem;
-            margin: 0 0 0 3.4em;
+            max-width: 37.8rem;
+            margin-left: 2.7em;
         }
+
         @include _1200 {
-            max-width: 37.9rem;
-            margin: 0;
+            margin-left: 0;
         }
     }
 }
