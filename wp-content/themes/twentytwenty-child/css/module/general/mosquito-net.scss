@@ -7,7 +7,7 @@
 // }
 
 .mosquito-net {
-    background-color: #e9e9e9; 
+    background-color: #e9e9e9;
 
     /* .mosquito-net__title */
 
@@ -24,7 +24,7 @@
         }
 
         @include _1200 {
-            margin-bottom: 0.6em;
+            margin-bottom: 0.85em;
         }
     }
 
@@ -39,7 +39,7 @@
         }
 
         @include _1200 {
-            margin-bottom: 1.3em;
+            margin-bottom: 1.7em;
         }
     }
 
@@ -58,8 +58,11 @@
             }
         }
 
-        .pagination {
+        .owl-stage-outer {
+            filter: drop-shadow(0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.25));
+        }
 
+        .pagination {
             background-color: #fff;
 
             &.active {
@@ -70,6 +73,11 @@
             max-width: 63rem;
             margin: 0 auto 3.5em;
         }
+
+        @include _1200 {
+            max-width: 100%;
+            margin: 0;
+        }
     }
 
     /* .mosquito-net__item */
@@ -79,7 +87,6 @@
         height: 26.8rem;
         margin: 0 auto 1em;
         background-color: #fff;
-        box-shadow: 0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.25);
         border-radius: 0.6rem;
         padding: 0.6em;
         position: relative;
@@ -96,13 +103,9 @@
             border-radius: 15em/7em;
 
             @include _768 {
-                transform: rotate(-2deg);
-            }
-
-            @include _1200 {
-                width: 25rem;
-                height: 11rem;
-                transform: rotate(-4deg);
+                transform: rotate(-5deg);
+                bottom: -1.5em;
+                left: 8.8em;
             }
         }
 
@@ -112,6 +115,7 @@
         }
 
         @include _1200 {
+            margin: 0 auto;
         }
     }
 
@@ -128,7 +132,6 @@
 
         @include _768 {
             height: 17.1rem;
-
         }
 
         @include _1200 {
@@ -146,7 +149,9 @@
 
         @include _768 {
             font-weight: 700;
-            line-height: 1.1em;
+            line-height: 1.3em;
+            padding-left: 0.4em;
+            max-width: 100%;
         }
 
         @include _1200 {
@@ -168,9 +173,6 @@
         @include _768 {
             bottom: 0.2em;
             right: 0.4em;
-        }
-
-        @include _1200 {
         }
     }
 }

@@ -43,6 +43,10 @@
             }
         }
 
+        .owl-stage-outer {
+            filter: drop-shadow(0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.25));
+        }
+
         .pagination {
 
             &.active {
@@ -68,7 +72,6 @@
         height: 26.8rem;
         margin: 0 auto 1em;
         background-color: #fff;
-        box-shadow: 0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.25);
         border-radius: 0.6rem;
         padding: 0.6em;
         position: relative;
