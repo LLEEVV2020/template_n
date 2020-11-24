@@ -1,6 +1,5 @@
 @import "../../base/all/var";
 @import "../../base/all/mixin";
-@import "../../base/all/my-style";
 
 // @include _768 {
 // }
@@ -10,47 +9,21 @@
 .renovation-windows {
     background-image: url(/wp-content/themes/twentytwenty-child/img/yellow-fone.webp);
 
-    /* .renovation-windows__wrapper */
-
-    &__wrapper {
-        padding: 4.6rem 0 4rem;
-
-        @include _768 {
-            padding: 5.5rem 0 5.5rem;
-        }
-
-        @include _1200 {
-            padding: 6.5rem 0 8.4rem;
-        }
-    }
-
     /* .renovation-windows__title */
 
     &__title {
         text-align: center;
         line-height: 1.2em;
-
-        @include _768 {
-            margin-bottom: -0.1em;
-        }
-
-        @include _1200 {
-            margin-bottom: 0.1em;
-        }
-    }
-
-    /* .renovation-windows__suptitle */
-
-    &__suptitle {
-        text-align: center;
         margin-bottom: 0.7em;
 
         @include _768 {
-            margin-bottom: 1.3em;
+            line-height: 1.1;
+            margin-bottom: 0.95em;
         }
 
         @include _1200 {
-            margin-bottom: 0.5em;
+            line-height: 1.2;
+            margin-bottom: 0.85em;
         }
     }
 
@@ -78,11 +51,13 @@
         }
 
         @include _768 {
-            margin-bottom: 4.5em;
+            max-width: 63rem;
+            margin: 0 auto 3.5em;
         }
 
         @include _1200 {
-            margin-bottom: 1.5em;
+            margin-bottom: 1em;
+            max-width: 100%;
         }
     }
 
@@ -112,25 +87,17 @@
             @include _768 {
                 transform: rotate(-4.3deg);
                 bottom: -1.5em;
-            }
-
-            @include _1200 {
-                bottom: -2.1em;
-                left: 9.6em;
-                width: 25rem;
-                height: 11rem;
-                transform: rotate(-3deg);
+                left: 8.7em;
             }
         }
 
         @include _768 {
-            max-width: 32.5rem;
-            height: 33.4rem;
+            width: 30.4rem;
+            height: 30.9rem;
         }
 
         @include _1200 {
             max-width: 35rem;
-            height: 36rem;
         }
     }
 
@@ -141,14 +108,14 @@
         max-width: 28rem;
         width: 100%;
         height: 15rem;
-        margin: 0 auto 0.5em;
+        margin: 0 auto 0.8em;
         border-radius: 0.6rem;
         object-fit: cover;
 
         @include _768 {
             max-width: 30.7rem;
-            height: 20rem;
-            margin-bottom: 1em;
+            height: 17.1rem;
+            margin-bottom: 1.5em;
         }
 
         @include _1200 {
@@ -159,20 +126,15 @@
     /* .renovation-windows__item-text */
 
     &__item-text {
-        font-weight: 900;
-        font-size: 1.8rem;
-        line-height: 1.4em;
+        line-height: 1.2em;
         margin-left: 0.2em;
 
         @include _768 {
             max-width: 13em;
-            font-weight: 700;
-            font-size: 2rem;
             line-height: 1.1em;
         }
 
         @include _1200 {
-            font-size: 2.4rem;
             margin-left: 0.4em;
         }
     }
@@ -192,10 +154,6 @@
             bottom: 0.2em;
             right: 0.4em;
         }
-
-        @include _1200 {
-            font-size: 4.8rem;
-        }
     }
 
     /* .renovation-windows__footer */
@@ -206,13 +164,9 @@
         line-height: 1.4em;
 
         @include _768 {
-            font-size: 2.2rem;
+            font-size: 1.8rem;
             text-align: center;
             line-height: 1.1em;
-        }
-
-        @include _1200 {
-            font-size: 2.4rem;
         }
     }
 
@@ -224,11 +178,6 @@
 
         @include _768 {
             display: inline-block;
-            font-size: 2.5rem;
-        }
-
-        @include _1200 {
-            font-size: 3.2rem;
         }
     }
 }
