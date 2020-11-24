@@ -32,7 +32,7 @@
     }
 
     @include _1200 {
-        max-width: 114rem;
+        max-width: 96rem;
     }
 }
 
@@ -46,7 +46,7 @@
     }
 
     @include _1200 {
-        padding: 7.5rem 0;
+        padding: 6rem 0;
     }
 }
 
@@ -99,6 +99,31 @@
     }
     @include _1200 {
         font-size: 4rem;
+    }
+}
+
+// TEXT
+.t-14-16-16 {
+    font-size: 1.4rem;
+    @include _768 {
+        font-size: 1.6rem;
+    }
+}
+
+.t-16-18-18 {
+    font-size: 1.6rem;
+    @include _768 {
+        font-size: 1.8rem;
+    }
+}
+
+.t-16-18-16 {
+    font-size: 1.6rem;
+    @include _768 {
+        font-size: 1.8rem;
+    }
+    @include _1200 {
+        font-size: 1.6rem;
     }
 }
 
