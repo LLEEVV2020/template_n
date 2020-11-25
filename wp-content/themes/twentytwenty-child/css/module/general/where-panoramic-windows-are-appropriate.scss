@@ -8,20 +8,6 @@
 
 .panoramic-windows {
     background: #f6f6f6;
-    /* .panoramic-windows__wrapper */
-
-    &__wrapper {
-        padding: 4.5rem 0;
-        text-align: center;
-
-        @include _768 {
-            padding: 5.5rem 0;
-        }
-
-        @include _1200 {
-            padding: 7.5rem 0;
-        }
-    }
 
     /* .panoramic-windows__title */
 
@@ -29,72 +15,70 @@
         text-align: center;
         line-height: 1.2em;
         margin-bottom: 1.1em;
+        padding: 0 1em;
 
         @include _768 {
             margin-bottom: 0.9em;
+        }
+        @include _1200 {
+            margin-bottom: 0.8em;
         }
     }
 
     /* .panoramic-windows__inner */
 
-    &__inner {
-        flex-wrap: wrap;
-        margin-bottom: 1em;
-
+    &__slider {
+        margin-bottom: 3.8em;
+        
         @include _768 {
-            margin-bottom: 1.8em;
+            max-width: 40em;
+            margin: 0 auto;
+            margin-bottom: 4em;
         }
 
         @include _1200 {
-            margin-bottom: 2.7em;
+            max-width: 100%;
+            margin-bottom: 2em;
         }
     }
 
     /* .panoramic-windows__item */
 
     &__item {
-        width: 33.5rem;
-        height: 25.4rem;
+        width: 30.5rem;
+        height: 24rem;
+        margin: 0 auto;
         background-repeat: no-repeat;
-        background-size: contain;
-        background-position-y: bottom;
-        border-radius: 1.8em 1.8em 0.8em 0.8em;
+        background-size: 100% 77%;
+        background-position-y: top;
+        border-radius: 0.6em;
         overflow: hidden;
-
-        &+& {
-            margin-top: 1.55em;
-        }
+        display: flex;
 
         @include _768 {
-            width: 22.6rem;
-            height: 17.2rem;
-
-            &+& {
-                margin-top: 0;
-            }
         }
 
         @include _1200 {
-            width: 33.9rem;
-            height: 27.6rem;
         }
     }
 
     /* .panoramic-windows__item-text */
 
     &__item-text {
-        background-color: $yellow;
+        background-color: #fff;
         display: block;
-        line-height: 2.7em;
+        line-height: 3.1em;
+        margin-top: auto;
+        width: 100%;
+        border-radius: 0 0 0.6em 0.6em;
+        font-size: 1.8rem;
+        border: 0.15rem solid #e6e6e6;
+        border-top: none;
 
         @include _768 {
-            font-size: 1.4rem;
-            line-height: 2.2em;
         }
 
         @include _1200 {
-            font-size: 2.4rem;
-            line-height: 2.7em;
         }
     }
 
@@ -119,14 +103,19 @@
     /* .panoramic-windows__text */
 
     &__text {
-        line-height: 1.13em;
+        line-height: 1.15em;
 
-        &+& {
-            margin-top: 0.35em;
+        & + & {
+            margin-top: 1em;
+            @include _768 {
+                margin-top: 1.2em;
+            }
         }
 
+        @include _768 {
+            line-height: 1.25em;
+        }
         @include _1200 {
-            line-height: 1.23em;
         }
     }
 }

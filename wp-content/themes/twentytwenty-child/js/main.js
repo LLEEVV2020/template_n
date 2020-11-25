@@ -381,6 +381,28 @@ $(document).ready(function () {
     }
   });
 
+  // Скрипт для слайдера блока panoramic-windows__slider
+  $('.panoramic-windows__slider').owlCarousel({
+    items: 1,
+    dots: true,
+    margin: 55,
+    dotsClass: ['pagination-box'],
+    dotClass: ['pagination'],
+    responsive: {
+      768: {
+        margin: 10,
+        items: 2
+      },
+      1200: {
+        margin: 10,
+        items: 3,
+        dots: false,
+        mouseDrag: false,
+        touchDrag: false,
+      }
+    }
+  });
+
   // Скрипт для слайдера блока materials-for-creating-a-parapet
   $('.materials-for-creating-a-parapet__slider').owlCarousel({
     items: 1,
