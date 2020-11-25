@@ -390,11 +390,11 @@ $(document).ready(function () {
     dotClass: ['pagination'],
     responsive: {
       768: {
-        margin: 25,
+        margin: 10,
         items: 2
       },
       1200: {
-        margin: 30,
+        margin: 10,
         items: 3,
         dots: false,
         mouseDrag: false,
