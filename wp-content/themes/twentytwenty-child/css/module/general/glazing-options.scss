@@ -7,27 +7,21 @@
 // }
 
 .glazing-options {
-    /* .glazing-options__wrapper */
-
-    &__wrapper {
-        padding: 4.5rem 0;
-
-        @include _768 {
-            padding: 5.5rem 0;
-        }
-
-        @include _1200 {
-            padding: 7.5rem 0;
-        }
-    }
 
     /* .glazing-options__inner */
 
     &__inner {
         flex-wrap: wrap;
+        padding: 0 0.2em;
 
         @include _768 {
             justify-content: space-around;
+            padding: 0 2.1em;
+        }
+
+        @include _1200 {
+            padding: 0;
+            justify-content: space-between;
         }
     }
 
@@ -38,6 +32,7 @@
 
         &::after {
             content: "";
+            position: absolute;
             background-image: url("data:image/svg+xml,%3Csvg width='271' height='24' viewBox='0 0 271 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M270.061 13.0607C270.646 12.4749 270.646 11.5251 270.061 10.9393L260.515 1.3934C259.929 0.807611 258.979 0.807611 258.393 1.3934C257.808 1.97919 257.808 2.92893 258.393 3.51472L266.879 12L258.393 20.4853C257.808 21.0711 257.808 22.0208 258.393 22.6066C258.979 23.1924 259.929 23.1924 260.515 22.6066L270.061 13.0607ZM0 13.5H269V10.5H0V13.5Z' fill='white'/%3E%3C/svg%3E%0A");
             display: inline-block;
             width: 2.25em;
@@ -51,6 +46,7 @@
 
             @include _768 {
                 display: block;
+                bottom: 0;
                 height: 1em;
                 width: 95%;
                 margin-right: 0.5em;
@@ -61,9 +57,10 @@
             }
         }
 
-        @include _1200 {
-            font-size: 2.4rem;
-            line-height: 1.5em;
+        @include _768 {
+            font-size: 1.8rem;
+            line-height: 1.25em;
+            min-height: 10.4em;
         }
     }
 
@@ -77,9 +74,7 @@
             font-size: 3rem;
         }
 
-        @include _1200 {
-            font-size: 4rem;
-        }
+        @include _1200 {}
     }
 
     /* .glazing-options__name */
@@ -89,11 +84,7 @@
         font-size: 1.6rem;
 
         @include _768 {
-            font-size: 2rem;
-        }
-
-        @include _1200 {
-            font-size: 3rem;
+            font-size: 1.8rem;
         }
     }
 
@@ -103,7 +94,7 @@
         font-size: 1rem;
 
         @include _768 {
-            font-size: 1.2rem;
+            font-size: 1.4rem;
         }
 
         @include _1200 {
@@ -128,16 +119,13 @@
 
         @include _768 {
             padding: 1em;
-            margin-bottom: 1.7em;
-            max-width: 22.6rem;
-            min-height: 22.6rem;
+            margin-bottom: 1em;
+            max-width: 30.4rem;
+            min-height: 30.2rem;
         }
 
         @include _1200 {
-            padding: 1.2em;
-            margin-bottom: 3em;
-            max-width: 34.4rem;
-            min-height: 34.4rem;
+            margin-bottom: 1.5em;
         }
     }
 
@@ -149,8 +137,6 @@
         @include _768 {
             justify-content: center;
         }
-
-        @include _1200 {}
     }
 
     /* .glazing-options__item--2 */
