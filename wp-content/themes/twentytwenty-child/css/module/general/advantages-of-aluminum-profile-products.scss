@@ -15,16 +15,19 @@
         text-align: center;
         line-height: 1.2em;
         margin-bottom: 1.3em;
+        padding: 0 1em;
 
         @include _768 {
+            padding: 0;
             line-height: 1.1em;
-            max-width: 14.4em;
-            margin: 0 auto 1.3em;
+            max-width: 14em;
+            margin: 0 auto 1.1em;
         }
 
         @include _1200 {
-            max-width: 100%;
-            margin-bottom: 1.6em;
+            max-width: 70%;
+            margin-bottom: 0.8em;
+            line-height: 1.2;
         }
     }
 
@@ -32,11 +35,16 @@
 
     &__list {
         flex-wrap: wrap;
-        margin-left: 0.9em;
+        margin-left: 1.3em;
+
+        @include _768 {
+            margin: 0 0.8em 0 1.3em;
+        }
 
         @include _1200 {
-            margin-left: 0;
-            padding: 0 3.2em;
+            margin: 0;
+            padding: 0 2.5em;
+
         }
     }
 
@@ -55,7 +63,7 @@
         border-radius: 0.5em;
 
         & + & {
-            margin-top: 1.25em;
+            margin-top: 1.15em;
 
             @include _768 {
                 margin-top: 0;
@@ -83,10 +91,10 @@
             }
 
             @include _1200 {
-                height: 11.6rem;
-                width: 11.6rem;
+                height: 7.2rem;
+                width: 7.2rem;
                 left: -2.5em;
-                background-size: 32em;
+                background-size: 27em;
             }
         }
 
@@ -99,7 +107,7 @@
                 }
 
                 @include _1200 {
-                    background-position: -4.85em 0.9em;
+                    background-position: -4.1em 0.75em;
                 }
             }
         }
@@ -110,6 +118,9 @@
 
                 @include _768 {
                     background-position: 0.3em 0.7em;
+                }
+                @include _1200 {
+                    background-position: 0.2em 0.65em;
                 }
             }
         }
@@ -123,7 +134,7 @@
                 }
 
                 @include _1200 {
-                    background-position: -14.7em 0.6em;
+                    background-position: -12.5em 0.6em;
                 }
             }
         }
@@ -137,7 +148,7 @@
                 }
 
                 @include _1200 {
-                    background-position: -14.8em -5em;
+                    background-position: -12.5em -4.3em;
                 }
             }
         }
@@ -151,7 +162,7 @@
                 }
 
                 @include _1200 {
-                    background-position: -4.8em -4.9em;
+                    background-position: -4.2em -4.2em;
                 }
             }
         }
@@ -161,11 +172,11 @@
                 background-position: -6.4em -3.2em;
 
                 @include _768 {
-                    background-position: -7.3em -3.6em;
+                    background-position: -7.4em -3.6em;
                 }
 
                 @include _1200 {
-                    background-position: -10.4em -5.1em;
+                    background-position: -8.9em -4.4em;
                 }
             }
         }
@@ -179,7 +190,7 @@
                 }
 
                 @include _1200 {
-                    background-position: -10.5em 0.8em;
+                    background-position: -8.9em 0.6em;
                 }
             }
         }
@@ -193,18 +204,20 @@
                 }
 
                 @include _1200 {
-                    background-position: 0.4em -4.7em;
+                    background-position: 0.4em -4em;
                 }
             }
         }
 
         @include _768 {
-            min-height: 5rem;
-            max-width: 34.2rem;
-            margin-bottom: 1.9em;
+            min-height: 5.5rem;
+            max-width: 32.3rem;
+            margin-bottom: 1.7em;
+            text-align: center;
+            display: flex;
+            justify-content: center;
 
             &:nth-child(even) {
-                text-align: right;
                 padding: 0.5em 3.5em 0.5em 0.5em;
 
                 &::before {
@@ -214,6 +227,8 @@
 
                 @include _1200 {
                     text-align: center;
+                    padding: 0.5em 3.2em;
+                    border-radius: 1em 0 0 1em;
 
                     &::before {
                         right: -2.5em;
@@ -223,12 +238,13 @@
         }
 
         @include _1200 {
-            max-width: 46.8rem;
-            min-height: 7.9rem;
-            margin-bottom: 2.4em;
+            max-width: 42.5rem;
+            min-height: 6.5rem;
+            margin-bottom: 2em;
             justify-content: center;
             text-align: center;
-            border-radius: 1em;
+            border-radius: 0 1em 1em 0;
+            padding: 0.5em 3.2em;
         }
     }
 }
