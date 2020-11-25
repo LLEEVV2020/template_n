@@ -1,37 +1,20 @@
 @import "../../base/all/var";
 @import "../../base/all/mixin";
-@import "../../base/all/my-style";
 
 .window-repair {
-    background-image: url(/wp-content/themes/twentytwenty-child/img/blue-bg-fone.webp);
-
-    /* .window-repair__wrapper */
-
-    &__wrapper {
-        padding: 4.6rem 0 6.9rem;
-        color: #fff;
-
-        @include _768 {
-            padding: 5.5rem 0 9.9rem ;
-        }
-
-        @include _1200 {
-            padding: 5.5rem 0 6.7rem;
-        }
-    }
+    background-color: #f9f9f9;
 
     &__title {
-        text-align: center;
-        font-weight: 900;
         line-height: 1.2em;
-        margin-bottom: 0.75em;
+        margin-bottom: 1.15em;
+        padding: 0 2em;
 
         @include _768 {
-            margin-bottom: 1.17em;
+            margin-bottom: 0.9em;
         }
 
         @include _1200 {
-            margin-bottom: 0.475em;
+            margin-bottom: 1.4em;
         }
     }
 
@@ -39,37 +22,37 @@
 
     &__slider {
         & .pagination {
-            width: 1rem;
-            height: 1.2rem;
-
             &.active {
-                background-color: #17a1e3;
+                background-color: $orange;
             }
         }
 
-        & .owl-stage {
+        @include _768 {
+            max-width: 40em;
+            margin: 0 auto 1.8em;
+            padding-bottom: 1em;
         }
+
+        @include _1200 {
+            max-width: 100%;
+            padding-bottom: 0;
+            margin: 0;
+        }
+
 
     }
 
     /* .window-repair__item */
 
     &__item {
-        width: 33.5rem;
-        height: 23.1rem;
+        position: relative;
+        width: 30.6rem;
+        height: 23rem;
         background-repeat: no-repeat;
-        background-position-y: center top;
-        background-size: 21.3em 11em;
-        padding-top: 16.1rem; 
-        background-position-x: -0.1em;
-
-
-        @include _1200 {
-            width: 37rem;
-            height: 25.4rem;
-            background-size: 23.5em 15em;
-            padding-top: 16.4rem; 
-        }
+        background-size: contain;
+        padding-top: 18.2rem;
+        border-radius: 1rem 1rem 0 0;
+        margin: 0 auto;
     }
 
     /* .window-repair__item--1 */
@@ -95,28 +78,27 @@
     &__text {
         display: block;
         text-align: center;
-        background: linear-gradient(267.73deg, #fe5769 10.58%, #ca3d90 82.47%);
-        border-radius: 0px 0px 20px 20px;
+        background-color: #fff;
+        border: 0.2rem solid #e6e6e6;
+        border-top: none;
+        border-radius: 0 0 1rem 1rem;
         font-weight: 700;
         font-size: 1.8rem;
-        min-height: 7rem;
+        min-height: 4.8rem;
         padding-top: 0.7em;
-
-        @include _1200 {
-            font-size: 2.4rem;
-            padding: 0.4em;
-        }
     }
 
     /* .window-repair__subtext */
 
     &__subtext {
-        display: block;
+        position: absolute;
+        color: #fff;
+        background-color: $orange;
         font-weight: 900;
-        font-size: 3rem;
-
-        @include _1200 {
-            font-size: 4rem;
-        }
+        top: 2.15em;
+        left: 0;
+        padding: 0.6em 0.8em 0.6em 1em;
+        border-radius: 0.5rem;
+        letter-spacing: 0.05em;
     }
 }

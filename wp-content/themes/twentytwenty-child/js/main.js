@@ -212,6 +212,7 @@ $(document).ready(function () {
     responsive: {
       768: {
         items: 2,
+        margin: 10,
       },
       1200: {
         items: 3,
