@@ -48,7 +48,7 @@
         padding-top: 1.088em;
         padding-bottom: 1.088em;
         font-size: 0.750em;
-        font-weight: 900;
+        font-weight: 700;
         text-align: center;
         background-color: #E9E9E9;
         border-top-left-radius: 0.625em;
@@ -118,10 +118,19 @@
         .container {
             width: calc(100% - 8rem);
         }
+
+        .title {
+            max-width: 17em;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 
     @media (min-width: 1200px) {
-        .title {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+
+        .title {          
             span {
                 display: inline;
             }
@@ -147,22 +156,16 @@
         &__text {
             padding-top: 1.188em;
             padding-bottom: 1.088em;
-            font-size: 1.5em;
+            // font-size: 1.5em;
             border-top-left-radius: 1.9em;
             border-top-right-radius: 1.9em;
         }
 
         &__image {
-            width: 22.075em;
-            height: 16.138em;
+            width: 19.188em;
+            height: 14.638em;
             border-bottom-left-radius: 1.9em;
             border-bottom-right-radius: 1.9em;
-        }
-    }
-
-    @media (min-width: 1400px) {
-        .container {
-            max-width: 117rem;
         }
     }
 }
