@@ -194,6 +194,9 @@ $(document).ready(function () {
     dotClass: ['pagination'],
     responsive: {
       768: {
+        items: 2
+      },
+      1200: {
         items: 3,
         dots: false,
         mouseDrag: false,
