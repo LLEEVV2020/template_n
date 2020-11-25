@@ -142,7 +142,7 @@
         }
 
         &__text {
-            font-size: 1.250em;
+            font-size: 1.125em;
         }
 
         &__list {
@@ -316,6 +316,10 @@
             line-height: 1.24;
         }
 
+        &__text {
+            font-size: 1.125em;
+        }
+
         &__image {
             &-box {
                 max-width: 44em;
@@ -353,9 +357,16 @@
     }
 
     @media (min-width: 1600px) {
+        .title {
+            margin-bottom: 0.7em;
+        }
+
         &__image {
+            height: 100%;
+
             &-box {
-                max-width: 54em;
+                max-width: 49.38em;
+                min-height: 30.94em;
                 &:after {
                     height: 100%;
                 }
@@ -389,24 +400,18 @@
         }
 
         &__content {
-            padding-top: 3.5em;
+            padding-top: 6rem;
+            padding-bottom: 6rem;
         }
 
         &__text {
             margin-bottom: 2.2em;
-            font-size: 1.5em;
         }
     }
 
     @media (min-width: 1800px) {
         .title {
             max-width: 17em;
-        }
-
-        &__image {
-            &-box {
-                max-width: 56em;
-            }
         }
 
         &__content {
