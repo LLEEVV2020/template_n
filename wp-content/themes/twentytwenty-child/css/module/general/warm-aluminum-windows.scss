@@ -115,6 +115,7 @@
         object-fit: contain;
 
         @include _768 {
+            height: 100%;
             margin-top: 0;
             background-color: #fff;
             object-fit: cover;
@@ -209,9 +210,11 @@
 
         @include _768 {
             font-size: 2rem;
+            margin-bottom: 0.8em;
         }
 
         @include _1200 {
+            margin-bottom: 1.5em;
             font-size: 1.8rem;
             position: inherit;
             text-align: right;
