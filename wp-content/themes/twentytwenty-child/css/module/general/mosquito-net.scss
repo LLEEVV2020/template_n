@@ -171,8 +171,10 @@
         z-index: 1;
 
         @include _768 {
-            bottom: 0.2em;
-            right: 0.4em;
+            bottom: 0.15em;
+            right: 0em;
+            width: 3.5em;
+            text-align: center;
         }
     }
 }
