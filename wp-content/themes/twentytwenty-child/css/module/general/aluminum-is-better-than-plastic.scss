@@ -11,7 +11,7 @@
 
     &__title {
         text-align: center;
-        margin-bottom: 1.4em;
+        margin-bottom: 1.7em;
 
         @include _768 {
             margin-bottom: 1em;
@@ -28,8 +28,8 @@
 
     &__item {
         position: relative;
-        padding-left: 5.7em;
-        margin-bottom: 1.35em;
+        padding-left: 3.7em;
+        margin-bottom: 0.95em;
 
         @include _768 {
             padding-left: 5.6em;
@@ -45,20 +45,18 @@
     /* .aluminum-is-better-than-plastic__item-title */
 
     &__item-title {
-        margin-bottom: 0.6em;
+        margin-bottom: 0.5em;
     }
 
     /* .aluminum-is-better-than-plastic__icon */
 
     &__icon {
         position: absolute;
-        height: 7rem;
-        width: 7rem;
+        height: 4.3rem;
+        width: 4.3rem;
         background-color: $yellow;
         border-radius: 50%;
         left: 0;
-        top: 50%;
-        transform: translateY(-50%);
         background-repeat: no-repeat;
         background-position: center;
 
@@ -71,24 +69,34 @@
 
         &--1 {
             background-image: url(/wp-content/themes/twentytwenty-child/img/aluminum-is-better-than-plastic-1.webp);
-            background-size: 2.5em;
+            background-size: 1.5em;
+            @include _768 {
+                background-size: 2.5em;
+            }
         }
 
         &--2 {
             background-image: url(/wp-content/themes/twentytwenty-child/img/aluminum-is-better-than-plastic-2.webp);
-            background-size: 2.5em;
+            background-size: 1.5em;
+            @include _768 {
+                background-size: 2.5em;
+            }
         }
 
         &--3 {
             background-image: url(/wp-content/themes/twentytwenty-child/img/aluminum-is-better-than-plastic-3.webp);
-            background-size: 1.7em;
+            background-size: 1.3em;
+            @include _768 {
+                background-size: 1.7em;
+            }
         }
     }
 
     /* .aluminum-is-better-than-plastic__text */
 
     &__text {
-        font-size: 1rem;
+        font-size: 1.4rem;
+        line-height: 1.15;
         margin-right: -1em;
 
         @include _768 {
