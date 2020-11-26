@@ -782,5 +782,28 @@ $(document).ready(function () {
     checkWidth(); // проверит при изменении размера окна клиента
   });
 
+  // Скрипт для слайдера блока hot-promotions__slider
+$('.hot-promotions__slider').owlCarousel({
+  items: 1,
+  dots: true,
+  loop: true,
+  margin: 55,
+  dotsClass: ['pagination-box'],
+  dotClass: ['pagination'],
+  nav: true,
+  responsive: {
+      768: {
+          margin: 15,
+          autoWidth: true,
+          items: 2,
+      },
+      1200: {
+          autoWidth: true,
+          margin: 20,
+          items: 3,
+      }
+  }
+});
+
 });
 
