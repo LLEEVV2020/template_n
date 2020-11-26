@@ -7,6 +7,17 @@
 
         &-box {
             margin-bottom: 1.250em;
+            position: relative;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 6.875em;
+                    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+                }
         }
     }
 
@@ -46,7 +57,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        max-width: 20.8em;
+        max-width: 21.563em;
         margin-bottom: 1.6em;
     }
 
@@ -55,7 +66,7 @@
     }
 
     &__icon {
-        width: 4.226em;
+        width: 4.326em;
         height: 1.878em;
         border-radius: 0.313em;
     }
@@ -69,7 +80,7 @@
         padding-top: 0.6em;
         padding-bottom: 0.6em;
         width: 100%;
-        max-width: 20.813em;
+        max-width: 24.643em;
         line-height: 1.25;
     }
 
@@ -135,6 +146,8 @@
 
         &__image {
             max-width: 17.500em;
+            height: 100%;
+            object-fit: cover;
 
             &-box {
                 grid-area: img;
@@ -156,6 +169,10 @@
             grid-area: content;
         }
 
+        &__text {
+            text-align: left;
+        }
+
         &__colors {
             grid-area: icons;
         }
@@ -171,13 +188,16 @@
         }
 
         &__content {
-            padding-left: 1.6em;
-            padding-right: 1.3em;
-            margin-bottom: 2.288em;
+            padding-left: 2.7em;
+            padding-right: 2.7em;
+        }
+
+        &__text,
+        &__title {
+            font-size: 1.125em;
         }
 
         &__text {
-            font-size: 1.250em;
             line-height: 1.11;
 
             &:first-child,
@@ -187,12 +207,12 @@
         }
 
         &__title {
-            margin-bottom: 0.9em;
-            font-size: 1.5em;
+            margin-top: 1em;
+            margin-bottom: 1.5em;
         }
 
         &__list {
-            max-width: 36.125em;
+            max-width: 34.025em;
             margin-bottom: 1.2em;
         }
 
@@ -201,7 +221,7 @@
         }
 
         &__icon {
-            width: 7.313em;
+            width: 6.940em;
             height: 3.250em;
             margin-bottom: 0.4em;
         }
@@ -211,7 +231,7 @@
         }
 
         .button {
-            max-width: 26.313em;
+            max-width: 24.250em;
             letter-spacing: 0;
         }
     }
@@ -222,7 +242,7 @@
         'content img'
         'icons img';
         grid-template-columns: 1fr 1fr;
-        max-width: 72em;
+        max-width: 68em;
         margin-left: auto;
         padding-top: 0;
         padding-bottom: 0;
@@ -236,10 +256,10 @@
         .title {
             grid-area: title;
             margin-top: 0.888em;
+            margin-bottom: 0.775em;
         }
 
         &__text {
-            font-size: 1.5em;
             line-height: 1.19;
 
             &:first-child,
@@ -265,7 +285,7 @@
             padding-left: 0;
             padding-right: 0;
             grid-area: content;
-            margin-bottom: 2.688em;
+            margin-bottom: 1.563em;
             max-width: 36em;
         }
 
@@ -276,14 +296,11 @@
         }
 
         &__list {
-            margin-bottom: 2.2em;
+            margin-bottom: 1.563em;
         }
 
         .button {
             margin-bottom: 2.088em;
-            max-width: 23.613em;
-            padding-top: 0.7em;
-            padding-bottom: 0.7em;
         }
 
         &__colors {
@@ -293,28 +310,42 @@
 
     @media (min-width: 1400px) {
         max-width: 80em;
-        grid-template-columns: 36em 1fr;
+        grid-template-columns: 35em 1fr;
+
+        &-oak-windows {
+            .color-palette {
+                grid-template-columns: 34.9em 1fr;
+
+                &__text {
+                    &:nth-child(2) {
+                        margin-bottom: 0;
+                    }
+                }
+
+                &__title {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        &-leafy-windows {
+            .color-palette {
+                grid-template-columns: 34em 1fr;
+            }
+        }
+
+        .title {
+            margin-top: 6rem;
+        }
 
         &__image {
             &-box {
                 max-width: none;
             }
         }
-    }
 
-    @media (min-width: 1600px) {
-        max-width: 88em;
-        grid-template-columns: 38em 1fr;
-    }
-
-    &-oak-windows {
-        @media (min-width: 1200px) {
-            .color-palette {
-
-                &__content {
-                    max-width: 37em;
-                }
-            }
+        .button {
+            margin-bottom: 6rem;
         }
     }
 }
