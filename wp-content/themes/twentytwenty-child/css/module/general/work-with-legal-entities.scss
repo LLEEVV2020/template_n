@@ -26,6 +26,18 @@
 
     @media (min-width: 1920px) {
         background: none;
+        position: relative;
+        &:before {
+            content: "";
+            width: 45%;
+            height: 100%;
+            background: linear-gradient(-45deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%) 0 0/100% 100%,
+                url(/wp-content/themes/twentytwenty-child/img/legal-entities-l.webp) left/cover no-repeat;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
     }
     /* .legal-entities__wrapper */
 
@@ -38,22 +50,6 @@
 
         @include _1200 {
             padding: 6rem 0;
-        }
-
-        @media (min-width: 1920px) {
-            position: relative;
-            &:before {
-                content: "";
-                width: 74rem;
-                height: 100%;
-                background: linear-gradient(-45deg, #ffffff 0%, rgba(255, 255, 255, 0) 80%) 0 0/100% 100%,
-                    url(/wp-content/themes/twentytwenty-child/img/legal-entities-l.webp) left/100% 100% no-repeat;
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: -50%;
-                z-index: -1;
-            }
         }
     }
 
