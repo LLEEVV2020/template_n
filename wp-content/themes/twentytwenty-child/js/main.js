@@ -523,11 +523,11 @@ $(document).ready(function () {
     dotClass: ['pagination'],
     responsive: {
       768: {
-        margin: 0,
+        margin: 10,
         items: 2
       },
       1200: {
-        margin: 30,
+        margin: 15,
         items: 3,
         dots: false,
         mouseDrag: false,
@@ -781,6 +781,29 @@ $(document).ready(function () {
   $(window).resize(function () {
     checkWidth(); // проверит при изменении размера окна клиента
   });
+
+  // Скрипт для слайдера блока hot-promotions__slider
+$('.hot-promotions__slider').owlCarousel({
+  items: 1,
+  dots: true,
+  loop: true,
+  margin: 55,
+  dotsClass: ['pagination-box'],
+  dotClass: ['pagination'],
+  nav: true,
+  responsive: {
+      768: {
+          margin: 15,
+          autoWidth: true,
+          items: 2,
+      },
+      1200: {
+          autoWidth: true,
+          margin: 20,
+          items: 3,
+      }
+  }
+});
 
 });
 

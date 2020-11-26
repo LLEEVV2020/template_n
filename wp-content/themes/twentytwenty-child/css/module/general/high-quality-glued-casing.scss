@@ -14,22 +14,32 @@
     &__title {
         text-align: center;
         line-height: 1.2em;
-        margin-bottom: 1.5em;
+        margin-bottom: 1.2em;
 
         @include _768 {
             margin-bottom: 0.9em;
+            line-height: 1.1;
         }
 
         @include _1200 {
-            margin-bottom: 0.75em;
+            margin-bottom: 0.85em;
             padding: 0 1em;
+            line-height: 1.2;
         }
     }
 
     /* .high-quality-glued-casing__slider */
 
     &__slider {
-        margin-bottom: 3.2em;
+        margin-bottom: 2.05em;
+
+        .pagination-box {
+            bottom: -1em;
+
+            @include _768 {
+                bottom: -2em;
+            }
+        }
 
         .pagination.active {
             background-color: $blue;
@@ -38,6 +48,16 @@
         .owl-stage-outer {
             filter: drop-shadow(3px 4px 5px rgba(0, 0, 0, 0.25));
         }
+
+        @include _768 {
+            margin: 0 auto 3.9em;
+            max-width: 40em;
+        }
+
+        @include _1200 {
+            max-width: 100%;
+            margin-bottom: 1.4em;
+        }
     }
 
     /* .high-quality-glued-casing__item */
@@ -45,94 +65,50 @@
     &__item {
         background-color: #fff;
         border-radius: 0.5em;
-        max-width: 18.6em;
+        max-width: 30.6rem;
         margin: 0 auto 1.5em;
         display: flex;
         flex-direction: column;
-
-        @include _768 {
-            max-width: 20.7em;
-        }
-
-        @include _1200 {
-            max-width: 21.9em;
-        }
     }
 
     /* .high-quality-glued-casing__item-img */
 
     &__item-img {
-        height: 18rem;
+        height: 18.7rem;
         object-fit: cover;
-        display: block;
-        border: 0.5em solid #fff;
-        border-bottom: none;
-        border-radius: 0.3em;
-
-        @include _768 {
-            height: 21.5rem;
-            border-width: 0.6em;
-            border-radius: 0.5em;
-        }
-
-        @include _1200 {
-            height: 22.8rem;
-        }
+        border-radius: 0.3em 0.3em 0 0;
     }
 
     /* .high-quality-glued-casing__item-box */
 
     &__item-box {
         position: relative;
-        padding: 3.2em 1.4em 1.9em 1.4em;
-
-        @include _768 {
-            padding: 4.6em 1.9em 1.7em 1.9em;
-        }
-
-        @include _1200 {
-            padding: 4.8em 1.5em 1.7em;
-        }
+        padding: 1.5em 1.4em 0 1.5em;
     }
 
     /* .high-quality-glued-casing__item-title */
 
     &__item-title {
-        position: absolute;
-        top: -0.2em;
-        left: -0.3em;
-        background-color: #ffe600;
         text-align: center;
-        width: 103.5%;
-        line-height: 2.25em;
-        border-radius: 0.3em;
-
-        @include _768 {
-            line-height: 2.35em;
-        }
-
-        @include _1200 {
-            line-height: 2.15em;
-        }
+        margin-bottom: 1em;
     }
 
     /* .high-quality-glued-casing__item-list */
 
     &__item-list {
         border-bottom: 0.15em solid $gray;
-        min-height: 8.2em;
-        margin-bottom: 1.2em;
+        min-height: 8.45em;
+        margin-bottom: 1em;
 
         @include _768 {
-            font-size: 1.8rem;
-            min-height: 11.3em;
+            min-height: 10.8em;
             margin-bottom: 0.9em;
             padding-right: 1em;
         }
 
         @include _1200 {
-            padding-left: .5em;
-            min-height: 11.95em;
+            padding-left: 0;
+            min-height: 10.7em;
         }
     }
 
@@ -140,33 +116,24 @@
 
     &__list-item {
         &+& {
-            margin-top: 0.55em;
+            margin-top: 1em;
 
             @include _768 {
-                margin-top: 1.25em;
+                margin-top: 1.05em;
             }
-
-            @include _1200 {
-                margin-top: 1.35em;
-            }
-        }
-
-        span {
-            font-weight: 400;
-            font-family: "Montserrat";
         }
     }
 
     /* .high-quality-glued-casing__item-old-price */
 
     &__item-old-price {
-        font-size: 2rem;
+        font-size: 1.8rem;
         font-weight: 400;
         color: $gray;
         display: block;
         text-align: center;
-        line-height: 1.8em;
         position: relative;
+        margin-bottom: 1em;
 
         &::before {
             content: "";
@@ -182,45 +149,41 @@
         }
 
         @include _768 {
-            font-size: 2.4rem;
-            font-weight: 700;
+            margin-bottom: 0.8em;
         }
     }
 
     /* .high-quality-glued-casing__item-new-price */
 
     &__item-new-price {
-        font-size: 3.6rem;
+        font-size: 3rem;
         display: block;
         text-align: center;
+        position: relative;
+
+        &::before {
+            content: "от ";
+            color: #000;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
     }
 
     /* .high-quality-glued-casing__item-link */
 
     &__item-link {
-        font-size: 1.6rem;
-        display: block;
-        text-decoration: none;
-        text-align: center;
-        max-width: 17.5rem;
-        width: 100%;
-        margin: 0 auto -1.1em;
-
-        @include _768 {
-            max-width: 18.9rem;
-            line-height: 1.6em;
-        }
-
-        @include _1200 {
-            font-size: 1.9rem;
-            max-width: 20rem;
-        }
+        max-width: 20rem;
+        transform: translateY(50%);
+        background-color: $yellow;
+        color: #000;
+        font-weight: 700;
     }
 
     /* .high-quality-glued-casing__text */
 
     &__text {
-        font-weight: 900;
+        font-weight: 700;
+        line-height: 1.2;
         text-align: center;
 
         @include _768 {
