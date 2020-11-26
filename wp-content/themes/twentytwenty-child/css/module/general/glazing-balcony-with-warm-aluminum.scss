@@ -39,7 +39,7 @@
         background-color: transparent;
         position: relative;
         max-width: 13em;
-        margin: 0 auto 1.1em;
+        margin: 0 auto 1em;
         text-align: center;
 
         @include _768 {
@@ -81,7 +81,7 @@
             content: "";
             position: absolute;
             width: 100%;
-            height: 118%;
+            height: 88%;
             bottom: 0;
             background: linear-gradient(
                 0deg,
@@ -118,14 +118,14 @@
 
     &__img {
         width: 100%;
-        max-height: 43.8rem;
+        height: 23.1rem;
         object-fit: cover;
         z-index: -1;
-        margin-top: -4.2em;
+        margin-top: 2.2em;
 
         @include _768 {
             margin-top: 0;
-            max-height: 100%;
+            height: 100%;
             background-color: #fff;
         }
     }
@@ -137,8 +137,9 @@
         display: block;
         color: #000;
         z-index: 3;
-        bottom: 2.2em;
-        left: 2.5em;
+        bottom: 3.3em;
+        left: 2.8em;
+        font-size: 1rem;
         transform: rotate(-3deg);
 
         &::before {
@@ -146,7 +147,8 @@
             position: absolute;
             background-image: url("/wp-content/themes/twentytwenty-child/img/prices-lower-black-s.webp");
             background-repeat: no-repeat;
-            width: 24.9rem;
+            background-size: contain;
+            width: 16.2rem;
             height: 5.3rem;
             top: -3.3em;
             left: -1.1em;
@@ -158,7 +160,6 @@
 
             @include _1200 {
                 background-image: url("/wp-content/themes/twentytwenty-child/img/prices-lower-white-l.webp");
-                background-size: contain;
                 width: 31.9rem;
                 height: 4.8rem;
                 top: -3.1em;
@@ -205,13 +206,20 @@
     &__subtitle {
         position: absolute;
         text-align: center;
+        font-size: 1.6rem;
         width: 100%;
         top: 0;
+
+        @include _768 {
+            font-size: 2rem;
+            margin-bottom: 0.8em;
+        }
 
         @include _1200 {
             position: inherit;
             text-align: left;
             font-size: 1.8rem;
+            margin-bottom: 1.5em;
         }
     }
 
@@ -229,12 +237,10 @@
             position: inherit;
             text-align: left;
             padding: 0;
-            margin-top: 0.8em;
             line-height: 1.15;
         }
 
         @include _1200 {
-            margin-top: 1.5em;
             font-size: 1.8rem;
             margin-bottom: 1.5em;
         }
