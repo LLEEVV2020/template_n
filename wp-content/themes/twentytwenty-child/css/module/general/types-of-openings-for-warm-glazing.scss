@@ -20,11 +20,14 @@
         margin-bottom: 1.1em;
 
         @include _768 {
-            margin-bottom: 0.8em;
+            padding: 0 5em;
+            line-height: 1.1;
         }
 
         @include _1200 {
-            margin-bottom: 1.3em;
+            padding: 0;
+            line-height: 1.2;
+            margin-bottom: 0.8em;
         }
     }
 
@@ -55,26 +58,30 @@
     &__img {
         height: 26.1rem;
         object-fit: contain;
-        margin-bottom: 1.05em;
+        margin-bottom: 0.6em;
 
         @include _768 {
-            height: 19.6rem;
-            margin-bottom: 0.75em;
+            height: 17.4rem;
+            margin-bottom: 1.55em;
         }
 
         @include _1200 {
-            height: 24.5rem;
-            margin-bottom: 1.8em;
+            height: 20.5rem;
         }
     }
 
     /* .types-of-openings-for-warm-glazing__item-title */
 
     &__item-title {
+        font-size: 1.6rem;
         margin-bottom: 0.7em;
 
         @include _768 {
-            margin-bottom: 0.5em;
+            margin-bottom: 0.9em;
+        }
+        @include _1200 {
+            font-size: 1.8rem;
+            margin-bottom: 1em;
         }
     }
 
@@ -82,22 +89,17 @@
 
     &__item-text {
         @include _768 {
-            font-size: 1.4rem;
-            max-width: 16em;
-            margin: 0 auto;
         }
 
         @include _1200 {
-            font-size: 2.4rem;
-            line-height: 1.2em;
-            max-width: 14.5em;
+            font-size: 1.8rem;
+            line-height: 1.2;
         }
     }
 
     /* .types-of-openings-for-warm-glazing__text */
 
     &__text {
-
         @include _1200 {
             line-height: 1.2em;
         }
