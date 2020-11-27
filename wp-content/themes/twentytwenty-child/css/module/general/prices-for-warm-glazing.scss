@@ -42,7 +42,7 @@
         @include _1200 {
             padding: 0 1.71em;
             line-height: 1.25em;
-            margin-bottom: 1.4em;
+            margin-bottom: 2.3em;
         }
     }
 
@@ -67,13 +67,12 @@
     /* .prices-for-warm-glazing__img */
 
     &__img {
-        height: 14.6rem;
+        height: 14.7rem;
         margin-bottom: 1.2em;
         object-fit: contain;
 
         @include _768 {
-            height: 17.1rem;
-            margin-bottom: 0.7em;
+            margin-bottom: 0.9em;
         }
     }
 
