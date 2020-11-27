@@ -25,18 +25,18 @@
         }
 
         @include _1200 {
-            margin-bottom: 1.3em;
+            margin-bottom: 0.8em;
         }
     }
 
     /* .prices-for-warm-glazing__text */
 
     &__text {
-        margin-bottom: 1.2em;
+        margin-bottom: 1.7em;
 
         @include _768 {
-            padding: 0 1em;
-            margin-bottom: 2em;
+            margin-bottom: 1.1em;
+            line-height: 1.25;
         }
 
         @include _1200 {
@@ -67,16 +67,21 @@
     /* .prices-for-warm-glazing__img */
 
     &__img {
-        height: 16.8rem;
+        height: 14.6rem;
         margin-bottom: 1.2em;
         object-fit: contain;
+
+        @include _768 {
+            height: 17.1rem;
+            margin-bottom: 0.7em;
+        }
     }
 
     /* .prices-for-warm-glazing__item-text */
 
     &__item-text {
         font-size: 1.4rem;
-        margin-bottom: 0.85em;
+        margin-bottom: 0.55em;
 
         @include _768 {
             margin-bottom: 0.65em;
@@ -111,17 +116,10 @@
     /* .prices-for-warm-glazing__item-link */
 
     &__item-link {
-        font-size: 1.4rem;
-        text-decoration: none;
-        line-height: 1.7em;
         max-width: 19em;
-        display: block;
-        margin: 0 auto;
 
         @include _768 {
-            font-size: 1.6rem;
             max-width: 16.5em;
-            line-height: 1.4em;
         }
     }
 }
