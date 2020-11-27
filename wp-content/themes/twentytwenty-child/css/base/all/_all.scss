@@ -59,7 +59,7 @@ h6 {
         font-size: 3rem;
     }
 
-    @media (min-width: 960px) {
+    @media (min-width: 1200px) {
         font-size: 4rem;
     }
 }
@@ -99,8 +99,18 @@ h6 {
 
 // внутренние отсупы для секций
 .padding {
-    padding-top: 2.500em;
-    padding-bottom: 2.500em;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+
+    @media (min-width: 768px) {
+        padding-top: 5.5rem;
+        padding-bottom: 5.5rem;
+    }
+
+    @media (min-width: 1200px) {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
 }
 
 // кнопка
@@ -165,10 +175,11 @@ h6 {
 .text {
     margin-bottom: 1.563em;
     text-align: center;
+    font-size: 1.6rem;
 
     @media (min-width: 768px) {
         margin-bottom: 0.813em;
-        font-size: 2rem;
+        font-size: 1.8rem;
         text-align: left;
     }
 }
