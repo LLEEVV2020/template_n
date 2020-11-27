@@ -285,3 +285,22 @@ $('.any-window-repair__slider').owlCarousel({
       }
     }
 });
+
+// Скрипт для слайдера блока incorrect-installation-windows
+function incorrectInstallationWindows(itemName) {
+    $(itemName).owlCarousel({
+        items: 1,
+        dots: true,
+        dotsClass: ['pagination-box'],
+        dotClass: ['pagination'],
+        stagePadding: 58,
+        margin: 10,
+        loop: true
+    });
+}
+
+checkWindowWidth('incorrect-installation-windows__list', 768, incorrectInstallationWindows);
+
+window.addEventListener('resize', function () {
+    checkWindowWidth('incorrect-installation-windows__list', 768, incorrectInstallationWindows);
+});
