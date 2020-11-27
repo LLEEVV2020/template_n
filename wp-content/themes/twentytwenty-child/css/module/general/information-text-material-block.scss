@@ -9,63 +9,37 @@
 .information-text-material-block {
     background-color: $lightGray;
 
-    /* .information-text-material-block__wrapper */
-
-    &__wrapper {
-        @include _768 {
-            padding-left: 0.5em;
-            padding-right: 0.5em;
-        }
-    }
-
     /* .information-text-material-block__text */
 
     &__text {
-        text-align: center;
-        margin-bottom: 1.7em;
+        margin-bottom: 1.4em;
+        letter-spacing: 0.03em;
 
         @include _768 {
-            letter-spacing: 0.03em;
-        }
-
-        @include _1200 {
-            line-height: 1.2em;
-            margin-bottom: 1.25em;
-        }
-
-        span {
-            @include _768 {
-                display: block;
-            }
+            line-height: 1.25;
+            margin-bottom: 1.3em;
         }
     }
 
     /* .information-text-material-block__list */
 
     &__list {
-        padding-left: 0.3em;
-        margin-bottom: 1.5em;
+        margin-bottom: 0.9em;
 
         @include _768 {
-            padding-left: 0.1em;
-        }
-
-        @include _1200 {
-            padding-left: 0.3em;
-            margin-bottom: 1.1em;
+            margin-bottom: 0.6em;
         }
     }
 
     /* .information-text-material-block__item */
 
     &__item {
-        margin-right: 1.2em;
+        margin-right: 1em;
     }
 
     /* .information-text-material-block__box-price */
 
     &__box-price {
-        text-align: center;
 
         @include _768 {
             text-align: left;
@@ -77,17 +51,13 @@
     /* .information-text-material-block__price-text */
 
     &__price-text {
-        display: none;
+        margin-right: 0.4em;
 
         @include _768 {
             display: inline-block;
-            font-size: 2rem;
+            font-size: 1.8rem;
             margin-right: 0.7em;
             line-height: 1.6em;
-        }
-
-        @include _1200 {
-            font-size: 3.2rem;
         }
     }
 
@@ -95,7 +65,6 @@
 
     &__price {
         font-size: 3rem;
-        display: block;
         margin-bottom: 1.1em;
 
         @include _768 {
@@ -105,30 +74,23 @@
         }
 
         @include _1200 {
-            font-size: 5rem;
+            font-size: 4rem;
         }
     }
 
     /* .information-text-material-block__link */
 
     &__link {
-        font-size: 1.4rem;
-        text-decoration: none;
-        padding: 0.5em 1.7em;
+        margin-top: 1.2em;
 
         @include _768 {
-            font-size: 1.6rem;
-            min-width: 33.4rem;
-            display: inline-block;
-            text-align: center;
-            line-height: 1.5em;
-            margin-left: auto;
-            margin-bottom: 0.3em;
+            max-width: 34.7rem;
+            margin-right: 0;
+            margin-top: 0;
         }
 
         @include _1200 {
-            font-size: 1.9rem;
-            min-width: 44.5rem;
+            max-width: 38.8rem;
         }
     }
 }
