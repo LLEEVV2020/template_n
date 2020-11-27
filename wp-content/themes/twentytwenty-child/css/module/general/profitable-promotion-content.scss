@@ -19,7 +19,6 @@
 
     .text {
         font-size: 1.125em;
-        font-weight: 700;
         line-height: 1.2;
     }
 
@@ -30,11 +29,6 @@
     }
 
     @media (min-width: 768px) {
-        &.padding {
-            padding-top: 2.8em;
-            padding-bottom: 2.8em;
-        }
-
         .title,
         .text {
             margin-left: auto;
@@ -42,7 +36,8 @@
         }
 
         .title {
-            max-width: 17.1em;
+            max-width: 24.1em;
+            margin-bottom: 0.875em;
         }
 
         &__phone {
@@ -52,7 +47,7 @@
         .text {
             max-width: 23em;
             text-align: center;
-            font-size: 1.250em;
+            font-size: 1.125em;
             font-weight: 400;
             line-height: 1;
             word-spacing: 0.04em;
@@ -69,18 +64,18 @@
             width: calc(100% - 8rem);
         }
 
-        .title,
+        .title {
+            font-size: 3rem;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .title {
+            font-size: 4rem;
+        }
+
         .text {
             max-width: none;
-        }
-
-        &__bold {
-            font-size: 1.2em;
-        }
-
-        .title {
-            max-width: 28em;
-            margin-bottom: 0.4em;
         }
     }
 }
