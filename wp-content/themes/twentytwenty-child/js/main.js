@@ -366,6 +366,8 @@ $(document).ready(function () {
     dotsClass: ['pagination-box'],
     dotClass: ['pagination'],
     nav: true,
+    navContainerClass: ['navigation'],
+    navClass: ['navigation-left', 'navigation-right']
   });
 
   // Скрипт для слайдера блока windows-at-low-prices
