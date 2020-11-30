@@ -373,7 +373,7 @@
     }
 
     /* calc-window__list-label */
-    label[class*="calc-window_icon"] {
+    label[class*="calc-window__icon"] {
         &::before,
         &::after {
             content: "";
@@ -414,7 +414,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        &.calc-window_icon--1 {
+        .calc-window_icon--1 {
             &::after {
                 background-position-x: 15.918%;
                 background-position-y: 18.09%;
