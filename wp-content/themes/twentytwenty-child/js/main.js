@@ -813,5 +813,22 @@ $('.hot-promotions__slider').owlCarousel({
   }
 });
 
+
+  // Скрипт для слайдера блока pine-window-models__slider
+$('.pine-window-models__slider').owlCarousel({
+  items: 1,
+  dots: true,
+  margin: 55,
+  dotsClass: ['pagination-box'],
+  dotClass: ['pagination'],
+  responsive: {
+      1200: {
+          items: 2,
+          margin: 20,
+          dots: false,
+      }
+  }
+});
+
 });
 

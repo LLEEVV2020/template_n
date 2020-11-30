@@ -17,9 +17,19 @@
         line-height: 1.2em;
         margin-bottom: 1.1em;
 
-        @include _1200 {
-            margin-bottom: 1.8em;
+        @include _768 {
+            margin-bottom: 0.9em;
         }
+
+        @include _1200 {
+            margin-bottom: 0.8em;
+        }
+    }
+
+    /* .pine-window-models__slider */
+
+    &__slider {
+        margin-bottom: 2.3em;
     }
 
     /* .pine-window-models__inner */
@@ -39,21 +49,20 @@
 
     &__item {
         background-color: #fff;
-        padding: 2em 1.1em;
-        margin-bottom: 2em;
+        padding: 1.7em 1em;
         border-radius: 0.5em;
+        max-width: 33.6rem;
+        margin: 0 auto;
 
         @include _768 {
-            max-width: 54.5rem;
-            margin: 0 auto 2.4em;
-            padding: 2em 1.7em;
+            max-width: 47rem;
+            padding: 2em 0.9em;
         }
 
         @include _1200 {
-            margin: 0;
-            padding-top: 2.9em;
             display: flex;
             flex-direction: column;
+            min-height: 73.1rem;
         }
     }
 
@@ -61,78 +70,74 @@
 
     &__item-title {
         text-align: center;
-        margin-bottom: 1em;
+        margin-bottom: 1.5em;
 
         @include _768 {
-            margin-bottom: 1.3em;
+            margin-bottom: 1.1em;
         }
 
         @include _1200 {
-            margin-bottom: 1.5em;
         }
     }
 
     /* .pine-window-models__item-img */
 
     &__item-img {
-        width: 30.1rem;
-        height: 20rem;
-        margin-bottom: 1.2em;
+        max-width: 30.4rem;
+        margin: 0 auto;
+        height: 17rem;
+        margin-bottom: 1em;
+        border-radius: 0.3em;
 
         @include _768 {
-            width: 48.9rem;
-            height: 32.6rem;
-            margin-bottom: 1.95em;
+            max-width: 44rem;
+            height: 24.5rem;
+            margin-bottom: 1.65em;
         }
     }
 
     /* .pine-window-models__item-text */
 
     &__item-text {
-        text-align: center;
-        margin-bottom: 1.7em;
+        line-height: 1.2;
+        margin-bottom: 1em;
 
-        @include _1200 {
-            line-height: 1.21em;
+        @include _768 {
             margin-bottom: 1.3em;
+        }
+        @include _1200 {
+            min-height: 13.3rem;
         }
     }
 
     /* .pine-window-models__text */
 
     &__text {
-        margin-bottom: 0.7em;
+        margin-bottom: 0.5em;
 
         @include _768 {
-            margin-bottom: 1.1em;
-            padding-left: 0.6em;
+            margin-bottom: 0.8em;
         }
 
-        @include _1200 {
-            margin-bottom: 0.75em;
-            padding-left: 0;
-        }
     }
 
     /* .pine-window-models__price */
 
     &__price {
         margin-bottom: 1.6em;
-        margin-top: 1em;
 
         span {
             font-size: 2.1rem;
             margin-left: 0.4em;
 
             @include _768 {
-                font-size: 3.5rem;
+                font-size: 3rem;
             }
         }
 
         @include _768 {
-            margin-bottom: 2.1em;
-            margin-top: 1.2em;
-            padding-left: 0.6em;
+            margin-bottom: 1.5em;
+            margin-top: 1.9em;
         }
 
         @include _1200 {
@@ -145,22 +150,10 @@
     /* .pine-window-models__btn */
 
     &__btn {
-        font-size: 1.6rem;
-        display: block;
-        text-align: center;
-        text-decoration: none;
-        line-height: 1.5em;
-
         @include _768 {
-            max-width: 27.8em;
-            margin: 0 auto;
         }
 
         @include _1200 {
-            font-size: 1.9rem;
-            max-width: 23.5em;
-            width: 100%;
-            line-height: 1.65em;
         }
     }
 }
