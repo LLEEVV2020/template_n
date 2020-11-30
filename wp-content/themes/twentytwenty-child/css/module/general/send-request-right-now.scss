@@ -17,9 +17,8 @@
     }
 
     .text {
-        max-width: 20.8em;
+        max-width: 20.2em;
         margin-bottom: 0.663em;
-        font-weight: 700;
         line-height: 1.25;
     }
 
@@ -27,7 +26,7 @@
         margin-top: 0.4em;
         margin-bottom: 1.413em;
         font-size: 1.125em;
-        font-weight: 900;
+        font-weight: 700;
         text-align: center;
     }
 
@@ -40,9 +39,7 @@
     .button {
         display: block;
         width: 100%;
-        max-width: 16.813em;
-        padding-top: 0.7em;
-        padding-bottom: 0.7em;
+        max-width: 19.215em;
     }
 
     @media (min-width: 600px) {
@@ -53,7 +50,7 @@
 
         .text {
             max-width: none;
-            font-size: 1.250em;
+            font-size: 1.125em;
         }
         
         .button {
@@ -74,7 +71,7 @@
         }
 
         .text {
-            max-width: 35em;
+            max-width: 38em;
             margin-bottom: 1.663em;
             text-align: center;
             font-weight: 400;
@@ -83,7 +80,6 @@
 
         &__info {
             display: inline;
-            font-size: 2rem;
             font-weight: 700;
         }
 
@@ -94,8 +90,7 @@
         }
 
         .button {
-            max-width: 20.325em;
-            padding-bottom: 0.6em;
+            max-width: 21.625em;
         }
     }
 
@@ -106,23 +101,12 @@
     }
 
     @media (min-width: 1200px) {
-        .title {
-            margin-bottom: 0.15em;
-        }
-
         .text {
             max-width: 48em;
-            margin-bottom: 1.063em;
-        }
-
-        &__info {
-            font-size: 2.4rem;
         }
 
         .button {
-            max-width: 19.525em;
-            padding-top: 0.8em;
-            padding-bottom: 0.7em;
+            max-width: 23.063em;
         }
     }
 }   

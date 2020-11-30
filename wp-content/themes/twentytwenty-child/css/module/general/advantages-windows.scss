@@ -880,12 +880,8 @@
             width: calc(100% - 8rem);
         }
 
-        &__title {
-            font-size: 4rem;
-        }
-
         &__subtitle {
-            font-size: 2.4rem;
+            font-size: 1.8rem;
         }
 
         &__box {
@@ -893,13 +889,16 @@
         }
 
         &__label {
-
             &-text {
-                font-size: 2.8rem;
+                font-size: 2.4rem;
+
+                &:after {
+                    font-size: 1.4rem;
+                }
 
                 &--1 {
                     &:after {
-                        left: 2.5em;
+                        width: 15em;
                     }
                 }
 
@@ -920,6 +919,9 @@
     }
 
     @media (min-width: 1200px) {
+        &__title {
+            font-size: 4rem;
+        }
 
         &__content-box,
         &__line,
@@ -933,6 +935,7 @@
             
             &-image {
                 margin-bottom: 3.6em;
+                max-width: 47.2rem;
             }
         }
 
@@ -942,51 +945,47 @@
         }
 
         &__content-second {
-
             .advantages-windows {
-
                 &__advantages-text {
-
                     &--2 {
-                        right: -7.7em;
+                        right: -10.4em;
                     }
 
                     &--3 {
-                        right: -10.9em;
+                        right: -9.6em;
                     }
                     
                     &--5 {
-                        bottom: 11.5em;
-                        left: -8.6em;
-                        max-width: 26rem;
+                        bottom: 12.3em;
+                        left: -8.7em;
+                        max-width: 19rem;
                     }
 
                     &--6 {
-                        bottom: 6.6em;
-                        left: -9.5em;
+                        bottom: 5.8em;
+                        left: -9.6em;
                     }
 
                     &--7 {
-                        bottom: 3.4em;
-                        right: -3.9em;
+                        bottom: 3em;
+                        right: -4.7em;
                     }
 
                 }
 
-                &__line {
-
+                &__line {                  
                     &--3 {
                         top: 2.6em;
                     }
 
                     &--5 {
                         background-image: url("data:image/svg+xml,%0A%3Csvg width='91' height='85' viewBox='0 0 91 85' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M89.1789 58.6464C87.3748 54.5543 46.8277 23.5555 1.00038 27.1417' stroke='%23F26422' stroke-width='2'/%3E%3C/svg%3E%0A");
-                        top: 0em;
-                        right: -4em;
+                        top: -0.3em;
+                        right: -3.9em;
 
                         &:after {
-                            top: 1.8em;
-                            right: 1.9em;                        
+                            top: 2.2em;
+                            right: 1.3em;                      
                         }
                     }
 
@@ -997,13 +996,8 @@
         }
 
         &__label {
-
             &:first-of-type {
                 margin-left: 5.1em;
-            }
-
-            &-text {
-                font-size: 3.2rem;
             }
 
             &-toggle {
@@ -1036,23 +1030,23 @@
 
         &__advantages-text {
             display: inline-block;
-            max-width: 34rem;
-            font-size: 2.4rem;
+            max-width: 25rem;
+            font-size: 1.8rem;
 
             &--1 {
-                top: 5em;
-                left: -4em;
+                top: 5.5em;
+                left: -5.6em;
             }
 
             &--2 {
-                top: 0.7em;
-                right: -8.1em;
-                max-width: 26rem;
+                top: 1.7em;
+                right: -9.9em;
+                max-width: 20.4rem;
             }
 
             &--3 {
-                top: 7em;
-                right: -11.5em;
+                top: 7.5em;
+                right: -9.5em;
             }
 
             &--4 {
@@ -1061,18 +1055,18 @@
             }
 
             &--5 {
-                bottom: 12em;
-                left: -11em;
+                bottom: 13.5em;
+                left: -9.1em;
             }
 
             &--6 {
-                bottom: 4.8em;
+                bottom: 5.9em;
                 left: -10.6em;
             }
 
             &--7 {
                 bottom: 2em;
-                right: -5em;
+                right: -6em;
             }
         }
 
@@ -1083,7 +1077,7 @@
 
         &__line {
             width: 5.500em;
-            height: 2.063em;
+            height: 2.463em;
             background-repeat: no-repeat;
 
             &:after {
@@ -1096,12 +1090,12 @@
 
             &--1 {
                 background-image: url("data:image/svg+xml,%3Csvg width='90' height='35' viewBox='0 0 90 35' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M89 1.54658C85 -0.453425 34 1.54657 1 33.5466' stroke='%23F26422' stroke-width='2'/%3E%3C/svg%3E");
-                top: -1.7em;
+                top: -1.5em;
                 right: -5.7em;
 
                 &:after {
                     top: -0.2em;
-                    right: 1.6em;
+                    right: 0.1em;
                 }
             }
 
@@ -1122,49 +1116,64 @@
             }
 
             &--2 {
-                top: 2.3em;
-                left: -4em;
+                top: 1.6em;
+                left: -6em;
+
+                &:after {
+                    top: 1.6em;
+                    right: 5.3em;
+                }
             }
 
             &--3 {
-                top: 3.6em;
-                left: -4em;
+                top: 3.5em;
+                left: -2.4em;
+
+                &:after {
+                    top: 1.6em;
+                    right: 5.2em;
+                }
             }
 
             &--4 {
-                top: 2.8em;
-                left: -4em;
+                top: 3em;
+                left: -4.4em;
+
+                &:after {
+                    top: 1.6em;
+                    right: 5.3em;
+                }
             }
 
             &--5 {
                 background-image: url("data:image/svg+xml,%0A%3Csvg width='63' height='40' viewBox='0 0 63 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M62 39C53.6667 27 29.8 2.6 1 1' stroke='%23F26422' stroke-width='2'/%3E%3C/svg%3E%0A");
                 top: 1.4em;
-                right: -4em;
+                right: -1.7em;
 
                 &:after {
-                    top: 1.6em;
-                    right: 2.6em;
+                    top: 1.8em;
+                    right: 2em;
                 }
             }
 
             &--6 {
                 background-image: url("data:image/svg+xml,%3Csvg width='90' height='35' viewBox='0 0 90 35' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M89 1.54658C85 -0.453425 34 1.54657 1 33.5466' stroke='%23F26422' stroke-width='2'/%3E%3C/svg%3E");
-                top: -1.4em;
-                right: -6em;
+                top: -2em;
+                right: -4.8em;
 
                 &:after {
                     top: -0.2em;
-                    right: 1.6em;
+                    right: 0.1em;
                 }
             }
 
             &--7 {
                 background-image: url("data:image/svg+xml,%0A%3Csvg width='97' height='67' viewBox='0 0 97 67' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.94348 30.8856C4.87386 34.2639 52.7583 51.9296 95.491 34.9911' stroke='%23F26422' stroke-width='2'/%3E%3C/svg%3E%0A");
-                left: -5em;
-                top: -0.2em;
+                left: -6.2em;
+                top: -1em;
 
                 &:after {
-                    top: 1em;
+                    top: 1.5em;
                     right: 5.2em;
                 }
             }
@@ -1204,8 +1213,7 @@
             grid-column-gap: 2em;
         }
     
-        &__slider {
-    
+        &__slider {    
             &-box {
                 max-width: 100%;
                 grid-row: auto;
