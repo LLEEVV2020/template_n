@@ -538,11 +538,11 @@ $(document).ready(function () {
     }
   });
 
-  // Скрипт для слайдера блока cost-of-balconies-and-loggias
+  // Скрипт для слайдера блока types-of-installation-in-a-wooden-house__slider
   function checkWidth2() {
     var windowWidth = $('body').innerWidth(),
       elem = $(".types-of-installation-in-a-wooden-house__slider");
-    if (windowWidth < 768) {
+    if (windowWidth < 1200) {
 
       elem.addClass('owl-carousel');
 
@@ -552,6 +552,12 @@ $(document).ready(function () {
         margin: 55,
         dotsClass: ['pagination-box'],
         dotClass: ['pagination'],
+        responsive: {
+          768: {
+            items: 2,
+            margin: 10,
+          }
+        }
       });
     }
     else {
@@ -588,7 +594,7 @@ $(document).ready(function () {
   });
 
   // Скрипт для слайдера блока stages-of-insulation
-  function checkWidth2() {
+  function checkWidth3() {
     var windowWidth = $('body').innerWidth(),
       elem = $(".stages-of-insulation__slider");
     if (windowWidth < 768) {
@@ -608,14 +614,14 @@ $(document).ready(function () {
     }
   }
 
-  checkWidth2(); // проверит при загрузке страницы
+  checkWidth3(); // проверит при загрузке страницы
 
   $(window).resize(function () {
-    checkWidth2(); // проверит при изменении размера окна клиента
+    checkWidth3(); // проверит при изменении размера окна клиента
   });
 
   // Скрипт для слайдера блока plan-for-combining-balcony-and-loggia
-  function checkWidth2() {
+  function checkWidth4() {
     var windowWidth = $('body').innerWidth(),
       elem = $(".plan-for-combining-balcony-and-loggia__slider");
     if (windowWidth < 768) {
@@ -635,10 +641,10 @@ $(document).ready(function () {
     }
   }
 
-  checkWidth2(); // проверит при загрузке страницы
+  checkWidth4(); // проверит при загрузке страницы
 
   $(window).resize(function () {
-    checkWidth2(); // проверит при изменении размера окна клиента
+    checkWidth4(); // проверит при изменении размера окна клиента
   });
 
   // Скрипт для слайдера блока cold-frameless-glazing
@@ -675,7 +681,7 @@ $(document).ready(function () {
   });
 
   // Скрипт для слайдера блока balcony-alignment
-  function checkWidth3() {
+  function checkWidth5() {
     var windowWidth = $('body').innerWidth(),
       elem = $(".balcony-alignment__slider");
     if (windowWidth < 768) {
@@ -695,10 +701,10 @@ $(document).ready(function () {
     }
   }
 
-  checkWidth3(); // проверит при загрузке страницы
+  checkWidth5(); // проверит при загрузке страницы
 
   $(window).resize(function () {
-    checkWidth3(); // проверит при изменении размера окна клиента
+    checkWidth5(); // проверит при изменении размера окна клиента
   });
 
   // Скрипт для слайдера блока main-nodes
@@ -731,7 +737,7 @@ $(document).ready(function () {
   });
 
   // Скрипт для слайдера блока low-prices-for-glazing
-  function checkWidth() {
+  function checkWidth6() {
     var windowWidth = $('body').innerWidth(),
       elem = $(".low-prices-for-glazing__slider");
     if (windowWidth < 768) {
@@ -752,15 +758,15 @@ $(document).ready(function () {
     }
   }
 
-  checkWidth(); // проверит при загрузке страницы
+  checkWidth6(); // проверит при загрузке страницы
 
   $(window).resize(function () {
-    checkWidth(); // проверит при изменении размера окна клиента
+    checkWidth6(); // проверит при изменении размера окна клиента
   });
 
 
   // Скрипт для слайдера блока window-shapes
-  function checkWidth() {
+  function checkWidth7() {
     var windowWidth = $('body').innerWidth(),
       elem = $(".window-shapes__slider");
     if (windowWidth < 768) {
@@ -778,10 +784,10 @@ $(document).ready(function () {
     }
   }
 
-  checkWidth(); // проверит при загрузке страницы
+  checkWidth7(); // проверит при загрузке страницы
 
   $(window).resize(function () {
-    checkWidth(); // проверит при изменении размера окна клиента
+    checkWidth7(); // проверит при изменении размера окна клиента
   });
 
   // Скрипт для слайдера блока hot-promotions__slider
