@@ -1,8 +1,6 @@
 @import "../../base/all/var";
 @import "../../base/all/mixin";
 
-
-
 // .calc-window-one .calc-window__btn--next {
 //     margin-left: auto;
 // }
@@ -15,43 +13,43 @@
         -webkit-appearance: none;
         cursor: pointer;
     }
-    
+
     input[type="checkbox"],
     input[type="radio"] {
         display: none;
     }
-    
+
     .text {
         margin-bottom: 0;
     }
-    
+
     .text-m {
         font-size: 0.7em;
-    
+
         @media (min-width: 768px) {
             font-size: 0.9em;
         }
     }
-    
+
     .number {
         max-width: 41px;
     }
-    
+
     .title-none {
         @include _max768 {
             display: none;
         }
     }
-    
+
     .none {
         display: none !important;
     }
-    
+
     .range,
     .number {
         display: block;
     }
-    
+
     .line {
         display: block;
         height: 0.2rem;
@@ -59,65 +57,65 @@
         margin: 0.813em 0;
         background-color: #e8e8e8;
     }
-    
+
     .blocking {
         pointer-events: none;
         opacity: 0.52;
     }
-    
+
     .icon {
         fill: #fff;
-    
+
         &__del {
             width: 0.7rem;
             height: 0.7rem;
         }
-    
+
         &__copy {
             width: 0.7rem;
             height: 0.9rem;
         }
-    
+
         &__setting {
             width: 0.9rem;
             height: 0.9rem;
         }
-    
+
         &__plus {
             fill: $orange;
             width: 2.1rem;
             height: 2.1rem;
         }
-    
+
         &__box-del {
             fill: #c9c9c9;
             transform: rotate(45deg);
             width: 2.1rem;
             height: 2.1rem;
         }
-    
+
         &__box-check {
             fill: #c9c9c9;
             width: 2.7rem;
             height: 2.3rem;
         }
-    
+
         @media (min-width: 768px) {
             &__del {
                 width: 1rem;
                 height: 1rem;
             }
-    
+
             &__copy {
                 width: 1rem;
                 height: 1.1rem;
             }
-    
+
             &__setting {
                 width: 1.2rem;
                 height: 1.1rem;
             }
-    
+
             &__plus {
                 fill: $orange;
                 width: 6.9rem;
@@ -125,7 +123,7 @@
             }
         }
     }
-    
+
     .calc-window__add {
         cursor: pointer;
         position: relative;
@@ -137,13 +135,13 @@
         border-radius: 50%;
         border: 0.2em solid $orange;
         margin: 2em auto 1em;
-    
+
         @media (min-width: 768px) {
             width: 10.1rem;
             height: 10.1rem;
             margin: auto 0;
             transform: translateY(-3em);
-    
+
             &::after {
                 content: attr(data-tooltip);
                 background-color: #fff;
@@ -161,12 +159,12 @@
                 bottom: -3em;
                 transition: opacity 0.3s;
             }
-    
+
             &:hover::after {
                 opacity: 1;
             }
         }
-    
+
         @media (min-width: 1200px) {
             &::after {
                 left: 100%;
@@ -174,7 +172,7 @@
             }
         }
     }
-    
+
     .window-icon {
         position: absolute;
         display: flex;
@@ -186,30 +184,30 @@
         border-radius: 50%;
         cursor: pointer;
         transition: all 0.3s;
-    
+
         &:hover {
             background-color: $orange;
         }
-    
+
         &__del {
             right: -0.2rem;
             top: -0.2rem;
         }
-    
+
         &__copy {
             right: -0.2rem;
             bottom: -0.2rem;
         }
-    
+
         &__setting {
             left: -0.2rem;
             bottom: -0.2rem;
         }
-    
+
         @media (min-width: 768px) {
             width: 1.8rem;
             height: 1.8rem;
-    
+
             &::after {
                 content: attr(data-tooltip);
                 background-color: #fff;
@@ -227,7 +225,7 @@
                 bottom: -1.7em;
                 transition: opacity 0.3s;
             }
-    
+
             &:hover::after {
                 opacity: 1;
             }
@@ -308,9 +306,8 @@
             .calc-window__list-circl {
                 border: 0.15em solid $orange;
             }
-
-            .calc-window__list-text {
-                color: $orange;
+            .calc-window__icon{
+                fill: $orange;
             }
         }
 
@@ -318,8 +315,8 @@
             border: 0.15em solid $orange;
         }
 
-        & input:checked + .calc-window__list-text {
-            color: $orange;
+        & input:checked + .calc-window__list-label .calc-window__list-circl .calc-window__icon{
+            fill: $orange;
         }
     }
 
@@ -328,7 +325,7 @@
     &__list-circl {
         height: 8.6rem;
         width: 8.6rem;
-        background-color: $yellow;
+        border: 0.2rem solid #d0d0d0;
         border-radius: 50%;
         margin-bottom: 0.563em;
         display: flex;
@@ -361,6 +358,7 @@
     &__icon {
         height: 5.5rem;
         width: 5.5rem;
+        fill: #d0d0d0;
 
         @include _768 {
             height: 6rem;
@@ -2180,7 +2178,6 @@ $red: #ef233c;
 $blue: #2b2d42;
 $orange: #ff9f1c;
 
-
 /*******************************************************
 ***************ВРЕМЕННО ЗАКОМЕНТИРОВАЛ******************
 ***********************LEV******************************
@@ -2302,7 +2299,6 @@ $orange: #ff9f1c;
 }
 ******************************************
 ******************************************/
-
 
 // Range Slider Start
 
