@@ -9,40 +9,28 @@
 .wood-species {
     background-color: #f6f6f6;
 
-    /* .wood-species__wrapper */
-
-    &__wrapper {
-        padding: 3.7rem 0 8.2rem;
-
-        @include _768 {
-            padding: 5.5rem 0 10rem;
-        }
-
-        @include _1200 {
-            padding: 7.7rem 0 7.2rem;
-        }
-    }
-
     /* .wood-species__title */
 
     &__title {
         text-align: center;
         max-width: 10em;
-        margin: 0 auto 1.5em;
+        line-height: 1.2;
+        margin: 0 auto 1em;
 
         @include _768 {
             max-width: 100%;
-            margin-bottom: 1.1em;
+            margin-bottom: 0.9em;
         }
 
         @include _1200 {
-            margin-bottom: 1.7em;
+            margin-bottom: 0.7em;
         }
     }
 
     /* .wood-species__slider */
 
     &__slider {
+        margin-bottom: 2.3em;
         & .pagination-box {
             bottom: -2.9em;
         }
@@ -55,6 +43,14 @@
             filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.25));
             border-radius: 0.3em;
         }
+
+        @include _768 {
+            max-width: 40em;
+            margin: 0 auto 2.3em;
+        }
+        @include _1200 {
+            max-width: 100%;
+        }
     }
 
     /* .wood-species__item */
@@ -63,70 +59,32 @@
         text-align: center;
         background-color: #ffffff;
         border-radius: 0.3em;
-        padding: 2.1em 1.2em;
-
-        @include _768 {
-            margin: 0 0.7em;
-            padding: 2.3em 0.9em;
-        }
-
-        @include _1200 {
-            margin: 0;
-            padding: 2.3em 1em 2.4em;
-        }
+        padding: 1.7em 0.6em;
+        max-width: 30.7rem;
+        margin: 0 auto;
     }
 
     /* .wood-species__name */
 
     &__name {
-        font-size: 2.4rem;
-        margin-bottom: 0.3em;
-
-        @include _768 {
-            font-size: 2rem;
-        }
-
-        @include _1200 {
-            font-size: 2.4rem;
-            margin-bottom: 0.4em;
-        }
+        font-size: 1.8rem;
+        margin-bottom: 0.5em;
     }
 
     /* .wood-species__price */
 
     &__price {
-        font-size: 2.4rem;
+        font-size: 1.8rem;
         margin-bottom: 0.9em;
-
-        @include _768 {
-            font-size: 2rem;
-            margin-bottom: 1.4em;
-        }
-
-        @include _1200 {
-            font-size: 2.4rem;
-            margin-bottom: 1.1em;
-        }
     }
 
     /* .wood-species__img */
 
     &__img {
-        width: 29.9rem;
-        height: 18.2rem;
-        margin-bottom: 1.8em;
-
-        @include _768 {
-            width: 31.1rem;
-            height: 18.9rem;
-            margin-bottom: 2.2em;
-        }
-
-        @include _1200 {
-            width: 33rem;
-            height: 20.1rem;
-            margin-bottom: 2.1em;
-        }
+        width: 28.3rem;
+        height: 15.1rem;
+        border-radius: 0.3em;
+        margin-bottom: 1.3em;
     }
 
     /* .wood-species__text */
@@ -135,68 +93,33 @@
         font-size: 1.4rem;
         line-height: 1.2em;
         margin-bottom: 1.9em;
-
-        @include _768 {
-            margin-bottom: 2.1em;
-        }
-
-        @include _1200 {
-            max-width: 22em;
-            margin: 0 auto 2.6em;
-        }
     }
 
     /* .wood-species__specifications */
 
     &__specifications {
+        font-size: 1.2rem;
         margin-bottom: 2.1em;
-
-        @include _1200 {
-            margin-bottom: 2.3em;
-        }
-    }
-
-    /* .wood-species__specifications-item */
-
-    &__specifications-item {
-        max-width: 5em;
-        width: 100%;
-
-        @include _1200 {
-            max-width: 5.8em;
-        }
     }
 
     /* .wood-species__specifications-rating */
 
     &__specifications-rating {
+        display: flex;
+        justify-content: center;
         margin-bottom: 0.4em;
-    }
-
-    /* .wood-species__link */
-
-    &__link {
-        display: block;
-        font-size: 1.6rem;
-        text-decoration: none;
-        letter-spacing: 0.04em;
-        max-width: 24.8rem;
-        margin: 0 auto;
-        line-height: 1.3em;
-
-        @include _1200 {
-            max-width: 27.5rem;
-        }
     }
 
     .circle-rating {
         display: block;
         width: 0.5em;
         height: 0.5em;
+        margin: 0 0.3em;
         background-color: #d0d0d0;
         border-radius: 50%;
-
+        
         &--orange {
+            margin: 0 0.3em;
             display: block;
             width: 0.5em;
             height: 0.5em;

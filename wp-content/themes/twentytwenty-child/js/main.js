@@ -345,7 +345,7 @@ $(document).ready(function () {
     dotClass: ['pagination'],
     responsive: {
       768: {
-        margin: 0,
+        margin: 10,
         items: 2
       },
       1200: {
