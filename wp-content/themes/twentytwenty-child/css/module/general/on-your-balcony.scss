@@ -82,7 +82,6 @@
 
             @include _1200 {
                 left: 3em;
-
             }
         }
 
@@ -95,21 +94,16 @@
 
             @include _1200 {
                 right: 3em;
-
             }
         }
 
         & .pagination-box {
             bottom: 0.6em;
-
-            @include _1200 {}
         }
 
         & .pagination {
             width: 0.563em;
             height: 0.563em;
-
-            @include _1200 {}
         }
 
         & .pagination.active {
@@ -150,8 +144,6 @@
             line-height: 1.2;
             padding-right: 0.5em;
         }
-
-        @include _1200 {}
     }
 
     .owl-carousel .owl-item .on-your-balcony__img {
