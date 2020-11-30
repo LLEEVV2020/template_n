@@ -1,6 +1,8 @@
 @import '../../base/all/var';
 
 .methods-glazing-wooden-house {
+    padding-bottom: 0;
+
     .title,
     &__image-box,
     &__advantages {
@@ -318,19 +320,24 @@
 
     &__form {
         &-box {
-            padding: 1.188em 0.813em 2.375em;
+            padding: 1.625em 0.813em 1.625em;
             background-color: #E9E9E9;
             margin-left: -1.3em;
             margin-right: -1.3em;
         }
 
         &-title {
-            margin-bottom: 0.738em;
-            font-weight: 900;
-            font-size: 1.5em;
+            margin-bottom: 0.938em;
+            text-transform: uppercase;
+            font-size: 1em;
             text-align: center;
             white-space: nowrap;
         }
+    }
+
+    .form-contacts__input,
+    .button {
+        min-height: 2.50em;
     }
 
     .form-contacts {
@@ -342,14 +349,14 @@
             border-bottom-right-radius: 0;
             border: 0;
             border-bottom: 0.188em solid #C9C9C9;;
+            font-size: 0.875em;
+            font-weight: 700;
         }
     }
 
-    .button {
-        min-height: 2.65em;
-    }
-
     @media (min-width: 768px) {
+        padding-bottom: 5.5rem;
+
         .container {
             text-align: center;
         }
@@ -498,7 +505,7 @@
             &-box {
                 grid-area: methods-glazing-form;
                 width: 100%;
-                max-width: 34.85em;
+                max-width: 24.25em;
                 padding-top: 2.288em;
                 padding-bottom: 2.288em;
                 margin-left: auto;
@@ -508,7 +515,7 @@
 
             &-title {
                 margin-bottom: 1.038em;
-                font-size: 1.875em;
+                font-size: 1.125em;
             }
         }
 
@@ -522,15 +529,15 @@
             &__button {
                 margin-left: auto;
                 margin-right: auto;
+                max-width: 22.25em;
             }
 
             &__box {
-                max-width: 21.250em;
                 margin-bottom: 0.9em;
             }
 
-            &__button {
-                max-width: 20.05em;
+            &__input {
+                font-size: 1em;
             }
         }
     }
@@ -546,17 +553,16 @@
             }
         }
 
-        .form-contacts {
-            &__box {
-                max-width: 23.75em;
-            }
+        .button {
+            max-width: 23.25em;
         }
     }
 
     @media (min-width: 1200px) {
+        padding-bottom: 6rem;
+
         .title {
-            max-width: none;
-            margin-bottom: 0.713em;
+            margin-bottom: 0.913em;
         }
 
         &__box {
@@ -566,10 +572,12 @@
                 'methods-glazing-advantages-1 methods-glazing-image'
                 'methods-glazing-advantages-2 methods-glazing-image'
                 'methods-glazing-form  methods-glazing-image';
+                grid-template-rows: 7.1em 5.8em 6.6em 12em;
+        
         }
 
         &__label {
-            margin-bottom: 3.138em;
+            margin-bottom: 0.738em;
         }
 
         &__toggle {
@@ -611,15 +619,15 @@
 
             &:after {
                 top: 1.2em;
-                left: 0.8em;
+                left: 0.7em;
                 font-size: 2.3rem;
             }
         }
 
         &__image {
             &-box {
-                margin-top: 4em;
-                max-width: 33.625em;
+                margin-top: 2em;
+                max-width: 29.625em;
                 grid-area: methods-glazing-image;
             }
 
@@ -645,13 +653,20 @@
                 }
 
                 &:nth-of-type(2) {
-                    top: 17.1em;
-                    left: 1em;
+                    top: 15.3em;
+                    left: 0.4em;
 
                     &:before {
+                        top: 1.9em;
+                        left: 0.5em;
                         width: 5.5em;
                         height: 7em;
                         background-image: url("/wp-content/themes/twentytwenty-child/img/methods-glazing-wooden-house-line-big2.svg");
+                    }
+
+                    &:after {
+                        top: 1.6em;
+                        left: 0.38em;
                     }
                 }
 
@@ -667,13 +682,19 @@
                 }
 
                 &:nth-of-type(4) {
-                    top: 20.1em;
+                    top: 17.3em;
+                    right: -0.9em;
 
                     &:before {
                         height: 7em;
-                        top: -7.3em;
-                        left: -4.4em;
+                        top: -6.7em;
+                        left: -4.1em;
                         background-image: url("/wp-content/themes/twentytwenty-child/img/methods-glazing-wooden-house-line-big4.svg");
+                    }
+
+                    &:after {
+                        top: -1em;
+                        left: 0.38em;
                     }
                 }
             }
@@ -681,13 +702,14 @@
 
         &__advantages {
             margin-bottom: 0.55em;
-            font-size: 2em;
             height: 2.15em;
-            line-height: 2.1;
+            align-items: center;
+            min-height: 3.4em;
+            max-width: 19.1em;
 
             &:before {
-                width: 2.15em;
-                height: 2.15em;
+                width: 3.45em;
+                height: 3.45em;
                 margin-right: 0.6em;
             }
 
@@ -695,8 +717,8 @@
                 grid-area: methods-glazing-advantages-1;
 
                 &:after {
-                    top: 1em;
-                    left: 1.6em;
+                    top: 0.9em;
+                    left: 1.5em;
                     font-size: 1.4rem;
                 }
             }
@@ -706,8 +728,8 @@
                 margin-bottom: 0.8em;
 
                 &:after {
-                    top: 1.2em;
-                    left: 1.4em;
+                    top: 1.1em;
+                    left: 1.3em;
                     font-size: 1.2rem;
                 }
             }
@@ -716,8 +738,10 @@
         &__form {
             &-box {
                 grid-area: methods-glazing-form;
-                padding-top: 2.488em;
-                padding-bottom: 2.188em;
+                margin-left: 0;
+                margin-right: 0;
+                padding-top: 1.888em;
+                padding-bottom: 0;
             }
 
             &-title {
