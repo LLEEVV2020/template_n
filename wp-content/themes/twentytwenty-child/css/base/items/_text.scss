@@ -241,13 +241,21 @@
     }
 }
 
-.windows-larch-text {
+.windows-larch-text,
+.windows-pine-text-3 {
     & .text-link {
         color: inherit;
 
         &:hover {
             font-weight: 700;
             color: $orange;
+        }
+    }
+    @media (min-width: 768px) {
+        line-height: 1.25;
+
+        .text {
+            margin-bottom: 1.2em;
         }
     }
 }
