@@ -3,7 +3,7 @@
         text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
         text-align: center;
         font-size: 3.2rem;
-        margin-bottom: 1em;
+        margin-bottom: 0.5em;
     }
 
     &-numbers {
@@ -67,52 +67,6 @@
         }
     }
 
-    @media (min-width: 670px) {
-        .container {
-            width: calc(100% - 8rem);
-        }
-
-        &__title {
-            font-size: 3rem;
-        }
-
-        &-numbers {
-            max-width: 38.6rem;
-
-            span {
-                font-size: 12rem;
-            }
-
-            &__item:first-child {
-                width: 17rem;
-
-                &::before {
-                    left: 73%;
-                }
-            }
-
-            &__item:nth-child(2) {
-                width: 11rem;
-
-                &::before {
-                    left: 60%;
-                }
-            }
-        }
-
-        &-list {
-            h4,
-            p {
-                font-size: 2rem;
-            }
-
-            h4 {
-                margin-bottom: 0.833em;
-            }
-        }
-
-    }
-
     @media (min-width: 768px) {
         &-numbers {
             max-width: 63.6rem;
@@ -143,6 +97,17 @@
                 }
             }
         }
+
+        &-list {
+            h4,
+            p {
+                font-size: 1.125em;
+            }
+            
+            h4 {
+                margin-bottom: 0.625em;
+            }
+        }
     }
 
     @media (min-width: 1200px) {
@@ -154,27 +119,28 @@
             max-width: 101.6rem;
 
             span {
-                font-size: 25.8rem;
+                font-size: 23.1rem;
             }
 
             &__item {
+                &:first-child:before,
+                &:nth-child(2):before {
+                    width: 15.7rem;
+                }
+                
                 &:first-child {
-                    width: 49rem;
+                    width: 44rem;
 
                     &::before {
-                        left: 61%;
-                        width: 17rem;
-                        height: 0.6rem;
+                        left: 59%;
                     }
                 }
 
                 &:nth-child(2) {
-                    width: 35rem;
+                    width: 36rem;
 
                     &::before {
                         left: 46%;
-                        width: 17rem;
-                        height: 0.6rem;
                     }
                 }
             }
@@ -188,16 +154,17 @@
             }
 
             &__item {
-                max-width: 36.5rem;
-
-                h4,
-                p {
-                    font-size: 2.4rem;
-                }
-
                 &:nth-child(1),
                 &:nth-child(2) {
-                    margin-right: 1.278em;
+                    margin-right: 1.250em;
+                }
+
+                &:nth-child(1) {
+                    max-width: 20em;
+                }
+
+                &:nth-child(3) {
+                    max-width: 19em;
                 }
             }
         }
