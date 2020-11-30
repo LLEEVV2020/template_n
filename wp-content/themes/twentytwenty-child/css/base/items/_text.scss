@@ -252,6 +252,12 @@
     }
 }
 
+.windows-larch-text-1 {
+    @media (min-width: 768px) {
+        line-height: 1.25;
+    }
+}
+
 .ceilings-text {
     .ceilings-text__text {
         @media (max-width: 767px) {
