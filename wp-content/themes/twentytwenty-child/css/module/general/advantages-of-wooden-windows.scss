@@ -28,7 +28,7 @@
 
     &__img {
         display: inline-block;
-        margin-bottom: 0.8em;
+        margin-bottom: 0.3em;
         width: 8.750em;
         height: 8.750em;
     }
@@ -39,21 +39,7 @@
         padding: 0.8em 1em;
         font-size: 0.875em;
         font-weight: 700;
-        background-color: $yellow;
-        border-radius: 1.85em;
         text-transform: uppercase;
-
-        &:before {
-            content: '';
-            position: absolute;
-            top: -40%;
-            left: 50%;
-            transform: translateX(-50%);
-            border: solid transparent;
-            border-bottom-color: $yellow;
-            border-top-color: transparent;
-            border-width: 0.75em;
-        }
     }
 
     @media (min-width: 768px) {
@@ -71,9 +57,10 @@
         }
 
         &__img {
-            margin-bottom: 1.5em;
             width: 13.125em;
             height: 13.125em;
+            margin-bottom: 0.4em;
+            filter: drop-shadow(0 0 0.625em rgba(0, 0, 0, 0.25));
         }
 
         &__text {
