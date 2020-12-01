@@ -7,20 +7,6 @@
 // }
 
 .profile-types-for-external-glazing {
-    /* .profile-types-for-external-glazing__wrapper */
-
-    &__wrapper {
-        padding: 4.5rem 0 8.1rem;
-
-        @include _768 {
-            padding: 5.5rem 0;
-        }
-
-        @include _1200 {
-            padding: 7.5rem 0;
-        }
-    }
-
     /* .profile-types-for-external-glazing__title */
 
     &__title {
@@ -29,21 +15,20 @@
         margin-bottom: 1.1em;
 
         @include _768 {
-            margin-bottom: 1.4em;
-        }
-
-        @include _1200 {
-            margin-bottom: 1.2em;
+            margin-bottom: 0.8em;
         }
     }
 
     /* .profile-types-for-external-glazing__inner */
 
     &__inner {
-        text-align: center;
+        @include _768 {
+            display: flex;
+            justify-content: space-between;
+        }
 
         @include _1200 {
-            display: flex;
+            padding: 0 5.1em;
         }
     }
 
@@ -51,20 +36,23 @@
 
     &__item {
         border: 0.1em solid #c9c9c9;
-        border-radius: 2em;
+        border-radius: 0.3em;
         position: relative;
-        margin-bottom: 1.6em;
-        min-height: 29.45rem;
+        margin-bottom: 0.8em;
         display: flex;
         flex-direction: column;
-        padding-bottom: 1em;
+        padding-bottom: 1.2em;
+        padding-top: 1.5em;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 
         @include _768 {
-            max-width: 53.35rem;
+            max-width: 34.6rem;
             width: 100%;
-            margin: 0 auto 2.2em;
-            border-radius: 2.3em;
-            min-height: 46.1rem;
+        }
+
+        @include _1200 {
+            max-width: 38.8rem;
+            padding-top: 1.4em;
         }
     }
 
@@ -72,40 +60,62 @@
 
     &__item-title {
         font-size: 1.6rem;
-        border: 0.05em solid #c9c9c9;
-        background-color: $yellow;
-        border-radius: 2em 2em 0 0;
-        padding: 0.5em 1.6em;
-        margin: -0.1em;
-        margin-bottom: 1.3em;
+        margin-bottom: 1.05em;
+        text-align: center;
 
-        @include _768 {
-            font-size: 2.4rem;
-            padding: 1em;
-            border-radius: 1.4em 1.4em 0 0;
-            margin: -0.05em;
-            margin-bottom: 1.5em;
+        @include _1200 {
+            margin-bottom: 1.35em;
+            font-size: 1.7rem;
         }
     }
 
     &__item-subtitle,
-    &__item-text,
-    &__item-box-price {
-        max-width: 10em;
-        margin: 0 0.6em 1em 10em;
+    &__item-text {
+        max-width: 10.6em;
+        margin: 0 0.4em 1em 9.6em;
         z-index: 2;
 
-        @include _768 {
-            margin-left: 10.5em;
+        @include _1200 {
+            margin-left: 10.45em;
+            font-size: 1.8rem;
         }
     }
 
     /* .profile-types-for-external-glazing__item-subtitle */
 
     &__item-subtitle {
-        @include _768 {
-            font-size: 2.4rem;
-            margin-bottom: 1.3em;
+        margin-bottom: 0.7em;
+    }
+
+    &__box-img {
+        display: flex;
+        margin-left: 9.6em;
+        margin-bottom: 0.7em;
+        z-index: 2;
+
+        @include _1200 {
+            margin-left: 11.75em;
+            margin-bottom: 0.9em;
+        }
+    }
+
+    &__img-text {
+        @include _1200 {
+            font-size: 1.8rem;
+        }
+    }
+
+    /* .profile-types-for-external-glazing__item-lable */
+
+    &__item-lable {
+        object-fit: contain;
+        max-width: 4.65em;
+        margin-left: 0.5em;
+        max-height: 1.1em;
+
+        @include _1200 {
+            max-width: 5.25em;
+            max-height: 1.2em;
         }
     }
 
@@ -114,50 +124,21 @@
     &__item-text {
         margin-bottom: 0.15em;
 
-        @include _768 {
-            font-size: 2.4rem;
+        @include _1200 {
+            margin-bottom: 0.2em;
         }
     }
 
     /* .profile-types-for-external-glazing__item-box-price */
 
-    &__item-box-price {
-        margin-bottom: auto;
-
-        @include _768 {
-            font-size: 2.4rem;
-        }
-    }
-
-    /* .profile-types-for-external-glazing__item-price */
-
     &__item-price {
         font-size: 2.4rem;
-        margin-bottom: auto;
+        margin-left: 6.5em;
+        margin-bottom: 0.6em;
 
-        @include _768 {
-            font-size: 5rem;
-        }
-    }
-
-    /* .profile-types-for-external-glazing__item-price-quadro */
-
-    &__item-price-quadro {
-        @include _768 {
-            font-size: 3.2rem;
-        }
-    }
-
-    /* .profile-types-for-external-glazing__item-lable */
-
-    &__item-lable {
-        object-fit: contain;
-        max-width: 6.25em;
-        margin: 0.2em 0.6em 1em 11.7em;
-
-        @include _768 {
-            max-width: 9.75em;
-            margin: 0.2em 0.7em 1.7em 18.5em;
+        @include _1200 {
+            margin-left: 6.3em;
+            font-size: 3rem;
         }
     }
 
@@ -165,93 +146,67 @@
 
     &__item-bg {
         position: absolute;
-        height: 12.4em;
-        left: 1.4em;
-        top: 4em;
+        height: 10.7em;
+        left: 1.2em;
+        top: 3.4em;
         z-index: 1;
 
-        @include _768 {
-            height: 20.5em;
-            left: 2em;
-            top: 6em;
+        @include _1200 {
+            height: 13.4em;
+            left: 0.8em;
         }
     }
 
     /* .profile-types-for-external-glazing__item-block */
 
     &__item-block {
-        position: absolute;
-        max-width: 16.8rem;
+        position: relative;
+        max-width: 16.1rem;
         width: 100%;
-        background-color: $yellow;
-        border-radius: 5em;
-        bottom: 4em;
-        left: 0.4em;
-        padding: 0.6em 0.8em 0.2em 0.8em;
+        border: 0.15rem solid #f26422;
+        border-radius: 0.4em;
+        padding: 0.3em 0.2em 0.2em 0.8em;
         z-index: 2;
+        margin-left: auto;
+        margin-right: 1.6em;
 
         &::before {
             content: "";
             position: absolute;
-            width: 4.7rem;
-            height: 4.7rem;
+            width: 4rem;
+            height: 4rem;
             background-color: #f26422;
             border-radius: 50%;
-            border: 0.2em solid #ffe600;
             background-image: url(/wp-content/themes/twentytwenty-child/img/sprite2.png);
             background-repeat: no-repeat;
-            background-position: -1.8em 0.3em;
-            background-size: 6.9em;
-            top: -0.3em;
+            background-position: -1.8em 0.4em;
+            background-size: 6.7em;
+            top: 50%;
             left: 50%;
-            transform: translateX(-50%);
-
-            @include _768 {
-                width: 6.9rem;
-                height: 6.9rem;
-                border-width: 0.3em;
-                background-position: -2.7em 0.5em;
-                background-size: 10.2em;
-                top: -0.4em;
-            }
+            transform: translate(-50%, -50%);
         }
 
-        @include _768 {
-            max-width: 26.3rem;
-            bottom: 6.6em;
-            left: 0.7em;
-            padding: 0.6em 1.3em 0.5em 1.5em;
+        @include _1200 {
+            margin-right: 2.1em;
         }
     }
 
     /* .profile-types-for-external-glazing__block-cold */
 
     &__block-cold {
-        font-size: 0.8rem;
-
-        @include _768 {
-            font-size: 1.2rem;
-        }
+        font-size: 1rem;
     }
 
     /* .profile-types-for-external-glazing__block-temperature */
 
     &__block-temperature {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         display: block;
-
-        @include _768 {
-            font-size: 2.4rem;
-        }
     }
 
     /* .profile-types-for-external-glazing__block-hot */
 
     &__block-hot {
-        font-size: 0.8rem;
-
-        @include _768 {
-            font-size: 1.2rem;
-        }
+        font-size: 1rem;
     }
 }
