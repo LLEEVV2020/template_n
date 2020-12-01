@@ -27,11 +27,19 @@
 
     &__item {
         margin-bottom: 2em;
+
+        &:nth-child(3) {
+            .incorrect-installation-windows {
+                &__year {
+                    max-width: 16.602em;
+                }
+            }
+        }
     }
 
     &__year {
         position: relative;
-        max-width: 16.802em;
+        max-width: 17.302em;
         padding-top: 0.525em;
         padding-bottom: 0.525em;
         margin-bottom: 1.1em;
@@ -97,8 +105,15 @@
             &:nth-child(3) {
                 max-width: 23.6em;
 
-                .incorrect-installation-windows__text {
-                    max-width: 17em;
+                .incorrect-installation-windows {
+                    &__text {
+                        max-width: 17em;
+                    }
+
+                    &__year {
+                        max-width: 16.871em;
+                        margin-left: 3.4em;
+                    }
                 }
             }
         }
@@ -109,7 +124,7 @@
         }
 
         &__year {
-            max-width: 15.371em;
+            max-width: 15.071em;
             padding-top: 0.325em;
             padding-bottom: 0.425em;
             margin-bottom: 1em;
