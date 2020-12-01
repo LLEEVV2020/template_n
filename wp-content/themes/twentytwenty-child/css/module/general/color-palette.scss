@@ -348,4 +348,8 @@
             margin-bottom: 6rem;
         }
     }
+
+    @media (min-width: 1600px) {
+        max-width: 90em;
+    }
 }
