@@ -430,24 +430,6 @@ $(document).ready(function () {
     }
   });
 
-  // Скрипт для слайдера блока other-types-of-wooden-windows
-  $('.other-types-of-wooden-windows__slider').owlCarousel({
-    items: 1,
-    dots: true,
-    margin: 55,
-    dotsClass: ['pagination-box'],
-    dotClass: ['pagination'],
-    responsive: {
-      768: {
-        margin: 0,
-        items: 2,
-        dots: false,
-        mouseDrag: false,
-        touchDrag: false,
-      }
-    }
-  });
-
   // Скрипт для слайдера блока types-of-openings-for-warm-glazing
   $('.types-of-openings-for-warm-glazing__slider').owlCarousel({
     items: 1,
@@ -844,6 +826,33 @@ $('.larch-window-models__slider').owlCarousel({
       }
   }
 });
+
+  // Скрипт для слайдера блока other-types-of-wooden-windows__slider
+  function checkWidth8() {
+    var windowWidth = $('body').innerWidth(),
+      elem = $(".other-types-of-wooden-windows__slider");
+    if (windowWidth < 768) {
+
+      elem.addClass('owl-carousel');
+
+      $('.other-types-of-wooden-windows__slider').owlCarousel({
+        items: 1,
+        dots: true,
+        margin: 55,
+        dotsClass: ['pagination-box'],
+        dotClass: ['pagination'],
+      });
+    }
+    else {
+      elem.trigger('destroy.owl.carousel').removeClass('owl-carousel owl-loaded');
+    }
+  }
+
+  checkWidth8(); // проверит при загрузке страницы
+
+  $(window).resize(function () {
+    checkWidth8(); // проверит при изменении размера окна клиента
+  });
 
 });
 
