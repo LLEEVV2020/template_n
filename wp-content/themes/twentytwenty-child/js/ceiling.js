@@ -39,8 +39,10 @@ function saleOnly7DaysSlider(itemName) {
 // Универсальный скрипт для модальных окон 
 let btns = document.querySelectorAll('*[data-modal-btn]'),
     popups = document.querySelectorAll('.holz-modal .popup'),
+    coldFramelessGlazingPopups = document.querySelectorAll('.cold-frameless-glazing .popup'),
     reviewsWindows = document.querySelectorAll('.reviews-windows'),
-    holzGutModalContent = document.querySelectorAll('.holz-modal .popup__content');
+    holzGutModalContent = document.querySelectorAll('.holz-modal .popup__content'),
+    coldFramelessGlazingContent = document.querySelectorAll('.cold-frameless-glazing .popup__content');
 
 // Останавливает всплытие на элементе
 function stopPropogation(items) {
@@ -71,6 +73,12 @@ for (let i = 0; i < popups.length; i++) {
     });
 }
 
+for (let i = 0; i < coldFramelessGlazingPopups.length; i++) {
+    coldFramelessGlazingPopups[i].addEventListener('click', function (event) {
+        this.style.display = 'none';
+    });
+}
+
 for (let i = 0; i < reviewsWindows.length; i++) {
     reviewsWindows[i].addEventListener('click', function (event) {
         event.stopPropagation();
@@ -80,6 +88,7 @@ for (let i = 0; i < reviewsWindows.length; i++) {
 // Эта ф-ия останавливает вспллытие на элементе
 stopPropogation(reviewsWindows);
 stopPropogation(holzGutModalContent);
+stopPropogation(coldFramelessGlazingContent);
 
 // В качестве параметра ф-ии checkWindowWidth передаем название класса слайдера, размер окна(до какой ширины окна будет происходить инициализация слайдера) и ф-ию в которой будет инициализироваться слайдер
 checkWindowWidth('sale-only-7-days__slider', 1200, saleOnly7DaysSlider);
