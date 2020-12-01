@@ -773,59 +773,59 @@ $(document).ready(function () {
   });
 
   // Скрипт для слайдера блока hot-promotions__slider
-$('.hot-promotions__slider').owlCarousel({
-  items: 1,
-  dots: true,
-  loop: true,
-  margin: 55,
-  dotsClass: ['pagination-box'],
-  dotClass: ['pagination'],
-  nav: true,
-  responsive: {
+  $('.hot-promotions__slider').owlCarousel({
+    items: 1,
+    dots: true,
+    loop: true,
+    margin: 55,
+    dotsClass: ['pagination-box'],
+    dotClass: ['pagination'],
+    nav: true,
+    responsive: {
       768: {
-          margin: 15,
-          autoWidth: true,
-          items: 2,
+        margin: 15,
+        autoWidth: true,
+        items: 2,
       },
       1200: {
-          autoWidth: true,
-          margin: 20,
-          items: 3,
+        autoWidth: true,
+        margin: 20,
+        items: 3,
       }
-  }
-});
+    }
+  });
 
   // Скрипт для слайдера блока pine-window-models__slider
-$('.pine-window-models__slider').owlCarousel({
-  items: 1,
-  dots: true,
-  margin: 55,
-  dotsClass: ['pagination-box'],
-  dotClass: ['pagination'],
-  responsive: {
+  $('.pine-window-models__slider').owlCarousel({
+    items: 1,
+    dots: true,
+    margin: 55,
+    dotsClass: ['pagination-box'],
+    dotClass: ['pagination'],
+    responsive: {
       1200: {
-          items: 2,
-          margin: 20,
-          dots: false,
+        items: 2,
+        margin: 20,
+        dots: false,
       }
-  }
-});
+    }
+  });
 
   // Скрипт для слайдера блока larch-window-models__slider
-$('.larch-window-models__slider').owlCarousel({
-  items: 1,
-  dots: true,
-  margin: 55,
-  dotsClass: ['pagination-box'],
-  dotClass: ['pagination'],
-  responsive: {
+  $('.larch-window-models__slider').owlCarousel({
+    items: 1,
+    dots: true,
+    margin: 55,
+    dotsClass: ['pagination-box'],
+    dotClass: ['pagination'],
+    responsive: {
       1200: {
-          items: 2,
-          margin: 20,
-          dots: false,
+        items: 2,
+        margin: 20,
+        dots: false,
       }
-  }
-});
+    }
+  });
 
   // Скрипт для слайдера блока other-types-of-wooden-windows__slider
   function checkWidth8() {
@@ -852,6 +852,33 @@ $('.larch-window-models__slider').owlCarousel({
 
   $(window).resize(function () {
     checkWidth8(); // проверит при изменении размера окна клиента
+  });
+
+  // Скрипт для слайдера блока complex-glazing__slider
+  function checkWidth9() {
+    var windowWidth = $('body').innerWidth(),
+      elem = $(".complex-glazing__slider");
+    if (windowWidth < 768) {
+
+      elem.addClass('owl-carousel');
+
+      $('.complex-glazing__slider').owlCarousel({
+        items: 1,
+        dots: true,
+        margin: 55,
+        dotsClass: ['pagination-box'],
+        dotClass: ['pagination'],
+      });
+    }
+    else {
+      elem.trigger('destroy.owl.carousel').removeClass('owl-carousel owl-loaded');
+    }
+  }
+
+  checkWidth9(); // проверит при загрузке страницы
+
+  $(window).resize(function () {
+    checkWidth9(); // проверит при изменении размера окна клиента
   });
 
 });

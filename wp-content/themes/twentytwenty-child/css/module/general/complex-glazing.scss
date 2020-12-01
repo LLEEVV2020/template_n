@@ -7,7 +7,6 @@
 // }
 
 .complex-glazing {
-
     /* .complex-glazing__wrapper */
 
     &__wrapper {
@@ -21,11 +20,13 @@
         margin-bottom: 1.2em;
 
         @include _768 {
-            margin-bottom: 1em;
+            margin-bottom: 1.2em;
+            line-height: 1.1;
         }
 
         @include _1200 {
-            margin-bottom: 1.25em;
+            line-height: 1.2;
+            margin-bottom: 0.85em;
         }
 
         span {
@@ -33,43 +34,83 @@
         }
     }
 
-    /* .complex-glazing__inner */
+    /* .complex-glazing__slider */
 
-    &__inner {
-        flex-wrap: wrap;
+    &__slider {
+        margin-bottom: 2.1em;
+
+        .pagination.active {
+            background-color: $blue;
+        }
 
         @include _768 {
-            max-width: 33.8em;
-            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            margin-bottom: 0;
         }
 
         @include _1200 {
-            max-width: 69em;
+            justify-content: space-between;
         }
     }
 
     /* .complex-glazing__item */
 
     &__item {
-        width: 16.2rem;
-        height: 16.2rem;
+        width: 22.5rem;
+        height: 22.5rem;
+        margin: 0 auto;
         display: flex;
         align-items: flex-end;
         position: relative;
         background-repeat: no-repeat;
         background-size: contain;
         color: #fff;
-        border-radius: 0.9em;
-        margin-bottom: 0.95em;
+        border-radius: 0.4em;
         padding: 0.5em;
+
+        @include _768 {
+            margin: 0 1em 0.9em 0;
+            text-align: left;
+            padding: 0.5em 0em 1.4em 0.6em;
+
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
+        }
+
+        @include _1200 {
+            margin: 0;
+
+            &:nth-child(-n + 4) {
+                margin-bottom: 1.3em;
+            }
+        }
 
         &--0 {
             background-color: $orange;
             justify-content: center;
             flex-direction: column;
+            padding: 1.3em;
+
+            .arrow {
+                height: 0.2em;
+                width: 90%;
+                margin-top: auto;
+                margin-right: auto;
+                margin-bottom: 0.5em;
+
+                &::before {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    border-right: 0.2em solid #fff;
+                    border-top: 0.2em solid #fff;
+                }
+            }
 
             @include _768 {
-                padding: 1.7em;
+                padding: 1.3em;
             }
         }
 
@@ -107,17 +148,6 @@
             background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, #000000 100%),
                 url(/wp-content/themes/twentytwenty-child/img/complex-glazing-item-7.webp);
         }
-
-        @include _768 {
-            width: 25.6rem;
-            height: 25.6rem;
-            margin-bottom: 2.15em;
-            padding-bottom: 1em;
-        }
-
-        @include _1200 {
-            margin-bottom: 3.15em;
-        }
     }
 
     /* .complex-glazing__first-text */
@@ -125,10 +155,9 @@
     &__first-text {
         text-align: left;
         font-weight: 700;
-
-        @include _768 {
-            font-size: 2.4rem;
-        }
+        font-size: 1.8rem;
+        padding-right: 1em;
+        margin-top: 1.9em;
     }
 
     /* .complex-glazing__number */
@@ -137,16 +166,17 @@
         position: absolute;
         top: 0.5em;
         left: 0.5em;
-        font-weight: 900;
-        background-color: $yellow;
-        color: #000;
-        width: 1.8rem;
-        height: 1.8rem;
-        line-height: 1.8rem;
+        font-weight: 700;
+        background-color: #fff;
+        color: $orange;
+        width: 2rem;
+        height: 2rem;
+        line-height: 2rem;
         border-radius: 50%;
+        text-align: center;
 
         @include _768 {
-            font-size: 2.4rem;
+            font-size: 1.8rem;
             width: 2.9rem;
             height: 2.9rem;
             line-height: 2.9rem;
@@ -160,6 +190,7 @@
         font-weight: 700;
 
         @include _768 {
+            min-height: 6rem;
             font-size: 1.4rem;
         }
     }
