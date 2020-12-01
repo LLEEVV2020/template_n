@@ -25,6 +25,7 @@
     }
 }
 
+
 .video-reviews-company-text,
 .video-reviews-company-work-text,
 .windows-pine-text,
@@ -32,14 +33,6 @@
     .text {
         .orange {
             font-weight: 700;
-        }
-    }
-
-    @media (min-width: 768px) {
-        .text {
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
         }
     }
 
@@ -64,12 +57,15 @@
     }
 
     @media (min-width: 768px) {
-        .title {
-            margin-bottom: 1em;
+        .text {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.1;
         }
 
-        .text {
-            line-height: 1.1;
+        .title {
+            margin-bottom: 1em;
         }
     }
 
@@ -198,11 +194,10 @@
         }
 
         .text {
-            margin-bottom: 0.463em;
+            margin-bottom: 1.163em;
 
             &-block {
                 display: block;
-                margin-top: 1.7em;
             }
         }
     }
@@ -214,18 +209,15 @@
 
         .text {
             text-align: left;
-            font-size: 1.5em;
-            margin-bottom: 0.763em;
 
             &-block {
                 display: inline;
             }
 
             &-width {
-                max-width: 40em;
+                max-width: 51em;
                 margin-left: 0;
                 margin-right: 0;
-                margin-top: 1.4em;
             }
         }
     }
