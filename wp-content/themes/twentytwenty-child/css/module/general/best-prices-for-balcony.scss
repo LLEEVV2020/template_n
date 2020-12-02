@@ -8,20 +8,6 @@
 
 .best-prices {
     background: #f9f9f9;
-    /* .best-prices__wrapper */
-
-    &__wrapper {
-        text-align: center;
-        padding: 4.5rem 0;
-
-        @include _768 {
-            padding: 5.5rem 0;
-        }
-
-        @include _1200 {
-            padding: 7.7rem 0;
-        }
-    }
 
     /* .best-prices__title */
 
@@ -39,7 +25,7 @@
         }
 
         @include _1200 {
-            margin-bottom: 0.4em;
+            margin-bottom: 0.85em;
             line-height: 1.2em;
         }
     }
@@ -49,10 +35,8 @@
     &__text {
         line-height: 1.13em;
 
-        @include _1200 {
-            line-height: 1.05em;
-            max-width: 38em;
-            margin: 0 auto;
+        @include _768 {
+            line-height: 1.25;
         }
     }
 }
