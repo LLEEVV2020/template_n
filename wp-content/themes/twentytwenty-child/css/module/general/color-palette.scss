@@ -349,7 +349,20 @@
         }
     }
 
-    @media (min-width: 1600px) {
+    @media (min-width: 1900px) {
         max-width: 90em;
+
+        &-windows {
+            .container {
+                max-width: 96rem;
+            }
+        }
+
+        &__image {
+            &-box {
+                position: absolute;
+                right: 0;
+            }
+        }
     }
 }
