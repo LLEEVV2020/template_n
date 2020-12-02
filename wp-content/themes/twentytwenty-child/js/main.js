@@ -606,7 +606,7 @@ $(document).ready(function () {
   function checkWidth4() {
     var windowWidth = $('body').innerWidth(),
       elem = $(".plan-for-combining-balcony-and-loggia__slider");
-    if (windowWidth < 768) {
+    if (windowWidth < 1200) {
 
       elem.addClass('owl-carousel');
 
@@ -616,6 +616,12 @@ $(document).ready(function () {
         margin: 55,
         dotsClass: ['pagination-box'],
         dotClass: ['pagination'],
+        responsive: {
+          768: {
+            margin: 10,
+            items: 3,
+          }
+        }
       });
     }
     else {
