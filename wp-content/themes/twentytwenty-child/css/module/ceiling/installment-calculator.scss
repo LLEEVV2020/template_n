@@ -65,17 +65,16 @@
         }
 
         &__small {
-            font-size: 0.556em;
+            font-size: 0.625em;
         }
 
         &__big {
-            font-size: 0.889em;
+            font-size: 1em;
             font-weight: 700;
         }
     }
 
     &-slider {
-
         &__top {
             margin-bottom: 0.222em;
         }
@@ -108,8 +107,8 @@
         }
 
         &__total {
-            font-size: 2.4rem;
-            font-weight: 900;
+            font-size: 2rem;
+            font-weight: 700;
         }
 
         &__box {
@@ -173,7 +172,7 @@
     }
 
     .summ-box {
-        min-height: 47rem;
+        min-height: 41rem;
 
         &__rectangle {
             width: 32.4rem;
@@ -239,7 +238,7 @@
         }
 
         &__value {
-            font-size: 4rem;
+            font-size: 3rem;
         }
 
         &__installment {
@@ -254,73 +253,56 @@
         }
     }
 
-    @media (min-width: 670px) {
-        
+    @media (min-width: 768px) {
         &-list {
-            font-size: 2rem;
+            margin-bottom: 2.1875em;
+            max-width: 35.022em;
+
+            &__item {
+                &:first-child,
+                &:nth-child(2) {
+                    .installment-calculator-list__circle {
+                        line-height: 5.5em;
+                    }
+                }
+
+                &:nth-child(3) {
+                    .installment-calculator-list__circle {
+                        line-height: 6em;
+                    }
+                }
+            }
+
+            &__circle {
+                width: 4.375em;
+                height: 4.375em;
+            }
+
+            &__small {
+                font-size: 0.875em;
+                margin-bottom: 0.4em;
+            }
+
+            &__big {
+                font-size: 1.125em;
+            }
         }
 
         &-slider {
+            max-width: 35em;
+            margin-left: auto;
+            margin-right: auto;
+
+            &__top {
+                margin-bottom: 1.389em;
+            }
+
             &__text {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
 
             &__total {
-                font-size: 3rem;
-            }
-
-            &__value {
-                font-size: 1.2rem;
-            }
-
-            &__line {
-                &-inner {
-                    max-width: 33%;
-                }
-            }
-        }
-
-        .partners-banks {
-            &__mr {
-                margin-right: 1.167em;
-            }
-
-            span {
-                margin-right: 1.944em;
-                font-size: 2rem;
-            }
-        }
-
-        .summ-box {
-            &__rectangle {
-                width: 36.8rem;
-                height: 6.4rem;
-            }
-
-            &__content {
-                max-width: 30rem;
-                padding: 2.65em 0.925em;
-
-                &::before {
-                    width: 109%;
-                    top: 0.2em;
-                }
-            }
-        }
-
-    }
-
-    @media (min-width: 768px) {
-
-        &-list {
-            max-width: 25.222em;
-
-            font-size: 2.5rem;
-        }
-
-        &-slider {
-            &__top {
-                margin-bottom: 1.389em;
+                font-size: 2.4rem;
             }
 
             &__bottom {
@@ -329,16 +311,76 @@
 
             &__line {
                 &-inner {
+                    max-width: 35%;
+
                     span {
                         width: 0.611em;
                         height: 0.611em;
                     }
                 }
             }
+
+            &__value {
+                font-size: 0.875em;
+            }
+        }
+
+        .partners-banks {
+            max-width: 35.3em;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 1.975em;
+
+            span {
+                font-size: 1.8rem;
+                margin-right: 1.213em;
+            }
+
+            &__img {
+                &-1 {
+                    width: 12.9375em;
+                }
+
+                &-2 {
+                    width: 9.0625em;
+                }
+            }
+        }
+
+        .summ-box {
+            min-height: 40rem;
+
+            &__rectangle {
+                width: 36.8rem;
+            }
+
+            &__content {
+                max-width: 30rem;
+                padding: 1.85em 1.325em;
+            }
+
+            &__summ {
+                margin-bottom: 0.825em;
+            }
+
+            &__text {
+                margin-bottom: 0.5em;
+
+                &--mb {
+                    margin-bottom: 0.825em;
+                }
+            }
+
+            &__installment {
+                margin-bottom: 1.125em;
+            }
         }
 
         .button {
             max-width: 25.8rem;
+            min-height: 3.5rem;
+            font-size: 1.4rem;
+            letter-spacing: 0.04em;
         }
 
     }
@@ -360,41 +402,38 @@
         }
 
         .left {
-            width: 66%;
+            width: 57.5%;
         }
 
         &-list {
             max-width: 100%;
-            margin-bottom: 3.111em;
-
-            &__small {
-                font-size: 0.788em;
-            }
-
-            &__big {
-                font-size: 1.089em;
-            }
-        }
-
-        &-slider {
-            &__text {
-                font-size: 2.4rem;
-            }
-
-            &__total {
-                font-size: 4rem;
-            }
-
-            &__value {
-                font-size: 1.4rem;
-            }
+            margin-bottom: 2.211em;
         }
 
         .partners-banks {
             span {
-                font-size: 2.4rem;
+                margin-right: 1.713em;
+            }
+
+            &__img-1 {
+                margin-right: 1.6em;
             }
         }
+
+        .summ-box {
+            &__rectangle {
+                height: 6.6rem;
+            }
+
+            &__content {
+                padding: 2.35em 1.325em;
+
+                &:before {
+                    height: 2.5rem;
+                }
+            }
+        }
+        
     }
 
 }
