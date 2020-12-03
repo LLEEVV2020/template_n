@@ -1,154 +1,129 @@
+@import '../../base/all/var';
 
 .lifetime-guarantee {
-
     background-color: #F9F9F9;
 
-    .title {
-        margin-bottom: 1.263em;
+    &__info {
+        display: none;
     }
 
-    .text,
-    &__title {
-        text-align: center;
-    }
+    &__advantages {
+        &-box {
+            &:first-child {
+                margin-bottom: 1.563em;
+            }
+        }
 
-    .text {
-        margin-bottom: 1.563em;
-    }
+        &-title,
+        &-text {
+            font-size: 1em;
+            text-align: center;
+        }
 
-    &__nowrap {
-        white-space: nowrap;
-    }
+        &-title {
+            margin-bottom: 0.475em;
+            text-transform: uppercase;
+        }
 
-    &__title {
-        margin-bottom: 0.938em;
-        font-size: 1em;
-        font-weight: 900;
-    }
+        &-text {
+            line-height: 1.20;
+        }
 
-    &__image {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        &-img {
+            &-worker {
+                display: none;
+            }
 
-        &-worker {
-            display: none;
+            &-certificate {
+                margin-top: 1.563em;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
         }
     }
 
     @media (min-width: 768px) {
+        background-color: $white;
 
-        .text,
-        &__title {
-            font-size: 2rem;
+        &__advantages {
+            max-width: 70.8rem;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 3rem 2.3rem;
+            background-color: #F9F9F9;
+
+            &-box {
+                display: flex;
+                align-items: flex-start;
+
+                &:first-child {
+                    margin-bottom: 1.763em;
+                }
+            }
+
+            &-title,
+            &-text {
+                text-align: left;
+            }
+
+            &-title {
+                margin-bottom: 0.575em;
+                font-size: 1.125em;
+            }
+
+            &-text {
+                line-height: 1.25;
+            }
+
+            &-img {
+                &-box {
+                    order: -1;
+                }
+
+                &-worker {
+                    display: block;
+                    margin-right: 1.125em;
+                }
+
+                &-certificate {
+                    margin-left: 0;
+                    margin-right: 1.125em;
+                    margin-top: 0;
+                }
+            }
         }
+    }
 
-        .text {
-            margin-bottom: 0.563em;
-            text-align: left;
-        }
-
+    @media (min-width: 1200px) {
         .title {
-            white-space: nowrap;
+            text-transform: uppercase;
+            margin-bottom: 2.9rem;
+            line-height: 1.2;
         }
 
-        &__title {
-            text-align: left;
-            max-width: 8.5em;
-            margin-left: 11em;
-        }
+        &__info {
+            display: block;
+            margin-bottom: 3rem;
 
-        &__text {
-            &-1 {
-                margin-left: 10.8em;
+            &-box {
+                display: flex;
+                justify-content: space-between;
+                gap: 2rem;
+            }
 
-                .lifetime-guarantee__nowrap {
-                    white-space: normal;
+            &-text {
+                font-size: 1.125em;
+                line-height: 1.25;
+
+                &:first-child {
+                    margin-bottom: 1em;
                 }
             }
         }
 
-
-        &__image {
-            position: absolute;
-            top: 20%;
-            left: 6%;
+        &__advantages {
+            max-width: none;
         }
-
     }
-
-    @media (min-width: 960px) {
-
-        &__image {
-            top: 23%;
-        }
-
-        &__title {
-            margin-bottom: 2em;
-        }
-
-    }
-
-    @media (min-width: 1200px) {
-
-        .container {
-            display: flex;
-            justify-content: space-between;
-            max-width: 115rem;
-        }
-
-        &__left,
-        &__right {
-            display: flex;
-        }
-
-        &__left {
-            max-width: 36em;
-        }
-
-        &__right {
-            max-width: 34.8em;
-        }
-
-        .title {
-            margin-bottom: 0.413em;
-            text-align: left;
-            white-space: normal;
-        }
-
-        .title,
-        &__title {
-            font-size: 2.4rem;
-        }
-
-        &__title {
-            margin-bottom: 0.525em;
-        }
-
-        &__text-1,
-        &__title,
-        &__image {
-            margin-left: 0;
-        }
-
-        &__image,
-        &__image-worker {
-            margin-right: 1.125em;
-        }
-
-        &__image {
-            position: static;
-
-            &-box {
-                order: -1;
-            }
-
-            &-worker {
-                display: block;
-                align-self: flex-start;
-            }
-        }
-
-    }
-
 }
