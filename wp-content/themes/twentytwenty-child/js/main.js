@@ -34,7 +34,7 @@ $(document).ready(function () {
     margin: 15,
     loop: true,
     dots: true,
-    // autoplay: true,
+    autoplay: true,
     smartSpeed: 500,
     autoplayTimeout: 3000,
     dotsClass: ['quality-worker__nav-dots'],
