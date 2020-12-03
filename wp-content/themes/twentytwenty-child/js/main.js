@@ -30,11 +30,11 @@ $(document).ready(function () {
 
   // Скрипт для слайдера блока quality-worker
   $('.quality-worker__slider').owlCarousel({
-    items: 5,
-    margin: 2,
+    items: 2,
+    margin: 15,
     loop: true,
     dots: true,
-    autoplay: true,
+    // autoplay: true,
     smartSpeed: 500,
     autoplayTimeout: 3000,
     dotsClass: ['quality-worker__nav-dots'],
@@ -44,9 +44,12 @@ $(document).ready(function () {
     navContainerClass: ['navigation'],
     navClass: ['navigation-left', 'navigation-right'],
     responsive: {
-      1200: {
-        margin: 4,
+      768: {
         items: 4
+      },
+      1200: {
+        items: 4,
+        margin: 20
       }
     }
   });
