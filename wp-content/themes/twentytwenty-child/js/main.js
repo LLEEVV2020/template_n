@@ -672,7 +672,7 @@ $(document).ready(function () {
   function checkWidth5() {
     var windowWidth = $('body').innerWidth(),
       elem = $(".balcony-alignment__slider");
-    if (windowWidth < 768) {
+    if (windowWidth < 1200) {
 
       elem.addClass('owl-carousel');
 
