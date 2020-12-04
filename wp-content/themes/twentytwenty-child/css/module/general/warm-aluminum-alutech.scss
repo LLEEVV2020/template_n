@@ -149,9 +149,9 @@
         &::before {
             content: "";
             position: absolute;
-            height: 1.2rem;
-            width: 1.2rem;
-            background-color: $yellow;
+            height: 1.3rem;
+            width: 1.3rem;
+            border: 0.1rem solid $orange;
             border-radius: 50%;
             background-image: url("data:image/svg+xml,%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.91057 7.30247L1.00588 4.30618C0.831373 4.12616 0.831373 3.8343 1.00588 3.65427L1.63784 3.00235C1.81235 2.82232 2.09531 2.82232 2.26982 3.00235L4.22656 5.02079L8.41768 0.697509C8.59219 0.517497 8.87515 0.517497 9.04966 0.697509L9.68162 1.34942C9.85613 1.52943 9.85613 1.8213 9.68162 2.00133L4.54255 7.30249C4.36803 7.4825 4.08508 7.4825 3.91057 7.30247Z' fill='black'/%3E%3C/svg%3E%0A");
             background-repeat: no-repeat;
