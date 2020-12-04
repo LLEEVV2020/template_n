@@ -11,10 +11,9 @@
     /* .glazing-options__inner */
 
     &__inner {
-        flex-wrap: wrap;
-        padding: 0 0.2em;
-
+        
         @include _768 {
+            flex-wrap: wrap;
             justify-content: space-around;
             padding: 0 2.1em;
         }
@@ -29,85 +28,46 @@
 
     &__info {
         position: relative;
+        min-height: 10.4em;
+        font-size: 1.8rem;
 
         &::after {
             content: "";
             position: absolute;
             background-image: url("data:image/svg+xml,%3Csvg width='271' height='24' viewBox='0 0 271 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M270.061 13.0607C270.646 12.4749 270.646 11.5251 270.061 10.9393L260.515 1.3934C259.929 0.807611 258.979 0.807611 258.393 1.3934C257.808 1.97919 257.808 2.92893 258.393 3.51472L266.879 12L258.393 20.4853C257.808 21.0711 257.808 22.0208 258.393 22.6066C258.979 23.1924 259.929 23.1924 260.515 22.6066L270.061 13.0607ZM0 13.5H269V10.5H0V13.5Z' fill='white'/%3E%3C/svg%3E%0A");
-            display: inline-block;
-            width: 2.25em;
+            display: block;
+            width: 95%;
             height: 1em;
+            bottom: 0;
             background-size: cover;
             margin-left: 0.5em;
             margin-top: -0.5em;
             background-position: right;
             -webkit-transform: translateY(0.25em);
             transform: translateY(0.25em);
-
-            @include _768 {
-                display: block;
-                bottom: 0;
-                height: 1em;
-                width: 95%;
-                margin-right: 0.5em;
-                margin-left: 0;
-                margin-top: 0.7em;
-                -webkit-transform: none;
-                transform: none;
-            }
         }
-
-        @include _768 {
-            font-size: 1.8rem;
-            line-height: 1.25em;
-            min-height: 10.4em;
-        }
-    }
-
-    /* .glazing-options__number */
-
-    &__number {
-        margin-right: 0.5em;
-
-        @include _768 {
-            margin-right: 0.2em;
-            font-size: 3rem;
-        }
-
-        @include _1200 {}
     }
 
     /* .glazing-options__name */
 
     &__name {
         margin-bottom: 0.5em;
-        font-size: 1.6rem;
-
-        @include _768 {
-            font-size: 1.8rem;
-        }
+        font-size: 1.8rem;
     }
 
     /* .glazing-options__text */
 
     &__text {
-        font-size: 1rem;
-
-        @include _768 {
-            font-size: 1.4rem;
-        }
-
-        @include _1200 {
-            font-size: 1.4rem;
-        }
+        font-size: 1.6rem;
     }
 
     /* .glazing-options__item */
 
     &__item {
         max-width: 16rem;
-        width: 100%;
-        min-height: 16rem;
+        max-width: 30.4rem;
+        min-height: 30.2rem;
+        margin: 0 auto;
         flex-direction: column;
         padding: 0.7em;
         justify-content: flex-end;
@@ -120,8 +80,6 @@
         @include _768 {
             padding: 1em;
             margin-bottom: 1em;
-            max-width: 30.4rem;
-            min-height: 30.2rem;
         }
 
         @include _1200 {
@@ -133,94 +91,41 @@
 
     &__item--1 {
         background-color: $orange;
-
-        @include _768 {
-            justify-content: center;
-        }
+        justify-content: center;
     }
 
     /* .glazing-options__item--2 */
 
     &__item--2 {
-        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%),
-            url(/wp-content/themes/twentytwenty-child/img/glazing-options-item-1-s.webp);
-
-        @include _768 {
-            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 15%, #000000 100%),
-                url(/wp-content/themes/twentytwenty-child/img/glazing-options-item-1-m.webp);
-        }
-
-        @include _1200 {
-            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 30%, #000000 100%),
-                url(/wp-content/themes/twentytwenty-child/img/glazing-options-item-1-l.webp);
-        }
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 30%, #000000 100%),
+        url(/wp-content/themes/twentytwenty-child/img/glazing-options-item-1-l.webp);
     }
 
     /* .glazing-options__item--3 */
 
     &__item--3 {
-        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%),
-            url(/wp-content/themes/twentytwenty-child/img/glazing-options-item-2-s.webp);
-
-        @include _768 {
-            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 15%, #000000 100%),
-                url(/wp-content/themes/twentytwenty-child/img/glazing-options-item-2-m.webp);
-        }
-
-        @include _1200 {
-            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 30%, #000000 100%),
-                url(/wp-content/themes/twentytwenty-child/img/glazing-options-item-2-l.webp);
-        }
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 30%, #000000 100%),
+        url(/wp-content/themes/twentytwenty-child/img/glazing-options-item-2-l.webp);
     }
 
     /* .glazing-options__item--4 */
 
     &__item--4 {
-        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%),
-            url(/wp-content/themes/twentytwenty-child/img/glazing-options-item-3-s.webp);
-
-        @include _768 {
-            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 15%, #000000 100%),
-                url(/wp-content/themes/twentytwenty-child/img/glazing-options-item-3-m.webp);
-        }
-
-        @include _1200 {
-            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 30%, #000000 100%),
-                url(/wp-content/themes/twentytwenty-child/img/glazing-options-item-3-l.webp);
-        }
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 30%, #000000 100%),
+        url(/wp-content/themes/twentytwenty-child/img/glazing-options-item-3-l.webp);
     }
 
     /* .glazing-options__item--5 */
 
     &__item--5 {
-        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%),
-            url(/wp-content/themes/twentytwenty-child/img/glazing-options-item-4-s.webp);
-
-        @include _768 {
-            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 15%, #000000 100%),
-                url(/wp-content/themes/twentytwenty-child/img/glazing-options-item-4-m.webp);
-        }
-
-        @include _1200 {
-            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 30%, #000000 100%),
-                url(/wp-content/themes/twentytwenty-child/img/glazing-options-item-4-l.webp);
-        }
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 30%, #000000 100%),
+        url(/wp-content/themes/twentytwenty-child/img/glazing-options-item-4-l.webp);
     }
 
     /* .glazing-options__item--6 */
 
     &__item--6 {
-        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%),
-            url(/wp-content/themes/twentytwenty-child/img/glazing-options-item-5-s.webp);
-
-        @include _768 {
-            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 15%, #000000 100%),
-                url(/wp-content/themes/twentytwenty-child/img/glazing-options-item-5-m.webp);
-        }
-
-        @include _1200 {
-            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 30%, #000000 100%),
-                url(/wp-content/themes/twentytwenty-child/img/glazing-options-item-5-l.webp);
-        }
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 30%, #000000 100%),
+        url(/wp-content/themes/twentytwenty-child/img/glazing-options-item-5-l.webp);
     }
 }
