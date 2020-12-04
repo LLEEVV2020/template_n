@@ -58,11 +58,6 @@
     &__item {
         width: 30.7rem;
         margin: 0 auto;
-        @include _768 {
-        }
-
-        @include _1200 {
-        }
     }
 
     /* .materials-for-creating-a-parapet__item-title */
@@ -71,15 +66,12 @@
         padding: 0.5em;
         background-color: #fff;
         line-height: 2.2em;
-        border-radius: 0 0 1rem 1rem;
+        border-radius: 0 0 0.6rem 0.6rem;
         margin-bottom: 0.7em;
 
         @include _768 {
             line-height: 2em;
             margin-bottom: 1em;
-        }
-
-        @include _1200 {
         }
     }
 
@@ -88,13 +80,7 @@
     &__item-img {
         width: 100%;
         height: 18.3rem;
-        border-radius: 1rem 1rem 0 0;
-
-        @include _768 {
-        }
-
-        @include _1200 {
-        }
+        border-radius: 0.6rem 0.6rem 0 0;
     }
 
     /* .materials-for-creating-a-parapet__item-text */
