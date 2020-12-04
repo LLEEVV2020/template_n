@@ -10,19 +10,13 @@
     }
 
     .title {
-        max-width: 14em;
-        margin-bottom: 0.975em;
+        margin-bottom: 0.575em;
         line-height: 1.1666;
         
         .orange {
             display: block;
-            max-width: 11em;
+            max-width: 14em;
         }
-    }
-
-    .text {
-        font-weight: 700;
-        line-height: 1.375;
     }
 
     @media (min-width: 768px) {
@@ -35,6 +29,10 @@
             max-width: none;
         }
 
+        .title {
+            margin-bottom: 0.775em;
+        }
+
         .text {
             text-align: center;
             line-height: 1.175;
@@ -45,13 +43,9 @@
         }
     }
 
-    @media (min-width: 960px) {
+    @media (min-width: 1200px) {
         .title {
-            margin-bottom: 0.475em;
-        }
-
-        .text {
-            font-size: 1.5em;
+            margin-bottom: 0.875em;
         }
     }
 }
