@@ -27,7 +27,7 @@ input[type="checkbox"] {
 .calc-balcony {
     position: relative;
     @media (max-width: 1199px) {
-        min-height: 100vh;
+        min-height: 46.8rem;
     }
 
     &__buttons {
@@ -292,15 +292,12 @@ input[type="checkbox"] {
 }
 
 .balcony__inner {
-    padding: 2.5rem 0 4rem;
     text-align: center;
 
     @include _768 {
-        padding: 5.5rem 0 0;
     }
 
     @include _1200 {
-        padding: 6rem 0 0;
     }
 }
 
