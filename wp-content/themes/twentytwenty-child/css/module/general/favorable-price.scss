@@ -63,7 +63,7 @@
         width: 2.500em;
         height: 2.500em;
         margin-bottom: 0.938em;
-        background-color: $yellow;
+        border: 0.1rem solid $orange;
         border-radius: 50%;
 
         &:before {
@@ -163,9 +163,6 @@
     }
 
     @media (min-width: 768px) {
-        padding-top: 4.7rem;
-        padding-bottom: 5.5rem;
-
         .container {
             width: calc(100% - 4rem);
         }
@@ -200,9 +197,6 @@
     }
 
     @media (min-width: 1200px) {
-        padding-top: 6rem;
-        padding-bottom: 6rem;
-
         &__list {
             max-width: 70.5em;
         }
@@ -235,6 +229,7 @@
         &__icon {
             width: 4.188em;
             height: 4.188em;
+            border-width: 0.2rem;
 
             &:before {
                 width: 2.500em;
