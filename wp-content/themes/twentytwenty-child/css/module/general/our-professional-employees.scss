@@ -1,4 +1,4 @@
-@import "../../../base/all/var";
+@import "../../base/all/var";
 
 .our-professional-employees {
     background-image: url("/wp-content/themes/twentytwenty-child/img/our-professional employees-middle.jpg");
@@ -292,10 +292,8 @@
     }
 
     @media (min-width: 1200px) {
-        background-image: none;
-
         &::before {
-            display: none;
+            box-shadow: 0 0 1.438em 62.375em rgba(255, 255, 255, 0.8);
         }
 
         &__left {
@@ -328,24 +326,12 @@
         }
 
         &__left {
-            min-width: 49%;
+            min-width: 56.4%;
             position: relative;
-
-            &:after {
-                content: "";
-                position: absolute;
-                top: 0;
-                right: -0.4em;
-                height: 100%;
-                box-shadow: 0 0 0.438em 1.375em rgba(255, 255, 255, 0.9);
-            }
         }
 
         &__right {
             min-width: calc(51% + ((100vw - 100%) / 2));
-            background-image: url("/wp-content/themes/twentytwenty-child/img/our-professional employees-big.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
         }
 
         &__slider {
@@ -426,6 +412,18 @@
             &-dots {
                 left: 22rem;
             }
+        }
+    }
+
+    @media (min-width: 1600px) {
+        &::before {
+            box-shadow: 0 0 1.438em 75.375em rgba(255, 255, 255, 0.8);
+        }
+    }
+
+    @media (min-width: 1900px) {
+        &:before {
+            box-shadow: 0 0 5.438em 94.375em rgba(255, 255, 255, 0.8);
         }
     }
 }
