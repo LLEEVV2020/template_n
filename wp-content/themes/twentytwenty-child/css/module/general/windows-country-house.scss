@@ -33,15 +33,15 @@
         font-size: 1em;
         text-align: center;
         background-color: $white;
-        border-bottom-left-radius: 0.625em;
-        border-bottom-right-radius: 0.625em;
+        border-bottom-left-radius: 0.325em;
+        border-bottom-right-radius: 0.325em;
     }
 
     &__image {
         display: block;
         max-width: 20.938em;
-        border-top-left-radius: 0.625em;
-        border-top-right-radius: 0.625em;
+        border-top-left-radius: 0.325em;
+        border-top-right-radius: 0.325em;
     }
 
     &__description {
