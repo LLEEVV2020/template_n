@@ -966,30 +966,69 @@
     }
 
     &__title {
-        max-width: 12.876em;
+        max-width: 15.813em;
         margin-bottom: 1.238em;
         margin-left: auto;
         margin-right: auto;
-        padding: 0.459em 0;
-        font-size: 1.5em;
-        font-weight: 700;
-        background-color: $yellow;
-        border-radius: 1.250em;
+        padding: 0.459em 1.063em;
+        font-size: 1em;
+        border: 0.125em solid $orange;
+        border-radius: 0.375em;
+        text-align: left;
     }
 
-    &__title,
     &__item {
         text-align: center;
-    }
-    
-    &__item {
-        margin-bottom: 1.875em;
+        margin-bottom: 1.175em;
+
+        &--1 {
+            label {
+                &:nth-of-type(2) {
+                    margin-right: 1.9em;
+                    margin-left: 1.9em;
+                }
+            }
+        }
+
+        &--2 {
+            label {
+                &:nth-of-type(2) {
+                    margin-right: 1.3em;
+                    margin-left: 1.3em;
+                }
+
+                &:last-of-type {
+                    max-width: 4em;
+                }
+            }
+        }
+
+        &--3 {
+            label {
+                &:nth-of-type(2) {
+                    margin-right: 1.3em;
+                    margin-left: 1.3em;
+                }
+            }
+        }
+
+        &--4,
+        &--6 {
+            .finishing-loggias {
+                &-info {
+                    &__inner {
+                        &:first-child {
+                            max-width: 7.3em;
+                            margin-right: 1.6em;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     &__label {
         display: inline-block;
-        margin-left: 0.5em;
-        margin-right: 0.5em;
         vertical-align: top;
         cursor: pointer;
 
@@ -1005,8 +1044,7 @@
         &-text {
             display: block;
             margin-bottom: 0.575em;
-            font-size: 1.250em;
-            font-weight: 700;
+            font-size: 1em;
             color: #979797;
             text-align: left;
             
@@ -1027,6 +1065,7 @@
             cursor: pointer;
             display: flex;
             align-items: center;
+            max-width: 7em;
         }
 
         &-wardrobe {
@@ -1055,19 +1094,19 @@
     }
 
     &__image {
-        width: 4.5em;
-        height: 4.5em;
+        width: 3.750em;
+        height: 3.750em;
         margin-bottom: 0.438em;
         border: 0.125em solid transparent;
-        border-radius: 1.250em;
+        border-radius: 0.375em;
 
         &-wardrobe {
             display: inline-block;
             margin-bottom: 0.438em;
-            width: 3.750em;
-            height: 3.750em;
+            width: 3.125em;
+            height: 3.125em;
             border: 0.125em solid transparent;
-            border-radius: 1.250em;
+            border-radius: 0.375em;
         }
 
         &--1 {
@@ -1133,16 +1172,15 @@
         &--24,
         &--25,
         &--26 {
-            width: 3.9em;
-            height: 3.9em;
+            width: 3.125em;
+            height: 3.125em;
             border: 0.125em solid transparent;
-            border-radius: 1.250em;
+            border-radius: 0.375em;
         }
 
         &-stop {
             border: 0.063em solid #C9C9C9;
             margin-right: 0.3em;
-            border-radius: 1.05em;
 
             &:before {
                 font-size: 2.1em;
@@ -1157,11 +1195,11 @@
         }
 
         &--4 {
-            background-position: 100% 39.919%;
+            background-position: 99.3% 39.919%;
         }
 
         &--5 {
-            background-position: 62.606% 90.934%;
+            background-position: 62.406% 89.834%;
         }
 
         &--6 {
@@ -1192,36 +1230,35 @@
         }
 
         &--7 {
-            background-position: 22.934% 86.285%;
+            background-position: 23.334% 85.985%;
         }
 
         &--8 {
-            background-position: 29.174% 87.084%;
+            background-position: 29.374% 86.984%;
         }
 
         &--9 {
-            background-position: 16.526% 85.087%;
+            background-position: 17.026% 84.787%;
         }
 
         &--10 {
-            background-position: 33.333% 77.497%;
+            background-position: 33.433% 77.497%;
         }
 
         &--11 {
-            background-position: 100% 18.375%;
+            background-position: 99.4% 18.875%;
         }
 
         &--12 {
-            background-position: 99.747% 0;
+            background-position: 99.147% 1.6%;
         }  
         
         &--13 {
-            background-position: 100% 9.188%;
+            background-position: 99.4% 9.488%;
         }
 
         &--14 {
             border: 0.063em solid #C9C9C9;
-            border-radius: 1.05em;
             background-position: 64.019% 71.505%;
         }
 
@@ -1262,49 +1299,49 @@
         }
 
         &--19 {
-            background-position: 47.386% 90.013%;
+            background-position: 47.386% 89.613%;
         }
 
         &--20 {
-            background-position: 53.457% 91.079%;
+            background-position: 53.457% 90.679%;
         }
 
         &--21 {
-            background-position: 16.779% 95.34%;
+            background-position: 16.979% 94.64%;
         }
 
         &--22 {
-            background-position: 23.019% 95.606%;
+            background-position: 23.319% 95.206%;
         }
 
         &--23 {
-            background-position: 35.16% 87.75%;
+            background-position: 35.46% 87.35%;
         }
 
         &--24 {
-            background-position: 35.582% 97.337%;;
+            background-position: 35.582% 96.837%;
         }
 
         &--25 {
-            background-position: 41.653% 97.47%;;
+            background-position: 41.653% 97.07%;
         }
 
         &--26 {
-            background-position: 41.062% 87.883%;
+            background-position: 41.262% 87.583%;
         }
 
         &--27 {
-            width: 4em;
-            height: 4em;
+            width: 3.125em;
+            height: 3.125em;
             margin-right: 2.250em;
-            background-position: 29.427% 96.405%;
+            background-position: 29.727% 95.905%;
             border: 0.125em solid transparent;
-            border-radius: 1.05em;
+            border-radius: 0.375em;
         }
     }
 
     &__word {
-        font-size: 0.875em;
+        font-size: 0.750em;
     }
 
     &__inner {
@@ -1342,13 +1379,12 @@
 
     &__price {
         &-box {
-            max-width: 11.250em;
+            max-width: 13.188em;
             min-height: 5.688em;
             padding: 0.750em 1.125em;
             margin-left: auto;
             margin-right: auto;
-            margin-bottom: 2.313em;            ;
-            background-color: $yellow;
+            margin-bottom: 1.250em;      
             border-radius: 0.813em;
             box-shadow: 0.188em 0.250em 1.438em rgba(0, 0, 0, 0.25);
         }
@@ -1356,10 +1392,11 @@
         &-text {
             margin-bottom: 0.750em;
             font-weight: 700;
+            font-size: 1.125em;
         }
 
         &-value {
-            font-size: 2.188em;
+            font-size: 2.5em;
             white-space: nowrap;
             font-weight: 900;
         }
@@ -1376,7 +1413,7 @@
 
         &__input,
         &__button {
-            font-size: 1.6rem;
+            font-size: 1.4rem;
         }
 
         &__input {
@@ -1395,8 +1432,7 @@
     }
 
     &__agreement {
-        font-family: Montserrat, sans-serif;
-        font-size: 1rem;
+        font-size: 1.2rem;
         font-weight: 500;
 
         &-link {
@@ -1487,10 +1523,10 @@
                     ~ .finishing-loggias-info__box {
                         .finishing-loggias-info__details-box {
                             .finishing-loggias-info__details-image-2 {
-                                width: 36.4rem;
-                                height: 12.3rem;
                                 top: 0;
-                                left: 1.7em;
+                                left: 2.5em;
+                                width: 30.3rem;
+                                height: 10.1rem;
                                 background-image: url('/wp-content/themes/twentytwenty-child/img/finishing-balcony-middle8.png');
                             }
                         }
@@ -1502,8 +1538,9 @@
                         .finishing-loggias-info__details-box {
                             .finishing-loggias-info__details-image-7 {
                                 width: 0.5rem;
-                                height: 19.2rem;
+                                height: 15.4rem;
                                 left: 4.2em;
+                                bottom: 5.3em;
                             }
                         }
                     }
@@ -1514,8 +1551,10 @@
                         ~ .finishing-loggias-info__box {
                             .finishing-loggias-info__details-box {
                                 .finishing-loggias-info__details-image-4 {
-                                    height: 45.5rem;
-                                    top: 5.2em;
+                                    height: 48.5rem;
+                                    width: 18em;
+                                    top: -0.1em;
+                                    left: 5.1em;
                                 }
                             }
                         }
@@ -1527,10 +1566,10 @@
                         ~ .finishing-loggias-info__box {
                             .finishing-loggias-info__details-box {
                                 .finishing-loggias-info__details-image-4 {
-                                    top: 4.7em;
-                                    left: 6.1em;
-                                    width: 29.3rem;
-                                    height: 50.3rem;
+                                    top: 0.9em;
+                                    left: 4.3em;
+                                    width: 30.7rem;
+                                    height: 42.5rem;
                                 }
                             }
                         }
@@ -1542,10 +1581,10 @@
                         ~ .finishing-loggias-info__box {
                             .finishing-loggias-info__details-box {
                                 .finishing-loggias-info__details-image-4 {
-                                    top: 3.4em;
-                                    left: 4.8em;
-                                    width: 31.8rem;
-                                    height: 53.7rem;
+                                    top: -1.4em;
+                                    left: 5em;
+                                    width: 29.4rem;
+                                    height: 51.3rem;
                                 }
                             }
                         }
@@ -1558,9 +1597,9 @@
                             .finishing-loggias-info__details-box {
                                 .finishing-loggias-info__details-image-4 {
                                     top: 0;
-                                    left: 2em;
-                                    width: 40.4rem;
-                                    height: 59.1rem;
+                                    left: 2.2em;
+                                    width: 35.2rem;
+                                    height: 47.4rem;
                                 }
                             }
                         }
@@ -1572,10 +1611,10 @@
                         ~ .finishing-loggias-info__box {
                             .finishing-loggias-info__details-box {
                                 .finishing-loggias-info__details-image-4 {
-                                    top: 3.8em;
-                                    left: 6.1em;
-                                    width: 30.7rem;
-                                    height: 48.7rem;
+                                    top: 0.4em;
+                                    left: 4.3em;
+                                    width: 31.5rem;
+                                    height: 41.7rem;
                                 }
                             }
                         }
@@ -1587,10 +1626,10 @@
                         ~ .finishing-loggias-info__box {
                             .finishing-loggias-info__details-box {
                                 .finishing-loggias-info__details-image-4 {
-                                    top: 3.7em;
-                                    left: 6em;
+                                    top: -1.4em;
+                                    left: 5em;
                                     width: 29.4rem;
-                                    height: 49.5rem;
+                                    height: 50.5rem;
                                 }
                             }
                         }
@@ -1602,10 +1641,10 @@
                         ~ .finishing-loggias-info__box {
                             .finishing-loggias-info__details-box {
                                 .finishing-loggias-info__details-image-4 {
-                                    top: 3.9em;
+                                    top: 0.4em;
                                     left: 5.9em;
-                                    width: 30.5rem;
-                                    height: 49.7rem;
+                                    width: 28.5rem;
+                                    height: 45.8rem;
                                 }
                             }
                         }
@@ -1617,10 +1656,10 @@
                         ~ .finishing-loggias-info__box {
                             .finishing-loggias-info__details-box {
                                 .finishing-loggias-info__details-image-4 {
-                                    top: 3.7em;
-                                    left: 6.3em;
-                                    width: 30.6rem;
-                                    height: 48.2rem;
+                                    top: 0em;
+                                    left: 5em;
+                                    width: 31.3rem;
+                                    height: 47.2rem;
                                 }
                             }
                         }
@@ -1632,10 +1671,10 @@
                         ~ .finishing-loggias-info__box {
                             .finishing-loggias-info__details-box {
                                 .finishing-loggias-info__details-image-4 {
-                                    top: 0;
-                                    left: 2em;
-                                    width: 40.4rem;
-                                    height: 59.1rem;
+                                    top: -0.7em;
+                                    left: 2.6em;
+                                    width: 30.4rem;
+                                    height: 50.1rem;
                                 }
                             }
                         }
@@ -1646,10 +1685,10 @@
                     ~ .finishing-loggias-info__box {
                         .finishing-loggias-info__details-box {
                             .finishing-loggias-info__details-image-3 {
-                                width: 14.5rem;
-                                height: 24.4rem;
-                                top: 11.1em;
-                                left: 11.5em;
+                                width: 12.1rem;
+                                height: 21.2rem;
+                                top: 10.8em;
+                                left: 10em;
                             }
                         }
                     }               
@@ -1659,12 +1698,26 @@
                     ~ .finishing-loggias-info__box {
                         .finishing-loggias-info__details-box {
                             .finishing-loggias-info__details-image-3 {
-                                height: 22.4rem;
-                                top: 11.3em;
-                                left: 12em;
+                                width: 12.8rem;
+                                height: 19.4rem;
+                                top: 11.1em;
+                                left: 10.2em;
                             }
                         }
                     }               
+                }
+
+                &-31:checked {
+                    ~ [id="linoleum-5"]:checked {
+                        ~ .finishing-loggias-info__box {
+                            .finishing-loggias-info__details-box {
+                                .finishing-loggias-info__details-image-5 {
+                                    left: 5.5em;
+                                    width: 27.7rem;
+                                }
+                            }
+                        }
+                    }
                 }
 
                 &-32:checked {
@@ -1672,8 +1725,8 @@
                         ~ .finishing-loggias-info__box {
                             .finishing-loggias-info__details-box {
                                 .finishing-loggias-info__details-image-5 {
-                                    top: 23em;
-                                    left: 7.4em;
+                                    top: 18em;
+                                    left: 6.8em;
                                     width: 29.6rem;
                                     height: 16.3rem;
                                 }
@@ -1687,8 +1740,8 @@
                         ~ .finishing-loggias-info__box {
                             .finishing-loggias-info__details-box {
                                 .finishing-loggias-info__details-image-5 {
-                                    top: 23em;
-                                    left: 7.4em;
+                                    top: 18em;
+                                    left: 7em;
                                     width: 29.6rem;
                                     height: 16.3rem;
                                 }
@@ -1702,8 +1755,8 @@
                         ~ .finishing-loggias-info__box {
                             .finishing-loggias-info__details-box {
                                 .finishing-loggias-info__details-image-5 {
-                                    top: 23em;
-                                    left: 7.4em;
+                                    top: 18.1em;
+                                    left: 6.8em;
                                     width: 29.6rem;
                                     height: 16.3rem;
                                 }
@@ -1717,8 +1770,8 @@
                         ~ .finishing-loggias-info__box {
                             .finishing-loggias-info__details-box {
                                 .finishing-loggias-info__details-image-5 {
-                                    top: 23em;
-                                    left: 7.4em;
+                                    top: 18em;
+                                    left: 7em;
                                     width: 29.6rem;
                                     height: 16.3rem;
                                 }
@@ -1746,8 +1799,8 @@
                         ~ .finishing-loggias-info__box {
                             .finishing-loggias-info__details-box {
                                 .finishing-loggias-info__details-image-5 {
-                                    top: 25.3em;
-                                    left: 7.6em;
+                                    top: 21.3em;
+                                    left: 6.5em;
                                     width: 27.6rem;
                                     height: 12.6rem;
                                 }
@@ -1761,9 +1814,9 @@
                         ~ .finishing-loggias-info__box {
                             .finishing-loggias-info__details-box {
                                 .finishing-loggias-info__details-image-5 {
-                                    width: 38.5rem;
-                                    top: 25.1em;
-                                    left: 4.9em;
+                                    width: 29.5rem;
+                                    top: 20.1em;
+                                    left: 4.6em;
                                 }
                             }
                         }
@@ -1781,12 +1834,22 @@
                 "finishing-loggias_details finishing-loggias_details"
                 "finishing-loggias_price finishing-loggias_price"
                 "finishing-loggias_agreement finishing-loggias_agreement";
-            max-width: 50em;
+            max-width: 40em;
             margin-left: auto;
             margin-right: auto;
         }
 
         &__item {
+            &:nth-child(2),
+            &:nth-child(5),
+            &:nth-child(6) {
+                .finishing-loggias-info {
+                    &__title {
+                        text-align: right;
+                    }
+                }
+            }
+
             &--1 {
                 grid-area: finishing-loggias_item1;
             }
@@ -1817,81 +1880,96 @@
                 width: 48rem;
                 height: 56.8rem;
                 margin-top: 1.438em;
-                margin-bottom: 3.125em;
+                margin-bottom: 0;
                 grid-area: finishing-loggias_details;
                 grid-column: span 2;
             }
 
             &-image {
                 &-1 {
-                    top: 5.4em;
                     left: 4em;
-                    width: 15.9rem;
-                    height: 31.2rem;
+                    top: 5.1em;
+                    width: 13.3rem;
+                    height: 27.5rem;
                     background-image: url('/wp-content/themes/twentytwenty-child/img/finishing-balcony-middle1.png');            
                     z-index: 1;    
                 }
     
                 &-2 {
                     top: 0;
-                    left: 0.1em;
-                    width: 38.9rem;
-                    height: 13rem;
+                    left: 1em;
+                    width: 32.7rem;
+                    height: 10.9rem;
                     background-image: url('/wp-content/themes/twentytwenty-child/img/finishing-balcony-middle2.png');                
                 }
     
                 &-3 {
-                    top: 20.4em;
-                    left: 12.2em;
-                    width: 14.7rem;
-                    height: 8.9rem;
+                    top: 18.4em;
+                    left: 11.1em;
+                    width: 13rem;
+                    height: 8.1rem;
                     background-image: url('/wp-content/themes/twentytwenty-child/img/finishing-balcony-middle3.png');
                     z-index: 1;                
                 }
     
                 &-4 {
-                    top: 5.5em;
-                    left: 6.9em;
-                    width: 28.3rem;
-                    height: 47.5rem;
+                    top: 2.9em;
+                    left: 6.1em;
+                    width: 25rem;
+                    height: 43.7rem;
                     background-image: url('/wp-content/themes/twentytwenty-child/img/finishing-balcony-middle4.png');                
                 }
     
                 &-5 {
-                    top: 23.4em;
-                    left: 7.6em;
-                    width: 28.9rem;
-                    height: 16rem;
+                    top: 19.4em;
+                    left: 6.3em;
+                    width: 26.6rem;
+                    height: 14.3rem;
                     background-image: url('/wp-content/themes/twentytwenty-child/img/finishing-balcony-middle5.png'); 
                 }
     
                 &-6 {
                     top: 0;
                     left: 4.4em;
-                    width: 41.2rem;
-                    height: 56.8rem;
+                    width: 34.2rem;
+                    height: 48.3rem;
                     background-image: url('/wp-content/themes/twentytwenty-child/img/finishing-balcony-middle6.png');                
                 }
 
                 &-7 {
-                    height: 18.5rem;
+                    height: 13.7rem;
+                    bottom: 5.3em;
                     left: 4.3em;
                 }
             }
         }
 
+        &__price-form-box,
+        &__agreement {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         &__price-form-box {
             grid-area: finishing-loggias_price;
+            display: flex;
+            justify-content: space-between;
+            max-width: 37em;
+            margin-top: -1em;
+            margin-bottom: 1.875em;
         }
 
         &__agreement {
             grid-area: finishing-loggias_agreement;
-            font-size: 1.2rem;
+            max-width: 46em;
+            font-size: 0.875em;
         }
 
         .form-contacts {
-            max-width: 75rem;
-            margin-bottom: 2.250em;
+            display: block;
+            width: 19.188em;
+            margin: 0;
+            margin-right: 4.375em;
 
             &__box,
             &__button {
@@ -1899,26 +1977,28 @@
             }
 
             &__box {
-                width: 48%;
+                margin-bottom: 0.688em;
+            }
+
+            &__input,
+            &__button {
+                font-size: 1.6rem;
             }
 
             &__button {
-                width: 48%;
+                margin: 0;
             }
         }
         
         &__price {
             &-box {
-                max-width: 19.125em;
+                margin: 0;
+                width: 13.188em;
+                order: 1;
             }
 
             &-text {
                 margin-bottom: 0.313em;
-                font-size: 1.4em;
-            }
-
-            &-value {
-                font-size: 3.750em;
             }
         }
 
@@ -1928,276 +2008,15 @@
       .container {
         width: calc(100% - 8rem);
       }
+
+      .form-contacts {
+          &__box {
+              min-width: 0;
+          }
+      }
     }
 
     @media (min-width: 1400px) {
-        &__radio {
-            &.radio {
-                &-2:checked {
-                    ~ .finishing-loggias-info__box {
-                        .finishing-loggias-info__details-box {
-                            .finishing-loggias-info__details-image-2 {
-                                left: 0.2em;
-                            }
-                        }
-                    }
-                }
-
-                &-8:checked {
-                    ~ .finishing-loggias-info__box {
-                        .finishing-loggias-info__details-box {
-                            .finishing-loggias-info__details-image-7 {
-                                left: 2.7em;
-                            }
-                        }
-                    }
-                }
-
-                &-20:checked {
-                    ~ [id = "wall-3"]:checked {
-                        ~ .finishing-loggias-info__box {
-                            .finishing-loggias-info__details-box {
-                                .finishing-loggias-info__details-image-4 {
-                                    height: 48.9rem;
-                                    left: 4.8em;
-                                }
-                            }
-                        }
-                    }
-                }
-
-                &-20:checked {
-                    ~ [id = "wall-4"]:checked {
-                        ~ .finishing-loggias-info__box {
-                            .finishing-loggias-info__details-box {
-                                .finishing-loggias-info__details-image-4 {
-                                    height: 52.1rem;
-                                    left: 4em;
-                                }
-                            }
-                        }
-                    }
-                }
-
-                &-20:checked {
-                    ~ [id = "wall-5"]:checked {
-                        ~ .finishing-loggias-info__box {
-                            .finishing-loggias-info__details-box {
-                                .finishing-loggias-info__details-image-4 {
-                                    top: 0.7em;
-                                    left: 0.5em;
-                                    width: 40.4rem;
-                                    height: 55.9rem;
-                                }
-                            }
-                        }
-                    }
-                }
-
-                &-21:checked {
-                    ~ [id = "panel-1"]:checked {
-                        ~ .finishing-loggias-info__box {
-                            .finishing-loggias-info__details-box {
-                                .finishing-loggias-info__details-image-4 {
-                                    left: 4.5em;
-                                }
-                            }
-                        }
-                    }
-                }
-
-                &-21:checked {
-                    ~ [id = "panel-2"]:checked {
-                        ~ .finishing-loggias-info__box {
-                            .finishing-loggias-info__details-box {
-                                .finishing-loggias-info__details-image-4 {
-                                    left: 4.5em;
-                                }
-                            }
-                        }
-                    }
-                }
-
-                &-21:checked {
-                    ~ [id = "panel-3"]:checked {
-                        ~ .finishing-loggias-info__box {
-                            .finishing-loggias-info__details-box {
-                                .finishing-loggias-info__details-image-4 {
-                                    left: 4.5em;
-                                }
-                            }
-                        }
-                    }
-                }
-
-                &-21:checked {
-                    ~ [id = "panel-4"]:checked {
-                        ~ .finishing-loggias-info__box {
-                            .finishing-loggias-info__details-box {
-                                .finishing-loggias-info__details-image-4 {
-                                    left: 4.7em;
-                                }
-                            }
-                        }
-                    }
-                }
-
-                &-21:checked {
-                    ~ [id = "panel-5"]:checked {
-                        ~ .finishing-loggias-info__box {
-                            .finishing-loggias-info__details-box {
-                                .finishing-loggias-info__details-image-4 {
-                                    left: 0.8em;
-                                    height: 51.1rem;
-                                }
-                            }
-                        }
-                    }
-                }
-
-                &-23:checked {
-                    ~ .finishing-loggias-info__box {
-                        .finishing-loggias-info__details-box {
-                            .finishing-loggias-info__details-image-3 {
-                                left: 10em;
-                            }
-                        }
-                    }               
-                }
-
-                &-24:checked {
-                    ~ .finishing-loggias-info__box {
-                        .finishing-loggias-info__details-box {
-                            .finishing-loggias-info__details-image-3 {
-                                left: 10.4em;
-                            }
-                        }
-                    }               
-                }
-
-                &-31:checked {
-                    ~ [id="linoleum-5"]:checked {
-                        ~ .finishing-loggias-info__box {
-                            .finishing-loggias-info__details-box {
-                                .finishing-loggias-info__details-image-5 {
-                                    top: 24.4em;
-                                    left: 4.7em;
-                                    width: 30rem;
-                                    height: 14.4rem;
-                                }
-                            }
-                        }
-                    }
-                }
-
-                &-32:checked {
-                    ~ [id="laminate-1"]:checked {
-                        ~ .finishing-loggias-info__box {
-                            .finishing-loggias-info__details-box {
-                                .finishing-loggias-info__details-image-5 {
-                                    top: 23em;
-                                    left: 6em;
-                                    width: 28.7rem;
-                                    height: 16.3rem;
-                                }
-                            }
-                        }
-                    }
-                }
-
-                &-32:checked {
-                    ~ [id="laminate-2"]:checked {
-                        ~ .finishing-loggias-info__box {
-                            .finishing-loggias-info__details-box {
-                                .finishing-loggias-info__details-image-5 {
-                                    top: 23em;
-                                    left: 6em;
-                                    width: 28.7rem;
-                                    height: 16.3rem;
-                                }
-                            }
-                        }
-                    }
-                }
-
-                &-32:checked {
-                    ~ [id="laminate-3"]:checked {
-                        ~ .finishing-loggias-info__box {
-                            .finishing-loggias-info__details-box {
-                                .finishing-loggias-info__details-image-5 {
-                                    top: 23em;
-                                    left: 6em;
-                                    width: 28.7rem;
-                                    height: 16.3rem;
-                                }
-                            }
-                        }
-                    }
-                }
-
-                &-32:checked {
-                    ~ [id="laminate-4"]:checked {
-                        ~ .finishing-loggias-info__box {
-                            .finishing-loggias-info__details-box {
-                                .finishing-loggias-info__details-image-5 {
-                                    top: 23.1em;
-                                    left: 6em;
-                                    width: 27.5rem;
-                                    height: 16rem;
-                                }
-                            }
-                        }
-                    }
-                }
-
-                &-32:checked {
-                    ~ [id="laminate-5"]:checked {
-                        ~ .finishing-loggias-info__box {
-                            .finishing-loggias-info__details-box {
-                                .finishing-loggias-info__details-image-5 {
-                                    top: 24.4em;
-                                    left: 4.7em;
-                                    width: 30rem;
-                                    height: 14.4rem;
-                                }
-                            }
-                        }
-                    }
-                }
-
-                &-33:checked {
-                    ~ [id="floor-board-1"]:checked {
-                        ~ .finishing-loggias-info__box {
-                            .finishing-loggias-info__details-box {
-                                .finishing-loggias-info__details-image-5 {
-                                    left: 6.2em;
-                                }
-                            }
-                        }
-                    }
-                }
-
-                &-33:checked {
-                    ~ [id="floor-board-5"]:checked {
-                        ~ .finishing-loggias-info__box {
-                            .finishing-loggias-info__details-box {
-                                .finishing-loggias-info__details-image-5 {
-                                    top: 24.4em;
-                                    left: 4.7em;
-                                    width: 30rem;
-                                    height: 14.4rem;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        .container {
-            max-width: 118rem
-        }
-
         &__box {
             max-width: none;
             grid-template-areas:
@@ -2206,19 +2025,40 @@
                 "finishing-loggias_item5 finishing-loggias_details finishing-loggias_item6"
                 "finishing-loggias_price finishing-loggias_price finishing-loggias_price"
                 "finishing-loggias_agreement finishing-loggias_agreement finishing-loggias_agreement";
+            grid-template-columns: 16em 27em 17em;
         }
 
         &__item {
+            z-index: 2;
+
+            &:nth-child(2) {
+                .finishing-loggias-info {
+                    &__title {
+                        text-align: left;
+                    }
+                }
+            }
+
+            &:nth-child(4) {
+                .finishing-loggias-info {
+                    &__title {
+                        text-align: right;
+                    }
+                }
+            }
+
             &--1 {
                 grid-area: finishing-loggias_item1;
             }
 
             &--2 {
                 grid-area: finishing-loggias_item3;
+                transform: translateY(-1.8em);
             }
 
             &--3 {
                 grid-area: finishing-loggias_item5;
+                transform: translateY(-2.1em);
             }
 
             &--4 {
@@ -2227,10 +2067,12 @@
 
             &--5 {
                 grid-area: finishing-loggias_item4;
+                transform: translateY(-1em);
             }
 
             &--6 {
                 grid-area: finishing-loggias_item6;
+                transform: translateY(-2.9em);
             }
         }
 
@@ -2238,10 +2080,10 @@
         &__title-before:before {
             content: '';
             display: inline-block;
-            width: 1.9rem;
-            height: 1.9rem;
-            background-color: $white;
+            width: 1.6rem;
+            height: 1.6rem;
             border-radius: 50%;
+            border: 0.125em solid $orange;
         }
 
         &__title {
@@ -2256,8 +2098,8 @@
 
             &--1 {
                 &:before {                    
-                    top: 2.4rem;
-                    right: -13rem;
+                    top: 1.2rem;
+                    right: -13.2rem;
                     width: 14.9rem;
                     height: 4.9rem;
                     background-image: url("data:image/svg+xml,%3Csvg width='149' height='49' viewBox='0 0 149 49' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.5 1.00022C1.5 0.000215612 93 7.50022 148.5 48.5002' stroke='%23F26422'/%3E%3C/svg%3E");
@@ -2266,8 +2108,8 @@
 
             &--2 {
                 &:before {                    
-                    top: 2.2rem;
-                    right: -7.4rem;
+                    top: 1.7rem;
+                    right: -7.9rem;
                     width: 9.5rem;
                     height: 2.1rem;
                     background-image: url("data:image/svg+xml,%3Csvg width='96' height='23' viewBox='0 0 96 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.5 1.50018C17.3333 0.500177 59.9 3.20018 95.5 22.0002' stroke='%23F26422'/%3E%3C/svg%3E%0A");
@@ -2276,9 +2118,9 @@
 
             &--3 {
                 &:before {                    
-                    top: 2.4rem;
-                    right: -7.9rem;
-                    width: 9.5rem;
+                    top: 1.8rem;
+                    right: -7.3rem;
+                    width: 9rem;
                     height: 4.7rem;
                     background-image: url("data:image/svg+xml,%3Csvg width='99' height='45' viewBox='0 0 99 45' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.5 1C24.1667 5 76.8 19.3 98 44.5' stroke='%23F26422'/%3E%3C/svg%3E%0A");
                 }
@@ -2286,9 +2128,9 @@
 
             &--4 {
                 &:before {                    
-                    top: 2.4rem;
-                    left: -13.8rem;
-                    width: 16.3rem;
+                    top: 0.7rem;
+                    left: -11.5rem;
+                    width: 13.4rem;
                     height: 12.5rem;
                     background-image: url("data:image/svg+xml,%3Csvg width='163' height='125' viewBox='0 0 163 125' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.5 124.5C15 98.3333 67.7 37 162.5 1' stroke='%23F26422'/%3E%3C/svg%3E%0A");
                 }
@@ -2296,9 +2138,9 @@
 
             &--5 {
                 &:before {                    
-                    top: 2.1rem;
-                    left: -23rem;
-                    width: 25.1rem;
+                    top: 1.5rem;
+                    left: -20.7rem;
+                    width: 22.4rem;
                     height: 9.5rem;
                     background-image: url("data:image/svg+xml,%3Csvg width='252' height='96' viewBox='0 0 252 96' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.5 95.5C28.8333 75.1667 118.7 27.7 251.5 0.5' stroke='%23F26422'/%3E%3C/svg%3E%0A");
                 }
@@ -2306,8 +2148,8 @@
 
             &--6 {
                 &:before {                    
-                    top: 2.1rem;
-                    left: -17.6rem;
+                    top: 1.9rem;
+                    left: -18.5rem;
                     width: 20.3rem;
                     height: 5.3rem;
                     background-image: url("data:image/svg+xml,%3Csvg width='205' height='55' viewBox='0 0 205 55' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 54C18 41.3333 82.5 13 204.5 1' stroke='%23F26422'/%3E%3C/svg%3E%0A");
@@ -2317,19 +2159,19 @@
             &-after {    
                 &--1 {
                     &:after {                        
-                        transform: translate(0.7em, 0.06em);
+                        transform: translate(3.7em, 0.16em);
                     }
                 }
 
                 &--2 {
                     &:after {
-                        transform: translate(0.9em, 0.06em);
+                        transform: translate(4.3em, 0.16em);
                     }
                 }
 
                 &--3 {
                     &:after {
-                        transform: translate(0.7em, 0.06em);
+                        transform: translate(3.5em, 0.16em);
                     }
                 }
             }
@@ -2337,27 +2179,27 @@
             &-before {
                 &--1 {
                     &:before {                        
-                        transform: translate(-1.5em, 0.06em);
+                        transform: translate(-5.5em, 0.16em);
                     }
                 }
 
                 &--2 {
                     &:before {                        
-                        transform: translate(-0.9em, 0.06em);
+                        transform: translate(-4.1em, 0.16em);
                     }
                 }
 
                 &--3 {
                     &:before {                        
-                        transform: translate(-1.5em, 0.06em);
+                        transform: translate(-5.8em, 0.16em);
                     }
                 }
             }
 
             &-circle {
                 position: absolute;
-                width: 1.1rem;
-                height: 1.1rem;
+                width: 0.9rem;
+                height: 0.9rem;
                 background-color: $orange;
                 border-radius: 50%;
                 z-index: 100;
@@ -2365,43 +2207,43 @@
                 &:before {
                     content: '';
                     position: absolute;
-                    top: -0.7rem;
-                    left: -0.7rem;
-                    right: -0.7rem;
-                    bottom: -0.7rem;
+                    top: -0.6rem;
+                    left: -0.6rem;
+                    right: -0.6rem;
+                    bottom: -0.6rem;
                     background-color: rgba(242, 100, 34, 0.3);
                     border-radius: 50%;
                     z-index: 100;
                 }
 
                 &--1 {
-                    top: 3em;
-                    right: -5.7em;
+                    top: 3.3em;
+                    right: -8.4em;
                 }
 
                 &--2 {
-                    top: 1.6em;
-                    right: -3.4em;
+                    top: 2em;
+                    right: -5em;
                 }
 
                 &--3 {
-                    top: 2.6em;
-                    right: -3.7em;
+                    top: 3.2em;
+                    right: -4.9em;
                 }
 
                 &--4 {
-                    top: 6.1em;
-                    left: -6.1em;
+                    top: 7.9em;
+                    left: -7.4em;
                 }
 
                 &--5 {
-                    top: 4.6em;
-                    left: -9.9em;
+                    top: 6.8em;
+                    left: -13.3em;
                 }
 
                 &--6 {
-                    top: 2.9em;
-                    left: -7.7em;
+                    top: 4.4em;
+                    left: -11.7em;
                 }
             }
         }
@@ -2409,36 +2251,6 @@
         &__details {
             &-box {
                 grid-area: finishing-loggias_details;
-            }
-
-            &-image {
-                &-1 {
-                    left: 2.5em;
-                }
-
-                &-2 {
-                    left: -1.4em;
-                }
-
-                &-3 {
-                    left: 10.7em;
-                }
-
-                &-4 {
-                    left: 5.4em;
-                }
-
-                &-5 {
-                    left: 6em;
-                }
-
-                &-6 {
-                    left: 2.8em;
-                }
-
-                &-7 {
-                    left: 2.8em;
-                }
             }
         }
 
@@ -2453,31 +2265,37 @@
                 grid-area: finishing-loggias_price;
                 display: flex;
                 align-items: flex-end;
+                margin-top: -4em;
                 margin-bottom: 2.188em;
+                max-width: none;
+                width: 100%;
             }
 
             &-box {
                 max-width: 19.225em;
                 padding: 0.85em 2.225em;
+                order: 2;
+                margin-left: 3em;
+                margin-right: 2em;
             }
         }
 
         &__installment {
             &-box {
                 display: block;
-                max-width: 22.6em;
-                margin-right: 6.375em;
+                max-width: 16.6em;
+                order: 3;
             }
 
             &-text,
             &-description {
-                font-size: 2.4rem;
+                font-size: 1.8rem;
             }
 
             &-text {
                 margin-bottom: 0.563em;
                 text-transform: uppercase;
-                font-weight: 900;
+                font-weight: 700;
                 letter-spacing: 0.04em;
             }
         }
@@ -2486,15 +2304,10 @@
             max-width: 36.8rem;
             display: block;
             margin-right: 0;
+            order: 1;
 
             &__box {
-                min-width: 23.025em;
                 margin-bottom: 0.688em;
-            }
-
-            &__input,
-            &__button {
-                font-size: 1.9rem;
             }
 
             &__input {
@@ -2511,7 +2324,7 @@
 
         &__agreement {
             grid-area: finishing-loggias_agreement;
-            max-width: 77.3em;
+            max-width: 63.3em;
             margin-left: auto;
             margin-right: auto;
             font-size: 1.4rem;
