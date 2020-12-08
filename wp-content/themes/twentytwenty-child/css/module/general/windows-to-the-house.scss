@@ -55,7 +55,7 @@
             max-width: 34.7rem;
         }
 
-        @include _994 {
+        @include _1200 {
             max-width: 44.5rem;
             display: flex;
             flex-direction: column;
@@ -65,7 +65,7 @@
         &--balcony {
             margin-left: auto;
 
-            @include _994 {
+            @include _1200 {
                 min-height: 45rem;
                 margin-right: 1.6em;
             }
