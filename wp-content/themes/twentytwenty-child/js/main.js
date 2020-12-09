@@ -292,6 +292,7 @@ $(document).ready(function () {
     }
   });
 
+
   // Скрипт для табов блока installment-plan
   $('.installment-plan__wrapper .tab').on('click', function (event) {
     var id = $(this).attr('data-id');
@@ -917,5 +918,37 @@ $(document).ready(function () {
     checkWidth10(); // проверит при изменении размера окна клиента
   });
 
-});
+  // Скрипт для слайдера блока installment-plan__slider-new
+  function checkWidth11() {
+    var windowWidth = $('body').innerWidth(),
+      elem = $(".installment-plan__slider-new");
+    if (windowWidth < 1200) {
 
+      elem.addClass('owl-carousel');
+      
+      $('.installment-plan__slider-new').owlCarousel({
+        items: 1,
+        dots: true,
+        dotsClass: ['pagination-box'],
+        dotClass: ['pagination'],
+        margin: 55,
+        responsive: {
+          768: {
+            items: 2,
+            margin: 0,
+          }
+        }
+      });
+    }
+    else {
+      elem.trigger('destroy.owl.carousel').removeClass('owl-carousel owl-loaded');
+    }
+  }
+
+  checkWidth11(); // проверит при загрузке страницы
+
+  $(window).resize(function () {
+    checkWidth11(); // проверит при изменении размера окна клиента
+  });
+
+});
