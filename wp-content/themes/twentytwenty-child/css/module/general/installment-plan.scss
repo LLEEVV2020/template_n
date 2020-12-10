@@ -160,9 +160,58 @@
 
     /* .installment-plan__slider */
 
-    &__slider {
+    &__slider,
+    &__slider-new {
         & .pagination.active {
             background-color: #17a1e3;
+        }
+    }
+
+    &__slider-new {
+        .installment-plan__item {
+            @include _1200 {
+                transition: all 0.3s;
+                padding-top: 28rem;
+                padding-bottom: 2.5rem;
+                background-position-y: 2.5rem;
+                min-height: 52.2rem;
+                &:hover {
+                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+                    border-radius: 6px;
+                }
+            }
+        }
+
+        @include _1200 {
+            display: flex;
+        }
+
+        .installment-plan__btn {
+            background-color: #fff;
+            color: $orange;
+            border: 0.1rem solid $orange;
+            border-radius: 0.6rem;
+            max-width: 24.7rem;
+            font-size: 1.6rem;
+            min-height: 4rem;
+            line-height: 1.4rem;
+
+            @include _768 {
+                max-width: 24.2rem;
+            }
+
+            @include _1200 {
+                transition: all 0.3s;
+
+                &:hover {
+                    background-color: $orange;
+                    color: #fff;
+                }
+            }
+        }
+
+        .installment-plan__installment-plan {
+            margin-bottom: 2.5rem;
         }
     }
 
