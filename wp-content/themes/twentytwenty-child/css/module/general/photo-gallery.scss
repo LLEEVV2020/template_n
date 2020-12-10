@@ -1,6 +1,34 @@
 @import '../../base/all/var';
 
 .photo-gallery {
+    &-executed-works {
+        padding-bottom: 7rem;
+
+        .container {
+            width: calc(100% - 4rem);
+        }
+
+        .text {
+            text-align: left;
+        }
+
+        .navigation {
+            &-left,
+            &-right {
+                display: none;
+            }
+        }
+
+        .photo-gallery {
+            &__slider-box {
+                img {
+                    height: 20.5rem;
+                }
+            }
+        }
+
+    }
+
     .title {
         margin-bottom: 0.963em;
     }
@@ -30,6 +58,36 @@
     }
 
     @media (min-width: 768px) {
+        &-executed-works {
+            padding-bottom: 5.5rem;
+
+            .text {
+                max-width: 71rem;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 3rem;
+
+                .block {
+                    display: block;
+                }
+            }
+
+            .navigation {
+                &-left,
+                &-right {
+                    display: block;
+                }
+            }
+
+            .photo-gallery {
+                &__slider-box {
+                    img {
+                        height: 38.2rem;
+                    }
+                }
+            }
+        }
+
         &__slider-box {
             margin-bottom: 1.063em;
         }
@@ -90,6 +148,14 @@
     }
 
     @media (min-width: 1200px) {
+        &-executed-works {
+            padding-bottom: 6rem;
+
+            .text {
+                max-width: 80rem;
+            }
+        }
+
         &__slider-box,
         &__previews {
             max-width: 79.6rem;
