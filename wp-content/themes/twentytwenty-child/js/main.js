@@ -13,7 +13,7 @@ $(document).ready(function () {
   });
 
   // Скрипт для слайдера блока right-balcony
-  $('.left-balcony-slider').owlCarousel({
+  $('.right-balcony__slider').owlCarousel({
     items: 1,
     merge: true,
     margin: 10,
@@ -21,10 +21,10 @@ $(document).ready(function () {
     lazyLoad: true,
     nav: true,
     dots: true,
-    navContainerClass: ['left-balcony-slider__nav'],
-    navClass: ['left-balcony-slider__left', 'left-balcony-slider__right'],
-    dotsClass: ['left-balcony-slider__dots'],
-    dotClass: ['left-balcony-slider__dot'],
+    navContainerClass: ['navigation'],
+    navClass: ['navigation-left', 'navigation-right'],
+    dotsClass: ['pagination-box'],
+    dotClass: ['pagination'],
     navText: ['']
   });
 
