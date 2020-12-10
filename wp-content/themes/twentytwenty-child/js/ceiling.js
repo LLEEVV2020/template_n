@@ -143,16 +143,16 @@ $('.hot-promotions__slider').owlCarousel({
     dotClass: ['pagination'],
     nav: true,
     responsive: {
-        768: {
-            margin: 38,
-            autoWidth: true,
-            items: 2,
-        },
-        1200: {
-            autoWidth: true,
-            margin: 33,
-            items: 3,
-        }
+      768: {
+        margin: 15,
+        autoWidth: true,
+        items: 2,
+      },
+      1200: {
+        autoWidth: true,
+        margin: 20,
+        items: 3,
+      }
     }
 });
 
