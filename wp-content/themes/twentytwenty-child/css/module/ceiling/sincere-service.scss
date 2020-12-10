@@ -67,7 +67,7 @@
             background-image: url(/wp-content/themes/twentytwenty-child/img/ceiling/sincere-service-bg-l.webp);
             background-size: cover;
             padding-top: 3.85em;
-            padding-bottom: 5.7em;
+            padding-bottom: 4em;
             margin-bottom: 1.9em;
         }
     }
@@ -211,7 +211,7 @@
         }
 
         @include _1200 {
-            margin-bottom: 2.4em;
+            margin-bottom: 1.1em;
         }
     }
 
@@ -245,7 +245,11 @@
         @include _1200 {
             width: 33.33%;
             padding-right: 1em;
-            margin-bottom: 1.3em;
+            margin-bottom: 0;
+            
+            &:nth-child(-n+3) {
+                margin-bottom: 1.7em;
+            }
         }
     }
 
@@ -260,7 +264,7 @@
         }
 
         @include _1200 {
-            margin-bottom: 1.2em;
+            margin-bottom: 0.9em;
         }
     }
 
@@ -274,7 +278,6 @@
         }
 
         @include _1200 {
-            line-height: 1.2em;
         }
     }
 }
