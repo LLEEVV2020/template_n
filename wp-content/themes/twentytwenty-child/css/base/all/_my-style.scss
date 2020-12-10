@@ -136,6 +136,13 @@
     }
 }
 
+.t-24-30-30 {
+    font-size: 2.4rem;
+    @include _768 {
+        font-size: 3rem;
+    }
+}
+
 .fw3 {
     font-weight: 300;
 }
