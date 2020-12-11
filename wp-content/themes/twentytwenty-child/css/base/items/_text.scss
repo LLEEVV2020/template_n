@@ -1,4 +1,5 @@
 @import "../../base/all/var";
+@import "../../base/all/mixin";
 
 .text-along {
     font-size: 1.125em;
@@ -257,13 +258,11 @@
 }
 
 .ceilings-text {
-    .ceilings-text__text {
-        @media (max-width: 767px) {
-            font-weight: 700;
-        }
-    }
     .ceilings-text__title {
-        margin-bottom: 0.6em;
+        margin-bottom: 2.5rem;
+        @include _1200 {
+            margin-bottom: 3rem;
+        }
     }
 }
 
