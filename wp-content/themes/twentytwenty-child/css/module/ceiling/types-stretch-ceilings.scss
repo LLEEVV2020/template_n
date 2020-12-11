@@ -12,16 +12,25 @@
             max-width: 15em;
             margin-left: auto;
             margin-right: auto;
+            line-height: 1.2;
         }
+    }
+    
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 21.6em;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     &__item {
-        max-width: 17em;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 1.125em;
-        padding-bottom: 1.188em;
-        border-radius: 0.625em;
+        display: inline-block;
+        max-width: 10.313em;
+        margin-bottom: 0.825em;
+        padding-bottom: 0.888em;
+        border-radius: 0.325em;
         border: 0.063em solid #E6E6E6;
         transition: 0.2s box-shadow ease,
                     0.2s transform ease;
@@ -53,8 +62,8 @@
     &__image {
         display: block;
         width: 100%;
-        border-top-left-radius: 0.625em;
-        border-top-right-radius: 0.625em;
+        border-top-left-radius: 0.325em;
+        border-top-right-radius: 0.325em;
 
         &-box {
             position: relative;
@@ -66,8 +75,8 @@
                 width: 100%;
                 height: 100%;
                 background-color: rgba(255, 255, 255, 0.7);
-                border-top-left-radius: 0.625em;
-                border-top-right-radius: 0.625em;
+                border-top-left-radius: 0.325em;
+                border-top-right-radius: 0.325em;
             }
         }
     }
@@ -78,15 +87,15 @@
         transform: translate(-50%, -50%);
         text-decoration: none;
         color: inherit;
-        font-size: 1.5em;
+        font-size: 1.125em;
     }
 
     &__title {
         position: relative;
-        margin-top: 1.288em;
-        margin-bottom: 0.663em;
-        padding-bottom: 1.188em;
-        font-size: 1.5em;
+        margin-top: 0.688em;
+        margin-bottom: 0.763em;
+        padding-bottom: 0.788em;
+        font-size: 1em;
         text-align: center;
 
         &:after {
@@ -95,7 +104,7 @@
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
-            width: 3.275em;
+            width: 4.875em;
             height: 0.063em;
             background-color: $darkGray;
         }
@@ -108,18 +117,19 @@
     }
 
     &__price {
-        font-size: 2.5em; 
+        font-size: 1.5em; 
         font-weight: 900;
         text-align: center;
     }
 
-    &__price:before,
-    &__price:after {
+    &__price:before {
         font-size: 0.5em;
     }
 
     @media (min-width: 768px) {
         .title {
+            margin-bottom: 0.963em;
+
             .orange {
                 display: inline;
             }
@@ -130,24 +140,42 @@
         }
 
         &__list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            max-width: 35.4em;
-            margin-left: auto;
-            margin-right: auto;
+            display: block;
+            max-width: 44.1em;
         }
 
         &__item {
-            margin-left: 0;
-            margin-right: 0;
-            margin-bottom: 1.925em;
+            max-width: 14.063em;
+            margin-bottom: 0.825em;
+
+            &:first-child,
+            &:nth-child(2),
+            &:nth-child(4),
+            &:nth-child(5),
+            &:nth-child(7) {
+                margin-right: 0.663em;
+            }
+        }
+
+        &__title {
+            margin-top: 1.288em;
+            margin-bottom: 0.963em;
+            padding-bottom: 1.188em;
+            font-size: 1.125em;
+
+            &:after {
+                width: 3.675em;
+            }
+        }
+
+        &__price {
+            font-size: 2em;
         }
     }
 
     @media (min-width: 1200px) {
         .title {
-            margin-bottom: 1.463em;
+            margin-bottom: 0.763em;
 
             &--favorable-stretch {
                 max-width: 27em;
@@ -160,6 +188,24 @@
 
         &__item {
             margin-bottom: 1.225em;
+
+            &:first-child,
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4),
+            &:nth-child(5),
+            &:nth-child(6),
+            &:nth-child(7) {
+                margin-right: 0.963em;
+            }
+
+            &:nth-child(4) {
+                margin-right: 0;
+            }
+        }
+
+        &__title {
+            margin-top: 1.388em;
         }
     }
 }
