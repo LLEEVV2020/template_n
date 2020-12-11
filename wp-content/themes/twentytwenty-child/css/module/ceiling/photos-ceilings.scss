@@ -35,8 +35,9 @@
     }
 
     .button {
+        max-width: 25.563em;
         min-height: 2.5em;
-        line-height: 1.5;
+        line-height: 1.9;
         text-decoration: none;
         text-align: center;
         letter-spacing: 0;
@@ -135,7 +136,7 @@
         }
 
         .button {
-            max-width: 21.663em;
+            max-width: 19.125em;
             min-height: 2.5em;
             font-size: 1em;
         }
@@ -153,23 +154,16 @@
         }
 
         .title {
-            margin-bottom: 1.363em;
+            margin-bottom: 0.763em;
         }
 
         &__list {
             max-width: none;
-            margin-bottom: 2.325em;
+            margin-bottom: 0.825em;
         }
 
         &__image {
-            max-width: 16.888em;
-        }
-
-        .button {
-            max-width: 29.663em;
-            min-height: 2.7em;
-            line-height: 1.7;
-            font-size: 1.188em;
+            max-width: 14.063em;
         }
     }
 }
