@@ -44,7 +44,7 @@
 
     &__sizes {
         position: absolute;
-        bottom: 0.3em;
+        bottom: 0;
         right: 0;
         padding: 0.45em 0.85em;
         font-size: 0.875em;
@@ -156,6 +156,10 @@
             display: flex;
             max-width: 59.6em;
             justify-content: space-between;
+        }
+
+        &__sizes {
+            bottom: 0.3em;
         }
     }
 }
