@@ -49,12 +49,12 @@
         @include _768 {
             line-height: 1.1;
             letter-spacing: 0.03em;
-            margin-bottom: 1.15em;
+            margin-bottom: 0.95em;
         }
 
         @include _1200 {
             line-height: 1.2;
-            margin-bottom: 0.9em;
+            margin-bottom: 0.8em;
         }
     }
 
@@ -73,7 +73,7 @@
             pointer-events: none;
 
             @include _768 {
-                background: linear-gradient(90deg, rgba(246, 246, 246, 0) 0%, #F6F6F6 100%);
+                background: linear-gradient(90deg, rgba(246, 246, 246, 0) 0%, #f6f6f6 100%);
             }
 
             @include _1200 {
@@ -104,8 +104,8 @@
         align-items: center;
 
         @include _768 {
-            height: 4.8rem;
-            width: 22.8rem;
+            height: 4.3rem;
+            width: 22.6rem;
         }
     }
 
@@ -113,6 +113,11 @@
     &__item-text {
         @include _max768 {
             width: 10.2rem;
+        }
+
+        @include _768 {
+            width: auto;
+            white-space: nowrap;
         }
     }
 
@@ -152,11 +157,13 @@
 
             @include _768 {
                 font-size: 1.6rem;
+                text-transform: initial;
             }
         }
 
         @include _768 {
-            font-size: 2.4rem;
+            font-size: 1.8rem;
+            text-transform: uppercase;
         }
     }
 
@@ -194,7 +201,8 @@
         background: #9a9a9a;
         color: #fff;
         font-size: 1rem;
-        padding: 0 2em;
+        padding: 0 2.4rem;
+        letter-spacing: 0.03em;
 
         @include _768 {
             font-size: 1.6rem;
@@ -208,15 +216,16 @@
             height: 3.6rem;
 
             @include _768 {
-                height: 4.5rem;
+                height: 3.9rem;
             }
+
             @include _1200 {
                 height: 5rem;
             }
         }
 
         @include _768 {
-            font-size: 2.4rem;
+            font-size: 1.8rem;
         }
     }
 }
