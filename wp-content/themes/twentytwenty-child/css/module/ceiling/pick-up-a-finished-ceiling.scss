@@ -23,13 +23,16 @@
 
     &__title {
         margin-bottom: 1.3em;
+        line-height: 1.2;
 
         @include _768 {
             margin-bottom: 1.4em;
+            line-height: 1.1;
         }
 
         @include _1200 {
-            margin-bottom: 1.3em;
+            margin-bottom: 0.75em;
+            line-height: 1.25;
         }
     }
 
@@ -63,7 +66,7 @@
 
         @include _1200 {
             padding: 0;
-            margin-bottom: 3.45em;
+            margin-bottom: 1.6em;
         }
     }
 
@@ -129,7 +132,7 @@
                 &::before {
                     width: 2.1rem;
                     height: 2.1rem;
-                    bottom: -0.55em;
+                    bottom: -1.3rem;
                 }
             }
         }
@@ -145,8 +148,8 @@
         }
 
         @include _1200 {
-            min-height: 7rem;
-            font-size: 2.4rem;
+            min-height: 6rem;
+            font-size: 1.8rem;
         }
     }
 
@@ -184,8 +187,8 @@
         }
 
         @include _1200 {
-            max-width: 56.2rem;
-            padding: 2.5em 1em 2.1em;
+            max-width: 46.7rem;
+            padding: 3rem;
         }
     }
 
@@ -204,8 +207,8 @@
 
         @include _1200 {
             max-width: 100%;
-            font-size: 2.4rem;
-            margin-bottom: 1.4em;
+            font-size: 1.8rem;
+            margin-bottom: 1.9em;
         }
     }
 
@@ -217,16 +220,15 @@
         margin-bottom: 1.3em;
 
         @include _768 {
-            width: 27.4rem;
+            width: 100%;
             height: 21.6rem;
             display: block;
             margin: 0 auto 1.6em;
         }
 
         @include _1200 {
-            width: 51.3rem;
-            height: 40.4rem;
-            margin-bottom: 1.3em;
+            height: 27.3rem;
+            margin-bottom: 1.9em;
         }
     }
 
@@ -241,6 +243,7 @@
         }
 
         @include _1200 {
+            margin: 0 3rem;
             margin-bottom: 1em;
         }
     }
@@ -256,11 +259,10 @@
         }
 
         @include _1200 {
-            font-size: 6.4rem;
+            font-size: 4rem;
             margin-left: 0;
             max-width: 3.6em;
             width: 100%;
-            text-align: center;
         }
     }
 
@@ -345,7 +347,6 @@
 
         @include _1200 {
             font-size: 1.6rem;
-            margin-right: 1.2em;
             padding: 0.6em 0.9em 0.3em 0.8em;
         }
     }
@@ -356,7 +357,7 @@
         padding: 0 0.3em;
 
         @include _1200 {
-            padding: 0 1.2em;
+            padding: 0;
         }
     }
 
@@ -382,29 +383,27 @@
         }
 
         @include _1200 {
-            font-size: 1.9rem;
+            font-size: 1.8rem;
             max-width: 15em;
+            font-weight: 700;
+            letter-spacing: 0.04em;
         }
     }
 
     /* .pick-up-a-finished-ceiling__item-btn */
 
     &__item-btn {
+        max-width: 15.4rem;
+        height: 100%;
         margin-top: auto;
-        margin-bottom: 0.2em;
-        text-decoration: none;
-        min-width: 13.4rem;
-        text-align: center;
-        line-height: 1.5em;
 
         @include _768 {
-            margin-bottom: 0.4em;
-            min-width: 16.6rem;
+            max-width: 16.9rem;
+            margin-right: 0;
         }
 
         @include _1200 {
-            margin-bottom: 0.2em;
-            min-width: 23.2rem;
+            max-width: 18.5rem;
         }
     }
 }
