@@ -11,14 +11,13 @@
 
     &__title {
         line-height: 1.2em;
-        margin-bottom: 1em;
+        margin-bottom: 2.5rem;
 
         @include _768 {
-            margin-bottom: 1.1em;
+            margin-bottom: 3rem;
         }
 
         @include _1200 {
-            margin-bottom: 1.35em;
         }
     }
 
@@ -26,17 +25,16 @@
 
     &__block-video {
         height: 19rem;
-        margin-bottom: 1.6em;
+        margin-bottom: 2.5rem;
         position: relative;
 
         @include _768 {
             height: 40rem;
-            margin-bottom: 2.1em;
+            margin-bottom: 3rem;
         }
 
         @include _1200 {
-            height: 64.8rem;
-            margin-bottom: 3.5em;
+            height: 54.2rem;
         }
     }
 
@@ -46,26 +44,18 @@
         left: 0px;
         width: 100%;
         height: 100%;
+        border: none;
     }
 
     /* .installation-ceiling-video__btn */
 
     &__btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 4rem;
-        text-decoration: none;
-        max-width: 16.5rem;
-        margin: 0 auto;
 
         @include _768 {
-            max-width: 22.6rem;
+            max-width: 30.6rem;
         }
 
         @include _1200 {
-            min-height: 5rem;
-            max-width: 37rem;
         }
     }
 }
