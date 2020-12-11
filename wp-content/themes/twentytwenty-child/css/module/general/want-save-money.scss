@@ -414,8 +414,22 @@
                 } 
             }
 
+            &__glad-see {
+                max-width: 17.7em;
+            }
+
             &__free {
-                margin-bottom: 3em;
+                margin-bottom: 0.825em;
+            }
+
+            &__warning {
+                max-width: 15em;
+                margin-bottom: 1.125em;
+                font-weight: 700;
+            }
+
+            &__button {
+                padding: 0.532em 1.222em;
             }
         }
 
@@ -423,12 +437,16 @@
             .want-save-money {
                 &__manufacture {
                     &-we-ourselves {
-                        margin-bottom: 1.575em;
+                        margin-bottom: 1.075em;
                     }
                 }
 
                 &__free {
-                    margin-bottom: 6.2em;
+                    margin-bottom: 1.663em;
+                }
+
+                &__warning {
+                    margin-bottom: 4.563em;
                 }
             }
         }
@@ -436,7 +454,12 @@
         @media (min-width: 1200px) {
             .want-save-money {
                 &__free {
-                    margin-bottom: 6em;
+                    margin-bottom: 1.363em;
+                }
+
+                &__button {
+                    padding-left: 2.572em;
+                    padding-right: 2.572em;
                 }
             }
         }
