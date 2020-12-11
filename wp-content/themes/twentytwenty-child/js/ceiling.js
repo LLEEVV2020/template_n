@@ -30,7 +30,7 @@ function saleOnly7DaysSlider(itemName) {
         responsive: {
             768: {
                 items: 2,
-                margin: 58
+                margin: 15
             }
         }
     });
