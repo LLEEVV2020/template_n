@@ -195,22 +195,23 @@
             padding: 0.3em 0.7em 0.2em;
             font-size: 2rem;
         }
-
-
-
     }
 
     &--ceilings {
         .without-overpayment {
+            &__title {
+                margin-bottom: 1.1em;
+            }
+
             &__box {
-                margin-bottom: 1em;
+                margin-bottom: 0.4em;
             }
 
             &__image {
                 background-image: url('/wp-content/themes/twentytwenty-child/img/sprite3.png');
                 background-repeat: no-repeat;
                 background-size: 118.125em 436.813em;
-                font-size: 0.9rem;
+                font-size: 0.8rem;
 
                 &--1 {
                     width: 5.938em;
@@ -244,6 +245,10 @@
                     font-size: 0.775em;
                 }
 
+                &__image {
+                    font-size: 0.9rem;
+                }
+
                 &__price {
                     font-size: 1.250em;
 
@@ -259,6 +264,33 @@
             .without-overpayment {
                 &__list {
                     max-width: 29em;
+                }
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .without-overpayment {
+                &__title {
+                    font-size: 4rem;
+                }
+
+                &__list {
+                    max-width: none;
+                }
+
+                &__box {
+                    margin-bottom: 1.5em;
+                }
+
+                &__image {
+                    font-size: 1.1rem;
+                }
+
+                &__price {
+                    &-box {
+                        padding: 0.8em 0.6em 0.3em;
+                        font-size: 1.8rem;
+                    }
                 }
             }
         }
