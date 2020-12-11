@@ -1,17 +1,17 @@
 @import '../../base/all/var';
 
 .buy-correctly {
-    &--main {
-        .buy-correctly {
-            &-list {
-                margin-bottom: 1.5em;
+    // &--main {
+    //     .buy-correctly {
+    //         &-list {
+    //             margin-bottom: 1.5em;
 
-                &__block {
-                    display: block;
-                }
-            }                
-        }
-    }
+    //             &__block {
+    //                 display: block;
+    //             }
+    //         }                
+    //     }
+    // }
 
     .title {
         margin-bottom: 1.063em;
@@ -58,17 +58,24 @@
         font-size: 1em;
     }
 
-    @media (min-width: 500px) {
-        &--main {
-            .buy-correctly {
-                &-list {
-                    &__block {
-                        display: inline;
-                    }
-                }                
-            }
+    &--ceilings {
+        .title {
+            text-align: left;
+            max-width: none;
         }
     }
+
+    // @media (min-width: 500px) {
+    //     &--main {
+    //         .buy-correctly {
+    //             &-list {
+    //                 &__block {
+    //                     display: inline;
+    //                 }
+    //             }                
+    //         }
+    //     }
+    // }
 
     @media (min-width: 600px) {
         .title {
@@ -77,18 +84,18 @@
     }
 
     @media (min-width: 768px) {
-        &--main {
-            .buy-correctly {
-                &-list {
-                    max-width: 40em;
-                }
+        // &--main {
+        //     .buy-correctly {
+        //         &-list {
+        //             max-width: 40em;
+        //         }
 
-                &__text {
-                    max-width: 35em;
-                    font-size: 1.125em;
-                }              
-            }
-        }
+        //         &__text {
+        //             max-width: 35em;
+        //             font-size: 1.125em;
+        //         }              
+        //     }
+        // }
 
         .container {
             width: calc(100% - 5.8rem);
@@ -107,31 +114,37 @@
                 }
             }
         }
-    }
 
-    @media (min-width: 900px) {
-        &--main {
-            .buy-correctly {
-                &__text {
-                    max-width: 45em;
-                }              
-            }
-        }
-    }
-
-    @media (min-width: 1200px) {
-        &--main {
+        &--ceilings {
             .title {
-                max-width: none;
-                white-space: nowrap;
-            }
-
-            .buy-correctly {
-                &-list {
-                    margin-bottom: 2.125em;
-                    max-width: none;
-                }
+                text-align: center;
             }
         }
     }
+
+    // @media (min-width: 900px) {
+    //     &--main {
+    //         .buy-correctly {
+    //             &__text {
+    //                 max-width: 45em;
+    //             }              
+    //         }
+    //     }
+    // }
+
+    // @media (min-width: 1200px) {
+    //     &--main {
+    //         .title {
+    //             max-width: none;
+    //             white-space: nowrap;
+    //         }
+
+    //         .buy-correctly {
+    //             &-list {
+    //                 margin-bottom: 2.125em;
+    //                 max-width: none;
+    //             }
+    //         }
+    //     }
+    // }
 }
