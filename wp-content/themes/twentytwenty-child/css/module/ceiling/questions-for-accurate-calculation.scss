@@ -12,33 +12,24 @@
 
     &__title {
         line-height: 1.2em;
-        margin-bottom: 0.75em;
+        margin-bottom: 3rem;
 
         @include _768 {
             line-height: 1.1em;
             max-width: 20em;
-            margin: 0 auto 0.4em;
+            margin: 0 auto 3rem;
         }
 
         @include _1200 {
             line-height: 1.2em;
             max-width: 100%;
-            margin-bottom: 0.7em;
         }
     }
 
     /* .questions-for-accurate-calculation__subtitle */
 
     &__subtitle {
-        margin-bottom: 1.6em;
-
-        @include _768 {
-            margin-bottom: 1.8em;
-        }
-
-        @include _1200 {
-            margin-bottom: 2.4em;
-        }
+        margin-bottom: 3rem;
     }
 
     /* .questions-for-accurate-calculation__box-btn */
@@ -122,17 +113,9 @@
     }
 
     /* .calculation-form__title */
-
+ 
     &__title {
-        margin-bottom: 2.3em;
-
-        @include _768 {
-            margin-bottom: 1.75em;
-        }
-
-        @include _1200 {
-            margin-bottom: 2.35em;
-        }
+        margin-bottom: 3rem;
     }
 
     /* .calculation-form__box */
@@ -141,14 +124,13 @@
         margin-bottom: 2.35em;
 
         & input:checked+.calculation-form__label {
-            color: $orange;
 
             & .calculation-form__circl {
                 border: 0.15em solid $orange;
             }
 
-            @include _1200 {
-                font-weight: 700;
+            & .calculation-form__icon {
+                fill: $orange;
             }
         }
 
@@ -179,14 +161,15 @@
     /* .calculation-form__circl */
 
     &__circl {
-        display: block;
-        width: 8.6rem;
-        height: 8.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 8.5rem;
+        height: 8.5rem;
         border-radius: 50%;
-        background-color: $yellow;
         margin: 0 auto;
         margin-bottom: 1em;
-        border: 0.15em solid $yellow;
+        border: 0.15em solid #D0D0D0;
 
         @include _768 {
             width: 10.2rem;
@@ -195,42 +178,31 @@
         }
 
         @include _1200 {
-            width: 13.8rem;
-            height: 13.8rem;
+            width: 13.4rem;
+            height: 13.4rem;
             margin-bottom: 1.25em;
+
+            &:hover {
+                border: 0.15em solid $orange;
+                
+                & .calculation-form__icon {
+                    fill: $orange;
+                }
+            }
         }
     }
 
     /* .calculation-form__icon */
 
     &__icon {
-        height: 4.7em;
-        width: 3.6em;
-
-        @include _768 {
-            width: 3.3em;
-        }
+        height: 1em;
+        width: 1em;
+        font-size: 3em;
+        line-height: 0;
+        fill: #D0D0D0;
 
         @include _1200 {
-            width: 3.6em;
-            height: 5.3em;
-        }
-    }
-
-    &__box--square {
-        & .calculation-form__icon {
-            height: 5.4em;
-            width: 3.3em;
-
-            @include _768 {
-                height: 5em;
-                width: 3em;
-            }
-
-            @include _1200 {
-                width: 3.5em;
-                height: 5.5em;
-            }
+            font-size: 4em;
         }
     }
 
@@ -280,7 +252,7 @@
         @include _1200 {
             display: inline-block;
             font-size: 1.9rem;
-            margin: 0 1em 0 10.05em;
+            margin: 0 1em 0 6em;
             max-width: 36.7rem;
         }
     }
@@ -288,8 +260,6 @@
     /* .calculation-form__btn */
 
     &__btn {
-        display: block;
-        width: 100%;
         margin-bottom: 2em;
 
         @include _768 {
