@@ -950,5 +950,29 @@ $(document).ready(function () {
   $(window).resize(function () {
     checkWidth11(); // проверит при изменении размера окна клиента
   });
+  
+  $('.installing-windows-in-5-days__slider').owlCarousel({
+    items: 1,
+    dots: true,
+    dotsClass: ['pagination-box'],
+    dotClass: ['pagination'],
+    loop: true,
+    margin: 16,
+    stagePadding: 60,
+    responsive: {
+        768: {
+            items: 3,
+            stagePadding: false,
+            margin: 15
+        },
+        1200: {
+          items: 4,
+          stagePadding: false,
+          nav: true,
+          navContainerClass: ['installing-windows-in-5-days__navigation'],
+          navClass: ['installing-windows-in-5-days__navigation-left', 'installing-windows-in-5-days__navigation-right'],
+        }
+    }
+});
 
 });
