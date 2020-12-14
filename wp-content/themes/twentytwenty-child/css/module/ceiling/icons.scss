@@ -1,0 +1,26 @@
+.icons {
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .icon {
+        width: 5em;
+        height: 5em;
+        margin-right: 1em;
+    }
+
+    &__box {
+        width: 30%;
+        display: flex;
+        align-items: center;
+        background-color: lavender;
+        border-radius: .6rem;
+        margin-right: 1em;
+        margin-bottom: 1em;
+        padding: 1rem;
+    }
+    &__title {
+        margin-bottom: 1em;
+    }
+}
