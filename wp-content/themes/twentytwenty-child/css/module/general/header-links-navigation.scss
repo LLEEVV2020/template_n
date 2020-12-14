@@ -73,7 +73,6 @@
 
 
 .header-links-navigation {
-
     position: relative;
     background-image: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 193.85%), url('/wp-content/themes/twentytwenty-child/img/header-navigation-middle-image.jpg');
     background-repeat: no-repeat;
@@ -107,24 +106,36 @@
         padding-left: 0.6em;
         cursor: pointer;
         border-bottom: 0.1em solid #C9C9C9;
-        font-size: 2rem;
+        font-size: 1.8rem;
         font-weight: 700;
         font-family: 'Montserrat', sans-serif;
 
-        &:before {
-            content: '';
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-            margin-right: 1.063em;
-            background-image: url("data:image/svg+xml,%0A%3Csvg width='13' height='12' viewBox='0 0 13 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.5016 4.98964L12.5146 4.98964L12.5146 6.98549L7.69496 6.98549L7.69496 11.9751H5.68976L5.68976 6.98549H0.676759L0.676759 4.98964H5.4964L5.4964 0L7.5016 0L7.5016 4.98964Z' fill='%23F26422'/%3E%3C/svg%3E%0A");
-            background-repeat: no-repeat;
-            background-position: center;
+        &.before {
+            &:before {
+                content: '';
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                margin-right: 1.063em;
+                background-image: url("data:image/svg+xml,%0A%3Csvg width='13' height='12' viewBox='0 0 13 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.5016 4.98964L12.5146 4.98964L12.5146 6.98549L7.69496 6.98549L7.69496 11.9751H5.68976L5.68976 6.98549H0.676759L0.676759 4.98964H5.4964L5.4964 0L7.5016 0L7.5016 4.98964Z' fill='%23F26422'/%3E%3C/svg%3E%0A");
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            &:hover, &:focus{
+                &{
+                    border-bottom-color: #F26422;
+                }
+            }
         }
-        
-        &:hover, &:focus{
-            &{
-                border-bottom-color: #F26422;
+
+        &.border-bottom-none {
+            border-bottom: none;
+        }
+
+        &-link {
+            &.margin-left {
+                margin-left: 2em;
             }
         }
         
@@ -157,44 +168,88 @@
         }
     }
 
-    .free-check-out {
-        margin-top: 3.125em;
-        margin-left: auto;
-        margin-right: auto;
+    &__footer {
+        margin-top: 3em;
+
+        &-links {
+            display: none;
+        }
+    }
+
+    .button {
+        max-width: 34.5rem;
     }
 
     @media (min-width: 768px) {
+        &__footer {
+            display: flex;
+            justify-content: space-between;
+            max-width: 47em;
 
-        .free-check-out {
-            margin-top: 10.125em;
-            margin-bottom: 7.125em;
-            display: block;
+            &-links {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                max-width: 16.4rem;
+            }
+
+            &-link {
+                letter-spacing: 0.03em;
+            }
+        }
+
+        .button {
+            font-size: 1.4rem;
+            margin: 0;
         }
 
     }
 
     @media (min-width: 960px) {
-
         .container {
             width: calc(100% - 8rem);
         }
 
         &__box {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            max-width: 90rem;
-            margin-left: auto;
+            display: grid;
+            grid-template: 
+            'plastic-windows windows-to-the-house glazing-of-balconies contacts' 9.5rem
+            'plastic-windows wooden-windows glazing-of-balconies contacts' 4.3rem
+            'warm-aluminum wooden-windows glazing-of-balconies .'
+            'front-doors wooden-windows glazing-of-balconies .' 6rem
+            'navigation-footer navigation-footer navigation-footer navigation-footer';
+            max-width: 55em;
             margin-right: auto;
+            margin-left: auto;
         }
 
         &__item {
-            margin-bottom: 2.188em;
-            flex-basis: 30%;
+            &.plastic-windows {
+                grid-area: plastic-windows;
+            }
 
-            &:nth-child(7) {
-                order: 1;
-                margin-bottom: 0;
+            &.warm-aluminum {
+                grid-area: warm-aluminum;
+            }
+
+            &.front-doors {
+                grid-area: front-doors; 
+            }
+
+            &.windows-to-the-house {
+                grid-area: windows-to-the-house;
+            }
+
+            &.wooden-windows {
+                grid-area: wooden-windows;
+            }
+
+            &.glazing-of-balconies {
+                grid-area: glazing-of-balconies;
+            }
+
+            &.contacts {
+                grid-area: contacts;
             }
             
         }
@@ -210,18 +265,23 @@
             border-bottom: none;
             margin-bottom: 0.8em;
 
-            &:before {
-                display: none;
+            &.before {
+                &:before {
+                    display: none;
+                }
             }
 
-            &-link {
-            
+            &-link {            
                 &.active {
                     color: $orange;
                 }
-    
+                
+                &.margin-left {
+                    margin-left: 0;
+                }
             }
         }
+        
         &__link{
             &.active {
                 color: $orange;
@@ -233,30 +293,44 @@
             padding-left: 0;
         }
 
-        .free-check-out {
-            margin-top: 0;
-            margin-bottom: 0;
-            align-self: center;
+        &__footer {
+            grid-area: navigation-footer; 
+            max-width: none;
+            justify-content: normal;
+
+            &-links {
+                max-width: none;
+
+                &:first-of-type {
+                    margin-left: auto;
+                }
+
+                &:last-of-type {
+                    margin-left: 2em;
+                    margin-right: 4.3em;
+                }
+            }
+        }
+
+        .button {
+            max-width: 30.4rem;
         }
 
     }
 
     @media (min-width: 1200px) {
-
         background-image: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 193.85%), url('/wp-content/themes/twentytwenty-child/img/header-navigation-big-image.jpg');
 
+
         &__box {
-            max-width: 110rem;
+            max-width: 60em;
         }
 
-        &__title {
-            font-size: 2.5rem;
+        &__footer {
+            &-links:last-of-type {
+                margin-right: 6.8em;
+            }
         }
-
-        &__link {
-            font-size: 1.8rem;
-        }
-
     }
 
 }
