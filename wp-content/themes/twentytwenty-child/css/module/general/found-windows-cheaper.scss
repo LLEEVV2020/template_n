@@ -279,18 +279,50 @@
         .found-windows-cheaper {
             &__box {
                 margin-bottom: 0.3em;
+                margin-right: 0;
+                margin-left: 0;
             }
 
             &__info {
                 margin-bottom: 2.125em;
+                text-align: left;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .found-windows-cheaper {
+                &__box {
+                    margin-right: auto;
+                    margin-left: auto;
+                }
+
+                &__info {
+                    max-width: 31em;
+                    text-align: center;
+                }                
+            }
+
+            .button {
+                max-width: 21.625em;
+                min-height: 2.500em;
             }
         }
 
         @media (min-width: 1400px) {
             .found-windows-cheaper {
+                &__box {
+                    max-width: 30em;
+                    margin-bottom: 1.2em;
+                }
+
                 &__info {
-                    text-align: left;
-                    max-width: 45em;
+                    max-width: 26em;
+                    margin-bottom: 0.988em;
+                }
+
+                &__image {
+                    margin-top: 2em;
+                    transform: translateX(2em);
                 }
             }
         }
