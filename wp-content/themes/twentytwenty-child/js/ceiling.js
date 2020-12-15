@@ -143,16 +143,16 @@ $('.hot-promotions__slider').owlCarousel({
     dotClass: ['pagination'],
     nav: true,
     responsive: {
-      768: {
-        margin: 15,
-        autoWidth: true,
-        items: 2,
-      },
-      1200: {
-        autoWidth: true,
-        margin: 20,
-        items: 3,
-      }
+        768: {
+            margin: 15,
+            autoWidth: true,
+            items: 2,
+        },
+        1200: {
+            autoWidth: true,
+            margin: 20,
+            items: 3,
+        }
     }
 });
 
@@ -232,7 +232,7 @@ window.addEventListener('resize', function () {
 });
 
 // Скрипт для слайдера с ползунком блока calculating-cost-stretch-ceiling
-const calculatingCostSettings={
+const calculatingCostSettings = {
     fill: '#F26422',
     background: '#C4C4C4'
 }
@@ -240,8 +240,8 @@ const calculatingCostSettings={
 const calculatingCostRangeSlider = document.querySelector('.calculating-cost-stretch-ceiling__slider');
 
 function applyFill(calculatingCostRangeSlider) {
-    const percentage = 100*(calculatingCostRangeSlider.value-calculatingCostRangeSlider.min)/(calculatingCostRangeSlider.max-calculatingCostRangeSlider.min),
-        bg = `linear-gradient(90deg, ${calculatingCostSettings.fill} ${percentage}%, ${calculatingCostSettings.background} ${percentage+0.1}%)`;
+    const percentage = 100 * (calculatingCostRangeSlider.value - calculatingCostRangeSlider.min) / (calculatingCostRangeSlider.max - calculatingCostRangeSlider.min),
+        bg = `linear-gradient(90deg, ${calculatingCostSettings.fill} ${percentage}%, ${calculatingCostSettings.background} ${percentage + 0.1}%)`;
     calculatingCostRangeSlider.style.background = bg;
 }
 
@@ -250,7 +250,7 @@ if (calculatingCostRangeSlider) {
         calculatingCostValue.textContent = event.target.value;
         applyFill(event.target);
     });
-    
+
     applyFill(calculatingCostRangeSlider);
 }
 
@@ -283,14 +283,36 @@ $('.any-window-repair__slider').owlCarousel({
     dotsClass: ['pagination-box'],
     dotClass: ['pagination'],
     responsive: {
-      768: {
-        items: 2
-      },
-      1200: {
-        items: 3,
-        dots: false,
-        mouseDrag: false,
-        touchDrag: false,
-      }
+        768: {
+            items: 2
+        },
+        1200: {
+            items: 3,
+            dots: false,
+            mouseDrag: false,
+            touchDrag: false,
+        }
+    }
+});
+
+// Скрипт для сладйера блока any-shape-of-ceilings
+$('.any-shape-of-ceilings__slider').owlCarousel({
+    items: 2,
+    dots: true,
+    margin: 13,
+    dotsClass: ['pagination-box'],
+    dotClass: ['pagination'],
+    responsive: {
+        768: {
+            margin: 16,
+            items: 3
+        },
+        1200: {
+            margin: 20,
+            items: 4,
+            dots: false,
+            mouseDrag: false,
+            touchDrag: false,
+        }
     }
 });
