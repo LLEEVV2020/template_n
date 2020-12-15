@@ -123,7 +123,7 @@
     /* .banner__title */
 
     &__title {
-        font-family: "GothamSSm";
+        font-family: "GothamSSm", sans-serif;
         font-size: 2.6rem;
         line-height: 1.2;
         margin-bottom: 0.6rem;
@@ -232,7 +232,6 @@
             content: " \20BD/м\00B2";
             font-size: 2.6rem;
             font-weight: 900;
-            // font-family: "Montserrat";
 
             @include _768 {
                 font-size: 1.8rem;
