@@ -1,6 +1,8 @@
 @import '../../base/all/var';
 
-.glazing-balcony-under-key {
+.frequently-asked-questions {
+    background-color: #F6F6F6;
+
     .title {
         margin-bottom: 1.188em;
     }
@@ -9,20 +11,18 @@
         text-align: left;
     }
 
+    &__list {
+        margin-bottom: 1.563em;
+    }
+
     &__item {
         margin-bottom: 0.938em;
         box-shadow: 3px 4px 23px rgba(0, 0, 0, 0.25);
         border-radius: 0.375em;
-
-        &:first-child {
-            .glazing-balcony-under-key__question-description:nth-of-type(1) {
-                padding-bottom: 0;
-            }
-        }
     }
 
     &__input:checked + &__question {
-        .glazing-balcony-under-key__question-icon {
+        .frequently-asked-questions__question-icon {
             &:before {
                 transform: translateX(0.35em) translateY(0.225em) rotate(45deg);
             }
@@ -110,71 +110,32 @@
         }
     }
 
-    &__about {
-        margin-bottom: 1em;
-    }
-
-    &__choose-text {
-        margin-bottom: 1em;
-    }
-
-    .list {
-        &__item {    
-            &:first-child {
-                max-width: 20em;
-                padding-left: 0;
-            }
-        }
-
-        &__icon {
-            background-color: transparent;
-            border: 0.5px solid #F26422;
-
-            &:before,
-            &:after {
-                height: 0.025em;
-            }
-
-            &:before {
-                width: 0.21em;
-                top: 0.375em;
-                left: 0.158em;
-            }
-
-            &:after {
-                width: 0.275em;
-                left: 0.277em;
-                top: 0.306em;
-            }
-        }
-
-        &__word {
-            padding-left: 1.2em;
-        }
+    .button {
+        max-width: 20.3em;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0.525em 2.312em;
+        line-height: 1.5;
+        font-size: 1.7rem;
     }
 
     @media (min-width: 768px) {
         background-color: #F6F6F6;
 
-        .text,
-        &__about,
-        &__choose-text,
-        .list {
-            margin-left: 2em;
-        }
-
         .title {
+            max-width: 22em;
             margin-right: auto;
             margin-left: auto;
-        }
-
-        .title {
-            max-width: 20em;
         }
 
         .text {
             margin-bottom: 2.188em;
             max-width: 35em;
+            margin-left: 2em;
+        }
+
+        &__list {
+            margin-bottom: 1.875em;
         }
 
         &__item {
@@ -194,40 +155,16 @@
             }
         }
 
-        .list__item,
-        .list__item:first-child {
-            padding-left: 1.5em;
-        }
-
-        .list {
-            &__item {
-                &:first-child {
-                    max-width: none;
-                }
-            }
-
-            &__word {
-                padding-left: 0;
-            }
-
-            &__icon {
-                top: 0.4em;
-
-                &:after {
-                    left: 0.28em;
-                    top: 0.316em;
-                }
-            }
-        }
-
-        &__about {
-            max-width: 34em;
+        .button {
+            padding: 0.425em 2.312em;
+            max-width: 33.3em;
+            font-size: 1.6rem;
         }
     }
 
     @media (min-width: 1200px) {
        .title {
-        max-width: 18em;
+            max-width: 21em;
        }
        
        .text {
@@ -238,10 +175,6 @@
            &-description {
             padding-right: 4.413em;
            }
-       }
-
-       &__about {
-        max-width: 46em;
        }
     }
 }
