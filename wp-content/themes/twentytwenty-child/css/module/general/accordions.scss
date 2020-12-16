@@ -1,8 +1,12 @@
 @import '../../base/all/var';
 
-.glazing-balcony-under-key {
+.accordion {
     .title {
         margin-bottom: 1.188em;
+
+        .block {
+            display: block;
+        }
     }
 
     .text {
@@ -15,14 +19,14 @@
         border-radius: 0.375em;
 
         &:first-child {
-            .glazing-balcony-under-key__question-description:nth-of-type(1) {
+            .accordion__question-description:nth-of-type(1):not(.padding-bottom) {
                 padding-bottom: 0;
             }
         }
     }
 
     &__input:checked + &__question {
-        .glazing-balcony-under-key__question-icon {
+        .accordion__question-icon {
             &:before {
                 transform: translateX(0.35em) translateY(0.225em) rotate(45deg);
             }
@@ -33,7 +37,8 @@
         }
     }
 
-    &__input:checked ~ &__question-description {
+    &__input:checked ~ &__question-description,
+    &__input:checked ~ .list--helper {
         display: block;
     }
 
@@ -107,6 +112,10 @@
             padding-bottom: 0.938em;
             display: none;
             line-height: 1.2;
+
+            .block {
+                display: block;
+            }
         }
     }
 
@@ -150,6 +159,27 @@
 
         &__word {
             padding-left: 1.2em;
+        }
+
+        &--helper {
+            margin-left: 1em;
+            padding-bottom: 1em;
+            display: none;
+
+            .list {
+                &__icon {
+                    top: 0.2em;
+                }
+
+                &__item {
+                    margin-bottom: 0.813em;
+
+                    &:first-child {
+                        max-width: none;
+                        padding-left: 1.2em;
+                    }
+                }
+            }
         }
     }
 
@@ -218,6 +248,10 @@
                     top: 0.316em;
                 }
             }
+
+            &--helper {
+                max-width: 38em;
+            }
         }
 
         &__about {
@@ -236,12 +270,18 @@
 
        &__question {
            &-description {
-            padding-right: 4.413em;
+            padding-right: 2.113em;
            }
        }
 
        &__about {
         max-width: 46em;
+       }
+
+       .list {
+           &--helper {
+              max-width: 55.6em;
+           }
        }
     }
 }
