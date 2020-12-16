@@ -12,16 +12,12 @@
         position: relative;
     }
 
-    @include _1200 {
-    }
-
     /* .banner__box-bg */
 
     &__box-bg {
         position: relative;
         width: 100%;
         height: 20.3rem;
-
 
         &::after {
             content: "";
@@ -33,6 +29,7 @@
 
             @include _768 {
                 background: url(/wp-content/themes/twentytwenty-child/img/ceiling/banner-bg.webp) no-repeat;
+                background-size: contain;
                 height: 100%;
                 max-width: 76.8rem;
                 margin: 0 auto;
@@ -44,7 +41,6 @@
                 background: url(/wp-content/themes/twentytwenty-child/img/ceiling/banner-bg-big.webp) no-repeat;
                 min-width: 192rem;
                 transform: translateX(-100rem);
-
             }
         }
 
@@ -67,9 +63,6 @@
             display: inline;
             width: 35%;
         }
-
-        @include _1200 {
-        }
     }
 
     /* .banner__bg-right */
@@ -80,9 +73,6 @@
         @include _768 {
             width: 65%;
         }
-
-        @include _1200 {
-        }
     }
 
     /* .banner__img */
@@ -91,32 +81,39 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-
-        @include _768 {
-        }
-
-        @include _1200 {
-        }
     }
 
     /* .banner__wrapper */
 
     &__wrapper {
-        padding-top: 3.8rem;
+        padding-top: 3.5rem;
         padding-bottom: 4.5rem;
         text-align: center;
 
         @include _768 {
             position: relative;
             max-width: 40.9rem;
-            padding-top: 2.7rem;
             padding-bottom: 2.5rem;
+            padding-top: 2.3rem;
         }
 
         @include _1200 {
-            max-width: 50rem;
-            padding-top: 7.4rem;
-            padding-bottom: 9.5rem;
+            max-width: 53rem;
+            padding-bottom: 10.5rem;
+            padding-top: 8rem;
+        }
+
+        &--home {
+            padding-top: 4.2rem;
+
+            @include _768 {
+                padding-top: 2.7rem;
+            }
+
+            @include _1200 {
+                padding-bottom: 9.5rem;
+                padding-top: 7.4rem;
+            }
         }
     }
 
@@ -130,16 +127,27 @@
 
         @include _768 {
             font-size: 2rem;
-            margin-bottom: 0.3rem;
+            margin-bottom: 0.9rem;
+            max-width: 25.1rem;
+            margin-left: 7.9rem;
         }
 
         @include _1200 {
+            font-size: 4.8rem;
             max-width: 60.2rem;
-            margin-bottom: 1rem;
+            margin-bottom: 3rem;
+            margin-left: -8.7rem;
+        }
 
-            &--home {
+        &--home {
+            @include _768 {
+                margin-bottom: 0.3rem;
+            }
+
+            @include _1200 {
                 font-size: 4.8rem;
                 margin-left: -11rem;
+                margin-bottom: 1rem;
             }
         }
     }
@@ -152,20 +160,32 @@
         margin-bottom: 3.3rem;
 
         @include _768 {
-            font-size: 1rem;
+            font-size: 0.8rem;
+            max-width: 21.1rem;
             margin: 0 auto;
-            max-width: 27.1rem;
             line-height: 1;
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
         }
 
         @include _1200 {
             font-size: 1.7rem;
             max-width: 60.2rem;
-            margin-bottom: 4.1rem;
+            margin-bottom: 3rem;
+            margin-left: -8.7rem;
+        }
 
-            &--home {
+        &--home {
+            @include _768 {
+                max-width: 27.1rem;
+                font-size: 1rem;
+                margin-bottom: 1.5rem;
+            }
+
+            @include _1200 {
                 margin-left: -11rem;
+                font-size: 1.7rem;
+                max-width: 60.2rem;
+                margin-bottom: 4.1rem;
             }
         }
     }
@@ -180,6 +200,21 @@
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
         margin-bottom: 3.5rem;
         background-color: #fff;
+        padding: 1.7rem 1rem;
+
+        @include _768 {
+            max-width: 16.4rem;
+            margin-bottom: 1.5rem;
+            padding: 0.9rem;
+        }
+
+        @include _1200 {
+            max-width: min-content;
+            min-width: 38.1rem;
+            margin-left: 0;
+            margin-bottom: 3.9rem;
+            padding: 1.9rem;
+        }
 
         &--home {
             padding: 1.4rem 1rem;
@@ -192,16 +227,22 @@
                 padding: 2.6rem;
             }
         }
+    }
+
+    /* .banner__item-text */
+
+    &__item-text {
+        font-size: 2rem;
+        line-height: 1.35;
 
         @include _768 {
-            max-width: 16.4rem;
-            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+            line-height: 1.4;
         }
 
         @include _1200 {
-            max-width: 38.1rem;
-            margin-left: 0;
-            margin-bottom: 3.9rem;
+            font-size: 3.5rem;
+            line-height: 1.3;
         }
     }
 
@@ -293,9 +334,6 @@
             left: 0;
             right: 0;
         }
-
-        @include _1200 {
-        }
     }
 
     /* .banner__sale-title */
@@ -367,9 +405,6 @@
         @include _768 {
             display: none;
         }
-
-        @include _1200 {
-        }
     }
 
     /* .banner__free-text */
@@ -402,12 +437,6 @@
             left: 0.5rem;
             bottom: 0;
         }
-
-        @include _768 {
-        }
-
-        @include _1200 {
-        }
     }
 
     /* .banner__free-subtext */
@@ -435,12 +464,6 @@
             background-color: #fff;
             transform: rotate(-45deg);
             top: -0.9rem;
-        }
-
-        @include _768 {
-        }
-
-        @include _1200 {
         }
     }
 
