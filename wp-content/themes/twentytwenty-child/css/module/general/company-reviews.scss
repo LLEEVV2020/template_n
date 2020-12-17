@@ -11,6 +11,9 @@
 
     .active-tab {
         display: block !important;
+        @include _768 {
+            display: grid !important;
+        }
     }
 
     .tab-item {
@@ -61,6 +64,9 @@
         border: 0.1rem solid #d0d0d0;
         @include _768 {
             border-radius: 0.6rem;
+            margin-left: 0;
+            margin-right: 0;
+            padding: 3rem 2.2rem;
         }
         @include _1200 {
         }
@@ -70,6 +76,14 @@
 
     &__inner {
         @include _768 {
+            display: grid;
+            grid-template-columns: 0.84fr 1fr;
+            grid-template-rows: 0.4fr auto auto;
+            gap: 0px 0px;
+            grid-template-areas:
+                "slider title"
+                "slider list"
+                "slider list";
         }
         @include _1200 {
         }
@@ -79,6 +93,7 @@
 
     &__tab-box-title {
         @include _768 {
+            grid-area: title;
         }
         @include _1200 {
         }
@@ -90,6 +105,7 @@
         line-height: 1.1;
         margin-bottom: 1.4rem;
         @include _768 {
+            margin-bottom: 1.7rem;
         }
         @include _1200 {
         }
@@ -101,6 +117,8 @@
         display: flex;
         margin-bottom: 1.5rem;
         @include _768 {
+            justify-content: space-between;
+            margin-bottom: 1.7rem;
         }
         @include _1200 {
         }
@@ -131,6 +149,12 @@
                     stroke: $orange;
                 }
             }
+
+            @include _768 {
+                font-size: 2.1em;
+                border-width: 0.2rem;
+                margin-right: 1.5rem;
+            }
         }
 
         .purse {
@@ -140,6 +164,7 @@
         }
 
         @include _768 {
+            margin-right: 1.5rem;
         }
         @include _1200 {
         }
@@ -150,6 +175,7 @@
     &__tab-title-text {
         font-size: 1.4rem;
         @include _768 {
+            font-size: 1.6rem;
         }
         @include _1200 {
         }
@@ -178,15 +204,36 @@
         .owl-prev {
             left: 1rem;
         }
+        .sync1 {
+            margin-bottom: 0.5rem;
+        }
 
+        .sync2 {
+            position: relative;
+
+            &:before {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 3.1rem;
+                background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+                right: 0;
+                z-index: 1;
+                pointer-events: none;
+            }
+            .owl-item {
+                opacity: 0.3;
+                &.current {
+                    opacity: 1;
+                }
+            }
+        }
         @include _768 {
+            grid-area: slider;
+            max-width: 17.4em;
         }
         @include _1200 {
         }
-    }
-
-    .sync1 {
-        margin-bottom: 0.5rem;
     }
 
     /* .company-reviews__tab-sliders-item-big */
@@ -203,6 +250,8 @@
             height: 1.8125em;
         }
         @include _768 {
+            max-width: 27.8rem;
+            height: 16.3rem;
         }
         @include _1200 {
         }
@@ -223,7 +272,10 @@
         width: 100%;
         max-width: 13.4rem;
         height: 7.9rem;
+
         @include _768 {
+            max-width: 10.9rem;
+            height: 6.4rem;
         }
         @include _1200 {
         }
@@ -242,6 +294,9 @@
 
     &__tab-box-list {
         @include _768 {
+            grid-area: list;
+            display: flex;
+            flex-direction: column;
         }
         @include _1200 {
         }
@@ -262,6 +317,7 @@
         }
 
         @include _768 {
+            min-height: 6.7em;
             &.close-plan {
                 .company-reviews__tab-list-item {
                     display: none;
@@ -285,6 +341,7 @@
         margin-bottom: 0.7rem;
 
         @include _768 {
+            margin-bottom: 1rem;
         }
         @include _1200 {
         }
@@ -300,19 +357,22 @@
         cursor: pointer;
 
         &.closed {
-            &::before{
+            &::before {
                 content: "Показать полный ";
             }
         }
 
         &.open {
-            &::before{
+            &::before {
                 content: "Скрыть ";
             }
         }
         @include _768 {
+            text-align: left;
+            margin-top: auto;
         }
         @include _1200 {
+            display: none;
         }
     }
 
@@ -348,6 +408,7 @@
 
     &__tabs-btn {
         flex-wrap: wrap;
+        margin-bottom: -0.8rem;
         @include _768 {
         }
         @include _1200 {
@@ -378,6 +439,19 @@
             pointer-events: none;
         }
         @include _768 {
+            max-width: 13.1rem;
+            height: 7.9rem;
+            margin-right: 1.24rem;
+            margin-bottom: 1.24rem;
+
+            &:nth-child(4n) {
+                margin-right: 1.24rem;
+            }
+
+            &:nth-child(5n) {
+                margin-right: 0;
+            }
+
         }
         @include _1200 {
         }
