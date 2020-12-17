@@ -9,6 +9,14 @@
 .company-reviews {
     /* .company-reviews__wrapper */
 
+    .active-tab {
+        display: block !important;
+    }
+
+    .tab-item {
+        display: none;
+    }
+
     img {
         width: 100%;
         height: 100%;
@@ -49,7 +57,7 @@
 
     &__tabs-content {
         padding: 2rem 1.5rem;
-        margin: 0 -1.5rem;
+        margin: 0 -1.5rem 2.5rem;
         border: 0.1rem solid #d0d0d0;
         @include _768 {
             border-radius: 0.6rem;
@@ -150,15 +158,14 @@
     /* .company-reviews__tab-box-sliders */
 
     &__tab-box-sliders {
-
         margin-bottom: 2.7rem;
         .owl-nav {
             top: 35%;
             position: absolute;
             transform: translateY(-50%);
             font-size: 2.4em;
-            color: #fff;  
-            width: 100%;  
+            color: #fff;
+            width: 100%;
         }
         .owl-next,
         .owl-prev {
@@ -178,7 +185,7 @@
         }
     }
 
-    #sync1 {
+    .sync1 {
         margin-bottom: 0.5rem;
     }
 
@@ -204,7 +211,6 @@
     /* .company-reviews__tab-sliders-img-big */
 
     &__tab-sliders-img-big {
-
         @include _768 {
         }
         @include _1200 {
@@ -244,12 +250,29 @@
     /* .company-reviews__tab-list */
 
     &__tab-list {
+        &.close-mob {
+            .company-reviews__tab-list-item {
+                display: none;
 
-        .close-mob {
-            .company-reviews__tab-list-item:nth-child()
+                &:nth-child(1),
+                &:nth-child(2) {
+                    display: block;
+                }
+            }
         }
 
         @include _768 {
+            &.close-plan {
+                .company-reviews__tab-list-item {
+                    display: none;
+
+                    &:nth-child(1),
+                    &:nth-child(2),
+                    &:nth-child(3) {
+                        display: block;
+                    }
+                }
+            }
         }
         @include _1200 {
         }
@@ -260,6 +283,7 @@
     &__tab-list-item {
         line-height: 1.2;
         margin-bottom: 0.7rem;
+
         @include _768 {
         }
         @include _1200 {
@@ -269,6 +293,23 @@
     /* .company-reviews__tab-list-open */
 
     &__tab-list-open {
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        text-decoration: underline;
+        cursor: pointer;
+
+        &.closed {
+            &::before{
+                content: "Показать полный ";
+            }
+        }
+
+        &.open {
+            &::before{
+                content: "Скрыть ";
+            }
+        }
         @include _768 {
         }
         @include _1200 {
@@ -278,6 +319,7 @@
     /* .company-reviews__tabs-buttons */
 
     &__tabs-buttons {
+        display: none;
         @include _768 {
         }
         @include _1200 {
@@ -305,6 +347,7 @@
     /* .company-reviews__tabs-btn */
 
     &__tabs-btn {
+        flex-wrap: wrap;
         @include _768 {
         }
         @include _1200 {
@@ -315,10 +358,24 @@
 
     &__box-img {
         position: relative;
+        width: 100%;
+        max-width: 8rem;
+        height: 4.8rem;
+        margin-right: 0.8rem;
+        margin-bottom: 0.8rem;
+
+        &:nth-child(4n) {
+            margin-right: 0;
+        }
 
         .play {
             width: 0.6875em;
             height: 0.6875em;
+        }
+
+        &.active {
+            border: 0.2rem solid $orange;
+            pointer-events: none;
         }
         @include _768 {
         }

@@ -978,8 +978,8 @@ $(document).ready(function () {
 
     // слайдер для блока company-reviews
 
-  var sync1 = $("#sync1");
-  var sync2 = $("#sync2");
+  var sync1 = $(".sync1");
+  var sync2 = $(".sync2");
   var slidesPerPage = 4; //globaly define number of elements per page
   var syncedSecondary = true;
 
