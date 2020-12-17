@@ -53,6 +53,7 @@
         @include _768 {
         }
         @include _1200 {
+            margin-bottom: 2.4rem;
         }
     }
 
@@ -86,6 +87,7 @@
                 "slider list";
         }
         @include _1200 {
+            grid-template-columns: 1.05fr 1fr;
         }
     }
 
@@ -108,6 +110,7 @@
             margin-bottom: 1.7rem;
         }
         @include _1200 {
+            margin-bottom: 3.3rem;
         }
     }
 
@@ -121,6 +124,8 @@
             margin-bottom: 1.7rem;
         }
         @include _1200 {
+            padding-right: 8.7rem;
+            margin-bottom: 3.3rem;
         }
     }
 
@@ -130,6 +135,10 @@
         display: flex;
         align-items: center;
         margin-right: 2.6rem;
+
+        &:last-child {
+            color: #C4C4C4;
+        }
 
         .icon {
             display: flex;
@@ -233,6 +242,7 @@
             max-width: 17.4em;
         }
         @include _1200 {
+            max-width: 44.7rem;
         }
     }
 
@@ -254,6 +264,8 @@
             height: 16.3rem;
         }
         @include _1200 {
+            max-width: 44.8rem;
+            height: 26.3rem;
         }
     }
 
@@ -278,6 +290,7 @@
             height: 6.4rem;
         }
         @include _1200 {
+
         }
     }
 
@@ -344,6 +357,8 @@
             margin-bottom: 1rem;
         }
         @include _1200 {
+            font-size: 1.8rem;
+            margin-bottom: 0.8rem;
         }
     }
 
@@ -409,7 +424,10 @@
     &__tabs-btn {
         flex-wrap: wrap;
         margin-bottom: -0.8rem;
+        margin-right: -0.8rem;
         @include _768 {
+            margin-bottom: -1.2rem;
+            margin-right: -1.2rem;
         }
         @include _1200 {
         }
@@ -425,10 +443,6 @@
         margin-right: 0.8rem;
         margin-bottom: 0.8rem;
 
-        &:nth-child(4n) {
-            margin-right: 0;
-        }
-
         .play {
             width: 0.6875em;
             height: 0.6875em;
@@ -441,19 +455,13 @@
         @include _768 {
             max-width: 13.1rem;
             height: 7.9rem;
-            margin-right: 1.24rem;
-            margin-bottom: 1.24rem;
-
-            &:nth-child(4n) {
-                margin-right: 1.24rem;
-            }
-
-            &:nth-child(5n) {
-                margin-right: 0;
-            }
+            margin-right: 1.2rem;
+            margin-bottom: 1.2rem;
 
         }
         @include _1200 {
+            max-width: 12.68rem;
+            height: 7.64rem;
         }
     }
 
