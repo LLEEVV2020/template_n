@@ -56,7 +56,7 @@
         min-height: 3.5rem;
         border: none;
         box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
-        color: #ccd6e3;
+        color: #000;
         margin-bottom: 1rem;
 
         &::placeholder {
@@ -108,12 +108,17 @@
             max-width: 18.4rem;
         }
     }
-
+    [value="free-measurement-day"],
+    [value="free-measurement-time"]{
+        & + .select__head{
+            color: #ccd6e3;
+        }
+    }
     .select__head {
         width: 100%;
         max-width: 100%;
         box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
-        color: #ccd6e3;
+        color: #000;
         background-color: #fff;
         padding: 0.6em 1.2em;
         min-height: 3.5rem;
