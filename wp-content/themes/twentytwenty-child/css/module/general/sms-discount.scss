@@ -187,7 +187,9 @@
             top: 1.8em;
             left: 5.3em;
             font-size: 2rem;
-
+            &-svg{
+                width: 16rem;
+            }
             &__image {
                 width: 2em;
                 height: 1.938em;
