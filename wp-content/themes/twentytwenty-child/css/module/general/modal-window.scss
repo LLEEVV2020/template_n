@@ -7,6 +7,8 @@
 // }
 
 .modal-window {
+    display: none;
+
     /* .modal-window__wrapper */
 
     &__wrapper {
@@ -56,6 +58,13 @@
         &::after {
             transform: translateY(-50%) rotate(-45deg);
         }
+    }
+    &__closed_div{
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
     }
 
     /* .modal-window__content */
