@@ -11,7 +11,7 @@
         }
 
         .text {
-            margin-bottom: 3rem;
+            margin-bottom: 4.6rem;
             text-align: center;
             font-size: 1.125em;
             font-weight: 700;
@@ -20,7 +20,10 @@
         &__list {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 3rem;
+            max-width: 83rem;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 2.2rem;
         }
 
         &__item {
@@ -35,29 +38,51 @@
 
         &__title {
             margin-bottom: 0.375em;
-            font-size: 1.8rem;
+            margin-left: 0.4rem;
+            font-size: 1.6rem;
         }
 
         &__text {
             max-width: 19.3em;
+            margin-left: 0.5rem;
             line-height: 1.2;
             font-size: 1.4rem;
 
             .orange {
                 font-weight: 700;
             }
+
+            .block {
+                display: block;
+            }
+        }
+
+        &__circle {
+            position: absolute;
+            top: -0.9rem;
+            left: 0.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 2.4rem;
+            height: 2.4rem;
+            border: 0.1rem solid $orange;
+            border-radius: 50%;
+            background-color: $white;
         }
 
         &__video {
-            max-width: 47.188em;
 
             &-box {
                 display: flex;
-                align-items: flex-end;
+                align-items: center;
+                margin-left: 4.3em;
             }
 
             &-content {
-                max-width: 22.813em;
+                margin-top: -5.4rem;
+                margin-right: 7rem;
+                max-width: 12.813em;
             }
 
             &-title {
@@ -69,10 +94,44 @@
 
             &-text {
                 max-width: 20em;
-                line-height: 1.4;
+                line-height: 1.2;
                 font-size: 1.4rem;
             }
 
+        }
+
+        &--ceilings {
+            .text {
+                margin-bottom: 3.1rem;
+            }
+
+            .buy-right {
+                &__list {
+                    margin-bottom: 3.1rem;
+                    max-width: 94rem;
+                }
+
+                &__image {
+                    margin-bottom: 0.613em;
+                }
+
+                &__title,
+                &__text {
+                    margin-left: 0;
+                }
+
+                &__video {
+                    &-box {
+                        margin-left: 0;
+                        align-items: flex-end;
+                    }
+
+                    &-content {
+                        max-width: 17.813em;
+                        margin-right: 6rem;
+                    }
+                }
+            }
         }
 
     }
