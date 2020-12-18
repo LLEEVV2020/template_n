@@ -316,3 +316,94 @@ $('.any-shape-of-ceilings__slider').owlCarousel({
         }
     }
 });
+
+// Скрипт для слайдера блока catalog__item-slider-one
+$('.catalog__item-slider-one').owlCarousel({
+    items: 2,
+    dots: false,
+    loop: true,
+    margin: 15,
+    nav: true,
+    responsive: {
+        768: {
+            items: 4,
+        },
+        1200: {
+            margin: 20,
+            items: 4,
+        }
+    }
+});
+
+// Скрипт для слайдера блока catalog__item-slider-two
+$('.catalog__item-slider-two').owlCarousel({
+    items: 2,
+    dots: false,
+    loop: true,
+    margin: 15,
+    nav: true,
+    responsive: {
+        768: {
+            items: 4,
+        },
+        1200: {
+            margin: 20,
+            items: 4,
+        }
+    }
+});
+
+// Скрипт для слайдера блока catalog__item-slider-three
+$('.catalog__item-slider-three').owlCarousel({
+    items: 2,
+    dots: false,
+    loop: true,
+    margin: 15,
+    nav: true,
+    responsive: {
+        768: {
+            items: 4,
+        },
+        1200: {
+            margin: 20,
+            items: 4,
+        }
+    }
+});
+
+// Скрипт для слайдера блока catalog__item-slider-foure
+$('.catalog__item-slider-foure').owlCarousel({
+    items: 2,
+    dots: false,
+    loop: true,
+    margin: 15,
+    nav: true,
+    responsive: {
+        768: {
+            items: 4,
+        },
+        1200: {
+            margin: 20,
+            items: 4,
+        }
+    }
+});
+
+// Скрипт для слайдера блока catalog__item-slider-five
+$('.catalog__item-slider-five').owlCarousel({
+    items: 2,
+    dots: false,
+    loop: true,
+    margin: 15,
+    nav: true,
+    responsive: {
+        768: {
+            items: 4,
+        },
+        1200: {
+            margin: 20,
+            items: 4,
+        }
+    }
+});
+
