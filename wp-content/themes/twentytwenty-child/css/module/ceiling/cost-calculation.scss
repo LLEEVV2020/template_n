@@ -9,10 +9,16 @@
 .cost-calculation {
     overflow: hidden;
 
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
     /* .cost-calculation__title */
 
     &__title {
-        margin-bottom: 1.15em;
+        margin-bottom: 2.5rem;
         text-transform: uppercase;
 
         span {
@@ -20,8 +26,12 @@
             margin-top: 1em;
         }
 
+        @include _768 {
+            margin-bottom: 3rem;
+        }
+
         @include _1200 {
-            margin-bottom: 1.55em;
+            line-height: 1.2;
         }
     }
 
@@ -45,9 +55,9 @@
         }
 
         @include _768 {
-            margin: 0 auto;
-            max-width: 67.1rem;
-            padding: 2.2em 2.45em 2.1em;
+            margin: 0;
+            max-width: 100%;
+            padding: 3rem 6rem;
         }
 
         @include _1200 {
@@ -56,7 +66,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 0.1fr 1fr;
-            gap: 0px 0px;
+            gap: 0px 2rem;
             grid-template-areas:
                 "img title"
                 "img list";
@@ -70,9 +80,9 @@
 
         @include _1200 {
             grid-area: title;
-            padding-top: 2.4em;
+            padding-top: 1.4em;
             margin-right: 1.3em;
-            margin-bottom: 0.95em;
+            margin-bottom: 2.15rem;
         }
 
         &.seamless {
@@ -95,7 +105,7 @@
                 }
 
                 @include _1200 {
-                    bottom: 1.6em;
+                    bottom: 0;
                 }
             }
         }
@@ -109,7 +119,7 @@
 
         @include _1200 {
             text-align: left;
-            margin-bottom: 1.4em;
+            margin-bottom: 2.8rem;
         }
     }
 
@@ -117,16 +127,18 @@
 
     &__price {
         margin-bottom: 0.2em;
-
+        font-size: 2.4rem;
+        
         &::after {
             font-size: 1.5rem;
-
+            
             @include _768 {
                 font-size: 2rem;
             }
         }
-
+        
         @include _768 {
+            font-size: 3rem;
             line-height: 0.95;
         }
 
@@ -146,26 +158,24 @@
         }
 
         @include _1200 {
-            font-size: 1.6rem;
+            font-size: 1.4rem;
         }
     }
 
     /* .cost-calculation__box-img */
 
     &__box-img {
-        width: 34.5rem;
+        width: 100%;
         height: 20.6rem;
         margin-bottom: 1.55em;
 
         @include _768 {
-            width: 59rem;
             height: 35.3rem;
-            margin-bottom: 2.15em;
+            margin-bottom: 2.6rem;
         }
 
         @include _1200 {
-            width: 56.3rem;
-            height: 33.7rem;
+            height: 28rem;
             margin-bottom: 0;
             grid-area: img;
             margin-right: 0.95em;
@@ -185,7 +195,6 @@
         @include _1200 {
             grid-area: list;
             padding-right: 1.9em;
-            padding-bottom: 1.5em;
         }
     }
 
@@ -200,7 +209,7 @@
         margin-bottom: 1.8em;
 
         @include _768 {
-            margin-bottom: 1.1em;
+            margin-bottom: 1.5rem;
         }
     }
 
@@ -227,6 +236,9 @@
             &::before {
                 content: "Показать полный список";
             }
+        }
+        @include _1200 {
+            margin-bottom: 1rem;
         }
     }
 }
