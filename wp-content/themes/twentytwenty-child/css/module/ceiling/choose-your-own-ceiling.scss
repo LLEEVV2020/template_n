@@ -383,6 +383,82 @@
         color: $orange;
     }
 
+    &--sky {
+        .choose-your-own-ceiling {
+            &__image {
+                background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-sky-image.webp");
+
+                &-bg {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-sky-1.webp");
+                    background-position-y: -0.4rem;
+                    background-position-x: -0.6rem;
+                }
+            }
+
+            &__colors {
+                &-list {
+                    gap: 1.7rem;
+                }
+
+                &-item {
+                    width: 7rem;
+                    height: 5.3rem;
+                    background-size: cover;
+
+                    &.active {
+                        border-width: 0.2rem;
+                    }
+
+                    &--sky {
+                        &-1 {
+                            background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-sky-icon-1.webp");
+                        }
+
+                        &-2 {
+                            background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-sky-icon-2.webp");
+                        }
+
+                        &-3 {
+                            background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-sky-icon-3.webp");
+                        }
+
+                        &-4 {
+                            background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-sky-icon-4.webp");
+                        }
+
+                        &-5 {
+                            background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-sky-icon-5.webp");
+                        }
+
+                        &-6 {
+                            background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-sky-icon-6.webp");
+                        }
+
+                        &-7 {
+                            background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-sky-icon-7.webp");
+                        }
+
+                        &-8 {
+                            background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-sky-icon-8.webp");
+                        }
+
+                        &-9 {
+                            background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-sky-icon-9.webp");
+                        }
+
+                        &-10 {
+                            background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-sky-icon-10.webp");
+                        }
+                    }
+                }
+            }
+
+            &__text {
+                text-align: center;
+            }
+        } 
+    }
+
     @media (min-width: 500px) {
         &__price {
             &:before {
@@ -555,6 +631,40 @@
             max-width: 22.4rem;
             color: $white;
         }
+
+        &--sky {
+            .choose-your-own-ceiling {
+                &__box {
+                    max-width: 71rem;
+                }
+
+                &__image {
+                    height: 22.1rem;
+                }
+
+                &__text {
+                    text-align: left;
+                }
+
+                &__colors {
+                    max-width: none;
+
+                    &-list {
+                        margin-left: 0;
+                        max-width: none;
+                    }
+
+                    &-item {
+                        width: 7.6rem;
+                        height: 5.8rem;
+                    }
+
+                    &-text {
+                        margin-bottom: 2.8rem;
+                    }
+                }                
+            }
+        }
     }
 
     @media (min-width: 1200px) {
@@ -633,6 +743,29 @@
         .button {
             max-width: 30.8rem;
             margin-left: 0;
+        }
+
+        &--sky {
+            .choose-your-own-ceiling {
+                &__box {
+                    max-width: none;
+                    grid-template: 
+                    'choose-your-own-ceiling__colors choose-your-own-ceiling__image' 20.7rem
+                    'choose-your-own-ceiling__text choose-your-own-ceiling__image' 6rem
+                    'choose-your-own-ceiling__content choose-your-own-ceiling__image';
+                    grid-column-gap: 4rem;                   
+                }
+
+                &__image {
+                    height: 41.9rem;
+                }
+
+                &__price {
+                    &-box {
+                        margin-top: -0.8rem;
+                    }
+                }
+            }
         }
     }
 }

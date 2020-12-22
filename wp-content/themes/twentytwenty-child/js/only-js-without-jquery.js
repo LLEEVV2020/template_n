@@ -22,6 +22,7 @@ if (tabs && tabsItems) {
 const chooseYourCeilingColorsMate = document.querySelectorAll('.choose-your-own-ceiling__colors-item--mate'),
     chooseYourCeilingColorsGlossy = document.querySelectorAll('.choose-your-own-ceiling__colors-item--glossy'),
     chooseYourCeilingColorsPhotoprint = document.querySelectorAll('.choose-your-own-ceiling__colors-item--photoprint'),
+    chooseYourCeilingColorsSky = document.querySelectorAll('.choose-your-own-ceiling__colors-item--sky'),
     chooseYourCeilingColorsItems = document.querySelectorAll('.choose-your-own-ceiling__colors-item');
 
 // Ф-ия добавляет бордер для элемента
@@ -36,10 +37,11 @@ function chooseYourCeilingAddBorder(colors) {
     });
 }
 
-if (chooseYourCeilingColorsMate && chooseYourCeilingColorsGlossy && chooseYourCeilingColorsPhotoprint) {
+if (chooseYourCeilingColorsMate || chooseYourCeilingColorsGlossy || chooseYourCeilingColorsPhotoprint || chooseYourCeilingColorsSky) {
     chooseYourCeilingAddBorder(chooseYourCeilingColorsMate);
     chooseYourCeilingAddBorder(chooseYourCeilingColorsGlossy);
     chooseYourCeilingAddBorder(chooseYourCeilingColorsPhotoprint);
+    chooseYourCeilingAddBorder(chooseYourCeilingColorsSky);
 }
 
 if (chooseYourCeilingColorsItems) {
