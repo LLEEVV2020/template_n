@@ -340,6 +340,15 @@ $(document).ready(function () {
     return false;
   });
 
+  $('.tabs__inner .inner-tab').on('click', function (event) {
+    var id = $(this).attr('data-id');
+    $(this).parent().parent().find('.inner-tab-item').removeClass('inner-active-tab').hide();
+    $(this).parent().find('.inner-tab').removeClass('inner-active');
+    $(this).addClass('inner-active');
+    $('#' + id).addClass('inner-active-tab').fadeIn();
+    return false;
+  });
+
   // Скрипт для слайдера блока wood-species
   $('.wood-species__slider').owlCarousel({
     items: 1,
