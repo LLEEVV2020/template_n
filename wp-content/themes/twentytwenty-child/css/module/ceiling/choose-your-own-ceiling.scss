@@ -82,7 +82,7 @@
             width: 100%;
             height: 6.5rem;
             background-image: url('/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-ceiling-matte-1.webp');
-            background-size: 34.2rem;
+            background-size: 35.3rem;
 
             &--glossy {
                 background-image: url('/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-ceiling-glossy-1.webp');
@@ -208,53 +208,46 @@
             }
 
             &--photoprint {
+                border: 0.1rem solid #EFEFEF;
+
                 &-1 {
                     background-image: url('/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-ceiling-print-icon-1.webp');
                 }
 
                 &-2 {
                     background-image: url('/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-ceiling-print-icon-2.webp');
-                    border: 0.1rem solid #EFEFEF;
                 }
 
                 &-3 {
                     background-image: url('/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-ceiling-print-icon-3.webp');
-                    border: 0.1rem solid #EFEFEF;
                 }
 
                 &-4 {
                     background-image: url('/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-ceiling-print-icon-4.webp');
-                    border: 0.1rem solid #EFEFEF;
                 }
 
                 &-5 {
                     background-image: url('/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-ceiling-print-icon-5.webp');
-                    border: 0.1rem solid #EFEFEF;
                 }
 
                 &-6 {
                     background-image: url('/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-ceiling-print-icon-6.webp');
-                    border: 0.1rem solid #EFEFEF;
                 }
 
                 &-7 {
                     background-image: url('/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-ceiling-print-icon-7.webp');
-                    border: 0.1rem solid #EFEFEF;
                 }
 
                 &-8 {
                     background-image: url('/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-ceiling-print-icon-8.webp');
-                    border: 0.1rem solid #EFEFEF;
                 }
 
                 &-9 {
                     background-image: url('/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-ceiling-print-icon-9.webp');
-                    border: 0.1rem solid #EFEFEF;
                 }
 
                 &-10 {
                     background-image: url('/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-ceiling-print-icon-10.webp');
-                    border: 0.1rem solid #EFEFEF;
                 }
             }
         }
@@ -481,7 +474,7 @@
             height: 20.6rem;
 
             &-bg {
-                background-size: 30.9rem;
+                background-size: 32.6rem;
             }
         }
 
@@ -592,7 +585,7 @@
             height: 38.5rem;
 
             &-bg {
-                background-size: 58.8rem;
+                background-size: 61rem;
                 height: 11.5rem;
             }
         }
