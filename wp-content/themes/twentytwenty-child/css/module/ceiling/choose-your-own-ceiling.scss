@@ -96,7 +96,6 @@
 
     &__colors-text,
     &__text,
-    &__price-meter-text,
     &__price-old,
     &__price-new {
         letter-spacing: 0.03em;
@@ -318,6 +317,7 @@
         }
 
         &-inner {
+            position: relative;
             justify-content: space-around;
             width: 13.5rem;
             height: 2.8rem;
@@ -325,12 +325,14 @@
         }
 
         &-circle {
+            position: absolute;
             width: 1.5rem;
             height: 1.5rem;
             background-color: #0F83C0;
             border-radius: 50%;
 
             &--minus {
+                left: 1rem;
                 &:before {
                     top: 0.6rem;
                     left: 0.4rem;
@@ -340,6 +342,7 @@
             }
 
             &--plus {
+                right: 1rem;
                 &:before {
                     top: 0.6rem;
                     left: 0.4rem;
@@ -354,6 +357,21 @@
                     height: 0.8rem;
                 }
             }
+        }
+
+        &-input {
+            height: 100%;
+            width: 100%;
+            border-radius: 0.6rem;
+            border: none;
+            text-align: right;
+            padding-right: 7.5rem;
+        }
+
+        &-square {
+            position: absolute;
+            right: 5rem;
+            pointer-events: none;
         }
 
         &-old {
