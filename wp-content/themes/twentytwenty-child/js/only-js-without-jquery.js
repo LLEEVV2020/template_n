@@ -57,20 +57,25 @@ if (chooseYourCeilingColorsItems) {
 
 const chooseYourCeilingPrices = document.querySelectorAll('.choose-your-own-ceiling__price-box');
 
-let meter = 1;
+
 
 if (chooseYourCeilingPrices) {
     chooseYourCeilingPrices.forEach(function(priceBox) {
         priceBox.addEventListener('click', function(event) {
+            
+            
+
             let target = event.target;
             let meterNumber = priceBox.querySelector('.choose-your-own-ceiling__price-input');
+            let meterNumberOld = priceBox.querySelector('.choose-your-own-ceiling__price-old-value');
+            let meterNumberNew = priceBox.querySelector('.choose-your-own-ceiling__price-new-value');
+            let meter = meterNumber.value;
     
             if (target.classList.contains('choose-your-own-ceiling__price-circle--minus')) {
                 meter--;
                 if (meter < 1) {
                     meter = 1;
                 }
-                meterNumber.value = meter;
             }
     
             if (target.classList.contains('choose-your-own-ceiling__price-circle--plus')) {
@@ -78,8 +83,12 @@ if (chooseYourCeilingPrices) {
                 if (meter > 100) {
                     meter = 100;
                 }
-                meterNumber.value = meter;
             }
+
+            meterNumber.value = meter;
+            meterNumberOld.textContent = Math.round(meterNumberNew.dataset.value * meter * meterNumberOld.dataset.value);
+            meterNumberNew.textContent = Math.round(meterNumberNew.dataset.value * meter); 
+
         });
     });
 }

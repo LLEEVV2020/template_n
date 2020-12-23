@@ -377,7 +377,7 @@
         &-old {
             font-size: 2rem;
             color: #FBD0BC;
-
+            white-space: nowrap;
             &:before {
                 top: 0.3rem;
                 left: 1.7rem;
@@ -392,6 +392,7 @@
         &-new {
             font-size: 2.6rem;
             color: $yellow;
+            white-space: nowrap;
         }
     }
 
