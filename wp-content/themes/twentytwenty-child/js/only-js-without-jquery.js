@@ -86,7 +86,7 @@ if (chooseYourCeilingPrices) {
             }
 
             meterNumber.value = meter;
-            meterNumberOld.textContent = Math.round(meterNumberNew.dataset.value * meter * 1.625);
+            meterNumberOld.textContent = Math.round(meterNumberNew.dataset.value * meter * meterNumberOld.dataset.value);
             meterNumberNew.textContent = Math.round(meterNumberNew.dataset.value * meter); 
 
         });
