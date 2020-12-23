@@ -249,6 +249,11 @@ if (calculatingCostRangeSlider) {
     calculatingCostRangeSlider.addEventListener('input', (event) => {
         calculatingCostValue.textContent = event.target.value;
         applyFill(event.target);
+        
+        let calcValueMin = String(Math.round(event.target.value * (+event.target.dataset.value)));
+        let calcValueMax = String(Math.round(event.target.value * (+event.target.dataset.value) * 1.153));
+        calculatingValueMin.textContent = calcValueMin.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
+        calculatingValueMax.textContent = calcValueMax.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
     });
 
     applyFill(calculatingCostRangeSlider);
