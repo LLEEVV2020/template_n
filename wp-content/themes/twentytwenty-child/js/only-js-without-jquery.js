@@ -84,4 +84,27 @@ chooseYourCeilingPrices.forEach(function(priceBox) {
     });
 });
 
+const repairBeforeAndFfterBox = document.querySelectorAll('.repair-before-and-after__box');
+
+if (repairBeforeAndFfterBox) {
+    repairBeforeAndFfterBox.forEach(function(box) {
+        let dragLine = box.querySelector('.repair-before-and-after__drag-line');
+        let img = box.querySelector('.repair-before-and-after__img-js');
+        let beforeItem = box.querySelector('.repair-before-and-after__item.before');
+        let afterItem = box.querySelector('.repair-before-and-after__item.after');
+        box.addEventListener('input', function(event) {
+            if (event.target.classList.contains('repair-before-and-after__range')) {
+                let sliderRange = event.target.value;
+                if (sliderRange < 29) beforeItem.style.display = 'none';
+                else beforeItem.style.display = 'block';
+                if (sliderRange > 72) afterItem.style.display = 'none';
+                else afterItem.style.display = 'block';
+                dragLine.style.left = sliderRange + '%';
+                img.style.width = sliderRange + '%';
+            }
+        });
+    });
+}
+
+
 
