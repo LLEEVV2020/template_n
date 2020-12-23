@@ -67,6 +67,8 @@ if (chooseYourCeilingPrices) {
 
             let target = event.target;
             let meterNumber = priceBox.querySelector('.choose-your-own-ceiling__price-input');
+            let meterNumberOld = priceBox.querySelector('.choose-your-own-ceiling__price-old-value');
+            let meterNumberNew = priceBox.querySelector('.choose-your-own-ceiling__price-new-value');
             let meter = meterNumber.value;
     
             if (target.classList.contains('choose-your-own-ceiling__price-circle--minus')) {
@@ -75,6 +77,8 @@ if (chooseYourCeilingPrices) {
                     meter = 1;
                 }
                 meterNumber.value = meter;
+                //meterNumberOld.textContent = 
+               // meterNumberNew.textContent = 
             }
     
             if (target.classList.contains('choose-your-own-ceiling__price-circle--plus')) {
@@ -84,6 +88,7 @@ if (chooseYourCeilingPrices) {
                 }
                 meterNumber.value = meter;
             }
+
         });
     });
 }
