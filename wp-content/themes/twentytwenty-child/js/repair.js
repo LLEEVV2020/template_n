@@ -74,3 +74,13 @@ checkWidth11(); // проверит при загрузке страницы
 $(window).resize(function () {
   checkWidth11(); // проверит при изменении размера окна клиента
 });
+
+
+// Скрипт для блока profitable-proposition
+
+$(".profitable-proposition__item-list").on('click', '> .profitable-proposition__list-btn-open', function() {
+  $(this).closest(".profitable-proposition__item-list").addClass("open");
+})
+.on('click', '> .profitable-proposition__list-btn-closed', function() {
+  $(this).closest(".profitable-proposition__item-list").removeClass("open");
+});
