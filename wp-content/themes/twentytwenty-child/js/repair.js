@@ -47,3 +47,30 @@ checkWidth11(); // проверит при загрузке страницы
 $(window).resize(function () {
   checkWidth11(); // проверит при изменении размера окна клиента
 });
+
+// Скрипт для слайдера блока profitable-proposition__slider
+function checkWidth11() {
+  var windowWidth = $('body').innerWidth(),
+    elem = $(".profitable-proposition__slider");
+  if (windowWidth < 768) {
+
+    elem.addClass('owl-carousel');
+
+    $('.profitable-proposition__slider').owlCarousel({
+      items: 1,
+      dots: true,
+      dotsClass: ['pagination-box'],
+      dotClass: ['pagination'],
+      margin: 15,
+    });
+  }
+  else {
+    elem.trigger('destroy.owl.carousel').removeClass('owl-carousel owl-loaded');
+  }
+}
+
+checkWidth11(); // проверит при загрузке страницы
+
+$(window).resize(function () {
+  checkWidth11(); // проверит при изменении размера окна клиента
+});
