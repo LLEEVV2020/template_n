@@ -113,5 +113,27 @@ if (repairBeforeAndFfterBox) {
     });
 }
 
+// Скрипт для блока make-repair-in-15-days
+let makeRepairIn15DaysSlider = document.querySelector('.make-repair-in-15-days__slider');
+
+if (makeRepairIn15DaysSlider) {
+    let makeRepairIn15DaysSwiper = new Swiper(makeRepairIn15DaysSlider, {
+        sliderPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true
+        },
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+        }
+    });
+}
+
+
+
 
 
