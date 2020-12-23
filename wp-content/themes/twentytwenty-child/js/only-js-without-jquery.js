@@ -57,13 +57,17 @@ if (chooseYourCeilingColorsItems) {
 
 const chooseYourCeilingPrices = document.querySelectorAll('.choose-your-own-ceiling__price-box');
 
-let meter = 1;
+
 
 if (chooseYourCeilingPrices) {
     chooseYourCeilingPrices.forEach(function(priceBox) {
         priceBox.addEventListener('click', function(event) {
+            
+            
+
             let target = event.target;
             let meterNumber = priceBox.querySelector('.choose-your-own-ceiling__price-input');
+            let meter = meterNumber.value;
     
             if (target.classList.contains('choose-your-own-ceiling__price-circle--minus')) {
                 meter--;
