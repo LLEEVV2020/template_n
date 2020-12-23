@@ -25,7 +25,7 @@ const chooseYourCeilingColorsMate = document.querySelectorAll('.choose-your-own-
     chooseYourCeilingColorsSky = document.querySelectorAll('.choose-your-own-ceiling__colors-item--sky'),
     chooseYourCeilingColorsItems = document.querySelectorAll('.choose-your-own-ceiling__colors-item');
 
-// Ф-ия добавляет бордер для элемента
+// Ф-ия добавляет бордер для активного элемента 
 function chooseYourCeilingAddBorder(colors) {
     colors.forEach(function(color) {
         color.addEventListener('click', function() {
@@ -59,47 +59,54 @@ const chooseYourCeilingPrices = document.querySelectorAll('.choose-your-own-ceil
 
 let meter = 1;
 
-chooseYourCeilingPrices.forEach(function(priceBox) {
-    priceBox.addEventListener('click', function(event) {
-        let target = event.target;
-        // let oldPrice = priceBox.querySelector('.choose-your-own-ceiling__price-old-value');
-        // let newPrice = priceBox.querySelector('.choose-your-own-ceiling__price-new-value');
-        let meterNumber = priceBox.querySelector('.choose-your-own-ceiling__price-meter-number');
-
-        if (target.classList.contains('choose-your-own-ceiling__price-circle--minus')) {
-            meter--;
-            if (meter < 1) {
-                meter = 1;
+if (chooseYourCeilingPrices) {
+    chooseYourCeilingPrices.forEach(function(priceBox) {
+        priceBox.addEventListener('click', function(event) {
+            let target = event.target;
+            let meterNumber = priceBox.querySelector('.choose-your-own-ceiling__price-meter-number');
+    
+            if (target.classList.contains('choose-your-own-ceiling__price-circle--minus')) {
+                meter--;
+                if (meter < 1) {
+                    meter = 1;
+                }
+                meterNumber.textContent = meter;
             }
-            meterNumber.textContent = meter;
-        }
-
-        if (target.classList.contains('choose-your-own-ceiling__price-circle--plus')) {
-            meter++;
-            if (meter > 100) {
-                meter = 100;
+    
+            if (target.classList.contains('choose-your-own-ceiling__price-circle--plus')) {
+                meter++;
+                if (meter > 100) {
+                    meter = 100;
+                }
+                meterNumber.textContent = meter;
             }
-            meterNumber.textContent = meter;
-        }
+        });
     });
-});
+}
 
+// Скрипт для блока repair-before-and-after
 const repairBeforeAndFfterBox = document.querySelectorAll('.repair-before-and-after__box');
 
 if (repairBeforeAndFfterBox) {
     repairBeforeAndFfterBox.forEach(function(box) {
+        // Получаем все нужные элементы внутри блока repair-before-and-after__box
         let dragLine = box.querySelector('.repair-before-and-after__drag-line');
         let img = box.querySelector('.repair-before-and-after__img-js');
         let beforeItem = box.querySelector('.repair-before-and-after__item.before');
         let afterItem = box.querySelector('.repair-before-and-after__item.after');
+
+        // Вешаем событие input для каждого блока repair-before-and-after__box
         box.addEventListener('input', function(event) {
             if (event.target.classList.contains('repair-before-and-after__range')) {
                 let sliderRange = event.target.value;
+                // Если значение св-ва value у блока repair-before-and-after__range менее 29 или более 72, то мы скрываем элементы repair-before-and-after__item.before и repair-before-and-after__item.after
                 if (sliderRange < 29) beforeItem.style.display = 'none';
                 else beforeItem.style.display = 'block';
                 if (sliderRange > 72) afterItem.style.display = 'none';
                 else afterItem.style.display = 'block';
+                // Меняем св-во left у линии
                 dragLine.style.left = sliderRange + '%';
+                // Меняем ширину у ползунка
                 img.style.width = sliderRange + '%';
             }
         });
