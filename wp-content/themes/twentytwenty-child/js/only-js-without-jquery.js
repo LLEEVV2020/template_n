@@ -76,7 +76,6 @@ if (chooseYourCeilingPrices) {
                 if (meter < 1) {
                     meter = 1;
                 }
-                
             }
     
             if (target.classList.contains('choose-your-own-ceiling__price-circle--plus')) {
@@ -84,7 +83,6 @@ if (chooseYourCeilingPrices) {
                 if (meter > 100) {
                     meter = 100;
                 }
-                
             }
 
             meterNumber.value = meter;
