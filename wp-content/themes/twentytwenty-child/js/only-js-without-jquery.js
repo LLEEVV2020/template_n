@@ -55,6 +55,37 @@ if (chooseYourCeilingColorsItems) {
     });
 }
 
+const chooseYourCeilingPrices = document.querySelectorAll('.choose-your-own-ceiling__price-box');
+
+let meter = 1;
+
+if (chooseYourCeilingPrices) {
+    chooseYourCeilingPrices.forEach(function(priceBox) {
+        priceBox.addEventListener('click', function(event) {
+            let target = event.target;
+            let meterNumber = priceBox.querySelector('.choose-your-own-ceiling__price-input');
+
+            meterNumber.value = '';
+    
+            if (target.classList.contains('choose-your-own-ceiling__price-circle--minus')) {
+                meter--;
+                if (meter < 1) {
+                    meter = 1;
+                }
+                meterNumber.value = meter;
+            }
+    
+            if (target.classList.contains('choose-your-own-ceiling__price-circle--plus')) {
+                meter++;
+                if (meter > 100) {
+                    meter = 100;
+                }
+                meterNumber.value = meter;
+            }
+        });
+    });
+}
+
 // Скрипт для блока repair-before-and-after
 const repairBeforeAndFfterBox = document.querySelectorAll('.repair-before-and-after__box');
 
