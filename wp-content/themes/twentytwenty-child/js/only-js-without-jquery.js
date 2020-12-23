@@ -64,8 +64,6 @@ if (chooseYourCeilingPrices) {
         priceBox.addEventListener('click', function(event) {
             let target = event.target;
             let meterNumber = priceBox.querySelector('.choose-your-own-ceiling__price-input');
-
-            meterNumber.value = '';
     
             if (target.classList.contains('choose-your-own-ceiling__price-circle--minus')) {
                 meter--;
