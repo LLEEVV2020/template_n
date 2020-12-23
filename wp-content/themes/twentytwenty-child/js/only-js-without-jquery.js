@@ -77,10 +77,6 @@ if (chooseYourCeilingPrices) {
                     meter = 1;
                 }
                 
-                meterNumber.value = meter;
-                meterNumberOld.textContent = Math.round(meterNumberNew.dataset.value * meter * 1.625);
-                meterNumberNew.textContent = Math.round(meterNumberNew.dataset.value * meter); 
-
             }
     
             if (target.classList.contains('choose-your-own-ceiling__price-circle--plus')) {
@@ -88,10 +84,12 @@ if (chooseYourCeilingPrices) {
                 if (meter > 100) {
                     meter = 100;
                 }
-                meterNumber.value = meter;
-                meterNumberOld.textContent = Math.round(meterNumberNew.dataset.value * meter * 1.625);
-                meterNumberNew.textContent = Math.round(meterNumberNew.dataset.value * meter); 
+                
             }
+
+            meterNumber.value = meter;
+            meterNumberOld.textContent = Math.round(meterNumberNew.dataset.value * meter * 1.625);
+            meterNumberNew.textContent = Math.round(meterNumberNew.dataset.value * meter); 
 
         });
     });
