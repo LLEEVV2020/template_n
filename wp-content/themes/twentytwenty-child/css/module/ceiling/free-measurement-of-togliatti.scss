@@ -67,9 +67,10 @@
             font-size: 1.6rem;
             padding: 0.7em 1.2em;
             margin-bottom: 0.9em;
+            max-width: 22.6rem;
         }
         @include _1200 {
-            max-width: 30.7rem;
+            max-width: 19.5rem;
             padding: 0.5em 1.2em;
             margin: 0;
             min-height: 4rem;
@@ -87,10 +88,11 @@
             margin: 3rem auto 0;
         }
         @include _1200 {
-            max-width: 22.5rem;
+            max-width: 19.3rem;
             margin: 0;
             line-height: 0em;
             padding: 0;
+            letter-spacing: 0;
         }
     }
 
@@ -105,7 +107,7 @@
         }
 
         @include _1200 {
-            max-width: 18.4rem;
+            max-width: 14.4rem;
         }
     }
     [value="free-measurement-day"],
