@@ -137,6 +137,54 @@ if (makeRepairIn15DaysSlider) {
     });
 }
 
+// favorablePricesIframe = `<iframe width="468" height="265" src="https://www.youtube.com/embed/3U79waCgqCw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+
+
+// Скрипт для блока favorable-prices файла C_video-reviews.html
+const favorablePricesItemImgBox = document.querySelectorAll('.favorable-prices__item-img-box'),
+    favorablePricesIframe = document.createElement('iframe');
+    favorablePricesLink = document.createElement('a');
+
+favorablePricesIframe.classList.add('hide');
+favorablePricesIframe.src = 'https://www.youtube.com/embed/3U79waCgqCw';
+favorablePricesIframe.setAttribute('frameborder', 0);
+favorablePricesIframe.setAttribute('allow', 'accelerometer');
+favorablePricesIframe.setAttribute('autoplay', '');
+favorablePricesIframe.setAttribute('clipboard-write', '');
+favorablePricesIframe.setAttribute('encrypted-media', '');
+favorablePricesIframe.setAttribute('gyroscope', '');
+favorablePricesIframe.setAttribute('picture-in-picture', '');
+favorablePricesIframe.setAttribute('allowfullscreen', '');
+
+favorablePricesLink.classList.add('favorable-prices__item-img-big');
+favorablePricesLink.href = '#';
+favorablePricesLink.innerHTML = `<img src="/wp-content/themes/twentytwenty-child/img/ceiling/favorable-prices-big-img.webp" alt="отзывы">`;
+
+if(favorablePricesItemImgBox) {
+    favorablePricesItemImgBox.forEach(function(box) {
+        let imgBigBox = box.querySelector('.favorable-prices__item-img-big'),
+            imgBig = box.querySelector('.favorable-prices__item-img-big img'),
+            iframe = box.querySelector('iframe');
+            
+        box.addEventListener('click', function(event) {
+            event.preventDefault();
+            const target = event.target;
+            if (target.classList.contains('js-favorable-prices-img')) {
+                const src = event.target.src;
+                imgBig.src = src;
+                imgBigBox.classList.remove('hide');
+                iframe.classList.add('hide');
+            }
+            if (target.classList.contains('js-favorable-prices-video-img')) {
+                imgBigBox.classList.add('hide');
+                iframe.classList.remove('hide');
+            }
+        });
+    });
+}
+
+
+
 
 
 
