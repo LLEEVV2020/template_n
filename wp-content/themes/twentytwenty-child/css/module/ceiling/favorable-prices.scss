@@ -257,6 +257,9 @@
         &:last-child {
             display: block;
         }
+        iframe{
+            height: inherit;
+        }
 
         @include _768 {
             max-width: 29.2rem;
