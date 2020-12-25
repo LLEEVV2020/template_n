@@ -22,7 +22,7 @@ $('.choose-your-bathroom-renovation__slider').owlCarousel({
 });
 
 // Скрипт для слайдера блока work-algorithm__slider
-function checkWidth11() {
+function checkWidth1() {
   var windowWidth = $('body').innerWidth(),
     elem = $(".work-algorithm__slider");
   if (windowWidth < 768) {
@@ -42,14 +42,14 @@ function checkWidth11() {
   }
 }
 
-checkWidth11(); // проверит при загрузке страницы
+checkWidth1(); // проверит при загрузке страницы
 
 $(window).resize(function () {
-  checkWidth11(); // проверит при изменении размера окна клиента
+  checkWidth1(); // проверит при изменении размера окна клиента
 });
 
 // Скрипт для слайдера блока profitable-proposition__slider
-function checkWidth11() {
+function checkWidth2() {
   var windowWidth = $('body').innerWidth(),
     elem = $(".profitable-proposition__slider");
   if (windowWidth < 768) {
@@ -69,18 +69,46 @@ function checkWidth11() {
   }
 }
 
-checkWidth11(); // проверит при загрузке страницы
+checkWidth2(); // проверит при загрузке страницы
 
 $(window).resize(function () {
-  checkWidth11(); // проверит при изменении размера окна клиента
+  checkWidth2(); // проверит при изменении размера окна клиента
 });
 
 
 // Скрипт для блока profitable-proposition
 
-$(".profitable-proposition__item-list").on('click', '> .profitable-proposition__list-btn-open', function() {
+$(".profitable-proposition__item-list").on('click', '> .profitable-proposition__list-btn-open', function () {
   $(this).closest(".profitable-proposition__item-list").addClass("open");
 })
-.on('click', '> .profitable-proposition__list-btn-closed', function() {
-  $(this).closest(".profitable-proposition__item-list").removeClass("open");
+  .on('click', '> .profitable-proposition__list-btn-closed', function () {
+    $(this).closest(".profitable-proposition__item-list").removeClass("open");
+  });
+
+
+// Скрипт для слайдера блока our-repair-is-advised__slider
+function checkWidth3() {
+  var windowWidth = $('body').innerWidth(),
+    elem = $(".our-repair-is-advised__slider");
+  if (windowWidth < 768) {
+
+    elem.addClass('owl-carousel');
+
+    $('.our-repair-is-advised__slider').owlCarousel({
+      items: 1,
+      dots: true,
+      dotsClass: ['pagination-box'],
+      dotClass: ['pagination'],
+      margin: 15,
+    });
+  }
+  else {
+    elem.trigger('destroy.owl.carousel').removeClass('owl-carousel owl-loaded');
+  }
+}
+
+checkWidth3(); // проверит при загрузке страницы
+
+$(window).resize(function () {
+  checkWidth3(); // проверит при изменении размера окна клиента
 });
