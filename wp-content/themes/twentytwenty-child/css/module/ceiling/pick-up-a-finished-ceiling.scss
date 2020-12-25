@@ -48,12 +48,14 @@
             overflow-x: auto;
             white-space: nowrap;
             position: relative;
-            // overflow-x: scroll;
+            scrollbar-width: none;
+            // overflow-x: visible;
             // scrollbar-width: thin;
             // scrollbar-color: #ffe600 #ccc;
             max-width: 57rem;
             margin: 0 auto 1.6em;
             border-bottom: 0.1rem solid;
+
         }
 
         @include _768 {
