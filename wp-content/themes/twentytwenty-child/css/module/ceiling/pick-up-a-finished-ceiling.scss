@@ -54,8 +54,16 @@
             // scrollbar-color: #ffe600 #ccc;
             max-width: 57rem;
             margin: 0 auto 1.6em;
-            border-bottom: 0.1rem solid;
 
+            &::before {
+                content: "";
+                position: absolute;
+                width: 57rem;
+                height: 0.1rem;
+                background-color: #ccc;
+                left: 0;
+                bottom: 0.1rem;
+            }
         }
 
         @include _768 {
