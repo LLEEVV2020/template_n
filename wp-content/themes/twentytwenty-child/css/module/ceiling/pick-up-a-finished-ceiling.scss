@@ -48,14 +48,16 @@
             overflow-x: auto;
             white-space: nowrap;
             position: relative;
-            overflow-x: scroll;
-            scrollbar-width: thin;
-            scrollbar-color: #ffe600 #ccc;
+            // overflow-x: scroll;
+            // scrollbar-width: thin;
+            // scrollbar-color: #ffe600 #ccc;
             max-width: 57rem;
             margin: 0 auto 1.6em;
+            border-bottom: 0.1rem solid;
         }
 
         @include _768 {
+            border: none;
             background-color: #efefef;
             max-width: 100%;
             justify-content: center;
@@ -70,23 +72,23 @@
         }
     }
 
-    @include _max768 {
-        *::-webkit-scrollbar {
-            width: 5px;
-            height: 5px;
-        }
+    // @include _max768 {
+    //     *::-webkit-scrollbar {
+    //         width: 5px;
+    //         height: 5px;
+    //     }
 
-        *::-webkit-scrollbar-track {
-            background: #979797;
-            border: 2px solid #fff;
-        }
+    //     *::-webkit-scrollbar-track {
+    //         background: #979797;
+    //         border: 2px solid #fff;
+    //     }
 
-        *::-webkit-scrollbar-thumb {
-            background-color: #ffe600;
-            border-radius: 2em;
-            border: 0 solid #979797;
-        }
-    }
+    //     *::-webkit-scrollbar-thumb {
+    //         background-color: #ffe600;
+    //         border-radius: 2em;
+    //         border: 0 solid #979797;
+    //     }
+    // }
 
     .active-tab {
         display: block !important;
@@ -103,17 +105,32 @@
     /* .pick-up-a-finished-ceiling__tabs */
 
     &__tabs {
-        margin: 0 1em 0.6em;
+        padding: 0 1em 0.6em;
         cursor: pointer;
         position: relative;
 
         &.active {
             font-weight: 900;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 0.3rem;
+                background-color: $yellow;
+                bottom: 0;
+                left: 0;
+            }
 
             @include _768 {
                 font-weight: 700;
                 background-color: #fff;
                 border: 0.15em solid $orange;
+
+                &::after {
+                    content: none;
+                }
 
                 &::before {
                     content: "";
@@ -142,6 +159,7 @@
             align-items: center;
             justify-content: center;
             min-height: 4rem;
+            padding: 0;
             margin: 0;
             width: 25%;
             font-weight: 700;
