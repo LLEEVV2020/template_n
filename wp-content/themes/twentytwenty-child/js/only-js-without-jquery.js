@@ -173,11 +173,11 @@ if(favorablePricesItemImgBox) {
                 const src = event.target.src;
                 imgBig.src = src;
                 imgBigBox.classList.remove('hide');
-                iframe.classList.add('hide');
+                if(iframe) iframe.classList.add('hide');
             }
             if (target.classList.contains('js-favorable-prices-video-img')) {
                 imgBigBox.classList.add('hide');
-                iframe.classList.remove('hide');
+                if(iframe) iframe.classList.remove('hide');
             }
         });
     });
