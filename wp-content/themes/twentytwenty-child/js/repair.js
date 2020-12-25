@@ -89,11 +89,11 @@ $(".profitable-proposition__item-list").on('click', '> .profitable-proposition__
 // Скрипт для слайдера блока our-repair-is-advised__slider
 function checkWidth3() {
   var windowWidth = $('body').innerWidth(),
-    elem = $(".our-repair-is-advised__slider");
+  elem = $(".our-repair-is-advised__slider");
   if (windowWidth < 768) {
-
+    
     elem.addClass('owl-carousel');
-
+    
     $('.our-repair-is-advised__slider').owlCarousel({
       items: 1,
       dots: true,
@@ -111,4 +111,16 @@ checkWidth3(); // проверит при загрузке страницы
 
 $(window).resize(function () {
   checkWidth3(); // проверит при изменении размера окна клиента
+});
+
+// Скрипт для слайдера блока design-project__slider
+$('.design-project__slider').owlCarousel({
+  items: 1,
+  dots: true,
+  dotsClass: ['pagination-box'],
+  dotClass: ['pagination'],
+  navContainerClass: ['navigation'],
+  navClass: ['navigation-left', 'navigation-right'],
+  navText: [''],
+  margin: 15,
 });
