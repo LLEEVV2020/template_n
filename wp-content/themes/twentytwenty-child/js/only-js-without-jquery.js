@@ -3,14 +3,14 @@ let tabs = document.querySelectorAll('.js-tab'),
     tabsItems = document.querySelectorAll('.js-tab__item');
 
 if (tabs && tabsItems) {
-    tabs.forEach(function(tab) {
-        tab.addEventListener('click', function() {
-            tabs.forEach(function(tab) {
+    tabs.forEach(function (tab) {
+        tab.addEventListener('click', function () {
+            tabs.forEach(function (tab) {
                 tab.classList.remove('active');
             });
             this.classList.add('active');
             let id = tab.dataset.id;
-            tabsItems.forEach(function(item) {
+            tabsItems.forEach(function (item) {
                 item.classList.remove('active');
             });
             document.querySelector('#' + id).classList.add('active');
@@ -27,9 +27,9 @@ const chooseYourCeilingColorsMate = document.querySelectorAll('.choose-your-own-
 
 // Ф-ия добавляет бордер для активного элемента 
 function chooseYourCeilingAddBorder(colors) {
-    colors.forEach(function(color) {
-        color.addEventListener('click', function() {
-            colors.forEach(function(color) {
+    colors.forEach(function (color) {
+        color.addEventListener('click', function () {
+            colors.forEach(function (color) {
                 color.classList.remove('active');
             });
             this.classList.add('active');
@@ -46,33 +46,33 @@ if (chooseYourCeilingColorsMate || chooseYourCeilingColorsGlossy || chooseYourCe
 
 if (chooseYourCeilingColorsItems) {
     // При клике на элемент меняеться фоновое изображение у блока
-    chooseYourCeilingColorsItems.forEach(function(color) {
-        color.addEventListener('click', function() {
+    chooseYourCeilingColorsItems.forEach(function (color) {
+        color.addEventListener('click', function () {
             let data = color.dataset.img;
             let parent = color.closest('.choose-your-own-ceiling__box').querySelector('.choose-your-own-ceiling__image-bg');
             parent.style.backgroundImage = `url(/wp-content/themes/twentytwenty-child/img/ceiling/${data}.webp)`;
-        }); 
+        });
     });
 }
 
 const chooseYourCeilingPrices = document.querySelectorAll('.choose-your-own-ceiling__price-box');
 
 if (chooseYourCeilingPrices) {
-    chooseYourCeilingPrices.forEach(function(priceBox) {
-        priceBox.addEventListener('click', function(event) {
+    chooseYourCeilingPrices.forEach(function (priceBox) {
+        priceBox.addEventListener('click', function (event) {
             let target = event.target;
             let meterNumber = priceBox.querySelector('.choose-your-own-ceiling__price-input');
             let meterNumberOld = priceBox.querySelector('.choose-your-own-ceiling__price-old-value');
             let meterNumberNew = priceBox.querySelector('.choose-your-own-ceiling__price-new-value');
             let meter = meterNumber.value;
-    
+
             if (target.classList.contains('choose-your-own-ceiling__price-circle--minus')) {
                 meter--;
                 if (meter < 1) {
                     meter = 1;
                 }
             }
-    
+
             if (target.classList.contains('choose-your-own-ceiling__price-circle--plus')) {
                 meter++;
                 if (meter > 100) {
@@ -82,7 +82,7 @@ if (chooseYourCeilingPrices) {
 
             meterNumber.value = meter;
             meterNumberOld.textContent = Math.round(meterNumberNew.dataset.value * meter * meterNumberOld.dataset.value);
-            meterNumberNew.textContent = Math.round(meterNumberNew.dataset.value * meter); 
+            meterNumberNew.textContent = Math.round(meterNumberNew.dataset.value * meter);
 
         });
     });
@@ -92,7 +92,7 @@ if (chooseYourCeilingPrices) {
 const repairBeforeAndFfterBox = document.querySelectorAll('.repair-before-and-after__box');
 
 if (repairBeforeAndFfterBox) {
-    repairBeforeAndFfterBox.forEach(function(box) {
+    repairBeforeAndFfterBox.forEach(function (box) {
         // Получаем все нужные элементы внутри блока repair-before-and-after__box
         let dragLine = box.querySelector('.repair-before-and-after__drag-line');
         let img = box.querySelector('.repair-before-and-after__img-js');
@@ -100,7 +100,7 @@ if (repairBeforeAndFfterBox) {
         let afterItem = box.querySelector('.repair-before-and-after__item.after');
 
         // Вешаем событие input для каждого блока repair-before-and-after__box
-        box.addEventListener('input', function(event) {
+        box.addEventListener('input', function (event) {
             if (event.target.classList.contains('repair-before-and-after__range')) {
                 let sliderRange = event.target.value;
                 // Если значение св-ва value у блока repair-before-and-after__range менее 29 или более 72, то мы скрываем элементы repair-before-and-after__item.before и repair-before-and-after__item.after
@@ -143,7 +143,7 @@ if (makeRepairIn15DaysSlider) {
 // Скрипт для блока favorable-prices файла C_video-reviews.html
 const favorablePricesItemImgBox = document.querySelectorAll('.favorable-prices__item-img-box'),
     favorablePricesIframe = document.createElement('iframe');
-    favorablePricesLink = document.createElement('a');
+favorablePricesLink = document.createElement('a');
 
 favorablePricesIframe.classList.add('hide');
 favorablePricesIframe.src = 'https://www.youtube.com/embed/3U79waCgqCw';
@@ -160,28 +160,30 @@ favorablePricesLink.classList.add('favorable-prices__item-img-big');
 favorablePricesLink.href = '#';
 favorablePricesLink.innerHTML = `<img src="/wp-content/themes/twentytwenty-child/img/ceiling/favorable-prices-big-img.webp" alt="отзывы">`;
 
-if(favorablePricesItemImgBox) {
-    favorablePricesItemImgBox.forEach(function(box) {
+if (favorablePricesItemImgBox) {
+    favorablePricesItemImgBox.forEach(function (box) {
         let imgBigBox = box.querySelector('.favorable-prices__item-img-big'),
             imgBig = box.querySelector('.favorable-prices__item-img-big img'),
             iframe = box.querySelector('iframe');
-            
-        box.addEventListener('click', function(event) {
+
+        box.addEventListener('click', function (event) {
             event.preventDefault();
             const target = event.target;
             if (target.classList.contains('js-favorable-prices-img')) {
                 const src = event.target.src;
                 imgBig.src = src;
                 imgBigBox.classList.remove('hide');
-                if(iframe) iframe.classList.add('hide');
+                if (iframe) iframe.classList.add('hide');
             }
             if (target.classList.contains('js-favorable-prices-video-img')) {
                 imgBigBox.classList.add('hide');
-                if(iframe) iframe.classList.remove('hide');
+                if (iframe) iframe.classList.remove('hide');
             }
         });
     });
 }
+
+
 
 
 
