@@ -194,11 +194,14 @@ input[type="tel"]::placeholder { color: #D0D0D0; }
 
 .wrap-text-btn{
   position: relative;
-  transform: translateY(.4em);
+  transform: translateY(-.1em);
   display: none;
   flex-direction: column;
   @media ( min-width: 670px ) {
       display: inline-flex;
+  }
+  @media ( min-width: 768px ) {
+    transform: translateY(.4em);
   }
   .btn{
       margin-bottom: .8rem;
