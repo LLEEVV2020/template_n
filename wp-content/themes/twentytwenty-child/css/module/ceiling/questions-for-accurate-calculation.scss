@@ -8,12 +8,8 @@
 
 .questions-for-accurate-calculation {
 
-    .calculation-form {
-        // display: none;
-
-        &.active {
-            // display: block;
-        }
+    .swiper-button-disabled {
+        display: none;
     }
 
     /* .questions-for-accurate-calculation__title */

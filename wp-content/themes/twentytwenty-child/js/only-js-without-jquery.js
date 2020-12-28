@@ -183,7 +183,20 @@ if (favorablePricesItemImgBox) {
     });
 }
 
+// Скрипт для блока favorable-prices файла C_questions-for-accurate-calculation
+let questionsForAccurateCalculationSlider = document.querySelector('.questions-for-accurate-calculation__slider');
 
+if (questionsForAccurateCalculationSlider) {
+    let makeRepairIn15DaysSwiper = new Swiper(questionsForAccurateCalculationSlider, {
+        sliderPerView: 1,
+        spaceBetween: 10,
+        loop: false,
+        navigation: {
+            nextEl: '.questions-for-accurate-calculation__btn--next',
+            prevEl: '.questions-for-accurate-calculation__btn--prev'
+        }
+    });
+}
 
 
 
