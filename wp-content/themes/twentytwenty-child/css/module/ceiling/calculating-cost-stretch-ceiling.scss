@@ -202,8 +202,9 @@
         }
 
         &__values {
-            width: 17em;
+            width: 17.5em;
             margin-bottom: 0;
+            transform: translateX(.5em);
         }
 
         &__slider {
