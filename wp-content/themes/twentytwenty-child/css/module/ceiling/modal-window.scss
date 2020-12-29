@@ -6,13 +6,13 @@
 // @include _1200 {
 // }
 
-.modal-window {
+.modal-window-celing {
     display: none;
 
     /* .modal-window__wrapper */
 
     @include _1200 {
-        //display: block;
+        display: block;
 
         &__wrapper {
             width: 100%;
