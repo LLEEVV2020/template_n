@@ -128,7 +128,11 @@
         width: 100%;
         text-align: right;
         transform: rotate(1deg) skew(18deg);
-        font-size: 2.6rem;
+        font-size: 1.6rem;
+
+        @include _768 {
+            font-size: 2.6rem;
+        }
     }
 
     /* .german-canvas__equally*/
