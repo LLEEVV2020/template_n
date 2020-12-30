@@ -124,7 +124,8 @@
             bottom: 7rem;
             right: 2rem;
 
-            @include _768 {}
+            @include _768 {
+            }
 
             @include _1200 {
                 bottom: 9.4rem;
@@ -196,8 +197,10 @@
     &__item-title {
         line-height: 1.3;
         margin-bottom: 0.7rem;
+        text-transform: uppercase;
 
-        @include _768 {}
+        @include _768 {
+        }
 
         @include _1200 {
             line-height: 1.5;
@@ -211,7 +214,8 @@
         line-height: 1.2;
         margin-bottom: 1.2rem;
 
-        @include _768 {}
+        @include _768 {
+        }
 
         @include _1200 {
             font-size: 1.8rem;
@@ -345,7 +349,8 @@
             }
         }
 
-        @include _768 {}
+        @include _768 {
+        }
 
         @include _1200 {
             max-height: 4.7rem;
@@ -379,7 +384,8 @@
             font-size: 1.6rem;
         }
 
-        @include _1200 {}
+        @include _1200 {
+        }
     }
 
     form,
@@ -391,7 +397,8 @@
             padding: 0 1.5rem;
         }
 
-        @include _1200 {}
+        @include _1200 {
+        }
     }
 
     form {
@@ -441,6 +448,190 @@
 
         @include _1200 {
             margin-right: 0;
+        }
+    }
+
+    &--glass {
+        .energy-saving-balconies__box-img {
+            max-width: 28.6rem;
+            height: 28.5rem;
+
+            @include _768 {
+                max-width: 27.4rem;
+                height: 27.4rem;
+                margin-right: 2.6rem;
+            }
+            @include _1200 {
+                max-width: 32.2rem;
+                height: 32.2rem;
+                margin-right: 5.1rem;
+                margin-left: 3.4rem;
+            }
+        }
+
+        .energy-saving-balconies__img-text-box {
+            font-size: 3rem;
+            padding: 0.6rem;
+            width: 100%;
+            max-width: 17.8rem;
+            text-align: center;
+            line-height: 0.8;
+
+            &:nth-child(2) {
+                top: 5.5rem;
+                left: 1.1rem;
+
+                @include _768 {
+                    left: 0;
+                }
+
+                @include _1200 {
+                    top: 6.5rem;
+                    left: 1.4rem;
+                }
+            }
+        }
+
+        .energy-saving-balconies__box-info {
+            @include _768 {
+                margin-top: 0;
+            }
+        }
+
+        .energy-saving-balconies__img-suptext {
+            font-size: 1.8rem;
+            color: #979797;
+            text-decoration: line-through;
+            width: 100%;
+            max-width: 16rem;
+            padding: 0.5rem;
+        }
+
+        .energy-saving-balconies__subtext {
+            padding: 0.4rem 1.7rem;
+            bottom: -2.1rem;
+        }
+
+        .energy-saving-balconies__item-info {
+            background-color: #f6f6f6;
+            padding: 2.6rem 1.5rem 3.6rem;
+            border-radius: 0.6rem;
+            margin-bottom: 0;
+
+            @include _768 {
+                padding: 3.1rem 1.5rem;
+            }
+        }
+
+        .energy-saving-balconies__item-title {
+            margin-bottom: 0.5rem;
+
+            @include _1200 {
+                margin-bottom: 0.8rem;
+            }
+        }
+
+        .energy-saving-balconies__item-text {
+            margin-bottom: 1.9rem;
+
+            @include _768 {
+                margin-bottom: 2.5rem;
+            }
+
+            @include _1200 {
+                line-height: 1.25;
+                margin-bottom: 3rem;
+            }
+        }
+
+        .energy-saving-balconies__item-box {
+            @include _768 {
+                display: flex;
+            }
+        }
+
+        .energy-saving-balconies__item-sale {
+            max-width: 12.8rem;
+            padding: 0.4rem 0.8rem;
+            font-size: 1.8rem;
+            margin-bottom: 2.4rem;
+
+            span {
+                font-size: 1.5rem;
+
+                @include _1200 {
+                    font-size: 1.6rem;
+                }
+            }
+
+            &::before {
+                content: "";
+                border: 0.4rem solid transparent;
+                border-top: 0.6rem solid $orange;
+                right: auto;
+                left: 2.5rem;
+                top: auto;
+                bottom: 0;
+                transform: translateY(100%);
+
+                @include _768 {
+                    border: 0.4rem solid transparent;
+                    border-left: 0.6rem solid $orange;
+                    right: 0;
+                    top: 1rem;
+                    bottom: auto;
+                    transform: translateX(100%);
+                }
+
+                @include _1200 {
+                    border: 0.5rem solid transparent;
+                    border-left: 0.9rem solid $orange;
+                    top: 1.7rem;
+                }
+            }
+
+            @include _768 {
+                margin-bottom: 0;
+                margin-right: 2.5rem;
+            }
+
+            @include _1200 {
+                font-size: 1.9rem;
+                max-width: 14.3rem;
+                padding: 1rem 0.8rem;
+            }
+        }
+        .energy-saving-balconies__item-instplan {
+            max-width: 22.5rem;
+
+            @include _768 {
+                margin-top: 0.6rem;
+                span {
+                    &:first-child {
+                        font-size: 2.5rem;
+                        &::before {
+                            margin-right: 0;
+                        }
+
+                        @include _1200 {
+                            font-size: 3.5rem;
+                            margin-left: 1.1rem;
+                            &::before {
+                                margin-right: 1.4rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            @include _1200 {
+                max-width: 100%;
+                margin-top: 0;
+
+                &::after {
+                    top: -0.5rem;
+                }
+            }
         }
     }
 }
