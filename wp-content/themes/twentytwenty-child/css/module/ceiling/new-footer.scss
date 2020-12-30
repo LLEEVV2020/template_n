@@ -30,8 +30,9 @@
     /* .footer__top-form */
 
     &__top-form {
-        padding: 0 1.7rem;
+        justify-content: space-between;
         margin-bottom: 2.6rem;
+        padding: 0 1rem;
 
         @include _768 {
             margin-bottom: 0;
@@ -67,8 +68,16 @@
         margin: 0;
 
         @include _768 {
-            min-height: 3.2rem;
-            max-width: 100%;
+            display: none;
+
+        }
+
+        &--modal {
+            display: none;
+
+            @include _768 {
+                display: flex;
+            }
         }
     }
 
@@ -86,7 +95,7 @@
 
     &__top-item {
         @include _768 {
-            &+& {
+            & + & {
                 margin-left: 2.5rem;
 
                 @include _1200 {
