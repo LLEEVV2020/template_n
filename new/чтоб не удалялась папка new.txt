@@ -1,3 +1,13 @@
+okna-plastikovyye.ru
+ostekleniye-balkonov.ru
+derevyannyye-okna.ru
+alyuminiyevie-okna.ru
+remont-plastikovykh-okon.ru
+
+
+potolki-natyazhnyye.ru
+remont-otdelka-kvartiri.ru
+
 name-user
 phone-user phone-mask
 
@@ -68,10 +78,10 @@ http://prntscr.com/nuko0j
 
 11. Создание меню
 "Внешний вид" --> "Меню"
-http://prntscr.com/nurwma
+http://prntscr.com/nurwma 2fj1%VRx
 	1) В "Название меню" - "top-menu".  Потом "Создать меню"
 	2) Вкладка "Все". Выделаем галками все 5 странниц. Потом "Добавить в меню"
-	http://prntscr.com/nuryeh
+	http://prntscr.com/nuryeh oknaplastikovyye
 	Порядок следующий
 
 Главная
