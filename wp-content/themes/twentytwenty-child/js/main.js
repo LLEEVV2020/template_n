@@ -340,6 +340,64 @@ $(document).ready(function () {
     return false;
   });
 
+  $('.reliable-profile__tabs-btn--prew, .reliable-profile__tabs-btn--next').on('click', function (event) {
+
+    let rpb_tab = $('.reliable-profile__btn-tab');
+      
+    let hasclass_numb = 0;
+    let name_hclass;
+    if($(this).hasClass('reliable-profile__tabs-btn--prew')){
+        name_hclass = "reliable-profile__tabs-btn--prew";
+    }
+    if($(this).hasClass('reliable-profile__tabs-btn--next')){
+        name_hclass = "reliable-profile__tabs-btn--next";
+    }
+    
+    $.each( rpb_tab, function( key, value ) {
+        
+        if($(value).hasClass('active')){
+            
+            if(name_hclass == 'reliable-profile__tabs-btn--prew'){
+                hasclass_numb = --key;
+                if(hasclass_numb == -1){
+                    hasclass_numb = rpb_tab.length - 1;
+                }
+            }
+            
+            if(name_hclass == 'reliable-profile__tabs-btn--next'){
+               
+                
+                if(hasclass_numb >= (rpb_tab.length - 1)){
+                    hasclass_numb = 0;
+                } else{
+                    hasclass_numb = ++key;
+                }
+            }
+            
+        }
+        
+    }); 
+      
+    $(this).parent().parent().find('.tab-item').removeClass('active-tab').hide();
+    $(this).parent().parent().find('.tab').removeClass('active');
+      
+    $.each( rpb_tab, function( key, value ) {
+        
+        if(hasclass_numb == key){
+            
+            var id = $(value).attr('data-id');
+            
+            $(value).addClass('active');
+            $('#' + id).addClass('active-tab').fadeIn();
+             
+        }
+        
+    });   
+    
+    
+    return false;
+  });
+
   $('.tabs__inner .inner-tab').on('click', function (event) {
     var id = $(this).attr('data-id');
     $(this).parent().parent().find('.inner-tab-item').removeClass('inner-active-tab').hide();
