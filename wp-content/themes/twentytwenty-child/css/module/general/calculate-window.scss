@@ -17,6 +17,9 @@
     &__title {
         max-width: 12em;
         margin-bottom: 1.2em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     &__send-request,
