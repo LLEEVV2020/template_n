@@ -86,6 +86,11 @@
     &__box {
         width: calc(100% - 2.5rem);
         margin-bottom: 2.6rem;
+        display: none;
+        
+        &.active {
+            display: block;
+        }
     }
 
     &__slider {
@@ -375,15 +380,15 @@
                     .right-balcony__tabs-item {
                         &-text {
                             display: block;
-                            position: absolute;
-                            bottom: -3.5rem;
-                            left: 0;
-                            font-weight: 400;
                         }
                     }
                 }
 
                 &-text {
+                    position: absolute;
+                    bottom: -3.5rem;
+                    left: 0;
+                    font-weight: 400;
                     margin-left: 0.4em;
                 }
                 
@@ -397,7 +402,6 @@
         }
 
         &__box {
-            display: grid;
             grid-template: 
                 'right-balcony__advantages right-balcony__slider' 13.2rem
                 'right-balcony__square-text right-balcony__slider' 6rem
@@ -410,6 +414,10 @@
             margin-right: auto;
             margin-left: auto;
             margin-bottom: 3.2rem;
+
+            &.active {
+                display: grid;
+            }
         }
 
         &__slider {
@@ -574,8 +582,8 @@
                 'right-balcony__advantages right-balcony__slider'
                 'right-balcony__square-text right-balcony__slider'
                 'right-balcony__text right-balcony__slider'
-                'right-balcony__details right-balcony__content' 7.4rem
-                'right-balcony__cost right-balcony__content' 14rem
+                'right-balcony__details right-balcony__content' 9.4rem
+                'right-balcony__cost right-balcony__content' 10rem
                 'right-balcony__warning right-balcony__content';                
             grid-template-columns: 45.2rem 46.9rem;
             grid-column-gap: 3rem;
