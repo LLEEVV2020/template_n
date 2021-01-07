@@ -198,6 +198,39 @@ if (questionsForAccurateCalculationSlider) {
     });
 }
 
+const rightBalconyTabs = document.querySelectorAll('.right-balcony__tabs-item'),
+      rightBalconyTabsContents = document.querySelectorAll('.right-balcony__box'),
+      rightBalconyNavigationLeft = document.querySelector('.right-balcony__navigation-left'),
+      rightBalconyNavigationRight = document.querySelector('.right-balcony__navigation-right');
+
+if (rightBalconyTabs && rightBalconyTabsContents) {
+    rightBalconyTabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+            rightBalconyTabs.forEach(tab => {
+                tab.classList.remove('active');
+            });
+            this.classList.add('active');
+            const id = this.dataset.tab;
+            rightBalconyTabsContents.forEach(tabContent => {
+                tabContent.classList.remove('active');
+            });
+            document.querySelector('#' + id).classList.add('active');
+            if (id === 'warm-glazing') {
+                rightBalconyNavigationLeft.textContent = 'Безрамное остекление';
+                rightBalconyNavigationRight.textContent = 'Холодное остекление';
+            }
+            if (id === 'cold-glazing') {
+                rightBalconyNavigationLeft.textContent = 'Теплое остекление';
+                rightBalconyNavigationRight.textContent = 'Безрамное остекление';
+            }
+            if (id === 'frameless-glazing') {
+                rightBalconyNavigationLeft.textContent = 'Холодное остекление';
+                rightBalconyNavigationRight.textContent = 'Теплое остекление';
+            }
+        });        
+    });
+}
+
 
 
 
