@@ -221,6 +221,10 @@
         &-materials {
             max-width: 28.7rem;
             margin-bottom: 1rem;
+
+            &--width {
+                width: 15.7rem;
+            }
         }
 
         &-types {
@@ -231,23 +235,23 @@
     &__cost {
         margin-bottom: 2.4rem;
 
-        &-value {
-            margin-left: 1rem;
-            margin-right: 2rem;
-        }
+        // &-value {
+        //     margin-left: 1rem;
+        //     margin-right: 2rem;
+        // }
 
-        &-box {
-            margin-bottom: 1.9rem;
-        }
+        // &-box {
+        //     margin-bottom: 1.9rem;
+        // }
 
-        &-from {
-            font-size: 1.6rem;
-            margin-right: 0.5rem;
-        }
+        // &-from {
+        //     font-size: 1.6rem;
+        //     margin-right: 0.5rem;
+        // }
 
-        &-price {
-            font-size: 3.1rem;
-        }
+        // &-price {
+        //     font-size: 3.1rem;
+        // }
     }
 
     .button {
@@ -492,14 +496,14 @@
             grid-area: right-balcony__cost;
             margin-bottom: 2.1rem;
 
-            &-from {
-                color: $black;
-            }
+            // &-from {
+            //     color: $black;
+            // }
 
-            &-value {
-                margin-left: 0.9rem;
-                margin-right: 0.2rem;
-            }
+            // &-value {
+            //     margin-left: 0.9rem;
+            //     margin-right: 0.2rem;
+            // }
         }
 
         .button {

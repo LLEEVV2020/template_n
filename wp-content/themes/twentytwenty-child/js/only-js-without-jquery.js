@@ -198,23 +198,36 @@ if (questionsForAccurateCalculationSlider) {
     });
 }
 
+// Скрипт для блока right-balcony
 const rightBalconyTabs = document.querySelectorAll('.right-balcony__tabs-item'),
       rightBalconyTabsContents = document.querySelectorAll('.right-balcony__box'),
       rightBalconyNavigationLeft = document.querySelector('.right-balcony__navigation-left'),
-      rightBalconyNavigationRight = document.querySelector('.right-balcony__navigation-right');
+      rightBalconyNavigationRight = document.querySelector('.right-balcony__navigation-right'),
+      rightBalconyWarmGlazingTab = document.querySelector('[data-tab="warm-glazing"]'),
+      rightBalconyColdGlazingTab = document.querySelector('[data-tab="cold-glazing"]'),
+      rightBalconyFramelessGlazingTab = document.querySelector('[data-tab="frameless-glazing"]'),
+      rightBalconyWarmGlazingTabContent = document.getElementById('warm-glazing'),
+      rightBalconyColdGlazingTabContent = document.getElementById('cold-glazing'),
+      rightBalconyFramelessGlazingTabContent = document.getElementById('frameless-glazing');
+
+function rightBalconyRemoveClassActive() {
+    rightBalconyTabs.forEach(tab => {
+        tab.classList.remove('active');
+    });
+
+    rightBalconyTabsContents.forEach(tabContent => {
+        tabContent.classList.remove('active');
+    });
+}
 
 if (rightBalconyTabs && rightBalconyTabsContents) {
     rightBalconyTabs.forEach(tab => {
         tab.addEventListener('click', function() {
-            rightBalconyTabs.forEach(tab => {
-                tab.classList.remove('active');
-            });
+            rightBalconyRemoveClassActive();
             this.classList.add('active');
             const id = this.dataset.tab;
-            rightBalconyTabsContents.forEach(tabContent => {
-                tabContent.classList.remove('active');
-            });
             document.querySelector('#' + id).classList.add('active');
+
             if (id === 'warm-glazing') {
                 rightBalconyNavigationLeft.textContent = 'Безрамное остекление';
                 rightBalconyNavigationRight.textContent = 'Холодное остекление';
@@ -228,6 +241,62 @@ if (rightBalconyTabs && rightBalconyTabsContents) {
                 rightBalconyNavigationRight.textContent = 'Теплое остекление';
             }
         });        
+    });
+
+    rightBalconyNavigationRight.addEventListener('click', function() {
+        rightBalconyRemoveClassActive();
+
+        if (this.textContent === 'Холодное остекление' && rightBalconyNavigationLeft.textContent === 'Безрамное остекление') {
+            this.textContent = 'Безрамное остекление';
+            rightBalconyNavigationLeft.textContent = 'Теплое остекление';
+            rightBalconyColdGlazingTab.classList.add('active');
+            rightBalconyColdGlazingTabContent.classList.add('active');
+            return;
+        }
+
+        if (this.textContent === 'Безрамное остекление' && rightBalconyNavigationLeft.textContent === 'Теплое остекление') {
+            this.textContent = 'Теплое остекление';
+            rightBalconyNavigationLeft.textContent = 'Холодное остекление';
+            rightBalconyFramelessGlazingTab.classList.add('active');
+            rightBalconyFramelessGlazingTabContent.classList.add('active');
+            return;
+        }
+
+        if (this.textContent === 'Теплое остекление' && rightBalconyNavigationLeft.textContent === 'Холодное остекление') {
+            this.textContent = 'Холодное остекление';
+            rightBalconyNavigationLeft.textContent = 'Безрамное остекление';
+            rightBalconyWarmGlazingTab.classList.add('active');
+            rightBalconyWarmGlazingTabContent.classList.add('active');
+            return;
+        }
+    });
+
+    rightBalconyNavigationLeft.addEventListener('click', function() {
+        rightBalconyRemoveClassActive();
+
+        if (this.textContent === 'Безрамное остекление' && rightBalconyNavigationRight.textContent === 'Холодное остекление') {
+            this.textContent = 'Холодное остекление';
+            rightBalconyNavigationRight.textContent = 'Теплое остекление';
+            rightBalconyFramelessGlazingTab.classList.add('active');
+            rightBalconyFramelessGlazingTabContent.classList.add('active');
+            return;
+        }
+
+        if (this.textContent === 'Холодное остекление' && rightBalconyNavigationRight.textContent === 'Теплое остекление') {
+            this.textContent = 'Теплое остекление';
+            rightBalconyNavigationRight.textContent = 'Безрамное остекление';
+            rightBalconyColdGlazingTab.classList.add('active');
+            rightBalconyColdGlazingTabContent.classList.add('active');
+            return;
+        }
+
+        if (this.textContent === 'Теплое остекление' && rightBalconyNavigationRight.textContent === 'Безрамное остекление') {
+            this.textContent = 'Безрамное остекление';
+            rightBalconyNavigationRight.textContent = 'Холодное остекление';
+            rightBalconyWarmGlazingTab.classList.add('active');
+            rightBalconyWarmGlazingTabContent.classList.add('active');
+            return;
+        }
     });
 }
 
