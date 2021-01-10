@@ -220,7 +220,7 @@ function rightBalconyRemoveClassActive() {
     });
 }
 
-if (rightBalconyTabs && rightBalconyTabsContents) {
+if (rightBalconyTabs && rightBalconyTabsContents && rightBalconyNavigationRight) {
     rightBalconyTabs.forEach(tab => {
         tab.addEventListener('click', function() {
             rightBalconyRemoveClassActive();
@@ -300,6 +300,37 @@ if (rightBalconyTabs && rightBalconyTabsContents) {
     });
 }
 
+// Скрипт для блока four-types-glazing
+const fourTypesGlazingSlider = document.querySelector('.four-types-glazing__slider');
+
+if (fourTypesGlazingSlider) {
+    let fourTypesGlazingSwiper = new Swiper(fourTypesGlazingSlider, {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 11,
+        autoplay: {
+            delay: 5000
+        },
+        simulateTouch: false,
+        pagination: {
+            el: '.four-types-glazing__pagination',
+            type: 'bullets',
+            clickable: true
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 15
+            },
+            1200 : {
+                slidesPerView: 4,
+                spaceBetween: 20,
+                autoplay: false,
+                allowTouchMove: false
+            }
+        }
+    });
+}
 
 
 
