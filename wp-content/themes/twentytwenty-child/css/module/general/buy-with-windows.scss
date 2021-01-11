@@ -14,7 +14,7 @@
     }
 
     /* .buy-with-windows__title */
-
+    &__subtitle,
     &__title {
         margin-bottom: 2.8rem;
 
@@ -23,8 +23,12 @@
         }
     }
 
-    /* .buy-with-windows__slider */
 
+
+    /* .buy-with-windows__slider */
+    .buy-with-windows-bonus__slider,
+    .buy-with-windows-msq__slider,
+    .buy-with-windows-rpr__slider,
     &__slider {
 
         .pagination-box {
@@ -84,6 +88,16 @@
         }
     }
 
+    .buy-with-windows-bonus__slider,
+    .buy-with-windows-rpr__slider,
+    .buy-with-windows-msq__slider {
+        @include _1200 {
+            .pagination-box {
+                margin-top: 0;
+            }
+        }
+    }
+
     /* .buy-with-windows__item */
 
     &__item {
@@ -130,8 +144,16 @@
     &__item-text {
         font-size: 1.4rem;
 
+        &--msq {
+            max-width: 14rem;
+        }
+
         @include _768 {
             font-size: 1.6rem;
+
+            &--msq {
+                max-width: 16rem;
+            }
         }
 
         @include _1200 {
@@ -153,6 +175,18 @@
             font-size: 1.6rem;
         }
 
+        &--msq {
+            font-size: 3.7rem;
+
+            &::after {
+                font-size: 2.5rem;
+            }
+
+            &::before {
+                content: none;
+            }
+        }
+
         @include _768 {
             font-size: 2.2rem;
 
@@ -167,6 +201,17 @@
             &::before,
             &::after {
                 font-size: 1.8rem;
+            }
+        }
+    }
+
+    .buy-with-windows-rpr__slider,
+    .buy-with-windows-bonus__slider {
+        .buy-with-windows__item-text {
+            font-size: 1.4rem;
+
+            @include _1200 {
+                font-size: 1.6rem;
             }
         }
     }

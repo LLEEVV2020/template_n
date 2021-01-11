@@ -1138,4 +1138,71 @@ $(document).ready(function () {
         }
       }
     });
+
+    // Скрипт для слайдера блока  buy-with-windows-msq__slider
+    $('.buy-with-windows-msq__slider').owlCarousel({
+      items: 1,
+      dots: true,
+      autoWidth:true,
+      loop: true,
+      margin: 15,
+      dotsClass: ['pagination-box'],
+      dotClass: ['pagination'],
+      responsive: {
+        768: {
+          items: 2,
+          nav: true,
+        },
+        1200: {
+          items: 3,
+          margin: 20,
+          dots: false,
+        }
+      }
+    });
+
+    // Скрипт для слайдера блока  buy-with-windows-rpr__slider
+    $('.buy-with-windows-rpr__slider').owlCarousel({
+      items: 1,
+      dots: true,
+      autoWidth:true,
+      loop: true,
+      margin: 15,
+      dotsClass: ['pagination-box'],
+      dotClass: ['pagination'],
+      responsive: {
+        768: {
+          items: 2,
+          nav: true,
+        },
+        1200: {
+          items: 3,
+          margin: 20,
+          dots: false,
+        }
+      }
+    });
+
+    // Скрипт для слайдера блока  buy-with-windows-bonus__slider
+    $('.buy-with-windows-bonus__slider').owlCarousel({
+      items: 1,
+      dots: true,
+      autoWidth:true,
+      loop: true,
+      margin: 15,
+      dotsClass: ['pagination-box'],
+      dotClass: ['pagination'],
+      responsive: {
+        768: {
+          items: 2,
+          nav: true,
+        },
+        1200: {
+          items: 3,
+          margin: 20,
+          dots: false,
+        }
+      }
+    });
+
 });
