@@ -332,6 +332,38 @@ if (fourTypesGlazingSlider) {
     });
 }
 
+// Скрипт для блока prices-without-intermediaries
+const pricesWithoutIntermediariesSlider = document.querySelector('.prices-without-intermediaries__slider');
+
+if (pricesWithoutIntermediariesSlider) {
+    let pricesWithoutIntermediariesSwiper = new Swiper(pricesWithoutIntermediariesSlider, {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 5,
+        // autoplay: {
+        //     delay: 5000
+        // },
+        simulateTouch: false,
+        pagination: {
+            el: '.prices-without-intermediaries__pagination',
+            type: 'bullets',
+            clickable: true
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+                spaceBetween: 10
+            },
+            1200 : {
+                slidesPerView: 3,
+                allowTouchMove: false,
+                spaceBetween: 0
+            }
+        }
+    });
+}
+
 
 
 
