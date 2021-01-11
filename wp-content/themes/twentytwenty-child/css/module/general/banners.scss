@@ -7,6 +7,7 @@
 
     &__images {
         position: relative;
+        min-height: 20.3rem;
         background-image: url('/wp-content/themes/twentytwenty-child/img/banner-img-1-small.webp');
         background-repeat: no-repeat;
         background-size: 100% 20.3rem;
@@ -100,6 +101,7 @@
     &__advantage {
         display: flex;
         align-items: center;
+        margin-bottom: 1.5rem;
         position: relative;
         line-height: 1.2;
 
@@ -159,6 +161,14 @@
 
     &__btn {
         display: none;
+    }
+
+    &--with-removal {
+        .banner-main {
+            &__images {
+                background-image: url("/wp-content/themes/twentytwenty-child/img/banner-img-2-small.webp");
+            }
+        }
     }
 
     @media (min-width: 768px) {
@@ -353,6 +363,14 @@
                 transform: translateY(-50%);
             }
         }
+
+        &--with-removal {
+            .banner-main {
+                &__images {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/banner-img-2-middle.webp");
+                }
+            }
+        }
     }
 
     @media (min-width: 1400px) {
@@ -480,6 +498,14 @@
                 width: 3rem;
                 height: 3.5rem;
                 left: 2rem;
+            }
+        }
+
+        &--with-removal {
+            .banner-main {
+                &__images {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/banner-img-2-big.webp");
+                }
             }
         }
     }
