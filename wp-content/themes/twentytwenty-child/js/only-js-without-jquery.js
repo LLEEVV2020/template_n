@@ -340,9 +340,6 @@ if (pricesWithoutIntermediariesSlider) {
         slidesPerView: 1,
         slidesPerGroup: 1,
         spaceBetween: 5,
-        // autoplay: {
-        //     delay: 5000
-        // },
         simulateTouch: false,
         pagination: {
             el: '.prices-without-intermediaries__pagination',
