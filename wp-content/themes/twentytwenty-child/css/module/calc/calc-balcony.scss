@@ -992,7 +992,10 @@ input[type="checkbox"] {
 
     & .balcony-img {
         max-width: 45rem;
-        height: 20.4rem;
+
+        @include _1200 {
+            height: 20.4rem;
+        }
     }
 
     &__box-img {
@@ -1308,6 +1311,10 @@ input::-moz-focus-outer {
         @include _960 {
             max-width: 100%;
             min-width: 16.88em;
+        }
+
+        @include _1200 {
+            max-width: 100%;
             margin-bottom: 0;
         }
     }
@@ -1330,6 +1337,11 @@ input::-moz-focus-outer {
         }
 
         @include _960 {
+            font-size: 1.8rem;
+        }
+
+
+        @include _1200 {
             max-width: 22.5rem;
             font-size: 1.7rem;
         }
