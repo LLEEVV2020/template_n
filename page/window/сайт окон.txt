@@ -1,2 +1,17 @@
-okna-plastikovyye.ru
+index.html - Главная (okna-plastikovyye.ru)
+plastikovye-okna.html - Пластиковые окна (https://okna-plastikovyye.ru/plastikovye-okna/)
+gotovye-okna.html - ГОТОВые ОКНА (https://okna-plastikovyye.ru/gotovye-okna/)
+kalkulyator-stoimosti-okon.html - ЦЕНЫ НА ОКНА (https://okna-plastikovyye.ru/kalkulyator-stoimosti-okon/)
+
+
+
+
+
+
+
+
+
+
+
+
 
