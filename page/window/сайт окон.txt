@@ -3,7 +3,7 @@ plastikovye-okna.html - Пластиковые окна (https://okna-plastikovy
 gotovye-okna.html - ГОТОВые ОКНА (https://okna-plastikovyye.ru/gotovye-okna/)
 kalkulyator-stoimosti-okon.html - ЦЕНЫ НА ОКНА (https://okna-plastikovyye.ru/kalkulyator-stoimosti-okon/)
 remont-okon.html - РЕМОНТ ОКОН (https://okna-plastikovyye.ru/remont-okon/)
-
+panoramnye-okna.html - ПАНОРАМНЫЕ ОКНА (https://okna-plastikovyye.ru/panoramnye-okna/)
 
 
 
