@@ -5,6 +5,9 @@ kalkulyator-stoimosti-okon.html - ЦЕНЫ НА ОКНА (https://okna-plastikov
 remont-okon.html - РЕМОНТ ОКОН (https://okna-plastikovyye.ru/remont-okon/)
 panoramnye-okna.html - ПАНОРАМНЫЕ ОКНА (https://okna-plastikovyye.ru/panoramnye-okna/)
 vhodnye-dveri.html - ВХОДНЫЕ ДВЕРИ (https://okna-plastikovyye.ru/vhodnye-dveri/)
+okna-dlya-doma.html - ОКНА В ДОМ (https://okna-plastikovyye.ru/okna-dlya-doma/)
+
+
 
 
 
