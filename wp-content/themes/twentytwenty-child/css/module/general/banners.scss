@@ -537,6 +537,49 @@
         }
     }
 
+    &--windows-in-wooden-house {
+        .banner-main {
+            &__images {
+                background-image: url("/wp-content/themes/twentytwenty-child/img/banner-img-9-small.webp");
+            }
+
+            &__content {
+                padding: 2.7rem 1.5rem 0;
+            }
+
+            &__title {
+                margin-bottom: 2.8rem;
+                line-height: 1.25;
+
+                &-color,
+                .orange {
+                    letter-spacing: 0.04em;
+                }
+
+                .orange {
+                    word-spacing: 0;
+                }
+            }
+
+            &__texts {
+                margin-bottom: 2rem;
+            }
+
+            &__text:first-child {
+                margin-bottom: 1.9rem;
+            }
+
+            &__attention {
+                margin-bottom: 2.4rem;
+                line-height: 1.2;
+            }
+
+            &__prices-lower {
+                margin-bottom: 0;
+            }
+        }
+    }
+
     @media (min-width: 768px) {
         &__wrapper {
             display: flex;
@@ -1107,6 +1150,40 @@
                 }
             }
         }
+
+        &--windows-in-wooden-house {
+            .banner-main {
+                &__images {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/banner-img-9-middle.webp");
+                }
+
+                &__content {
+                    padding: 3.7rem 1.5rem 0;
+                }
+
+                &__title {
+                    margin-bottom: 1.7rem;
+                }
+
+                &__texts {
+                    margin-bottom: 1.2rem;
+                    max-width: 24rem;
+                }
+
+                &__text {
+                    display: block;
+
+                    &:first-child {
+                        margin-bottom: 1.2rem;
+                    }
+                }
+
+                &__attention { 
+                    margin-bottom: 1.9rem;            
+                    max-width: 25rem;
+                }
+            }
+        }
     }
 
     @media (min-width: 1400px) {
@@ -1671,6 +1748,39 @@
                 &__texts {
                     margin-bottom: 4.2rem;
                     max-width: 51rem;
+                }
+            }
+        }
+        
+        &--windows-in-wooden-house {
+            .banner-main {
+                &__images {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/banner-img-9-big.webp");
+                }
+
+                &__content {
+                    padding: 11.6rem 1.5rem 0;
+                }
+
+                &__title {
+                    margin-bottom: 4.2rem;
+                }
+
+                &__texts {
+                    margin-bottom: 2.4rem;
+                    max-width: 52rem;
+                }
+
+                &__text {
+                    &:first-child {
+                        margin-bottom: 2.4rem;
+                    }
+                }
+
+                &__attention {
+                    margin-bottom: 4.1rem;
+                    max-width: 58rem;
+                    font-size: 1.8rem;
                 }
             }
         }
