@@ -4,7 +4,7 @@ gotovye-okna.html - ГОТОВые ОКНА (https://okna-plastikovyye.ru/gotovy
 kalkulyator-stoimosti-okon.html - ЦЕНЫ НА ОКНА (https://okna-plastikovyye.ru/kalkulyator-stoimosti-okon/)
 remont-okon.html - РЕМОНТ ОКОН (https://okna-plastikovyye.ru/remont-okon/)
 panoramnye-okna.html - ПАНОРАМНЫЕ ОКНА (https://okna-plastikovyye.ru/panoramnye-okna/)
-
+vhodnye-dveri.html - ВХОДНЫЕ ДВЕРИ (https://okna-plastikovyye.ru/vhodnye-dveri/)
 
 
 
