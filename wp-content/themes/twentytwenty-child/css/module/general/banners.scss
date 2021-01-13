@@ -287,6 +287,10 @@
             color: $orange;
         }
 
+        span:nth-child(2) {
+            color: #3A3A3A;
+        }
+
         &-box {
             max-width: 34.5rem;
             margin-right: auto;
@@ -813,6 +817,36 @@
                 &-box {
                     margin-bottom: 4.5rem;
                 }
+            }
+        }
+    }
+
+    &--warm-glazing {
+        .banner-main {
+            &__images {
+                background-image: url("/wp-content/themes/twentytwenty-child/img/banner-img-15-small.webp");
+            }
+
+            &__content {
+                padding: 2.8rem 1.5rem 0;
+            }
+
+            &__title {
+                margin-bottom: 2.7rem;
+
+                &-color {
+                    letter-spacing: 0.04em;
+                }
+
+                .orange {
+                    margin-bottom: 0.7rem;
+                    word-spacing: 0;
+                    letter-spacing: 0.03em;
+                }
+            }
+
+            &__attention {
+                color: #3A3A3A;
             }
         }
     }
@@ -1657,7 +1691,57 @@
                     }
                 }
             }
-        } 
+        }
+        
+        &--warm-glazing {
+            .banner-main {
+                &__images {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/banner-img-15-middle.webp");
+                }
+
+                &__content {
+                    padding: 2.4rem 1.5rem 0;
+
+                    &:after {
+                        right: -32rem;
+                    }
+                }
+
+                &__title {
+                    margin-bottom: 0.9rem;
+
+                    .orange {
+                        margin-bottom: 0.2rem;
+                    }
+                }
+
+                &__attention {
+                    margin-bottom: 1.8rem;
+                    max-width: 21rem;
+                }
+
+                &__advantages {
+                    margin-bottom: 2.1rem;
+                    max-width: 22rem;
+                }
+
+                &__advantage {
+                    margin-bottom: 1.2rem;
+
+                    &:nth-child(2) {
+                        max-width: 20rem;
+                    }
+
+                    &--balcony-icon:before {
+                        background-size: 1.1rem;
+                    }
+
+                    &--mask-icon:before {
+                        background-size: 1.4rem;
+                    }
+                }
+            }
+        }
     }
 
     @media (min-width: 1400px) {
@@ -2495,6 +2579,65 @@
                 }
             }
         }
+
+        &--warm-glazing {
+            .banner-main {
+                &__images {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/banner-img-15-big.webp");
+                }
+
+                &__content {
+                    padding: 8.4rem 1.5rem 0;
+
+                    &:after {
+                        right: -62rem;
+                        width: 153rem;
+                    }
+                }
+
+                &__inner {
+                    right: -42.5rem;
+                }
+
+                &__title {
+                    margin-bottom: 2.2rem;
+                }
+
+                &__attention {
+                    margin-bottom: 4rem;
+                    max-width: 53rem;
+                }
+
+                &__texts {
+                    margin-bottom: 3rem;
+                }
+
+                &__advantage {
+                    margin-bottom: 3.1rem;
+
+                    &:before {
+                        margin-right: 2rem;
+                    }
+
+                    &:nth-child(2) {
+                        max-width: 37rem;
+                    }
+
+                    &--balcony-icon:before {
+                        background-size: 2.6rem;
+                    }
+
+                    &--mask-icon:before {
+                        background-size: 3.4rem;
+                    }
+                }
+
+                &__advantages {
+                    margin-bottom: 4.2rem;
+                    max-width: 40rem;
+                }
+            }
+        }
     }
 
     @media (min-width: 1900px) {
@@ -2544,6 +2687,20 @@
             .banner-main {
                 &__inner {
                     right: -26.2rem;
+                }
+            }
+        }
+
+        &--warm-glazing {
+            .banner-main {
+                &__content {
+                    &:after {
+                        right: -64rem;
+                    }
+                }
+
+                &__inner {
+                    right: -26.9rem;
                 }
             }
         }
