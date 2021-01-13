@@ -2,6 +2,15 @@
 @import "../../base/all/var";
 @import "../../base/all/mixin";
 
+.not-block {
+    color: red;
+    text-align: center;
+    font-weight: 900;
+    padding: 2em;
+    background: #ff000014;
+    border: 1px solid red;
+}
+
 html {
     font-size: 62.5%;
     /* 1rem = 10px */
@@ -45,6 +54,7 @@ h6 {
     width: calc(100% - 3rem);
     margin-left: auto;
     margin-right: auto;
+
     @media (max-width: 385px) {
         width: calc(100% - 3rem);
     }
@@ -236,8 +246,7 @@ h6 {
             margin-right: 0.3em;
         }
 
-        @media (min-width: 1200px) {
-        }
+        @media (min-width: 1200px) {}
     }
 
     &::after {
@@ -338,6 +347,7 @@ h6 {
 
 .t-14-16-16 {
     font-size: 1.4rem;
+
     @include _768 {
         font-size: 1.6rem;
     }
@@ -345,9 +355,11 @@ h6 {
 
 .t-16-18-16 {
     font-size: 1.6rem;
+
     @include _768 {
         font-size: 1.8rem;
     }
+
     @include _1200 {
         font-size: 1.6rem;
     }
@@ -355,6 +367,7 @@ h6 {
 
 .t-16-18-18 {
     font-size: 1.6rem;
+
     @include _768 {
         font-size: 1.8rem;
     }
@@ -362,9 +375,11 @@ h6 {
 
 .t-16-16-18 {
     font-size: 1.6rem;
+
     @include _768 {
         font-size: 1.6rem;
     }
+
     @include _1200 {
         font-size: 1.8rem;
     }
@@ -372,9 +387,11 @@ h6 {
 
 .t-10-12-14 {
     font-size: 1rem;
+
     @include _768 {
         font-size: 1.2rem;
     }
+
     @include _1200 {
         font-size: 1.4rem;
     }
@@ -382,9 +399,11 @@ h6 {
 
 .t-16-18-24 {
     font-size: 1.6rem;
+
     @include _768 {
         font-size: 1.8rem;
     }
+
     @include _1200 {
         font-size: 2.4rem;
     }
@@ -392,9 +411,11 @@ h6 {
 
 .t-16-20-24 {
     font-size: 1.6rem;
+
     @include _768 {
         font-size: 2rem;
     }
+
     @include _1200 {
         font-size: 2.4rem;
     }
@@ -402,9 +423,11 @@ h6 {
 
 .t-18-20-24 {
     font-size: 1.8rem;
+
     @include _768 {
         font-size: 2rem;
     }
+
     @include _1200 {
         font-size: 2.4rem;
     }
@@ -412,9 +435,11 @@ h6 {
 
 .t-24-30-40 {
     font-size: 2.4rem;
+
     @include _768 {
         font-size: 3rem;
     }
+
     @include _1200 {
         font-size: 4rem;
     }
@@ -422,6 +447,7 @@ h6 {
 
 .t-24-30-30 {
     font-size: 2.4rem;
+
     @include _768 {
         font-size: 3rem;
     }
@@ -430,12 +456,15 @@ h6 {
 .fw3 {
     font-weight: 300;
 }
+
 .fw4 {
     font-weight: 400;
 }
+
 .fw7 {
     font-weight: 700;
 }
+
 .fw9 {
     font-weight: 900;
 }
