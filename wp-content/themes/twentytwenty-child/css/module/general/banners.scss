@@ -1054,6 +1054,38 @@
         }
     }
 
+    &--insulation-balconies {
+        .banner-main {
+            &__images {
+                background-image: url("/wp-content/themes/twentytwenty-child/img/banner-img-20-small.webp");
+            }
+
+            &__title {
+                margin-bottom: 0.6rem;
+                line-height: 1.2;
+
+                &-color {
+                    letter-spacing: -0.03em;
+                }
+
+                .orange {
+                    word-spacing: 0;
+                    letter-spacing: -0.03em;
+                }
+            }
+
+            &__attention {
+                margin-bottom: 1.6rem;
+            }
+
+            &__info {
+                &:nth-of-type(2) {
+                    margin-bottom: 2.5rem;
+                }
+            }
+        }
+    }
+
     @media (min-width: 768px) {
         &__wrapper {
             display: flex;
@@ -2155,6 +2187,38 @@
                 }
             }
         }
+
+        &--insulation-balconies {
+            .banner-main {
+                &__images {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/banner-img-20-middle.webp");
+                }
+
+                &__content {
+                    padding: 2.3rem 0 0 0;
+                }
+
+                &__title {
+                    .orange {
+                        letter-spacing: 0.04em;
+                    }
+
+                    &-color {
+                        letter-spacing: 0.03em;
+                    }
+                }
+
+                &__attention {
+                    margin-bottom: 1rem;
+                }
+
+                &__info {
+                    &:nth-of-type(2) {
+                        margin-bottom: 1.5rem
+                    }
+                }
+            }
+        }
     }
 
     @media (min-width: 1400px) {
@@ -3231,6 +3295,37 @@
 
                 &__content {
                     padding: 5.2rem 0 0 0;
+                }
+
+                &__title {
+                    margin-bottom: 1.3rem;
+
+                    .orange {
+                        margin-bottom: 0;
+                    }
+                }
+
+                &__attention {
+                    margin-bottom: 2.4rem;
+                    letter-spacing: -0.05em;
+                }
+
+                &__info {
+                    &:nth-of-type(2) {
+                        margin-bottom: 3.1rem;
+                    }
+                }
+            }
+        }
+
+        &--insulation-balconies {
+            .banner-main {
+                &__images {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/banner-img-20-big.webp");
+                }
+
+                &__content {
+                    padding: 6.4rem 0 0 0;
                 }
 
                 &__title {
