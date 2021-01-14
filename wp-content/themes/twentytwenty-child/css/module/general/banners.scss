@@ -1138,6 +1138,70 @@
         }
     }
 
+    &--main {
+        .banner-main {
+            &__images {
+                background-image: url("/wp-content/themes/twentytwenty-child/img/banner-img-22-small.webp");
+            }
+
+            &__title {
+                margin-bottom: 2.3rem;
+                line-height: 1.2;
+
+                &-color {
+                    font-size: 2.3rem;
+                }
+
+                .orange {
+                    word-spacing: 0;
+                    letter-spacing: -0.04em;
+                    font-size: 1.8rem;
+                }
+            }
+
+            &__attention {
+                color: #3A3A3A;
+            }
+
+            &__discount {
+                margin-bottom: 2.5rem;
+
+                &-box {
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+            }
+
+            &__text-info {
+                margin-bottom: 2.5rem;
+                color: #3A3A3A;
+            }
+
+            &__questions {
+                margin-bottom: 2.8rem;
+
+                &-item {
+                    display: flex;
+                    margin-bottom: 2rem;
+                    color: #333333;
+
+                    &:before {
+                        content: '';
+                        width: 2rem;
+                        height: 2rem;
+                        margin-right: 1.8rem;
+                        border-radius: 50%;
+                        border: 0.1rem solid $orange;
+                        flex-shrink: 0;
+                        background-image: url("data:image/svg+xml,%0A%3Csvg width='9' height='8' viewBox='0 0 9 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.00961 7.00225L0.368983 4.27834C0.210339 4.11469 0.210339 3.84936 0.368983 3.6857L0.943494 3.09305C1.10214 2.92939 1.35938 2.92939 1.51802 3.09305L3.29687 4.92799L7.10698 0.997735C7.26562 0.834088 7.52286 0.834088 7.68151 0.997735L8.25602 1.59038C8.41466 1.75403 8.41466 2.01936 8.25602 2.18303L3.58414 7.00227C3.42548 7.16591 3.16825 7.16591 3.00961 7.00225Z' fill='black'/%3E%3C/svg%3E%0A");
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                }
+            }
+        }
+    }
+
     @media (min-width: 768px) {
         &__wrapper {
             display: flex;
@@ -2322,6 +2386,87 @@
                 }
             }
         }
+
+        &--main {
+            .banner-main {
+                &__images {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/banner-img-22-middle.webp");
+                }
+
+                &__inner {
+                    right: -21rem;
+                    min-width: 44rem;
+                }
+
+                &__content {
+                    padding: 3.2rem 0 0 0;
+                }
+
+                &__title {
+                    margin-bottom: 1.2rem;
+
+                    &-color {
+                        margin-bottom: 0.3rem;
+                        font-size: 1.6rem;
+                    }
+
+                    .orange {
+                        font-size: 0.9rem;
+                        letter-spacing: 0.03em;
+                    }
+                }
+
+                &__text-info {
+                    margin-bottom: 1.1rem;
+                    font-size: 1rem;
+                }
+
+                &__attention {
+                    margin-bottom: 1.1rem
+                }
+
+                &__discount-box {
+                    display: none;
+                }
+
+                &__questions {
+                    margin-bottom: 0;
+
+                    &-item {
+                        margin-bottom: 0.5rem;
+
+                        &:before {
+                            width: 0.8rem;
+                            height: 0.8rem;
+                            margin-right: 0.6rem;
+                            background-size: 0.3rem;
+                        }
+
+                        p {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+
+                &__prices-lower {
+                    padding: 0.8rem 0.7rem;
+                    max-width: 17.4rem;
+                    min-height: 3.2rem;
+                    margin-bottom: 0;
+                    left: 42.9rem;
+                    top: 0.6rem;
+                    font-size: 1rem;
+
+                    &-text {
+                        &-small {
+                            right: 0.6rem;
+                            font-size: 0.8rem;
+                            letter-spacing: 0.03em;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     @media (min-width: 1400px) {
@@ -3499,6 +3644,95 @@
                 }
             }
         }
+
+        &--main {
+            .banner-main {
+                &__images {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/banner-img-22-big.webp");
+                    background-position-x: right;
+                }
+
+                &__inner {
+                    display: flex;
+                    flex-direction: column;
+                    right: -54rem;
+                    min-width: 79rem;
+                }
+
+                &__content {
+                    padding: 5.8rem 0 0 0;
+                }
+
+                &__title {
+                    order: 1;
+                    margin-bottom: 2.4rem;
+
+                    &-color {
+                        margin-bottom: 0.7rem;
+                        font-size: 3.5rem;
+                    }
+
+                    .orange {
+                        font-size: 1.8rem;
+                    }
+                }
+
+                &__attention {
+                    order: 2;
+                    margin-bottom: 3.1rem;
+                }
+
+                &__text-info {
+                    order: 3;
+                    margin-bottom: 2.2rem;
+                    font-size: 1.8rem;
+                }
+
+                &__questions {
+                    margin-bottom: 2.1rem;
+                    order: 4;
+
+                    &-item {
+                        margin-bottom: 1.2rem;
+
+                        &:before {
+                            width: 2rem;
+                            height: 2rem;
+                            margin-right: 1.8rem;
+                            background-size: 1rem;
+                        }
+
+                        p {
+                            font-size: 1.8rem;
+                        }
+                    }
+                }
+
+                &__discount-box {
+                    order: 5;
+                    display: block;
+                }
+
+                &__prices-lower {
+                    padding: 1.6rem 0.7rem;
+                    max-width: 33rem;
+                    min-height: 6rem;
+                    top: 0.2rem;
+                    left: 62.9rem;
+                    order: 6;
+
+                    &-text {
+                        letter-spacing: -0.01em;
+
+                        &-small {
+                            right: 0.7rem;
+                            bottom: -0.9rem;
+                            font-size: 1.6rem;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     @media (min-width: 1900px) {
@@ -3576,6 +3810,14 @@
 
                 &__inner {
                     right: -26.9rem;
+                }
+            }
+        }
+
+        &--main {
+            .banner-main {
+                &__inner {
+                    right: -38.5rem;
                 }
             }
         }
