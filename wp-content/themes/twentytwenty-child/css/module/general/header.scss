@@ -418,12 +418,10 @@ body {
             }
         }
 
-        @include _768 {
+        @include _1200 {
             max-width: 19.1rem;
             height: 4.1rem;
         }
-
-        @include _1200 {}
     }
 
     /* .header__drop-menu */
