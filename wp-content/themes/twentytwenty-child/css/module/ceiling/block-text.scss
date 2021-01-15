@@ -152,6 +152,10 @@
             line-height: 1.2;
             margin-bottom: 3rem;
         }
+
+        @include _1200 {
+            max-width: 73.6rem;
+        }
     }
 
     /* .block-text__link */
