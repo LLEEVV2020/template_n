@@ -26,8 +26,8 @@
 
                         <p class="quick-calculation__text fw7 t-16-18-18">ПЛОЩАДЬ ОКНА</p>
                         <input class="quick-calculation__input" type="text" placeholder="1 M&sup2;">
-                        <span class="quick-calculation__price">= 6600 ₽</span>
-                        <span class="quick-calculation__new-price">2 310 ₽</span>
+                        <span class="quick-calculation__price">= <span>6600</span> ₽</span>
+                        <span class="quick-calculation__new-price"><span>2 310</span> ₽</span>
 
                     </div>
 
@@ -42,6 +42,33 @@
             </div>
 
         </div>
+
+        <script>
+            let quickCalcInput = document.querySelector('.quick-calculation__input');
+            
+
+            quickCalcInput.addEventListener('keypress', (event) => {
+
+                // чтоб вводились только символы
+                if ( isNaN( String.fromCharCode(event.keyCode) )){
+                    return false;
+                } 
+
+                let quickCalcPrice = document.querySelector('.quick-calculation__price span');
+                let quickCalcNewPrice = document.querySelector('.quick-calculation__new-price span');
+
+                const keyName = event.key;
+
+                quickCalcPrice.textContent = keyName * 6600;
+                quickCalcNewPrice.textContent = keyName * 2310;
+
+                //alert('keypress event\n\n' + 'key: ' + keyName);
+
+            });
+
+
+
+        </script>
 
     </section>
 
