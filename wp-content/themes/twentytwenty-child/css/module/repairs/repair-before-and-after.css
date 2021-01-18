@@ -1,0 +1,230 @@
+.repair-before-and-after .title {
+  margin-bottom: 2.8rem;
+}
+
+.repair-before-and-after__box, .repair-before-and-after__images {
+  position: relative;
+}
+
+.repair-before-and-after__box {
+  width: 34.5rem;
+  height: 17rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 2.5rem;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.repair-before-and-after__images, .repair-before-and-after__img {
+  width: 100%;
+}
+
+.repair-before-and-after__images, .repair-before-and-after__img, .repair-before-and-after__img--1, .repair-before-and-after__img--2, .repair-before-and-after__img--4, .repair-before-and-after__img--6 {
+  height: 100%;
+}
+
+.repair-before-and-after__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.repair-before-and-after__img--2, .repair-before-and-after__img--4, .repair-before-and-after__img--6, .repair-before-and-after__slider, .repair-before-and-after__item.before, .repair-before-and-after__item.after, .repair-before-and-after__drag, .repair-before-and-after__drag:before, .repair-before-and-after__drag:after, .repair-before-and-after__drag-line, .repair-before-and-after__drag-line:before, .repair-before-and-after__drag-line:after {
+  position: absolute;
+}
+
+.repair-before-and-after__img {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.repair-before-and-after__img--1 {
+  background-image: url("/wp-content/themes/twentytwenty-child/img/repair/repair-before-and-after-2.webp");
+}
+
+.repair-before-and-after__img--2, .repair-before-and-after__img--4, .repair-before-and-after__img--6 {
+  width: 50%;
+}
+
+.repair-before-and-after__img--2 {
+  background-image: url("/wp-content/themes/twentytwenty-child/img/repair/repair-before-and-after-1.webp");
+}
+
+.repair-before-and-after__img--3 {
+  background-image: url("/wp-content/themes/twentytwenty-child/img/repair/repair-before-and-after-3.webp");
+}
+
+.repair-before-and-after__img--4 {
+  background-image: url("/wp-content/themes/twentytwenty-child/img/repair/repair-before-and-after-4.webp");
+}
+
+.repair-before-and-after__img--5 {
+  background-image: url("/wp-content/themes/twentytwenty-child/img/repair/repair-before-and-after-5.webp");
+}
+
+.repair-before-and-after__img--6 {
+  background-image: url("/wp-content/themes/twentytwenty-child/img/repair/repair-before-and-after-6.webp");
+}
+
+.repair-before-and-after__slider {
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.repair-before-and-after__item {
+  width: 9.7rem;
+  height: 2.7rem;
+  line-height: 2.7rem;
+  -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.repair-before-and-after__item.before, .repair-before-and-after__item.after {
+  bottom: 1rem;
+}
+
+.repair-before-and-after__item.after {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  margin-left: auto;
+  right: 0;
+}
+
+.repair-before-and-after__item.before {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  left: 0;
+}
+
+.repair-before-and-after__drag:before, .repair-before-and-after__drag:after, .repair-before-and-after__drag-line:before, .repair-before-and-after__drag-line:after {
+  content: '';
+}
+
+.repair-before-and-after__drag-line, .repair-before-and-after__range::-webkit-slider-thumb {
+  width: 0.1rem;
+  height: 17rem;
+}
+
+.repair-before-and-after__drag {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 1.8rem;
+  height: 1.8rem;
+  border: 0.1rem solid #ffffff;
+  border-radius: 50%;
+}
+
+.repair-before-and-after__drag:before, .repair-before-and-after__drag:after {
+  width: 0.4rem;
+  height: 0.4rem;
+  top: 50%;
+  border-radius: 0.1rem;
+  border-top: 0.1rem solid #ffffff;
+}
+
+.repair-before-and-after__drag:before {
+  border-left: 0.1rem solid #ffffff;
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+          transform: translateY(-50%) rotate(-45deg);
+  left: 20%;
+}
+
+.repair-before-and-after__drag:after {
+  border-right: 0.1rem solid #ffffff;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+  right: 20%;
+}
+
+.repair-before-and-after__drag-line {
+  left: 49.85%;
+  pointer-events: none;
+}
+
+.repair-before-and-after__drag-line:before, .repair-before-and-after__drag-line:after {
+  width: 100%;
+  height: 7.6rem;
+  background: #ffffff;
+}
+
+.repair-before-and-after__drag-line:before {
+  top: 0;
+}
+
+.repair-before-and-after__drag-line:after {
+  bottom: 0;
+}
+
+.repair-before-and-after__range {
+  width: 100%;
+  outline: none;
+  background: none;
+  -webkit-appearance: none;
+}
+
+.repair-before-and-after__range::-webkit-slider-thumb {
+  background: none;
+  -webkit-appearance: none;
+  cursor: col-resize;
+}
+
+@media (min-width: 768px) {
+  .repair-before-and-after__box {
+    width: 70.8rem;
+    height: 34.9rem;
+    margin-bottom: 3.1rem;
+  }
+  .repair-before-and-after__drag-line, .repair-before-and-after__range::-webkit-slider-thumb {
+    height: 34.9rem;
+    width: 0.2rem;
+  }
+  .repair-before-and-after__drag {
+    width: 3.7rem;
+    height: 3.7rem;
+    border-width: 0.2rem;
+  }
+  .repair-before-and-after__drag:before, .repair-before-and-after__drag:after {
+    width: 1rem;
+    height: 1rem;
+    border-width: 0.2rem;
+  }
+  .repair-before-and-after__drag-line:before, .repair-before-and-after__drag-line:after {
+    height: 15.6rem;
+  }
+  .repair-before-and-after__item.before, .repair-before-and-after__item.after {
+    bottom: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .repair-before-and-after .title {
+    margin-bottom: 3.1rem;
+  }
+  .repair-before-and-after__box {
+    width: 96rem;
+    height: 47.3rem;
+  }
+  .repair-before-and-after__drag-line, .repair-before-and-after__range::-webkit-slider-thumb {
+    height: 47.3rem;
+  }
+  .repair-before-and-after__drag {
+    width: 5rem;
+    height: 5rem;
+  }
+  .repair-before-and-after__drag:before, .repair-before-and-after__drag:after {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-width: 0.3rem;
+  }
+  .repair-before-and-after__drag-line:before, .repair-before-and-after__drag-line:after {
+    height: 21.2rem;
+  }
+}
+/*# sourceMappingURL=repair-before-and-after.css.map */

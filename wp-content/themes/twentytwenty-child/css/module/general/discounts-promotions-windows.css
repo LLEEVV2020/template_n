@@ -1,0 +1,114 @@
+.discounts-promotions-windows .title {
+  margin-bottom: 1.163em;
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+}
+
+.discounts-promotions-windows .title .block {
+  display: block;
+}
+
+.discounts-promotions-windows .bold {
+  text-transform: uppercase;
+}
+
+.discounts-promotions-windows__list {
+  margin-bottom: 1.563em;
+}
+
+.discounts-promotions-windows__item, .discounts-promotions-windows__img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.discounts-promotions-windows__item {
+  margin-bottom: 0.938em;
+  max-width: 19.188em;
+  min-height: 24.563em;
+  padding: 0.913em 1.2em;
+  -webkit-box-shadow: 0px 0px 2rem rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 2rem rgba(0, 0, 0, 0.25);
+  border-radius: 0.375em;
+}
+
+.discounts-promotions-windows__img .block {
+  display: block;
+}
+
+.discounts-promotions-windows__img {
+  max-width: 18.938em;
+  margin-bottom: 1.363em;
+}
+
+.discounts-promotions-windows__text {
+  font-size: 1.8rem;
+  letter-spacing: 0.03em;
+  line-height: 1.25;
+}
+
+.discounts-promotions-windows__text--small {
+  letter-spacing: 0.03em;
+  max-width: 18em;
+  line-height: 1.06;
+}
+
+.discounts-promotions-windows__text.letter-spacing {
+  letter-spacing: 0;
+  line-height: 1.1;
+}
+
+.discounts-promotions-windows__text.letter-spacing-09 {
+  letter-spacing: 0.09em;
+}
+
+.discounts-promotions-windows__montage {
+  max-width: 11em;
+  margin-bottom: 0.625em;
+  font-size: 1.250em;
+}
+
+@media (min-width: 768px) {
+  .discounts-promotions-windows .title {
+    margin-bottom: 0.863em;
+  }
+  .discounts-promotions-windows .title .block {
+    display: inline;
+  }
+  .discounts-promotions-windows__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 39.35em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .discounts-promotions-windows__item {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1.238em;
+  }
+  .discounts-promotions-windows__item:nth-child(odd) {
+    margin-right: 0.838em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .discounts-promotions-windows .title {
+    margin-bottom: 0.763em;
+  }
+  .discounts-promotions-windows__list {
+    max-width: 69.45em;
+  }
+  .discounts-promotions-windows__item {
+    margin-bottom: 1.250em;
+  }
+  .discounts-promotions-windows__item:nth-child(1), .discounts-promotions-windows__item:nth-child(2), .discounts-promotions-windows__item:nth-child(4), .discounts-promotions-windows__item:nth-child(8) {
+    margin-right: 1.138em;
+  }
+  .discounts-promotions-windows__item:nth-child(3), .discounts-promotions-windows__item:last-child {
+    margin-right: 0;
+  }
+}
+/*# sourceMappingURL=discounts-promotions-windows.css.map */

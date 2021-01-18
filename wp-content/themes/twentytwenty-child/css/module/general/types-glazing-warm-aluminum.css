@@ -1,0 +1,132 @@
+.types-glazing-warm-aluminum .title, .types-glazing-warm-aluminum__list {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.types-glazing-warm-aluminum .title {
+  max-width: 13em;
+  margin-bottom: 1.163em;
+  line-height: 1.2;
+}
+
+.types-glazing-warm-aluminum .title .block {
+  display: block;
+}
+
+.types-glazing-warm-aluminum__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 35rem;
+}
+
+.types-glazing-warm-aluminum__item {
+  max-width: 16.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.625em;
+  -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
+  -webkit-transition: 0.2s color ease, 0.2s -webkit-box-shadow ease;
+  transition: 0.2s color ease, 0.2s -webkit-box-shadow ease;
+  transition: 0.2s box-shadow ease, 0.2s color ease;
+  transition: 0.2s box-shadow ease, 0.2s color ease, 0.2s -webkit-box-shadow ease;
+  cursor: pointer;
+}
+
+.types-glazing-warm-aluminum__item:hover .types-glazing-warm-aluminum__image-box:before, .types-glazing-warm-aluminum__item:hover .types-glazing-warm-aluminum__link {
+  opacity: 1;
+}
+
+.types-glazing-warm-aluminum__item:hover .types-glazing-warm-aluminum__title {
+  color: #F26422;
+}
+
+.types-glazing-warm-aluminum__image-box:before, .types-glazing-warm-aluminum__link {
+  opacity: 0;
+  -webkit-transition: 0.2s opacity ease;
+  transition: 0.2s opacity ease;
+  position: absolute;
+}
+
+.types-glazing-warm-aluminum__image {
+  display: block;
+  width: 100%;
+  border-top-left-radius: 0.625em;
+  border-top-right-radius: 0.625em;
+}
+
+.types-glazing-warm-aluminum__image-box {
+  position: relative;
+}
+
+.types-glazing-warm-aluminum__image-box:before {
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-top-left-radius: 0.625em;
+  border-top-right-radius: 0.625em;
+}
+
+.types-glazing-warm-aluminum__link {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.4rem;
+}
+
+.types-glazing-warm-aluminum__title {
+  position: relative;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .types-glazing-warm-aluminum .title {
+    max-width: none;
+    margin-bottom: 0.963em;
+    line-height: 1.1;
+  }
+  .types-glazing-warm-aluminum__link, .types-glazing-warm-aluminum__title {
+    font-size: 1.8rem;
+  }
+  .types-glazing-warm-aluminum__title {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  .types-glazing-warm-aluminum__list {
+    max-width: 58.8rem;
+  }
+  .types-glazing-warm-aluminum__item {
+    max-width: 28.7rem;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0.925em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .types-glazing-warm-aluminum .title {
+    margin-bottom: 0.763em;
+  }
+  .types-glazing-warm-aluminum__list {
+    max-width: none;
+  }
+  .types-glazing-warm-aluminum__item {
+    max-width: 30.6rem;
+    margin-bottom: 2rem;
+  }
+}
+/*# sourceMappingURL=types-glazing-warm-aluminum.css.map */

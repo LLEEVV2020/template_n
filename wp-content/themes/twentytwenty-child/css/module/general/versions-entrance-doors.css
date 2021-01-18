@@ -1,0 +1,87 @@
+.versions-entrance-doors .title {
+  margin-bottom: 1em;
+}
+
+.versions-entrance-doors__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 21em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.versions-entrance-doors__item:nth-child(2) {
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 1.7em;
+}
+
+.versions-entrance-doors__item:nth-child(5) {
+  margin-left: 0.4em;
+  margin-right: 0.4em;
+}
+
+.versions-entrance-doors__image {
+  -webkit-box-shadow: 0 10px 9.2px -8.7px rgba(10, 93, 161, 0.6);
+          box-shadow: 0 10px 9.2px -8.7px rgba(10, 93, 161, 0.6);
+  display: block;
+}
+
+.versions-entrance-doors__image--thin {
+  max-width: 4.6em;
+}
+
+.versions-entrance-doors__image--width {
+  max-width: 6.7em;
+}
+
+@media (min-width: 768px) {
+  .versions-entrance-doors__list {
+    max-width: 42em;
+  }
+  .versions-entrance-doors__item:first-child {
+    margin-left: 5em;
+  }
+  .versions-entrance-doors__item:nth-child(2) {
+    margin-bottom: 3.2em;
+  }
+  .versions-entrance-doors__item:nth-child(3) {
+    margin-right: 5em;
+  }
+  .versions-entrance-doors__item:nth-child(5) {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+  .versions-entrance-doors__image--thin {
+    max-width: 7.4em;
+  }
+  .versions-entrance-doors__image--width {
+    max-width: 11.2em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .versions-entrance-doors {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  .versions-entrance-doors .title {
+    margin-bottom: 0.8em;
+  }
+  .versions-entrance-doors__list {
+    max-width: none;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .versions-entrance-doors__item:first-child, .versions-entrance-doors__item:nth-child(2), .versions-entrance-doors__item:nth-child(3), .versions-entrance-doors__item:nth-child(5) {
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=versions-entrance-doors.css.map */

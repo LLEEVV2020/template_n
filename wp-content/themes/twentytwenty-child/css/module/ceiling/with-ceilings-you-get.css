@@ -1,0 +1,116 @@
+.with-ceilings-you-get {
+  background-color: #F9F9F9;
+}
+
+.with-ceilings-you-get .title {
+  max-width: 8em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.063em;
+}
+
+.with-ceilings-you-get__slider {
+  max-width: 21.6em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.with-ceilings-you-get__slide {
+  border-radius: 0.625em;
+  border: 0.063em solid #E6E6E6;
+  margin-bottom: 1em;
+}
+
+.with-ceilings-you-get__image {
+  display: block;
+  max-width: 21.563em;
+  border-top-left-radius: 0.625em;
+  border-top-right-radius: 0.625em;
+}
+
+.with-ceilings-you-get__image-box {
+  position: relative;
+}
+
+.with-ceilings-you-get__price {
+  position: absolute;
+  top: 1.638em;
+  left: 0;
+  padding: 0.313em 1.275em;
+  max-width: 761.375em;
+  font-size: 1.563em;
+  letter-spacing: 0.05em;
+  background-color: #F26422;
+  color: #ffffff;
+  border-radius: 0.275em;
+  font-weight: 900;
+}
+
+.with-ceilings-you-get__price--padding {
+  padding-left: 0.675em;
+  padding-right: 0.675em;
+}
+
+.with-ceilings-you-get__price--padding-2 {
+  padding-left: 1.075em;
+  padding-right: 1.075em;
+}
+
+.with-ceilings-you-get__title {
+  text-align: center;
+  padding: 1.188em 1.250em;
+  font-size: 1.250em;
+}
+
+.with-ceilings-you-get .pagination-box {
+  bottom: -1.3em;
+}
+
+@media (min-width: 768px) {
+  .with-ceilings-you-get .title {
+    max-width: none;
+  }
+  .with-ceilings-you-get__slider {
+    max-width: 44.6em;
+  }
+  .with-ceilings-you-get__image {
+    max-width: none;
+  }
+  .with-ceilings-you-get__title {
+    padding-top: 1.088em;
+    padding-bottom: 1.088em;
+  }
+  .with-ceilings-you-get .pagination-box {
+    bottom: -1.9em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .with-ceilings-you-get.padding {
+    padding-top: 3.5em;
+    padding-bottom: 3.5em;
+  }
+  .with-ceilings-you-get .title {
+    margin-bottom: 1.363em;
+  }
+  .with-ceilings-you-get__slider {
+    max-width: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .with-ceilings-you-get__slide {
+    max-width: 23em;
+  }
+  .with-ceilings-you-get__image {
+    max-width: 18.863em;
+  }
+  .with-ceilings-you-get__title {
+    padding-top: 1.188em;
+    font-size: 1.5em;
+  }
+}
+/*# sourceMappingURL=with-ceilings-you-get.css.map */

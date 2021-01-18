@@ -1,0 +1,24 @@
+.insulation-layer-thickness {
+  background-color: #F6F6F6;
+  /* .insulation-layer-thickness__text */
+}
+
+.insulation-layer-thickness__text span {
+  display: block;
+  max-width: 16em;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .insulation-layer-thickness__text span {
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .insulation-layer-thickness__text span {
+    display: inline-block;
+  }
+}
+/*# sourceMappingURL=insulation-layer-thickness.css.map */

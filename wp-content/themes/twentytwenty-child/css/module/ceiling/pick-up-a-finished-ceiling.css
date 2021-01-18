@@ -1,0 +1,484 @@
+.pick-up-a-finished-ceiling {
+  /* .pick-up-a-finished-ceiling__container */
+  /* .pick-up-a-finished-ceiling__wrapper */
+  /* .pick-up-a-finished-ceiling__title */
+  /* .pick-up-a-finished-ceiling__box-tabs */
+  /* .pick-up-a-finished-ceiling__tabs */
+  /* .pick-up-a-finished-ceiling__tab */
+  /* .pick-up-a-finished-ceiling__item */
+  /* .pick-up-a-finished-ceiling__item-title */
+  /* .pick-up-a-finished-ceiling__item-img */
+  /* .pick-up-a-finished-ceiling__item-box-price */
+  /* .pick-up-a-finished-ceiling__item-price */
+  /* .pick-up-a-finished-ceiling__item-tag */
+  /* .pick-up-a-finished-ceiling__item-box-article */
+  /* .pick-up-a-finished-ceiling__item-info */
+  /* .pick-up-a-finished-ceiling__item-btn */
+}
+
+.pick-up-a-finished-ceiling__container {
+  width: 100%;
+}
+
+.pick-up-a-finished-ceiling__wrapper {
+  max-width: 100%;
+}
+
+.pick-up-a-finished-ceiling__title {
+  margin-bottom: 1.3em;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .pick-up-a-finished-ceiling__title {
+    margin-bottom: 1.4em;
+    line-height: 1.1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pick-up-a-finished-ceiling__title {
+    margin-bottom: 0.75em;
+    line-height: 1.25;
+  }
+}
+
+@media (max-width: 767px) {
+  .pick-up-a-finished-ceiling__box-tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+    margin-bottom: 1.6em;
+    margin-left: -1em;
+    overflow-x: auto;
+    white-space: nowrap;
+    position: relative;
+    scrollbar-width: none;
+    max-width: 57rem;
+    margin: 0 auto 1.6em;
+  }
+  .pick-up-a-finished-ceiling__box-tabs::before {
+    content: "";
+    position: absolute;
+    width: 57rem;
+    height: 0.1rem;
+    background-color: #ccc;
+    left: 0;
+    bottom: 0.1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .pick-up-a-finished-ceiling__box-tabs {
+    border: none;
+    background-color: #efefef;
+    max-width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 2em;
+    margin-bottom: 2.05em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pick-up-a-finished-ceiling__box-tabs {
+    padding: 0;
+    margin-bottom: 1.6em;
+  }
+}
+
+.pick-up-a-finished-ceiling .active-tab {
+  display: block !important;
+}
+
+@media (min-width: 768px) {
+  .pick-up-a-finished-ceiling .active-tab {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+
+.pick-up-a-finished-ceiling .tab-item {
+  display: none;
+}
+
+.pick-up-a-finished-ceiling__tabs {
+  padding: 0 1em 0.6em;
+  cursor: pointer;
+  position: relative;
+}
+
+.pick-up-a-finished-ceiling__tabs.active {
+  font-weight: 900;
+  position: relative;
+}
+
+.pick-up-a-finished-ceiling__tabs.active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.3rem;
+  background-color: #FFE600;
+  bottom: 0;
+  left: 0;
+}
+
+@media (min-width: 768px) {
+  .pick-up-a-finished-ceiling__tabs.active {
+    font-weight: 700;
+    background-color: #fff;
+    border: 0.15em solid #F26422;
+  }
+  .pick-up-a-finished-ceiling__tabs.active::after {
+    content: none;
+  }
+  .pick-up-a-finished-ceiling__tabs.active::before {
+    content: "";
+    position: absolute;
+    width: 1.1rem;
+    height: 1.1rem;
+    border-right: 0.15em solid #F26422;
+    border-bottom: 0.15em solid #F26422;
+    bottom: -0.45em;
+    background-color: #fff;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+}
+
+@media (min-width: 1200px) {
+  .pick-up-a-finished-ceiling__tabs.active::before {
+    width: 2.1rem;
+    height: 2.1rem;
+    bottom: -1.3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .pick-up-a-finished-ceiling__tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: 4rem;
+    padding: 0;
+    margin: 0;
+    width: 25%;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pick-up-a-finished-ceiling__tabs {
+    min-height: 6rem;
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .pick-up-a-finished-ceiling__tab {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 72.1rem;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pick-up-a-finished-ceiling__tab {
+    max-width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.pick-up-a-finished-ceiling__item {
+  padding: 1.6em 1.3em 1.4em;
+  -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 0.3em;
+  max-width: 37.5rem;
+  margin: 0 auto;
+  margin-bottom: 1.5em;
+}
+
+@media (min-width: 768px) {
+  .pick-up-a-finished-ceiling__item {
+    max-width: 34.3rem;
+    width: 100%;
+    margin: 0;
+    padding: 1.7em 0.7em 1.2em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pick-up-a-finished-ceiling__item {
+    max-width: 46.7rem;
+    padding: 3rem;
+  }
+}
+
+.pick-up-a-finished-ceiling__item-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 0.85em;
+}
+
+@media (min-width: 768px) {
+  .pick-up-a-finished-ceiling__item-title {
+    font-size: 2rem;
+    max-width: 11em;
+    margin: 0 auto 1.1em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pick-up-a-finished-ceiling__item-title {
+    max-width: 100%;
+    font-size: 1.8rem;
+    margin-bottom: 1.9em;
+  }
+}
+
+.pick-up-a-finished-ceiling__item-img {
+  width: 33.4rem;
+  height: 20rem;
+  margin-bottom: 1.3em;
+}
+
+@media (min-width: 768px) {
+  .pick-up-a-finished-ceiling__item-img {
+    width: 100%;
+    height: 21.6rem;
+    display: block;
+    margin: 0 auto 1.6em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pick-up-a-finished-ceiling__item-img {
+    height: 27.3rem;
+    margin-bottom: 1.9em;
+  }
+}
+
+.pick-up-a-finished-ceiling__item-box-price {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.4em;
+}
+
+@media (min-width: 768px) {
+  .pick-up-a-finished-ceiling__item-box-price {
+    margin: 0 2.2em 0.6em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pick-up-a-finished-ceiling__item-box-price {
+    margin: 0 3rem;
+    margin-bottom: 1em;
+  }
+}
+
+.pick-up-a-finished-ceiling__item-price {
+  font-size: 3.6rem;
+  margin-left: 0.7em;
+}
+
+@media (min-width: 768px) {
+  .pick-up-a-finished-ceiling__item-price {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pick-up-a-finished-ceiling__item-price {
+    font-size: 4rem;
+    margin-left: 0;
+    max-width: 3.6em;
+    width: 100%;
+  }
+}
+
+.pick-up-a-finished-ceiling__item-tag {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #fff;
+  background-color: #17A1E3;
+  margin-right: 0.4em;
+  padding: 0.6em 0.5em 0.35em 0.2em;
+  border-radius: 0.4em;
+  position: relative;
+  -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+}
+
+.pick-up-a-finished-ceiling__item-tag::before {
+  content: "";
+  position: absolute;
+  top: 0.5em;
+  left: -1.24em;
+  width: 3.05em;
+  height: 3.05em;
+  background-color: #17a1e3;
+  border-radius: 0.375em;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  z-index: -1;
+}
+
+@media (min-width: 768px) {
+  .pick-up-a-finished-ceiling__item-tag::before {
+    top: 0.6em;
+    left: -1.35em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pick-up-a-finished-ceiling__item-tag::before {
+    top: 0.65em;
+    left: -1.35em;
+    width: 3.15em;
+    height: 3.15em;
+  }
+}
+
+.pick-up-a-finished-ceiling__item-tag::after {
+  content: "";
+  position: absolute;
+  top: 1.7em;
+  left: -0.8em;
+  width: 0.572em;
+  height: 0.572em;
+  background-color: #ffffff;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 0.125em 0.125em 0.188em rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0.125em 0.125em 0.188em rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 768px) {
+  .pick-up-a-finished-ceiling__item-tag::after {
+    top: 1.85em;
+    left: -1em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pick-up-a-finished-ceiling__item-tag::after {
+    top: 1.9em;
+  }
+}
+
+.pick-up-a-finished-ceiling__item-tag span {
+  font-size: 3rem;
+  display: block;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .pick-up-a-finished-ceiling__item-tag span {
+    font-size: 1rem;
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pick-up-a-finished-ceiling__item-tag span {
+    font-size: 3.6rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .pick-up-a-finished-ceiling__item-tag {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pick-up-a-finished-ceiling__item-tag {
+    font-size: 1.6rem;
+    padding: 0.6em 0.9em 0.3em 0.8em;
+  }
+}
+
+.pick-up-a-finished-ceiling__item-box-article {
+  padding: 0 0.3em;
+}
+
+@media (min-width: 1200px) {
+  .pick-up-a-finished-ceiling__item-box-article {
+    padding: 0;
+  }
+}
+
+.pick-up-a-finished-ceiling__item-info {
+  text-transform: uppercase;
+  max-width: 10em;
+}
+
+.pick-up-a-finished-ceiling__item-info span {
+  display: block;
+  line-height: 1.2em;
+  letter-spacing: 0.05em;
+}
+
+@media (min-width: 768px) {
+  .pick-up-a-finished-ceiling__item-info span {
+    line-height: 1.4em;
+  }
+}
+
+@media (min-width: 768px) {
+  .pick-up-a-finished-ceiling__item-info {
+    font-size: 1.2rem;
+    font-weight: 900;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pick-up-a-finished-ceiling__item-info {
+    font-size: 1.8rem;
+    max-width: 15em;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+  }
+}
+
+.pick-up-a-finished-ceiling__item-btn {
+  max-width: 15.4rem;
+  height: 100%;
+  margin-top: auto;
+}
+
+@media (min-width: 768px) {
+  .pick-up-a-finished-ceiling__item-btn {
+    max-width: 16.9rem;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pick-up-a-finished-ceiling__item-btn {
+    max-width: 18.5rem;
+  }
+}
+/*# sourceMappingURL=pick-up-a-finished-ceiling.css.map */

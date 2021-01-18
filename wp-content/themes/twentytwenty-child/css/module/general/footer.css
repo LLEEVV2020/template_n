@@ -1,0 +1,133 @@
+.footer {
+  background-color: #015A76;
+  color: #ffffff;
+}
+
+.footer__contacts, .footer__operating-mode, .footer__content {
+  max-width: 23rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer__contacts {
+  margin-bottom: 1.563em;
+}
+
+.footer__phone, .footer__email, .footer__link {
+  display: block;
+}
+
+.footer__phone, .footer__email, .footer__operating-mode-text, .footer__link {
+  font-weight: 700;
+}
+
+.footer__phone, .footer__link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer__phone {
+  margin-bottom: 0.1em;
+  font-size: 2.8rem;
+}
+
+.footer__email {
+  font-size: 1.8rem;
+  color: #01D2E9;
+}
+
+.footer__operating-mode, .footer__content {
+  text-align: center;
+}
+
+.footer__operating-mode-text, .footer__link, .footer__copyright {
+  font-size: 1.4rem;
+}
+
+.footer__operating-mode {
+  margin-bottom: 1.563em;
+}
+
+.footer__operating-mode-text {
+  margin-bottom: 0.375em;
+}
+
+.footer__from-9-to-23 {
+  font-size: 2.4rem;
+}
+
+.footer__link:first-child {
+  margin-bottom: 1.125em;
+}
+
+.footer__link:nth-child(2) {
+  margin-bottom: 1.563em;
+}
+
+.footer__copyright {
+  opacity: 0.5;
+}
+
+@media (min-width: 768px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer__phone {
+    font-size: 2.5rem;
+  }
+  .footer__email, .footer__operating-mode-text {
+    font-size: 1.5rem;
+  }
+  .footer__from-9-to-23 {
+    font-size: 2rem;
+  }
+  .footer__content {
+    text-align: left;
+  }
+  .footer__link, .footer__copyright {
+    font-size: 1.2rem;
+  }
+  .footer__link:first-child {
+    margin-bottom: 0.3em;
+  }
+  .footer__link:nth-child(2) {
+    margin-bottom: 0.4em;
+  }
+}
+
+@media (min-width: 960px) {
+  .footer .container {
+    width: calc(100% - 8rem);
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    padding-top: 1.5em;
+    padding-bottom: 0;
+  }
+  .footer__contacts, .footer__operating-mode, .footer__content {
+    max-width: 33rem;
+  }
+  .footer__phone {
+    font-size: 3.5rem;
+  }
+  .footer__email, .footer__operating-mode-text {
+    font-size: 2.2rem;
+  }
+  .footer__from-9-to-23 {
+    font-size: 2.4rem;
+  }
+  .footer__link, .footer__copyright {
+    font-size: 1.4rem;
+  }
+  .footer__link:first-child {
+    margin-bottom: 0.563em;
+  }
+  .footer__link:nth-child(2) {
+    margin-bottom: 0.625em;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

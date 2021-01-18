@@ -1,0 +1,29 @@
+.what-can-be-glazed .container {
+  width: calc(100% - 7rem);
+}
+
+.what-can-be-glazed .title {
+  margin-bottom: 1.238em;
+}
+
+.what-can-be-glazed .text {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .what-can-be-glazed .title {
+    margin-bottom: 1.138em;
+  }
+  .what-can-be-glazed .text {
+    text-align: center;
+    line-height: 1.1;
+  }
+}
+
+@media (min-width: 960px) {
+  .what-can-be-glazed .title {
+    margin-bottom: 2rem;
+  }
+}
+/*# sourceMappingURL=what-can-be-glazed.css.map */

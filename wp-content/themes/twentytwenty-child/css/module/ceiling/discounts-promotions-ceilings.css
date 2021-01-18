@@ -1,0 +1,220 @@
+.discounts-promotions-ceilings .title {
+  margin-bottom: 1.163em;
+  letter-spacing: 0.03em;
+}
+
+.discounts-promotions-ceilings .title .block {
+  display: block;
+}
+
+.discounts-promotions-ceilings .bold {
+  text-transform: uppercase;
+}
+
+.discounts-promotions-ceilings__list {
+  margin-bottom: 1.563em;
+}
+
+.discounts-promotions-ceilings__item, .discounts-promotions-ceilings__img,
+.discounts-promotions-ceilings .button {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.discounts-promotions-ceilings__item {
+  margin-bottom: 0.938em;
+  max-width: 21.563em;
+  min-height: 26.375em;
+  padding: 1.113em 0.8em;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 0.375em;
+}
+
+.discounts-promotions-ceilings__item.hide {
+  display: none;
+}
+
+.discounts-promotions-ceilings__img,
+.discounts-promotions-ceilings .button {
+  display: block;
+}
+
+.discounts-promotions-ceilings__img {
+  max-width: 18.938em;
+  margin-bottom: 1.163em;
+}
+
+.discounts-promotions-ceilings__text {
+  font-size: 1.125em;
+  line-height: 1.25;
+}
+
+.discounts-promotions-ceilings__text--small {
+  letter-spacing: 0.03em;
+  max-width: 18em;
+  line-height: 1.06;
+}
+
+.discounts-promotions-ceilings__text.letter-spacing {
+  letter-spacing: 0;
+  line-height: 1.1;
+}
+
+.discounts-promotions-ceilings__text.installment, .discounts-promotions-ceilings__text.discount, .discounts-promotions-ceilings__text.payment, .discounts-promotions-ceilings__text.gager, .discounts-promotions-ceilings__text.settlers, .discounts-promotions-ceilings__text.discount-10 {
+  margin-left: 0.4em;
+}
+
+.discounts-promotions-ceilings__text.installment, .discounts-promotions-ceilings__text.post, .discounts-promotions-ceilings__text.payment, .discounts-promotions-ceilings__text.gager, .discounts-promotions-ceilings__text.from-1-to-30, .discounts-promotions-ceilings__text.settlers, .discounts-promotions-ceilings__text.discount-10 {
+  letter-spacing: 0.03em;
+}
+
+.discounts-promotions-ceilings__text.installment .block {
+  display: block;
+}
+
+.discounts-promotions-ceilings__text.discount {
+  max-width: 16.8em;
+}
+
+.discounts-promotions-ceilings__text.from-1-to-30 {
+  margin-left: 0.5em;
+}
+
+.discounts-promotions-ceilings__text.post {
+  max-width: 12.6em;
+  margin-left: 0.5em;
+}
+
+.discounts-promotions-ceilings__text.post .block {
+  display: block;
+}
+
+.discounts-promotions-ceilings__text.payment {
+  max-width: 12em;
+}
+
+.discounts-promotions-ceilings__text.settlers .block {
+  display: block;
+}
+
+.discounts-promotions-ceilings__text.discount-10 {
+  max-width: 11em;
+}
+
+.discounts-promotions-ceilings__text.discount-10 .block {
+  display: block;
+}
+
+.discounts-promotions-ceilings__montage {
+  max-width: 16em;
+  margin-left: 0.4em;
+  margin-top: 1.2em;
+  margin-bottom: 0.625em;
+  font-size: 1.125em;
+  letter-spacing: 0.03em;
+}
+
+.discounts-promotions-ceilings .button {
+  width: 100%;
+  max-width: 24.738em;
+}
+
+@media (min-width: 768px) {
+  .discounts-promotions-ceilings .title {
+    margin-bottom: 1.363em;
+  }
+  .discounts-promotions-ceilings .title .block {
+    display: inline;
+  }
+  .discounts-promotions-ceilings #discountsPromotionsCeilingsBtn {
+    display: none;
+  }
+  .discounts-promotions-ceilings__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 44.250em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .discounts-promotions-ceilings__item {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1.138em;
+    padding: 0.713em 0.8em;
+    max-width: 14.125em;
+    min-height: 18.940em;
+  }
+  .discounts-promotions-ceilings__item.hide {
+    display: block;
+  }
+  .discounts-promotions-ceilings__img {
+    max-width: 12.375em;
+    margin-bottom: 0.963em;
+  }
+  .discounts-promotions-ceilings__text, .discounts-promotions-ceilings__montage {
+    font-size: 1em;
+  }
+  .discounts-promotions-ceilings__text.installment, .discounts-promotions-ceilings__text.discount, .discounts-promotions-ceilings__text.payment, .discounts-promotions-ceilings__text.gager, .discounts-promotions-ceilings__text.settlers, .discounts-promotions-ceilings__text.discount-10, .discounts-promotions-ceilings__text.from-1-to-30 {
+    margin-left: 0;
+  }
+  .discounts-promotions-ceilings__text.post {
+    margin-left: 0.2em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .discounts-promotions-ceilings .title {
+    margin-bottom: 0.863em;
+  }
+  .discounts-promotions-ceilings__list {
+    max-width: none;
+  }
+  .discounts-promotions-ceilings__item {
+    margin-bottom: 1.638em;
+    padding: 1.013em 0.8em 2.713em;
+    min-width: 19.188em;
+  }
+  .discounts-promotions-ceilings__img {
+    max-width: none;
+    width: 16.813em;
+    height: 15em;
+  }
+  .discounts-promotions-ceilings__text, .discounts-promotions-ceilings__montage {
+    font-size: 1.125em;
+  }
+  .discounts-promotions-ceilings__text.installment, .discounts-promotions-ceilings__text.discount, .discounts-promotions-ceilings__text.payment, .discounts-promotions-ceilings__text.gager, .discounts-promotions-ceilings__text.settlers, .discounts-promotions-ceilings__text.discount-10, .discounts-promotions-ceilings__text.from-1-to-30 {
+    margin-left: 0.4em;
+  }
+  .discounts-promotions-ceilings__text.installment .block,
+  .discounts-promotions-ceilings__text.installment .bold {
+    display: block;
+  }
+  .discounts-promotions-ceilings__text.from-1-to-30 .from-1-to-30__block {
+    display: block;
+  }
+  .discounts-promotions-ceilings__text.post .block,
+  .discounts-promotions-ceilings__text.settlers .block,
+  .discounts-promotions-ceilings__text.discount-10 .block {
+    display: inline;
+  }
+  .discounts-promotions-ceilings__text.post {
+    max-width: 14.6em;
+  }
+  .discounts-promotions-ceilings__text.payment {
+    max-width: 15em;
+  }
+  .discounts-promotions-ceilings__text.discount-10 {
+    max-width: 15em;
+  }
+  .discounts-promotions-ceilings__img {
+    margin-bottom: 1.563em;
+  }
+}
+/*# sourceMappingURL=discounts-promotions-ceilings.css.map */

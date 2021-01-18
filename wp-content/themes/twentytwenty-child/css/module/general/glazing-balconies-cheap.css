@@ -1,0 +1,149 @@
+.glazing-balconies-cheap .title, .glazing-balconies-cheap__subtitle {
+  margin-bottom: 1.163em;
+}
+
+.glazing-balconies-cheap__subtitle {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.glazing-balconies-cheap__item {
+  max-width: 14.125em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.563em;
+  padding: 1.563em 0.813em;
+  -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 0.313em;
+  text-align: center;
+}
+
+.glazing-balconies-cheap__item:nth-child(4), .glazing-balconies-cheap__item:nth-child(5), .glazing-balconies-cheap__item:nth-child(6), .glazing-balconies-cheap__item:nth-child(7), .glazing-balconies-cheap__item:nth-child(8), .glazing-balconies-cheap__item:nth-child(9) {
+  display: none;
+}
+
+.glazing-balconies-cheap__title {
+  margin-bottom: 0.750em;
+  min-height: 2.167em;
+}
+
+.glazing-balconies-cheap__image {
+  margin-bottom: 1.375em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.glazing-balconies-cheap__price-old, .glazing-balconies-cheap__price-new {
+  min-height: 1.875em;
+  line-height: 1.875em;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-align: center;
+  border-radius: 0.375em;
+  margin-bottom: 0.438em;
+}
+
+.glazing-balconies-cheap__price-old {
+  background-color: #F2F2F2;
+  font-size: 1.250em;
+  color: #979797;
+  position: relative;
+}
+
+.glazing-balconies-cheap__price-old:before {
+  content: '';
+  position: absolute;
+  top: 0.6em;
+  left: 2.7em;
+  width: 42%;
+  height: 0.077em;
+  background-color: #F26422;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transform: rotate(7deg);
+          transform: rotate(7deg);
+}
+
+.glazing-balconies-cheap__price-new {
+  background-color: #FFE600;
+  font-size: 1.375em;
+}
+
+.glazing-balconies-cheap .button {
+  width: 100%;
+}
+
+.glazing-balconies-cheap__button {
+  max-width: 14.125em;
+}
+
+.glazing-balconies-cheap__button-box {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .glazing-balconies-cheap__subtitle {
+    font-size: 2rem;
+  }
+  .glazing-balconies-cheap .text {
+    margin-bottom: 2.188em;
+    text-align: center;
+  }
+  .glazing-balconies-cheap__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 46em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .glazing-balconies-cheap__item:nth-child(4), .glazing-balconies-cheap__item:nth-child(5), .glazing-balconies-cheap__item:nth-child(6), .glazing-balconies-cheap__item:nth-child(7), .glazing-balconies-cheap__item:nth-child(8), .glazing-balconies-cheap__item:nth-child(9) {
+    display: block;
+  }
+  .glazing-balconies-cheap__button {
+    display: none;
+  }
+}
+
+@media (min-width: 960px) {
+  .glazing-balconies-cheap .container {
+    width: calc(100% - 8rem);
+  }
+}
+
+@media (min-width: 1200px) {
+  .glazing-balconies-cheap__subtitle,
+  .glazing-balconies-cheap .text {
+    font-size: 2.4rem;
+  }
+  .glazing-balconies-cheap__title {
+    font-size: 1.5em;
+    max-width: 12em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .glazing-balconies-cheap__list {
+    max-width: none;
+  }
+  .glazing-balconies-cheap__item {
+    max-width: 23em;
+    margin-bottom: 2.188em;
+  }
+  .glazing-balconies-cheap__price-old {
+    font-size: 1.5em;
+  }
+  .glazing-balconies-cheap__price-old:before {
+    top: 0.6em;
+    left: 4.6em;
+    width: 30%;
+    height: 0.140em;
+  }
+  .glazing-balconies-cheap__price-new {
+    font-size: 1.875em;
+  }
+}
+/*# sourceMappingURL=glazing-balconies-cheap.css.map */

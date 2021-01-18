@@ -1,0 +1,174 @@
+.frequently-asked-questions {
+  background-color: #F6F6F6;
+}
+
+.frequently-asked-questions .title {
+  margin-bottom: 1.188em;
+}
+
+.frequently-asked-questions .text {
+  text-align: left;
+}
+
+.frequently-asked-questions__list {
+  margin-bottom: 1.563em;
+}
+
+.frequently-asked-questions__item {
+  margin-bottom: 0.938em;
+  -webkit-box-shadow: 3px 4px 23px rgba(0, 0, 0, 0.25);
+          box-shadow: 3px 4px 23px rgba(0, 0, 0, 0.25);
+  border-radius: 0.375em;
+}
+
+.frequently-asked-questions__input:checked + .frequently-asked-questions__question .frequently-asked-questions__question-icon:before {
+  -webkit-transform: translateX(0.35em) translateY(0.225em) rotate(45deg);
+          transform: translateX(0.35em) translateY(0.225em) rotate(45deg);
+}
+
+.frequently-asked-questions__input:checked + .frequently-asked-questions__question .frequently-asked-questions__question-icon:after {
+  -webkit-transform: translateX(0.342em) translateY(-0.362em) rotate(135deg);
+          transform: translateX(0.342em) translateY(-0.362em) rotate(135deg);
+}
+
+.frequently-asked-questions__input:checked ~ .frequently-asked-questions__question-description {
+  display: block;
+}
+
+.frequently-asked-questions__link {
+  position: relative;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.frequently-asked-questions__link:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 0.063em solid #F26422;
+}
+
+.frequently-asked-questions__input {
+  display: none;
+}
+
+.frequently-asked-questions__question {
+  padding-top: 0.938em;
+  padding-bottom: 0.938em;
+  padding-left: 0.688em;
+  padding-right: 0.688em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.frequently-asked-questions__question-text, .frequently-asked-questions__question-description {
+  color: #3A3A3A;
+}
+
+.frequently-asked-questions__question-text {
+  max-width: 15.4em;
+}
+
+.frequently-asked-questions__question-icon {
+  display: block;
+  width: 0.9em;
+  height: 0.9em;
+  border-radius: 50%;
+  position: relative;
+}
+
+.frequently-asked-questions__question-icon:before, .frequently-asked-questions__question-icon:after {
+  content: '';
+  display: block;
+  width: 0.15em;
+  height: 0.6em;
+  background-color: #F26422;
+}
+
+.frequently-asked-questions__question-icon:before {
+  -webkit-transform: translateX(0.34em) translateY(0.24em) rotate(90deg);
+          transform: translateX(0.34em) translateY(0.24em) rotate(90deg);
+}
+
+.frequently-asked-questions__question-icon:after {
+  -webkit-transform: translateX(0.331em) translateY(-0.362em);
+          transform: translateX(0.331em) translateY(-0.362em);
+}
+
+.frequently-asked-questions__question-description {
+  padding-left: 0.688em;
+  padding-right: 0.688em;
+  padding-bottom: 0.938em;
+  display: none;
+  line-height: 1.2;
+}
+
+.frequently-asked-questions .button {
+  max-width: 20.3em;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0.525em 2.312em;
+  line-height: 1.5;
+  font-size: 1.7rem;
+}
+
+@media (min-width: 768px) {
+  .frequently-asked-questions {
+    background-color: #F6F6F6;
+  }
+  .frequently-asked-questions .title {
+    max-width: 22em;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .frequently-asked-questions .text {
+    margin-bottom: 2.188em;
+    max-width: 35em;
+    margin-left: 2em;
+  }
+  .frequently-asked-questions__list {
+    margin-bottom: 1.875em;
+  }
+  .frequently-asked-questions__item {
+    margin-bottom: 1.538em;
+  }
+  .frequently-asked-questions__question {
+    padding-left: 1.813em;
+  }
+  .frequently-asked-questions__question-description {
+    padding-left: 1.813em;
+    padding-right: 4.813em;
+  }
+  .frequently-asked-questions__question-text {
+    max-width: none;
+  }
+  .frequently-asked-questions .button {
+    padding: 0.425em 2.312em;
+    max-width: 33.3em;
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .frequently-asked-questions .title {
+    max-width: 21em;
+  }
+  .frequently-asked-questions .text {
+    max-width: 49em;
+  }
+  .frequently-asked-questions__question-description {
+    padding-right: 4.413em;
+  }
+}
+/*# sourceMappingURL=frequently-asked-questions.css.map */

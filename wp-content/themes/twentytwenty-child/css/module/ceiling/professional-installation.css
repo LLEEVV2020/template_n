@@ -1,0 +1,111 @@
+.professional-installation {
+  /* .professional-installation__title */
+  /* .professional-installation__list */
+  /* .professional-installation__item */
+  /* .professional-installation__icon */
+  /* .professional-installation__item-title */
+  /* .professional-installation__item-text */
+}
+
+.professional-installation__title {
+  line-height: 1.2;
+  margin-bottom: 2.8rem;
+}
+
+@media (min-width: 768px) {
+  .professional-installation__title {
+    line-height: 1.1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .professional-installation__title {
+    line-height: 1.2;
+  }
+}
+
+@media (min-width: 768px) {
+  .professional-installation__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.professional-installation__item {
+  margin-bottom: 2.5rem;
+}
+
+.professional-installation__item:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .professional-installation__item {
+    max-width: 34.6rem;
+    margin-bottom: 3rem;
+  }
+  .professional-installation__item:nth-child(3), .professional-installation__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .professional-installation__item {
+    max-width: 22.2rem;
+    margin-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.professional-installation__icon {
+  width: 2.813em;
+  height: 2.813em;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 0.1rem solid #F26422;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+
+.professional-installation__icon .icon {
+  width: 1em;
+  height: 1em;
+  font-size: 1.6em;
+}
+
+@media (min-width: 1200px) {
+  .professional-installation__icon {
+    font-size: 1.2em;
+  }
+}
+
+.professional-installation__item-title {
+  display: block;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.professional-installation__item-text {
+  line-height: 1.2;
+}
+/*# sourceMappingURL=professional-installation.css.map */

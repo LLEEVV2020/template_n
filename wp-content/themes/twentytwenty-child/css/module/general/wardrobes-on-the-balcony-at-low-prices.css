@@ -1,0 +1,440 @@
+.glazing-balcony-with-warm-aluminum {
+  /* .glazing-bath__wrapper */
+  /* .glazing-bath__title */
+  /* .glazing-bath__inner */
+  /* .glazing-bath__box-img */
+  /* .glazing-bath__img */
+  /* .glazing-bath__info */
+  /* .glazing-bath__info-text */
+  /* .glazing-bath__box-price */
+  /* .glazing-bath__price-all */
+  /* .glazing-bath__price */
+  /* .glazing-bath__number-old */
+  /* .glazing-bath__number-new */
+  /* .glazing-bath__btn */
+}
+
+@media (max-width: 767px) {
+  .glazing-balcony-with-warm-aluminum .container {
+    width: 100%;
+  }
+}
+
+.glazing-balcony-with-warm-aluminum__wrapper {
+  padding: 4.5rem 0 0;
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .glazing-balcony-with-warm-aluminum__wrapper {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .glazing-balcony-with-warm-aluminum__wrapper {
+    padding: 5.5rem 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .glazing-balcony-with-warm-aluminum__wrapper {
+    padding: 6rem 0;
+    max-width: 79.7rem;
+  }
+}
+
+.glazing-balcony-with-warm-aluminum__title {
+  background-color: transparent;
+  position: relative;
+  max-width: 13em;
+  margin: 0 auto 0.9em;
+  text-align: center;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .glazing-balcony-with-warm-aluminum__title {
+    margin-bottom: 0.9em;
+    margin-left: 0;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .glazing-balcony-with-warm-aluminum__title {
+    margin-bottom: 0.8em;
+  }
+}
+
+.glazing-balcony-with-warm-aluminum__inner {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .glazing-balcony-with-warm-aluminum__inner {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1.6fr 1fr 1fr;
+        grid-template-columns: 1.6fr 1fr 1fr;
+    -ms-grid-rows: 0.9fr 1fr;
+        grid-template-rows: 0.9fr 1fr;
+    gap: 0px 0px;
+        grid-template-areas: "text img img" "price img img";
+  }
+}
+
+@media (min-width: 1200px) {
+  .glazing-balcony-with-warm-aluminum__inner {
+    padding: 0;
+    -ms-grid-columns: 1.23fr 1fr 1fr;
+        grid-template-columns: 1.23fr 1fr 1fr;
+  }
+}
+
+.glazing-balcony-with-warm-aluminum__box-img {
+  position: relative;
+  width: 100%;
+  max-width: 34.2rem;
+  height: 20.9rem;
+  margin: 0 auto 1.7em;
+  border-radius: 0.6rem;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .glazing-balcony-with-warm-aluminum__box-img {
+    grid-area: img;
+    max-width: 38.6rem;
+    height: 24.7rem;
+    margin: 0;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .glazing-balcony-with-warm-aluminum__box-img {
+    max-width: 47rem;
+    height: 28.9rem;
+  }
+}
+
+.glazing-balcony-with-warm-aluminum__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.glazing-balcony-with-warm-aluminum__info {
+  background-color: #F26422;
+  padding: 1.9rem 0 2.1rem;
+}
+
+@media (min-width: 768px) {
+  .glazing-balcony-with-warm-aluminum__info {
+    background-color: transparent;
+    padding: 0;
+    max-width: 29.6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 1200px) {
+  .glazing-balcony-with-warm-aluminum__info {
+    max-width: 40.5rem;
+    width: 100%;
+  }
+}
+
+.glazing-balcony-with-warm-aluminum__info-text {
+  max-width: 34.2rem;
+  margin: 0 auto 2.7em;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .glazing-balcony-with-warm-aluminum__info-text {
+    grid-area: text;
+    text-align: left;
+    padding: 0;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-bottom: 0;
+  }
+  .glazing-balcony-with-warm-aluminum__info-text .first {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .glazing-balcony-with-warm-aluminum__info-text {
+    margin: 0;
+  }
+}
+
+.glazing-balcony-with-warm-aluminum__box-price {
+  color: #fff;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  position: relative;
+  max-width: 33.4rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.glazing-balcony-with-warm-aluminum__box-price::before {
+  content: "";
+  position: absolute;
+  top: -4.9rem;
+  width: 100vw;
+  border-top: 1.5rem solid transparent;
+  border-right: 50vw solid transparent;
+  border-left: 50vw solid transparent;
+  border-bottom: 1.5rem solid #F26422;
+}
+
+@media (min-width: 768px) {
+  .glazing-balcony-with-warm-aluminum__box-price::before {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    right: -6.8rem;
+    width: auto;
+    height: 12.8rem;
+    border-top: 6.4rem solid transparent;
+    border-right: 1.5rem solid transparent;
+    border-left: 5.3rem solid #F26422;
+    border-bottom: 6.4rem solid transparent;
+  }
+}
+
+.glazing-balcony-with-warm-aluminum__box-price::after {
+  content: "";
+  position: absolute;
+  height: 4.9rem;
+  width: 0.1em;
+  background-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .glazing-balcony-with-warm-aluminum__box-price::after {
+    height: 4rem;
+    left: 8.5em;
+    top: 1em;
+  }
+}
+
+@media (min-width: 768px) {
+  .glazing-balcony-with-warm-aluminum__box-price {
+    grid-area: price;
+    background-color: #F26422;
+    padding: 0.98em;
+    -webkit-filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.25));
+            filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.25));
+    margin-top: auto;
+  }
+}
+
+.glazing-balcony-with-warm-aluminum__price-all {
+  display: block;
+  margin-bottom: 0.9em;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .glazing-balcony-with-warm-aluminum__price-all {
+    font-size: 1.3rem;
+    margin: 0.4em 0 0.9em;
+  }
+}
+
+.glazing-balcony-with-warm-aluminum__price {
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+@media (min-width: 768px) {
+  .glazing-balcony-with-warm-aluminum__price {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}
+
+.glazing-balcony-with-warm-aluminum__number-old {
+  margin-top: 0.5em;
+  font-size: 2.4rem;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  display: block;
+}
+
+.glazing-balcony-with-warm-aluminum__number-old::after {
+  margin-left: 0.5em;
+}
+
+.glazing-balcony-with-warm-aluminum__number-old::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.12em;
+  background-color: #ffe600;
+  -webkit-transform: rotate(10deg);
+  transform: rotate(12deg);
+  left: -0.1em;
+  bottom: 0.5em;
+  opacity: 0.8;
+}
+
+@media (min-width: 768px) {
+  .glazing-balcony-with-warm-aluminum__number-old {
+    font-size: 2rem;
+    margin-top: 0.2em;
+  }
+}
+
+.glazing-balcony-with-warm-aluminum__number-new {
+  font-size: 3rem;
+  color: #FFE600;
+  display: block;
+}
+
+.glazing-balcony-with-warm-aluminum__number-new::after {
+  margin-left: 0.5em;
+}
+
+@media (min-width: 768px) {
+  .glazing-balcony-with-warm-aluminum__number-new {
+    font-size: 2.5rem;
+    font-weight: 900;
+  }
+}
+
+.glazing-balcony-with-warm-aluminum__btn {
+  max-width: 33.4rem;
+  background-color: #fff;
+  color: #F26422;
+}
+
+@media (min-width: 768px) {
+  .glazing-balcony-with-warm-aluminum__btn {
+    max-width: 26.8rem;
+  }
+}
+
+.glazing-balcony-with-warm-aluminum .active-tab {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.glazing-balcony-with-warm-aluminum .tab-item {
+  display: none;
+}
+
+.glazing-at-low-prices {
+  /* .glazing-at-low-pricesow-prices__lable */
+}
+
+.glazing-at-low-prices__box-tabs {
+  margin-bottom: 1.5em;
+  position: relative;
+}
+
+.glazing-at-low-prices__box-tabs::before {
+  content: "";
+  position: absolute;
+  height: 0.05em;
+  width: 200vw;
+  left: -100%;
+  z-index: 0;
+  bottom: 0.05em;
+  margin: 0 auto;
+  background-color: #000;
+}
+
+@media (min-width: 768px) {
+  .glazing-at-low-prices__box-tabs {
+    margin-bottom: 1.8em;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .glazing-at-low-prices__box-tabs::before {
+    content: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .glazing-at-low-prices__box-tabs {
+    margin-bottom: 1.9em;
+  }
+}
+
+.glazing-at-low-prices__tab {
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.6rem;
+  opacity: 0.5;
+  line-height: 1.8em;
+  position: relative;
+  width: 25%;
+}
+
+.glazing-at-low-prices__tab.active {
+  opacity: 1;
+  border-bottom: 0.25em solid #ffe600;
+  pointer-events: none;
+}
+
+@media (min-width: 768px) {
+  .glazing-at-low-prices__tab.active {
+    background-color: #F26422;
+    color: #fff;
+    border: 0.2rem solid transparent;
+  }
+}
+
+@media (min-width: 1200px) {
+  .glazing-at-low-prices__tab.active {
+    border-width: 0.1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .glazing-at-low-prices__tab {
+    opacity: 1;
+    font-size: 1.6rem;
+    height: 4rem;
+    line-height: 3.6rem;
+    border: 0.2rem solid #c4c4c4;
+    color: #c4c4c4;
+    border-radius: 0.6rem;
+    max-width: 14.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .glazing-at-low-prices__tab {
+    max-width: 17rem;
+    border-width: 0.1rem;
+    line-height: 3.8rem;
+  }
+}
+/*# sourceMappingURL=wardrobes-on-the-balcony-at-low-prices.css.map */

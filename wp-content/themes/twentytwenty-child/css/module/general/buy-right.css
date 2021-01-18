@@ -1,0 +1,126 @@
+.buy-right {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .buy-right {
+    display: block;
+  }
+  .buy-right .title {
+    margin-bottom: 0.775em;
+  }
+  .buy-right .text {
+    margin-bottom: 4.6rem;
+    text-align: center;
+    font-size: 1.125em;
+    font-weight: 700;
+  }
+  .buy-right__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 83rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2.2rem;
+  }
+  .buy-right__item {
+    max-width: 19.125em;
+    position: relative;
+  }
+  .buy-right__image {
+    margin-bottom: 0.813em;
+    max-width: 19.188em;
+  }
+  .buy-right__title {
+    margin-bottom: 0.375em;
+    margin-left: 0.4rem;
+    font-size: 1.6rem;
+  }
+  .buy-right__text {
+    max-width: 19.3em;
+    margin-left: 0.5rem;
+    line-height: 1.2;
+    font-size: 1.4rem;
+  }
+  .buy-right__text .orange {
+    font-weight: 700;
+  }
+  .buy-right__text .block {
+    display: block;
+  }
+  .buy-right__circle {
+    position: absolute;
+    top: -0.9rem;
+    left: 0.2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    border: 0.1rem solid #F26422;
+    border-radius: 50%;
+    background-color: #ffffff;
+  }
+  .buy-right__video-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 4.3em;
+  }
+  .buy-right__video-box video {
+    width: 51.9rem !important;
+  }
+  .buy-right__video-content {
+    margin-top: -5.4rem;
+    margin-right: 7rem;
+    max-width: 12.813em;
+  }
+  .buy-right__video-title {
+    margin-bottom: 1.1rem;
+    font-size: 1.8rem;
+    line-height: 1.3;
+    font-weight: 700;
+  }
+  .buy-right__video-text {
+    max-width: 20em;
+    line-height: 1.2;
+    font-size: 1.4rem;
+  }
+  .buy-right--ceilings .text {
+    margin-bottom: 3.1rem;
+  }
+  .buy-right--ceilings .buy-right__list {
+    margin-bottom: 3.1rem;
+    max-width: 94rem;
+  }
+  .buy-right--ceilings .buy-right__image {
+    margin-bottom: 0.613em;
+  }
+  .buy-right--ceilings .buy-right__title, .buy-right--ceilings .buy-right__text {
+    margin-left: 0;
+  }
+  .buy-right--ceilings .buy-right__video-box {
+    margin-left: 0;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .buy-right--ceilings .buy-right__video-content {
+    max-width: 17.813em;
+    margin-right: 6rem;
+  }
+}
+/*# sourceMappingURL=buy-right.css.map */

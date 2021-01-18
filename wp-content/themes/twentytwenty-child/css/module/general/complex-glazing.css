@@ -1,0 +1,215 @@
+.complex-glazing {
+  /* .complex-glazing__wrapper */
+  /* .complex-glazing__title */
+  /* .complex-glazing__slider */
+  /* .complex-glazing__item */
+  /* .complex-glazing__first-text */
+  /* .complex-glazing__number */
+  /* .complex-glazing__text */
+}
+
+.complex-glazing__wrapper {
+  text-align: center;
+}
+
+.complex-glazing__title {
+  line-height: 1.2em;
+  margin-bottom: 1.2em;
+}
+
+@media (min-width: 768px) {
+  .complex-glazing__title {
+    margin-bottom: 1.2em;
+    line-height: 1.1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .complex-glazing__title {
+    line-height: 1.2;
+    margin-bottom: 0.85em;
+  }
+}
+
+.complex-glazing__title span {
+  display: block;
+}
+
+.complex-glazing__slider {
+  margin-bottom: 2.1em;
+}
+
+.complex-glazing__slider .pagination.active {
+  background-color: #17A1E3;
+}
+
+@media (min-width: 768px) {
+  .complex-glazing__slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .complex-glazing__slider {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.complex-glazing__item {
+  width: 22.5rem;
+  height: 22.5rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #fff;
+  border-radius: 0.4em;
+  padding: 0.5em;
+}
+
+@media (min-width: 768px) {
+  .complex-glazing__item {
+    margin: 0 1em 0.9em 0;
+    text-align: left;
+    padding: 0.5em 0em 1.4em 0.6em;
+  }
+  .complex-glazing__item:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .complex-glazing__item {
+    margin: 0;
+  }
+  .complex-glazing__item:nth-child(-n + 4) {
+    margin-bottom: 1.3em;
+  }
+}
+
+.complex-glazing__item--0 {
+  background-color: #F26422;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1.3em;
+}
+
+.complex-glazing__item--0 .arrow {
+  height: 0.2em;
+  width: 90%;
+  margin-top: auto;
+  margin-right: auto;
+  margin-bottom: 0.5em;
+}
+
+.complex-glazing__item--0 .arrow::before {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-right: 0.2em solid #fff;
+  border-top: 0.2em solid #fff;
+}
+
+@media (min-width: 768px) {
+  .complex-glazing__item--0 {
+    padding: 1.3em;
+  }
+}
+
+.complex-glazing__item--1 {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), to(#000000)), url(/wp-content/themes/twentytwenty-child/img/complex-glazing-item-1.webp);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, #000000 100%), url(/wp-content/themes/twentytwenty-child/img/complex-glazing-item-1.webp);
+}
+
+.complex-glazing__item--2 {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), to(#000000)), url(/wp-content/themes/twentytwenty-child/img/complex-glazing-item-2.webp);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, #000000 100%), url(/wp-content/themes/twentytwenty-child/img/complex-glazing-item-2.webp);
+}
+
+.complex-glazing__item--3 {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), to(#000000)), url(/wp-content/themes/twentytwenty-child/img/complex-glazing-item-3.webp);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, #000000 100%), url(/wp-content/themes/twentytwenty-child/img/complex-glazing-item-3.webp);
+}
+
+.complex-glazing__item--4 {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), to(#000000)), url(/wp-content/themes/twentytwenty-child/img/complex-glazing-item-4.webp);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, #000000 100%), url(/wp-content/themes/twentytwenty-child/img/complex-glazing-item-4.webp);
+}
+
+.complex-glazing__item--5 {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), to(#000000)), url(/wp-content/themes/twentytwenty-child/img/complex-glazing-item-5.webp);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, #000000 100%), url(/wp-content/themes/twentytwenty-child/img/complex-glazing-item-5.webp);
+}
+
+.complex-glazing__item--6 {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), to(#000000)), url(/wp-content/themes/twentytwenty-child/img/complex-glazing-item-6.webp);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, #000000 100%), url(/wp-content/themes/twentytwenty-child/img/complex-glazing-item-6.webp);
+}
+
+.complex-glazing__item--7 {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), to(#000000)), url(/wp-content/themes/twentytwenty-child/img/complex-glazing-item-7.webp);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, #000000 100%), url(/wp-content/themes/twentytwenty-child/img/complex-glazing-item-7.webp);
+}
+
+.complex-glazing__first-text {
+  text-align: left;
+  font-weight: 700;
+  font-size: 1.8rem;
+  padding-right: 1em;
+  margin-top: 1.9em;
+}
+
+.complex-glazing__number {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  font-weight: 700;
+  background-color: #fff;
+  color: #F26422;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  border-radius: 50%;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .complex-glazing__number {
+    font-size: 1.8rem;
+    width: 2.9rem;
+    height: 2.9rem;
+    line-height: 2.9rem;
+  }
+}
+
+.complex-glazing__text {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .complex-glazing__text {
+    min-height: 6rem;
+  }
+}
+/*# sourceMappingURL=complex-glazing.css.map */

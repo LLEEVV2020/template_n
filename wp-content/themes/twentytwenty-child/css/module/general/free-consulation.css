@@ -1,0 +1,237 @@
+.free-consultation {
+  background-image: url("/wp-content/themes/twentytwenty-child/img/consultation-bg-small.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.free-consultation__box {
+  max-width: 34.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 3rem 1.2rem;
+  background-color: #ffffff;
+  border-radius: 0.6rem;
+}
+
+.free-consultation .title, .free-consultation__text, .free-consultation__phone-link, .free-consultation__about-name, .free-consultation__about-position {
+  color: #3A3A3A;
+}
+
+.free-consultation .title {
+  margin-bottom: 0.5rem;
+  font-size: 2.2rem;
+  text-align: left;
+}
+
+.free-consultation__text {
+  margin-bottom: 3rem;
+}
+
+.free-consultation__phone {
+  margin-bottom: 1.2rem;
+}
+
+.free-consultation__phone-link {
+  text-decoration: none;
+  font-size: 3.2rem;
+}
+
+.free-consultation__whatsapp-link {
+  display: block;
+  position: relative;
+  margin-left: 0.5rem;
+  padding: 0.4rem 1rem 0.4rem 3.4rem;
+  max-width: 20rem;
+  font-size: 1.2rem;
+  margin-bottom: 3.3rem;
+  text-decoration: none;
+  background-color: #E1EFD0;
+  color: #243542;
+}
+
+.free-consultation__whatsapp-link:before {
+  content: '';
+  position: absolute;
+  top: -0.5rem;
+  left: -0.4em;
+  width: 3rem;
+  height: 3rem;
+  background: url("/wp-content/themes/twentytwenty-child/img/consultation-phone-icon.png");
+  background-repeat: no-repeat;
+}
+
+.free-consultation__work-schedule {
+  margin-bottom: 2.9rem;
+}
+
+.free-consultation__about {
+  margin-bottom: 3.5rem;
+}
+
+.free-consultation__about-text {
+  position: relative;
+  padding: 1.5rem 3.3rem 1.5rem 2.3rem;
+  max-width: 31.3rem;
+  margin-bottom: 2.1rem;
+  background-color: #F2F2F2;
+  border-radius: 0.6rem;
+  line-height: 1.2;
+}
+
+.free-consultation__about-text:after {
+  content: '';
+  position: absolute;
+  bottom: -2rem;
+  right: 7.3rem;
+  border-style: solid;
+  border-width: 0 23px 23px 0;
+  border-color: transparent #F2F2F2 transparent transparent;
+}
+
+.free-consultation__about-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 28.8rem;
+  margin-left: auto;
+}
+
+.free-consultation__about-content {
+  text-align: right;
+}
+
+.free-consultation__about-name {
+  margin-bottom: 0.5rem;
+}
+
+.free-consultation .button {
+  max-width: 31.3rem;
+}
+
+@media (min-width: 600px) {
+  .free-consultation {
+    background-image: url("/wp-content/themes/twentytwenty-child/img/consultation-bg-middle.webp");
+  }
+  .free-consultation__box {
+    max-width: 50.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .free-consultation__box {
+    max-width: 70.8rem;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: 'free-consultation__title free-consultation__title' 'free-consultation__text free-consultation__text' 'free-consultation__phone free-consultation__about' 'free-consultation__whatsapp-link free-consultation__about' 'free-consultation__work-schedule free-consultation__about' 'free-consultation__button free-consultation__about';
+    -ms-grid-rows: 4rem 6.7rem 5.7rem 5rem 4.5rem 3.9rem;
+        grid-template-rows: 4rem 6.7rem 5.7rem 5rem 4.5rem 3.9rem;
+    padding: 3rem 2.5rem;
+  }
+  .free-consultation .title {
+    font-size: 3rem;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: free-consultation__title;
+  }
+  .free-consultation__text, .free-consultation__work-schedule {
+    font-size: 1.8rem;
+  }
+  .free-consultation__text {
+    max-width: 41rem;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: free-consultation__text;
+  }
+  .free-consultation__work-schedule {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: free-consultation__work-schedule;
+  }
+  .free-consultation__phone {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: free-consultation__phone;
+  }
+  .free-consultation__phone-link {
+    font-size: 4rem;
+  }
+  .free-consultation__whatsapp-link {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: free-consultation__whatsapp-link;
+    min-height: 2.1rem;
+  }
+  .free-consultation__about {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 4;
+    -ms-grid-column: 2;
+    grid-area: free-consultation__about;
+    margin-top: 0.9rem;
+  }
+  .free-consultation__about-box {
+    margin-left: 0;
+  }
+  .free-consultation__about-text {
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    max-width: 20.8rem;
+  }
+  .free-consultation__about-text, .free-consultation__about-box {
+    margin-left: auto;
+  }
+  .free-consultation .button {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    grid-area: free-consultation__button;
+    margin: 0;
+    max-width: 20.1rem;
+  }
+  .free-consultation__about-box {
+    max-width: 20.8rem;
+  }
+  .free-consultation__about-content {
+    max-width: 12rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .free-consultation {
+    background-image: url("/wp-content/themes/twentytwenty-child/img/consultation-bg-big.webp");
+  }
+  .free-consultation__box {
+    max-width: 96rem;
+    padding-right: 2.8rem;
+    padding-left: 2.8rem;
+    -ms-grid-rows: 4.5rem 6.9rem 5.6rem 5.1rem 5rem 3.9rem;
+        grid-template-rows: 4.5rem 6.9rem 5.6rem 5.1rem 5rem 3.9rem;
+  }
+  .free-consultation__about {
+    margin-top: -5.2rem;
+  }
+  .free-consultation__about-text {
+    max-width: 38rem;
+    padding: 2.5rem 3.1rem 2.3rem 2rem;
+    margin-bottom: 2.8rem;
+    font-size: 1.8rem;
+  }
+  .free-consultation__about-text:after {
+    right: 6.9rem;
+  }
+  .free-consultation__about-box {
+    max-width: 29.5rem;
+  }
+  .free-consultation__about-content {
+    max-width: 21rem;
+  }
+  .free-consultation .button {
+    max-width: 28.2rem;
+  }
+}
+/*# sourceMappingURL=free-consulation.css.map */

@@ -1,0 +1,136 @@
+.balcony-alignment {
+  /* .balcony-alignment__wrapper */
+  /* .balcony-alignment__slider */
+  /* .balcony-alignment__item */
+  /* .balcony-alignment__item-title */
+  /* .balcony-alignment__img */
+}
+
+.balcony-alignment__wrapper {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .balcony-alignment__wrapper {
+    text-align: left;
+  }
+}
+
+.balcony-alignment__title {
+  line-height: 1.2;
+  padding: 0 1em;
+  margin-bottom: 1.2em;
+}
+
+@media (min-width: 768px) {
+  .balcony-alignment__title {
+    padding: 0;
+    line-height: 1.1;
+    margin-bottom: 1em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .balcony-alignment__title {
+    line-height: 1.2;
+    margin-bottom: 0.7em;
+  }
+}
+
+.balcony-alignment__text {
+  line-height: 1.2;
+  margin-bottom: 1.4em;
+}
+
+@media (min-width: 768px) {
+  .balcony-alignment__text {
+    line-height: 1.25;
+    margin-bottom: 1.6em;
+  }
+}
+
+.balcony-alignment__slider {
+  margin-bottom: 1.7em;
+  padding-bottom: 0.3em;
+}
+
+.balcony-alignment__slider .pagination.active {
+  background-color: #17A1E3;
+}
+
+.balcony-alignment__slider .balcony-alignment__text {
+  margin-bottom: 0;
+}
+
+@media (min-width: 1200px) {
+  .balcony-alignment__slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .balcony-alignment__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 1200px) {
+  .balcony-alignment__item + .balcony-alignment__item {
+    margin-top: 1.9em;
+  }
+}
+
+.balcony-alignment__item-title {
+  margin-bottom: 0.8em;
+}
+
+.balcony-alignment__box-img {
+  width: 100%;
+  max-width: 22.5rem;
+  height: 15.1rem;
+  margin: 0 auto;
+  border-radius: 0.6rem;
+  overflow: hidden;
+  margin-bottom: 1.7em;
+}
+
+@media (min-width: 768px) {
+  .balcony-alignment__box-img {
+    max-width: 22.6rem;
+    height: 18rem;
+    margin-right: 1em;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .balcony-alignment__box-img {
+    max-width: 22.5rem;
+    height: 15.1rem;
+    margin-right: 1.1em;
+  }
+}
+
+.balcony-alignment__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .balcony-alignment__box-info {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=balcony-alignment.css.map */

@@ -1,0 +1,85 @@
+.calculate-your-cost {
+  /* .calculate-your-cost__inner */
+  /* .calculate-your-cost__title */
+  /* .calculate-your-cost__btn */
+  /* .calculate-your-cost__icon */
+}
+
+.calculate-your-cost__inner {
+  position: relative;
+  background-color: #F26422;
+  border-radius: 0.6rem;
+  padding: 3rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .calculate-your-cost__inner {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .calculate-your-cost__inner {
+    padding-left: 8.2rem;
+    padding-right: 8.2rem;
+  }
+}
+
+.calculate-your-cost__title {
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: 2.5rem;
+  max-width: 25.5rem;
+}
+
+@media (min-width: 768px) {
+  .calculate-your-cost__title {
+    line-height: 1.1;
+    margin-bottom: 3rem;
+    max-width: 39.4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .calculate-your-cost__title {
+    line-height: 1.25;
+    max-width: 52.6rem;
+  }
+}
+
+.calculate-your-cost__btn {
+  max-width: 20rem;
+  margin-left: 0;
+  background-color: #fff;
+  color: #F26422;
+}
+
+@media (min-width: 768px) {
+  .calculate-your-cost__btn {
+    max-width: 27.4rem;
+  }
+}
+
+.calculate-your-cost__icon {
+  position: absolute;
+  right: 1.5rem;
+  bottom: 3rem;
+  width: 6.1em;
+  height: 6.1em;
+}
+
+@media (min-width: 768px) {
+  .calculate-your-cost__icon {
+    right: 6rem;
+    font-size: 1.4em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .calculate-your-cost__icon {
+    right: 8.2rem;
+    font-size: 1.74em;
+  }
+}
+/*# sourceMappingURL=calculate-your-cost.css.map */

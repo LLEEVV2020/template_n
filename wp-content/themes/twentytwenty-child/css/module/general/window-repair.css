@@ -1,0 +1,106 @@
+.window-repair {
+  background-color: #f9f9f9;
+  /* .window-repair__slider */
+  /* .window-repair__item */
+  /* .window-repair__item--1 */
+  /* .window-repair__item--2 */
+  /* .window-repair__item--3 */
+  /* .window-repair__text */
+  /* .window-repair__subtext */
+}
+
+.window-repair__title {
+  line-height: 1.2em;
+  margin-bottom: 1.15em;
+  padding: 0 2em;
+}
+
+@media (min-width: 768px) {
+  .window-repair__title {
+    margin-bottom: 0.9em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .window-repair__title {
+    margin-bottom: 1.4em;
+  }
+}
+
+.window-repair__slider {
+  margin-bottom: 1.8em;
+}
+
+.window-repair__slider .pagination.active {
+  background-color: #F26422;
+}
+
+@media (min-width: 768px) {
+  .window-repair__slider {
+    max-width: 40em;
+    margin: 0 auto 1.8em;
+    padding-bottom: 1em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .window-repair__slider {
+    max-width: 100%;
+    padding-bottom: 0;
+    margin: 0;
+  }
+}
+
+.window-repair__item {
+  position: relative;
+  width: 30.6rem;
+  height: 23rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 18.2rem;
+  border-radius: 1rem 1rem 0 0;
+  margin: 0 auto;
+}
+
+.window-repair__item--1 {
+  background-image: url(/wp-content/themes/twentytwenty-child/img/warm-floor.webp);
+}
+
+.window-repair__item--2 {
+  background-image: url(/wp-content/themes/twentytwenty-child/img/balcony-insulation.webp);
+}
+
+.window-repair__item--3 {
+  background-image: url(/wp-content/themes/twentytwenty-child/img/balcony-joining.webp);
+}
+
+.window-repair__text {
+  display: block;
+  text-align: center;
+  background-color: #fff;
+  border: 0.2rem solid #e6e6e6;
+  border-top: none;
+  border-radius: 0 0 1rem 1rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  min-height: 4.8rem;
+  padding-top: 0.7em;
+}
+
+.window-repair__subtext {
+  position: absolute;
+  color: #fff;
+  background-color: #F26422;
+  font-weight: 900;
+  top: 2.15em;
+  left: 0;
+  padding: 0.6em 0.8em 0.6em 1em;
+  border-radius: 0.5rem;
+  letter-spacing: 0.05em;
+}
+
+.window-repair__subtext--new {
+  top: 0.8em;
+  padding: 0.4em 0.8em 0.4em 1em;
+}
+/*# sourceMappingURL=window-repair.css.map */

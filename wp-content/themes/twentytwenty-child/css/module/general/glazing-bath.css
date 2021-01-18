@@ -1,0 +1,474 @@
+.glazing-bath {
+  /* .glazing-bath__wrapper */
+  /* .glazing-bath__title */
+  /* .glazing-bath__inner */
+  /* .glazing-bath__box-img */
+  /* .glazing-bath__img */
+  /* .glazing-bath__box-lower */
+  /* .glazing-bath__info */
+  /* .glazing-bath__info-text */
+  /* .glazing-bath__box-price */
+  /* .glazing-bath__price-all */
+  /* .glazing-bath__price */
+  /* .glazing-bath__number-old */
+  /* .glazing-bath__number-new */
+  /* .glazing-bath__btn */
+}
+
+@media (min-width: 768px) {
+  .glazing-bath {
+    background-color: #f6f6f6;
+  }
+}
+
+@media (max-width: 767px) {
+  .glazing-bath .container {
+    width: 100%;
+  }
+}
+
+.glazing-bath__wrapper {
+  padding: 2.9rem 0;
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .glazing-bath__wrapper {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .glazing-bath__wrapper {
+    padding: 5.5rem 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .glazing-bath__wrapper {
+    padding: 6rem 0;
+  }
+}
+
+.glazing-bath__title {
+  margin-left: 5.2%;
+  background-color: transparent;
+  position: relative;
+  z-index: 3;
+  max-width: 11em;
+}
+
+@media (min-width: 768px) {
+  .glazing-bath__title {
+    text-align: center;
+    margin-bottom: 0.8em;
+    margin-left: 0;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .glazing-bath__title {
+    margin-bottom: 0.9em;
+  }
+}
+
+.glazing-bath__inner {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .glazing-bath__inner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
+.glazing-bath__box-img {
+  position: relative;
+  z-index: 1;
+}
+
+.glazing-bath__box-img::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 118%;
+  bottom: 0;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, white), color-stop(50%, rgba(255, 255, 255, 0)), color-stop(60%, rgba(255, 255, 255, 0)), to(white));
+  background: linear-gradient(0deg, white 10%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 60%, white 100%);
+  z-index: 2;
+}
+
+@media (min-width: 768px) {
+  .glazing-bath__box-img::before {
+    height: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(98, 98, 98, 0)), to(#000000));
+    background: linear-gradient(180deg, rgba(98, 98, 98, 0) 60%, #000000 100%);
+    -webkit-box-shadow: inset 0 0 0.5em 0.01em rgba(0, 0, 0, 0.2);
+            box-shadow: inset 0 0 0.5em 0.01em rgba(0, 0, 0, 0.2);
+    z-index: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .glazing-bath__box-img {
+    border: 0.2em solid #fff;
+    border-radius: 0.2em;
+    -webkit-filter: drop-shadow(0 0 0.1em rgba(0, 0, 0, 0.25));
+            filter: drop-shadow(0 0 0.1em rgba(0, 0, 0, 0.25));
+    z-index: 0;
+    height: 15.7em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .glazing-bath__box-img {
+    height: 22.3em;
+    max-width: 34.4em;
+  }
+}
+
+.glazing-bath__img {
+  width: 100%;
+  max-height: 43.8rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+  margin-top: -4.2em;
+}
+
+@media (min-width: 768px) {
+  .glazing-bath__img {
+    margin-top: 0;
+    max-height: 100%;
+    background-color: #fff;
+  }
+}
+
+.glazing-bath__box-lower {
+  position: absolute;
+  display: block;
+  color: #000;
+  z-index: 3;
+  bottom: 2.2em;
+  left: 2.5em;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+}
+
+.glazing-bath__box-lower::before {
+  content: "";
+  position: absolute;
+  background-image: url("/wp-content/themes/twentytwenty-child/img/prices-lower-black-s.webp");
+  background-repeat: no-repeat;
+  width: 24.9rem;
+  height: 5.3rem;
+  top: -3.3em;
+  left: -1.1em;
+  -webkit-transform: rotate(3deg);
+          transform: rotate(3deg);
+}
+
+@media (min-width: 768px) {
+  .glazing-bath__box-lower::before {
+    background-image: url("/wp-content/themes/twentytwenty-child/img/prices-lower-white-m.webp");
+  }
+}
+
+@media (min-width: 1200px) {
+  .glazing-bath__box-lower::before {
+    background-image: url("/wp-content/themes/twentytwenty-child/img/prices-lower-white-l.webp");
+    background-size: contain;
+    width: 31.9rem;
+    height: 4.8rem;
+    top: -3.1em;
+    left: -0.5em;
+  }
+}
+
+@media (min-width: 768px) {
+  .glazing-bath__box-lower {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    left: auto;
+    right: 7.1em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .glazing-bath__box-lower {
+    font-size: 1.6rem;
+    right: 5.1em;
+    bottom: 0.9em;
+  }
+}
+
+.glazing-bath__info {
+  background-color: #F26422;
+  padding: 1.9rem 0 2.1rem;
+}
+
+@media (min-width: 768px) {
+  .glazing-bath__info {
+    background-color: transparent;
+    padding: 0;
+    max-width: 29.6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 1200px) {
+  .glazing-bath__info {
+    max-width: 37.3rem;
+    width: 100%;
+  }
+}
+
+.glazing-bath__info-text {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .glazing-bath__info-text {
+    display: block;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    padding-right: 1em;
+    margin-bottom: 0.6em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .glazing-bath__info-text {
+    margin-bottom: 1.5em;
+  }
+}
+
+.glazing-bath__box-price {
+  color: #fff;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  position: relative;
+  max-width: 33.4rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.glazing-bath__box-price::before {
+  content: "";
+  position: absolute;
+  top: -0.3em;
+  display: block;
+  width: auto;
+  left: 50%;
+  right: 50%;
+  margin: 0 auto;
+  border: solid transparent;
+  border-bottom-color: #f26422;
+  border-top-color: transparent;
+  border-width: 0.55em;
+  -webkit-transform: translate(-50%, -100%) scaleX(12.5);
+          transform: translate(-50%, -100%) scaleX(12.5);
+  font-size: 6rem;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .glazing-bath__box-price::before {
+    top: 50%;
+    left: initial;
+    right: 0%;
+    -webkit-transform: translate(50%, -50%) scaleY(1.7) rotate(45deg);
+            transform: translate(50%, -50%) scaleY(1.7) rotate(45deg);
+    font-size: 1rem;
+    z-index: 1;
+    width: 5.2em;
+    height: 5.2em;
+    background: #f26422;
+  }
+}
+
+@media (min-width: 1200px) {
+  .glazing-bath__box-price::before {
+    width: 7em;
+    height: 7em;
+  }
+}
+
+.glazing-bath__box-price::after {
+  content: "";
+  position: absolute;
+  height: 4.9rem;
+  width: 0.1em;
+  background-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .glazing-bath__box-price::after {
+    height: 4rem;
+    left: 8.5em;
+    top: 1em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .glazing-bath__box-price::after {
+    height: 7.5rem;
+    left: 11.6em;
+  }
+}
+
+@media (min-width: 768px) {
+  .glazing-bath__box-price {
+    background-color: #F26422;
+    padding: 0.9em;
+    -webkit-filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.25));
+            filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.25));
+    margin-top: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .glazing-bath__box-price {
+    max-width: 37.3rem;
+    padding: 1.9em  0.8em 1.3em 1.5em;
+  }
+}
+
+.glazing-bath__price-all {
+  display: block;
+  margin-bottom: 0.9em;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .glazing-bath__price-all {
+    font-size: 1.3rem;
+    margin: 0.4em 0 0.9em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .glazing-bath__price-all {
+    font-size: 1.8rem;
+    margin-top: 0.3em;
+  }
+}
+
+.glazing-bath__price {
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+@media (min-width: 768px) {
+  .glazing-bath__price {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 1200px) {
+  .glazing-bath__price {
+    font-size: 2.4rem;
+    z-index: 1;
+  }
+}
+
+.glazing-bath__number-old {
+  margin-top: 0.5em;
+  font-size: 2.4rem;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  display: block;
+}
+
+.glazing-bath__number-old::after {
+  margin-left: 0.5em;
+}
+
+.glazing-bath__number-old::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.12em;
+  background-color: #ffe600;
+  -webkit-transform: rotate(10deg);
+  transform: rotate(12deg);
+  left: -0.1em;
+  bottom: 0.5em;
+  opacity: 0.8;
+}
+
+@media (min-width: 768px) {
+  .glazing-bath__number-old {
+    font-size: 2rem;
+    margin-top: 0.2em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .glazing-bath__number-old {
+    font-size: 3.2rem;
+    font-weight: 900;
+    margin-top: 0.1em;
+  }
+}
+
+.glazing-bath__number-new {
+  font-size: 3rem;
+  color: #FFE600;
+  display: block;
+}
+
+.glazing-bath__number-new::after {
+  margin-left: 0.5em;
+}
+
+@media (min-width: 768px) {
+  .glazing-bath__number-new {
+    font-size: 2.5rem;
+    font-weight: 900;
+  }
+}
+
+@media (min-width: 1200px) {
+  .glazing-bath__number-new {
+    font-size: 3.6rem;
+  }
+}
+
+.glazing-bath__btn {
+  min-width: 33.4rem;
+  background-color: #fff;
+  color: #F26422;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .glazing-bath__btn {
+    min-width: 26.8rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .glazing-bath__btn {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=glazing-bath.css.map */

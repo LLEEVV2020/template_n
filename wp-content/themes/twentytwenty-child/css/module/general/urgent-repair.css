@@ -1,0 +1,174 @@
+.urgent-repair .title, .urgent-repair__text {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.urgent-repair .title {
+  max-width: 13em;
+  margin-bottom: 0.813em;
+}
+
+.urgent-repair__text {
+  max-width: 23em;
+  margin-bottom: 1.125em;
+  font-weight: 700;
+  line-height: 1.14;
+}
+
+.urgent-repair__text .block {
+  display: block;
+}
+
+.urgent-repair__box {
+  max-width: 21em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.urgent-repair__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 21em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.urgent-repair__image {
+  width: 4.887em;
+  height: 4.781em;
+}
+
+.urgent-repair__content {
+  max-width: 15.4em;
+}
+
+.urgent-repair__title {
+  font-weight: 900;
+}
+
+.urgent-repair__title {
+  margin-bottom: 0.281em;
+  font-size: 1.5em;
+  line-height: 1.2;
+  color: #DF0054;
+}
+
+.urgent-repair__info {
+  margin-bottom: 0.844em;
+  line-height: 1.375;
+}
+
+.urgent-repair__cheaper {
+  max-width: 15.5em;
+  margin-left: auto;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+@media (min-width: 600px) {
+  .urgent-repair__box {
+    max-width: 28.5em;
+  }
+  .urgent-repair__inner {
+    max-width: 24em;
+  }
+  .urgent-repair__icon {
+    font-size: 1.5em;
+  }
+  .urgent-repair__content {
+    max-width: 17.5em;
+  }
+  .urgent-repair__cheaper {
+    max-width: none;
+    text-align: right;
+  }
+}
+
+@media (min-width: 768px) {
+  .urgent-repair .title {
+    max-width: none;
+  }
+  .urgent-repair__text {
+    max-width: 40em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.375em;
+    font-size: 1.125em;
+    text-align: center;
+  }
+  .urgent-repair__text .block {
+    display: inline;
+  }
+  .urgent-repair__text .block-2 {
+    display: block;
+  }
+  .urgent-repair__box {
+    max-width: 32.1em;
+  }
+  .urgent-repair__inner {
+    max-width: 31.9em;
+  }
+  .urgent-repair__image {
+    width: 7.625em;
+    height: 7.625em;
+  }
+  .urgent-repair__content {
+    max-width: 22.2em;
+  }
+  .urgent-repair__title {
+    font-size: 1.875em;
+  }
+  .urgent-repair__info, .urgent-repair__cheaper {
+    font-size: 1.125em;
+  }
+  .urgent-repair__info {
+    margin-bottom: 1.875em;
+  }
+}
+
+@media (min-width: 960px) {
+  .urgent-repair .container {
+    width: calc(100% - 8rem);
+  }
+  .urgent-repair__text {
+    max-width: 41em;
+  }
+  .urgent-repair__box {
+    max-width: 55em;
+  }
+  .urgent-repair__inner {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    max-width: 46em;
+  }
+  .urgent-repair__image {
+    width: 9.125em;
+    height: 9.125em;
+  }
+  .urgent-repair__content {
+    max-width: 35.5em;
+  }
+  .urgent-repair__title {
+    font-size: 2.500em;
+  }
+  .urgent-repair__info {
+    max-width: 18em;
+  }
+  .urgent-repair__cheaper {
+    text-align: left;
+    max-width: 35.6em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .urgent-repair {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+/*# sourceMappingURL=urgent-repair.css.map */

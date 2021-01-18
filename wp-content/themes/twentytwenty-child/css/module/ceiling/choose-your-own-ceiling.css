@@ -1,0 +1,708 @@
+.choose-your-own-ceiling {
+  padding-top: 4.5rem;
+}
+
+.choose-your-own-ceiling .title {
+  margin-bottom: 2.5rem;
+}
+
+.choose-your-own-ceiling .title .block {
+  display: block;
+}
+
+.choose-your-own-ceiling__tabs, .choose-your-own-ceiling__image, .choose-your-own-ceiling__colors, .choose-your-own-ceiling__colors-list, .choose-your-own-ceiling__price-box {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.choose-your-own-ceiling__tabs, .choose-your-own-ceiling__colors, .choose-your-own-ceiling__price-box {
+  max-width: 34.5rem;
+}
+
+.choose-your-own-ceiling__tabs, .choose-your-own-ceiling__colors-list, .choose-your-own-ceiling__price-box, .choose-your-own-ceiling__price-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.choose-your-own-ceiling__tabs, .choose-your-own-ceiling__colors-list, .choose-your-own-ceiling__price-box {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.choose-your-own-ceiling__tabs-item, .choose-your-own-ceiling__colors-item, .choose-your-own-ceiling__price-circle {
+  cursor: pointer;
+}
+
+.choose-your-own-ceiling__tabs {
+  margin-bottom: 2.5rem;
+}
+
+.choose-your-own-ceiling__tabs-item {
+  color: #9A9A9A;
+}
+
+.choose-your-own-ceiling__tabs-item.active {
+  color: #F26422;
+  border-bottom: 0.1rem solid #F26422;
+}
+
+.choose-your-own-ceiling__box {
+  display: none;
+}
+
+.choose-your-own-ceiling__box.active {
+  display: block;
+}
+
+.choose-your-own-ceiling__image, .choose-your-own-ceiling__image-bg {
+  background-repeat: no-repeat;
+}
+
+.choose-your-own-ceiling__image {
+  width: 34.5rem;
+  height: 22.5rem;
+  margin-bottom: 2.5rem;
+  background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-ceiling-image.webp");
+  background-size: cover;
+}
+
+.choose-your-own-ceiling__image-bg {
+  width: 100%;
+  height: 6.5rem;
+  background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-ceiling-matte-1.webp");
+  background-size: 35.3rem;
+}
+
+.choose-your-own-ceiling__image-bg--glossy {
+  background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-ceiling-glossy-1.webp");
+}
+
+.choose-your-own-ceiling__image-bg--photoprint {
+  background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-ceiling-photoprint-1.webp");
+}
+
+.choose-your-own-ceiling__colors-text, .choose-your-own-ceiling__text, .choose-your-own-ceiling__price-old, .choose-your-own-ceiling__price-new {
+  letter-spacing: 0.03em;
+}
+
+.choose-your-own-ceiling__colors-text {
+  margin-bottom: 2.1rem;
+}
+
+.choose-your-own-ceiling__colors-list {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1.7rem;
+  max-width: 35rem;
+  margin-bottom: 2.7rem;
+}
+
+.choose-your-own-ceiling__colors-item {
+  width: 5.4rem;
+  height: 3.7rem;
+  border-radius: 0.5rem;
+}
+
+.choose-your-own-ceiling__colors-item.active {
+  border: 0.1rem solid #F26422;
+}
+
+.choose-your-own-ceiling__colors-item--mate-1 {
+  background-color: #FFE600;
+}
+
+.choose-your-own-ceiling__colors-item--mate-2 {
+  background-color: #E77187;
+}
+
+.choose-your-own-ceiling__colors-item--mate-3 {
+  border: 0.2rem solid #EFEFEF;
+}
+
+.choose-your-own-ceiling__colors-item--mate-4 {
+  background-color: #9FB6E8;
+}
+
+.choose-your-own-ceiling__colors-item--mate-5 {
+  background-color: #D9CFB2;
+}
+
+.choose-your-own-ceiling__colors-item--mate-6 {
+  background-color: #DACCBB;
+}
+
+.choose-your-own-ceiling__colors-item--mate-7 {
+  background-color: #98999D;
+}
+
+.choose-your-own-ceiling__colors-item--mate-8 {
+  background-color: #ABCC7A;
+}
+
+.choose-your-own-ceiling__colors-item--mate-9 {
+  background-color: #B6E7C2;
+}
+
+.choose-your-own-ceiling__colors-item--mate-10 {
+  background-color: #CCCEDB;
+}
+
+.choose-your-own-ceiling__colors-item--glossy-1 {
+  background-color: #FFE600;
+}
+
+.choose-your-own-ceiling__colors-item--glossy-2 {
+  background-color: #D72827;
+}
+
+.choose-your-own-ceiling__colors-item--glossy-3 {
+  border: 0.2rem solid #EFEFEF;
+}
+
+.choose-your-own-ceiling__colors-item--glossy-4 {
+  background-color: #B4F8F6;
+}
+
+.choose-your-own-ceiling__colors-item--glossy-5 {
+  background-color: #F2D5F9;
+}
+
+.choose-your-own-ceiling__colors-item--glossy-6 {
+  background-color: #AEA2A2;
+}
+
+.choose-your-own-ceiling__colors-item--glossy-7 {
+  background-color: #F6EAC0;
+}
+
+.choose-your-own-ceiling__colors-item--glossy-8 {
+  background-color: #D2C8A8;
+}
+
+.choose-your-own-ceiling__colors-item--glossy-9 {
+  background-color: #C6F5A0;
+}
+
+.choose-your-own-ceiling__colors-item--glossy-10 {
+  background-color: #89C3D8;
+}
+
+.choose-your-own-ceiling__colors-item--photoprint {
+  border: 0.1rem solid #EFEFEF;
+}
+
+.choose-your-own-ceiling__colors-item--photoprint-1 {
+  background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-ceiling-print-icon-1.webp");
+}
+
+.choose-your-own-ceiling__colors-item--photoprint-2 {
+  background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-ceiling-print-icon-2.webp");
+}
+
+.choose-your-own-ceiling__colors-item--photoprint-3 {
+  background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-ceiling-print-icon-3.webp");
+}
+
+.choose-your-own-ceiling__colors-item--photoprint-4 {
+  background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-ceiling-print-icon-4.webp");
+}
+
+.choose-your-own-ceiling__colors-item--photoprint-5 {
+  background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-ceiling-print-icon-5.webp");
+}
+
+.choose-your-own-ceiling__colors-item--photoprint-6 {
+  background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-ceiling-print-icon-6.webp");
+}
+
+.choose-your-own-ceiling__colors-item--photoprint-7 {
+  background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-ceiling-print-icon-7.webp");
+}
+
+.choose-your-own-ceiling__colors-item--photoprint-8 {
+  background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-ceiling-print-icon-8.webp");
+}
+
+.choose-your-own-ceiling__colors-item--photoprint-9 {
+  background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-ceiling-print-icon-9.webp");
+}
+
+.choose-your-own-ceiling__colors-item--photoprint-10 {
+  background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-ceiling-print-icon-10.webp");
+}
+
+.choose-your-own-ceiling__text {
+  margin-bottom: 4.3rem;
+}
+
+.choose-your-own-ceiling__text-call {
+  display: none;
+}
+
+.choose-your-own-ceiling__price, .choose-your-own-ceiling__price-circle, .choose-your-own-ceiling__price-old {
+  position: relative;
+}
+
+.choose-your-own-ceiling__price:before, .choose-your-own-ceiling__price-circle--minus:before, .choose-your-own-ceiling__price-circle--plus:before, .choose-your-own-ceiling__price-circle--plus:after, .choose-your-own-ceiling__price-old:before {
+  content: "";
+}
+
+.choose-your-own-ceiling__price:before, .choose-your-own-ceiling__price-circle--minus:before, .choose-your-own-ceiling__price-circle--plus:before, .choose-your-own-ceiling__price-circle--plus:after, .choose-your-own-ceiling__price-old:before {
+  position: absolute;
+}
+
+.choose-your-own-ceiling__price {
+  padding: 2.3rem 2rem;
+  margin-left: -1.6rem;
+  margin-right: -1.6rem;
+  background-color: #F26422;
+}
+
+.choose-your-own-ceiling__price:before {
+  top: -1.7rem;
+  background-image: url("data:image/svg+xml,%0A%3Csvg width='375' height='24' viewBox='0 0 375 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.5 12L187.75 0L375 12L187.75 24L0.5 12Z' fill='%23F26422'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 4.2rem;
+  margin-left: -2rem;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+
+.choose-your-own-ceiling__price-box, .choose-your-own-ceiling__price-inner {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.choose-your-own-ceiling__price-box {
+  margin-bottom: 3.3rem;
+}
+
+.choose-your-own-ceiling__price-inner, .choose-your-own-ceiling__price-circle--minus:before, .choose-your-own-ceiling__price-circle--plus:before, .choose-your-own-ceiling__price-circle--plus:after {
+  background-color: #ffffff;
+}
+
+.choose-your-own-ceiling__price-inner {
+  position: relative;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 13.5rem;
+  height: 2.8rem;
+  border-radius: 0.8rem;
+}
+
+.choose-your-own-ceiling__price-circle {
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #0F83C0;
+  border-radius: 50%;
+}
+
+.choose-your-own-ceiling__price-circle--minus {
+  left: 1rem;
+}
+
+.choose-your-own-ceiling__price-circle--minus:before {
+  top: 0.6rem;
+  left: 0.4rem;
+  width: 0.7rem;
+  height: 0.2rem;
+}
+
+.choose-your-own-ceiling__price-circle--plus {
+  right: 1rem;
+}
+
+.choose-your-own-ceiling__price-circle--plus:before {
+  top: 0.6rem;
+  left: 0.4rem;
+  width: 0.7rem;
+  height: 0.2rem;
+}
+
+.choose-your-own-ceiling__price-circle--plus:after {
+  top: 0.3rem;
+  left: 0.6rem;
+  width: 0.2rem;
+  height: 0.8rem;
+}
+
+.choose-your-own-ceiling__price-input {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.6rem;
+  border: none;
+  text-align: right;
+  padding-right: 7.5rem;
+}
+
+.choose-your-own-ceiling__price-square {
+  position: absolute;
+  right: 5rem;
+  pointer-events: none;
+}
+
+.choose-your-own-ceiling__price-old {
+  font-size: 2rem;
+  color: #FBD0BC;
+  white-space: nowrap;
+}
+
+.choose-your-own-ceiling__price-old:before {
+  top: 0.3rem;
+  left: 1.7rem;
+  width: 6.9rem;
+  height: 0.2rem;
+  background-color: #FFE600;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
+.choose-your-own-ceiling__price-new {
+  font-size: 2.6rem;
+  color: #FFE600;
+  white-space: nowrap;
+}
+
+.choose-your-own-ceiling .button {
+  max-width: 33.3rem;
+  background-color: #ffffff;
+  color: #F26422;
+}
+
+.choose-your-own-ceiling--sky .choose-your-own-ceiling__image {
+  background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-sky-image.webp");
+}
+
+.choose-your-own-ceiling--sky .choose-your-own-ceiling__image-bg {
+  background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-sky-1.webp");
+  background-position-y: -0.4rem;
+  background-position-x: -0.6rem;
+}
+
+.choose-your-own-ceiling--sky .choose-your-own-ceiling__colors-list {
+  gap: 1.7rem;
+}
+
+.choose-your-own-ceiling--sky .choose-your-own-ceiling__colors-item {
+  width: 7rem;
+  height: 5.3rem;
+  background-size: cover;
+}
+
+.choose-your-own-ceiling--sky .choose-your-own-ceiling__colors-item.active {
+  border-width: 0.2rem;
+}
+
+.choose-your-own-ceiling--sky .choose-your-own-ceiling__colors-item--sky-1 {
+  background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-sky-icon-1.webp");
+}
+
+.choose-your-own-ceiling--sky .choose-your-own-ceiling__colors-item--sky-2 {
+  background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-sky-icon-2.webp");
+}
+
+.choose-your-own-ceiling--sky .choose-your-own-ceiling__colors-item--sky-3 {
+  background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-sky-icon-3.webp");
+}
+
+.choose-your-own-ceiling--sky .choose-your-own-ceiling__colors-item--sky-4 {
+  background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-sky-icon-4.webp");
+}
+
+.choose-your-own-ceiling--sky .choose-your-own-ceiling__colors-item--sky-5 {
+  background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-sky-icon-5.webp");
+}
+
+.choose-your-own-ceiling--sky .choose-your-own-ceiling__colors-item--sky-6 {
+  background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-sky-icon-6.webp");
+}
+
+.choose-your-own-ceiling--sky .choose-your-own-ceiling__colors-item--sky-7 {
+  background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-sky-icon-7.webp");
+}
+
+.choose-your-own-ceiling--sky .choose-your-own-ceiling__colors-item--sky-8 {
+  background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-sky-icon-8.webp");
+}
+
+.choose-your-own-ceiling--sky .choose-your-own-ceiling__colors-item--sky-9 {
+  background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-sky-icon-9.webp");
+}
+
+.choose-your-own-ceiling--sky .choose-your-own-ceiling__colors-item--sky-10 {
+  background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/choose-your-own-sky-icon-10.webp");
+}
+
+.choose-your-own-ceiling--sky .choose-your-own-ceiling__text {
+  text-align: center;
+}
+
+@media (min-width: 500px) {
+  .choose-your-own-ceiling__price:before {
+    top: -2.5rem;
+    height: 5.2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .choose-your-own-ceiling {
+    padding-top: 5.5rem;
+    padding-bottom: 5.5rem;
+  }
+  .choose-your-own-ceiling .title {
+    margin-bottom: 2.9rem;
+    letter-spacing: 0.03em;
+  }
+  .choose-your-own-ceiling .title .block {
+    display: inline;
+  }
+  .choose-your-own-ceiling__tabs, .choose-your-own-ceiling__box, .choose-your-own-ceiling__price {
+    max-width: 71rem;
+  }
+  .choose-your-own-ceiling__tabs {
+    margin-bottom: 3rem;
+  }
+  .choose-your-own-ceiling__tabs-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 22.6rem;
+    height: 4rem;
+    border: 0.1rem solid #C4C4C4;
+    border-radius: 0.6rem;
+  }
+  .choose-your-own-ceiling__tabs-item.active {
+    border-bottom: none;
+    background-color: #F26422;
+    color: #ffffff;
+    border-color: transparent;
+  }
+  .choose-your-own-ceiling__box, .choose-your-own-ceiling__price {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .choose-your-own-ceiling__box.active, .choose-your-own-ceiling__price {
+    display: -ms-grid;
+    display: grid;
+  }
+  .choose-your-own-ceiling__box {
+    grid-template: 'choose-your-own-ceiling__colors choose-your-own-ceiling__image' 23.8rem 'choose-your-own-ceiling__text choose-your-own-ceiling__text' 5.2rem 'choose-your-own-ceiling__content choose-your-own-ceiling__content';
+  }
+  .choose-your-own-ceiling__price-old:before,
+  .choose-your-own-ceiling .button {
+    background-color: #F26422;
+  }
+  .choose-your-own-ceiling__image, .choose-your-own-ceiling__colors, .choose-your-own-ceiling__text, .choose-your-own-ceiling__price-box,
+  .choose-your-own-ceiling .button {
+    margin: 0;
+  }
+  .choose-your-own-ceiling__image,
+  .choose-your-own-ceiling .button {
+    margin-left: auto;
+  }
+  .choose-your-own-ceiling__image {
+    grid-area: choose-your-own-ceiling__image;
+    width: 31.8rem;
+    height: 20.6rem;
+  }
+  .choose-your-own-ceiling__image-bg {
+    background-size: 32.6rem;
+  }
+  .choose-your-own-ceiling__colors {
+    grid-area: choose-your-own-ceiling__colors;
+  }
+  .choose-your-own-ceiling__colors-text {
+    margin-bottom: 1.8rem;
+  }
+  .choose-your-own-ceiling__colors-list {
+    gap: 2.1rem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .choose-your-own-ceiling__colors-item {
+    width: 5.7rem;
+  }
+  .choose-your-own-ceiling__colors-text, .choose-your-own-ceiling__text, .choose-your-own-ceiling__text-call {
+    font-size: 1.8rem;
+  }
+  .choose-your-own-ceiling__text {
+    grid-area: choose-your-own-ceiling__text;
+  }
+  .choose-your-own-ceiling__text-call {
+    grid-area: choose-your-own-ceiling__text-call;
+    display: block;
+    letter-spacing: 0.03em;
+  }
+  .choose-your-own-ceiling__content {
+    grid-area: choose-your-own-ceiling__content;
+  }
+  .choose-your-own-ceiling__price {
+    grid-template: 'choose-your-own-ceiling__price-box choose-your-own-ceiling-button' 7rem 'choose-your-own-ceiling__text-call choose-your-own-ceiling__text-call';
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-bottom: 1.1rem;
+    padding: 0;
+    background-color: transparent;
+  }
+  .choose-your-own-ceiling__price:before {
+    display: none;
+  }
+  .choose-your-own-ceiling__price-box {
+    grid-area: choose-your-own-ceiling__price-box;
+    min-width: 35.2rem;
+  }
+  .choose-your-own-ceiling__price-inner {
+    width: 14.7rem;
+    height: 4rem;
+    border: 0.1rem solid #EFEFEF;
+    font-weight: 900;
+  }
+  .choose-your-own-ceiling__price-old {
+    color: #000000;
+  }
+  .choose-your-own-ceiling__price-new {
+    color: #F26422;
+    font-size: 3rem;
+  }
+  .choose-your-own-ceiling .button {
+    grid-area: choose-your-own-ceiling-button;
+    max-width: 22.4rem;
+    color: #ffffff;
+  }
+  .choose-your-own-ceiling--sky .choose-your-own-ceiling__box {
+    max-width: 71rem;
+  }
+  .choose-your-own-ceiling--sky .choose-your-own-ceiling__image {
+    height: 22.1rem;
+  }
+  .choose-your-own-ceiling--sky .choose-your-own-ceiling__text {
+    text-align: left;
+  }
+  .choose-your-own-ceiling--sky .choose-your-own-ceiling__colors {
+    max-width: none;
+  }
+  .choose-your-own-ceiling--sky .choose-your-own-ceiling__colors-list {
+    margin-left: 0;
+    max-width: none;
+  }
+  .choose-your-own-ceiling--sky .choose-your-own-ceiling__colors-item {
+    width: 7.6rem;
+    height: 5.8rem;
+  }
+  .choose-your-own-ceiling--sky .choose-your-own-ceiling__colors-text {
+    margin-bottom: 2.8rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .choose-your-own-ceiling .title {
+    margin-bottom: 2.6rem;
+  }
+  .choose-your-own-ceiling__tabs {
+    max-width: none;
+  }
+  .choose-your-own-ceiling__tabs-item {
+    width: 30.7rem;
+    height: 4rem;
+  }
+  .choose-your-own-ceiling__box {
+    max-width: none;
+    grid-template: 'choose-your-own-ceiling__colors choose-your-own-ceiling__image' 16rem 'choose-your-own-ceiling__text choose-your-own-ceiling__image' 'choose-your-own-ceiling__content choose-your-own-ceiling__image';
+    -ms-grid-columns: 39rem;
+        grid-template-columns: 39rem;
+  }
+  .choose-your-own-ceiling__image {
+    width: 55.2rem;
+    height: 38.5rem;
+  }
+  .choose-your-own-ceiling__image-bg {
+    background-size: 61rem;
+    height: 11.5rem;
+  }
+  .choose-your-own-ceiling__colors {
+    max-width: none;
+  }
+  .choose-your-own-ceiling__colors-list {
+    max-width: none;
+    margin: 0;
+    gap: 2rem;
+  }
+  .choose-your-own-ceiling__colors-item {
+    width: 6.1rem;
+  }
+  .choose-your-own-ceiling__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .choose-your-own-ceiling__price {
+    margin: 0;
+    grid-template: 'choose-your-own-ceiling__price-box ' 5.5rem 'choose-your-own-ceiling__text-call' 6rem 'choose-your-own-ceiling-button';
+  }
+  .choose-your-own-ceiling__price-box {
+    margin-top: -1.5rem;
+  }
+  .choose-your-own-ceiling__text {
+    line-height: 1.2;
+  }
+  .choose-your-own-ceiling__text-call {
+    margin-top: -1.1rem;
+    line-height: 1.2;
+  }
+  .choose-your-own-ceiling .button {
+    max-width: 30.8rem;
+    margin-left: 0;
+  }
+  .choose-your-own-ceiling--sky .choose-your-own-ceiling__box {
+    max-width: none;
+    grid-template: 'choose-your-own-ceiling__colors choose-your-own-ceiling__image' 20.7rem 'choose-your-own-ceiling__text choose-your-own-ceiling__image' 6rem 'choose-your-own-ceiling__content choose-your-own-ceiling__image';
+    grid-column-gap: 4rem;
+  }
+  .choose-your-own-ceiling--sky .choose-your-own-ceiling__image {
+    height: 41.9rem;
+  }
+  .choose-your-own-ceiling--sky .choose-your-own-ceiling__price-box {
+    margin-top: -0.8rem;
+  }
+}
+
+.choose-your-own-ceiling input[type="number"]::-webkit-outer-spin-button,
+.choose-your-own-ceiling input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.choose-your-own-ceiling input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.choose-your-own-ceiling input[type="number"]:hover,
+.choose-your-own-ceiling input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+
+.choose-your-own-ceiling input[type=number]::-webkit-inner-spin-button,
+.choose-your-own-ceiling input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/*# sourceMappingURL=choose-your-own-ceiling.css.map */

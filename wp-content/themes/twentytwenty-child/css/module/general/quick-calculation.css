@@ -1,0 +1,210 @@
+.quick-calculation {
+  background-image: url(/wp-content/themes/twentytwenty-child/img/yellow-fone.webp);
+  /* .quick-calculation__title */
+  /* .quick-calculation__form */
+  /* .quick-calculation__form-box */
+  /* .quick-calculation__text */
+  /* .quick-calculation__input */
+  /* .quick-calculation__price */
+  /* .quick-calculation__new-price */
+  /* .quick-calculation__btn */
+  /* .quick-calculation__footer-text */
+}
+
+.quick-calculation__title {
+  font-weight: 900;
+  margin-bottom: 1.1em;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .quick-calculation__title {
+    margin-bottom: 1em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .quick-calculation__title {
+    margin-bottom: 0.85em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .quick-calculation__form {
+    margin-bottom: 2.2em;
+  }
+}
+
+@media (min-width: 768px) {
+  .quick-calculation__form-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 2em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .quick-calculation__form-box {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin-bottom: 0;
+  }
+}
+
+.quick-calculation__text {
+  margin-bottom: 1em;
+}
+
+@media (min-width: 768px) {
+  .quick-calculation__text {
+    margin-right: 1.3em;
+    margin-bottom: 0;
+  }
+}
+
+.quick-calculation__input {
+  display: block;
+  margin: 0 auto 1.05em;
+  border: none;
+  border-radius: 0.4em;
+  max-width: 8rem;
+  height: 3.8rem;
+  padding: 0.1em 0.5em 0;
+  text-align: center;
+}
+
+.quick-calculation__input::-webkit-input-placeholder {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.quick-calculation__input:-ms-input-placeholder {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.quick-calculation__input::-ms-input-placeholder {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.quick-calculation__input::placeholder {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+@media (min-width: 1200px) {
+  .quick-calculation__input::-webkit-input-placeholder {
+    font-size: 1em;
+  }
+  .quick-calculation__input:-ms-input-placeholder {
+    font-size: 1em;
+  }
+  .quick-calculation__input::-ms-input-placeholder {
+    font-size: 1em;
+  }
+  .quick-calculation__input::placeholder {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 768px) {
+  .quick-calculation__input {
+    margin: 0 1.35em 0 0;
+  }
+}
+
+.quick-calculation__price {
+  font-weight: 700;
+  display: inline-block;
+  font-size: 2.4rem;
+  position: relative;
+  margin-bottom: 0.8em;
+}
+
+.quick-calculation__price::after {
+  content: "";
+  position: absolute;
+  height: 0.1em;
+  width: 90%;
+  background-color: #F26422;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 50%;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
+@media (min-width: 768px) {
+  .quick-calculation__price {
+    margin-right: 1.15em;
+    margin-bottom: 0;
+  }
+}
+
+.quick-calculation__new-price {
+  color: #F26422;
+  font-size: 4rem;
+  font-weight: 900;
+  display: block;
+  margin-bottom: 0.45em;
+}
+
+@media (min-width: 768px) {
+  .quick-calculation__new-price {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .quick-calculation__new-price {
+    margin-right: 0.2em;
+  }
+}
+
+.quick-calculation__btn {
+  max-width: 30rem;
+  margin-bottom: 2em;
+}
+
+@media (min-width: 768px) {
+  .quick-calculation__btn {
+    max-width: 33.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .quick-calculation__btn {
+    margin: 0;
+    margin-left: 3.4em;
+    display: inline-block;
+  }
+}
+
+.quick-calculation__footer-text span {
+  margin-top: 0.5em;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .quick-calculation__footer-text span {
+    margin-top: 0.2em;
+  }
+}
+/*# sourceMappingURL=quick-calculation.css.map */

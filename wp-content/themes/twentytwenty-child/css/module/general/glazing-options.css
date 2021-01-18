@@ -1,0 +1,130 @@
+.glazing-options {
+  /* .glazing-options__inner */
+  /* .glazing-options__info */
+  /* .glazing-options__name */
+  /* .glazing-options__text */
+  /* .glazing-options__item */
+  /* .glazing-options__item--1 */
+  /* .glazing-options__item--2 */
+  /* .glazing-options__item--3 */
+  /* .glazing-options__item--4 */
+  /* .glazing-options__item--5 */
+  /* .glazing-options__item--6 */
+}
+
+@media (min-width: 768px) {
+  .glazing-options__inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 0 2.1em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .glazing-options__inner {
+    padding: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.glazing-options__info {
+  position: relative;
+  min-height: 10.4em;
+  font-size: 1.8rem;
+}
+
+.glazing-options__info::after {
+  content: "";
+  position: absolute;
+  background-image: url("data:image/svg+xml,%3Csvg width='271' height='24' viewBox='0 0 271 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M270.061 13.0607C270.646 12.4749 270.646 11.5251 270.061 10.9393L260.515 1.3934C259.929 0.807611 258.979 0.807611 258.393 1.3934C257.808 1.97919 257.808 2.92893 258.393 3.51472L266.879 12L258.393 20.4853C257.808 21.0711 257.808 22.0208 258.393 22.6066C258.979 23.1924 259.929 23.1924 260.515 22.6066L270.061 13.0607ZM0 13.5H269V10.5H0V13.5Z' fill='white'/%3E%3C/svg%3E%0A");
+  display: block;
+  width: 95%;
+  height: 1em;
+  bottom: 0;
+  background-size: cover;
+  margin-left: 0.5em;
+  margin-top: -0.5em;
+  background-position: right;
+  -webkit-transform: translateY(0.25em);
+  transform: translateY(0.25em);
+}
+
+.glazing-options__name {
+  margin-bottom: 0.5em;
+  font-size: 1.8rem;
+}
+
+.glazing-options__text {
+  font-size: 1.6rem;
+}
+
+.glazing-options__item {
+  max-width: 16rem;
+  max-width: 30.4rem;
+  min-height: 30.2rem;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0.7em;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  border-radius: 0.6rem;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  margin-bottom: 1.2em;
+}
+
+@media (min-width: 768px) {
+  .glazing-options__item {
+    padding: 1em;
+    margin-bottom: 1em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .glazing-options__item {
+    margin-bottom: 1.5em;
+  }
+}
+
+.glazing-options__item--1 {
+  background-color: #F26422;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.glazing-options__item--2 {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, rgba(0, 0, 0, 0)), to(#000000)), url(/wp-content/themes/twentytwenty-child/img/glazing-options-item-1-l.webp);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 30%, #000000 100%), url(/wp-content/themes/twentytwenty-child/img/glazing-options-item-1-l.webp);
+}
+
+.glazing-options__item--3 {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, rgba(0, 0, 0, 0)), to(#000000)), url(/wp-content/themes/twentytwenty-child/img/glazing-options-item-2-l.webp);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 30%, #000000 100%), url(/wp-content/themes/twentytwenty-child/img/glazing-options-item-2-l.webp);
+}
+
+.glazing-options__item--4 {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, rgba(0, 0, 0, 0)), to(#000000)), url(/wp-content/themes/twentytwenty-child/img/glazing-options-item-3-l.webp);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 30%, #000000 100%), url(/wp-content/themes/twentytwenty-child/img/glazing-options-item-3-l.webp);
+}
+
+.glazing-options__item--5 {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, rgba(0, 0, 0, 0)), to(#000000)), url(/wp-content/themes/twentytwenty-child/img/glazing-options-item-4-l.webp);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 30%, #000000 100%), url(/wp-content/themes/twentytwenty-child/img/glazing-options-item-4-l.webp);
+}
+
+.glazing-options__item--6 {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, rgba(0, 0, 0, 0)), to(#000000)), url(/wp-content/themes/twentytwenty-child/img/glazing-options-item-5-l.webp);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 30%, #000000 100%), url(/wp-content/themes/twentytwenty-child/img/glazing-options-item-5-l.webp);
+}
+/*# sourceMappingURL=glazing-options.css.map */

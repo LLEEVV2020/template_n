@@ -1,0 +1,39 @@
+.best-prices {
+  background: #f9f9f9;
+  /* .best-prices__title */
+  /* .best-prices__text */
+}
+
+.best-prices__title {
+  margin-bottom: 0.4em;
+  line-height: 1.2em;
+}
+
+.best-prices__title span {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .best-prices__title {
+    margin-bottom: 0.8em;
+    line-height: 1.1em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .best-prices__title {
+    margin-bottom: 0.85em;
+    line-height: 1.2em;
+  }
+}
+
+.best-prices__text {
+  line-height: 1.13em;
+}
+
+@media (min-width: 768px) {
+  .best-prices__text {
+    line-height: 1.25;
+  }
+}
+/*# sourceMappingURL=best-prices-for-balcony.css.map */

@@ -1,0 +1,108 @@
+.panoramic-windows {
+  background: #f6f6f6;
+  /* .panoramic-windows__title */
+  /* .panoramic-windows__inner */
+  /* .panoramic-windows__item */
+  /* .panoramic-windows__item-text */
+  /* .panoramic-windows__item--1 */
+  /* .panoramic-windows__item--2 */
+  /* .panoramic-windows__item--3 */
+  /* .panoramic-windows__text */
+}
+
+.panoramic-windows__title {
+  text-align: center;
+  line-height: 1.2em;
+  margin-bottom: 1.1em;
+  padding: 0 1em;
+}
+
+@media (min-width: 768px) {
+  .panoramic-windows__title {
+    margin-bottom: 0.9em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .panoramic-windows__title {
+    margin-bottom: 0.8em;
+  }
+}
+
+.panoramic-windows__slider {
+  margin-bottom: 3.8em;
+}
+
+@media (min-width: 768px) {
+  .panoramic-windows__slider {
+    max-width: 40em;
+    margin: 0 auto;
+    margin-bottom: 4em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .panoramic-windows__slider {
+    max-width: 100%;
+    margin-bottom: 2em;
+  }
+}
+
+.panoramic-windows__item {
+  width: 30.5rem;
+  height: 24rem;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: 100% 77%;
+  background-position-y: top;
+  border-radius: 0.6rem;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.panoramic-windows__item-text {
+  background-color: #fff;
+  display: block;
+  line-height: 3.1em;
+  margin-top: auto;
+  width: 100%;
+  border-radius: 0 0 0.6rem 0.6rem;
+  font-size: 1.8rem;
+  border: 0.15rem solid #e6e6e6;
+  border-top: none;
+}
+
+.panoramic-windows__item--1 {
+  background-image: url(/wp-content/themes/twentytwenty-child/img/panoramic-windows-item-1.webp);
+}
+
+.panoramic-windows__item--2 {
+  background-image: url(/wp-content/themes/twentytwenty-child/img/panoramic-windows-item-2.webp);
+}
+
+.panoramic-windows__item--3 {
+  background-image: url(/wp-content/themes/twentytwenty-child/img/panoramic-windows-item-3.webp);
+}
+
+.panoramic-windows__text {
+  line-height: 1.15em;
+}
+
+.panoramic-windows__text + .panoramic-windows__text {
+  margin-top: 1em;
+}
+
+@media (min-width: 768px) {
+  .panoramic-windows__text + .panoramic-windows__text {
+    margin-top: 1.2em;
+  }
+}
+
+@media (min-width: 768px) {
+  .panoramic-windows__text {
+    line-height: 1.25em;
+  }
+}
+/*# sourceMappingURL=where-panoramic-windows-are-appropriate.css.map */

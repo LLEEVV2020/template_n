@@ -1,0 +1,44 @@
+.improvement-and-repair-windows .container {
+  width: calc(100% - 3.1rem);
+}
+
+.improvement-and-repair-windows .title, .improvement-and-repair-windows__text-warning {
+  text-transform: uppercase;
+}
+
+.improvement-and-repair-windows .title {
+  margin-bottom: 3rem;
+}
+
+.improvement-and-repair-windows__text {
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.improvement-and-repair-windows__text-warning {
+  margin-top: 2.6rem;
+  margin-bottom: 2.8rem;
+}
+
+@media (min-width: 768px) {
+  .improvement-and-repair-windows .container {
+    width: calc(100% - 5.8rem);
+  }
+  .improvement-and-repair-windows__text, .improvement-and-repair-windows__text-warning {
+    font-size: 1.8rem;
+  }
+  .improvement-and-repair-windows__text {
+    margin-bottom: 1.2rem;
+  }
+  .improvement-and-repair-windows__text-warning {
+    margin-top: 3.4rem;
+    margin-bottom: 3.2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .improvement-and-repair-windows .title {
+    margin-bottom: 3.3rem;
+  }
+}
+/*# sourceMappingURL=improvement-and-repair-windows-text.css.map */

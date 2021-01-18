@@ -1,0 +1,99 @@
+.information-text-material-block {
+  background-color: #F6F6F6;
+  /* .information-text-material-block__text */
+  /* .information-text-material-block__list */
+  /* .information-text-material-block__item */
+  /* .information-text-material-block__box-price */
+  /* .information-text-material-block__price-text */
+  /* .information-text-material-block__price */
+  /* .information-text-material-block__link */
+}
+
+.information-text-material-block__text {
+  margin-bottom: 1.4em;
+  letter-spacing: 0.03em;
+}
+
+@media (min-width: 768px) {
+  .information-text-material-block__text {
+    line-height: 1.25;
+    margin-bottom: 1.3em;
+  }
+}
+
+.information-text-material-block__list {
+  margin-bottom: 0.9em;
+}
+
+@media (min-width: 768px) {
+  .information-text-material-block__list {
+    margin-bottom: 0.6em;
+  }
+}
+
+.information-text-material-block__item {
+  margin-right: 1em;
+}
+
+@media (min-width: 768px) {
+  .information-text-material-block__box-price {
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+.information-text-material-block__price-text {
+  margin-right: 0.4em;
+}
+
+@media (min-width: 768px) {
+  .information-text-material-block__price-text {
+    display: inline-block;
+    font-size: 1.8rem;
+    margin-right: 0.7em;
+    line-height: 1.6em;
+  }
+}
+
+.information-text-material-block__price {
+  font-size: 3rem;
+  margin-bottom: 1.1em;
+}
+
+@media (min-width: 768px) {
+  .information-text-material-block__price {
+    font-size: 4rem;
+    display: inline-block;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .information-text-material-block__price {
+    font-size: 4rem;
+  }
+}
+
+.information-text-material-block__link {
+  margin-top: 1.2em;
+}
+
+@media (min-width: 768px) {
+  .information-text-material-block__link {
+    max-width: 34.7rem;
+    margin-right: 0;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .information-text-material-block__link {
+    max-width: 38.8rem;
+  }
+}
+/*# sourceMappingURL=information-text-material-block.css.map */

@@ -1,0 +1,95 @@
+.materials-for-creating-a-parapet {
+  background-color: #F6F6F6;
+  /* .materials-for-creating-a-parapet__wrapper */
+  /* .materials-for-creating-a-parapet__title */
+  /* .materials-for-creating-a-parapet__slider */
+  /* .materials-for-creating-a-parapet__item */
+  /* .materials-for-creating-a-parapet__item-title */
+  /* .materials-for-creating-a-parapet__item-img */
+  /* .materials-for-creating-a-parapet__item-text */
+}
+
+.materials-for-creating-a-parapet__wrapper {
+  text-align: center;
+}
+
+.materials-for-creating-a-parapet__title {
+  margin-bottom: 1em;
+}
+
+@media (min-width: 768px) {
+  .materials-for-creating-a-parapet__title {
+    margin-bottom: 1em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .materials-for-creating-a-parapet__title {
+    margin-bottom: 0.8em;
+  }
+}
+
+.materials-for-creating-a-parapet__slider {
+  max-width: 40em;
+  margin: 0 auto;
+  margin-bottom: 2.2em;
+}
+
+.materials-for-creating-a-parapet__slider .pagination-box {
+  bottom: -1.9em;
+}
+
+.materials-for-creating-a-parapet__slider .pagination.active {
+  background-color: #17a1e3;
+}
+
+.materials-for-creating-a-parapet__slider .owl-stage-outer {
+  -webkit-filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.25));
+}
+
+@media (min-width: 1200px) {
+  .materials-for-creating-a-parapet__slider {
+    margin-bottom: 0;
+    max-width: 100%;
+  }
+}
+
+.materials-for-creating-a-parapet__item {
+  width: 30.7rem;
+  margin: 0 auto;
+}
+
+.materials-for-creating-a-parapet__item-title {
+  padding: 0.5em;
+  background-color: #fff;
+  line-height: 2.2em;
+  border-radius: 0 0 0.6rem 0.6rem;
+  margin-bottom: 0.7em;
+}
+
+@media (min-width: 768px) {
+  .materials-for-creating-a-parapet__item-title {
+    line-height: 2em;
+    margin-bottom: 1em;
+  }
+}
+
+.materials-for-creating-a-parapet__item-img {
+  width: 100%;
+  height: 18.3rem;
+  border-radius: 0.6rem 0.6rem 0 0;
+}
+
+.materials-for-creating-a-parapet__item-text {
+  line-height: 1.2;
+  margin: 0 -1em;
+}
+
+@media (min-width: 768px) {
+  .materials-for-creating-a-parapet__item-text {
+    line-height: 1.2em;
+    margin: 0 1em;
+  }
+}
+/*# sourceMappingURL=materials-for-creating-a-parapet.css.map */

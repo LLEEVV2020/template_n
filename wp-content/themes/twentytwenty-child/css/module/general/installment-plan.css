@@ -1,0 +1,529 @@
+.installment-plan {
+  overflow-x: hidden;
+  /* .installment-plan__wrapper */
+  /* .installment-plan__title */
+  /* .installment-plan__box-tabs */
+  /* .installment-plan__lable */
+  /* .installment-plan__content */
+  /* .installment-plan__footer */
+  /* .installment-plan__slider */
+  /* .installment-plan__item */
+  /* .installment-plan__item--1 */
+  /* .installment-plan__item--2 */
+  /* .installment-plan__item--3 */
+  /* .installment-plan__item--4 */
+  /* .installment-plan__item--5 */
+  /* .installment-plan__item--6 */
+  /* .installment-plan__item--7 */
+  /* .installment-plan__item--8 */
+  /* .installment-plan__name */
+  /* .installment-plan__old-price */
+  /* .installment-plan__new-price */
+  /* .installment-plan__text */
+  /* .installment-plan__installment-plan */
+}
+
+.installment-plan__wrapper {
+  padding: 4.5rem 0;
+}
+
+@media (min-width: 768px) {
+  .installment-plan__wrapper {
+    padding: 3.5rem 0 5.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .installment-plan__wrapper {
+    padding: 4rem 0 6rem;
+  }
+}
+
+.installment-plan__title {
+  text-align: center;
+  margin-bottom: 1.05em;
+  line-height: 1.2em;
+}
+
+@media (min-width: 768px) {
+  .installment-plan__title {
+    margin-bottom: 0.65em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .installment-plan__title {
+    margin-bottom: 0.75em;
+  }
+}
+
+.installment-plan__box-tabs {
+  margin-bottom: 1.8em;
+  position: relative;
+}
+
+.installment-plan__box-tabs::before {
+  content: "";
+  position: absolute;
+  height: 0.05em;
+  width: 200vw;
+  left: -100%;
+  z-index: -1;
+  bottom: 0.05em;
+  margin: 0 auto;
+  background-color: #000;
+}
+
+@media (min-width: 768px) {
+  .installment-plan__box-tabs {
+    margin-bottom: 1.6em;
+    background-color: #efefef;
+  }
+  .installment-plan__box-tabs::before {
+    content: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .installment-plan__box-tabs {
+    margin-bottom: 1.8em;
+  }
+}
+
+.installment-plan__tab {
+  font-weight: 900;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.4rem;
+  opacity: 0.5;
+  line-height: 1.8em;
+  position: relative;
+}
+
+.installment-plan__tab.active {
+  opacity: 1;
+  border-bottom: 0.25em solid #ffe600;
+}
+
+@media (min-width: 768px) {
+  .installment-plan__tab.active {
+    border: 0.2em solid #F26422;
+    background-color: #fff;
+  }
+  .installment-plan__tab.active::before {
+    content: "";
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    border-bottom: 0.2em solid #F26422;
+    border-left: 0.2em solid #F26422;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    background-color: #fff;
+    bottom: -0.65em;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .installment-plan__tab.active::before {
+    bottom: -0.68em;
+  }
+}
+
+@media (min-width: 768px) {
+  .installment-plan__tab {
+    opacity: 1;
+    font-weight: 700;
+    width: 33.33%;
+    font-size: 1.6rem;
+    line-height: 2.6em;
+    border: 0.2em solid transparent;
+  }
+}
+
+@media (min-width: 1200px) {
+  .installment-plan__tab {
+    font-size: 1.8rem;
+    line-height: 3em;
+  }
+  .installment-plan__tab::before {
+    bottom: -0.68em;
+  }
+}
+
+.installment-plan__content {
+  margin-bottom: 2.5em;
+}
+
+@media (min-width: 1200px) {
+  .installment-plan__content {
+    margin-bottom: 1.8em;
+  }
+}
+
+.installment-plan__footer {
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 1.25em;
+}
+
+@media (min-width: 768px) {
+  .installment-plan__footer {
+    font-size: 1.1rem;
+    margin-top: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .installment-plan__footer {
+    line-height: 1.4;
+  }
+}
+
+.installment-plan__slider .pagination.active, .installment-plan__slider-new .pagination.active {
+  background-color: #17a1e3;
+}
+
+@media (min-width: 1200px) {
+  .installment-plan__slider-new .installment-plan__item {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    padding-top: 28rem;
+    padding-bottom: 2.5rem;
+    background-position-y: 2.5rem;
+    min-height: 52.2rem;
+  }
+  .installment-plan__slider-new .installment-plan__item:hover {
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .installment-plan__slider-new {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.installment-plan__slider-new .installment-plan__btn {
+  background-color: #fff;
+  color: #F26422;
+  border: 0.1rem solid #F26422;
+  border-radius: 0.6rem;
+  max-width: 24.7rem;
+  font-size: 1.6rem;
+  min-height: 4rem;
+  line-height: 1.4rem;
+}
+
+@media (min-width: 768px) {
+  .installment-plan__slider-new .installment-plan__btn {
+    max-width: 24.2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .installment-plan__slider-new .installment-plan__btn {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .installment-plan__slider-new .installment-plan__btn:hover {
+    background-color: #F26422;
+    color: #fff;
+  }
+}
+
+.installment-plan__slider-new .installment-plan__installment-plan {
+  margin-bottom: 2.5rem;
+}
+
+.installment-plan__item {
+  padding-top: 25.8rem;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 8.7em;
+}
+
+@media (min-width: 768px) {
+  .installment-plan__item {
+    padding-top: 21.7rem;
+    min-height: 36rem;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .installment-plan__item {
+    min-height: 41.2rem;
+    padding-top: 26.3rem;
+  }
+}
+
+.installment-plan__item--1 {
+  background-image: url(/wp-content/themes/twentytwenty-child/img/installment-plan-one-sash.webp);
+  background-size: 8.7em;
+}
+
+@media (min-width: 768px) {
+  .installment-plan__item--1 {
+    background-size: 7.2em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .installment-plan__item--1 {
+    background-size: 8.9em;
+  }
+}
+
+.installment-plan__item--2 {
+  background-image: url(/wp-content/themes/twentytwenty-child/img/installment-plan-two-sash.webp);
+  background-size: 14.9em;
+}
+
+@media (min-width: 768px) {
+  .installment-plan__item--2 {
+    background-size: 12.2em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .installment-plan__item--2 {
+    background-size: 15.15em;
+  }
+}
+
+.installment-plan__item--3 {
+  background-image: url(/wp-content/themes/twentytwenty-child/img/installment-plan-three-sash.webp);
+  background-size: 18.9em;
+}
+
+@media (min-width: 768px) {
+  .installment-plan__item--3 {
+    background-size: 15.1em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .installment-plan__item--3 {
+    background-size: 18.7em;
+  }
+}
+
+.installment-plan__item--4 {
+  background-image: url(/wp-content/themes/twentytwenty-child/img/installment-plan-one-balcony-block.webp);
+  background-size: 13.7em;
+}
+
+@media (min-width: 768px) {
+  .installment-plan__item--4 {
+    background-size: 10.4em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .installment-plan__item--4 {
+    background-size: 14.1em;
+  }
+}
+
+.installment-plan__item--5 {
+  background-image: url(/wp-content/themes/twentytwenty-child/img/installment-plan-two-balcony-block.webp);
+  background-size: 20em;
+}
+
+@media (min-width: 768px) {
+  .installment-plan__item--5 {
+    background-size: 14.4em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .installment-plan__item--5 {
+    background-size: 19.8em;
+  }
+}
+
+.installment-plan__item--6 {
+  background-image: url(/wp-content/themes/twentytwenty-child/img/installment-plan-three-balcony-block.webp);
+  background-size: 12em;
+}
+
+@media (min-width: 768px) {
+  .installment-plan__item--6 {
+    background-size: 8.7em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .installment-plan__item--6 {
+    background-size: 11.9em;
+  }
+}
+
+.installment-plan__item--7 {
+  background-image: url(/wp-content/themes/twentytwenty-child/img/installment-plan-one-glazing.webp);
+  background-size: 15.7em;
+}
+
+@media (min-width: 768px) {
+  .installment-plan__item--7 {
+    background-size: 12.85em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .installment-plan__item--7 {
+    background-size: 16em;
+  }
+}
+
+.installment-plan__item--8 {
+  background-image: url(/wp-content/themes/twentytwenty-child/img/installment-plan-two-glazing.webp);
+  background-size: 17em;
+}
+
+@media (min-width: 768px) {
+  .installment-plan__item--8 {
+    background-size: 14em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .installment-plan__item--8 {
+    background-size: 17.5em;
+  }
+}
+
+.installment-plan__name {
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-bottom: 0.6em;
+}
+
+@media (min-width: 768px) {
+  .installment-plan__name {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .installment-plan__name {
+    font-size: 1.4rem;
+    margin-bottom: 0.8em;
+  }
+}
+
+.installment-plan__old-price {
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-right: 1.6em;
+  display: inline-block;
+  margin-bottom: 0.9em;
+  position: relative;
+}
+
+.installment-plan__old-price::after {
+  content: "";
+  position: absolute;
+  height: 0.1em;
+  width: 110%;
+  background-color: #F26422;
+  left: -0.3em;
+  right: 0;
+  top: 0.5em;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
+@media (min-width: 768px) {
+  .installment-plan__old-price {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .installment-plan__old-price {
+    margin-bottom: 0.3em;
+  }
+}
+
+.installment-plan__new-price {
+  font-weight: 900;
+  font-size: 2.4rem;
+}
+
+@media (min-width: 768px) {
+  .installment-plan__new-price {
+    display: block;
+    margin-bottom: 0.2em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .installment-plan__new-price {
+    margin-bottom: 0.3em;
+  }
+}
+
+.installment-plan__text {
+  font-size: 1.6rem;
+  margin-bottom: 0.9em;
+}
+
+@media (min-width: 768px) {
+  .installment-plan__text {
+    max-width: 12em;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    margin-bottom: 0.8em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .installment-plan__text {
+    font-size: 1.4rem;
+    max-width: 14em;
+    margin-bottom: 0;
+  }
+}
+
+.installment-plan__installment-plan {
+  font-size: 1.4rem;
+  display: inline-block;
+  background-color: #f6f6f6;
+  padding: 0.5em;
+  border-radius: 0.3em;
+}
+
+@media (min-width: 768px) {
+  .installment-plan__installment-plan {
+    margin-top: auto;
+  }
+}
+
+.installment-plan .active-tab {
+  display: block !important;
+}
+
+.installment-plan .tab-item {
+  display: none;
+}
+/*# sourceMappingURL=installment-plan.css.map */

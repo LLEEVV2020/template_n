@@ -1,0 +1,85 @@
+.window-installation {
+  overflow: hidden;
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .window-installation {
+    display: block;
+    background: repeating-linear-gradient(-35deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 2px, transparent 0, transparent 11px), repeating-linear-gradient(196deg, #0AA0CC, #1188c5 100%);
+    color: #ffffff;
+  }
+  .window-installation .container {
+    width: calc(100% - 8rem);
+  }
+  .window-installation__left {
+    margin-bottom: 3em;
+    padding-top: 3.5em;
+    width: 73%;
+  }
+  .window-installation .title {
+    max-width: 58rem;
+    margin-bottom: 0.825em;
+    font-size: 4rem;
+    line-height: 1.3;
+    text-align: left;
+  }
+  .window-installation-list__icon--1:before {
+    width: 5rem;
+    height: 3.4rem;
+    background-position: -9.8rem -38.3rem;
+  }
+  .window-installation-list__icon--2:before {
+    width: 4.6rem;
+    height: 4.2rem;
+    background-position: -18.3rem -38.3rem;
+  }
+  .window-installation-list__icon--3:before {
+    width: 4.5rem;
+    height: 4.8rem;
+    background-position: -24.9rem -38.6rem;
+  }
+  .window-installation-list__icon--4:before {
+    width: 4.8rem;
+    height: 4.8rem;
+    background-position: -32.8rem -38.6rem;
+  }
+  .window-installation__right {
+    position: relative;
+  }
+  .window-installation__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 100%;
+    width: 68.5rem;
+    max-width: 68.5rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .window-installation-tape__text {
+    padding-left: 0.6em;
+    padding-right: 0.7em;
+  }
+}
+
+@media (min-width: 1800px) {
+  .window-installation {
+    overflow-x: hidden;
+  }
+  .window-installation__image {
+    width: 70rem;
+    max-width: 90rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media (min-width: 2300px) {
+  .window-installation__image {
+    width: 110rem;
+    max-width: 110rem;
+  }
+}
+/*# sourceMappingURL=window-installation.css.map */

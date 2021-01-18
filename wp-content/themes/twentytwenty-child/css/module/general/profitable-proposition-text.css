@@ -1,0 +1,58 @@
+.profitable-proposition-text {
+  /* .profitable-proposition-text__title */
+  /* .profitable-proposition-text__text */
+}
+
+.profitable-proposition-text__title {
+  line-height: 1.5em;
+  margin-bottom: 0.3em;
+}
+
+@media (min-width: 768px) {
+  .profitable-proposition-text__title {
+    margin-bottom: 1em;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .profitable-proposition-text__title {
+    margin-bottom: 0.85em;
+    line-height: 1.2;
+  }
+}
+
+.profitable-proposition-text__text {
+  max-width: 20em;
+  margin: 0 auto;
+  line-height: 1.15;
+}
+
+.profitable-proposition-text__text span {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .profitable-proposition-text__text span {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .profitable-proposition-text__text span {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .profitable-proposition-text__text {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .profitable-proposition-text__text {
+    line-height: 1.2;
+  }
+}
+/*# sourceMappingURL=profitable-proposition-text.css.map */

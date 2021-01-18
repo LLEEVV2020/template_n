@@ -1,0 +1,174 @@
+.plan-for-combining-balcony-and-loggia {
+  /* .plan-for-combining-balcony-and-loggia__wrapper */
+  /* .plan-for-combining-balcony-and-loggia__title */
+  /* .plan-for-combining-balcony-and-loggia__slider */
+  /* .plan-for-combining-balcony-and-loggia__item */
+  /* .plan-for-combining-balcony-and-loggia__box-img */
+  /* .plan-for-combining-balcony-and-loggia__img */
+  /* .plan-for-combining-balcony-and-loggia__number */
+  /* .plan-for-combining-balcony-and-loggia__item-text */
+  /* .plan-for-combining-balcony-and-loggia__box-text */
+  /* .plan-for-combining-balcony-and-loggia__warning */
+  /* .plan-for-combining-balcony-and-loggia__text */
+  /* .plan-for-combining-balcony-and-loggia__btn */
+}
+
+.plan-for-combining-balcony-and-loggia__wrapper {
+  text-align: center;
+}
+
+.plan-for-combining-balcony-and-loggia__title {
+  line-height: 1.2em;
+  margin-bottom: 1em;
+}
+
+@media (min-width: 768px) {
+  .plan-for-combining-balcony-and-loggia__title {
+    line-height: 1.1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .plan-for-combining-balcony-and-loggia__title {
+    line-height: 1.2;
+    margin-bottom: 0.8em;
+  }
+}
+
+.plan-for-combining-balcony-and-loggia__slider {
+  margin-bottom: 3.3em;
+  padding-bottom: 0.5em;
+}
+
+.plan-for-combining-balcony-and-loggia__slider .pagination.active {
+  background-color: #17a1e3;
+}
+
+@media (min-width: 768px) {
+  .plan-for-combining-balcony-and-loggia__slider {
+    margin-bottom: 3.8em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .plan-for-combining-balcony-and-loggia__slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 2em;
+    padding-bottom: 0;
+  }
+}
+
+.plan-for-combining-balcony-and-loggia__item {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+  .plan-for-combining-balcony-and-loggia__item {
+    margin: 0;
+  }
+}
+
+.plan-for-combining-balcony-and-loggia__box-img {
+  width: 100%;
+  max-width: 22.6rem;
+  height: 18.2rem;
+  border-radius: 0.6rem 0.6rem 0 0;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.plan-for-combining-balcony-and-loggia__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.plan-for-combining-balcony-and-loggia__number {
+  position: absolute;
+  text-align: center;
+  top: 0.5em;
+  left: 0.5em;
+  height: 3.1rem;
+  width: 3.1rem;
+  background-color: #fff;
+  border-radius: 50%;
+  line-height: 3.1rem;
+  color: #F26422;
+}
+
+.plan-for-combining-balcony-and-loggia__item-text {
+  font-size: 1.4rem;
+  max-width: 22.6rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 6rem;
+  padding: 0.5em 0.7em;
+  border-radius: 0 0 0.6rem 0.6rem;
+  border: 0.1rem solid #e6e6e6;
+}
+
+.plan-for-combining-balcony-and-loggia__box-text {
+  background-color: #F6F6F6;
+  padding: 0.9em 0.5em;
+  border-radius: 1rem;
+  margin-bottom: 1.7em;
+}
+
+@media (min-width: 768px) {
+  .plan-for-combining-balcony-and-loggia__box-text {
+    padding: 1.6em 0.6em;
+  }
+}
+
+.plan-for-combining-balcony-and-loggia__warning {
+  margin-bottom: 0.2em;
+  display: block;
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  .plan-for-combining-balcony-and-loggia__warning {
+    margin-bottom: 0.4em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .plan-for-combining-balcony-and-loggia__warning {
+    font-size: 2.4rem;
+  }
+}
+
+.plan-for-combining-balcony-and-loggia__text {
+  line-height: 1.1;
+}
+
+@media (min-width: 768px) {
+  .plan-for-combining-balcony-and-loggia__text {
+    line-height: 1.2;
+  }
+}
+
+@media (min-width: 768px) {
+  .plan-for-combining-balcony-and-loggia__btn {
+    max-width: 30.6rem;
+  }
+}
+/*# sourceMappingURL=plan-for-combining-balcony-and-loggia.css.map */

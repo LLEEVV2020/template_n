@@ -1,0 +1,273 @@
+.payment-after-installation .container {
+  width: calc(100% - 3rem);
+}
+
+.payment-after-installation .title {
+  margin-bottom: 0.625em;
+}
+
+.payment-after-installation__info {
+  margin-bottom: 1.313em;
+  text-align: center;
+}
+
+.payment-after-installation__list {
+  max-width: 22em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.payment-after-installation__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.613em;
+}
+
+.payment-after-installation__icon {
+  display: block;
+  position: relative;
+  width: 4.538em;
+  height: 4.538em;
+  margin-right: 1em;
+  background-image: url("/wp-content/themes/twentytwenty-child/img/sprite.png");
+  background-repeat: no-repeat;
+}
+
+.payment-after-installation__icon:before {
+  position: absolute;
+  width: 1.9rem;
+  height: 1.9rem;
+  line-height: 1.9rem;
+  background-color: #F26422;
+  color: #ffffff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 0.813em;
+  font-weight: 700;
+}
+
+.payment-after-installation__icon--1 {
+  background-position: -11.125em -35.188em;
+}
+
+.payment-after-installation__icon--1:before {
+  content: '1';
+  top: 0;
+  left: -0.4em;
+}
+
+.payment-after-installation__icon--2:before, .payment-after-installation__icon--3:before {
+  top: -0.4em;
+}
+
+.payment-after-installation__icon--2 {
+  background-position: -15.750em -35.250em;
+}
+
+.payment-after-installation__icon--2:before {
+  content: '2';
+  left: -0.5em;
+}
+
+.payment-after-installation__icon--3 {
+  background-position: -6.625em -37.063em;
+}
+
+.payment-after-installation__icon--3:before {
+  content: '3';
+  left: 0.2em;
+}
+
+.payment-after-installation__text {
+  font-weight: 700;
+}
+
+.payment-after-installation__button-box {
+  text-align: center;
+}
+
+.payment-after-installation .button {
+  min-width: 14.125em;
+  min-height: 2.500em;
+}
+
+@media (min-width: 768px) {
+  .payment-after-installation .container {
+    width: calc(100% - 4rem);
+  }
+  .payment-after-installation__info {
+    font-size: 2rem;
+  }
+  .payment-after-installation__block {
+    display: block;
+  }
+  .payment-after-installation__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 50em;
+    margin-bottom: 2.188em;
+  }
+  .payment-after-installation__item {
+    display: block;
+    position: relative;
+  }
+  .payment-after-installation__item:first-child:after, .payment-after-installation__item:nth-child(2):after {
+    content: '';
+    position: absolute;
+    top: 4em;
+    right: -3em;
+    width: 5.125em;
+    height: 1.250em;
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='81' height='16' viewBox='0 0 81 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M80.7071 8.70711C81.0976 8.31658 81.0976 7.68342 80.7071 7.29289L74.3431 0.928932C73.9526 0.538408 73.3195 0.538408 72.9289 0.928932C72.5384 1.31946 72.5384 1.95262 72.9289 2.34315L78.5858 8L72.9289 13.6569C72.5384 14.0474 72.5384 14.6805 72.9289 15.0711C73.3195 15.4616 73.9526 15.4616 74.3431 15.0711L80.7071 8.70711ZM0 9H80V7H0V9Z' fill='%23F26422'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+  }
+  .payment-after-installation__icon {
+    width: 7.813em;
+    height: 7.813em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.813em;
+  }
+  .payment-after-installation__icon:before {
+    width: 3.7rem;
+    height: 3.7rem;
+    line-height: 3.7rem;
+    font-size: 2.5rem;
+  }
+  .payment-after-installation__icon--1 {
+    background-position: -65.250em -0.375em;
+  }
+  .payment-after-installation__icon--2 {
+    background-position: -65.188em -8.938em;
+  }
+  .payment-after-installation__icon--3 {
+    background-position: -65.000em -16.750em;
+  }
+  .payment-after-installation__text {
+    max-width: 11em;
+    font-size: 1.250em;
+    text-align: center;
+  }
+}
+
+@media (min-width: 960px) {
+  .payment-after-installation .container {
+    width: calc(100% - 8rem);
+  }
+}
+
+@media (min-width: 1200px) {
+  .payment-after-installation .title {
+    margin-bottom: 1.125em;
+  }
+  .payment-after-installation__info {
+    margin-bottom: 3.125em;
+    font-size: 2.4rem;
+  }
+  .payment-after-installation__list {
+    max-width: 63em;
+  }
+  .payment-after-installation__item:first-child:after, .payment-after-installation__item:nth-child(2):after {
+    width: 8.438em;
+    height: 2.05em;
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='129' height='30' viewBox='0 0 129 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M128.414 16.4142C129.195 15.6332 129.195 14.3668 128.414 13.5858L115.686 0.857864C114.905 0.0768156 113.639 0.0768156 112.858 0.857864C112.077 1.63891 112.077 2.90524 112.858 3.68629L124.172 15L112.858 26.3137C112.077 27.0948 112.077 28.3611 112.858 29.1421C113.639 29.9232 114.905 29.9232 115.686 29.1421L128.414 16.4142ZM0 17H127V13H0V17Z' fill='%23F26422'/%3E%3C/svg%3E%0A");
+    top: 6em;
+    right: -7em;
+  }
+  .payment-after-installation__icon {
+    margin-bottom: 1.113em;
+    width: 13.438em;
+    height: 12.313em;
+  }
+  .payment-after-installation__icon:before {
+    width: 6rem;
+    height: 6rem;
+    line-height: 6rem;
+    font-size: 3.5rem;
+  }
+  .payment-after-installation__icon--1 {
+    background-position: -62.438em -38.313em;
+  }
+  .payment-after-installation__icon--2 {
+    max-width: 11.7em;
+    background-position: -50.463em -39.125em;
+  }
+  .payment-after-installation__icon--2:before {
+    left: 0.1em;
+  }
+  .payment-after-installation__icon--3 {
+    background-position: -64.038em -25.250em;
+  }
+  .payment-after-installation__text {
+    font-size: 1.500em;
+  }
+  .payment-after-installation .button {
+    min-width: 23.000em;
+    min-height: 3.125em;
+  }
+}
+
+.payment-after-installation--ceiling {
+  background-color: #F9F9F9;
+}
+
+.payment-after-installation--ceiling .payment-after-installation__info {
+  margin-bottom: 1.713em;
+}
+
+.payment-after-installation--ceiling .payment-after-installation__list {
+  max-width: 20em;
+  margin-bottom: 0.488em;
+}
+
+.payment-after-installation--ceiling .payment-after-installation__icon {
+  width: 5.438em;
+}
+
+.payment-after-installation--ceiling .payment-after-installation__icon--2 {
+  width: 4.638em;
+  margin-right: 0.6em;
+}
+
+@media (min-width: 768px) {
+  .payment-after-installation--ceiling .payment-after-installation__list {
+    max-width: 44em;
+  }
+  .payment-after-installation--ceiling .payment-after-installation__icon {
+    width: 8.338em;
+  }
+  .payment-after-installation--ceiling .payment-after-installation__icon--2 {
+    width: 6.938em;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .payment-after-installation--ceiling .payment-after-installation__info {
+    margin-bottom: 2.013em;
+  }
+  .payment-after-installation--ceiling .payment-after-installation__list {
+    max-width: 68em;
+    margin-bottom: 2.088em;
+  }
+  .payment-after-installation--ceiling .payment-after-installation__icon {
+    width: 13.338em;
+    margin-bottom: 1.413em;
+  }
+  .payment-after-installation--ceiling .payment-after-installation__text {
+    max-width: 12em;
+  }
+  .payment-after-installation--ceiling .button {
+    min-width: 19.5em;
+    min-height: 2.725em;
+  }
+}
+/*# sourceMappingURL=payment-after-installation.css.map */

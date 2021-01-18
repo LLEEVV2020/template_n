@@ -1,0 +1,24 @@
+.finishing-loggias-text .title {
+  margin-bottom: 0.938em;
+}
+
+.finishing-loggias-text .text {
+  text-align: left;
+  margin-bottom: 0.5em;
+}
+
+@media (min-width: 960px) {
+  .finishing-loggias-text .container {
+    width: calc(100% - 8rem);
+  }
+  .finishing-loggias-text .text {
+    font-size: 2.4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .finishing-loggias-text .title {
+    margin-bottom: 1.563em;
+  }
+}
+/*# sourceMappingURL=finishing-loggias-text.css.map */

@@ -1,0 +1,60 @@
+.installing-ceiling-starry-sky .title, .installing-ceiling-starry-sky__list {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.installing-ceiling-starry-sky .title {
+  max-width: 28rem;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+}
+
+.installing-ceiling-starry-sky__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 34.5rem;
+}
+
+.installing-ceiling-starry-sky__item {
+  margin-bottom: 1.5rem;
+}
+
+.installing-ceiling-starry-sky__item img {
+  width: 16.5rem;
+  height: 9.9rem;
+}
+
+@media (min-width: 768px) {
+  .installing-ceiling-starry-sky .title {
+    margin-bottom: 3.5rem;
+    max-width: none;
+  }
+  .installing-ceiling-starry-sky__list {
+    max-width: 71rem;
+  }
+  .installing-ceiling-starry-sky__item img {
+    width: 34.7rem;
+    height: 20.6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .installing-ceiling-starry-sky .title {
+    margin-bottom: 3rem;
+  }
+  .installing-ceiling-starry-sky__list {
+    max-width: none;
+    margin-bottom: 1.6rem;
+  }
+  .installing-ceiling-starry-sky__item img {
+    width: 22.5rem;
+    height: 13.6rem;
+  }
+}
+/*# sourceMappingURL=installing-ceiling-starry-sky.css.map */

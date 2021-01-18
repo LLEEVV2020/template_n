@@ -1,0 +1,37 @@
+.features-finishing-balconies .title, .features-finishing-balconies__text, .features-finishing-balconies__item {
+  line-height: 1.2;
+}
+
+.features-finishing-balconies .title {
+  margin-bottom: 2.8rem;
+}
+
+.features-finishing-balconies__text {
+  margin-bottom: 2rem;
+}
+
+.features-finishing-balconies__list {
+  margin-bottom: 1.7rem;
+}
+
+@media (min-width: 768px) {
+  .features-finishing-balconies .container {
+    width: calc(100% - 6.4rem);
+  }
+  .features-finishing-balconies__text, .features-finishing-balconies__item {
+    font-size: 1.8rem;
+  }
+  .features-finishing-balconies__text {
+    margin-bottom: 2.5rem;
+  }
+  .features-finishing-balconies__list {
+    margin-bottom: 2.4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .features-finishing-balconies .title {
+    margin-bottom: 3.3rem;
+  }
+}
+/*# sourceMappingURL=features-finishing-balconies-text.css.map */

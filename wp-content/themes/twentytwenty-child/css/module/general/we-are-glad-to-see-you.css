@@ -1,0 +1,243 @@
+.we-are-glad-to-see-you {
+  background-image: url(/wp-content/themes/twentytwenty-child/img/we-are-glad-to-see-you-mob.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  /* .we-are-glad-to-see-you__wrapper */
+  /* .we-are-glad-to-see-you__title */
+  /* .we-are-glad-to-see-you__subtitle */
+  /* .we-are-glad-to-see-you__form */
+  /* .we-are-glad-to-see-you__input */
+  /* .we-are-glad-to-see-you__btn */
+  /* .we-are-glad-to-see-you__text-info */
+  /* .we-are-glad-to-see-you__text */
+  /* .we-are-glad-to-see-you__box */
+  /* .we-are-glad-to-see-you__item */
+  /* .we-are-glad-to-see-you__icon */
+  /* .we-are-glad-to-see-you__item-text */
+}
+
+.we-are-glad-to-see-you::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.75);
+}
+
+@media (min-width: 768px) {
+  .we-are-glad-to-see-you {
+    background-image: url(/wp-content/themes/twentytwenty-child/img/we-are-glad-to-see-you-plan.webp);
+  }
+}
+
+@media (min-width: 1200px) {
+  .we-are-glad-to-see-you {
+    background-image: url(/wp-content/themes/twentytwenty-child/img/we-are-glad-to-see-you-desc.webp);
+  }
+}
+
+.we-are-glad-to-see-you__wrapper {
+  position: relative;
+}
+
+.we-are-glad-to-see-you__title {
+  line-height: 1.2;
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .we-are-glad-to-see-you__title {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .we-are-glad-to-see-you__title {
+    margin-bottom: 3.2rem;
+  }
+}
+
+.we-are-glad-to-see-you__subtitle {
+  margin-bottom: 2.5rem;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .we-are-glad-to-see-you__subtitle {
+    text-align: center;
+    margin-bottom: 3.1rem;
+  }
+}
+
+.we-are-glad-to-see-you__form {
+  margin-bottom: 3.5rem;
+}
+
+@media (min-width: 768px) {
+  .we-are-glad-to-see-you__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 4rem;
+  }
+}
+
+.we-are-glad-to-see-you__input {
+  margin-bottom: 1rem;
+  width: 100%;
+  border: none;
+  border-bottom: 0.3rem solid #c9c9c9;
+  border-radius: 0.6rem 0.6rem 0 0;
+  min-height: 3.5rem;
+  text-align: center;
+}
+
+.we-are-glad-to-see-you__input::-webkit-input-placeholder {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.we-are-glad-to-see-you__input:-ms-input-placeholder {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.we-are-glad-to-see-you__input::-ms-input-placeholder {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.we-are-glad-to-see-you__input::placeholder {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .we-are-glad-to-see-you__input::-webkit-input-placeholder {
+    font-size: 1.6rem;
+  }
+  .we-are-glad-to-see-you__input:-ms-input-placeholder {
+    font-size: 1.6rem;
+  }
+  .we-are-glad-to-see-you__input::-ms-input-placeholder {
+    font-size: 1.6rem;
+  }
+  .we-are-glad-to-see-you__input::placeholder {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .we-are-glad-to-see-you__input {
+    margin: 0 1rem;
+    max-width: 30.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .we-are-glad-to-see-you__btn {
+    max-width: 30.5rem;
+    margin: 0 1rem;
+  }
+}
+
+.we-are-glad-to-see-you__text-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2.5rem;
+  line-height: 1.2;
+}
+
+.we-are-glad-to-see-you__text-info span {
+  width: 100%;
+  max-width: 7.5rem;
+  margin-top: -0.7rem;
+}
+
+@media (min-width: 768px) {
+  .we-are-glad-to-see-you__text-info {
+    display: block;
+    text-align: center;
+  }
+  .we-are-glad-to-see-you__text-info span {
+    display: inline-block;
+    margin-right: 1.7rem;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+}
+
+@media (min-width: 1200px) {
+  .we-are-glad-to-see-you__text-info {
+    margin-bottom: 3rem;
+  }
+}
+
+.we-are-glad-to-see-you__text {
+  margin-bottom: 2.5rem;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .we-are-glad-to-see-you__text {
+    max-width: 41rem;
+    text-align: center;
+    margin: 0 auto 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .we-are-glad-to-see-you__text {
+    max-width: 100%;
+  }
+}
+
+.we-are-glad-to-see-you__box {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .we-are-glad-to-see-you__box {
+    margin: 0 auto;
+    max-width: 40rem;
+  }
+}
+
+.we-are-glad-to-see-you__item {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.we-are-glad-to-see-you__icon {
+  font-size: 3.3em;
+  line-height: 0;
+  margin-right: 1.1rem;
+}
+
+.we-are-glad-to-see-you__icon .icon {
+  fill: transparent;
+  width: 1em;
+  height: 1em;
+}
+
+@media (min-width: 768px) {
+  .we-are-glad-to-see-you__icon {
+    font-size: 4.5em;
+  }
+}
+
+.we-are-glad-to-see-you__item-text span {
+  display: block;
+}
+/*# sourceMappingURL=we-are-glad-to-see-you.css.map */

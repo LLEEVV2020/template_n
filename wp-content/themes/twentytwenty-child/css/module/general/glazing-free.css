@@ -1,0 +1,110 @@
+.glazing-free {
+  background-image: url("/wp-content/themes/twentytwenty-child/img/glazing-free-bg-middle.jpg");
+  position: relative;
+}
+
+.glazing-free__image {
+  margin-top: -3.4em;
+}
+
+.glazing-free__image-box {
+  margin-bottom: 1.563em;
+  text-align: center;
+}
+
+.glazing-free .title,
+.glazing-free .text {
+  text-align: left;
+}
+
+.glazing-free .title {
+  margin-bottom: 0.938em;
+  color: #FFE600;
+}
+
+.glazing-free .text {
+  line-height: 1.3125;
+}
+
+.glazing-free .button {
+  display: block;
+  width: 100%;
+  max-width: 21.500em;
+  min-height: 2.5em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .glazing-free {
+    background-size: cover;
+  }
+  .glazing-free .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .glazing-free__image {
+    margin-top: 0;
+  }
+  .glazing-free__image-box {
+    margin-right: 1em;
+  }
+  .glazing-free .text {
+    margin-bottom: 1.625em;
+    max-width: 14.8em;
+  }
+  .glazing-free .button {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 15.47em;
+    min-height: 2.43em;
+    font-size: 1.063em;
+  }
+}
+
+@media (min-width: 960px) {
+  .glazing-free {
+    background-image: url("/wp-content/themes/twentytwenty-child/img/glazing-free-bg-big.jpg");
+  }
+  .glazing-free .container {
+    width: calc(100% - 8rem);
+  }
+}
+
+@media (min-width: 1200px) {
+  .glazing-free {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .glazing-free .container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .glazing-free__image-box {
+    width: 34.8em;
+    height: 26em;
+    margin-top: -1.5em;
+    margin-bottom: -1.9em;
+    margin-right: 3em;
+  }
+  .glazing-free .text {
+    margin-bottom: 2.375em;
+  }
+  .glazing-free .button {
+    max-width: 13.84em;
+    min-height: 2.304em;
+    font-size: 1.188em;
+  }
+}
+
+@media (min-width: 1400px) {
+  .glazing-free__image-box {
+    margin-right: 4em;
+  }
+}
+/*# sourceMappingURL=glazing-free.css.map */

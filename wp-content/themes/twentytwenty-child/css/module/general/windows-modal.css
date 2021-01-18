@@ -1,0 +1,357 @@
+.windows-modal__modal, .windows-modal__text, .windows-modal__title,
+.windows-modal .form-contacts, .windows-modal__warning, .windows-modal__close-btn {
+  position: relative;
+  z-index: 10;
+}
+
+.windows-modal button {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  background: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 0;
+  font-size: 1.6rem;
+  line-height: 1.25;
+  color: #ffffff;
+}
+
+.windows-modal .btn-base {
+  font-family: 'ALS Schlange sans', 'Montserrat', sans-serif;
+  border-radius: 6px;
+  text-align: center;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.windows-modal .btn-base--add {
+  width: 100%;
+  max-width: 33.5rem;
+  padding: .7em .1em .551em;
+  letter-spacing: 0.05em;
+}
+
+.windows-modal .btn-base--bg {
+  background: #F26422;
+}
+
+.windows-modal__title {
+  margin-bottom: 1.4em;
+}
+
+.windows-modal .overlay {
+  width: 100%;
+  min-height: 100vh;
+  max-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.75);
+  -webkit-transition: 0.35s ease-in-out;
+  transition: 0.35s ease-in-out;
+  overflow-y: auto;
+}
+
+.windows-modal__title {
+  margin-top: 0;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.windows-modal__text {
+  font-size: 1.8rem;
+  font-weight: 900;
+  max-width: 19rem;
+}
+
+.windows-modal__text:first-of-type {
+  margin-bottom: 0.500em;
+}
+
+.windows-modal__text:nth-of-type(2) {
+  margin-bottom: 2.678em;
+}
+
+.windows-modal .form-contacts {
+  max-width: 34rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.windows-modal .form-contacts__input {
+  width: 100%;
+  padding: 0.6em 3.2em;
+  border: 1px solid #E8E8E8;
+  border-radius: 6px;
+  font-size: 1.6rem;
+  outline: none;
+  /* Firefox 19+ */
+  /* Firefox 18- */
+}
+
+.windows-modal .form-contacts__input--name:focus:focus, .windows-modal .form-contacts__input--phone:focus:focus {
+  border: 1px solid #333333;
+}
+
+.windows-modal .form-contacts__input--name:focus:focus + .form-contacts__icon, .windows-modal .form-contacts__input--phone:focus:focus + .form-contacts__icon {
+  fill: #000000;
+}
+
+.windows-modal .form-contacts__input--phone {
+  padding-left: 5em;
+}
+
+.windows-modal .form-contacts__input::-webkit-input-placeholder {
+  color: #CCCCCC;
+}
+
+.windows-modal .form-contacts__input::-moz-placeholder {
+  color: #CCCCCC;
+}
+
+.windows-modal .form-contacts__input:-moz-placeholder {
+  color: #CCCCCC;
+}
+
+.windows-modal .form-contacts__input:-ms-input-placeholder {
+  color: #CCCCCC;
+}
+
+.windows-modal .form-contacts__box {
+  margin-bottom: 0.778em;
+  position: relative;
+}
+
+.windows-modal .form-contacts__icon {
+  fill: #bfbfbf;
+  position: absolute;
+  left: 1em;
+}
+
+.windows-modal .form-contacts__icon--name {
+  top: 0.5em;
+}
+
+.windows-modal .form-contacts__icon--phone {
+  top: 0.5em;
+}
+
+.windows-modal .form-contacts__number {
+  position: absolute;
+  top: 0.7em;
+  left: 3.2em;
+  font-size: 1.6rem;
+}
+
+.windows-modal__warning {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.windows-modal__warning a {
+  color: #000000;
+  border-bottom: 1px solid #000000;
+  text-decoration: none;
+}
+
+.windows-modal .btn-base--add {
+  margin-bottom: 1em;
+}
+
+.windows-modal__close-btn {
+  width: 0.889em;
+  height: 0.889em;
+  position: absolute;
+  top: 0.5em;
+  right: 0.7em;
+  cursor: pointer;
+}
+
+.windows-modal__close-btn::before, .windows-modal__close-btn::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 0.167em;
+  height: 1.111em;
+  background-color: #7c7c7c;
+  border-radius: 7px;
+}
+
+.windows-modal__close-btn::before {
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+}
+
+.windows-modal__close-btn::after {
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+          transform: translateY(-50%) rotate(-45deg);
+}
+
+.windows-modal__modal {
+  padding: 2em 1.2em 2em;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.windows-modal__modal::before, .windows-modal__modal::after {
+  content: '';
+  position: absolute;
+}
+
+.windows-modal__modal::before {
+  bottom: -14.6em;
+  right: -14em;
+  width: 68.1rem;
+  height: 46.7rem;
+  border-radius: 50%;
+  background: linear-gradient(266.8deg, #FFF854 0.02%, #FFE03E 101.17%);
+  z-index: 2;
+}
+
+.windows-modal__modal::after {
+  bottom: 3.3em;
+  right: 0;
+  width: 23.1rem;
+  height: 38.7rem;
+  background: url("/wp-content/themes/twentytwenty-child/img/worker-img.png") 0 0 no-repeat;
+  background-size: 14em;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .windows-modal__modal {
+    border-radius: 0.625em;
+  }
+  .windows-modal .form-contacts {
+    display: block;
+  }
+  .windows-modal .form-contacts__box {
+    max-width: none;
+  }
+}
+
+@media (min-width: 960px) {
+  .windows-modal .form-contacts__box {
+    min-width: 16.625em;
+  }
+}
+
+@media (min-width: 900px) {
+  .windows-modal__title {
+    margin-bottom: 2em;
+  }
+  .windows-modal__modal {
+    min-width: 80rem;
+    padding: 3em 4em 3em;
+  }
+  .windows-modal__modal::before {
+    width: 45rem;
+    height: 45rem;
+    bottom: -4.6em;
+    right: -4em;
+    z-index: 1;
+  }
+  .windows-modal__modal::after {
+    width: 36.1rem;
+    height: 41.7rem;
+    bottom: 0;
+    right: 2em;
+    z-index: 2;
+    background-size: 21em;
+  }
+  .windows-modal__text {
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  .windows-modal__text:first-of-type {
+    max-width: 31rem;
+  }
+  .windows-modal__text:nth-of-type(2) {
+    max-width: 27rem;
+    margin-bottom: 1.678em;
+  }
+  .windows-modal .form-contacts {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 31rem;
+  }
+  .windows-modal__warning {
+    text-align: left;
+    max-width: 30rem;
+  }
+}
+
+@media (min-width: 1320px) {
+  .windows-modal__title {
+    margin-bottom: 1em;
+    font-size: 4.8rem;
+  }
+  .windows-modal__modal {
+    min-width: 100rem;
+    padding: 3em 6em 3em;
+  }
+  .windows-modal__modal::before {
+    width: 55rem;
+    height: 55rem;
+    bottom: -9em;
+  }
+  .windows-modal__modal::after {
+    width: 40.1rem;
+    height: 48.7rem;
+    right: 2em;
+    bottom: -1em;
+    background-size: 23em;
+  }
+  .windows-modal__text {
+    font-size: 2.4rem;
+  }
+  .windows-modal__text:first-of-type {
+    max-width: 39rem;
+    margin-bottom: 1em;
+  }
+  .windows-modal__text:nth-of-type(2) {
+    margin-bottom: 1em;
+    max-width: 32rem;
+  }
+  .windows-modal .form-contacts {
+    max-width: 40rem;
+  }
+  .windows-modal .form-contacts__input, .windows-modal .form-contacts__number {
+    font-size: 2.2rem;
+  }
+  .windows-modal .form-contacts__icon {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+  .windows-modal .form-contacts__icon--name {
+    top: 0.7em;
+  }
+  .windows-modal .form-contacts__icon--phone {
+    top: 0.8em;
+  }
+  .windows-modal .btn-base--add {
+    max-width: 100%;
+    padding: 1em;
+  }
+  .windows-modal__close-btn {
+    width: 1.889em;
+    height: 1.889em;
+  }
+  .windows-modal__close-btn::before, .windows-modal__close-btn::after {
+    width: 0.278em;
+    height: 1.667em;
+    left: 43%;
+  }
+}
+/*# sourceMappingURL=windows-modal.css.map */

@@ -1,0 +1,129 @@
+.wood-species {
+  background-color: #f6f6f6;
+  /* .wood-species__title */
+  /* .wood-species__slider */
+  /* .wood-species__item */
+  /* .wood-species__name */
+  /* .wood-species__price */
+  /* .wood-species__img */
+  /* .wood-species__text */
+  /* .wood-species__specifications */
+  /* .wood-species__specifications-rating */
+}
+
+.wood-species__title {
+  text-align: center;
+  max-width: 10em;
+  line-height: 1.2;
+  margin: 0 auto 1em;
+}
+
+@media (min-width: 768px) {
+  .wood-species__title {
+    max-width: 100%;
+    margin-bottom: 0.9em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wood-species__title {
+    margin-bottom: 0.7em;
+  }
+}
+
+.wood-species__slider {
+  margin-bottom: 2.3em;
+}
+
+.wood-species__slider .pagination-box {
+  bottom: -2.9em;
+}
+
+.wood-species__slider .pagination.active {
+  background-color: #17a1e3;
+}
+
+.wood-species__slider .owl-stage-outer {
+  -webkit-filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.25));
+  border-radius: 0.3em;
+}
+
+@media (min-width: 768px) {
+  .wood-species__slider {
+    max-width: 40em;
+    margin: 0 auto 2.3em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wood-species__slider {
+    max-width: 100%;
+  }
+}
+
+.wood-species__item {
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 0.3em;
+  padding: 1.7em 0.6em;
+  max-width: 30.7rem;
+  margin: 0 auto;
+}
+
+.wood-species__name {
+  font-size: 1.8rem;
+  margin-bottom: 0.5em;
+}
+
+.wood-species__price {
+  font-size: 1.8rem;
+  margin-bottom: 0.9em;
+}
+
+.wood-species__img {
+  width: 28.3rem;
+  height: 15.1rem;
+  border-radius: 0.3em;
+  margin-bottom: 1.3em;
+}
+
+.wood-species__text {
+  font-size: 1.4rem;
+  line-height: 1.2em;
+  margin-bottom: 1.9em;
+}
+
+.wood-species__specifications {
+  font-size: 1.2rem;
+  margin-bottom: 2.1em;
+}
+
+.wood-species__specifications-rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 0.4em;
+}
+
+.wood-species .circle-rating {
+  display: block;
+  width: 0.5em;
+  height: 0.5em;
+  margin: 0 0.3em;
+  background-color: #d0d0d0;
+  border-radius: 50%;
+}
+
+.wood-species .circle-rating--orange {
+  margin: 0 0.3em;
+  display: block;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background-color: #F26422;
+}
+/*# sourceMappingURL=wood-species.css.map */

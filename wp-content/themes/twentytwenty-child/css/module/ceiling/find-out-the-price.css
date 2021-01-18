@@ -1,0 +1,305 @@
+.find-out-the-price {
+  position: relative;
+  background-image: url(/wp-content/themes/twentytwenty-child/img/ceiling/find-out-the-price-bg-mob.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* .find-out-the-price__wrapper */
+  /* .find-out-the-price__title */
+  /* .find-out-the-price__text-tel */
+  /* .find-out-the-price__link-tel */
+  /* .find-out-the-price__text */
+  /* .find-out-the-price__form */
+  /* .find-out-the-price__input */
+  /* .find-out-the-price__btn */
+  /* .find-out-the-price__text-politic */
+  /* .find-out-the-price__link-politic */
+  /* .find-out-the-price__box */
+  /* .find-out-the-price__box-text */
+  /* .find-out-the-price__box-img */
+  /* .find-out-the-price__img */
+}
+
+.find-out-the-price::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.49);
+}
+
+@media (min-width: 768px) {
+  .find-out-the-price {
+    background-image: url(/wp-content/themes/twentytwenty-child/img/ceiling/find-out-the-price-bg-plan.webp);
+  }
+}
+
+@media (min-width: 1200px) {
+  .find-out-the-price {
+    background-image: url(/wp-content/themes/twentytwenty-child/img/ceiling/find-out-the-price-bg-desc.webp);
+  }
+}
+
+.find-out-the-price__wrapper {
+  position: relative;
+}
+
+.find-out-the-price__title {
+  text-align: center;
+  line-height: 1.2;
+  margin: 0 auto;
+  margin-bottom: 2.7rem;
+  max-width: 26.2rem;
+}
+
+@media (min-width: 768px) {
+  .find-out-the-price__title {
+    max-width: 100%;
+    text-align: left;
+    line-height: 1.1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .find-out-the-price__title {
+    line-height: 1.2;
+  }
+}
+
+.find-out-the-price__text-tel {
+  margin-bottom: 0.8rem;
+}
+
+.find-out-the-price__link-tel {
+  line-height: 1.2;
+  text-decoration: none;
+  margin-bottom: 2.6rem;
+}
+
+@media (min-width: 768px) {
+  .find-out-the-price__link-tel {
+    line-height: 1.1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .find-out-the-price__link-tel {
+    line-height: 1.2;
+  }
+}
+
+.find-out-the-price__text {
+  max-width: 15.1rem;
+  line-height: 1.2;
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .find-out-the-price__text {
+    max-width: 31rem;
+  }
+  .find-out-the-price__text span {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .find-out-the-price__text {
+    margin-bottom: 3rem;
+  }
+}
+
+.find-out-the-price__form {
+  margin-bottom: 1.48rem;
+}
+
+@media (min-width: 768px) {
+  .find-out-the-price__form {
+    max-width: 34.7rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .find-out-the-price__form {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 3rem;
+  }
+}
+
+.find-out-the-price__input {
+  width: 100%;
+  text-align: center;
+  border: none;
+  border-bottom: 0.3rem solid #c9c9c9;
+  border-radius: 0.6rem 0.6rem 0 0;
+  min-height: 3.5rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.find-out-the-price__input::-webkit-input-placeholder {
+  font-weight: 700;
+}
+
+.find-out-the-price__input:-ms-input-placeholder {
+  font-weight: 700;
+}
+
+.find-out-the-price__input::-ms-input-placeholder {
+  font-weight: 700;
+}
+
+.find-out-the-price__input::placeholder {
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .find-out-the-price__input {
+    min-height: 4rem;
+    margin-bottom: 1.2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .find-out-the-price__input {
+    max-width: 26.5rem;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .find-out-the-price__btn {
+    max-width: 26.5rem;
+    margin-left: 1.8rem;
+  }
+}
+
+.find-out-the-price__text-politic {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+  .find-out-the-price__text-politic {
+    max-width: 34.7rem;
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+  .find-out-the-price__text-politic span {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .find-out-the-price__text-politic {
+    font-size: 1.4rem;
+    text-align: left;
+    max-width: 55rem;
+    line-height: 1.25;
+  }
+}
+
+.find-out-the-price__link-politic {
+  color: inherit;
+}
+
+.find-out-the-price__box {
+  position: absolute;
+  right: 0;
+  top: 10.1rem;
+}
+
+@media (min-width: 768px) {
+  .find-out-the-price__box {
+    right: -1.5rem;
+    top: 9.6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .find-out-the-price__box {
+    right: 3.6rem;
+    top: auto;
+    bottom: 0;
+  }
+}
+
+.find-out-the-price__box-text {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .find-out-the-price__box-text {
+    display: block;
+    position: absolute;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 3.3rem;
+    margin-left: -1.2rem;
+  }
+  .find-out-the-price__box-text span {
+    font-size: 1.6rem;
+  }
+  .find-out-the-price__box-text::after {
+    content: "";
+    position: absolute;
+    background-image: url("data:image/svg+xml,%3Csvg width='46' height='44' viewBox='0 0 46 44' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d)'%3E%3Cpath d='M41 35C38.0811 27.2286 26.7946 9.54857 5 1' stroke='black'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_d' x='0.818359' y='0.534668' width='44.6506' height='42.6413' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'/%3E%3CfeOffset dy='4'/%3E%3CfeGaussianBlur stdDeviation='2'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 4.6rem;
+    height: 3.4rem;
+    right: -2.3rem;
+    bottom: -3.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .find-out-the-price__box-text {
+    top: -5rem;
+    margin-top: 0;
+    right: -3.6rem;
+    font-size: 2.4rem;
+    line-height: 1.2;
+  }
+  .find-out-the-price__box-text span {
+    font-size: 1.4rem;
+  }
+  .find-out-the-price__box-text::after {
+    background-image: url("data:image/svg+xml,%3Csvg width='52' height='63' viewBox='0 0 52 63' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 62.5C10 42 17.5 22.5 51 0.5' stroke='black'/%3E%3C/svg%3E%0A");
+    width: 5rem;
+    height: 6.2rem;
+    right: auto;
+    left: 1.3rem;
+    bottom: -6.8rem;
+  }
+}
+
+.find-out-the-price__box-img {
+  width: 100%;
+  max-width: 18.1rem;
+  height: 18.8rem;
+}
+
+@media (min-width: 768px) {
+  .find-out-the-price__box-img {
+    max-width: 35.6rem;
+    height: 37rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .find-out-the-price__box-img {
+    max-width: 36.5rem;
+    height: 37.9rem;
+  }
+}
+
+.find-out-the-price__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=find-out-the-price.css.map */
