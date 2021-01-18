@@ -361,6 +361,90 @@ if (pricesWithoutIntermediariesSlider) {
     });
 }
 
+// Скрипт для блока examples-works
+const exampleWorksBtn = document.getElementById('exampleWorksBtn'),
+    exampleWorksItems = document.querySelectorAll('.examples-works__item'),
+    exampleWorksItemJs = document.querySelectorAll('.examples-works-item-js');
+
+if (exampleWorksBtn && exampleWorksItems) {
+
+    // Показ активной превью
+    exampleWorksItemJs.forEach(item => {
+        item.addEventListener('click', (event) => {
+            const target = event.target,
+                img = item.querySelector('.examples-works__img'),
+                examplesWorksPreviews = item.querySelectorAll('.examples-works__preview');
+                          
+            if (target.classList.contains('examples-works__preview')) {
+                img.src = target.src;
+                examplesWorksPreviews.forEach(preview => preview.classList.remove('active'));
+                target.classList.add('active');
+            }
+        });
+    });
+
+    // На планшетной версии убираються классы hidden у всех элементов с классом .tablet-block
+    if (window.matchMedia("(min-width: 768px)").matches) {
+        const tabletBlock = document.querySelectorAll('.tablet-block');
+        tabletBlock.forEach(item => item.classList.remove('hidden'));
+    }
+
+    // На десктопной версии убираються классы hidden у всех элементов
+    if (window.matchMedia("(min-width: 1200px)").matches) {
+        const hidden = document.querySelectorAll('.hidden');
+        hidden.forEach(item => item.classList.remove('hidden'));
+    }
+
+    // Показывает 3 скрытые карточки при каждои клике на кнопку Загрузить еще
+    exampleWorksBtn.addEventListener('click', function (event) {
+        event.preventDefault();
+        
+        const hidden = this.parentNode.querySelectorAll('.hidden');
+
+        for (let i = 0; i < 3; i++) {
+            if (!hidden[i]) return this.outerHTML = '';
+            hidden[i].classList.remove('hidden');
+        }
+
+        exampleWorksItems.forEach(item => {
+            if (item.classList.contains('hidden')) exampleWorksBtn.style.display = 'block';
+            else exampleWorksBtn.style.display = 'none';
+        });
+    });
+}
+
+// Показывает модальные окна при клике на кнопку открытия модального окна
+const modalBtns = document.querySelectorAll('*[data-modal-btn]');
+
+if (modalBtns) {
+    for (let i = 0; i < modalBtns.length; i++) {
+        modalBtns[i].addEventListener('click', function () {
+            let name = modalBtns[i].getAttribute('data-modal-btn');
+            let modal = document.querySelector("[data-modal-window='" + name + "']");
+            modal.style.display = 'block';
+            let close = modal.querySelector('.popup__btn-close');
+            close.addEventListener('click', function () {
+                modal.style.display = 'none';
+            });
+        });
+    }
+}
+
+function closePopup(popup, popupName) {
+    for (let i = 0; i < popup.length; i++) {
+        popup[i].addEventListener('click', function (event) {
+            const target = event.target;
+            if (target.classList.contains(`${popupName}`)) this.style.display = 'none';
+        });
+    }
+}
+
+exampleWorksPopups = document.querySelectorAll('.examples-works__popup');
+if (exampleWorksPopups) closePopup(exampleWorksPopups, 'popup__inner');
+
+
+
+
 
 
 
