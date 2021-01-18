@@ -96,14 +96,6 @@
         }
     }
 
-    /* .we-create-windows__wrapper */
-
-    &__wrapper {
-        @include _768 {}
-
-        @include _1200 {}
-    }
-
     /* .we-create-windows__title */
 
     &__title {
@@ -131,26 +123,15 @@
             margin-top: 1.5rem;
         }
 
-        @include _768 {}
-
         @include _1200 {
             margin-bottom: 3rem;
         }
-    }
-
-    /* .we-create-windows__box-icon */
-
-    &__box-icon {
-        @include _768 {}
-
-        @include _1200 {}
     }
 
     /* .we-create-windows__item */
 
     &__item {
         line-height: 1.2;
-        @include _768 {}
 
         @include _1200 {
             max-width: 9.5rem;
@@ -176,9 +157,5 @@
             width: 1em;
             font-size: 0.6em;
         }
-
-        @include _768 {}
-
-        @include _1200 {}
     }
 }
