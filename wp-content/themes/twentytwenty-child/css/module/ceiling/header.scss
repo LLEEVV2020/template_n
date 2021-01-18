@@ -359,6 +359,7 @@
         font-size: 1rem;
         text-transform: uppercase;
 
+
         @include _768 {}
 
         @include _1200 {
@@ -381,8 +382,9 @@
         border-radius: 1.4rem;
         position: relative;
         line-height: 1;
-        padding: 0 1rem; 
+        padding: 0 1rem;
         cursor: pointer;
+
 
         a {
             text-decoration: none;
@@ -396,15 +398,15 @@
                 position: absolute;
                 width: 0.4rem;
                 height: 0.4rem;
-                border-right:0.1rem solid #000;
-                border-bottom:0.1rem solid #000;
+                border-right: 0.1rem solid #000;
+                border-bottom: 0.1rem solid #000;
                 transform: rotate(45deg);
                 bottom: 0.2rem;
 
                 @include _1200 {
                     bottom: 0.5rem;
                 }
-            }  
+            }
         }
 
         &:hover {
@@ -429,6 +431,7 @@
 
         @include _768 {
             position: absolute;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
             top: 5.1rem;
 
             &::before {
@@ -482,7 +485,7 @@
         }
 
         &.active,
-        &:hover{
+        &:hover {
             border-bottom: 0.3rem solid #F26422;
         }
 
