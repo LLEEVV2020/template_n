@@ -2,217 +2,144 @@
 
 .types-stretch-ceilings {
     .title {
-        margin-bottom: 1.163em;
-
-        .orange {
-            display: block;
-        }
-
-        &--favorable-stretch {
-            max-width: 15em;
-            margin-left: auto;
-            margin-right: auto;
-            line-height: 1.2;
-        }
+        margin-bottom: 3.8rem;
+        line-height: 1.2;
     }
-    
+
     &__list {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        max-width: 21.6em;
+        max-width: 34.5rem;
         margin-right: auto;
         margin-left: auto;
     }
 
     &__item {
         position: relative;
-        display: inline-block;
-        max-width: 10.313em;
-        margin-bottom: 0.825em;
-        padding-bottom: 0.888em;
-        border-radius: 0.325em;
-        border: 0.063em solid #E6E6E6;
-        transition: 0.2s box-shadow ease,
-                    0.2s transform ease;
-        cursor: pointer;
+        min-width: 16.5rem;
+        margin-bottom: 2.5rem;
 
-        &:hover {
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-            border: none;
-            transform: scale(1.03);
-
-            .types-stretch-ceilings {
-                &__image-box:before,
-                &__link {
-                    opacity: 1;
-                }
-
-            }
+        &:before {
+            content: '';
+            position: absolute;
+            top: -1.1rem;
+            right: 0;
+            width: 15.4rem;
+            height: 20.4rem;
+            background-color: #F1F0F0;
+            z-index: -1;
         }
-    }
-
-    &__image-box:before,
-    &__link {
-        opacity: 0;
-        transition: 0.2s opacity ease;
-        position: absolute;
-    }
-    
-
-    &__image {
-        display: block;
-        width: 100%;
-        border-top-left-radius: 0.325em;
-        border-top-right-radius: 0.325em;
-
-        &-box {
-            &:before {
-                content: '';
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-color: rgba(255, 255, 255, 0.7);
-                border-top-left-radius: 0.325em;
-                border-top-right-radius: 0.325em;
-            }
-        }
-    }
-
-    &__link {
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        padding-top: 6rem;
-        text-decoration: none;
-        color: inherit;
-        font-size: 1.125em;
-        z-index: 1;
-        text-align: center;
     }
 
     &__title {
-        position: relative;
-        margin-top: 0.688em;
-        margin-bottom: 0.763em;
-        padding-bottom: 0.788em;
-        font-size: 1em;
-        text-align: center;
+        margin-bottom: 0.6rem;
+        text-transform: uppercase;
+    }
 
-        &:after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 4.875em;
-            height: 0.063em;
-            background-color: $darkGray;
-        }
+    &__image {
+        margin-bottom: 0.6rem;
+        max-width: 15.4rem;
     }
 
     &__price,
-    &__price:before,
-    &__price:after {
-        color: $orange;
+    &__link {
+        border: 0.1rem solid $orange;
     }
 
     &__price {
-        font-size: 1.5em; 
-        font-weight: 900;
+        margin-bottom: 2.3rem;
+        max-width: 9.5rem;
+        min-height: 2.4rem;
+        padding: 0.4rem 0.5rem;
+        font-size: 1.4rem;
+        border-radius: 0.3rem;
+        background-color: $white;
         text-align: center;
+
+        sup {
+            font-size: 0.8rem;
+        }
     }
 
-    &__price:before {
-        font-size: 0.5em;
+    &__link {
+        display: block;
+        padding: 0.6rem 0;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 0.6rem;
+        font-size: 1.4rem;
+        transition: background-color 0.3s, 
+                    color 0.3s;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $orange;
+            color: $white;
+        }
     }
 
     @media (min-width: 768px) {
         .title {
-            margin-bottom: 0.963em;
-
-            .orange {
-                display: inline;
-            }
-
-            &--favorable-stretch {
-                max-width: 22em;
-            }
+            margin-bottom: 4.6rem;
         }
 
         &__list {
-            display: block;
-            max-width: 44.1em;
+            max-width: 70.7rem;
+            justify-content: start;
+            column-gap: 1.5rem;
         }
 
         &__item {
-            max-width: 14.063em;
-            margin-bottom: 0.825em;
+            min-width: 22.5rem;
+            margin-bottom: 3.3rem;
 
-            &:first-child,
-            &:nth-child(2),
-            &:nth-child(4),
-            &:nth-child(5),
-            &:nth-child(7) {
-                margin-right: 0.663em;
+            &:before {
+                top: -1.5rem;
+                width: 21rem;
+                height: 28rem;
+            }
+        }
+
+        &__title {
+            margin-bottom: 1.1rem;
+            font-size: 1.8rem;
+        }
+
+        &__image {
+            margin-bottom: 1.1rem;
+            max-width: 21.1rem;
+        }
+
+        &__price,
+        &__link {
+            font-size: 2rem;
+        }
+
+        &__price {
+            margin-bottom: 3rem;
+            max-width: 13rem;
+            min-height: 3.4rem;
+
+            sup {
+                font-size: 1rem;
             }
         }
         
         &__link {
-            padding-top: 8rem;
-        }
-
-        &__title {
-            margin-top: 1.288em;
-            margin-bottom: 0.963em;
-            padding-bottom: 1.188em;
-            font-size: 1.125em;
-
-            &:after {
-                width: 3.675em;
-            }
-        }
-
-        &__price {
-            font-size: 2em;
+            padding: 0.7rem 0;
         }
     }
 
     @media (min-width: 1200px) {
-        .title {
-            margin-bottom: 0.763em;
-
-            &--favorable-stretch {
-                max-width: 27em;
-            }
-        }
-
         &__list {
-            max-width: 71.4em;
+            max-width: 96rem;
+            column-gap: 2rem;
         }
 
         &__item {
-            margin-bottom: 1.225em;
-
-            &:first-child,
-            &:nth-child(2),
-            &:nth-child(3),
-            &:nth-child(4),
-            &:nth-child(5),
-            &:nth-child(6),
-            &:nth-child(7) {
-                margin-right: 0.963em;
-            }
-
-            &:nth-child(4) {
-                margin-right: 0;
-            }
-        }
-
-        &__title {
-            margin-top: 1.388em;
+            margin-bottom: 4.8rem;
         }
     }
 }
