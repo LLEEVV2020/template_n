@@ -72,7 +72,7 @@
         }
         
         &-title {
-            margin-bottom: 1.575em;
+            margin-bottom: 4em;
             letter-spacing: 0.08em;
         }
 
@@ -119,12 +119,17 @@
 
     &__number {
         display: block;
-        margin-bottom: 0.313em;
+        margin-bottom: 0.438em;
         font-size: 1.688em;
     }
 
     &__text {
         max-width: 8em;
+
+        &-info {
+            margin-bottom: 1.438em;
+            max-width: 15em;
+        }
     }
 
     &__inner {
@@ -176,8 +181,8 @@
     }
 
     &__free {
-        max-width: 10em;
-        margin-bottom: 1.8em;
+        max-width: 14em;
+        margin-bottom: 0.4em;
         font-size: 1.375em;
         line-height: 1.27;
     }
@@ -215,7 +220,7 @@
             }
 
             &-title {
-                margin-bottom: 1.675em;
+                margin-bottom: 5em;
             }
 
             &-we-ourselves {
@@ -234,6 +239,10 @@
 
         &__text {
             line-height: 1.22;
+
+            &-info {
+                margin-bottom: 3.963em;
+            }
         }
 
         &__list {
@@ -290,7 +299,7 @@
         }
 
         &__free {
-            margin-bottom: 5.1em;
+            margin-bottom: 0.513em;
             line-height: 1.2;
         }
 
@@ -331,7 +340,7 @@
             }
 
             &-title {
-                margin-bottom: 1.275em;
+                margin-bottom: 3em;
             }
 
             &-we-ourselves {
@@ -390,7 +399,13 @@
         }
 
         &__free {
-            margin-bottom: 3.8em;
+            margin-bottom: 0.2em;
+        }
+
+        &__text {
+            &-info {
+                margin-bottom: 4.963em;
+            }
         }
 
         &__button {
