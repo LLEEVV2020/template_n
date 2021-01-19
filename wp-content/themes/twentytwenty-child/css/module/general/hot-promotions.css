@@ -25,6 +25,10 @@
   }
 }
 
+.hot-promotions__slider {
+  margin-bottom: 2.5rem;
+}
+
 .hot-promotions__slider .owl-stage-outer {
   -webkit-filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.25));
@@ -114,25 +118,25 @@
 }
 
 .hot-promotions__slider .pagination-box {
-  bottom: -2.5em;
+  bottom: -2.35em;
 }
 
 @media (min-width: 768px) {
   .hot-promotions__slider .pagination-box {
-    bottom: -3em;
+    bottom: -2.75em;
   }
 }
 
 @media (min-width: 1200px) {
   .hot-promotions__slider .pagination-box {
-    bottom: -2.8em;
+    bottom: -2.5em;
   }
 }
 
 @media (min-width: 768px) {
   .hot-promotions__slider {
     max-width: 39em;
-    margin: 0 auto;
+    margin: 0 auto 2.5rem;
   }
 }
 
@@ -140,6 +144,7 @@
   .hot-promotions__slider {
     max-width: 100%;
     margin: 0;
+    margin-bottom: 2.5rem;
   }
 }
 

@@ -25,6 +25,8 @@
     /* .hot-promotions__slider */
 
     &__slider {
+        margin-bottom: 2.5rem;
+
         & .owl-stage-outer {
             filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.25));
         }
@@ -93,25 +95,26 @@
         }
 
         & .pagination-box {
-            bottom: -2.5em;
+            bottom: -2.35em;
 
             @include _768 {
-                bottom: -3em;
+                bottom: -2.75em;
             }
 
             @include _1200 {
-                bottom: -2.8em;
+                bottom: -2.5em;
             }
         }
 
         @include _768 {
             max-width: 39em;
-            margin: 0 auto;
+            margin: 0 auto 2.5rem;
         }
 
         @include _1200 {
             max-width: 100%;
             margin: 0;
+            margin-bottom: 2.5rem;
         }
     }
 
