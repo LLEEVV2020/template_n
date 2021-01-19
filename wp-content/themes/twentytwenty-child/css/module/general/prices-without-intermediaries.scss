@@ -232,6 +232,12 @@
             }
         }
 
+        &__prices {
+            &.helper {
+                position: absolute;
+            }
+        }
+
         &__pagination {
             display: none;
         }
