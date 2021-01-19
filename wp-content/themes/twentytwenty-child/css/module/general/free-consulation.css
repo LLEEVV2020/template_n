@@ -2,15 +2,29 @@
   background-image: url("/wp-content/themes/twentytwenty-child/img/consultation-bg-small.webp");
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+
+.free-consultation::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.77);
 }
 
 .free-consultation__box {
+  position: relative;
   max-width: 34.5rem;
   margin-right: auto;
   margin-left: auto;
   padding: 3rem 1.2rem;
   background-color: #ffffff;
   border-radius: 0.6rem;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 }
 
 .free-consultation .title, .free-consultation__text, .free-consultation__phone-link, .free-consultation__about-name, .free-consultation__about-position {
@@ -47,6 +61,7 @@
   text-decoration: none;
   background-color: #E1EFD0;
   color: #243542;
+  border-radius: 0.3rem;
 }
 
 .free-consultation__whatsapp-link:before {
