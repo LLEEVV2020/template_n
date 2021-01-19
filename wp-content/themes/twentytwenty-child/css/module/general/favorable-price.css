@@ -242,4 +242,10 @@
     font-size: 1.325em;
   }
 }
+
+@media (min-width: 1400px) {
+  .favorable-price {
+    padding-top: 7.5rem;
+  }
+}
 /*# sourceMappingURL=favorable-price.css.map */
