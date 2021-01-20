@@ -30,7 +30,7 @@
   display: flex;
 }
 
-.repair-before-and-after__img--2, .repair-before-and-after__img--4, .repair-before-and-after__img--6, .repair-before-and-after__slider, .repair-before-and-after__item.before, .repair-before-and-after__item.after, .repair-before-and-after__drag, .repair-before-and-after__drag:before, .repair-before-and-after__drag:after, .repair-before-and-after__drag-line, .repair-before-and-after__drag-line:before, .repair-before-and-after__drag-line:after {
+.repair-before-and-after__img--2, .repair-before-and-after__img--4, .repair-before-and-after__img--6, .repair-before-and-after__img--8, .repair-before-and-after__img--10, .repair-before-and-after__img--12, .repair-before-and-after__slider, .repair-before-and-after__item.before, .repair-before-and-after__item.after, .repair-before-and-after__drag, .repair-before-and-after__drag:before, .repair-before-and-after__drag:after, .repair-before-and-after__drag-line, .repair-before-and-after__drag-line:before, .repair-before-and-after__drag-line:after {
   position: absolute;
 }
 
@@ -65,6 +65,34 @@
 
 .repair-before-and-after__img--6 {
   background-image: url("/wp-content/themes/twentytwenty-child/img/repair/repair-before-and-after-6.webp");
+}
+
+.repair-before-and-after__img--7 {
+  background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/repair-before-and-after-7.webp");
+}
+
+.repair-before-and-after__img--8, .repair-before-and-after__img--10, .repair-before-and-after__img--12 {
+  width: 50%;
+}
+
+.repair-before-and-after__img--8 {
+  background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/repair-before-and-after-8.webp");
+}
+
+.repair-before-and-after__img--9 {
+  background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/repair-before-and-after-9.webp");
+}
+
+.repair-before-and-after__img--10 {
+  background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/repair-before-and-after-10.webp");
+}
+
+.repair-before-and-after__img--11 {
+  background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/repair-before-and-after-11.webp");
+}
+
+.repair-before-and-after__img--12 {
+  background-image: url("/wp-content/themes/twentytwenty-child/img/ceiling/repair-before-and-after-12.webp");
 }
 
 .repair-before-and-after__slider {
@@ -160,6 +188,10 @@
 
 .repair-before-and-after__drag-line:after {
   bottom: 0;
+}
+
+.repair-before-and-after__btn {
+  max-width: 30.6rem;
 }
 
 .repair-before-and-after__range {

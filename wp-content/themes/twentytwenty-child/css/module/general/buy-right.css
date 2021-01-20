@@ -82,11 +82,8 @@
   .buy-right__text .block {
     display: block;
   }
-  .buy-right__video-box {
-    text-align: center;
-  }
   .buy-right__video-box video {
-    width: 51.9rem !important;
+    width: 60.4rem !important;
   }
   .buy-right__video-title {
     margin-bottom: 1rem;
@@ -104,7 +101,6 @@
   }
   .buy-right--ceilings .buy-right__list {
     margin-bottom: 3.1rem;
-    max-width: 94rem;
   }
   .buy-right--ceilings .buy-right__image {
     margin-bottom: 0.613em;
@@ -117,10 +113,19 @@
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .buy-right--ceilings .buy-right__video-content {
     max-width: 17.813em;
     margin-right: 6rem;
+  }
+  .buy-right--ceilings .buy-right__video-text {
+    margin-bottom: 0;
   }
 }
 /*# sourceMappingURL=buy-right.css.map */

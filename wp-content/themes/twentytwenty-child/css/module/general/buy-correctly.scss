@@ -51,6 +51,10 @@
             p {
                 line-height: 1.2;
             }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
     }
 

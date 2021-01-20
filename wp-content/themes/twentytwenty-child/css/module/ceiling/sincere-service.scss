@@ -79,6 +79,7 @@
     &__header {
         color: rgb(15, 14, 14);
         margin-bottom: 2.6em;
+        color: #fff;
 
         @include _768 {
             background: url(/wp-content/themes/twentytwenty-child/img/ceiling/sincere-service-bg-m.webp) no-repeat;

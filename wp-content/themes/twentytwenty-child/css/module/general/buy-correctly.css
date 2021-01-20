@@ -37,6 +37,10 @@
   line-height: 1.2;
 }
 
+.buy-correctly-list__item:last-child {
+  margin-bottom: 0;
+}
+
 .buy-correctly .button {
   min-height: 4rem;
   max-width: 34.5rem;

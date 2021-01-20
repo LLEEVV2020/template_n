@@ -81,6 +81,11 @@
     top: 2.7em;
     left: 5.3em;
   }
+  .sms-discount .logo-factory-windows__icon-logo .icon {
+    width: 1em;
+    height: 0.4em;
+    font-size: 6em;
+  }
   .sms-discount__right {
     -ms-flex-preferred-size: 60%;
         flex-basis: 60%;
@@ -164,6 +169,9 @@
     top: 1.8em;
     left: 5.3em;
     font-size: 2rem;
+  }
+  .sms-discount .logo-factory-windows__icon-logo .icon {
+    font-size: 7.8em;
   }
   .sms-discount .logo-factory-windows-svg {
     width: 16rem;

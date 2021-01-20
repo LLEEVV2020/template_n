@@ -41,6 +41,9 @@
     &__img--2,
     &__img--4,
     &__img--6,
+    &__img--8,
+    &__img--10,
+    &__img--12,
     &__slider,
     &__item.before,
     &__item.after,
@@ -85,6 +88,36 @@
 
         &--6 {
             background-image: url('/wp-content/themes/twentytwenty-child/img/repair/repair-before-and-after-6.webp');
+        }
+
+        &--7 {
+            background-image: url('/wp-content/themes/twentytwenty-child/img/ceiling/repair-before-and-after-7.webp');
+        }
+
+        &--8,
+        &--10,
+        &--12 {
+            width: 50%;
+        }
+
+        &--8 {
+            background-image: url('/wp-content/themes/twentytwenty-child/img/ceiling/repair-before-and-after-8.webp');
+        }
+
+        &--9 {
+            background-image: url('/wp-content/themes/twentytwenty-child/img/ceiling/repair-before-and-after-9.webp');
+        }
+
+        &--10 {
+            background-image: url('/wp-content/themes/twentytwenty-child/img/ceiling/repair-before-and-after-10.webp');
+        }
+
+        &--11 {
+            background-image: url('/wp-content/themes/twentytwenty-child/img/ceiling/repair-before-and-after-11.webp');
+        }
+
+        &--12 {
+            background-image: url('/wp-content/themes/twentytwenty-child/img/ceiling/repair-before-and-after-12.webp');
         }
     }
 
@@ -184,6 +217,10 @@
                 bottom: 0;
             }
         }
+
+    }
+    &__btn {
+        max-width: 30.6rem;
     }
 
     &__range {
@@ -274,4 +311,6 @@
             }
         }
     }
+
+
 }

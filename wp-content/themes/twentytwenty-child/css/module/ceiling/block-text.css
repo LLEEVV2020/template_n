@@ -166,12 +166,6 @@
   }
 }
 
-@media (min-width: 1200px) {
-  .block-text__upper-text {
-    max-width: 73.6rem;
-  }
-}
-
 .block-text__link {
   text-decoration: none;
   display: block;
