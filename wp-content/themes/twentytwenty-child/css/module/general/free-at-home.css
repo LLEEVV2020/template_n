@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .free-at-home {
   position: relative;
-  background-color: #FFDE30;
+  background-color: #ffde30;
   background-image: url("/wp-content/themes/twentytwenty-child/img/b_market_filtr_bg.png");
 }
 
@@ -11,6 +11,7 @@
 
 .free-at-home__title {
   color: #F26422;
+  line-height: 1.2;
 }
 
 .free-at-home__subtitle, .free-at-home__link {
@@ -28,13 +29,14 @@
 }
 
 .free-at-home__text {
-  margin-bottom: 1.438em;
+  margin-bottom: 1.138em;
   font-size: 1.125em;
-  font-weight: 900;
+  font-weight: 400;
 }
 
 .free-at-home .form-contacts {
-  margin-bottom: 0.813em;
+  margin-bottom: 1.513em;
+  max-width: 28.5rem;
 }
 
 .free-at-home .form-contacts__box:before {
@@ -50,12 +52,12 @@
   border-top: 0;
   border-left: 0;
   border-right: 0;
-  border-bottom: 0.188em solid #C9C9C9;
+  border-bottom: 0.188em solid #c9c9c9;
 }
 
 .free-at-home__info {
-  font-size: 0.750em;
-  font-weight: 700;
+  font-size: 0.75em;
+  line-height: 1.2;
 }
 
 @media (min-width: 768px) {
@@ -85,6 +87,8 @@
   .free-at-home__image-number {
     width: 11.063em;
     height: 10.938em;
+    margin-left: 2.3em;
+    margin-right: 0.9em;
     background: url("/wp-content/themes/twentytwenty-child/img/sprite.png") no-repeat -40.188em 0;
   }
   .free-at-home__image-worker {
@@ -97,25 +101,28 @@
   }
   .free-at-home__title {
     margin-bottom: 0.963em;
+    line-height: 1;
   }
   .free-at-home__text {
     max-width: 21em;
-    font-size: 1.250em;
+    font-size: 1.8rem;
     font-weight: 400;
+    margin-bottom: 1.538em;
   }
   .free-at-home .form-contacts {
-    max-width: 47rem;
+    max-width: 47.7rem;
     margin-bottom: 1.563em;
+    margin-right: 0;
   }
   .free-at-home .form-contacts__box {
     max-width: none;
     min-width: 14.13em;
   }
+  .free-at-home .form-contacts__input {
+    font-size: 1em;
+  }
   .free-at-home .form-contacts__button {
     max-width: 13.3em;
-  }
-  .free-at-home__info {
-    max-width: 31.2em;
   }
 }
 
@@ -137,6 +144,7 @@
     position: absolute;
     top: 4em;
     right: 0em;
+    margin: 0;
   }
   .free-at-home__image-worker,
   .free-at-home .form-contacts {
@@ -146,6 +154,16 @@
     -webkit-transform: translateY(-2.5em);
             transform: translateY(-2.5em);
     margin-bottom: -2.5em;
+    margin-left: -0.8em;
+    margin-right: 0.4em;
+  }
+  .free-at-home__text {
+    font-weight: 700;
+  }
+  .free-at-home .form-contacts {
+    max-width: 30.5rem;
+    margin-right: auto;
+    margin-left: auto;
   }
   .free-at-home .form-contacts__box {
     margin-bottom: 0.7em;
@@ -158,32 +176,38 @@
     max-width: none;
   }
   .free-at-home .form-contacts__button:before {
-    content: 'заказать ';
+    content: "заказать ";
+    padding-right: 0.3em;
   }
 }
 
 @media (min-width: 1200px) {
+  .free-at-home__right {
+    padding-left: 1.3em;
+  }
   .free-at-home__box {
     max-width: 112rem;
   }
   .free-at-home__text {
-    margin-bottom: 0.738em;
-    font-size: 1.500em;
+    margin-bottom: 1.1em;
+    font-size: 1.8rem;
     font-weight: 700;
   }
   .free-at-home__title {
-    margin-bottom: 0;
+    margin-bottom: 0.5em;
   }
   .free-at-home .form-contacts {
-    max-width: 44.5rem;
-    margin-bottom: 0.938em;
+    margin: 0 auto;
+    margin-bottom: 1.563em;
   }
   .free-at-home .form-contacts__box:after {
     -webkit-transform: translateY(-54%);
             transform: translateY(-54%);
   }
+  .free-at-home .form-contacts__input {
+    font-size: 1.7rem;
+  }
   .free-at-home__info {
-    max-width: 30.2em;
     font-size: 0.875em;
   }
 }

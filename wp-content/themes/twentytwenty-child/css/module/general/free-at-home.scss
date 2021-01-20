@@ -1,4 +1,4 @@
-@import "../../../base/all/var";
+@import "../../base/all/var";
 
 .free-at-home {
     position: relative;
@@ -33,6 +33,7 @@
     &__text {
         margin-bottom: 1.138em;
         font-size: 1.125em;
+        font-weight: 400;
     }
 
     .form-contacts {
@@ -60,7 +61,6 @@
 
     &__info {
         font-size: 0.75em;
-        font-weight: 700;
         line-height: 1.2;
     }
 
@@ -127,14 +127,13 @@
                 min-width: 14.13em;
             }
 
+            &__input {
+                font-size: 1em;
+            }
+
             &__button {
                 max-width: 13.3em;
             }
-        }
-
-        &__info {
-            max-width: 31.2em;
-            font-weight: 400;
         }
     }
 
@@ -173,7 +172,15 @@
             margin-right: 0.4em;
         }
 
+        &__text {
+            font-weight: 700;
+        }
+
         .form-contacts {
+            max-width: 30.5rem;
+            margin-right: auto;
+            margin-left: auto;
+
             &__box {
                 margin-bottom: 0.7em;
 
@@ -215,9 +222,8 @@
         }
 
         .form-contacts {
-            max-width: 30.5rem;
             margin: 0 auto;
-            margin-bottom: 0.938em;
+            margin-bottom: 1.563em;
 
             &__box {
                 &:after {
@@ -231,7 +237,6 @@
         }
 
         &__info {
-            max-width: 30.2em;
             font-size: 0.875em;
         }
     }
