@@ -23,6 +23,10 @@
   margin-bottom: 2.5rem;
 }
 
+.types-stretch-ceilings__item:nth-child(7), .types-stretch-ceilings__item:nth-child(8) {
+  margin-bottom: 0;
+}
+
 .types-stretch-ceilings__item:before {
   content: '';
   position: absolute;
@@ -134,6 +138,9 @@
   }
   .types-stretch-ceilings__item {
     margin-bottom: 4.8rem;
+  }
+  .types-stretch-ceilings__item:nth-child(5), .types-stretch-ceilings__item:nth-child(6), .types-stretch-ceilings__item:nth-child(7), .types-stretch-ceilings__item:nth-child(8) {
+    margin-bottom: 0;
   }
 }
 /*# sourceMappingURL=types-stretch-ceilings.css.map */
