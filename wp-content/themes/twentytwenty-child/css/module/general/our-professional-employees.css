@@ -25,8 +25,8 @@
 
 .our-professional-employees__left {
   padding-top: 2.813em;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
+  padding-left: 0.9em;
+  padding-right: 0.9em;
   margin-bottom: 3em;
   position: relative;
 }
@@ -214,6 +214,8 @@
   .our-professional-employees__left {
     margin-bottom: 0;
     min-width: 49%;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
   }
   .our-professional-employees__right {
     min-width: calc(51% + ((100vw - 100%) / 2));
@@ -279,6 +281,9 @@
             box-shadow: 0 0 1.438em 62.375em rgba(255, 255, 255, 0.8);
   }
   .our-professional-employees__left {
+    min-width: 56.6%;
+    padding-left: 0;
+    padding-right: 0;
     padding-top: 3.750em;
     padding-bottom: 3.750em;
   }
@@ -294,13 +299,12 @@
     margin-bottom: 1.85em;
   }
   .our-professional-employees .text:last-of-type {
-    max-width: 30em;
+    max-width: 31em;
   }
   .our-professional-employees__speciality {
     font-size: 1.4rem;
   }
   .our-professional-employees__left {
-    min-width: 56.4%;
     position: relative;
   }
   .our-professional-employees__right {

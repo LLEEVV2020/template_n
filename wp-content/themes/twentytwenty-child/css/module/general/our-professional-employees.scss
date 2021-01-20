@@ -25,8 +25,8 @@
 
     &__left {
         padding-top: 2.813em;
-        padding-left: 0.5em;
-        padding-right: 0.5em;
+        padding-left: 0.9em;
+        padding-right: 0.9em;
         margin-bottom: 3em;
         position: relative;
     }
@@ -212,6 +212,8 @@
         &__left {
             margin-bottom: 0;
             min-width: 49%;
+            padding-left: 0.5em;
+            padding-right: 0.5em;
         }
 
         &__right {
@@ -297,6 +299,9 @@
         }
 
         &__left {
+            min-width: 56.6%;
+            padding-left: 0;
+            padding-right: 0;
             padding-top: 3.750em;
             padding-bottom: 3.750em;
         }
@@ -317,7 +322,7 @@
             }
 
             &:last-of-type {
-                max-width: 30em;
+                max-width: 31em;
             }
         }
 
@@ -326,7 +331,6 @@
         }
 
         &__left {
-            min-width: 56.4%;
             position: relative;
         }
 
