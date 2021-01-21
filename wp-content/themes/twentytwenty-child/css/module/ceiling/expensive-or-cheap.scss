@@ -8,6 +8,12 @@
 
 .expensive-or-cheap {
 
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
     /* .expensive-or-cheap__title */
 
     &__title {
@@ -108,6 +114,7 @@
         color: #fff;
         letter-spacing: 0.03em;
         line-height: 1.4;
+        text-align: center;
     }
 
     /* .expensive-or-cheap__first-logo */

@@ -112,6 +112,7 @@
     margin-left: 0;
   }
   .buy-right--ceilings .buy-right__video-box {
+    text-align: left;
     margin-left: 0;
     -webkit-box-align: end;
         -ms-flex-align: end;
