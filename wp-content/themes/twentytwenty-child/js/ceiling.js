@@ -412,3 +412,30 @@ $('.catalog__item-slider-five').owlCarousel({
     }
 });
 
+  // Скрипт для слайдера блока expensive-or-cheap__slider
+  function checkWidth() {
+    var windowWidth = $('body').innerWidth(),
+      elem = $(".expensive-or-cheap__slider");
+    if (windowWidth < 768) {
+
+      elem.addClass('owl-carousel');
+
+      $('.expensive-or-cheap__slider').owlCarousel({
+        items: 1,
+        dots: true,
+        dotsClass: ['pagination-box'],
+        dotClass: ['pagination'],
+        margin: 55,
+      });
+    }
+    else {
+      elem.trigger('destroy.owl.carousel').removeClass('owl-carousel owl-loaded');
+    }
+  }
+
+  checkWidth(); // проверит при загрузке страницы
+
+  $(window).resize(function () {
+    checkWidth(); // проверит при изменении размера окна клиента
+  });
+
