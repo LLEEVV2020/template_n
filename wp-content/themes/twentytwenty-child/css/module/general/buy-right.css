@@ -82,6 +82,9 @@
   .buy-right__text .block {
     display: block;
   }
+  .buy-right__video-box {
+    text-align: center;
+  }
   .buy-right__video-box video {
     width: 60.4rem !important;
   }
