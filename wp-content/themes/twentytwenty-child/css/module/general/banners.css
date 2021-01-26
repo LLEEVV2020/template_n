@@ -1179,7 +1179,9 @@
 }
 
 .banner-main--repair .banner-main__about {
-  margin-bottom: 0.6rem;
+  margin-bottom: 1.3rem;
+  font-family: "GothamSSm", sans-serif;
+  font-size: 1.3rem;
   color: #969693;
 }
 
@@ -1233,6 +1235,47 @@
 }
 
 .banner-main--repair-apartments .form-contacts {
+  max-width: 35rem;
+}
+
+.banner-main--repair-offices .banner-main__images {
+  background-image: url("/wp-content/themes/twentytwenty-child/img/repair/banner-img-3-small.webp");
+}
+
+.banner-main--repair-offices .banner-main__content {
+  padding: 2.5rem 1rem 0;
+}
+
+.banner-main--repair-offices .banner-main__advantage {
+  margin-bottom: 1.5rem;
+}
+
+.banner-main--repair-offices .banner-main__advantage:before {
+  width: 3rem;
+  height: 3rem;
+}
+
+.banner-main--repair-offices .banner-main__advantage p {
+  letter-spacing: 0;
+}
+
+.banner-main--repair-offices .banner-main__advantage--car-icon:before {
+  background-size: 2rem;
+}
+
+.banner-main--repair-offices .banner-main__advantage--worker-icon:before {
+  background-size: 1.6rem;
+}
+
+.banner-main--repair-offices .banner-main__advantage--time-icon:before {
+  background-size: 2rem;
+}
+
+.banner-main--repair-offices .banner-main__texts {
+  margin-bottom: 0.9rem;
+}
+
+.banner-main--repair-offices .form-contacts {
   max-width: 35rem;
 }
 
@@ -2177,7 +2220,7 @@
     max-width: 27.3rem;
   }
   .banner-main--repair .banner-main__about {
-    font-family: "GothamSSm", sans-serif;
+    font-size: 0.9rem;
   }
   .banner-main--repair .banner-main__advantage {
     margin-bottom: 1rem;
@@ -2198,6 +2241,24 @@
   }
   .banner-main--repair .banner-main__advantage--time-icon:before {
     background-size: 1.3rem;
+  }
+  .banner-main--repair .form-contacts {
+    max-width: 26rem;
+    margin: 0;
+  }
+  .banner-main--repair .form-contacts__box {
+    min-width: 12.4rem;
+  }
+  .banner-main--repair .form-contacts__input {
+    font-size: 1rem;
+    height: 100%;
+    border-bottom-width: 0.1rem;
+  }
+  .banner-main--repair .form-contacts__button {
+    max-width: 12.4rem;
+    min-height: 2rem;
+    font-size: 0.9rem;
+    margin: 0;
   }
   .banner-main--repair-apartments .banner-main__images {
     background-image: url("/wp-content/themes/twentytwenty-child/img/repair/banner-img-2-middle.webp");
@@ -2225,6 +2286,47 @@
   }
   .banner-main--repair-apartments .form-contacts {
     display: none;
+  }
+  .banner-main--repair-offices .banner-main__images {
+    background-image: url("/wp-content/themes/twentytwenty-child/img/repair/banner-img-3-middle.webp");
+  }
+  .banner-main--repair-offices .banner-main__title {
+    margin-bottom: 2.1rem;
+    letter-spacing: 0.03em;
+  }
+  .banner-main--repair-offices .banner-main__texts {
+    margin-bottom: 1.2rem;
+    max-width: 25.3rem;
+  }
+  .banner-main--repair-offices .banner-main__text {
+    max-width: 25rem;
+  }
+  .banner-main--repair-offices .banner-main__advantages {
+    margin-bottom: 2.2rem;
+    max-width: 28.8rem;
+  }
+  .banner-main--repair-offices .banner-main__advantage {
+    margin-bottom: 0.8rem;
+  }
+  .banner-main--repair-offices .banner-main__advantage:before {
+    margin-right: 1.2rem;
+  }
+  .banner-main--repair-offices .banner-main__prices-lower {
+    right: -40rem;
+    margin: 0;
+    bottom: -1rem;
+  }
+  .banner-main--repair-offices .form-contacts {
+    max-width: 25.4rem;
+  }
+  .banner-main--repair-offices .form-contacts__box {
+    height: 2rem;
+  }
+  .banner-main--repair-offices .form-contacts__input {
+    min-height: 2rem;
+  }
+  .banner-main--repair-offices .form-contacts__button {
+    line-height: 1.2;
   }
 }
 
@@ -3189,6 +3291,9 @@
     margin-bottom: 4.1rem;
     max-width: 52rem;
   }
+  .banner-main--repair .banner-main__about {
+    font-size: 1.8rem;
+  }
   .banner-main--repair .banner-main__advantage {
     margin-bottom: 2.3rem;
   }
@@ -3213,9 +3318,6 @@
   .banner-main--repair .banner-main__advantage--time-icon:before {
     background-size: 2.6rem;
   }
-  .banner-main--repair .banner-main__about {
-    font-size: 1.8rem;
-  }
   .banner-main--repair .form-contacts {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3228,6 +3330,10 @@
   }
   .banner-main--repair .form-contacts__box, .banner-main--repair .form-contacts__button {
     min-width: 25.6rem;
+  }
+  .banner-main--repair .form-contacts__input {
+    min-height: 3.5rem;
+    font-size: 1.4rem;
   }
   .banner-main--repair .form-contacts__button {
     font-size: 1.4rem;
@@ -3263,6 +3369,31 @@
   .banner-main--repair-apartments .banner-main__prices-lower {
     bottom: -3rem;
     right: -63rem;
+  }
+  .banner-main--repair-offices .banner-main__images {
+    background-image: url("/wp-content/themes/twentytwenty-child/img/repair/banner-img-3-big.webp");
+  }
+  .banner-main--repair-offices .banner-main__content {
+    padding: 11.4rem 1rem 0;
+  }
+  .banner-main--repair-offices .banner-main__title {
+    margin-bottom: 4.4rem;
+  }
+  .banner-main--repair-offices .banner-main__advantage:before {
+    margin-right: 2.5rem;
+  }
+  .banner-main--repair-offices .banner-main__texts {
+    max-width: 56rem;
+  }
+  .banner-main--repair-offices .banner-main__prices-lower {
+    right: -62rem;
+    bottom: -8rem;
+  }
+  .banner-main--repair-offices .form-contacts {
+    max-width: 52.3rem;
+  }
+  .banner-main--repair-offices .form-contacts__input {
+    border-bottom-width: 0.3rem;
   }
 }
 

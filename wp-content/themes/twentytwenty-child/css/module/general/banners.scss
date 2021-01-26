@@ -1283,7 +1283,9 @@
             }
 
             &__about {
-                margin-bottom: 0.6rem;
+                margin-bottom: 1.3rem;
+                font-family: "GothamSSm", sans-serif;
+                font-size: 1.3rem;
                 color: #969693;
             }           
         }
@@ -1338,6 +1340,51 @@
                         letter-spacing: 0;
                     }
                 }                
+            }
+
+            .form-contacts {
+                max-width: 35rem;
+            }
+        }
+
+        &-offices {
+            .banner-main {
+                &__images {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/repair/banner-img-3-small.webp");
+                }
+
+                &__content {
+                    padding: 2.5rem 1rem 0;
+                }
+
+                &__advantage {
+                    margin-bottom: 1.5rem;
+
+                    &:before {
+                        width: 3rem;
+                        height: 3rem;
+                    }
+
+                    p {
+                        letter-spacing: 0;
+                    }
+
+                    &--car-icon:before {
+                        background-size: 2rem;
+                    }
+
+                    &--worker-icon:before {
+                        background-size: 1.6rem;
+                    }
+
+                    &--time-icon:before {
+                        background-size: 2rem;
+                    }
+                }
+
+                &__texts {
+                    margin-bottom: 0.9rem;
+                }
             }
 
             .form-contacts {
@@ -2653,7 +2700,7 @@
                 }
 
                 &__about {
-                    font-family: "GothamSSm", sans-serif;
+                    font-size: 0.9rem;
                 }
 
                 &__advantage {
@@ -2681,6 +2728,28 @@
                         background-size: 1.3rem;
                     }
                 }                
+            }
+
+            .form-contacts {
+                max-width: 26rem;
+                margin: 0;
+
+                &__box {
+                    min-width: 12.4rem;
+                }
+
+                &__input {
+                    font-size: 1rem;
+                    height: 100%;
+                    border-bottom-width: 0.1rem;
+                }
+
+                &__button {
+                    max-width: 12.4rem;
+                    min-height: 2rem;
+                    font-size: 0.9rem;
+                    margin: 0;
+                }
             }
 
             &-apartments {
@@ -2721,6 +2790,63 @@
 
                 .form-contacts {
                     display: none;
+                }
+            }
+
+            &-offices {
+                .banner-main {
+                    &__images {
+                        background-image: url("/wp-content/themes/twentytwenty-child/img/repair/banner-img-3-middle.webp");
+                    }
+
+                    &__title {
+                        margin-bottom: 2.1rem;
+                        letter-spacing: 0.03em;
+                    }
+
+                    &__texts {
+                        margin-bottom: 1.2rem;
+                        max-width: 25.3rem;
+                    }
+
+                    &__text {
+                        max-width: 25rem;
+                    }
+
+                    &__advantages {
+                        margin-bottom: 2.2rem;
+                        max-width: 28.8rem;
+                    }
+
+                    &__advantage {
+                        margin-bottom: 0.8rem;
+
+                        &:before {
+                            margin-right: 1.2rem;
+                        }
+                    }
+
+                    &__prices-lower {
+                        right: -40rem;
+                        margin: 0;
+                        bottom: -1rem;
+                    }                    
+                }
+
+                .form-contacts {
+                    max-width: 25.4rem;
+
+                    &__box {
+                        height: 2rem;
+                    }
+
+                    &__input {
+                        min-height: 2rem;
+                    }
+
+                    &__button {
+                        line-height: 1.2;
+                    }
                 }
             }
         }
@@ -4044,6 +4170,10 @@
                     max-width: 52rem;
                 }
 
+                &__about {
+                    font-size: 1.8rem;
+                }
+
                 &__advantage {
                     margin-bottom: 2.3rem;
 
@@ -4073,11 +4203,7 @@
                     &--time-icon:before {
                         background-size: 2.6rem;
                     }
-                }
-
-                &__about {
-                    font-size: 1.8rem;
-                }
+                }                
             }
 
             .form-contacts {
@@ -4092,6 +4218,11 @@
                 &__box,
                 &__button {
                     min-width: 25.6rem;
+                }
+
+                &__input {
+                    min-height: 3.5rem;
+                    font-size: 1.4rem;
                 }
 
                 &__button {
@@ -4143,6 +4274,45 @@
                         right: -63rem;
                     }
                 }                
+            }
+
+            &-offices {
+                .banner-main {
+                    &__images {
+                        background-image: url("/wp-content/themes/twentytwenty-child/img/repair/banner-img-3-big.webp");
+                    }
+
+                    &__content {
+                        padding: 11.4rem 1rem 0;
+                    }
+
+                    &__title {
+                        margin-bottom: 4.4rem;
+                    }
+
+                    &__advantage {
+                        &:before {
+                            margin-right: 2.5rem;
+                        }
+                    }
+
+                    &__texts {
+                        max-width: 56rem;
+                    }
+
+                    &__prices-lower {
+                        right: -62rem;
+                        bottom: -8rem;
+                    }
+                }
+
+                .form-contacts {
+                    max-width: 52.3rem;
+
+                    &__input {
+                        border-bottom-width: 0.3rem;
+                    }
+                }
             }
         }
     }
