@@ -328,4 +328,19 @@
         }
     }
 
+    @media (max-width: 400px) {
+        .title{
+            text-align: left;
+        }
+        .found-windows-cheaper__box{
+            margin-left: 0;
+        }
+        .found-windows-cheaper__info{
+            text-align: left;
+        }
+        .button{
+            margin-left: 0;
+        }
+
+    }
 }
