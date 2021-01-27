@@ -221,8 +221,8 @@
 
 @media (min-width: 1200px) {
   .calculation-form__subtitle {
-    max-width: 30em;
-    margin: -1.7em auto 4em;
+    max-width: 40em;
+    margin: 0 auto 4em;
     line-height: 1.2em;
   }
 }
