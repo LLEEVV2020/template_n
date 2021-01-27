@@ -1399,6 +1399,14 @@
                 }
             }
         }
+
+        &-bathroom {
+            .banner-main {
+                &__images {
+                    background-image: url("/wp-content/themes/twentytwenty-child/img/repair/banner-img-5-small.webp");
+                }
+            }
+        }
     }
 
     @media (min-width: 768px) {
@@ -2862,6 +2870,31 @@
                 .banner-main {
                     &__images {
                         background-image: url("/wp-content/themes/twentytwenty-child/img/repair/banner-img-4-middle.webp");
+                    }
+
+                    &__texts {
+                        max-width: 25rem;
+                    }
+
+                    &__prices-lower {
+                        right: -40rem;
+                        margin: 0;
+                        bottom: -1rem;
+                    }    
+                }
+
+                .form-contacts {
+                    &__input {
+                        background-color: $white;
+                        border-radius: 0.6rem 0.6rem 0 0;
+                    }
+                }
+            }
+
+            &-bathroom {
+                .banner-main {
+                    &__images {
+                        background-image: url("/wp-content/themes/twentytwenty-child/img/repair/banner-img-5-middle.webp");
                     }
 
                     &__texts {
@@ -4371,6 +4404,33 @@
                     &__prices-lower {
                         right: -62rem;
                         bottom: -10.5rem;
+                    }
+                }
+
+                .form-contacts {
+                    &__input {
+                        border-bottom-width: 0.3rem;
+                    }
+                }
+            }
+
+            &-bathroom {
+                .banner-main {
+                    &__images {
+                        background-image: url("/wp-content/themes/twentytwenty-child/img/repair/banner-img-5-big.webp");
+                    }
+
+                    &__title {
+                        margin-bottom: 4.4rem;
+                    }
+
+                    &__texts {
+                        max-width: 44rem;
+                    }
+
+                    &__prices-lower {
+                        right: -72rem;
+                        bottom: -8.5rem;
                     }
                 }
 

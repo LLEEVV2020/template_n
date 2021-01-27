@@ -1283,6 +1283,10 @@
   background-image: url("/wp-content/themes/twentytwenty-child/img/repair/banner-img-4-small.webp");
 }
 
+.banner-main--repair-bathroom .banner-main__images {
+  background-image: url("/wp-content/themes/twentytwenty-child/img/repair/banner-img-5-small.webp");
+}
+
 @media (min-width: 768px) {
   .banner-main__wrapper {
     display: -webkit-box;
@@ -2344,6 +2348,21 @@
     bottom: -1rem;
   }
   .banner-main--repair-cottages .form-contacts__input {
+    background-color: #ffffff;
+    border-radius: 0.6rem 0.6rem 0 0;
+  }
+  .banner-main--repair-bathroom .banner-main__images {
+    background-image: url("/wp-content/themes/twentytwenty-child/img/repair/banner-img-5-middle.webp");
+  }
+  .banner-main--repair-bathroom .banner-main__texts {
+    max-width: 25rem;
+  }
+  .banner-main--repair-bathroom .banner-main__prices-lower {
+    right: -40rem;
+    margin: 0;
+    bottom: -1rem;
+  }
+  .banner-main--repair-bathroom .form-contacts__input {
     background-color: #ffffff;
     border-radius: 0.6rem 0.6rem 0 0;
   }
@@ -3431,6 +3450,22 @@
     bottom: -10.5rem;
   }
   .banner-main--repair-cottages .form-contacts__input {
+    border-bottom-width: 0.3rem;
+  }
+  .banner-main--repair-bathroom .banner-main__images {
+    background-image: url("/wp-content/themes/twentytwenty-child/img/repair/banner-img-5-big.webp");
+  }
+  .banner-main--repair-bathroom .banner-main__title {
+    margin-bottom: 4.4rem;
+  }
+  .banner-main--repair-bathroom .banner-main__texts {
+    max-width: 44rem;
+  }
+  .banner-main--repair-bathroom .banner-main__prices-lower {
+    right: -72rem;
+    bottom: -8.5rem;
+  }
+  .banner-main--repair-bathroom .form-contacts__input {
     border-bottom-width: 0.3rem;
   }
 }
