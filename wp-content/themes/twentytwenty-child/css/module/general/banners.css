@@ -3492,6 +3492,9 @@
   .banner-main--windows-to-house .banner-main__content:after {
     right: -84rem;
   }
+  .banner-main--windows-to-house .banner-main__inner {
+    right: -0.2rem;
+  }
   .banner-main--glazing-balconies .banner-main__inner {
     right: -26.2rem;
   }
@@ -3513,6 +3516,22 @@
   .banner-main--repair .banner-main__content:after {
     right: -84rem;
     background-image: url("/wp-content/themes/twentytwenty-child/img/repair/banner-shadow-big.png");
+  }
+  .banner-main--wooden-windows .banner-main__inner,
+  .banner-main--oak-windows .banner-main__inner,
+  .banner-main--larch-windows .banner-main__inner,
+  .banner-main--pine-windows .banner-main__inner {
+    right: 1.2rem;
+  }
+  .banner-main--glazing-with-removal .banner-main__inner,
+  .banner-main--frameless-glazing .banner-main__inner {
+    right: -9.8rem;
+  }
+  .banner-main--finishing-balconies .banner-main__inner {
+    right: -4.8rem;
+  }
+  .banner-main--insulation-balconies .banner-main__inner {
+    right: -6.8rem;
   }
 }
 /*# sourceMappingURL=banners.css.map */

@@ -4483,6 +4483,10 @@
                         right: -84rem;
                     }
                 }
+
+                &__inner {
+                    right: -0.2rem;
+                }
             }
         }
 
@@ -4540,5 +4544,26 @@
                 }
             }
         }
+
+        &--wooden-windows .banner-main__inner,
+        &--oak-windows .banner-main__inner,
+        &--larch-windows .banner-main__inner,
+        &--pine-windows .banner-main__inner {
+            right: 1.2rem;
+        }
+
+        &--glazing-with-removal .banner-main__inner,
+        &--frameless-glazing .banner-main__inner {
+            right: -9.8rem;
+        }
+
+        &--finishing-balconies .banner-main__inner {
+            right: -4.8rem;
+        }
+
+        &--insulation-balconies .banner-main__inner {
+            right: -6.8rem;
+        }
+
     }
 }
