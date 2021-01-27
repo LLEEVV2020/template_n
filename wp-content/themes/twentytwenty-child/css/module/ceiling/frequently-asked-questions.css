@@ -19,6 +19,7 @@
   -webkit-box-shadow: 3px 4px 23px rgba(0, 0, 0, 0.25);
           box-shadow: 3px 4px 23px rgba(0, 0, 0, 0.25);
   border-radius: 0.375em;
+  background-color: #fff;
 }
 
 .frequently-asked-questions__input:checked + .frequently-asked-questions__question .frequently-asked-questions__question-icon:before {
