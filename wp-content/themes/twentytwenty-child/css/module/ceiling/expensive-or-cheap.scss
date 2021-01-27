@@ -100,6 +100,15 @@
         overflow: hidden;
         margin: 1rem auto;
 
+        &.--repair {
+            & .expensive-or-cheap__first-info {
+                align-items: center;
+                span.orange {
+                    white-space: nowrap;
+                }
+            }
+        }
+
         @include _768 {
             margin: 0;
             padding-bottom: 2rem;
@@ -166,6 +175,15 @@
         width: 100%;
         max-width: 30rem;
         margin: 1rem auto;
+
+        &.--repair {
+            & .expensive-or-cheap__item-info{
+                align-items: center;
+                span:nth-child(2) {
+                    white-space: nowrap;
+                }
+            }
+        }
 
         @include _768 {
             max-width: 20rem;
