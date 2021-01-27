@@ -55,6 +55,9 @@
   content: "";
   position: absolute;
   left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   height: 0.95em;
   width: 0.95em;
   border-radius: 50%;
