@@ -73,6 +73,11 @@
   font-size: 0.794em;
 }
 
+.letter .logo-factory-windows__icon .icon {
+  width: 18.5rem;
+  height: 6rem;
+}
+
 .letter__images {
   width: 283px;
   padding-top: 7.6em;

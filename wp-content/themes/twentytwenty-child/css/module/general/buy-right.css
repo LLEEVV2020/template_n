@@ -76,6 +76,9 @@
     line-height: 1.2;
     font-size: 1.4rem;
   }
+  .buy-right__text a {
+    text-decoration: none;
+  }
   .buy-right__text .orange {
     font-weight: 700;
   }
