@@ -1410,6 +1410,7 @@
     padding: 0.4rem 0.7rem 0.4rem 0;
     letter-spacing: 0.04em;
     font-size: 0.8rem;
+    white-space: nowrap;
   }
   .banner-main__discount:before {
     top: -0.3rem;
