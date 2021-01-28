@@ -60,6 +60,7 @@
         }
 
         @include _1200 {
+            max-width: 26.1em;
             line-height: 1.25;
             margin-bottom: 1.5rem;
         }
@@ -79,8 +80,8 @@
         }
 
         @include _1200 {
-            max-width: 38.8rem;
-            height: 26.7rem;
+            max-width: 42.8rem;
+            height: 32rem;
         }
     }
 
@@ -90,5 +91,29 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+
+    &__btn {
+        &-1 {
+            display: none;
+
+            @include _1200 {
+                display: block;
+                max-width: 28.3rem;
+                margin: 0;
+            }
+        }
+
+        &-2 {
+            margin-top: 2.5rem;
+
+            @include _768 {
+                max-width: 28.3rem;
+            }
+
+            @include _1200 {
+                display: none;
+            }
+        }
     }
 }

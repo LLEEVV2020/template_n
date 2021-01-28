@@ -63,6 +63,7 @@
 
 @media (min-width: 1200px) {
   .glazing-of-loggias-with-insulation__text {
+    max-width: 26.1em;
     line-height: 1.25;
     margin-bottom: 1.5rem;
   }
@@ -84,8 +85,8 @@
 
 @media (min-width: 1200px) {
   .glazing-of-loggias-with-insulation__box-img {
-    max-width: 38.8rem;
-    height: 26.7rem;
+    max-width: 42.8rem;
+    height: 32rem;
   }
 }
 
@@ -94,5 +95,33 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.glazing-of-loggias-with-insulation__btn-1 {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .glazing-of-loggias-with-insulation__btn-1 {
+    display: block;
+    max-width: 28.3rem;
+    margin: 0;
+  }
+}
+
+.glazing-of-loggias-with-insulation__btn-2 {
+  margin-top: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .glazing-of-loggias-with-insulation__btn-2 {
+    max-width: 28.3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .glazing-of-loggias-with-insulation__btn-2 {
+    display: none;
+  }
 }
 /*# sourceMappingURL=glazing-of-loggias-with-insulation.css.map */
