@@ -40,8 +40,8 @@
     &__year {
         position: relative;
         max-width: 17.302em;
-        padding-top: 0.525em;
-        padding-bottom: 0.525em;
+        padding-top: 0.325em;
+        padding-bottom: 0.325em;
         margin-bottom: 1.1em;
         text-align: center;
         border: 0.125em solid $orange; 
@@ -125,8 +125,6 @@
 
         &__year {
             max-width: 15.071em;
-            padding-top: 0.325em;
-            padding-bottom: 0.425em;
             margin-bottom: 1em;
             font-weight: 700;
         }
@@ -182,8 +180,6 @@
         }
 
         &__year {
-            padding-top: 0.525em;
-            padding-bottom: 0.525em;
             max-width: 14.071em;
         }
     }
