@@ -24,6 +24,11 @@
         flex-basis: 10.498em;
         margin-bottom: 0.836em;
         text-align: center;
+
+        &:nth-child(3),
+        &:nth-child(4) {
+            margin-bottom: 0;
+        }
     }
 
     &__img {
@@ -93,6 +98,7 @@
         }
 
         &__item {
+            margin-bottom: 0;
             flex-basis: 14.298em;
         }
     }
