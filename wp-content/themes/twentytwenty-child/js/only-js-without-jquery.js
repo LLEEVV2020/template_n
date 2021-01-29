@@ -422,9 +422,11 @@ if (modalBtns) {
             let name = modalBtns[i].getAttribute('data-modal-btn');
             let modal = document.querySelector("[data-modal-window='" + name + "']");
             modal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
             let close = modal.querySelector('.popup__btn-close');
             close.addEventListener('click', function () {
                 modal.style.display = 'none';
+                document.body.style.overflow = '';
             });
         });
     }
@@ -434,7 +436,10 @@ function closePopup(popup, popupName) {
     for (let i = 0; i < popup.length; i++) {
         popup[i].addEventListener('click', function (event) {
             const target = event.target;
-            if (target.classList.contains(`${popupName}`)) this.style.display = 'none';
+            if (target.classList.contains(`${popupName}`)) {
+                this.style.display = 'none';
+                document.body.style.overflow = '';
+            };
         });
     }
 }

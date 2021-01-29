@@ -67,6 +67,26 @@
         }
     }
 
+    &--repair {
+        .installment {
+            &-numbers__item {
+                &:first-child {
+                    width: 11rem;
+
+                    &:before {
+                        left: 53%;
+                    }
+                }
+
+                &:nth-child(2) {
+                    &:before {
+                        left: 58%;
+                    }
+                }
+            }
+        }
+    }
+
     @media (min-width: 768px) {
         &-numbers {
             max-width: 63.6rem;
@@ -106,6 +126,24 @@
             
             h4 {
                 margin-bottom: 0.625em;
+            }
+        }
+
+        &--repair {
+            .container {
+                width: calc(100% - 6rem);
+            }
+
+            .installment {
+                &-numbers__item {
+                    &:first-child {
+                        width: 21rem;
+                    }
+
+                    &:nth-child(2) {
+                        width: 20rem;
+                    }
+                }
             }
         }
     }
@@ -165,6 +203,28 @@
 
                 &:nth-child(3) {
                     max-width: 19em;
+                }
+            }
+        }
+
+        &--repair {
+            .installment {
+                &-numbers__item {
+                    &:first-child {
+                        width: 33rem;
+
+                        &:before {
+                            left: 46%;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        width: 32rem;
+
+                        &:before {
+                            left: 49%;
+                        }
+                    }
                 }
             }
         }
