@@ -57,6 +57,12 @@
             border-right: 0;
             border-bottom: 0.188em solid #c9c9c9;
         }
+
+        &__button {
+            &:before {
+                content: 'вызвать замерщика';
+            }
+        }
     }
 
     &__info {
@@ -129,6 +135,7 @@
 
             &__input {
                 font-size: 1em;
+                min-height: 2.5em;
             }
 
             &__button {
@@ -196,7 +203,7 @@
 
             &__button {
                 &:before {
-                    content: "заказать ";
+                    content: "заказать выезд замерщика";
                     padding-right: 0.3em;
                 }
             }
