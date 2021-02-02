@@ -111,8 +111,9 @@
     }
 
     @media (min-width: 1830px) {
-        min-height: 33.5rem;
-        background: linear-gradient(92.8deg, #FFFFFF 33.02%, rgba(255, 255, 255, 0) 65.34%), url("/wp-content/themes/twentytwenty-child/img/trust-us-big.jpg") no-repeat 37em 0/48.2%;
+        min-height: 43rem;
+        padding-bottom: 0;
+        background: linear-gradient(92.8deg, #FFFFFF 33.02%, rgba(255, 255, 255, 0) 65.34%), url("/wp-content/themes/twentytwenty-child/img/trust-us-big.jpg") no-repeat 15em 0/71.2%;
 
         &:after {
             right: 10.7em;
@@ -120,9 +121,18 @@
     }
 
     @media (min-width: 1900px) {
+        background: linear-gradient(92.8deg, #FFFFFF 17.02%, rgba(255, 255, 255, 0) 50.34%), url("/wp-content/themes/twentytwenty-child/img/trust-us-big.jpg") no-repeat 12em 0/90%;
+
         &:after {
-            right: 5%;
-            width: 35%;
+            background: linear-gradient(450deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 80%);
+            right: 0;
+            width: 37%;
+        }
+
+        &__box {
+            .text {
+                font-weight: 700;
+            }
         }
     }
 
