@@ -827,3 +827,140 @@
         }
     }
 }
+
+.discount-popup {
+
+    &.popup {
+        .btn-close {
+            top: 1.2rem;
+            right: 1.4rem;
+        }
+
+        .btn-close:before,
+        .btn-close:after {
+            width: 0.2rem;
+            height: 1.1rem;
+        }
+    }
+
+    .popup {
+        &__inner {
+            vertical-align: middle;
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 4rem 2rem;
+            height: 100%;
+        }
+    }
+
+    &__box {
+        margin-top: 10rem;
+    }
+
+    &__title {
+        margin-bottom: 1rem;
+    }
+
+    &__subtitle {
+        color: #3A3A3A;
+    }
+
+    &__text {
+        margin-top: auto;
+        font-size: 1.2rem;
+    }
+
+    &__link {
+        color: inherit;
+    }
+
+    .form-contacts {
+        max-width: 27.2rem;
+        margin-bottom: 2rem;
+
+        &__input {
+            border-width: 0.2rem;
+            color: #C9C9C9;
+        }
+
+        &__button {
+            background-color: transparent;
+            color: $orange;
+            border: 0.1rem solid $orange;
+            font-weight: 700;
+            transition: 0.5s background-color,
+                        0.5s color;
+
+            &:hover {
+                background-color: $orange;
+                color: $white;
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        .popup {
+            &__content {
+                display: block;
+                padding: 5.6rem 8.4rem;
+                max-width: 74.5rem;
+                max-height: 34.9rem;
+                min-height: 34.9rem;
+                box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+            }
+        }
+
+        &.popup {
+            .btn-close {
+                top: 2.5rem;
+                right: 2.4rem;
+
+                &:before,
+                &:after {
+                    height: 1.3rem;
+                }
+            }
+        }
+
+        &__box {
+            margin-top: 0;
+        }
+
+        &__title {
+            font-size: 5rem;
+        }
+
+        &__subtitle {
+            margin-bottom: 3.6rem;
+            font-size: 3rem;
+        }
+
+        &__text {
+            font-size: 1.4rem;
+            line-height: 1.2;
+        }
+
+        .form-contacts {
+            margin-bottom: 2.6rem;
+            max-width: 56.4rem;
+
+            &__box {
+                max-width: 27.2rem;
+            }
+
+            &__input {
+                min-height: 2.5em;
+                font-size: 1.6rem;
+            }
+
+            &__button {
+                margin: 0;
+                min-width: 27.2rem;
+            }
+        }
+    }
+}

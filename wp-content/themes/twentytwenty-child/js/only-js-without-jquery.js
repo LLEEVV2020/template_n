@@ -447,6 +447,9 @@ function closePopup(popup, popupName) {
 exampleWorksPopups = document.querySelectorAll('.examples-works__popup');
 if (exampleWorksPopups) closePopup(exampleWorksPopups, 'popup__inner');
 
+discountPopup = document.querySelectorAll('.discount-popup');
+if (discountPopup) closePopup(discountPopup, 'popup__inner');
+
 
 
 
