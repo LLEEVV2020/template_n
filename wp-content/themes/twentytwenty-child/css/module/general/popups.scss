@@ -995,9 +995,9 @@
         .popup {
             &__content {
                 display: block;
+                height: auto;
                 padding: 5.6rem 8.4rem;
                 max-width: 74.5rem;
-                max-height: 34.9rem;
                 min-height: 34.9rem;
                 box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
 
