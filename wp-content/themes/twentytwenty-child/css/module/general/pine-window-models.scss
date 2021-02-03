@@ -62,7 +62,7 @@
         @include _1200 {
             display: flex;
             flex-direction: column;
-            min-height: 73.1rem;
+            min-height: 68.7rem;
         }
     }
 
@@ -150,10 +150,13 @@
     /* .pine-window-models__btn */
 
     &__btn {
+        margin-top: 2.5rem;
         @include _768 {
+            margin-top: 3rem;
         }
 
         @include _1200 {
+            margin-top: auto;
         }
     }
 }
