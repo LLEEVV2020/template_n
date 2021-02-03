@@ -328,6 +328,10 @@
     /* .favorable-prices__item-list-item */
 
     &__item-list-item {
+
+        &.hidden {
+            display: none;
+        }
         
         @include _1200 {
             &:nth-child(n + 9) {
