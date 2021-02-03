@@ -852,9 +852,10 @@ $(document).ready(function () {
   // Скрипт для слайдера блока hot-promotions__slider
   $('.hot-promotions__slider').owlCarousel({
     items: 1,
+    autoWidth:true,
     dots: true,
     loop: true,
-    margin: 55,
+    margin: 15,
     dotsClass: ['pagination-box'],
     dotClass: ['pagination'],
     nav: true,

@@ -1169,15 +1169,11 @@
             &__title {
                 margin-bottom: 2.3rem;
                 line-height: 1.2;
-
-                &-color {
-                    font-size: 2.3rem;
-                }
+                font-size: 2.1rem;
 
                 .orange {
                     word-spacing: 0;
                     letter-spacing: -0.04em;
-                    font-size: 1.8rem;
                 }
             }
 
@@ -2612,14 +2608,13 @@
 
                 &__title {
                     margin-bottom: 1.2rem;
+                    font-size: 1.6rem;
 
                     &-color {
                         margin-bottom: 0.3rem;
-                        font-size: 1.6rem;
                     }
 
                     .orange {
-                        font-size: 0.9rem;
                         letter-spacing: 0.03em;
                     }
                 }
@@ -4117,14 +4112,10 @@
                 &__title {
                     order: 1;
                     margin-bottom: 2.4rem;
+                    font-size: 3.5rem;
 
                     &-color {
                         margin-bottom: 0.7rem;
-                        font-size: 3.5rem;
-                    }
-
-                    .orange {
-                        font-size: 1.8rem;
                     }
                 }
 
