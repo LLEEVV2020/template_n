@@ -137,39 +137,27 @@ if (makeRepairIn15DaysSlider) {
     });
 }
 
-// favorablePricesIframe = `<iframe width="468" height="265" src="https://www.youtube.com/embed/3U79waCgqCw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
-
-
-// Скрипт для блока favorable-prices файла C_video-reviews.html
+// Скрипт для блока favorable-prices
 const favorablePricesItemImgBox = document.querySelectorAll('.favorable-prices__item-img-box'),
-    favorablePricesIframe = document.createElement('iframe');
-favorablePricesLink = document.createElement('a');
+    favorablePricesItemListBox = document.querySelectorAll('.favorable-prices__item-list-box'),
+    favorablePricesBtn = document.querySelector('.favorable-prices__btn'),
+    favorablePricesItemNone = document.querySelectorAll('.favorable-prices__item.none');
 
-favorablePricesIframe.classList.add('hide');
-favorablePricesIframe.src = 'https://www.youtube.com/embed/3U79waCgqCw';
-favorablePricesIframe.setAttribute('frameborder', 0);
-favorablePricesIframe.setAttribute('allow', 'accelerometer');
-favorablePricesIframe.setAttribute('autoplay', '');
-favorablePricesIframe.setAttribute('clipboard-write', '');
-favorablePricesIframe.setAttribute('encrypted-media', '');
-favorablePricesIframe.setAttribute('gyroscope', '');
-favorablePricesIframe.setAttribute('picture-in-picture', '');
-favorablePricesIframe.setAttribute('allowfullscreen', '');
-
-favorablePricesLink.classList.add('favorable-prices__item-img-big');
-favorablePricesLink.href = '#';
-favorablePricesLink.innerHTML = `<img src="/wp-content/themes/twentytwenty-child/img/ceiling/favorable-prices-big-img.webp" alt="отзывы">`;
-
-if (favorablePricesItemImgBox) {
-    favorablePricesItemImgBox.forEach(function (box) {
+if (favorablePricesItemImgBox && favorablePricesItemListBox) {
+    favorablePricesItemImgBox.forEach(function(box) {
         let imgBigBox = box.querySelector('.favorable-prices__item-img-big'),
             imgBig = box.querySelector('.favorable-prices__item-img-big img'),
-            iframe = box.querySelector('iframe');
+            iframe = box.querySelector('iframe'),
+            previews = box.querySelectorAll('.favorable-prices__item-img img');
 
         box.addEventListener('click', function (event) {
             event.preventDefault();
             const target = event.target;
-            if (target.classList.contains('js-favorable-prices-img')) {
+            if  (target.classList.contains('js-favorable-prices-img') || target.classList.contains('js-favorable-prices-video-img')) {
+                previews.forEach(preview => preview.classList.remove('active'));
+                target.classList.add('active');
+            }
+            if (target.classList.contains('js-favorable-prices-img')) {                
                 const src = event.target.src;
                 imgBig.src = src;
                 imgBigBox.classList.remove('hide');
@@ -180,6 +168,39 @@ if (favorablePricesItemImgBox) {
                 if (iframe) iframe.classList.remove('hide');
             }
         });
+    });
+
+    favorablePricesItemListBox.forEach(function(listBox) {
+        let items = listBox.querySelectorAll('.favorable-prices__item-list-item.hidden');
+        
+        listBox.addEventListener('click', function (event) {
+            const target = event.target;
+            if (target.classList.contains('favorable-prices__item-list-btn')) {
+                if (target.classList.contains('favorable-prices__item-list-btn--closed')) {
+                    target.classList.remove('favorable-prices__item-list-btn--closed');
+                    target.classList.add('favorable-prices__item-list-btn--open');
+
+                    items.forEach(item => {
+                        item.style.display = 'none';
+                    });
+                } else {
+                    target.classList.add('favorable-prices__item-list-btn--closed');
+                    target.classList.remove('favorable-prices__item-list-btn--open');
+
+                    items.forEach(item => {
+                        item.style.display = 'flex';
+                    });
+                }                
+            }
+        });
+    });
+
+    favorablePricesBtn.addEventListener('click', function(event) {
+        event.preventDefault();
+        favorablePricesItemNone.forEach((item) => {
+            item.classList.remove('none');
+        });
+        this.style.display = 'none';
     });
 }
 

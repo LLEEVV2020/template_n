@@ -88,6 +88,10 @@
         margin-bottom: 2.5rem;
         padding: 2.5rem 1.5rem 3.5rem;
 
+        &.none {
+            display: none;
+        }
+
         @include _768 {
             margin-left: 0;
             margin-right: 0;
@@ -251,6 +255,14 @@
         max-width: 17.1rem;
         height: 9.6rem;
 
+        img {
+            &.active {
+                @include _1200 {
+                    outline: 0.2rem solid $orange;
+                }
+            }
+        }
+
         &:first-child {
             display: block;
         }
@@ -316,6 +328,7 @@
     /* .favorable-prices__item-list-item */
 
     &__item-list-item {
+        
         @include _1200 {
             &:nth-child(n + 9) {
                 display: none;
@@ -346,6 +359,10 @@
 
         &--closed::before {
             content: "Скрыть";
+        }
+
+        @include _1200 {
+            display: none;
         }
     }
 
