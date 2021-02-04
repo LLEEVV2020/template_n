@@ -195,13 +195,15 @@ if (favorablePricesItemImgBox && favorablePricesItemListBox) {
         });
     });
 
-    favorablePricesBtn.addEventListener('click', function(event) {
-        event.preventDefault();
-        favorablePricesItemNone.forEach((item) => {
-            item.classList.remove('none');
+    if (favorablePricesBtn) {
+        favorablePricesBtn.addEventListener('click', function(event) {
+            event.preventDefault();
+            favorablePricesItemNone.forEach((item) => {
+                item.classList.remove('none');
+            });
+            this.style.display = 'none';
         });
-        this.style.display = 'none';
-    });
+    }
 }
 
 // Скрипт для блока favorable-prices файла C_questions-for-accurate-calculation
