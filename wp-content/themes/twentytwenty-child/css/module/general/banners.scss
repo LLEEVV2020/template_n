@@ -336,7 +336,7 @@
         letter-spacing: 0.02em;
         background-image: url('/wp-content/themes/twentytwenty-child/img/banner-img-border.svg');
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         text-transform: uppercase;
 
         &:before {
