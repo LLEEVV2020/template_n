@@ -56,6 +56,7 @@
 
     &__price-text {
         margin-right: 0.4em;
+        display: none;
 
         @include _768 {
             display: inline-block;

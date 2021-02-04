@@ -16,6 +16,7 @@
     &__text,
     &__info {
         text-align: center;
+        font-weight: 700;
     }
 
     &__text {
@@ -93,6 +94,11 @@
 
         &__right {
             flex-basis: 60%;
+        }
+
+        &__text,
+        &__info {
+            font-weight: 400;
         }
 
         &__title,
