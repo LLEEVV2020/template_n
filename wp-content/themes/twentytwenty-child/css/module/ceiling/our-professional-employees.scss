@@ -243,6 +243,8 @@
                 max-width: 100%;
 
                 &.image {
+                    min-height: 33rem;
+                    max-width: fit-content;
                     &-1 {
                         max-width: 96.8%;
                     }
