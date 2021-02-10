@@ -241,10 +241,10 @@
 
             &-image {
                 max-width: 100%;
-
+                min-height: 33rem;
+                max-width: fit-content !important;
                 &.image {
-                    min-height: 33rem;
-                    max-width: fit-content;
+                    
                     &-1 {
                         max-width: 96.8%;
                     }
