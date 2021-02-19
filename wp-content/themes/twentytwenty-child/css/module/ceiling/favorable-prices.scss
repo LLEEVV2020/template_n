@@ -6,6 +6,29 @@
 // @include _1200 {
 // }
 
+/*****************************************************/
+/*Добавил Сергей*/
+.favorable-prices__item-list.list-open .item-none {
+    display: none;
+}
+.favorable-prices__link {
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+}
+.favorable-prices__link.btn-open::before {
+    content: "Показать полный список";
+}
+.favorable-prices__link::before {
+    content: "Скрыть";
+}
+@media (min-width: 1200px) {
+	.favorable-prices__link {
+		margin-bottom: 1rem;
+	}
+}
+/*****************************************************/
+
 .favorable-prices {
     img,  iframe{
         width: 100%;
@@ -310,7 +333,7 @@
 
         &--closed {
             & > .favorable-prices__item-list-item:nth-child(n + 5) {
-                display: none;
+                //display: none;
             }
         }
 
