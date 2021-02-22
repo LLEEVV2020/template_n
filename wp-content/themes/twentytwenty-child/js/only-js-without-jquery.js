@@ -171,7 +171,8 @@ if (favorablePricesItemImgBox && favorablePricesItemListBox) {
     });
 
     favorablePricesItemListBox.forEach(function(listBox) {
-        let items = listBox.querySelectorAll('.favorable-prices__item-list-item.hidden');
+        // let items = listBox.querySelectorAll('.favorable-prices__item-list-item.hidden');
+        let items = listBox.querySelectorAll('.favorable-prices__item-list > .favorable-prices__item-list-item:nth-child(n + 5)');
         
         listBox.addEventListener('click', function (event) {
             const target = event.target;
