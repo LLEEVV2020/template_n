@@ -474,6 +474,28 @@ if (exampleWorksPopups) closePopup(exampleWorksPopups, 'popup__inner');
 discountPopup = document.querySelectorAll('.discount-popup');
 if (discountPopup) closePopup(discountPopup, 'popup__inner');
 
+// Скрипт для блока design-project-free
+const designProjectFreeSlider = document.querySelector('.design-project-free__slider');
+
+if(designProjectFreeSlider) {
+    const designProjectFreeSliderSwiper = new Swiper(designProjectFreeSlider, {
+        slidesPerView: 1,
+        // slidesPerGroup: 1,
+        spaceBetween: 5,
+        // simulateTouch: false,
+        pagination: {
+            el: '.design-project-free__pagination',
+            type: 'bullets',
+            clickable: true
+        },
+        loop: true,
+        navigation: {
+            nextEl: '.design-project-free__next',
+            prevEl: '.design-project-free__prev'
+        }
+    });
+}
+
 
 
 
