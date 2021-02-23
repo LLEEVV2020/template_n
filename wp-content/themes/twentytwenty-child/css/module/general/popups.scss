@@ -1086,3 +1086,196 @@
 
     }
 }
+
+.stone-sink-as-gift-popup {
+    &.popup {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .popup {
+        &__inner {
+            vertical-align: middle;
+            cursor: pointer;
+        }
+
+        &__content {
+            height: 100%;
+            padding: 5rem 1.2rem;
+
+            .btn-close {
+                &:before,
+                &:after {
+                    width: 0.3rem;
+                    height: 1.4rem;
+                }
+            }
+        }
+    }
+
+    &__title {
+        margin-bottom: 2.2rem;
+        color: #3A3A3A;
+    }
+
+    &__subtitle {
+        margin-bottom: 2.6rem;
+    }
+
+    &__image {
+        display: block;
+        margin: 0 auto;
+
+        &-box {
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    .form-contacts {
+        max-width: 34.5rem;
+        margin-bottom: 2.5rem;
+
+        &__box {
+            &::before {
+                left: 1rem;
+                background-image: url("data:image/svg+xml,%0A%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.0004 9.52809C11.9515 9.47655 11.505 9.02656 10.8411 9.02656C10.4418 9.02656 10.0625 9.18551 9.69043 9.52155C9.21465 9.95086 8.72302 10.3954 8.18522 10.3954C7.81693 10.3954 7.4259 10.1904 6.99147 9.76905C6.70379 9.48889 6.18081 8.93765 5.91553 8.63572C4.89024 7.46211 5.33708 6.79002 6.17116 5.76593C6.93565 4.82602 6.57356 3.81172 6.16393 3.38096C6.12121 3.33052 5.1128 2.14457 4.62117 1.62672C4.31248 1.30192 3.87736 0.928865 3.24792 0.928865C2.77386 0.928865 2.28292 1.14261 1.74685 1.58172C1.26797 1.97256 0.711225 2.64537 0.0924689 3.58237C0.0187418 3.69414 -0.0126094 3.83096 0.00461654 3.96559C0.397713 7.05494 1.63626 9.77413 3.58589 11.8274L3.96073 12.2222C5.91002 14.2755 8.49081 15.5798 11.4251 15.9949C11.4475 15.9982 11.4709 16 11.4933 16C11.5987 16 11.7014 15.9663 11.7882 15.902C12.6778 15.2492 13.3172 14.6631 13.6865 14.1605C14.7983 12.6559 14.1947 11.7116 13.6441 11.1317C13.1528 10.6142 12.0273 9.55204 12.0004 9.52809ZM12.8703 13.4931C12.5899 13.8745 12.0711 14.3535 11.3627 14.8866C8.73887 14.4737 6.43541 13.2895 4.69146 11.4525L4.31662 11.0573C2.57232 9.22035 1.44815 6.79402 1.05678 4.03019C1.5615 3.28516 2.01695 2.73827 2.38008 2.44106C2.72391 2.15981 3.01571 2.01683 3.24792 2.01683C3.44843 2.01683 3.63447 2.12679 3.8901 2.39606C4.36141 2.8925 5.38291 4.09442 5.40771 4.12309C5.52381 4.25337 5.7543 4.60429 5.36568 5.08186C4.65115 5.95935 3.45532 7.42763 5.15518 9.37349C5.4401 9.69865 5.98099 10.268 6.29037 10.5692C6.92532 11.1844 7.54511 11.4837 8.18522 11.4837C9.10543 11.4837 9.80274 10.8541 10.3877 10.3261C10.5448 10.1838 10.6933 10.1153 10.8404 10.1153C11.0819 10.1153 11.2728 10.3014 11.2904 10.3188C11.3017 10.3294 12.4428 11.4054 12.9138 11.9018C13.2262 12.2309 13.5501 12.5724 12.8703 13.4931ZM7.98954 3.60596C8.83395 3.91914 9.58604 4.41921 10.2244 5.09203C10.8635 5.76484 11.3379 6.55668 11.6349 7.44578C11.7097 7.66932 11.9091 7.8094 12.1224 7.8094C12.1792 7.8094 12.2371 7.79924 12.294 7.77856C12.5627 7.67912 12.7039 7.36812 12.6099 7.08433C12.2612 6.04064 11.7045 5.11126 10.9552 4.32232C10.2062 3.53338 9.3242 2.94694 8.33268 2.57896C8.06292 2.47953 7.76767 2.62831 7.67361 2.91174C7.57887 3.19516 7.72081 3.50616 7.98954 3.60596ZM15.0284 6.12483C14.5485 4.7157 13.793 3.46153 12.7828 2.39751C11.772 1.3335 10.5817 0.538025 9.24462 0.0321455C8.97417 -0.0694659 8.67926 0.0778706 8.58314 0.360568C8.48702 0.643628 8.6269 0.955357 8.89493 1.05697C10.0883 1.50769 11.1502 2.21751 12.0514 3.16685C12.9527 4.11619 13.6266 5.23501 14.0541 6.49208C14.1302 6.71418 14.3287 6.85244 14.5406 6.85244C14.5984 6.85244 14.6577 6.84192 14.7163 6.82123C14.9853 6.71962 15.1245 6.40789 15.0284 6.12483Z' fill='%23CCCCCC'/%3E%3C/svg%3E%0A");
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+
+        &__input {
+            min-height: 3.5rem;
+            padding-left: 3.7rem;
+            border: 0.1rem solid #C9C9C9;
+            border-radius: 0.6rem;
+            text-align: left;
+            font-weight: 400;
+            font-size: 1.4rem;
+            color: #CCCCCC;
+        }
+    }
+
+    &__text {
+        margin-bottom: 1.5rem;
+    }
+
+    &__list {
+        display: flex;
+        max-width: 34.5rem;
+        margin: 0 auto;
+    }
+
+    &__item {
+        flex-basis: 35%;
+        text-align: center;
+
+        & + & {
+            .stone-sink-as-gift-popup__timer-number::before {
+                content: '';
+                position: absolute;
+                top: 10%;
+                bottom: 10%;
+                left: 0;
+                width: 0.1rem;
+                background-color: $white;
+            }
+        }
+
+        &:first-child {
+            .stone-sink-as-gift-popup__timer-number {
+                border-top-left-radius: 0.6rem;
+                border-bottom-left-radius: 0.6rem;
+            }
+        }
+
+        &:last-child {
+            .stone-sink-as-gift-popup__timer-number {
+                border-top-right-radius: 0.6rem;
+                border-bottom-right-radius: 0.6rem;
+            }
+        }
+    }
+
+    &__timer {
+        &-number,
+        &-text {
+            display: block;
+        }
+
+        &-number {
+            position: relative;
+            padding-top: 1.2rem;
+            padding-bottom: 1.2rem;
+            margin-bottom: 0.4rem;
+            background-color: #F0F0F0;
+            font-size: 3.5rem;
+            color: #A3A3A3;
+            font-weight: 900;
+        }
+
+        &-text {
+            font-size: 1.4rem;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .popup {
+            &__content {
+                padding: 3rem 1.1rem 0 2rem;
+                max-width: 70.6rem;
+                min-height: 42.8rem;
+                height: auto;
+
+                .btn-close {
+                    top: 0.7rem;
+                    right: 0.7rem;
+                }
+            }            
+        }
+
+        &__title {
+            margin-top: 0.6rem;
+            margin-bottom: 2.5rem;
+            line-height: 1.3;
+        }
+
+        &__box {
+            display: flex;
+            column-gap: 2rem;
+        }
+
+        .form-contacts {
+            display: block;
+
+            &__box,
+            &__button {
+                max-width: none;
+            }
+
+            &__box,
+            .button {
+                width: 100%;
+            }
+
+            &__box {
+                margin-bottom: 1rem;
+
+                &::before {
+                    width: 1.7rem;
+                }
+            }
+
+            &__button {
+                margin: 0;
+                min-height: 3.5rem;
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .form-contacts {
+            margin-top: 0;
+        }
+    }
+}

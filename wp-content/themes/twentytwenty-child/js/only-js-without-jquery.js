@@ -496,6 +496,10 @@ if(designProjectFreeSlider) {
     });
 }
 
+// Скрипт для закрытия оверлея модального окна stone-sink-as-gift-popup 
+stoneSinkAsGiftPopup = document.querySelectorAll('.stone-sink-as-gift-popup');
+if (stoneSinkAsGiftPopup) closePopup(stoneSinkAsGiftPopup, 'popup__inner');
+
 
 
 
