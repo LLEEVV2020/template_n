@@ -480,9 +480,7 @@ const designProjectFreeSlider = document.querySelector('.design-project-free__sl
 if(designProjectFreeSlider) {
     const designProjectFreeSliderSwiper = new Swiper(designProjectFreeSlider, {
         slidesPerView: 1,
-        // slidesPerGroup: 1,
         spaceBetween: 5,
-        // simulateTouch: false,
         pagination: {
             el: '.design-project-free__pagination',
             type: 'bullets',
@@ -499,6 +497,41 @@ if(designProjectFreeSlider) {
 // Скрипт для закрытия оверлея модального окна stone-sink-as-gift-popup 
 stoneSinkAsGiftPopup = document.querySelectorAll('.stone-sink-as-gift-popup');
 if (stoneSinkAsGiftPopup) closePopup(stoneSinkAsGiftPopup, 'popup__inner');
+
+// Скрипт для блока electric-cooking-panel-fds-65-30
+const electricCookingPanelFds6530 = document.querySelector('.electric-cooking-panel-fds-65-30__slider');
+
+if(electricCookingPanelFds6530) {
+    const electricCookingPanelFds6530Swiper = new Swiper(electricCookingPanelFds6530, {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 15,
+        pagination: {
+            el: '.electric-cooking-panel-fds-65-30__pagination',
+            type: 'bullets',
+            clickable: true
+        },
+        loop: true,
+        navigation: {
+            nextEl: '.electric-cooking-panel-fds-65-30__next',
+            prevEl: '.electric-cooking-panel-fds-65-30__prev'
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 3,
+                slidesPerGroup: 3
+            },
+            1200: {
+                slidesPerView: 4,
+                navigation: false,
+                pagination: false,
+                allowTouchMove: false
+            }
+        }
+    });
+}
+
+
 
 
 
