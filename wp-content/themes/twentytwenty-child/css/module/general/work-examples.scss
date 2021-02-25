@@ -145,4 +145,83 @@
             display: none;
         }
     }
+
+    &--kitchens {
+        img {
+            margin-bottom: 1rem;
+            display: block;
+            height: auto;
+
+            @include _768 {
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        .work-examples {
+            &__page {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1.5rem;
+
+                @include _1200 {
+                    gap: 2rem;
+                }
+            }
+
+            &__box {
+                &-img {
+                    height: auto;
+                    margin-bottom: 0;
+                    padding: 1.5rem 1rem;
+                    flex-basis: 16.5rem;
+                    box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.5);
+
+                    &:nth-child(11),
+                    &:nth-child(12) {
+                        display: none;
+                    }
+
+                    @include _768 {
+                        flex-basis: 22.6rem;
+                        padding-left: 3rem;
+                        padding-right: 3rem;
+
+                        &:nth-child(10) {
+                            display: none;
+                        }
+                    }
+
+                    @include _1200 {
+                        flex-basis: 22.5rem;
+
+                        &:nth-child(10),
+                        &:nth-child(11),
+                        &:nth-child(12) {
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+            &__text {
+                margin-bottom: 1rem;
+                font-size: 1.2rem;
+
+                .block {
+                    display: block;
+                }
+
+                @include _768 {
+                    margin-bottom: 1.2rem;
+                    font-size: 1.4rem;
+                }
+            }
+
+            &__price {
+                @include _768 {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
 }
