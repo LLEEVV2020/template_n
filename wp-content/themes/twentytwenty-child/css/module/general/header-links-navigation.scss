@@ -87,14 +87,81 @@
 
 .header-links-navigation {
     position: relative;
-    background-image: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 193.85%), url('/wp-content/themes/twentytwenty-child/img/header-navigation-middle-image.jpg');
+    background-image: linear-gradient(179.96deg, rgba(255, 255, 255, 0) -1.08%, rgba(255, 255, 255, 0.81) 16.38%), url('/wp-content/themes/twentytwenty-child/img/header-navigation-middle-image.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     display: none;
 
+    &-tabs {
+        position: relative;
+        padding: 0.8rem 3rem;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 4.5rem;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            border-bottom: 0.4rem solid #d2eeff;
+            border-left: 0.5rem solid transparent;
+            border-right: 0.6rem solid transparent;
+            background-color: transparent;
+        }
+
+        &__tab {
+            position: relative;
+            color: $orange;
+            font-size: 1.4rem;
+
+            & + & {
+                margin-left: 2.2rem;
+            }
+
+            &.active {
+                color: #3A3A3A;
+                &::after {
+                    display: none;
+                }
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0.2rem;
+                left: 0;
+                width: 100%;
+                height: 0.1rem;
+                background-color: $orange;
+            }
+        }
+    }
+
     &__box {
         position: relative;
+
+        &-kitchens {
+            position: relative;
+
+            .header-links-navigation {
+                &__title {
+                    font-family: "ALS Schlange sans", sans-serif;
+                }
+
+                &__footer {
+                    align-items: center;
+                }
+
+                &__item {
+                    &.contacts {
+                        .header-links-navigation__content {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     &__title-link,
@@ -219,6 +286,10 @@
     }
 
     @media (min-width: 960px) {
+        &-tabs {
+            display: none;
+        }
+
         .container {
             width: calc(100% - 8rem);
         }
@@ -234,6 +305,27 @@
             max-width: 55em;
             margin-right: auto;
             margin-left: auto;
+
+            &-kitchens {
+                display: grid;
+                grid-template: 
+                'kitchens-to-order home-appliances contacts'
+                'kitchens-to-order kitchen-sinks kitchen-sinks'
+                'navigation-footer navigation-footer navigation-footer';
+                max-width: 55em;
+                margin-right: auto;
+                margin-left: auto;
+
+                .header-links-navigation {
+                    &__item {
+                        &.contacts {
+                            .header-links-navigation__content {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         &__item {
@@ -263,6 +355,25 @@
 
             &.contacts {
                 grid-area: contacts;
+            }
+
+            &.kitchens-to-order {
+                grid-area: kitchens-to-order;
+            }
+
+            &.home-appliances {
+                grid-area: home-appliances;
+            }
+
+            &.kitchen-sinks {
+                grid-area: kitchen-sinks;
+            }
+
+            &.reviews,
+            &.stocks,
+            &.installment,
+            &.guarantees {
+                display: none;
             }
             
         }
@@ -332,7 +443,7 @@
     }
 
     @media (min-width: 1200px) {
-        background-image: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 193.85%), url('/wp-content/themes/twentytwenty-child/img/header-navigation-big-image.jpg');
+        background-image: linear-gradient(179.96deg, rgba(255, 255, 255, 0) -1.08%, rgba(255, 255, 255, 0.81) 16.38%), url('/wp-content/themes/twentytwenty-child/img/header-navigation-big-image.jpg');
 
 
         &__box {

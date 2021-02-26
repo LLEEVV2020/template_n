@@ -494,5 +494,61 @@
         @include _1200 {}
     }
 
+    &--kitchens {
+        .header {
+            &__nav {
+                &-item {
+                    padding: 0 0.7rem;
 
+                    @include _768 {
+                        max-width: 11.7rem;
+                    }
+
+                    @include _1200 {
+                        max-width: 19.1rem;
+                    }
+
+                    &.shevron {
+                        &::before {
+                            bottom: 50%;
+                            right: -1rem;
+                            width: 0.4rem;
+                            height: 0.4rem;
+                            opacity: 0.5;
+                        }
+                    }
+                }
+            }
+
+            &__drop {
+                &-item {
+                    justify-content: flex-start;
+                    padding-left: 0.5rem;
+
+                    @include _1200 {
+                        padding-left: 2rem;
+                        padding-right: 1.8rem;
+                        height: 4rem;
+                    }
+                }
+
+                &-menu {
+                    text-align: left;
+
+                    &::before {
+                        background-image: none;
+                        top: 1.6rem;
+                        left: auto;
+                        right: 1.1rem;
+                        width: 0.4rem;
+                        height: 0.4rem;
+                        border-left: 0.1rem solid #000;
+                        border-top: 0.1rem solid #000;
+                        transform: rotate(45deg);
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+    }
 }
