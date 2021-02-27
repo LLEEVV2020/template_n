@@ -531,6 +531,59 @@ if(electricCookingPanelFds6530) {
     });
 }
 
+// Скрипт для блока popular-types-kitchens
+const popularCornerKitchens = document.querySelector('.popular-types-kitchens__corner-slider'),
+    popularStraightKitchens = document.querySelector('.popular-types-kitchens__straight-slider'),
+    popularSmallKitchens = document.querySelector('.popular-types-kitchens__small-slider'),
+    popularKitchensWithBarCounter = document.querySelector('.popular-types-kitchens__bar-counter-slider'),
+    popularInexpensiveKitchens = document.querySelector('.popular-types-kitchens__inexpensive-slider'),
+    popularKitchensInPvcFilm = document.querySelector('.popular-types-kitchens__pvc-film-slider'),
+    popularKitchensInHplPlastic = document.querySelector('.popular-types-kitchens__HPL-plastic-slider'), 
+    popularKitchensInVeneerAndMassive = document.querySelector('.popular-types-kitchens__veneer-massive-slider'),
+    popularKitchensInNewBuildings = document.querySelector('.popular-types-kitchens__new-buildings-slider'),
+    popularKitchensInFiveStoryBuilding = document.querySelector('.popular-types-kitchens__five-story-slider'),
+    popularKitchensInNineStoryBuilding = document.querySelector('.popular-types-kitchens__nine-story-slider');
+
+const popularTypesKitchensInitializingSlider = (slider) => {
+    if(slider) {
+        const popularCornerKitchensSwiper = new Swiper(slider, {
+            slidesPerView: 1.2,
+            spaceBetween: 15,
+            pagination: {
+                el: '.popular-types-kitchens__pagination',
+                type: 'bullets',
+                clickable: true
+            },
+            loop: true,
+            breakpoints: {
+                768: {
+                    slidesPerView: 2.23,
+                },
+                1200: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                    pagination: false,
+                    allowTouchMove: false
+                }
+            }
+        });
+    }
+}
+
+popularTypesKitchensInitializingSlider(popularCornerKitchens);
+popularTypesKitchensInitializingSlider(popularStraightKitchens);
+popularTypesKitchensInitializingSlider(popularSmallKitchens);
+popularTypesKitchensInitializingSlider(popularKitchensWithBarCounter);
+popularTypesKitchensInitializingSlider(popularInexpensiveKitchens);
+popularTypesKitchensInitializingSlider(popularKitchensInPvcFilm);
+popularTypesKitchensInitializingSlider(popularKitchensInHplPlastic);
+popularTypesKitchensInitializingSlider(popularKitchensInVeneerAndMassive);
+popularTypesKitchensInitializingSlider(popularKitchensInNewBuildings);
+popularTypesKitchensInitializingSlider(popularKitchensInFiveStoryBuilding);
+popularTypesKitchensInitializingSlider(popularKitchensInNineStoryBuilding);
+
+
+
 
 
 
