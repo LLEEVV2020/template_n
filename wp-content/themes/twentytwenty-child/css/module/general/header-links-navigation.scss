@@ -87,6 +87,7 @@
 
 .header-links-navigation {
     position: relative;
+    padding-top: 1.5rem;
     background-image: linear-gradient(179.96deg, rgba(255, 255, 255, 0) -1.08%, rgba(255, 255, 255, 0.81) 16.38%), url('/wp-content/themes/twentytwenty-child/img/header-navigation-middle-image.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -145,10 +146,6 @@
             position: relative;
 
             .header-links-navigation {
-                &__title {
-                    font-family: "ALS Schlange sans", sans-serif;
-                }
-
                 &__footer {
                     align-items: center;
                 }
@@ -158,6 +155,24 @@
                         .header-links-navigation__content {
                             display: none;
                         }
+                    }
+                }
+            }
+        }
+
+        &-ceilings {
+            position: relative;
+
+            .prices,
+            .video,
+            .contacts-ceilins,
+            .stocks-ceilins,
+            .installment-ceilings,
+            .reviews-ceilings {
+                .header-links-navigation {
+                    &__title {
+                        padding-left: 0.8em;
+                        font-weight: 400;
                     }
                 }
             }
@@ -188,7 +203,7 @@
         border-bottom: 0.1em solid #C9C9C9;
         font-size: 1.8rem;
         font-weight: 700;
-        font-family: 'Montserrat', sans-serif;
+        font-family: "ALS Schlange sans", sans-serif;
 
         &.before {
             &:before {
@@ -261,6 +276,28 @@
     }
 
     @media (min-width: 768px) {
+        &__box {
+            &-ceilings {
+                .header-links-navigation {
+                    &__footer {
+                        margin-left: 1.5rem;
+                        max-width: 43em;
+
+                        &-links {
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            max-width: 30.4rem;
+                        }
+
+                        &-link:first-child {
+                            margin-bottom: 0.6rem;
+                        }
+                    }
+                }
+            }
+        }
+
         &__footer {
             display: flex;
             justify-content: space-between;
@@ -286,6 +323,8 @@
     }
 
     @media (min-width: 960px) {
+        padding-top: 6rem;
+
         &-tabs {
             display: none;
         }
@@ -321,6 +360,50 @@
                         &.contacts {
                             .header-links-navigation__content {
                                 display: block;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-ceilings {
+                display: grid;
+                grid-template: 
+                'stretch-ceilings material room-type additional'
+                'navigation-footer navigation-footer navigation-footer navigation-footer';
+                
+                .header-links-navigation {
+                    &__footer {
+                        align-items: flex-end;
+                        justify-content: space-between;
+                        margin-top: 0;
+                        margin-left: 0;
+                        max-width: none;
+
+                        &-links {
+                            flex-direction: column;
+                            text-align: right;
+
+                            &:last-of-type {
+                                margin-left: 0;
+                                margin-right: 6.3em;
+                            }
+                        }
+
+                        &-link {
+                            &:first-child {
+                                order: 3;
+                                margin-bottom: 0;
+                            }
+
+                            &:nth-child(2) {
+                                margin-top: 1rem;
+                                margin-bottom: 1rem;
+                                order: 2
+                            }
+
+                            &:last-child {
+                                order: 1;
                             }
                         }
                     }
@@ -369,13 +452,34 @@
                 grid-area: kitchen-sinks;
             }
 
+            &.stretch-ceilings {
+                grid-area: stretch-ceilings;
+            }
+
+            &.material {
+                grid-area: material;
+            }
+
+            &.room-type {
+                grid-area: room-type;
+            }
+
+            &.additional {
+                grid-area: additional;
+            }
+
             &.reviews,
             &.stocks,
             &.installment,
-            &.guarantees {
+            &.guarantees,
+            &.prices,
+            &.video,
+            &.contacts-ceilins,
+            &.stocks-ceilins,
+            &.installment-ceilings,
+            &.reviews-ceilings {
                 display: none;
-            }
-            
+            }            
         }
 
         &__input:checked + &__title {
@@ -448,6 +552,18 @@
 
         &__box {
             max-width: 60em;
+
+            &-ceilings {
+                .header-links-navigation {
+                    &__footer {
+                        &-links {
+                            &:last-of-type {
+                                margin-right: 7.3em;
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         &__footer {
