@@ -9,6 +9,39 @@
 .header {
     background-color: #fff;
 
+    &__nav-top {
+        display: none;
+        padding: 0.8rem 3rem;
+        border-bottom: 0.1rem solid #F7F7F7;
+
+        @include _768 {
+            display: block;
+        }
+    }
+
+    &__nav-top-list {
+        display: flex;
+        justify-content: space-between;
+        max-width: 56rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__nav-top-link {
+        font-size: 1.2rem;
+        color: #696969;
+        text-decoration: none;
+        font-family: Arial, sans-serif;
+
+        @include _768 {
+            font-size: 1.3rem;
+        }
+
+        @include _1200 {
+            font-size: 1.4rem;
+        }
+    }
+
     img {
         width: 100%;
         height: 100%;
@@ -75,14 +108,11 @@
 
         @include _1200 {
             display: block;
+            font-family: "Core Sans N", sans-serif;
             color: #696969;
             text-decoration: none;
             border-bottom: 0.1rem solid $orange;
             font-size: 1.5rem;
-
-            span {
-                border-bottom: 0.1rem solid $orange;
-            }
         }
     }
 
@@ -167,7 +197,7 @@
 
         @include _1200 {
             display: block;
-            color: inherit;
+            font-family: "Core Sans N", sans-serif;
             text-decoration: none;
             padding-left: 1.7rem;
             position: relative;
@@ -197,6 +227,7 @@
 
         @include _1200 {
             display: block;
+            font-family: "Core Sans N", sans-serif;
             text-decoration: none;
             padding-left: 2.2rem;
             position: relative;
@@ -232,6 +263,7 @@
     /* .header__phone */
 
     &__phone {
+        font-family: "Core Sans N", sans-serif;
         color: #696969;
         font-size: 1.4rem;
         text-decoration: none;
@@ -370,7 +402,9 @@
     }
 
     &__nav-menu {
+        font-family: "Core Sans N", sans-serif;
         text-transform: initial;
+        font-weight: 400;
     }
 
     /* .header__nav-list */
@@ -381,7 +415,7 @@
         text-transform: uppercase;
 
         @include _1200 {
-            max-width: 120rem;
+            max-width: 105rem;
             margin: 0 auto;
             font-size: 1.4rem;
         }
@@ -400,8 +434,7 @@
         border-radius: 1.4rem;
         position: relative;
         line-height: 1;
-        // padding: 0 1rem;
-        padding: 0 0.2rem;
+        padding: 0 0.1rem;
         cursor: pointer;
 
 
@@ -409,7 +442,7 @@
             text-decoration: none;
             color: #696969;
             width: 100%;
-            font-size: 1.4rem;
+            font-size: 1.3rem;
 
             @include _1200 {
                 font-size: 1.5rem;
