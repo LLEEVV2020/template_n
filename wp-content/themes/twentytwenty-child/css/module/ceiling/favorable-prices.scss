@@ -457,3 +457,62 @@
         }
     }
 }
+
+/*****************************************************/
+/*Добавил Сергей*/
+.favorable-prices__item-list.list-open .item-none {
+    display: none;
+  }
+  
+  .favorable-prices__link {
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .favorable-prices__link.btn-open::before {
+    content: "Показать полный список";
+  }
+  
+  .favorable-prices__link::before {
+    content: "Скрыть";
+  }
+  
+  @media (min-width: 1200px) {
+    .favorable-prices__link {
+      margin-bottom: 1rem;
+    }
+  }
+  
+  /* иконка play */
+  .favorable-prices__item-img {
+      position: relative;
+  }
+  .favorable-prices__item-img:hover.favorable-prices__item-img .icon-video {
+      opacity: 1;
+  }
+  .favorable-prices__item-img .icon-video {
+      width: 40px;
+      height: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      opacity: .8;
+  }
+  
+  /* скрытые блоки */
+  .favorable-prices__item-hidden {
+      height: 0;
+      visibility: hidden;	
+      position: absolute;
+      top: 0;
+  }
+  .favorable-prices__item-hidden.is-visible {
+      height: auto;
+      visibility: visible;
+      position: static;
+  }
+  /*****************************************************/
