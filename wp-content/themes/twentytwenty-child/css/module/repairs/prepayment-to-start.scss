@@ -27,7 +27,8 @@
         @include _1200 {
             line-height: 1.2em;
             margin-bottom: 0.8em;
-            margin: 0 -1px;
+            margin-right: -1px;
+                margin-left: -1px;
             font-weight: 900;
         }
     }
