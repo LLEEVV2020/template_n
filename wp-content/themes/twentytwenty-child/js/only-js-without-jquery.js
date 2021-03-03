@@ -582,6 +582,42 @@ popularTypesKitchensInitializingSlider(popularKitchensInNewBuildings);
 popularTypesKitchensInitializingSlider(popularKitchensInFiveStoryBuilding);
 popularTypesKitchensInitializingSlider(popularKitchensInNineStoryBuilding);
 
+// Скрипт для блока gallery-works
+const galleryWorksFilterContainer = document.querySelector('.gallery-works__tabs'),
+    galleryWorksItem = document.querySelectorAll('.gallery-works__content-item'),
+    galleryWorksButton = document.querySelector('.gallery-works__button');
+
+if (galleryWorksFilterContainer && galleryWorksItem) {
+    galleryWorksFilterContainer.addEventListener('click', (event) => {
+        if (event.target.classList.contains('gallery-works__tab')) {
+            galleryWorksFilterContainer.querySelector('.active').classList.remove('active');
+            event.target.classList.add('active');
+            const filterValue = event.target.getAttribute('data-filter');
+            galleryWorksItem.forEach((item) => {
+                if (window.matchMedia('(min-width: 768px)').matches) {
+                    item.classList.remove('hidden');
+                }
+                if (item.classList.contains(filterValue) || filterValue === 'all') {
+                    item.classList.remove('hide');
+                    item.classList.add('show');
+                } else {
+                    item.classList.remove('show');
+                    item.classList.add('hide');
+                }
+            });
+        }
+    });
+
+    if (galleryWorksButton) {
+        galleryWorksButton.addEventListener('click', function() {
+            galleryWorksItem.forEach(item => {
+                item.classList.remove('hidden');
+            });
+            this.style.display = 'none';
+        });
+    }
+}
+
 
 
 
