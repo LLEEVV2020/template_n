@@ -8,7 +8,7 @@
     &__images {
         position: relative;
         min-height: 20.3rem;
-        background-image: url('/wp-content/themes/twentytwenty-child/img/banner-img-1-small.webp');
+        
         background-repeat: no-repeat;
         background-size: 100% 20.3rem;
 
@@ -1222,9 +1222,7 @@
 
     &--repair {
         .banner-main {
-            &__images {
-                background-image: url("/wp-content/themes/twentytwenty-child/img/repair/banner-img-1-small.webp");
-            }
+           
 
             &__subtitle,
             &__title,
